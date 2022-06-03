@@ -49,7 +49,7 @@ Friendly<br>Feud
 </tbody></table>
 </div>
 
-<div style="font-weight:bold;font-size:2vw;text-align:center;padding-top:20px;padding-bottom:10px" id="board">PRESS C TO START
+<div style="font-weight:bold;font-size:2vw;text-align:center;padding-top:20px;padding-bottom:10px" id="board">PRESS <b style='background-color:yellow;font-weight:bold;font-size:4vw' onclick="startGame()">C</b> TO START
 </div>
 <div>
 <table id="board1" style="height:40%;margin-left:auto;margin-right:auto;width:60%">
@@ -150,7 +150,12 @@ document.getElementById("board1").style.display = "none";
 
 document.addEventListener("keydown",function(event) {
 //alert(n)
-if (event.keyCode == 67) {
+if (event.keyCode == 67 ) {
+startGame();
+}
+});
+
+function startGame() {
 document.getElementById("board1").style.display = "table";
 if(roundstarter > -1) {
 document.getElementById("table").children[0].children[0].children[roundstarter].innerHTML = "";
@@ -197,7 +202,5 @@ question.innerHTML = Object.keys(questions)[n]
 document.getElementById("board").innerHTML = question.innerHTML
 
 }
-
-});
 
 </script>
