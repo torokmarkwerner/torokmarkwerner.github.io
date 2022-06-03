@@ -1,0 +1,189 @@
+<style> 
+body {
+font-family: sans-serif;
+}
+.hat {
+border: 0pt;
+}
+td {
+border: 1pt solid black;
+height:20px;
+width:60px;
+text-align:center;
+}
+#board1 td {
+width: 30%;
+border: 1pt solid black; 
+text-align:center;
+font-size:1.7vw;
+//background-color:#bde3f0;
+}
+
+button {
+background-color: #db5c5c;
+border:none;
+color:black;
+}
+button:hover {
+  background-color: #db4040;
+}
+
+</style>
+<div style="text-align:center;font-size:6vw;font-weight:bold">
+Friendly<br>Feud
+</div>
+<div>
+<table id="table" style="margin-left: auto;margin-right: auto;">
+<tbody><tr><td class="hat">▼</td><td class="hat"></td><td class="hat"></td><td class="hat"></td></tr>
+<tr><td style="background-color: #94cf67;">1</td><td style="background-color: white;">2</td><td style="background-color: white;">3</td><td style="background-color: white;">4</td>
+<td rowspan="2" style="border:0pt"><button style="display:inline-block;height:50px;width:60px;padding:0px;margin-top:0px;font-size:20pt" onclick="moveOn()">
+<b>x</b>
+</button></td></tr>
+<tr><td style="background-color: #94cf67;">0</td><td style="background-color: white;">0</td><td style="background-color: white;">0</td><td style="background-color: white;">0</td></tr>
+</tbody></table>
+</div>
+
+<div style="font-weight:bold;font-size:2vw;text-align:center;padding-top:20px;padding-bottom:10px" id="board">PRESS C TO START
+</div>
+<div>
+<table id="board1" style="height:40%;margin-left:auto;margin-right:auto;width:60%">
+<tbody>
+<tr><td></td><td></td></tr>
+<tr><td></td><td></td></tr>
+<tr><td></td><td></td></tr>
+<tr><td></td><td></td></tr>
+</tbody>
+</table>
+</div>
+<style>
+.answer {
+  background-color:#008CBA;
+  color:#008CBA;
+  user-select: none;
+}
+</style>
+
+
+<script>
+groupnumber = 4;
+group = 0;
+outofgame = false;
+
+function moveOn(){
+document.getElementById("table").children[0].children[1].children[group].style.backgroundColor = "white";
+document.getElementById("table").children[0].children[2].children[group].style.backgroundColor = "white";
+if(group != groupnumber-1) {
+group++
+} else {
+group = 0
+}
+document.getElementById("table").children[0].children[1].children[group].style.backgroundColor = "#94cf67";
+document.getElementById("table").children[0].children[2].children[group].style.backgroundColor = "#94cf67";
+if (roundstarter == group) {
+outofgame = true;
+}
+
+}
+
+document.getElementById("table").children[0].children[1].children[group].style.backgroundColor = "#94cf67";
+document.getElementById("table").children[0].children[2].children[group].style.backgroundColor = "#94cf67";
+
+var wrongbuzz = new Audio('https://docs.google.com/uc?export=download&id=1Bef9PzRhCDoNGDt-xoEn028_eLR5tID0');
+wrongbuzz.load();
+
+var ring = new Audio('https://docs.google.com/uc?export=download&id=1LOVVe8xUfRfQSt5h0I_DBezeMCKMOyST')
+ring.load();
+
+url = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/40041/FF3.json"
+//url = "https://raw.githubusercontent.com/torokmarkwerner/friendlyfeud/main/friendlyfeud.json"
+xhr = new XMLHttpRequest();
+xhr.open("GET", url, false);
+    xhr.onreadystatechange = function ()
+    {
+        if(xhr.readyState === 4)
+        {
+            if(xhr.status === 200 || xhr.status == 0)
+            {
+questions = JSON.parse(xhr.responseText);
+}
+        }
+    }
+    xhr.send();
+
+/*questions = {
+"Tell me something specific you have lost more than once":[["Keys",63],["Money",7],["Weight",5],["Contact Lens",4],["Eyeglasses",4],["Wallet",3],["Earring",2]],
+"Name a toy you always see in pictures of Santa's Workshop":[["Doll",39],["Stuffed Animal",13],["Train",11],["Rocking Horse",9],["Toy Soldier",9],["Drum",4],["Ball",3],["Wagon",3]],
+"Name a kind of food that gets stuck between your teeth":[["Corn",37],["Meat",23],["Popcorn",22],["Caramel",6],["Nuts",3],["Peanut Butter",3],["Taffy",2]],
+"Name something the police do at the station to those who are arrested":[["Fingerprint Them",56],["Book Them",20],["Question",5],["Mug Shot",5],["Give One Phone Call",3],["Put Then in Cell",3],["Read Their Rights",2]]
+}
+*/
+
+roundstarter = -1;
+
+function checkAnswerAndAddPoints(){
+//ring.play();
+this.style.backgroundColor = "white";
+this.style.color = "black"
+if (outofgame == false) {
+document.getElementById("table").children[0].children[2].children[group].innerHTML = Number(document.getElementById("table").children[0].children[2].children[group].innerHTML) + this.points;
+}
+this.removeEventListener("click",checkAnswerAndAddPoints)
+}
+
+n = -1;
+
+document.getElementById("board1").style.display = "none";
+
+document.addEventListener("keydown",function(event) {
+//alert(n)
+if (event.keyCode == 67) {
+document.getElementById("board1").style.display = "table";
+if(roundstarter > -1) {
+document.getElementById("table").children[0].children[0].children[roundstarter].innerHTML = "";
+}
+
+if(roundstarter != groupnumber-1) {
+roundstarter++
+} else {
+roundstarter = 0
+}
+document.getElementById("table").children[0].children[0].children[roundstarter].innerHTML = '▼';
+document.getElementById("table").children[0].children[1].children[group].style.backgroundColor = "white";
+document.getElementById("table").children[0].children[2].children[group].style.backgroundColor = "white";
+group = roundstarter;
+document.getElementById("table").children[0].children[1].children[group].style.backgroundColor = "#94cf67";
+document.getElementById("table").children[0].children[2].children[group].style.backgroundColor = "#94cf67";
+
+
+outofgame = false
+n++
+
+for (h=0;h<8;h++) {
+if (h/4<1) {i=0} else {i=1}
+if (Object.values(questions)[n][h] != undefined) {
+answerLine = document.createElement("P");
+answer = document.createElement("SPAN");
+answer.className = "answer"
+answer.points = Number(Object.values(questions)[n][h][1])
+answer.addEventListener("click",checkAnswerAndAddPoints);
+answer.innerHTML = Object.values(questions)[n][h][0] + " (" + Object.values(questions)[n][h][1] + ")";
+answerLine.innerHTML = (h+1) + ". ";
+answerLine.appendChild(answer);
+document.getElementById("board1").children[0].children[Math.round(h%4)].children[i].innerHTML = ""
+document.getElementById("board1").children[0].children[Math.round(h%4)].children[i].appendChild(answerLine);
+} else {
+document.getElementById("board1").children[0].children[Math.round(h%4)].children[i].innerHTML = ""
+}
+}
+
+
+question = document.createElement("DIV");
+//question.style.fontSize = "30px"
+question.innerHTML = Object.keys(questions)[n]
+document.getElementById("board").innerHTML = question.innerHTML
+
+}
+
+});
+
+</script>
