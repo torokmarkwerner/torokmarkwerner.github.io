@@ -22,12 +22,12 @@ font-size:1.7vw;
 //background-color:#bde3f0;
 }
 
-button {
+#moveOn {
 background-color: #db5c5c;
 border:none;
 color:black;
 }
-button:hover {
+#moveOn:hover {
   background-color: #db4040;
 }
 
@@ -39,10 +39,10 @@ Friendly<br>Feud
 <table id="table" style="margin-left: auto;margin-right: auto;">
 <tbody><tr><td class="hat">▼</td><td class="hat"></td><td class="hat"></td><td class="hat"></td></tr>
 <tr><td style="background-color: #94cf67;">1</td><td style="background-color: white;">2</td><td style="background-color: white;">3</td><td style="background-color: white;">4</td>
-<td rowspan="2" style="border:0pt"><button style="display:inline-block;height:50px;width:60px;padding:0px;margin-top:0px;font-size:20pt" onclick="moveOn()">
+<td rowspan="2" style="border:0pt"><button id="moveOn" style="display:inline-block;height:50px;width:60px;padding:0px;margin-top:0px;font-size:20pt" onclick="moveOn()">
 <b>x</b>
   </button></td>
-  <td rowspan="2" style="border:none"><button><i class="material-icons">&#xe5d0;</i></button></td>
+  <td rowspan="2" style="border:none"><button onclick="openFullScreen()"><i class="material-icons">&#xe5d0;</i></button></td>
   </tr>
 <tr><td style="background-color: #94cf67;">0</td><td style="background-color: white;">0</td><td style="background-color: white;">0</td><td style="background-color: white;">0</td></tr>
 </tbody></table>
@@ -70,6 +70,14 @@ Friendly<br>Feud
 
 
 <script>
+function openFullScreen(){if (document.body.requestFullscreen) {
+    document.body.requestFullscreen();
+  } else if (document.body.webkitRequestFullscreen) { /* Safari */
+    document.body.webkitRequestFullscreen();
+  } else if (document.body.msRequestFullscreen) { /* IE11 */
+    document.body.msRequestFullscreen();
+  }}
+  
 groupnumber = 4;
 group = 0;
 outofgame = false;
