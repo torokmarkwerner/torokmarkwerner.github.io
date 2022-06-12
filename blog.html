@@ -8,7 +8,7 @@ title: "Blog"
     <article class="post">
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-      <div>{{ page.date | date: "%-d %B %Y" }}</div>
+      <div>{{ post.date | date: "%-d %B %Y" }}</div>
       <div class="entry">
         {{ post.excerpt }}
       </div>
