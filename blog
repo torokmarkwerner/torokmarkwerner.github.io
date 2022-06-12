@@ -3,9 +3,6 @@ layout: home
 title: "Blog"
 ---
 
-<!DOCTYPE html>
-<html>
-
 <div class="posts">
   {% for post in site.posts %}
     <article class="post">
@@ -20,4 +17,3 @@ title: "Blog"
     </article>
   {% endfor %}
 </div>
-</html>
