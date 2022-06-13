@@ -56,7 +56,6 @@ pages = document.getElementsByClassName("pages-button");
 for (i=0; i<pages.length; i++) {
 pages[i].addEventListener("click",function() {window.open("https://torokmarkwerner.github.io/" + this.textContent.toLowerCase(), "_self")});
   if(("/" + pages[i].textContent.toLowerCase() + "/") === document.location.pathname) {
-    alert("hey");
     pages[i].classList.toggle("pages-button-current");
     pages[i].style.backgroundColor = "lightgreen";
     pages[i].style.fontWeight = "bold"
