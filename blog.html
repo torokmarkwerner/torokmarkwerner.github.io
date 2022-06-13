@@ -9,7 +9,13 @@ permalink: /blog/
     <article class="post">
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-      <div>{{ post.date | date: "%-d %B %Y" }}</div>
+      <div>{{ post.date | date: "%-d %B %Y" }} | <span class="ert">
+    <abbr title="Estimated reading time">ERT</abbr>
+    {% assign words = page.content | strip_html | number_of_words %}
+    {% assign ert = words | divided_by:250 | at_least: 1 %}
+    {{ ert }} minute{% if ert != 1 %}s{% endif %}
+</span>
+      </div>
       <div class="entry">
         {{ post.excerpt }}
       </div>
