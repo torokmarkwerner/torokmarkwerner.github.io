@@ -4,3 +4,13 @@ layout: default
 <p>{{ page.date | date: "%-d %B %Y" }}</p>
 
 {{ content }}
+<script>
+pages = document.getElementsByClassName("pages-button");
+for (i=0; i<pages.length; i++) {
+  if(("/" + pages[i].textContent.toLowerCase() + "/") === "/blog/") {
+    pages[i].classList.toggle("pages-button-current");
+    pages[i].style.backgroundColor = "lightgreen";
+    pages[i].style.fontWeight = "bold"
+  }
+}
+</script>
