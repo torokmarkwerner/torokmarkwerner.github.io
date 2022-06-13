@@ -37,13 +37,6 @@ body {
 
 </style>
 <body>
-<script>
-  alert(document.location.pathname.toString().substring(1,document.location.pathname.toString().length-1))
-subpage = document.location.pathname.toString().substring(1,document.location.pathname.toString().length-1)
-document.getElementbyId(subpage).style.backgroundColor = "lightgreen"
-document.getElementbyId(subpage).style.fontWeight = "bold"
-}
-</script>
 <div class="page-wrapper">
 <div class="sticky">
 <div><img src="https://avatars.githubusercontent.com/u/98919050" width="100%"/></div>
@@ -53,6 +46,12 @@ document.getElementbyId(subpage).style.fontWeight = "bold"
 <div id="contact" class="pages-button">CONTACT</div>
 <div class="pages-button"></div>
 </div>
+  <script>
+pages = document.getElementsByClassName("pages-button");
+for (i=0; i<pages.length; i++) {
+pages[i].addEventListener("click",function() {window.open("https://torokmarkwerner.github.io/" + this.textContent.toLowerCase(), "_self")});
+}
+</script>
 <div style="width:55%;padding-left:1.5em">
 <h1>{{ page.title }}</h1>
     {{ content }}
