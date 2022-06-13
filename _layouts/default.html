@@ -38,9 +38,10 @@ body {
 </style>
 <body>
 <script>
+  alert(document.location.pathname.toString().substring(1,document.location.pathname.toString().length-1))
 subpage = document.location.pathname.toString().substring(1,document.location.pathname.toString().length-1)
-document.getElementbyId("/" + subpage + "/").style.backgroundColor = "lightgreen"
-document.getElementbyId("/" + subpage + "/").style.fontWeight = "bold"
+document.getElementbyId(subpage).style.backgroundColor = "lightgreen"
+document.getElementbyId(subpage).style.fontWeight = "bold"
 }
 </script>
 <div class="page-wrapper">
