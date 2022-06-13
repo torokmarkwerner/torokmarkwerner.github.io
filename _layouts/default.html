@@ -47,6 +47,7 @@ body {
 <div class="pages-button"></div>
 </div>
   <script>
+alert(document.location.pathname + " --> And this is the substring:" + document.location.pathname.toString().substring(1,document.location.pathname.toString().length-2))
 pages = document.getElementsByClassName("pages-button");
 for (i=0; i<pages.length; i++) {
 pages[i].addEventListener("click",function() {window.open("https://torokmarkwerner.github.io/" + this.textContent.toLowerCase(), "_self")});
