@@ -3,6 +3,39 @@ layout: default
 title: "Contact"
 permalink: /contact/
 ---
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</p>
+<style>
+.send-button {
+  background-color:lightblue;
+  text-align:center;
+  border:none;
+  padding:1em;
+  font-size:100%;
+  font-weight:bold;
+  width:50%
+}
+.send-button:hover {
+ background-color:lightgreen;
+ cursor:pointer;
+}
+</style>
+
+<p>Do you have any questions?</p>
+<p>Send me a message.</p>
+<div style="width:100%">
+<table style="width:100%;  border-spacing: 20px;">
+<tbody>
+<tr>
+<td><input style="width:100%;box-sizing:border-box;font-size:100%;font-family: 'Calibri';height:2em;padding:0.5em" placeholder="Name">
+</td>
+<td><input style="width:100%;box-sizing:border-box;font-size:100%;font-family: 'Calibri';height:2em;padding:0.5em" placeholder="Email">
+</td>
+</tr>
+<tr>
+<td colspan="2"><textarea type="text" style="height:100px;width:100%;resize:none;box-sizing:border-box;font-size: 100%;font-family: &quot;Calibri&quot;, &quot;Arial&quot;, sans-serif;padding:0.5em" placeholder="Write your message here"></textarea>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div style="text-align:center;width:100%;padding-left:10px;padding-right:10px">
+<button class="send-button" onclick="alert('hey')">SEND</button>
+</div>
