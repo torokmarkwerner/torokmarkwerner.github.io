@@ -2,6 +2,15 @@
     <title>reCAPTCHA demo: Simple page</title>
      <script src="https://www.google.com/recaptcha/api.js" async defer></script>
      <script>
+       function isEmpty() {
+         fields = document.getElementsByClassName("required-fields");
+         for (i=0; i<fields.length; i++) {
+           if (fields[i].value === "") {
+             alert("Please fill in the required fields.")
+             return false
+           }
+         }
+       }
        function onSubmit(token) {
          //document.getElementById("demo-form").submit();
          var xhr = new XMLHttpRequest();
@@ -23,9 +32,9 @@ xhttp.send();*/
   </head>
   <body>
     <form id='demo-form' >
-        Name: <input id="name" type="text" name="name" required><br>
-      Email: <input id="email" type="text" name="name" required><br>
-      Message: <input id="message" type="text" name="name" required><br>
+        Name: <input class="required-fields" id="name" type="text" name="name" required><br>
+      Email: <input class="required-fields" id="email" type="text" name="name" required><br>
+      Message: <input class="required-fields" id="message" type="text" name="name" required><br>
 <input class="g-recaptcha" data-sitekey="6Ld802sgAAAAABSZiOb1YDO0ApjEkmx4PNVh03tM" data-callback='onSubmit' type="submit" data-action='submit' value="Send">
     </form>
 </body>
