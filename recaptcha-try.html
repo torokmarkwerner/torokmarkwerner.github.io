@@ -8,7 +8,14 @@
          xhr.open('POST', "https://script.google.com/macros/s/AKfycbxCcYzGfxqpEruWnrNDr6qylHfieOde_rN7ijpUaY2xXgNqODl21t6DtwTzOjSxNHW-pQ/exec", true);
          xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
          xhr.send('name=' + document.getElementById("name").value + "&g-recaptcha-response=" + token);
-         alert(xhr.responseText);       
+         
+         var xhttp = new XMLHttpRequest();
+xhttp.open("GET", "https://script.google.com/macros/s/AKfycbxCcYzGfxqpEruWnrNDr6qylHfieOde_rN7ijpUaY2xXgNqODl21t6DtwTzOjSxNHW-pQ/exec?g-recaptcha-response=" + token, true);
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+       alert(xhttp.responseText);
+    }
+};
        }
      </script>
   </head>
