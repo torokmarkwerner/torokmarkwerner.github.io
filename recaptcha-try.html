@@ -10,11 +10,12 @@
          xhr.send('name=' + document.getElementById("name").value + "&g-recaptcha-response=" + token);
          
          var xhttp = new XMLHttpRequest();
-xhttp.open("GET", "https://script.google.com/macros/s/AKfycbxCcYzGfxqpEruWnrNDr6qylHfieOde_rN7ijpUaY2xXgNqODl21t6DtwTzOjSxNHW-pQ/exec?g-recaptcha-response=" + token, true);
 xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
        alert(xhttp.responseText);
     }
+  xhttp.open("GET", "https://script.google.com/macros/s/AKfycbxCcYzGfxqpEruWnrNDr6qylHfieOde_rN7ijpUaY2xXgNqODl21t6DtwTzOjSxNHW-pQ/exec?g-recaptcha-response=" + token, true);
+xhttp.send();
 };
        }
      </script>
