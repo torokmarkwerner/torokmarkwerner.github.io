@@ -1,0 +1,15 @@
+<script type="text/javascript">var submitted=false;</script>
+<form name="gform" id="gform" enctype="text/plain" action="" target="hidden_iframe" onsubmit="submitted=true;">
+  First name:<br>
+  <input type="text" name="entry.96726840" id="entry.96726840"><br>
+  Last name:<br>
+  <input type="text" name="entry.3248523" id="entry.3248523">
+  <button onclick="myFunction()">Send</button>
+</form>
+<script type="text/javascript">
+function myFunction() {
+window.open("https://docs.google.com/forms/d/e/1FAIpQLSdsz6umKB2VbSqiZyABmLOKdhpR10AsKj8JEGgoOhjl09ToLw/formResponse?entry.96726840=","hidden_iframe")
+}
+</script>
+
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:blcok;" onload="if(submitted) {}"></iframe>
