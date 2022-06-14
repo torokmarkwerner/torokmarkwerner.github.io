@@ -7,10 +7,21 @@
 
 <button class="g-recaptcha" 
         data-sitekey="6Ld802sgAAAAABSZiOb1YDO0ApjEkmx4PNVh03tM" 
-        data-callback='onSubmit'>SEND</button>
+        data-callback='onSubmit' onclick="checkEmpties()">SEND</button>
         </form>
 
 <script>
+        function checkEmpties() {
+                fields = document.getElementsByClassName("required-fields");
+                for (i=0;i<fields.length;i++) {
+                if (fields[i].value === "") {
+                        alert("Fill in every required field.")
+                        return false
+                }
+                }
+                        
+        }
+        
 onSubmit = function(token) {
         alert(token)
 var xhttp = new XMLHttpRequest();
