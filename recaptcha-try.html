@@ -3,7 +3,7 @@
      <script src="https://www.google.com/recaptcha/api.js" async defer></script>
      <script>
        function onSubmit(token) {
-         //document.getElementById("demo-form").submit();
+         document.getElementById("demo-form").submit();
          var xhr = new XMLHttpRequest();
          xhr.open('POST', "https://script.google.com/macros/s/AKfycbxCcYzGfxqpEruWnrNDr6qylHfieOde_rN7ijpUaY2xXgNqODl21t6DtwTzOjSxNHW-pQ/exec", true);
          xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
