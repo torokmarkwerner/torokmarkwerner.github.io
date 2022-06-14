@@ -6,10 +6,11 @@
          //document.getElementById("demo-form").submit();
          var xhr = new XMLHttpRequest();
          xhr.open('POST', "https://script.google.com/macros/s/AKfycbxCcYzGfxqpEruWnrNDr6qylHfieOde_rN7ijpUaY2xXgNqODl21t6DtwTzOjSxNHW-pQ/exec", true);
-xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-xhr.onload = function() {
-        alert(xhr.responseText);
+xhr.onreadystatechange = function() {
+    if(xhr.readyState == 4 && xhr.status == 200) {
+        alert(http.responseText);
     }
+}
         xhr.send('name=' + document.getElementById("name").value + "&g-recaptcha-response=" + token);
 }        
        }
