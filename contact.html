@@ -23,7 +23,7 @@ permalink: /contact/
 
 <div id="demo-form">
 <p>Do you have any questions?</p>
-<p>Send me a message.</p>
+<p>Enter your <b>name</b>, your <b>name</b>, and send me a <b>message</b></p>
 <div style="width:100%">
 <table style="width:100%;  border-spacing: 20px;">
 <tbody>
@@ -42,11 +42,11 @@ permalink: /contact/
 <div style="text-align:center;width:100%;padding-left:10px;padding-right:10px">
 <button class="g-recaptcha send-button" 
         data-sitekey="6Ld802sgAAAAABSZiOb1YDO0ApjEkmx4PNVh03tM" 
-        data-callback='onSubmit' onclick="checkEmpties()">SEND</button>
+        data-callback='onSubmit'>SEND</button>
 </div>
 </div>
 <script>
-        function checkEmpties() {
+        /*function checkEmpties() {
                 fields = document.getElementsByClassName("required-fields");
                 for (i=0;i<fields.length;i++) {
                 if (fields[i].value === "") {
@@ -57,7 +57,7 @@ permalink: /contact/
                 }
                 }
                         
-        }
+        } */
         
 onSubmit = function(token) {
         //alert(token)
