@@ -25,17 +25,28 @@ permalink: /contact/
 <table style="width:100%;  border-spacing: 20px;">
 <tbody>
 <tr>
-<td><input style="width:100%;box-sizing:border-box;font-size:100%;font-family: 'Calibri';height:2em;padding:0.5em" placeholder="Name">
+<td><input id="name" style="width:100%;box-sizing:border-box;font-size:100%;font-family: 'Calibri';height:2em;padding:0.5em" placeholder="Name">
 </td>
-<td><input style="width:100%;box-sizing:border-box;font-size:100%;font-family: 'Calibri';height:2em;padding:0.5em" placeholder="Email">
+<td><input id="email" style="width:100%;box-sizing:border-box;font-size:100%;font-family: 'Calibri';height:2em;padding:0.5em" placeholder="Email">
 </td>
 </tr>
 <tr>
-<td colspan="2"><textarea type="text" style="height:100px;width:100%;resize:none;box-sizing:border-box;font-size: 100%;font-family: &quot;Calibri&quot;, &quot;Arial&quot;, sans-serif;padding:0.5em" placeholder="Write your message here"></textarea>
+<td colspan="2"><textarea id="message" type="text" style="height:100px;width:100%;resize:none;box-sizing:border-box;font-size: 100%;font-family: &quot;Calibri&quot;, &quot;Arial&quot;, sans-serif;padding:0.5em" placeholder="Write your message here"></textarea>
 </td>
 </tr>
 </tbody></table>
 </div>
 <div style="text-align:center;width:100%;padding-left:10px;padding-right:10px">
-<button class="send-button" onclick="alert('hey')">SEND</button>
+<button class="send-button" onclick="sendMessage()">SEND</button>
 </div>
+<script>
+  function sendMessage() {
+  errorData = "https://script.google.com/macros/s/AKfycbxCcYzGfxqpEruWnrNDr6qylHfieOde_rN7ijpUaY2xXgNqODl21t6DtwTzOjSxNHW-pQ/exec"
+  var xhr = new XMLHttpRequest();
+  xhr.open('POST', errorData, true);
+xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+xhr.send('name=' + document.getElementById("name").value + '&email=' + document.getElementById("email").value + '&message=' + document.getElementById("name").value)
+    
+//+ new Date().toLocaleDateString() + "%20" + new Date().toLocaleTimeString() + '&error=' + el.value + '&type=Not%20Found%20In%20Dictionary&where=' + where);
+         }
+</script>
