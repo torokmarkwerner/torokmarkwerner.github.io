@@ -21,10 +21,11 @@ permalink: /contact/
 
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
+<div id="demo-form" style="text-align:center">
 <p>Do you have any questions?</p>
 <p>Send me a message.</p>
 <div style="width:100%">
-<table id="demo-form" style="width:100%;  border-spacing: 20px;">
+<table style="width:100%;  border-spacing: 20px;">
 <tbody>
 <tr>
 <td><input class="required-fields" id="name" style="width:100%;box-sizing:border-box;font-size:100%;font-family: 'Calibri';height:2em;padding:0.5em" placeholder="Name">
@@ -42,6 +43,7 @@ permalink: /contact/
 <button class="g-recaptcha send-button" 
         data-sitekey="6Ld802sgAAAAABSZiOb1YDO0ApjEkmx4PNVh03tM" 
         data-callback='onSubmit' onclick="checkEmpties()">SEND</button>
+</div>
 </div>
 <script>
         function checkEmpties() {
