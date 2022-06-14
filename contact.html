@@ -19,37 +19,63 @@ permalink: /contact/
 }
 </style>
 
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 <p>Do you have any questions?</p>
 <p>Send me a message.</p>
 <div style="width:100%">
-<table style="width:100%;  border-spacing: 20px;">
+<table id="demo-form" style="width:100%;  border-spacing: 20px;">
 <tbody>
 <tr>
-<td><input id="name" style="width:100%;box-sizing:border-box;font-size:100%;font-family: 'Calibri';height:2em;padding:0.5em" placeholder="Name">
+<td><input class="required-fields" id="name" style="width:100%;box-sizing:border-box;font-size:100%;font-family: 'Calibri';height:2em;padding:0.5em" placeholder="Name">
 </td>
-<td><input id="email" style="width:100%;box-sizing:border-box;font-size:100%;font-family: 'Calibri';height:2em;padding:0.5em" placeholder="Email">
+<td><input class="required-fields" id="email" style="width:100%;box-sizing:border-box;font-size:100%;font-family: 'Calibri';height:2em;padding:0.5em" placeholder="Email">
 </td>
 </tr>
 <tr>
-<td colspan="2"><textarea id="message" type="text" style="height:100px;width:100%;resize:none;box-sizing:border-box;font-size: 100%;font-family: &quot;Calibri&quot;, &quot;Arial&quot;, sans-serif;padding:0.5em" placeholder="Write your message here"></textarea>
+<td colspan="2"><textarea class="required-fields" id="message" type="text" style="height:100px;width:100%;resize:none;box-sizing:border-box;font-size: 100%;font-family: &quot;Calibri&quot;, &quot;Arial&quot;, sans-serif;padding:0.5em" placeholder="Write your message here"></textarea>
 </td>
 </tr>
 </tbody></table>
 </div>
 <div style="text-align:center;width:100%;padding-left:10px;padding-right:10px">
-   <script src="https://www.google.com/recaptcha/api.js"></script>
-<button class="send-button g-recaptcha" 
+<button class="g-recaptcha send-button" 
         data-sitekey="6Ld802sgAAAAABSZiOb1YDO0ApjEkmx4PNVh03tM" 
-        data-callback='sendMessage' onclick="sendMessage()">SEND</button>
+        data-callback='onSubmit' onclick="checkEmpties()">SEND</button>
 </div>
 <script>
-  function sendMessage() {
-  errorData = "https://script.google.com/macros/s/AKfycbxCcYzGfxqpEruWnrNDr6qylHfieOde_rN7ijpUaY2xXgNqODl21t6DtwTzOjSxNHW-pQ/exec"
-  var xhr = new XMLHttpRequest();
-  xhr.open('POST', errorData, true);
-xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-xhr.send('name=' + document.getElementById("name").value + '&email=' + document.getElementById("email").value + '&message=' + document.getElementById("message").value)
-    
+        function checkEmpties() {
+                fields = document.getElementsByClassName("required-fields");
+                for (i=0;i<fields.length;i++) {
+                if (fields[i].value === "") {
+                     fields[i].style.border = "red 2pt solid";
+                     fields[i].addEventListener("click",function (){this.style.border = "black 1pt solid"})
+                } else {
+                fields[i].style.border = "black 1pt solid"
+                }
+                }
+                        
+        }
+        
+onSubmit = function(token) {
+        alert(token)
+var xhttp = new XMLHttpRequest();
+xhttp.open("POST", "https://script.google.com/macros/s/AKfycbxCcYzGfxqpEruWnrNDr6qylHfieOde_rN7ijpUaY2xXgNqODl21t6DtwTzOjSxNHW-pQ/exec", true);
+
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+       // Typical action to be performed when the document is ready:
+       if (xhttp.responseText === "GOOD") {
+        document.getElementById("demo-form").innerHTML = "<div>Your message has been sent. It will be answered soon.</div>"       
+       } else if (xhttp.responseText === "ERROR") {
+        document.getElementById("demo-form").innerHTML = "<div>Something went wrong. Try again.</div>"       
+       }
+    }
+};
+
+xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+         xhttp.send('name=' + document.getElementById("name").value + "&g-recaptcha-response=" + token + "&email=" + document.getElementById("email").value + "&message=" + document.getElementById("message").value);
+}
+
 //+ new Date().toLocaleDateString() + "%20" + new Date().toLocaleTimeString() + '&error=' + el.value + '&type=Not%20Found%20In%20Dictionary&where=' + where);
-         }
 </script>
