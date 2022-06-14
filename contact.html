@@ -37,7 +37,10 @@ permalink: /contact/
 </tbody></table>
 </div>
 <div style="text-align:center;width:100%;padding-left:10px;padding-right:10px">
-<button class="send-button" onclick="sendMessage()">SEND</button>
+   <script src="https://www.google.com/recaptcha/api.js"></script>
+<button class="send-button g-recaptcha" 
+        data-sitekey="6Ld802sgAAAAABSZiOb1YDO0ApjEkmx4PNVh03tM" 
+        data-callback='sendMessage' onclick="sendMessage()">SEND</button>
 </div>
 <script>
   function sendMessage() {
