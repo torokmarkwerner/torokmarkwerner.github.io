@@ -15,6 +15,7 @@
                 fields = document.getElementsByClassName("required-fields");
                 for (i=0;i<fields.length;i++) {
                 if (fields[i].value === "") {
+                        fields[i].style.backgroundColor = "red"
                         alert("Fill in every required field.")
                         return false
                 }
