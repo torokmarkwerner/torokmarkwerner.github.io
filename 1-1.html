@@ -19,7 +19,11 @@ xhttp.open("POST", "https://script.google.com/macros/s/AKfycbxCcYzGfxqpEruWnrNDr
 xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
        // Typical action to be performed when the document is ready:
-       alert(xhttp.responseText);
+       if (xhttp.responseText === "GOOD") {
+        document.getElementById("demo-form").innerHTML = "<div>Your message has been sent. It will be answered soon.</div>"       
+       } else {
+        document.getElementById("demo-form").innerHTML = "<div>Something went wrong. Try again.</div>"       
+       }
     }
 };
 
