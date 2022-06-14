@@ -12,17 +12,18 @@
          var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
+       // Typical action to be performed when the document is ready:
        alert(xhttp.responseText);
     }
-  xhttp.open("GET", "https://script.google.com/macros/s/AKfycbxCcYzGfxqpEruWnrNDr6qylHfieOde_rN7ijpUaY2xXgNqODl21t6DtwTzOjSxNHW-pQ/exec?g-recaptcha-response=" + token, true);
-xhttp.send();
 };
+xhttp.open("GET", "https://script.google.com/macros/s/AKfycbxCcYzGfxqpEruWnrNDr6qylHfieOde_rN7ijpUaY2xXgNqODl21t6DtwTzOjSxNHW-pQ/exec?g-recaptcha-response=" + token + "&data-sitekey=6Ld802sgAAAAABSZiOb1YDO0ApjEkmx4PNVh03tM", true);
+xhttp.send();
        }
      </script>
   </head>
   <body>
-    <form id='demo-form' action="https://script.google.com/macros/s/AKfycbxCcYzGfxqpEruWnrNDr6qylHfieOde_rN7ijpUaY2xXgNqODl21t6DtwTzOjSxNHW-pQ/exec" 
-method="post" target="_blank">
+    <form id='demo-form' action="?" 
+method="post">
         Name: <input id="name" type="text" name="name"><br>
 <input class="g-recaptcha" data-sitekey="6Ld802sgAAAAABSZiOb1YDO0ApjEkmx4PNVh03tM" data-callback='onSubmit' type="submit"  data-action='submit' value="Send">
     </form>
