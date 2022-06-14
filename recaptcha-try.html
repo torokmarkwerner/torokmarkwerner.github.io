@@ -10,33 +10,9 @@
   </head>
   <body>
     <form id='demo-form' action="https://script.google.com/macros/s/AKfycbxCcYzGfxqpEruWnrNDr6qylHfieOde_rN7ijpUaY2xXgNqODl21t6DtwTzOjSxNHW-pQ/exec" 
-method="post" target="_self">
+method="post" target="_blank">
         Name: <input type="text" name="name"><br>
 <input class="g-recaptcha" data-sitekey="6Ld802sgAAAAABSZiOb1YDO0ApjEkmx4PNVh03tM
 " data-callback='onSubmit' type="submit"  data-action='submit' value="Send">
     </form>
   </body>
-  
-    <head>
-    <base target="_top">
-    <script src='https://www.google.com/recaptcha/api.js'></script>
-    <script>
-      function showResp(resp){
-        alert(resp)
-        console.log(resp)
-      }
-    </script>
-  </head>
-  <body>
-     
-    <form action="?" method="POST">
-      <div class="g-recaptcha" data-sitekey="6Ld802sgAAAAABSZiOb1YDO0ApjEkmx4PNVh03tM"></div>
-      <br/>
-      <input type="button" value="Submit"
-        onclick="google.script.run
-            .withSuccessHandler(showResp)
-            .processForm(this.parentNode)" />
-    </form>
-    
-  </body>
-</html>
