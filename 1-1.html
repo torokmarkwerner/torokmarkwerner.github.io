@@ -21,7 +21,7 @@ xhttp.onreadystatechange = function() {
        // Typical action to be performed when the document is ready:
        if (xhttp.responseText === "GOOD") {
         document.getElementById("demo-form").innerHTML = "<div>Your message has been sent. It will be answered soon.</div>"       
-       } else {
+       } else if (xhttp.responseText === "ERROR") {
         document.getElementById("demo-form").innerHTML = "<div>Something went wrong. Try again.</div>"       
        }
     }
