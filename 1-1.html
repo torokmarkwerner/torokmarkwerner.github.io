@@ -6,13 +6,12 @@
       Message: <input class="required-fields" id="message" type="text" name="name" required><br>
 
 <button class="g-recaptcha" 
-        data-sitekey="reCAPTCHA_site_key" 
-        data-callback='onSubmit' 
-        data-action='submit' onclick="myFunction(this.value)">SEND</button>
+        data-sitekey="6Ld802sgAAAAABSZiOb1YDO0ApjEkmx4PNVh03tM" 
+        data-callback='onSubmit'>SEND</button>
         </form>
 
 <script>
-function myFunction(token) {
+onSubmit = function(token) {
         alert(token)
 var xhttp = new XMLHttpRequest();
 xhttp.open("POST", "https://script.google.com/macros/s/AKfycbxCcYzGfxqpEruWnrNDr6qylHfieOde_rN7ijpUaY2xXgNqODl21t6DtwTzOjSxNHW-pQ/exec", true);
