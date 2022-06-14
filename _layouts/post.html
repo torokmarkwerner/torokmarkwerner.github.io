@@ -6,7 +6,12 @@ layout: default
     width:100%;
   }
 </style>
-<p>{{ page.date | date: "%-d %B %Y" }}</p>
+<p>{{ page.date | date: "%-d %B %Y" }}  | <span class="ert">
+    ERT:
+    {% assign words = page.content | strip_html | number_of_words %}
+    {% assign ert = words | divided_by:250 | at_least: 1 %}
+    {{ ert }} min{% if ert != 1 %}s{% endif %}
+</span></p>
 
 {{ content }}
 <script>
