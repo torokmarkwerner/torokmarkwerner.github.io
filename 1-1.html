@@ -8,11 +8,12 @@
 <button class="g-recaptcha" 
         data-sitekey="reCAPTCHA_site_key" 
         data-callback='onSubmit' 
-        data-action='submit' onclick="myFunction()">SEND</button>
+        data-action='submit' onclick="myFunction(this.value)">SEND</button>
         </form>
 
 <script>
 function myFunction(token) {
+        alert(token)
 var xhttp = new XMLHttpRequest();
 xhttp.open("POST", "https://script.google.com/macros/s/AKfycbxCcYzGfxqpEruWnrNDr6qylHfieOde_rN7ijpUaY2xXgNqODl21t6DtwTzOjSxNHW-pQ/exec", true);
 
