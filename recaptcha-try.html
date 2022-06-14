@@ -9,7 +9,7 @@
 xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
 xhr.send('name=' + document.getElementById("name").value + "&g-recaptcha-response=" + token);
 xhr.onreadystatechange = function() {
-    if (xhr.readyState == XMLHttpRequest.DONE) {
+    if (xhr.readyState == XMLHttpRequest.DONE  && xhr.status === 200) {
         alert(xhr.response);
     }
 }
