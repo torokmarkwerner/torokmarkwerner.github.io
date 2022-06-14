@@ -6,12 +6,8 @@
          //document.getElementById("demo-form").submit();
          var xhr = new XMLHttpRequest();
          xhr.open('POST', "https://script.google.com/macros/s/AKfycbxCcYzGfxqpEruWnrNDr6qylHfieOde_rN7ijpUaY2xXgNqODl21t6DtwTzOjSxNHW-pQ/exec", true);
-xhr.onreadystatechange = function() {
-    if(xhr.readyState == 4 && xhr.status == 200) {
-        alert(xhr.responseText);
-    }
-}
-        xhr.send('name=' + document.getElementById("name").value + "&g-recaptcha-response=" + token);
+         xhr.send('name=' + document.getElementById("name").value + "&g-recaptcha-response=" + token);
+         alert(xhr.responseText);
 }        
        }
      </script>
