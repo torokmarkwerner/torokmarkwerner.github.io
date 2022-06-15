@@ -3,33 +3,102 @@ layout: default
 title: "About"
 permalink: /about/
 ---
-
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</p><p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</p><p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</p><p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</p><p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</p><p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</p><p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Ask away.
 </p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</p>
+<div id="qAndA" style="height:;overflow:hidden;padding-bottom:">
+<span></span>
 </div>
 
-</div>
+<div><b>You:</b> <span id="question"></span></div>
+<div id="words" style="padding:1em"></div>
 
-</body>
+<script>
+qAndAObject = {
+"What is your favourite colour?":"Blue.",
+"What is your name?":"My name is Mark.",
+"Who are you?":"My name is Mark.",
+"Where do you live?":"I live in Budapest, Hungary.",
+"When were you born?":"I was born in 1998.",
+"What do you do in your free time?":"I like playing board games and watching horror movies.",
+"What musical instruments do you play?":"I play the guitar and the piano.",
+"Why did you become a teacher?":"It is something that makes me happy.",
+"How are you?":"I'm fine, thanks.",
+"What are you afraid of?":"I'm afraid of deep waters because I can't swim.",
+"Who is your hero?":"I highly respect Trevor Noah. He grew up in South Africa as a mixed child during apartheid to become one of the wittiest comedian around the globe.",
+"How does it feel to be your age?":"Kids have time and energy, but no money. Adults have energy and money, but no time. Elderly people have both time and money but no energy.",
+"What makes you different from others?":"I have a birthmark on my right wrist.",
+"What inspires you?":"Crazy cats. They jump, even though they surely know they're not going to make it."
+}
+
+n = 0;
+words = [];
+
+//alert(Object.keys(qAndAObject)[0].indexOf("hat is your"))
+function startAsking() {
+for (i=0; i<Object.keys(qAndAObject).length; i++) {
+if (words.filter(item => item == Object.keys(qAndAObject)[i].split(" ")[n]).length < 1) {
+words.push(Object.keys(qAndAObject)[i].split(" ").slice(0,n+1))
+}
+}
+
+for (i=0; i<words.length; i++) {
+span = document.createElement("SPAN");
+span.style.padding = "1em";
+span.innerHTML = words[i];
+span.addEventListener("click",function() {addWord(this.innerHTML)});
+document.getElementById("words").appendChild(span);
+}
+n++
+words = []
+}
+
+startAsking()
+
+function addWord(el) {
+
+document.getElementById("question").append(" ")
+document.getElementById("question").append(el)
+
+for (i=0; i<Object.keys(qAndAObject).length; i++) {
+if (Object.keys(qAndAObject)[i].split(" ").slice(0,n).join(" ") === document.getElementById("question").innerText && words.filter(item => item === Object.keys(qAndAObject)[i].split(" ")[n]).length < 1 && Object.keys(qAndAObject)[i] != document.getElementById("question").innerText) {
+words.push(Object.keys(qAndAObject)[i].split(" ")[n]);
+} 
+}
+
+document.getElementById("words").innerHTML = "";
+//alert(words.length)
+
+if (words.length === 0) {
+//finding the question
+document.getElementById("qAndA").innerHTML = "<span></span>";
+question = document.createElement("DIV");
+question.innerHTML = "<b>You:</b> " + Object.keys(qAndAObject).filter(item => item === document.getElementById("question").innerText);
+//question.style.paddingTop = "1.5em"
+document.getElementById("qAndA").insertBefore(question,document.getElementById("qAndA").lastElementChild);
+
+answer = document.createElement("DIV");
+answer.innerHTML = "<b>TM:</b> " + qAndAObject[Object.keys(qAndAObject).filter(item => item === document.getElementById("question").innerText)]
+answer.style.paddingBottom = "1.5em"
+//alert(document.getElementById("qAndA").lastElementChild.innerHTML)
+document.getElementById("qAndA").insertBefore(answer,document.getElementById("qAndA").lastElementChild);
+document.getElementById("question").innerHTML = ""
+document.getElementById("qAndA").lastElementChild.scrollIntoView(true)
+n = 0
+startAsking();
+} else {
+for (i=0; i<words.length; i++) {
+span = document.createElement("SPAN");
+span.style.padding = "1em";
+span.innerHTML = words[i];
+span.addEventListener("click",function() {addWord(this.innerHTML)});
+document.getElementById("words").appendChild(span);
+}
+n++
+}
+
+words = []
+
+}
+
+</script>
