@@ -13,10 +13,10 @@ permalink: /about/
 Ask away.
 </p>
 <div id="qAndA" style="height:;overflow:hidden;padding-bottom:">
-<span></span>
+ <span><b>TM:</b> Hello there! What would you like to know?</span>
 </div>
 
-<div><b>You:</b> <span id="question"></span></div>
+<div style="padding-top:0.5em"><b>You:</b> <span id="question"></span></div>
 <div id="words" style="padding:1em"></div>
 
 <script>
@@ -80,12 +80,12 @@ if (words.length === 0) {
 document.getElementById("qAndA").innerHTML = "<span></span>";
 question = document.createElement("DIV");
 question.innerHTML = "<b>You:</b> " + Object.keys(qAndAObject).filter(item => item === document.getElementById("question").innerText);
-//question.style.paddingTop = "1.5em"
+question.style.padding = "0.5em"
 document.getElementById("qAndA").insertBefore(question,document.getElementById("qAndA").lastElementChild);
 
 answer = document.createElement("DIV");
 answer.innerHTML = "<b>TM:</b> " + qAndAObject[Object.keys(qAndAObject).filter(item => item === document.getElementById("question").innerText)]
-answer.style.paddingBottom = "1.5em"
+answer.style.padding = "0.5em"
 //alert(document.getElementById("qAndA").lastElementChild.innerHTML)
 document.getElementById("qAndA").insertBefore(answer,document.getElementById("qAndA").lastElementChild);
 document.getElementById("question").innerHTML = ""
