@@ -38,7 +38,6 @@ function checkVisibility(eventType){
   if (containers[i].getBoundingClientRect().bottom > window.innerHeight) {
    //alert("containers[" + i + "].getBoundingClientRect().bottom < window.innerHeight = " + " " + (containers[i].getBoundingClientRect().bottom < window.innerHeight) + " BOTTOM: " + containers[i].getBoundingClientRect().bottom + " WINDOWHEIGHT: " + window.innerHeight);
   containers[i].parentElement.style.opacity = 0;
-  document.getElementsByClassName("scrollForMore")[0].style.transition = "opacity 0.5s";
     document.getElementsByClassName("scrollForMore")[0].style.opacity = 1;
   } else {
     document.getElementsByClassName("scrollForMore")[0].style.opacity = 0;
@@ -51,7 +50,7 @@ function checkVisibility(eventType){
     
     
   window.addEventListener("scroll",function() {checkVisibility()})
-    window.addEventListener("load", function() {checkVisibility() document.querySelectorAll(".container").style.transition = "all 0.5s;"})
+    window.addEventListener("load", function() {checkVisibility() document.querySelectorAll(".container")[0].style.transition = "all 0.5s;"})
   
   
  
