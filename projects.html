@@ -3,6 +3,29 @@ layout: default
 title: "Projects"
 permalink: /projects/
 ---
+  <script>
+    containers = document.getElementsByClassName("divy");
+    //alert(containers.length)
+    
+function checkVisibility(){
+
+  for (i=0; i<containers.length; i++) {
+  if (containers[i].getBoundingClientRect().bottom > window.innerHeight) {
+   //alert("containers[" + i + "].getBoundingClientRect().bottom < window.innerHeight = " + " " + (containers[i].getBoundingClientRect().bottom < window.innerHeight) + " BOTTOM: " + containers[i].getBoundingClientRect().bottom + " WINDOWHEIGHT: " + window.innerHeight);
+  containers[i].parentElement.style.visibility = "hidden"
+  } else {
+  containers[i].parentElement.style.visibility = "visible"
+  }
+  }
+  }
+
+checkVisibility()
+  
+  window.addEventListener("scroll",function() {checkVisibility()})
+  
+  
+ 
+  </script>
 <style>
 .divy {
   font-size:2.5vw;
