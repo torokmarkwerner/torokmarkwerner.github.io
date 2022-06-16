@@ -45,7 +45,9 @@ function checkVisibility(){
     document.getElementsByClassName("scrollForMore")[Math.floor(i/2)].style.opacity = 0;
   } else {
       containers[i].parentElement.style.visibility = "visible"
+    if (document.getElementsByClassName("scrollForMore")[Math.floor(i/2)-1]) {
     document.getElementsByClassName("scrollForMore")[Math.floor(i/2)-1].style.opacity = 0;
+    }
     document.getElementsByClassName("scrollForMore")[Math.floor(i/2)].style.opacity = 1;
   containers[i].parentElement.style.opacity = 1;
   }
