@@ -37,7 +37,7 @@ permalink: /projects/
     
 function checkVisibility(){
 
-  for (i=2; i<containers.length; i++) {
+  for (i=0; i<containers.length; i++) {
   if (containers[i].getBoundingClientRect().bottom > window.innerHeight) {
    //alert("containers[" + i + "].getBoundingClientRect().bottom < window.innerHeight = " + " " + (containers[i].getBoundingClientRect().bottom < window.innerHeight) + " BOTTOM: " + containers[i].getBoundingClientRect().bottom + " WINDOWHEIGHT: " + window.innerHeight);
   containers[i].parentElement.style.opacity = 0;
