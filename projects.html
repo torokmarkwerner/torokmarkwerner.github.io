@@ -42,10 +42,10 @@ function checkVisibility(){
    //alert("containers[" + i + "].getBoundingClientRect().bottom < window.innerHeight = " + " " + (containers[i].getBoundingClientRect().bottom < window.innerHeight) + " BOTTOM: " + containers[i].getBoundingClientRect().bottom + " WINDOWHEIGHT: " + window.innerHeight);
   containers[i].parentElement.style.opacity = 0;
     containers[i].parentElement.style.visibility = "hidden"
-    document.getElementsByClassName("scrollForMore")[0].style.opacity = 1;
+    document.getElementsByClassName("scrollForMore")[Math.round(i/2)].style.opacity = 1;
   } else {
       containers[i].parentElement.style.visibility = "visible"
-    document.getElementsByClassName("scrollForMore")[0].style.opacity = 0;
+    document.getElementsByClassName("scrollForMore")[Math.round(i/2)].style.opacity = 0;
   containers[i].parentElement.style.opacity = 1;
   }
   }
@@ -58,10 +58,10 @@ function checkVisibility(){
     window.addEventListener("load", function() {for (i=0; i<containers.length; i++) {
   if (containers[i].getBoundingClientRect().bottom > window.innerHeight) {
     containers[i].parentElement.style.visibility = "hidden"
-    document.getElementsByClassName("scrollForMore")[0].style.opacity = 1;
+    document.getElementsByClassName("scrollForMore")[Math.round(i/2)].style.opacity = 1;
   } else {
       containers[i].parentElement.style.visibility = "visible"
-    document.getElementsByClassName("scrollForMore")[0].style.opacity = 0;
+    document.getElementsByClassName("scrollForMore")[Math.round(i/2)].style.opacity = 0;
   }
   }});
   //////////////////////////////////////////////////////////////////////////////////
