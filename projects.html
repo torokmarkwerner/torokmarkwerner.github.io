@@ -17,8 +17,30 @@ function checkVisibility(){
   containers[i].parentElement.style.visibility = "visible"
   }
   }
+  
+             if (containers[containers.length-1].parentElement.style.visibility === "visible" && document.getElementsByClassName("scrollForMore").length > 0) {
+         document.getElementsByClassName("scrollForMore")[0].remove()
+         } else {
+         for (i=2; i<containers.length; i++) {
+           if (containers[i].parentElement.style.visibility === "hidden") {
+           scrollForMore = document.createElement("DIV");
+           scrollForMore.style.gridColumn = "1/span 2"
+           scrollForMore.innerHTML = "[SCROLL DOWN FOR MORE]";
+           scrollForMore.style.fontSize = "2vw"
+           scrollForMore.style.textAlign = "center"
+           scrollForMore.className = "scrollForMore";
+           if (document.getElementsByClassName("scrollForMore").length < 1) {
+           containers[i].parentElement.parentElement.insertBefore(scrollForMore,containers[i].parentElement)
+           }
+           break
+           }
+           }
+           }
+  
   }
   
+    
+    
   window.addEventListener("scroll",function() {checkVisibility()})
     window.addEventListener("load", function() {checkVisibility()})
   
