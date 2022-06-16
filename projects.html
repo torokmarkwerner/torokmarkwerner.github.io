@@ -33,7 +33,7 @@ permalink: /projects/
     containers = document.getElementsByClassName("divy");
     //alert(containers.length)
     
-function checkVisibility(eventType){
+function checkVisibility(){
 
   for (i=0; i<containers.length; i++) {
   if (containers[i].getBoundingClientRect().bottom > window.innerHeight) {
@@ -53,8 +53,16 @@ function checkVisibility(eventType){
     
     
   window.addEventListener("scroll",function() {checkVisibility()})
-    window.addEventListener("load", function() {checkVisibility()})
-  
+    window.addEventListener("load", function() {for (i=0; i<containers.length; i++) {
+  if (containers[i].getBoundingClientRect().bottom > window.innerHeight) {
+    containers[i].parentElement.style.visibility = "hidden"
+    document.getElementsByClassName("scrollForMore")[0].style.opacity = 1;
+  } else {
+      containers[i].parentElement.style.visibility = "visible"
+    document.getElementsByClassName("scrollForMore")[0].style.opacity = 0;
+  }
+  }});
+  //////////////////////////////////////////////////////////////////////////////////
   
  
   </script>
