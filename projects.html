@@ -13,6 +13,7 @@ function checkVisibility(){
   if (containers[i].getBoundingClientRect().bottom > window.innerHeight) {
    //alert("containers[" + i + "].getBoundingClientRect().bottom < window.innerHeight = " + " " + (containers[i].getBoundingClientRect().bottom < window.innerHeight) + " BOTTOM: " + containers[i].getBoundingClientRect().bottom + " WINDOWHEIGHT: " + window.innerHeight);
   containers[i].parentElement.style.visibility = "hidden"
+    document.getElementsByClassName("scrollForMore")[0].style.visibility = "visible";
   } else {
     document.getElementsByClassName("scrollForMore")[0].style.visibility = "hidden";
   containers[i].parentElement.style.visibility = "visible"
