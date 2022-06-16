@@ -41,7 +41,6 @@ function checkVisibility(){
   if (containers[i].getBoundingClientRect().bottom > window.innerHeight) {
    //alert("containers[" + i + "].getBoundingClientRect().bottom < window.innerHeight = " + " " + (containers[i].getBoundingClientRect().bottom < window.innerHeight) + " BOTTOM: " + containers[i].getBoundingClientRect().bottom + " WINDOWHEIGHT: " + window.innerHeight);
   containers[i].parentElement.style.opacity = 0;
-    containers[i].parentElement.style.visibility = "hidden"
     document.getElementsByClassName("scrollForMore")[Math.floor(i/2)].style.opacity = 0;
   } else {
       containers[i].parentElement.style.visibility = "visible"
