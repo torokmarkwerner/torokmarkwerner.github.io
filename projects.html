@@ -18,6 +18,7 @@ permalink: /projects/
   display:table;
   width:15vw;
   height:15vw;
+  transition: opacity 0.5s;
 }
 
 .container:hover {
@@ -38,8 +39,10 @@ function checkVisibility(eventType){
   if (containers[i].getBoundingClientRect().bottom > window.innerHeight) {
    //alert("containers[" + i + "].getBoundingClientRect().bottom < window.innerHeight = " + " " + (containers[i].getBoundingClientRect().bottom < window.innerHeight) + " BOTTOM: " + containers[i].getBoundingClientRect().bottom + " WINDOWHEIGHT: " + window.innerHeight);
   containers[i].parentElement.style.opacity = 0;
+    containers[i].parentElement.style.visibility = "hidden"
     document.getElementsByClassName("scrollForMore")[0].style.opacity = 1;
   } else {
+      containers[i].parentElement.style.visibility = "visible"
     document.getElementsByClassName("scrollForMore")[0].style.opacity = 0;
   containers[i].parentElement.style.opacity = 1;
   }
