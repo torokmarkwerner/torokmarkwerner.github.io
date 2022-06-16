@@ -37,15 +37,16 @@ permalink: /projects/
     
 function checkVisibility(){
 
-  for (i=0; i<containers.length; i++) {
+  for (i=2; i<containers.length; i++) {
   if (containers[i].getBoundingClientRect().bottom > window.innerHeight) {
    //alert("containers[" + i + "].getBoundingClientRect().bottom < window.innerHeight = " + " " + (containers[i].getBoundingClientRect().bottom < window.innerHeight) + " BOTTOM: " + containers[i].getBoundingClientRect().bottom + " WINDOWHEIGHT: " + window.innerHeight);
   containers[i].parentElement.style.opacity = 0;
     containers[i].parentElement.style.visibility = "hidden"
-    document.getElementsByClassName("scrollForMore")[Math.floor(i/2)-1].style.opacity = 1;
+    document.getElementsByClassName("scrollForMore")[Math.floor(i/2)].style.opacity = 0;
   } else {
       containers[i].parentElement.style.visibility = "visible"
     document.getElementsByClassName("scrollForMore")[Math.floor(i/2)-1].style.opacity = 0;
+    document.getElementsByClassName("scrollForMore")[Math.floor(i/2)].style.opacity = 1;
   containers[i].parentElement.style.opacity = 1;
   }
   }
