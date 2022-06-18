@@ -127,8 +127,6 @@ xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 xhttp.send('name=' + commenterNameData + '&checked=' + commenterCheckBoxcheckedData + "&g-recaptcha-response=" + token + "&comment=" + commenterCommentData + "&link=" + window.location.href + "&reply-to=" + replyTo + "&reply-to-name=" + replyToName);
 }
   
-  document.getElementsByClassName("submit-button")[0].addEventListener("click",function() {alert(token)});
-
 document.getElementById("leave-a-comment").addEventListener("click",function(){
 document.getElementById("leave-a-comment").classList.remove("leave-a-comment1");
   container = document.getElementsByClassName("comment-form-container")[document.getElementsByClassName("comment-form-container").length-1];
@@ -236,14 +234,12 @@ document.getElementById("demo").appendChild(commentBody)
      }
      }
      this.style.display = "none";
-     div = document.createElement("DIV");
      document.getElementsByClassName("comment-form-container")[document.getElementsByClassName("comment-form-container").length-1].style.display = "block"
-     div.innerHTML = sampleForm.innerHTML;
      document.getElementsByClassName("comment-form-container")[document.getElementsByClassName("comment-form-container").length-1].style.display = "none"
   
      div.children[0].style.padding = 0;
      this.parentElement.style.display = "block";
-     this.parentElement.appendChild(div)
+     this.parentElement.appendChild(sampleForm)
      submitButton();
      })
      }
