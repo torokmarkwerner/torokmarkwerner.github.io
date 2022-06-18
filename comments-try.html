@@ -2,9 +2,9 @@
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <script>
 onSubmit = function(token){
-alert(token)
-button = this;
-container = this.parentElement.parentElement.parentElement.parentElement.parentElement;
+alert(event.target + " " + token)
+button = event.target;
+container = button.parentElement.parentElement.parentElement.parentElement.parentElement;
     //name	comment	link	recaptcha	reply-to	reply-to-name checked
 alert('name=' + container.getElementsByTagName("input")[0].value + '&checked=' + container.getElementsByTagName("input")[1].checked + "&g-recaptcha-response=" + token + "&comment=" + encodeURIComponent(container.getElementsByTagName("textarea")[0].value) + "&link=" + window.location.href + "&reply-to=" + replyTo + "&reply-to-name=" + replyToName);
 
