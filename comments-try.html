@@ -78,9 +78,16 @@ Submit
 replyTo = ""
 replyToName = ""
 
-onSubmit = function(e,token){
-alert(token)
-button = e.target;
+function submitButton(){
+document.getElementsByClassName("submit-button")[0].setAttribute("data-sitekey","6Ld802sgAAAAABSZiOb1YDO0ApjEkmx4PNVh03tM")
+document.getElementsByClassName("submit-button")[0].setAttribute("data-callback","onSubmit")
+document.getElementsByClassName("submit-button")[0].classList.add("g-recaptcha")
+}
+
+loadXMLDoc()
+submitButton()
+onSubmit = function(token){
+button = this;
 container = this.parentElement.parentElement.parentElement.parentElement.parentElement;
     //name	comment	link	recaptcha	reply-to	reply-to-name checked
 alert('name=' + container.getElementsByTagName("input")[0].value + '&checked=' + container.getElementsByTagName("input")[1].checked + "&g-recaptcha-response=" + token + "&comment=" + encodeURIComponent(container.getElementsByTagName("textarea")[0].value) + "&link=" + window.location.href + "&reply-to=" + replyTo + "&reply-to-name=" + replyToName);
@@ -105,16 +112,6 @@ xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 xhttp.send('name=' + container.getElementsByTagName("input")[0].value + '&checked=' + container.getElementsByTagName("input")[1].checked + "&g-recaptcha-response=" + 11/* + token */ + "&comment=" + encodeURIComponent(container.getElementsByTagName("textarea")[0].value) + "&link=" + window.location.href + "&reply-to=" + replyTo + "&reply-to-name=" + replyToName);
 
 }
-
-function submitButton(){
-document.getElementsByClassName("submit-button")[0].setAttribute("data-sitekey","6Ld802sgAAAAABSZiOb1YDO0ApjEkmx4PNVh03tM")
-document.getElementsByClassName("submit-button")[0].setAttribute("data-callback","onSubmit")
-document.getElementsByClassName("submit-button")[0].className = "g-recaptcha send-button" 
-
-}
-
-loadXMLDoc()
-submitButton()
 
 document.getElementById("leave-a-comment").addEventListener("click",function(){
 document.getElementById("leave-a-comment").classList.remove("leave-a-comment1");
