@@ -133,7 +133,7 @@ document.getElementById("leave-a-comment").addEventListener("click",function(){
 document.getElementById("leave-a-comment").classList.remove("leave-a-comment1");
   container = document.getElementsByClassName("comment-form-container")[document.getElementsByClassName("comment-form-container").length-1];
   container.remove()
-  document.getElementById("leave-a-comment").classList.remove("leave-a-comment1").parentElement.append(sampleForm);
+  document.getElementById("leave-a-comment").classList.remove("leave-a-comment1").parentElement.appendChild(sampleForm);
 submitButton();
 
  for (i=0; i<replyButtons.length; i++) {
