@@ -130,7 +130,7 @@ xhttp.send('name=' + commenterNameData + '&checked=' + commenterCheckBoxcheckedD
 document.getElementById("leave-a-comment").addEventListener("click",function(){
 document.getElementById("leave-a-comment").classList.remove("leave-a-comment1");
   container = document.getElementsByClassName("comment-form-container")[document.getElementsByClassName("comment-form-container").length-1];
-  if(container.innerText != "Thank you, your comment will be visible after approval.") {
+  if(container.innerText === "Thank you, your comment will be visible after approval.") {
   container.innerHTML = ""
     sampleForm =  document.createElement("DIV");
   sampleForm.innerHTML = '<table style="width:100%"><tbody><tr><td style="width:50%"><div style="width:100%"><input type="text" style="width:100%" placeholder="Name"></div></td><td style="width:50%"><div style="display:flex;align-items:center;"><input type="checkbox"><label>I <i>am</i> a robot.</label></div></td></tr><tr><td colspan="2"><textarea style="width:100%;height:30vh;resize:none" placeholder="Write your comment here"></textarea></td></tr><tr><td colspan="2"> <div style="display:flex;justify-content:flex-end;padding: 0.5em 1em 1em 0em;"><button class="submit-button">Submit</button></div></td></tr></tbody></table>'
@@ -158,7 +158,7 @@ function loadXMLDoc() {
      columns = this.responseText.split("\r\n")[0].split(",").length; //For possible future purposes.
      
      for (i=0; i<this.responseText.split("\r\n").length; i++) {
-     if (this.responseText.split("\r\n")[i].split(",")[3] === "https://torokmarkwerner.github.io/example-post" && this.responseText.split("\r\n")[i].split(",")[8] == 1) {
+     if (this.responseText.split("\r\n")[i].split(",")[3] === window.location.href && this.responseText.split("\r\n")[i].split(",")[8] == 1) {
      postObject = {
      "date":this.responseText.split("\r\n")[i].split(",")[0],
      "name":this.responseText.split("\r\n")[i].split(",")[1],
