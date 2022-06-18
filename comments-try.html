@@ -84,7 +84,8 @@ commenterNameData = "";
 commenterCheckBoxcheckedData = "";
 commenterCommentData = "";
   buttonData = document.getElementsByClassName("submit-button")[0];
-  sampleForm = document.getElementsByClassName("comment-form-container")[0].outerHTML;
+  sampleForm =  document.createElement("DIV");
+  sampleForm.outerHTML = document.getElementsByClassName("comment-form-container")[0].outerHTML;
 
 function submitButton(){
  for (i=0; i<document.getElementsByClassName("submit-button").length; i++) {
@@ -129,7 +130,7 @@ xhttp.send('name=' + commenterNameData + '&checked=' + commenterCheckBoxcheckedD
 
 document.getElementById("leave-a-comment").addEventListener("click",function(){
 document.getElementById("leave-a-comment").classList.remove("leave-a-comment1");
-document.getElementsByClassName("comment-form-container")[document.getElementsByClassName("comment-form-container").length-1].parentElement.append(sampleForm);
+document.getElementsByClassName("comment-form-container")[document.getElementsByClassName("comment-form-container").length.1].innerHTML = sampleForm.innerHTML;
 document.getElementsByClassName("comment-form-container")[document.getElementsByClassName("comment-form-container").length-1].style.display = "block";
 submitButton();
 
@@ -234,7 +235,7 @@ document.getElementById("demo").appendChild(commentBody)
      this.style.display = "none";
      div = document.createElement("DIV");
      document.getElementsByClassName("comment-form-container")[document.getElementsByClassName("comment-form-container").length-1].style.display = "block"
-     div.innerHTML = sampleForm;
+     div.innerHTML = sampleForm.innerHTML;
      document.getElementsByClassName("comment-form-container")[document.getElementsByClassName("comment-form-container").length-1].style.display = "none"
   
      div.children[0].style.padding = 0;
