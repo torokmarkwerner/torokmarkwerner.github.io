@@ -86,7 +86,7 @@ commenterCheckBoxcheckedData = "";
 commenterCommentData = "";
   buttonData = document.getElementsByClassName("submit-button")[0];
   sampleForm =  document.createElement("DIV");
-  sampleForm.innerHTML = document.getElementsByClassName("comment-form-container")[0].innerHTML;
+  sampleForm.innerHTML = '<table style="width:100%"><tr><td style="width:50%"><div style="width:100%"><input type="text" style="width:100%" placeholder="Name"></div></td><td style="width:50%"><div style="display:flex;align-items:center;"><input type="checkbox"><label>I <i>am</i> a robot.</label></div></td></tr><tr><td colspan="2"><textarea style="width:100%;height:30vh;resize:none" placeholder="Write your comment here"></textarea></td></tr><tr><td colspan="2"> <div style="display:flex;justify-content:flex-end;padding: 0.5em 1em 1em 0em;"><button class="submit-button">Submit</button></div></td></tr></table>'
 
 function submitButton(){
  for (i=0; i<document.getElementsByClassName("submit-button").length; i++) {
@@ -132,8 +132,9 @@ xhttp.send('name=' + commenterNameData + '&checked=' + commenterCheckBoxcheckedD
 document.getElementById("leave-a-comment").addEventListener("click",function(){
 document.getElementById("leave-a-comment").classList.remove("leave-a-comment1");
   container = document.getElementsByClassName("comment-form-container")[document.getElementsByClassName("comment-form-container").length-1];
-  container.remove()
-  document.getElementById("leave-a-comment").classList.remove("leave-a-comment1").parentElement.appendChild(sampleForm);
+  container.innerHTML = ""
+  container.appendChild(sampleForm);
+  container.style.display = "block"
 submitButton();
 
  for (i=0; i<replyButtons.length; i++) {
