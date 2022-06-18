@@ -1,0 +1,240 @@
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<style>
+body {
+  font-family: "Calibri", "Arial", sans-serif;
+}
+.post-comment-number {
+  font-size:150%;
+  font-weight: bold;
+  padding:1em;
+}
+.post-comment {
+ clear:right;
+ padding-left:1em;
+ max-width:100%;
+}
+.post-comment-content, .post-comment-header, .reply-button-container {
+  padding:1em
+}
+.post-comment-date {
+  color:gray;
+}
+.post-comment-name {
+  font-weight:bold;
+  padding-right:0.5em;
+}
+.reply-button, .submit-button {
+ border:none;
+ background-color: lightgreen;
+ padding:0.6em;
+ /*margin-right:10em:*/
+}
+.reply-button:hover, .submit-button:hover {
+ opacity:0.9
+}
+input[type=text], textarea {
+padding:0.5em;
+font-family:inherit;
+font-size:100%;
+box-sizing: border-box;
+}
+input[type=checkbox] {
+min-height:20px;
+min-width:20px
+}
+label {
+  font-size: clamp(0.5em, 2.5vw, 1.5em);
+}
+.comment-form-container {
+  padding:1em;
+}
+.leave-a-comment1:hover {
+  text-decoration: underline;
+  cursor:pointer;
+  color:blue
+}
+</style>
+
+<div style="min-width:fit-content;max-width:50vw;padding-right:10%" id="demo">
+</div>
+
+<div id="leave-a-comment" style="padding: 0em 1em;font-size: 140%;font-weight: bold;">Leave a comment</div>
+<div class="comment-form-container" style="min-width:fit-content;max-width:50vw;">
+<table style="width:100%">
+<tr><td style="width:50%"><div style="width:100%"><input type="text" style="width:100%" placeholder="Name"></div></td><td style="width:50%"><div style="        display:flex;
+        align-items:center;">
+<input type="checkbox"><label>I <i>am</i> a robot.</label></div></td></tr>
+<tr><td colspan="2"><textarea style="width:100%;height:30vh;resize:none" placeholder="Write your comment here"></textarea></td></tr>
+<tr><td colspan="2"> <div style="display:flex;justify-content:flex-end;padding: 0.5em 1em 1em 0em;">
+<button class="submit-button">
+Submit
+</button>
+</div></td></tr>
+ 
+        </table>
+</div>
+
+<script>
+replyTo = ""
+replyToName = ""
+
+onSubmit = function(e,token){
+alert(token)
+button = e.target;
+container = this.parentElement.parentElement.parentElement.parentElement.parentElement;
+    //name	comment	link	recaptcha	reply-to	reply-to-name checked
+alert('name=' + container.getElementsByTagName("input")[0].value + '&checked=' + container.getElementsByTagName("input")[1].checked + "&g-recaptcha-response=" + token + "&comment=" + encodeURIComponent(container.getElementsByTagName("textarea")[0].value) + "&link=" + window.location.href + "&reply-to=" + replyTo + "&reply-to-name=" + replyToName);
+
+var xhttp = new XMLHttpRequest();
+xhttp.open("POST", "https://script.google.com/macros/s/AKfycbzkFnl2gLfM7QlU_PHOCao5zMBX_rUZqx6_0jhgu-5fdg3juuNFHY0D_MrIa0TSXNDxwQ/exec", true);
+
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+   alert(xhttp.responseText)
+       // Typical action to be performed when the document is ready:
+       if (xhttp.responseText === "Successful submission") {
+        button.parentElement.parentElement.parentElement.parentElement.parentElement.innerHTML = "Thank you, your comment will be visible after approval."
+       } else if (xhttp.responseText != "Successful submission") {
+        button.parentElement.parentElement.parentElement.parentElement.parentElement.innerHTML = "Something went wrong. Refresh the page and try again."       
+       }
+    }
+};
+
+xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+
+xhttp.send('name=' + container.getElementsByTagName("input")[0].value + '&checked=' + container.getElementsByTagName("input")[1].checked + "&g-recaptcha-response=" + 11/* + token */ + "&comment=" + encodeURIComponent(container.getElementsByTagName("textarea")[0].value) + "&link=" + window.location.href + "&reply-to=" + replyTo + "&reply-to-name=" + replyToName);
+
+}
+
+function submitButton(){
+document.getElementsByClassName("submit-button")[0].setAttribute("data-sitekey","6Ld802sgAAAAABSZiOb1YDO0ApjEkmx4PNVh03tM")
+document.getElementsByClassName("submit-button")[0].setAttribute("data-callback","onSubmit")
+document.getElementsByClassName("submit-button")[0].className = "g-recaptcha send-button" 
+
+}
+
+loadXMLDoc()
+submitButton()
+
+document.getElementById("leave-a-comment").addEventListener("click",function(){
+document.getElementById("leave-a-comment").classList.remove("leave-a-comment1");
+document.getElementsByClassName("comment-form-container")[document.getElementsByClassName("comment-form-container").length-1].style.display = "block";
+submitButton();
+
+ for (i=0; i<replyButtons.length; i++) {
+     replyButtons[i].parentElement.style.display = "flex"
+     replyButtons[i].style.display = "block"
+     if (replyButtons[i].nextElementSibling) {
+     replyButtons[i].nextElementSibling.remove()
+     }
+     }
+     
+});
+
+function loadXMLDoc() {
+ var xhttp = new XMLHttpRequest();
+ xhttp.onreadystatechange = function() {
+   if (this.readyState == 4 && this.status == 200) {
+     
+     posts = []
+     columns = this.responseText.split("\r\n")[0].split(",").length; //For possible future purposes.
+     
+     for (i=0; i<this.responseText.split("\r\n").length; i++) {
+     if (this.responseText.split("\r\n")[i].split(",")[3] === "https://torokmarkwerner.github.io/example-post" && this.responseText.split("\r\n")[i].split(",")[8] == 1) {
+     postObject = {
+     "date":this.responseText.split("\r\n")[i].split(",")[0],
+     "name":this.responseText.split("\r\n")[i].split(",")[1],
+     "comment":this.responseText.split("\r\n")[i].split(",")[2],
+     "link":this.responseText.split("\r\n")[i].split(",")[3],
+     "recaptcha":this.responseText.split("\r\n")[i].split(",")[4],
+     "post-id":this.responseText.split("\r\n")[i].split(",")[5],
+     "reply-to":this.responseText.split("\r\n")[i].split(",")[6],
+     "reply-to-name":this.responseText.split("\r\n")[i].split(",")[7],
+     "moderated":this.responseText.split("\r\n")[i].split(",")[8]
+     }
+     posts.push(postObject)
+     }
+     }
+   
+     numCom = posts.length;
+     postCommentNumber = document.createElement("DIV");
+     if (numCom<2) {postCommentNumber.innerHTML = numCom + " comment"} else {postCommentNumber.innerHTML = numCom + " comments"};
+     postCommentNumber.className = "post-comment-number"
+     document.getElementById("demo").prepend(postCommentNumber);
+     
+     for (i=0;i<posts.length;i++) {
+     commentBody = document.createElement("DIV");
+     commentBody.setAttribute("id",posts[i]["post-id"]);
+     
+     header = document.createElement("DIV");
+     header.className = "post-comment-header"
+commenterName = document.createElement("SPAN");
+commenterName.className = "post-comment-name"
+commenterName.innerText = posts[i].name;
+date = document.createElement("SPAN");
+date.className = "post-comment-date"
+date.innerText = posts[i].date;
+header.appendChild(commenterName);
+header.appendChild(date);
+
+comment = document.createElement("DIV");
+if (posts[i]["reply-to"] === "") {
+comment.innerText = decodeURIComponent(posts[i].comment);
+} else {
+comment.innerHTML = "<a href='#" + posts[i]["reply-to"] + "'>@" + posts[i]["reply-to-name"] + "</a> " + decodeURIComponent(posts[i].comment);
+}
+comment.style.backgroundColor = "lightgoldenrodyellow";
+comment.className = "post-comment-content"
+
+replyDiv = document.createElement("DIV");
+replyDiv.style.display = "flex";
+replyDiv.style.justifyContent = "flex-end"
+replyDiv.className = "reply-button-container"
+
+reply = document.createElement("BUTTON");
+reply.className = "reply-button";
+reply.innerText = "Reply";
+replyDiv.appendChild(reply)
+
+commentBody.className = "post-comment";
+
+commentBody.appendChild(header)
+commentBody.appendChild(comment)
+commentBody.appendChild(replyDiv)
+
+document.getElementById("demo").appendChild(commentBody)
+     }
+     
+     
+     replyButtons = document.getElementsByClassName("reply-button");
+     for (i=0; i<replyButtons.length; i++) {
+     replyButtons[i].addEventListener("click",function(){
+     replyTo = this.parentElement.parentElement.id
+     replyToName = this.parentElement.parentElement.children[0].children[0].innerText
+     document.getElementById("leave-a-comment").classList.add("leave-a-comment1");
+     for (i=0; i<replyButtons.length; i++) {
+     replyButtons[i].parentElement.style.display = "flex"
+     replyButtons[i].style.display = "block"
+     if (replyButtons[i].nextElementSibling) {
+     replyButtons[i].nextElementSibling.remove()
+     }
+     }
+     this.style.display = "none";
+     div = document.createElement("DIV");
+     document.getElementsByClassName("comment-form-container")[document.getElementsByClassName("comment-form-container").length-1].style.display = "block"
+     div.innerHTML = document.getElementsByClassName("comment-form-container")[document.getElementsByClassName("comment-form-container").length-1].outerHTML;
+     document.getElementsByClassName("comment-form-container")[document.getElementsByClassName("comment-form-container").length-1].style.display = "none"
+  
+     div.children[0].style.padding = 0;
+     this.parentElement.style.display = "block";
+     this.parentElement.appendChild(div)
+     submitButton();
+     })
+     }
+     //document.getElementById("demo").innerHTML = JSON.stringify(posts)
+   }
+ };
+ xhttp.open("GET", "https://docs.google.com/spreadsheets/d/e/2PACX-1vQg6dmeH1EYHwCm1zLmGSI34IC9Uchtf8pWL3KfqnPIMbSbFl-DB1jptcCjuIlP3e4mRVmcG7PbGuGz/pub?gid=0&single=true&output=csv", true);
+ xhttp.send();
+}
+</script>
