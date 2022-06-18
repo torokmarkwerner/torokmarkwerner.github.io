@@ -56,7 +56,8 @@ label {
   color:blue
 }
 </style>
-
+<div id="recaptcha" style="display:none" class="submit-button g-recaptcha" data-sitekey="6Ld802sgAAAAABSZiOb1YDO0ApjEkmx4PNVh03tM" data-callback="onSubmit">
+</div>
 <div style="min-width:fit-content;max-width:50vw;padding-right:10%" id="demo">
 </div>
 
@@ -82,9 +83,7 @@ replyToName = ""
 
 function submitButton(){
  for (i=0; i<document.getElementsByClassName("submit-button").length; i++) {
-   document.getElementsByClassName("submit-button")[i].setAttribute("data-sitekey","6Ld802sgAAAAABSZiOb1YDO0ApjEkmx4PNVh03tM")
-document.getElementsByClassName("submit-button")[i].setAttribute("data-callback","onSubmit")
-document.getElementsByClassName("submit-button")[i].classList.add("g-recaptcha")
+   document.getElementsByClassName("submit-button")[i].addEventListener("click",function() {document.getElementById("recaptcha").click()});
  }
 }
 
