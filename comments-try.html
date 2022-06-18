@@ -81,9 +81,11 @@ replyTo = ""
 replyToName = ""
 
 function submitButton(){
-document.getElementsByClassName("submit-button")[0].setAttribute("data-sitekey","6Ld802sgAAAAABSZiOb1YDO0ApjEkmx4PNVh03tM")
-document.getElementsByClassName("submit-button")[0].setAttribute("data-callback","onSubmit")
-document.getElementsByClassName("submit-button")[0].classList.add("g-recaptcha")
+ for (i=0; i<document.getElementsByClassName("submit-button").length; i++) {
+   document.getElementsByClassName("submit-button")[i].setAttribute("data-sitekey","6Ld802sgAAAAABSZiOb1YDO0ApjEkmx4PNVh03tM")
+document.getElementsByClassName("submit-button")[i].setAttribute("data-callback","onSubmit")
+document.getElementsByClassName("submit-button")[i].classList.add("g-recaptcha")
+ }
 }
 
 loadXMLDoc()
