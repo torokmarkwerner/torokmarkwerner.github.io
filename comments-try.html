@@ -84,7 +84,6 @@ commenterNameData = "";
 commenterCheckBoxcheckedData = "";
 commenterCommentData = "";
   buttonData = document.getElementsByClassName("submit-button")[0];
-  sampleForm = "";
   sampleForm = document.getElementsByClassName("comment-form-container")[0].outerHTML;
 
 function submitButton(){
@@ -130,7 +129,7 @@ xhttp.send('name=' + commenterNameData + '&checked=' + commenterCheckBoxcheckedD
 
 document.getElementById("leave-a-comment").addEventListener("click",function(){
 document.getElementById("leave-a-comment").classList.remove("leave-a-comment1");
-document.getElementsByClassName("comment-form-container")[document.getElementsByClassName("comment-form-container").length-1].innerHTML = sampleForm
+document.getElementsByClassName("comment-form-container")[document.getElementsByClassName("comment-form-container").length-1].outerHTML = sampleForm
 document.getElementsByClassName("comment-form-container")[document.getElementsByClassName("comment-form-container").length-1].style.display = "block";
 submitButton();
 
