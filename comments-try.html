@@ -1,4 +1,35 @@
+<head>
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script>
+onSubmit = function(token){
+alert(token)
+button = this;
+container = this.parentElement.parentElement.parentElement.parentElement.parentElement;
+    //name	comment	link	recaptcha	reply-to	reply-to-name checked
+alert('name=' + container.getElementsByTagName("input")[0].value + '&checked=' + container.getElementsByTagName("input")[1].checked + "&g-recaptcha-response=" + token + "&comment=" + encodeURIComponent(container.getElementsByTagName("textarea")[0].value) + "&link=" + window.location.href + "&reply-to=" + replyTo + "&reply-to-name=" + replyToName);
+
+var xhttp = new XMLHttpRequest();
+xhttp.open("POST", "https://script.google.com/macros/s/AKfycbzkFnl2gLfM7QlU_PHOCao5zMBX_rUZqx6_0jhgu-5fdg3juuNFHY0D_MrIa0TSXNDxwQ/exec", true);
+
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+   alert(xhttp.responseText)
+       // Typical action to be performed when the document is ready:
+       if (xhttp.responseText === "Successful submission") {
+        button.parentElement.parentElement.parentElement.parentElement.parentElement.innerHTML = "Thank you, your comment will be visible after approval."
+       } else if (xhttp.responseText != "Successful submission") {
+        button.parentElement.parentElement.parentElement.parentElement.parentElement.innerHTML = "Something went wrong. Refresh the page and try again."       
+       }
+    }
+};
+
+xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+
+xhttp.send('name=' + container.getElementsByTagName("input")[0].value + '&checked=' + container.getElementsByTagName("input")[1].checked + "&g-recaptcha-response=" + 11/* + token */ + "&comment=" + encodeURIComponent(container.getElementsByTagName("textarea")[0].value) + "&link=" + window.location.href + "&reply-to=" + replyTo + "&reply-to-name=" + replyToName);
+
+}
+</script>
+</head>
 <style>
 body {
   font-family: "Calibri", "Arial", sans-serif;
@@ -85,33 +116,7 @@ document.getElementsByClassName("submit-button")[0].classList.add("g-recaptcha")
 }
 
 loadXMLDoc()
-onSubmit = function(token){
-alert(token)
-button = this;
-container = this.parentElement.parentElement.parentElement.parentElement.parentElement;
-    //name	comment	link	recaptcha	reply-to	reply-to-name checked
-alert('name=' + container.getElementsByTagName("input")[0].value + '&checked=' + container.getElementsByTagName("input")[1].checked + "&g-recaptcha-response=" + token + "&comment=" + encodeURIComponent(container.getElementsByTagName("textarea")[0].value) + "&link=" + window.location.href + "&reply-to=" + replyTo + "&reply-to-name=" + replyToName);
 
-var xhttp = new XMLHttpRequest();
-xhttp.open("POST", "https://script.google.com/macros/s/AKfycbzkFnl2gLfM7QlU_PHOCao5zMBX_rUZqx6_0jhgu-5fdg3juuNFHY0D_MrIa0TSXNDxwQ/exec", true);
-
-xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-   alert(xhttp.responseText)
-       // Typical action to be performed when the document is ready:
-       if (xhttp.responseText === "Successful submission") {
-        button.parentElement.parentElement.parentElement.parentElement.parentElement.innerHTML = "Thank you, your comment will be visible after approval."
-       } else if (xhttp.responseText != "Successful submission") {
-        button.parentElement.parentElement.parentElement.parentElement.parentElement.innerHTML = "Something went wrong. Refresh the page and try again."       
-       }
-    }
-};
-
-xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-
-xhttp.send('name=' + container.getElementsByTagName("input")[0].value + '&checked=' + container.getElementsByTagName("input")[1].checked + "&g-recaptcha-response=" + 11/* + token */ + "&comment=" + encodeURIComponent(container.getElementsByTagName("textarea")[0].value) + "&link=" + window.location.href + "&reply-to=" + replyTo + "&reply-to-name=" + replyToName);
-
-}
 submitButton()
 
 document.getElementById("leave-a-comment").addEventListener("click",function(){
