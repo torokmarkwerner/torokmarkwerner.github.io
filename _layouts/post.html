@@ -148,7 +148,7 @@ xhttp.onreadystatechange = function() {
 
 xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
   
-xhttp.send('name=' + commenterNameData + '&checked=' + commenterCheckBoxcheckedData + "&g-recaptcha-response=" + token + "&comment=" + commenterCommentData + "&link=" + window.location.href + "&reply-to=" + replyTo + "&reply-to-name=" + replyToName);
+xhttp.send('name=' + commenterNameData + '&checked=' + commenterCheckBoxcheckedData + "&g-recaptcha-response=" + token + "&comment=" + commenterCommentData + "&link=" + window.location.href.split("#")[0] + "&reply-to=" + replyTo + "&reply-to-name=" + replyToName);
 }
   
 document.getElementById("leave-a-comment").addEventListener("click",function(){
@@ -184,7 +184,7 @@ function loadXMLDoc() {
      
      
      for (i=0; i<data.length; i++) {
-     if (data[i].split(",")[3] === window.location.href && data[i].split(",")[8] === "1") {
+     if (data[i].split(",")[3] === window.location.href.split("#")[0] && data[i].split(",")[8] === "1") {
      postObject = {
      "date":data[i].split(",")[0],
      "name":data[i].split(",")[1],
