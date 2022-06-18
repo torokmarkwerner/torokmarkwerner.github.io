@@ -84,6 +84,8 @@ commenterNameData = "";
 commenterCheckBoxcheckedData = "";
 commenterCommentData = "";
   buttonData = document.getElementsByClassName("submit-button")[0];
+  
+  sampleForm = document.getElementsByClassName("comment-form-container")[0];
 
 function submitButton(){
  for (i=0; i<document.getElementsByClassName("submit-button").length; i++) {
@@ -232,7 +234,7 @@ document.getElementById("demo").appendChild(commentBody)
      this.style.display = "none";
      div = document.createElement("DIV");
      document.getElementsByClassName("comment-form-container")[document.getElementsByClassName("comment-form-container").length-1].style.display = "block"
-     div.innerHTML = document.getElementsByClassName("comment-form-container")[document.getElementsByClassName("comment-form-container").length-1].outerHTML;
+     div.innerHTML = sampleForm.outerHTML;
      document.getElementsByClassName("comment-form-container")[document.getElementsByClassName("comment-form-container").length-1].style.display = "none"
   
      div.children[0].style.padding = 0;
