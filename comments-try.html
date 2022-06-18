@@ -2,9 +2,6 @@
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <style>
-body {
-  font-family: "Calibri", "Arial", sans-serif;
-}
 .post-comment-number {
   font-size:150%;
   font-weight: bold;
@@ -34,17 +31,17 @@ body {
 .reply-button:hover, .submit-button:hover {
  opacity:0.9
 }
-input[type=text], textarea {
+#comment-section input[type=text], textarea {
 padding:0.5em;
 font-family:inherit;
 font-size:100%;
 box-sizing: border-box;
 }
-input[type=checkbox] {
+#comment-section input[type=checkbox] {
 min-height:20px;
 min-width:20px
 }
-label {
+#comment-section label {
   font-size: clamp(0.5em, 2.5vw, 1.5em);
 }
 .comment-form-container {
@@ -68,7 +65,7 @@ label {
 <tr><td style="width:50%"><div style="width:100%"><input type="text" style="width:100%" placeholder="Name"></div></td><td style="width:50%"><div style="        display:flex;
         align-items:center;">
 <input type="checkbox"><label>I <i>am</i> a robot.</label></div></td></tr>
-<tr><td colspan="2"><textarea style="width:100%;height:30vh;resize:none" placeholder="Write your comment here"></textarea></td></tr>
+<tr><td colspan="2"><textarea style="width:100%;height:15vh;resize:none" placeholder="Write your comment here"></textarea></td></tr>
 <tr><td colspan="2"> <div style="display:flex;justify-content:flex-end;padding: 0.5em 1em 1em 0em;">
 <button class="submit-button">
 Submit
@@ -247,7 +244,7 @@ document.getElementById("demo").appendChild(commentBody)
      this.parentElement.style.display = "block";
          sampleForm =  document.createElement("DIV");
   sampleForm.innerHTML = '<table style="width:100%"><tbody><tr><td style="width:50%"><div style="width:100%"><input type="text" style="width:100%" placeholder="Name"></div></td><td style="width:50%"><div style="display:flex;align-items:center;"><input type="checkbox"><label>I <i>am</i> a robot.</label></div></td></tr><tr><td colspan="2"><textarea style="width:100%;height:30vh;resize:none" placeholder="Write your comment here"></textarea></td></tr><tr><td colspan="2"> <div style="display:flex;justify-content:flex-end;padding: 0.5em 1em 1em 0em;"><button class="submit-button">Submit</button></div></td></tr></tbody></table>'
-       alert(sampleForm.innerHTML)
+       //alert(sampleForm.innerHTML)
      this.parentElement.appendChild(sampleForm)
       
        
