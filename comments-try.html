@@ -159,7 +159,7 @@ function loadXMLDoc() {
      columns = this.responseText.split("\r\n")[0].split(",").length; //For possible future purposes.
      
      for (i=0; i<this.responseText.split("\r\n").length; i++) {
-     if (this.responseText.split("\r\n")[i].split(",")[3] === window.location.href && this.responseText.split("\r\n")[i].split(",")[8] == 1) {
+     if (this.responseText.split("\r\n")[i].split(",")[3] === window.location.href && this.responseText.split("\r\n")[i].split(",")[8] === 1) {
      postObject = {
      "date":this.responseText.split("\r\n")[i].split(",")[0],
      "name":this.responseText.split("\r\n")[i].split(",")[1],
