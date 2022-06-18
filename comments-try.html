@@ -130,8 +130,9 @@ xhttp.send('name=' + commenterNameData + '&checked=' + commenterCheckBoxcheckedD
 
 document.getElementById("leave-a-comment").addEventListener("click",function(){
 document.getElementById("leave-a-comment").classList.remove("leave-a-comment1");
-document.getElementsByClassName("comment-form-container")[document.getElementsByClassName("comment-form-container").length-1].remove();
-document.getElementById("leave-a-comment").parentElement.append(sampleForm);
+  container = document.getElementsByClassName("comment-form-container")[document.getElementsByClassName("comment-form-container").length-1];
+  container.parentElement.replaceChild(Array.from(container.parentElement.children).indexOf(container),sampleForm);
+innerHTML = sampleForm.innerHTML
 submitButton();
 
  for (i=0; i<replyButtons.length; i++) {
