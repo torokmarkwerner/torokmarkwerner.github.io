@@ -84,6 +84,7 @@ function submitButton(){
 document.getElementsByClassName("submit-button")[0].setAttribute("data-sitekey","6Ld802sgAAAAABSZiOb1YDO0ApjEkmx4PNVh03tM")
 document.getElementsByClassName("submit-button")[0].setAttribute("data-callback","onSubmit")
 document.getElementsByClassName("submit-button")[0].classList.add("g-recaptcha")
+  document.getElementsByClassName("submit-button")[0].addEventListener("click",onSubmit);
 }
 
 loadXMLDoc()
