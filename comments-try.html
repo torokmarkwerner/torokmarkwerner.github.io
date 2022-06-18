@@ -85,7 +85,7 @@ commenterCheckBoxcheckedData = "";
 commenterCommentData = "";
   buttonData = document.getElementsByClassName("submit-button")[0];
   
-  sampleForm = document.getElementsByClassName("comment-form-container")[0];
+  var sampleForm = document.getElementsByClassName("comment-form-container")[0];
 
 function submitButton(){
  for (i=0; i<document.getElementsByClassName("submit-button").length; i++) {
@@ -111,7 +111,7 @@ xhttp.open("POST", "https://script.google.com/macros/s/AKfycbzkFnl2gLfM7QlU_PHOC
 
 xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-   alert(xhttp.responseText)
+   //alert(xhttp.responseText)
        // Typical action to be performed when the document is ready:
        if (xhttp.responseText === "Successful submission") {
         buttonData.parentElement.parentElement.parentElement.parentElement.parentElement.innerHTML = "Thank you, your comment will be visible after approval."
