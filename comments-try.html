@@ -80,10 +80,20 @@ Submit
 <script>
 replyTo = ""
 replyToName = ""
+commenterName = "";
+commenterCheckBoxchecked = "";
+commenterComment = "";
 
 function submitButton(){
  for (i=0; i<document.getElementsByClassName("submit-button").length; i++) {
-   document.getElementsByClassName("submit-button")[i].addEventListener("click",function() {document.getElementById("recaptcha").click()});
+   document.getElementsByClassName("submit-button")[i].addEventListener("click",function() {
+     container = this.parentElement.parentElement.parentElement.parentElement.parentElement;
+    //name	comment	link	recaptcha	reply-to	reply-to-name checked
+     commenterName = container.getElementsByTagName("input")[0].value 
+     commenterCheckBoxchecked = container.getElementsByTagName("input")[1].checked
+     commenterComment = encodeURIComponent(container.getElementsByTagName("textarea")[0].value);
+     document.getElementById("recaptcha").click()
+                                                                                           });
  }
 }
 
@@ -95,7 +105,7 @@ submitButton()
   
 onSubmit = function(token){
   x = token
-alert(x);
+alert('name=' + commenterName + '&checked=' + commenterCheckBoxchecked + "&g-recaptcha-response=" + token + "&comment=" + commenterComment + "&link=" + window.location.href + "&reply-to=" + replyTo + "&reply-to-name=" + replyToName);
 }
   
   document.getElementsByClassName("submit-button")[0].addEventListener("click",function() {alert(token)});
