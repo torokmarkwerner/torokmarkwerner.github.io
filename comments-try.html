@@ -84,7 +84,7 @@ replyToName = ""
 commenterNameData = "";
 commenterCheckBoxcheckedData = "";
 commenterCommentData = "";
-  buttonData = document.getElementsByClassName("submit-button")[0];
+  buttonData = document.getElementsByClassName("submit-button")[document.getElementsByClassName("submit-button").length-1];
   sampleForm =  document.createElement("DIV");
   sampleForm.innerHTML = '<table style="width:100%"><tr><td style="width:50%"><div style="width:100%"><input type="text" style="width:100%" placeholder="Name"></div></td><td style="width:50%"><div style="display:flex;align-items:center;"><input type="checkbox"><label>I <i>am</i> a robot.</label></div></td></tr><tr><td colspan="2"><textarea style="width:100%;height:30vh;resize:none" placeholder="Write your comment here"></textarea></td></tr><tr><td colspan="2"> <div style="display:flex;justify-content:flex-end;padding: 0.5em 1em 1em 0em;"><button class="submit-button">Submit</button></div></td></tr></table>'
 
@@ -115,9 +115,9 @@ xhttp.onreadystatechange = function() {
    //alert(xhttp.responseText)
        // Typical action to be performed when the document is ready:
        if (xhttp.responseText === "Successful submission") {
-        buttonData.parentElement.parentElement.parentElement.parentElement.innerHTML = "Thank you, your comment will be visible after approval."
+        buttonData.parentElement.parentElement.parentElement.parentElement.parentElement.innerHTML = "Thank you, your comment will be visible after approval."
        } else if (xhttp.responseText != "Successful submission") {
-        buttonData.parentElement.parentElement.parentElement.parentElement.innerHTML = "Something went wrong. Refresh the page and try again."       
+        buttonData.parentElement.parentElement.parentElement.parentElement.parentElement.innerHTML = "Something went wrong. Refresh the page and try again."       
        }
     }
 };
