@@ -157,19 +157,20 @@ function loadXMLDoc() {
      
      posts = []
      columns = this.responseText.split("\r\n")[0].split(",").length; //For possible future purposes.
+     data = this.responseText.split("\r\n");
      
-     for (i=0; i<this.responseText.split("\r\n").length; i++) {
-     if (this.responseText.split("\r\n")[i].split(",")[3] === window.location.href && this.responseText.split("\r\n")[i].split(",")[8] === 1) {
+     for (i=0; i<data.length; i++) {
+     if (data[i].split(",")[3] === window.location.href && data[i].split(",")[8] === 1) {
      postObject = {
-     "date":this.responseText.split("\r\n")[i].split(",")[0],
-     "name":this.responseText.split("\r\n")[i].split(",")[1],
-     "comment":this.responseText.split("\r\n")[i].split(",")[2],
-     "link":this.responseText.split("\r\n")[i].split(",")[3],
-     "recaptcha":this.responseText.split("\r\n")[i].split(",")[4],
-     "post-id":this.responseText.split("\r\n")[i].split(",")[5],
-     "reply-to":this.responseText.split("\r\n")[i].split(",")[6],
-     "reply-to-name":this.responseText.split("\r\n")[i].split(",")[7],
-     "moderated":this.responseText.split("\r\n")[i].split(",")[8]
+     "date":data[i].split(",")[0],
+     "name":data[i].split(",")[1],
+     "comment":data[i].split(",")[2],
+     "link":data[i].split(",")[3],
+     "recaptcha":data[i].split(",")[4],
+     "post-id":data[i].split(",")[5],
+     "reply-to":data[i].split(",")[6],
+     "reply-to-name":data[i].split(",")[7],
+     "moderated":data[i].split(",")[8]
      }
      posts.push(postObject)
      }
