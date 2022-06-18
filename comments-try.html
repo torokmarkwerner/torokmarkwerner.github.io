@@ -89,9 +89,12 @@ document.getElementsByClassName("submit-button")[0].classList.add("g-recaptcha")
 loadXMLDoc()
   
 submitButton()
-    
+  
+  var x;
+  
 onSubmit = function(token){
-alert(token);
+  x = token
+alert(x);
 }
   
   document.getElementsByClassName("submit-button")[0].addEventListener("click",function() {alert(token)});
