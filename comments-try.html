@@ -2,7 +2,7 @@
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <script>
 onSubmit = function(token){
-alert(event.target + " " + token)
+alert(event.target.innerHTML + " " + token)
 button = event.target;
 container = button.parentElement.parentElement.parentElement.parentElement.parentElement;
     //name	comment	link	recaptcha	reply-to	reply-to-name checked
