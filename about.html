@@ -27,10 +27,11 @@ font-size: 130%;
 Choose from the words below and ask away.
 </p>
 <div id="qAndA" style="height:;overflow:hidden;padding-bottom:">
- <div style="padding:0.5em"><b>TM:</b> Hello there! What would you like to know?</div>
+ <div style="padding:0.5em;text-align:right"><b>TM:</b> Hello there! What would you like to know?</div>
 </div>
 
-<div style="padding-top:0.5em"><b>You:</b> <span id="question"></span></div>
+<div style="display:flex;justify-content:flex-start;padding: 1em 0.5em 0.5em 0.5em"><div style="width: 10%;padding-right: 0.5em;display: flex;align-items: center;
+     justify-content: center;font-weight: bold;">You:</div> <div id="question" style="max-width:60%;padding:0.5em"></div></div>
 <div id="words" style="flex-flow: row wrap;padding:1em;display:flex;"></div>
 
 <script>
@@ -93,18 +94,56 @@ document.getElementById("words").innerHTML = "";
 if (words.length === 0) {
 //finding the question
 document.getElementById("qAndA").innerHTML = "<span></span>";
-question = document.createElement("DIV");
-question.innerHTML = "<b>You:</b> " + Object.keys(qAndAObject).filter(item => item === document.getElementById("question").innerText);
-question.style.padding = "0.5em"
-document.getElementById("qAndA").insertBefore(question,document.getElementById("qAndA").lastElementChild);
 
+     questionContainer = document.createElement("DIV");
+     questionContainer.style.display = "flex";
+     questionContainer.style.padding = "0.5em";
+     questionContainer.style.justifyContent = "flex-start";
+     
+YOU = document.createElement("DIV");
+YOU.style.cssText = 
+    width: 10%;
+    padding-right: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+
+question = document.createElement("DIV");
+question.style.maxWidth = "60%"
+question.innerHTML = Object.keys(qAndAObject).filter(item => item === document.getElementById("question").innerText);
+question.style.padding = "0.5em"
+     
+     questionContainer.appendChild(YOU);
+     questionContainer.appendChild(question);
+     
+document.getElementById("qAndA").insertBefore(questionContainer,document.getElementById("qAndA").lastElementChild);
+
+     answerContainer = document.createElement("DIV");
+     answerContainer.style.display = "flex";
+     answerContainer.style.padding = "0.5em";
+     answerContainer.style.justifyContent = "flex-end";
+     
+TM = document.createElement("DIV");
+TM.style.cssText = 
+    width: 10%;
+    padding-right: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+     
 answer = document.createElement("DIV");
-answer.innerHTML = "<b>TM:</b> " + qAndAObject[Object.keys(qAndAObject).filter(item => item === document.getElementById("question").innerText)]
+answer.style.maxWidth = "60%"
 answer.style.padding = "0.5em"
-//alert(document.getElementById("qAndA").lastElementChild.innerHTML)
-document.getElementById("qAndA").insertBefore(answer,document.getElementById("qAndA").lastElementChild);
+answer.innerHTML = qAndAObject[Object.keys(qAndAObject).filter(item => item === document.getElementById("question").innerText)]
+     
+     answerContainer.appendChild(TM);
+     answerContainer.appendChild(answer);
+     
+document.getElementById("qAndA").insertBefore(answerContainer,document.getElementById("qAndA").lastElementChild);
 document.getElementById("question").innerHTML = ""
-//document.getElementById("qAndA").firstElementChild.scrollIntoView(true)
+
 n = 0
 startAsking();
 } else {
