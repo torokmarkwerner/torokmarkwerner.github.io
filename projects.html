@@ -59,11 +59,21 @@ function checkVisibility(){
   window.addEventListener("scroll",function() {checkVisibility()})
     window.addEventListener("load", function() {for (i=0; i<containers.length; i++) {
   if (containers[i].getBoundingClientRect().bottom > window.innerHeight) {
+    if (i>0) {
+    document.getElementsByClassName("scrollForMore")[Math.floor((i-1)/2)].style.opacity = 0;
+    }
     containers[i].parentElement.style.visibility = "hidden"
     document.getElementsByClassName("scrollForMore")[Math.floor(i/2)].style.opacity = 0;
   } else {
+    if (i>0) {
+    document.getElementsByClassName("scrollForMore")[Math.floor((i-1)/2)].style.opacity = 0;
+    }
       containers[i].parentElement.style.visibility = "visible"
+    if (i=containers.length-1) {
+    document.getElementsByClassName("scrollForMore")[Math.floor(i/2)].style.opacity = 0;  
+    } else {
     document.getElementsByClassName("scrollForMore")[Math.floor(i/2)].style.opacity = 1;
+    }
   }
   }});
   //////////////////////////////////////////////////////////////////////////////////
