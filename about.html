@@ -101,13 +101,13 @@ document.getElementById("qAndA").innerHTML = "<span></span>";
      questionContainer.style.justifyContent = "flex-start";
      
 YOU = document.createElement("DIV");
-YOU.style.cssText = 
+YOU.setAttribute("style","
     width: 10%;
     padding-right: 0.5em;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: bold;
+    font-weight: bold;");
 
 question = document.createElement("DIV");
 question.style.maxWidth = "60%"
@@ -125,13 +125,13 @@ document.getElementById("qAndA").insertBefore(questionContainer,document.getElem
      answerContainer.style.justifyContent = "flex-end";
      
 TM = document.createElement("DIV");
-TM.style.cssText = 
+TM.setAttribute("style","
     width: 10%;
     padding-right: 0.5em;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: bold;
+    font-weight: bold;");
      
 answer = document.createElement("DIV");
 answer.style.maxWidth = "60%"
