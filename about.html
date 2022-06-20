@@ -99,7 +99,7 @@ answer.style.padding = "0.5em"
 //alert(document.getElementById("qAndA").lastElementChild.innerHTML)
 document.getElementById("qAndA").insertBefore(answer,document.getElementById("qAndA").lastElementChild);
 document.getElementById("question").innerHTML = ""
-document.getElementById("qAndA").lastElementChild.scrollIntoView(true)
+document.getElementById("qAndA").firstElementChild.scrollIntoView(true)
 n = 0
 startAsking();
 } else {
