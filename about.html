@@ -31,7 +31,7 @@ Choose from the words below and ask away.
 </div>
 
 <div style="display:flex;justify-content:flex-start;padding: 1em 0.5em 0.5em 0.5em"><div style="width: 10%;padding-right: 0.5em;display: flex;align-items: center;
-     justify-content: center;font-weight: bold;">You:</div> <div id="question" style="max-width:60%;padding:0.5em"></div></div>
+     justify-content: center;font-weight: bold;">YOU:</div> <div id="question" style="max-width:60%;padding:0.5em"></div></div>
 <div id="words" style="flex-flow: row wrap;padding:1em;display:flex;"></div>
 
 <script>
@@ -101,7 +101,8 @@ document.getElementById("qAndA").innerHTML = "<span></span>";
      questionContainer.style.justifyContent = "flex-start";
      
 YOU = document.createElement("DIV");
-YOU.setAttribute("style","width: 10%;padding-right: 0.5em;display: flex;align-items: center;justify-content: center;font-weight: bold;");
+YOU.setAttribute("style","width: 10%;padding:0.5em 0 0.5em 0;display: flex;align-items: center;justify-content: center;font-weight: bold;");
+     YOU.innerHTML = "<b>YOU:</b>"
 
 question = document.createElement("DIV");
 question.style.maxWidth = "60%"
@@ -119,7 +120,8 @@ document.getElementById("qAndA").insertBefore(questionContainer,document.getElem
      answerContainer.style.justifyContent = "flex-end";
      
 TM = document.createElement("DIV");
-TM.setAttribute("style","width: 10%;padding-right: 0.5em;display: flex;align-items: center;justify-content: center;font-weight: bold;");
+TM.setAttribute("style","width: 10%;padding:0.5em 0 0.5em 0;display: flex;align-items: center;justify-content: center;font-weight: bold;");
+TM.innerHTML = "<b>TM:</b>"
      
 answer = document.createElement("DIV");
 answer.style.maxWidth = "60%"
