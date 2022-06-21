@@ -74,6 +74,9 @@ span.innerHTML = words[i];
 span.addEventListener("click",function() {addWord(this.innerHTML)});
 document.getElementById("words").appendChild(span);
 }
+if (document.getElementById("words").lastElementChild) {
+document.getElementById("words").lastElementChild.scrollIntoView()
+}
 n++
 words = []
 }
@@ -136,9 +139,6 @@ answer.innerHTML = qAndAObject[Object.keys(qAndAObject).filter(item => item === 
      answerContainer.appendChild(answer);
      
 document.getElementById("qAndA").appendChild(answerContainer);
-if (document.getElementById("words").lastElementChild) {
-document.getElementById("words").lastElementChild.scrollIntoView()
-}
 document.getElementById("question").innerHTML = ""
 
 n = 0
