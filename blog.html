@@ -22,7 +22,12 @@ permalink: /blog/
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
       {% assign tags = page.tags| split: " " %}
-      <div>{% for tag in tags %}<span>{{ tag_name }}</span> {% endfor %}</div>
+      <div>
+        {% for tag in tags %}
+        {% capture tag_name %}{{ tag }}{% endcapture %}
+        <span>{{ tag_name }}</span>
+        {% endfor %}
+      </div>
     </article>
   {% endfor %}
 </div>
