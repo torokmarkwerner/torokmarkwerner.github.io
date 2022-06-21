@@ -24,8 +24,7 @@ permalink: /blog/
       {% assign tags = page.tags | split: " " %}
       <div>
         {% for tag in tags %}
-        {% capture tag_name %}{{ tag }}{% endcapture %}
-        <span>{{ tag_name }}</span>
+        <span>{{ tag }}</span>
         {% endfor %}
       </div>
     </article>
