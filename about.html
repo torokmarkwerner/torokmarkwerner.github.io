@@ -116,7 +116,7 @@ question.style.padding = "0.5em"
      questionContainer.appendChild(YOU);
      questionContainer.appendChild(question);
      
-document.getElementById("qAndA").insertBefore(questionContainer,document.getElementById("qAndA").lastElementChild);
+document.getElementById("qAndA").appendChild(questionContainer);
 
      answerContainer = document.createElement("DIV");
      answerContainer.style.display = "flex";
@@ -135,7 +135,7 @@ answer.innerHTML = qAndAObject[Object.keys(qAndAObject).filter(item => item === 
      answerContainer.appendChild(TM);
      answerContainer.appendChild(answer);
      
-document.getElementById("qAndA").insertBefore(answerContainer,document.getElementById("qAndA").lastElementChild);
+document.getElementById("qAndA").appendChild(answerContainer);
 document.getElementById("question").innerHTML = ""
 
 n = 0
