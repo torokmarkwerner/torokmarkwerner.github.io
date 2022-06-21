@@ -6,7 +6,7 @@ permalink: /blog/
 
 <div class="posts">
   {% for post in site.posts %}
-    <article class="post">
+    <article style="padding-bottom:0.5em;" class="post">
 
       <h1><a class="post-title" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
       <div>{{ post.date | date: "%-d %B %Y" }} | <span class="ert">
@@ -21,12 +21,6 @@ permalink: /blog/
       </div>
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-      {% assign tags = page.tags | split: " " %}
-      <div>
-        {% for tag in tags %}
-        <span>{{ tag }}</span>
-        {% endfor %}
-      </div>
     </article>
   {% endfor %}
 </div>
