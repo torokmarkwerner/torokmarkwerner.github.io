@@ -136,7 +136,9 @@ answer.innerHTML = qAndAObject[Object.keys(qAndAObject).filter(item => item === 
      answerContainer.appendChild(answer);
      
 document.getElementById("qAndA").appendChild(answerContainer);
+if (document.getElementById("words").lastElementChild) {
 document.getElementById("words").lastElementChild.scrollIntoView(false)
+}
 document.getElementById("question").innerHTML = ""
 
 n = 0
