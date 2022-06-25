@@ -3,14 +3,122 @@
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="shortcut icon" type="image/x-icon" href="/favicon.png">
   </head>
-  <div style="font-size:200%;font-weight:bold;">
-  Mark My Words
+  
+<style>
+.post-title {
+    background-color: lightgoldenrodyellow;
+    color: black;
+    text-decoration: none;
+    padding: 0.5em;
+  }
+.post-title:hover {
+  background-color: antiquewhite;
+  opacity:0.9;
+  }
+.fa {
+ font-size: 20px;
+ width: 40px;
+ height: 40px;
+ line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0.5em 0.2em;
+  border-radius:5px;
+  }
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+</style>
+  <style>
+body {
+  font-family: "Calibri", "Arial", sans-serif;
+  margin: 0;
+  border: 0;
+  padding:0;
+    width:100%;
+  overflow-y: scroll;
+  }
+.page-wrapper {
+  width:80vw;
+  display:flex;
+  height:100%;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  padding-top:10px
+}
+.sticky {
+  text-align:center;
+  width:20vw;
+    position: sticky;
+    top: 10px;
+    align-self: flex-start;
+}
+.pages-button {
+  font-size:125%;
+  padding: 0.5em;
+  font-weight:;
+}
+.pages-button:hover {
+  background-color:lightskyblue;
+  cursor:pointer;
+  font-weight:bold;
+}
+    .pages-button-current {
+      background-color:palegreen;
+      
+    }
+
+</style>
+<body>
+<div class="page-wrapper">
+<div class="sticky">
+<div style="display: inline-flex;vertical-align: bottom;"><img src="https://avatars.githubusercontent.com/u/98919050" width="100%"/></div>
+<div  id="about" class="pages-button">ABOUT</div>
+<div id="projects" class="pages-button">PROJECTS</div>
+<div id="blog" class="pages-button">BLOG</div>
+<div id="contact" class="pages-button">CONTACT</div>
+<div style="text-align:center">
+<a href="#" class="fa fa-facebook"></a>
+<a href="mailto:torokmarkwerner@gmail.com" class="fa fa-google"></a>
+<a href="#" class="fa fa-linkedin"></a>
   </div>
-  <body>
+</div>
+  <script>
+//alert(document.location.pathname + " --> And this is the substring:" + document.location.pathname.toString().substring(1,document.location.pathname.toString().length-1))
+pages = document.getElementsByClassName("pages-button");
+for (i=0; i<pages.length; i++) {
+pages[i].addEventListener("click",function() {window.open("https://torokmarkwerner.github.io/" + this.textContent.toLowerCase(), "_self")});
+  if(("/" + pages[i].textContent.toLowerCase() + "/") === document.location.pathname) {
+    pages[i].classList.toggle("pages-button-current");
+    pages[i].style.backgroundColor = "palegreen";
+    pages[i].style.fontWeight = "bold"
+  }
+}
+</script>
+<div id="content-container" style="padding:0 0 0 2em;width:40vw">
     {{ content }}
-  </body>
-  <footer>
-    Follow me on Instagram.
-  </footer>
+</div>
+
+</div>
+
+</body>
+
 </html>
