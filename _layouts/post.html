@@ -12,12 +12,12 @@ layout: default
     {% assign ert = words | divided_by:250 | at_least: 1 %}
     {{ ert }} min{% if ert != 1 %}s{% endif %}
 </span></p>
-<p><span>[
+<p><span>
   {% for tag in page.tags %}
     {% capture tag_name %}{{ tag }}{% endcapture %}
-    <a href="/tag/{{ tag_name }}">{{ tag_name }}</a>
+    [<a href="/tag/{{ tag_name }}">{{ tag_name.toUpperCase() }}</a>]
   {% endfor %}
-]</span></p>
+</span></p>
 {{ content }}
 <script>
 pages = document.getElementsByClassName("pages-button");
