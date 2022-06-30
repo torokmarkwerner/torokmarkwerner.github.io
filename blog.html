@@ -16,7 +16,7 @@ permalink: /blog/
     {{ ert }} min{% if ert != 1 %}s{% endif %}
 </span>
 <p><span>
-  {% for tag in page.tags %}
+  {% for tag in site.posts.tags %}
     {% capture tag_name %}{{ tag }}{% endcapture %}
     [<a href="/tag/{{ tag_name }}">{{ tag_name | upcase}}</a>]
   {% endfor %}
