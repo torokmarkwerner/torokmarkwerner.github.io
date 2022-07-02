@@ -23,13 +23,25 @@ permalink: /projects/
 }
 
 .container:hover {
-  opacity:0.9 !important;
+  /*opacity:0.9 !important;*/
   cursor: pointer;
 }
 
 .scrollForMore {
   transition: opacity 0.5s;
   }
+.progress-container {
+  height:0em;
+  padding:0 0.5em 0 0.5em;
+  transition: all 0.5s;
+  cursor:pointer;
+}
+.progress-whole {
+  width:100%;height:0em;line-height:0em;background-color:#f5f5f5;border-radius:10px;transition: all 0.5s
+}
+.progress-so-far {
+  height:0em;line-height:0em;background-color:#04AA6D;border-radius:10px;transition: all 0.5s
+}
 </style>
   <script>
     containers = document.getElementsByClassName("divy");
@@ -63,28 +75,76 @@ function checkVisibility(){
  
   </script>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 <div style="grid-template-columns: 1fr 1fr;display: grid;
   justify-content: center;width:50%;margin-right:auto;margin-left:10vw;
   align-content: center;grid-row-gap: 1vw;grid-column-gap: 5vw;">
   <div class="container" style="background-color:red;"><div class="divy">
   TEXT ADVENTURE
+<div class="progress-container">
+<div class="progress-whole">
+<div class="progress-so-far" style="width:50%"></div>
+</div>
+</div>
   </div></div>
   <div class="container" style="background-color:blue"><div class="divy">
-  POINT AND CLICK</div></div>
+  POINT AND CLICK
+<div class="progress-container">
+<div class="progress-whole">
+<div class="progress-so-far" style="width:10%"></div>
+</div>
+</div>
+  </div></div>
   <div class="scrollForMore" id="scrollForMore" style="text-align:center;grid-column:1/span 2;display:table;font-size:1vw;line-height:1vw;">[SCROLL DOWN FOR MORE]</div>
   <div class="container" style="background-color:green;"><div class="divy">
-STORYLINE TEACHING</div>
-  </div>
+STORYLINE TEACHING
+<div class="progress-container">
+<div class="progress-whole">
+<div class="progress-so-far" style="width:60%"></div>
+</div>
+</div>
+</div></div>
   <div class="container" style="background-color:orange"><div class="divy">
-HANGMAN</div>
-  </div>
+HANGMAN
+<div class="progress-container">
+<div class="progress-whole">
+<div class="progress-so-far" style="width:100%"></div>
+</div>
+</div>
+</div></div>
     <div class="scrollForMore" style="visibility:none;text-align:center;grid-column:1/span 2;display:table;font-size:1vw;line-height:1vw;">[SCROLL DOWN FOR MORE]</div>
   <div class="container" style="background-color:khaki;"><div class="divy">
-GAP FILLING GENERATOR</div>
-  </div>
+GAP FILLING GENERATOR
+<div class="progress-container">
+<div class="progress-whole">
+<div class="progress-so-far" style="width:95%"></div>
+</div>
+</div>
+</div></div>
   <div class="container" style="background-color:black;color:white"><div class="divy">
-FRIENDLY FEUD</div>
-  </div>
+FRIENDLY FEUD
+<div class="progress-container">
+<div class="progress-whole">
+<div class="progress-so-far" style="width:70%"></div>
+</div>
+</div>
+</div></div>
     <div class="scrollForMore" style="visibility:none;text-align:center;grid-column:1/span 2;display:table;font-size:1vw;line-height:1vw;height:2vw;"></div>
   </div>
+  
+  <script>
+progressContainers = document.getElementsByClassName("progress-container");
+for (i=0; i<progressContainers.length; i++) {
+document.getElementsByClassName("progress-container")[i].parentElement.addEventListener("mouseover",function() {
+this.children[0].style.height = "0.5em"
+this.children[0].style.padding = "0.5em 0.5em 0.5em 0.5em"
+this.children[0].children[0].style.height = "0.5em"
+this.children[0].children[0].children[0].style.height = "0.5em"
+});
+document.getElementsByClassName("progress-container")[i].parentElement.addEventListener("mouseout",function() {
+this.children[0].style.height = "0em"
+this.children[0].style.padding = "0 0.5em 0 0.5em"
+this.children[0].children[0].style.height = "0em"
+this.children[0].children[0].children[0].style.height = "0em"
+});
+}
+</script>
