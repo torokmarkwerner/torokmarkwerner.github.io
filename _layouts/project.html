@@ -20,3 +20,13 @@ layout: default
 <div class="progress-so-far" style="width: {{ page.complete }} "></div>
 </div>
 </div>
+<script>
+pages = document.getElementsByClassName("pages-button");
+for (i=0; i<pages.length; i++) {
+  if(("/" + pages[i].textContent.toLowerCase() + "/") === "/projects/") {
+    pages[i].classList.toggle("pages-button-current");
+    pages[i].style.backgroundColor = "palegreen";
+    pages[i].style.fontWeight = "bold"
+  }
+}
+</script>
