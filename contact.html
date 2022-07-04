@@ -61,14 +61,14 @@ permalink: /contact/
   
 function loadingDots() {
   if (document.getElementById("demo-form").innerHTML === "...") {
-    document.getElementById("demo-form").innerHTML === ""
+    document.getElementById("demo-form").innerHTML = ""
   } else {
     document.getElementById("demo-form").append(".");
   }
 }
         
 onSubmit = function(token) {
-  
+  document.getElementById("demo-form").innerHTML = ""
   f = setInterval(loadingDots,1000);
         //alert(token)
 var xhttp = new XMLHttpRequest();
