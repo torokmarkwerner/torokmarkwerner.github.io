@@ -128,8 +128,10 @@ function submitButton(){
      commenterCheckBoxcheckedData = container.getElementsByTagName("input")[1].checked
      commenterCommentData = encodeURIComponent(container.getElementsByTagName("textarea")[0].value);
      buttonData = this;
+     if (commenterNameData && commenterCommentData && commenterCheckBoxcheckedData != true) {
      this.disabled = true;
      document.getElementById("recaptcha").click()
+     }
                                                                                            });
  }
 }
