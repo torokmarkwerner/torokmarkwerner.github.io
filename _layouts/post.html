@@ -128,6 +128,7 @@ function submitButton(){
      commenterCheckBoxcheckedData = container.getElementsByTagName("input")[1].checked
      commenterCommentData = encodeURIComponent(container.getElementsByTagName("textarea")[0].value);
      buttonData = this;
+     this.disabled = true;
      document.getElementById("recaptcha").click()
                                                                                            });
  }
