@@ -61,7 +61,7 @@ permalink: /contact/
  
         
 onSubmit = function(token) {
-  document.getElementsByClassName("send-button")[0].disabled = "true"
+  this.disabled = true
         //alert(token)
 var xhttp = new XMLHttpRequest();
 xhttp.open("POST", "https://script.google.com/macros/s/AKfycbxCcYzGfxqpEruWnrNDr6qylHfieOde_rN7ijpUaY2xXgNqODl21t6DtwTzOjSxNHW-pQ/exec", true);
