@@ -61,7 +61,7 @@ permalink: /contact/
  
         
 onSubmit = function(token) {
- document.getElementsByClassName("send-button")[0].style.display = "none"
+document.getElementsByClassName("send-button")[0].disabled = true
         //alert(token)
 var xhttp = new XMLHttpRequest();
 xhttp.open("POST", "https://script.google.com/macros/s/AKfycbxCcYzGfxqpEruWnrNDr6qylHfieOde_rN7ijpUaY2xXgNqODl21t6DtwTzOjSxNHW-pQ/exec", true);
@@ -72,6 +72,8 @@ xhttp.onreadystatechange = function() {
         document.getElementById("demo-form").innerHTML = "<div>Your message has been sent. It will be answered soon.</div>"       
        } else if (xhttp.responseText === "ERROR") {
         document.getElementById("demo-form").innerHTML = "<div>Something went wrong. Try again.</div>"       
+       } else {
+       document.getElementsByClassName("send-button")[0].disabled = false
        }
     }
 };
