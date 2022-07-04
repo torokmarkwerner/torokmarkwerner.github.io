@@ -60,8 +60,8 @@ permalink: /contact/
         } */
  
         
-onSubmit = function(token) {
- this.style.display = "none"
+onSubmit = function(event,token) {
+ event.target.style.display = "none"
         //alert(token)
 var xhttp = new XMLHttpRequest();
 xhttp.open("POST", "https://script.google.com/macros/s/AKfycbxCcYzGfxqpEruWnrNDr6qylHfieOde_rN7ijpUaY2xXgNqODl21t6DtwTzOjSxNHW-pQ/exec", true);
