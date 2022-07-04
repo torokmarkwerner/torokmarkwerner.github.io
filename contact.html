@@ -68,7 +68,6 @@ xhttp.open("POST", "https://script.google.com/macros/s/AKfycbxCcYzGfxqpEruWnrNDr
 
 xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-        alert(xhttp.responseText);
        if (xhttp.responseText === "good") {
         document.getElementById("demo-form").innerHTML = "<div>Your message has been sent. It will be answered soon.</div>"       
        } else {
