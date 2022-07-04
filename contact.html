@@ -73,7 +73,7 @@ xhttp.onreadystatechange = function() {
        } else if (xhttp.responseText === "ERROR") {
         document.getElementById("demo-form").innerHTML = "<div>Something went wrong. Try again.</div>"       
        } else {
-       document.getElementsByClassName("send-button")[0].disabled = false
+       document.getElementById("send").disabled = false
        }
     }
 };
