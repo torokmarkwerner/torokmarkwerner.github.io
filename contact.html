@@ -42,7 +42,7 @@ permalink: /contact/
 </tbody></table>
 </div>
 <div style="text-align:center;width:100%;padding-left:10px;padding-right:10px">
-<button id="send" class="send-button" onclick="this.disabled = true; document.getElementById('recaptcha').click()">SEND</button>
+<button id="send" class="send-button" onclick="if (document.getElementById('name').value && document.getElementById('email').value && document.getElementById('message').value) { this.disabled = true; document.getElementById('recaptcha').click() }">SEND</button>
 </div>
 </div>
 <script>
@@ -71,8 +71,6 @@ xhttp.onreadystatechange = function() {
         alert(xhttp.responseText);
        if (xhttp.responseText === "good") {
         document.getElementById("demo-form").innerHTML = "<div>Your message has been sent. It will be answered soon.</div>"       
-       } else if (xhttp.responseText === "missing") {
-         document.getElementById("send").disabled = false       
        } else {
         document.getElementById("demo-form").innerHTML = "<div>Something went wrong. Try again.</div>"
        }
