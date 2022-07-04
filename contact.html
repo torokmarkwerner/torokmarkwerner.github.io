@@ -20,6 +20,8 @@ permalink: /contact/
 </style>
 
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<button id="recaptcha" style="display:none" class="g-recaptcha" data-sitekey="6Ld802sgAAAAABSZiOb1YDO0ApjEkmx4PNVh03tM" data-callback="onSubmit">
+</button>
 
 <div id="demo-form">
 <p>Do you have any questions?</p>
@@ -40,9 +42,7 @@ permalink: /contact/
 </tbody></table>
 </div>
 <div style="text-align:center;width:100%;padding-left:10px;padding-right:10px">
-<button id="send" class="g-recaptcha send-button" 
-        data-sitekey="6Ld802sgAAAAABSZiOb1YDO0ApjEkmx4PNVh03tM" 
-        data-callback='onSubmit'>SEND</button>
+<button id="send" class="send-button" onclick="this.disabled = true; document.getElementById('recaptcha').click()">SEND</button>
 </div>
 </div>
 <script>
@@ -61,7 +61,7 @@ permalink: /contact/
  
         
 onSubmit = function(token) {
-document.getElementById("send").disabled = true
+
         //alert(token)
 var xhttp = new XMLHttpRequest();
 xhttp.open("POST", "https://script.google.com/macros/s/AKfycbxCcYzGfxqpEruWnrNDr6qylHfieOde_rN7ijpUaY2xXgNqODl21t6DtwTzOjSxNHW-pQ/exec", true);
@@ -73,7 +73,7 @@ xhttp.onreadystatechange = function() {
        } else if (xhttp.responseText === "ERROR") {
         document.getElementById("demo-form").innerHTML = "<div>Something went wrong. Try again.</div>"       
        } else {
-       document.getElementById("send").disabled = false
+        document.getElementById("send").disabled = false
        }
     }
 };
