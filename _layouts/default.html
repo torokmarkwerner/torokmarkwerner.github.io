@@ -9,6 +9,14 @@
   </head>
   
 <style>
+  @media (max-width: 767px) {
+    .sticky {
+      display:none;
+    }
+    #content-container {
+      width:80vw;
+    }
+  }
 ::-moz-selection { /* Code for Firefox */
   color: auto;
   background: auto;
@@ -99,9 +107,13 @@ body {
   cursor:pointer;
   font-weight:bold;
 }
-    .pages-button-current {
+.pages-button-current {
       background-color:palegreen;
       
+    }
+#content-container {
+      padding:0 0 0 2em;
+      width:40vw
     }
 
 </style>
@@ -131,7 +143,7 @@ pages[i].addEventListener("click",function() {window.open("https://torokmarkwern
   }
 }
 </script>
-<div id="content-container" style="padding:0 0 0 2em;width:40vw">
+<div id="content-container">
 <h1>{{ page.title }}</h1>
     {{ content }}
 </div>
