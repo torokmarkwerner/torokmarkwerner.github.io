@@ -149,7 +149,7 @@ tags: learning ESL star-wars
 <p>Luckily, there's a handful of other solutions.</p>
 
 <div class="examples" style="counter-set:my-sec-counter 5">
-<ol style="counter-set:my-sec-counter 2">
+<ol style="counter-set:my-sec-counter2 2">
 <table>
 <tbody>
 <tr><td></td><td>EN</td><td>Neutral HU</td><td>Proposed Translation</td></tr>
