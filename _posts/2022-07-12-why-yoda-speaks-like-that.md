@@ -79,15 +79,19 @@ tags: learning ESL star-wars
 
 <p>Check out what he means when using an inversion here:</p>
 
-<div class="examples" style="counter-set: my-sec-counter 4"><ol>
+<div class="examples" style="counter-set: my-sec-counter 4">
+<ol>
 <li>
-<p>YODA: No more training do you require. Already know you that which you need.</p>
-
-<p>LUKE: Then I <i>am</i> a Jedi.</p>
-
-<p>YODA: No. Not yet. One thing remains. Vader. You must confront Vader. Then, only then, a Jedi will you be. And confront him, you will.</p>
+ <table>
+ <tbody>
+   <tr><td>YODA</td><td>No more training do you require. Already know you that which you need.</td></tr>
+   <tr><td>LUKE</td><td>Then I <i>am</i> a Jedi.</td></tr>
+   <tr><td>YODA</td><td>No. Not yet. One thing remains. Vader. You must confront Vader. Then, only then, a Jedi will you be. And confront him, you will.</td></tr>
+ </tbody>
+ </table>
 </li>
-</ol></div>
+</ol>
+</div>
 
 <p>Here, Yoda leads Luke to the conclusion that, with his training complete, he has become a Jedi. However, this is an inference that only the most inattentive would make: even though Luke has finished his training, he still needs to overcome a challenge that lies in front of the Padawan; namely, he needs to confront Darth Vader.</p>
 
