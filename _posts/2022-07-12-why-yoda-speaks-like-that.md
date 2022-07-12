@@ -23,11 +23,11 @@ tags: translation ESL star-wars
 <li>Found someone, you have. (<i>The Empire Strikes Back</i>)</li>
 </ol></div>
 
-<p>If you Google "why Yoda speaks like that", the most common way to describe Yodish or Yodaspeak &ndash; as fans call his way to build sentences &ndash; is to use syntax, the way words or phrases are organised into sentences.</p>
+<p>If you Google "why Yoda speaks like that", the most common way to describe Yodish or Yodaspeak &ndash; as fans call his way to build sentences &ndash; is using the concepts of <i>syntax</i>, the way words (and phrases) are organised into sentences.</p>
 
 <p style="font-size:80%">Whoever speaks a little bit of English knows that the usual way to speak of themselves reading a book is "I am reading a book" where <i>I</i> is the subject, <i>am reading </i>is the verb, and <i>a book</i> is the object, a word that designates the most typical of those: a physical object. That gets us a subject-verb-object (SVO) word order, which is the general syntax of English statements (also called <i>declaratives</i>), and that is why English is often referred to as an SVO type of language among other languages like German, Polish, French, Italian, Spanish etc.</p>
 
-<p>As opposed to modern-day English, Yoda's lines above are based on an object-subject-verb (OSV) syntax. For example, the sentence "More to learn, he has" has an object <i>more to learn</i>, a subject <i>he</i>, and a verb <i>has</i>, which are put in an OSV order, meaning that the object comes first, then the subject, and then the verb.</p>
+<p>As opposed to modern-day English, <span class="highlighted-text">Yoda's lines above are based on an object-subject-verb (OSV) syntax.</span> For example, the sentence "More to learn, he has" has an object <i>more to learn</i>, a subject <i>he</i>, and a verb <i>has</i>, which are put in an OSV order, meaning that the object comes first, then the subject, and then the verb.</p>
 
 <p style="font-size:80%">Now, for the non-beginners, it is plain and clear that this is very much of an oversimplification. In our second example ("Good friends you are."), the phrase <i>good friends</i> can't even be an object, as this sentence is based on a no-object structure (AKA intransitive) with a state-of-being verb (<i>be</i>). And even though the third line includes an object (<i>someone</i>), it is the main verb (<i>found</i>) that is put in the front, which leaves us with a split verb phrase (<i>have</i> | <i>found</i>). Suffice to say, the syntax of Yodish is much more complex than it seems, but it is, indeed, the OSV structure that dominates it.</p>
 
