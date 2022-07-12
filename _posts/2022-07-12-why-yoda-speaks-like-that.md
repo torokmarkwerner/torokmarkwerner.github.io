@@ -3,6 +3,8 @@ layout: post
 title: Why Yoda Speaks Like That
 tags: translation ESL star-wars
 ---
+<p>Since 1977, the year the first episode of Star Wars was released, the epic space opera has been mesmerising generations after generations. Now when I say epic, I am not only referring to the enormous money that these movies usually require, nor do I have their impressive box office results in mind. <i>Epic</i> here is an adjective that you can use to describe a grandiose work of art that is embedded in a mythical universe, in a world that is highly elaborate to the minutest detail.</p>
+
 <div class="toc">
 <div>Table of Contents</div>
 <ol>
@@ -14,8 +16,6 @@ tags: translation ESL star-wars
 	<li><a href="#what's-up-with-other-languages">What’s Up with Other Languages?</a></li>
 </ol>
 </div>
-
-<p>Since 1977, the year the first episode of Star Wars was released, the epic space opera has been mesmerising generations after generations. Now when I say epic, I am not only referring to the enormous money that these movies usually require, nor do I have their impressive box office results in mind. <i>Epic</i> here is an adjective that you can use to describe a grandiose work of art that is embedded in a mythical universe, in a world that is highly elaborate to the minutest detail.</p>
 
 <p>Given the fact that filmmakers don't have unlimited hours for a movie, epic movies necessarily involve parts of the universe that can't be fully explained on-screen and are left to audiences, especially to the fan base, to find out more about. One of the widely debated questions of the Star Wars universe is Master Yoda's syntax, that is, the way he constructs his sentences, word by word.</p>
 
