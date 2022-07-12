@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Why Yoda Speaks Like That
-tags: learning ESL star-wars
+tags: translation ESL star-wars
 ---
 <p>Since 1977, the year the first episode of Star Wars was released, the epic space opera has been mesmerising generations after generations. Now when I say epic, I am not only referring to the enormous money that these movies usually require, nor do I have their impressive box office results in mind. <i>Epic</i> here is an adjective that you can use to describe a grandiose work of art that is embedded in a mythical universe, in a world that is highly elaborate to the minutest detail.</p>
 
@@ -146,7 +146,7 @@ tags: learning ESL star-wars
 
 <p>Actually, the problem is never with OSV. It is rather the S-part of the sentence, as the verb often carries the essential information about the subject, so much so that you don't need an explicit subject. Were one to use personal pronouns (<i>&eacute;n</i>, <i>te</i>, <i>ő</i> etc.) everywhere, they'd sound like the somewhat racist depiction of Native Americans in dubbed movies. And remember the case that I have already mentioned above: the copular <i>be</i> is implicit in third-person singular.</p>
 
-<p>Luckily, there's a handful of other solutions.</p>
+<p class="highlighted-text">Luckily, there's a handful of other solutions.</p>
 
 <div class="examples" style="counter-set:my-sec-counter 5">
 <ol style="counter-set:my-sec-counter2 2">
