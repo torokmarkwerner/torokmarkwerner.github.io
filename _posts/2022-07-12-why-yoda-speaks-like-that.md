@@ -167,7 +167,7 @@ tags: translation ESL star-wars
 <p>Sure, this doesn’t tell you a lot, as we know: language is all about context. Without a discourse, the strangeness of 5F is close to non-existent. Therefore, we have to check what surrounds it:</p>
 
 <div class="examples" style="counter-set: my-sec-counter 5">
-<ol>
+<ol style="counter-set: my-sec-counter2 7">
 <li>
  <table>
  <tbody>
