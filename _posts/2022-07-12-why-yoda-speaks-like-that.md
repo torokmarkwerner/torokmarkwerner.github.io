@@ -31,7 +31,7 @@ tags: translation ESL star-wars
 
 <p style="font-size:80%">Now, for the non-beginners, it is plain and clear that this is very much of an oversimplification. In our second example ("Good friends you are."), the phrase <i>good friends</i> can't even be an object, as this sentence is based on a no-object structure (AKA intransitive) with a state-of-being verb (<i>be</i>). And even though the third line includes an object (<i>someone</i>), it is the main verb (<i>found</i>) that is put in the front, which leaves us with a split verb phrase (<i>have</i> | <i>found</i>). Suffice to say, the syntax of Yodish is much more complex than it seems, but it is, indeed, the OSV structure that dominates it.</p>
 
-<h2>Language Transfer</h2>
+<h2 id="language-transfer">Language Transfer</h2>
 
 <p>It seems that, at least on the surface, Yodish is as simple as it gets. Well, the answer to the question <i>How?</i> is relatively simple; however, the reason why Yoda speaks like that is a different issue. The most common answer that a Star Wars fan would give you is a long-standing misconception: Yoda apparently transfers the syntax of his first language and applies those rules to English.</p>
 
@@ -61,7 +61,7 @@ tags: translation ESL star-wars
 
 <hr>
 
-<h2>When 900 Years Old You Reach</h2>
+<h2 id="when-900-years-old-you-reach">When 900 Years Old You Reach</h2>
 
 <p>Some say that OSV structures have something to do with the fact that Yoda was born more than eight centuries before the events of the first movie (chronologically speaking). His age shows in his language being an archaic version of the Galactic Basic (English spoken in the Star Wars universe), just as Shakespeare would sound strange if he were alive today.</p>
 
@@ -69,7 +69,7 @@ tags: translation ESL star-wars
 
 <p class="highlighted-text">Nonetheless, being a speaking puzzle is not the only explanation for Yodish. It may well be quite the opposite.</p>
 
-<h2>Inversion</h2>
+<h2 id="inversion">Inversion</h2>
 
 <p>What we, learners of ESL, can take away from the way Yoda speaks is efficiency: the little green Jedi master doesn't speak much, but when he does, you'd better listen! His syntax supports your attention, "[Yoda's] language was designed to make you focus on the boring philosophical lessons," as George Lucas recalls.</p>
 
@@ -101,7 +101,7 @@ tags: translation ESL star-wars
 
 <hr>
 
-<h2>Dubbing Yoda in Hungarian</h2>
+<h2 id="dubbing-yoda-in-hungarian">Dubbing Yoda in Hungarian</h2>
 
 <p>During the past days as we were having a Star Wars marathon, what stroke me the most was that <span class="highlighted-text">the speech of the Hungarian Yoda was very much ordinary.</span></p>
 
@@ -178,7 +178,7 @@ tags: translation ESL star-wars
 </ol>
 </div>
 	
-<h2>What’s Up with Other Languages?</h2>
+<h2 id="what's-up-with-other-languages">What’s Up with Other Languages?</h2>
 <p>It was not until 11 years ago that Reddit user Shakedown_1979 raised a similar question on the translation of Yodaspeak. Now the list the people of Reddit made of it is very interesting.</p>
 <p>Just as indicated above, translators of other languages also concentrated on the archaic, wise, and unusual quality of Yoda’s language.</p>
 
