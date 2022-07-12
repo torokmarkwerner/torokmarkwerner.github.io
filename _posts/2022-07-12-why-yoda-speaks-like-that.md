@@ -25,11 +25,11 @@ tags: translation ESL star-wars
 
 <p>If you Google "why Yoda speaks like that", the most common way to describe Yodish or Yodaspeak &ndash; as fans call his way to build sentences &ndash; is to use syntax, the way words or phrases are organised into sentences.</p>
 
-<p>Whoever speaks a little bit of English knows that the usual way to speak of themselves reading a book is "I am reading a book" where <i>I</i> is the subject, <i>am reading </i>is the verb, and <i>a book</i> is the object, a word that designates the most typical of those: a physical object. That gets us a subject-verb-object (SVO) word order, which is the general syntax of English statements (also called <i>declaratives</i>), and that is why English is often referred to as an SVO type of language among other languages like German, Polish, French, Italian, Spanish etc.</p>
+<p style="font-size:90%">Whoever speaks a little bit of English knows that the usual way to speak of themselves reading a book is "I am reading a book" where <i>I</i> is the subject, <i>am reading </i>is the verb, and <i>a book</i> is the object, a word that designates the most typical of those: a physical object. That gets us a subject-verb-object (SVO) word order, which is the general syntax of English statements (also called <i>declaratives</i>), and that is why English is often referred to as an SVO type of language among other languages like German, Polish, French, Italian, Spanish etc.</p>
 
 <p>As opposed to modern-day English, Yoda's lines above are based on an object-subject-verb (OSV) syntax. For example, the sentence "More to learn, he has" has an object <i>more to learn</i>, a subject <i>he</i>, and a verb <i>has</i>, which are put in an OSV order, meaning that the object comes first, then the subject, and then the verb.</p>
 
-<p>Now, for the non-beginners, it is plain and clear that this is very much of an oversimplification. In our second example ("Good friends you are."), the phrase <i>good friends</i> can't even be an object, as this sentence is based on a no-object structure (AKA intransitive) with a state-of-being verb (<i>be</i>). And even though the third line includes an object (<i>someone</i>), it is the main verb (<i>found</i>) that is put in the front, which leaves us with a split verb phrase (<i>have</i> | <i>found</i>). Suffice to say, the syntax of Yodish is much more complex than it seems, but it is, indeed, the OSV structure that dominates it.</p>
+<p style="font-size:90%">Now, for the non-beginners, it is plain and clear that this is very much of an oversimplification. In our second example ("Good friends you are."), the phrase <i>good friends</i> can't even be an object, as this sentence is based on a no-object structure (AKA intransitive) with a state-of-being verb (<i>be</i>). And even though the third line includes an object (<i>someone</i>), it is the main verb (<i>found</i>) that is put in the front, which leaves us with a split verb phrase (<i>have</i> | <i>found</i>). Suffice to say, the syntax of Yodish is much more complex than it seems, but it is, indeed, the OSV structure that dominates it.</p>
 
 <h2>Language Transfer</h2>
 
@@ -53,7 +53,7 @@ tags: translation ESL star-wars
 
 <p>Now the only question is how you define an error, and that is a question of high importance if you want to learn, and eventually speak, a language. What Merriam-Webster gives us is some mumbo jumbo about an ignorant or imprudent deviation from a code of behaviour, but that suits us well. Breaking it down into three chunks, so that we can digest it more easily, we arrive at ignorance + deviation + code.</p>
 
-<p>That is to say, an error is when you don't know the code, so you break it. However, Yoda seems to know the code, as approximately one in every five of his sentences is in SVO. So, it is not accidental, nor is it an error of some kind. The only question is the function of the unusual syntax.</p>
+<p><span class="highlighted-text">That is to say, an error is when you don't know the code, so you break it.</span> However, Yoda seems to know the code, as approximately one in every five of his sentences is in SVO. So, it is not accidental, nor is it an error of some kind. The only question is the function of the unusual syntax.</p>
 
 <p><img src="/Amigurumi_Baby_Yoda.jpg"></p>
 
@@ -67,7 +67,7 @@ tags: translation ESL star-wars
 
 <p>Shakespeare is a good parallel to Yoda in that he also makes use of the syntactic freedom the users of Early Modern English enjoyed (cf. Right glad I am he was not at this fray. [<i>Romeo and Juliet</i>]). His archaic diction adds to his wisdom, and also, it results in a mysterious, mythical atmosphere that surrounds him as the misty swamp does his little hut. At the same time, it makes it harder for his listeners to decipher his message; a characteristic that <a href="https://www.theatlantic.com/entertainment/archive/2015/12/hmmmmm/420798/" target="_blank">some</a> might call "riddle-like".</p>
 
-<p>Nonetheless, being a speaking puzzle is not the only explanation for Yodish. It may well be quite the opposite.</p>
+<p class="highlighted-text">Nonetheless, being a speaking puzzle is not the only explanation for Yodish. It may well be quite the opposite.</p>
 
 <h2>Inversion</h2>
 
@@ -75,7 +75,7 @@ tags: translation ESL star-wars
 
 <p>If used for the right purposes, inversion is truly a wonderful device, and it serves its master well just as a lightsabre does the Jedi. Both of these structures are about putting emphasis on the elements of a sentence. Consider the sentence that every Padawan wants to hear someday: "You require no more training." If Yoda places<i> </i>the object <i>no more training </i>to the front, i.e. he says "No more training do you require.", he puts more emphasis on the fact that it is not more training Luke needs but something else.</p>
 
-<p>Now again, we know if for a fact that Yoda knows what he's doing.</p>
+<p class="highlighted-text">Now again, we know if for a fact that Yoda knows what he's doing.</p>
 
 <p>Check out what he means when using an inversion here:</p>
 
@@ -103,9 +103,7 @@ tags: translation ESL star-wars
 
 <h2>Dubbing Yoda in Hungarian</h2>
 
-<p>During the past days as we were having a Star Wars marathon, what stroke me the most was that</p>
-
-<p>the speech of the Hungarian Yoda was very much ordinary.</p>
+<p>During the past days as we were having a Star Wars marathon, what stroke me the most was that <span class="highlighted-text">the speech of the Hungarian Yoda was very much ordinary.</span></p>
 
 <p>Of course, I am not the first person noticing this peculiarity, a journalist at the Hungarian linguist blog <i>Nyelv &eacute;s Tudom&aacute;ny</i> (Language and Science) already wrote about in <a href="https://m.nyest.hu/hirek/yoda-mester-es-a-nyelvtipologia" style="color:#0563c1; text-decoration:underline">her 2010 article</a> <i>Master Yoda and Language Typology</i>.</p>
 
