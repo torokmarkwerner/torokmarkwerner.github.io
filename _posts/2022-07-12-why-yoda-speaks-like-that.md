@@ -13,7 +13,7 @@ tags: translation ESL star-wars
 
 <hr>
 
-<h2>How Yoda Speaks</h2>
+<h2 id="how-yoda-speaks">How Yoda Speaks</h2>
 
 <p>Let's first take a look at how Yoda speaks.</p>
 
