@@ -150,7 +150,7 @@ tags: translation ESL star-wars
 <ol style="counter-set:my-sec-counter2 2">
 <table>
 <tbody>
-<tr style="text-align:center;font-weight:bold"><td style="border:none"></td><td>English</td><td>Neutral Hungarian</td><td>Proposed Translation</td></tr>
+<tr style="text-align:center;font-weight:bold"><td style="border:none"></td><td style="font-size: 120%;font-variant: all-petite-caps">English</td><td style="font-variant: all-petite-caps">Neutral Hungarian</td><td style="font-variant: all-petite-caps">Proposed Translation</td></tr>
 <tr><td><li></li></td><td>More to learn, he has.</td><td>Sokat kell még tanulnia.</td><td>Sokat tanulnia kell még.</td></tr>
 <tr><td><li></li></td><td>I hope right you are.</td><td>Remélem, hogy igazad van.</td><td>Hogy igazad van, remélem.</td></tr>
 <tr><td><li></li></td><td>Good friends you are.</td><td>Jó barátok vagytok.</td><td>Barátaim, jók, vagytok.</td></tr>
