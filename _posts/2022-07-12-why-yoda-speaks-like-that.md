@@ -129,7 +129,7 @@ tags: learning ESL star-wars
 		
 <p>In comparison, the Hungarian OSV would sound strange in an environment where the subject doesn't need to be stressed.</p>
 
-<div class="examples" style="counter-set:my-sec-counter 5">
+<div class="examples" style="counter-set:my-sec-counter 5 my-sec-counter2 2">
 <ol>
 <li>
  <table>
