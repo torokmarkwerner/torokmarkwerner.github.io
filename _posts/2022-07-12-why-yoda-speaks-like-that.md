@@ -3,13 +3,11 @@ layout: post
 title: Why Yoda Speaks Like That
 tags: learning ESL star-wars
 ---
-<h1>Why Yoda Speaks Like That</h1>
-
 <p>Since 1977, the year the first episode of Star Wars was released, the epic space opera has been mesmerising generations after generations. Now when I say epic, I am not only referring to the enormous money that these movies usually require, nor do I have their impressive box office results in mind. <i>Epic</i> here is an adjective that you can use to describe a grandiose work of art that is embedded in a mythical universe, in a world that is highly elaborate to the minutest detail.</p>
 
 <p>Given the fact that filmmakers don't have unlimited hours for a movie, epic movies necessarily involve parts of the universe that can't be fully explained on-screen and are left to audiences, especially to the fan base, to find out more about. One of the widely debated questions of the Star Wars universe is Master Yoda's syntax, that is, the way he constructs his sentences, word by word.</p>
 
-<p><img src="https://ckeditor.com/apps/ckfinder/userfiles/files/image-20220712153229-1.jpeg" style="height:533px; width:799px" /></p>
+<p><img src="/13103469483_c017f772f4_c.jpg"></p>
 
 <p><i>Jedi Master Yoda.</i> Photo: Thomas Hawk (<a href="https://www.flickr.com/photos/thomashawk/13103469483" target="_blank">Flickr</a>).</p>
 
@@ -57,7 +55,7 @@ tags: learning ESL star-wars
 
 <p>That is to say, an error is when you don't know the code, so you break it. However, Yoda seems to know the code, as approximately one in every five of his sentences is in SVO. So, it is not accidental, nor is it an error of some kind. The only question is the function of the unusual syntax.</p>
 
-<p><img src="https://ckeditor.com/apps/ckfinder/userfiles/files/image-20220712153229-2.jpeg" style="height:600px; width:800px" /></p>
+<p><img src="/Amigurumi_Baby_Yoda.jpg"></p>
 
 <p><i>Amigurumi Baby Yoda</i>. Photo: Lskbrown (<a href="https://commons.m.wikimedia.org/wiki/File:Amigurumi_Baby_Yoda.jpg" style="color:#0563c1; text-decoration:underline">Wikipedia</a>).</p>
 
@@ -93,9 +91,9 @@ tags: learning ESL star-wars
 
 <p>Here, Yoda leads Luke to the conclusion that, with his training complete, he has become a Jedi. However, this is an inference that only the most inattentive would make: even though Luke has finished his training, he still needs to overcome a challenge that lies in front of the Padawan; namely, he needs to confront Darth Vader.</p>
 
-<p><img src="https://ckeditor.com/apps/ckfinder/userfiles/files/image-20220712153229-3.jpeg" style="height:1071px; width:1385px" /></p>
+<p><img src="/50010698591_7a93c11338_o.jpg"></p>
 
-<p><i>Still Life with Baby Yoda</i>. Photo: Eric Peacock (<a href="https://www.flickr.com/photos/evilpeacock/5001069859" style="color:#0563c1; text-decoration:underline">Flickr</a>).</p>
+<p><i>Still Life with Baby Yoda</i>. Photo: Eric Peacock (<a href="https://www.flickr.com/photos/evilpeacock/5001069859">Flickr</a>).</p>
 
 <hr>
 
