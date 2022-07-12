@@ -152,7 +152,7 @@ tags: learning ESL star-wars
 <ol style="counter-set:my-sec-counter2 2">
 <table>
 <tbody>
-<tr><td></td><td>EN</td><td>Neutral HU</td><td>Proposed Translation</td></tr>
+<tr style="text-align:center"><td style="border:none"></td><td>EN</td><td>Neutral HU</td><td>Proposed Translation</td></tr>
 <tr><td><li></li></td><td>More to learn, he has.</td><td>Sokat kell még tanulnia.	</td><td>Sokat tanulnia kell még.</td></tr>
 <tr><td><li></li></td><td>I hope right you are.</td><td>Remélem, hogy igazad van.</td><td>Hogy igazad van, remélem.</td></tr>
 <tr><td><li></li></td><td>Good friends you are.</td><td>Jó barátok vagytok.</td><td>Barátaim, jók, vagytok.</td></tr>
@@ -163,5 +163,25 @@ tags: learning ESL star-wars
 	</ol>
 	</div>
 	
+<p>The techniques I used here were the following: OSV (5C, 5D), appostion (<i>értelmező jelző</i> [5E]), main clause–subordinate clause inversion (5D), and unusual focus (5F). However, the length of the sentence very much limited the number of solutions as the shorter the sentence was, the less combinations there were for me to replace the words in it.</p>
+<p>Sure, this doesn’t tell you a lot, as we know: language is all about context. Without a discourse, the strangeness of 5F is close to non-existent. Therefore, we have to check what surrounds it:</p>
+
+<div class="examples" style="counter-set: my-sec-counter 5">
+<ol>
+<li>
+ <table>
+ <tbody>
+   <tr><td>LUKE</td><td>Now will you move along, little fella?  We've got a lot of work to do.</td><td>Most már állj tovább, kisbarátom! Nekünk sok dolgunk van még itt.</td></tr>
+   <tr><td>YODA</td><td>No!  No, no!  <b>Stay and help you, I will.</b> Find your friend, hmm?</td><td>Nem! Nem, nem! <b>Maradok és neked segítek.</b> A barátod megtalálni, hm?</td></tr>
+   <tr><td>LUKE</td><td>I'm not looking for a friend. I'm looking for a Jedi Master.</td><td>Nem a barátomat keresem, hanem egy Jedi mestert.</td></tr>
+ </tbody>
+ </table>
+</li>
+</ol>
+</div>
 	
+<h2>What’s Up with Other Languages?</h2>
+<p>It was not until 11 years ago that Reddit user Shakedown_1979 raised a similar question on the translation of Yodaspeak. Now the list the people of Reddit made of it is very interesting.</p>
+<p>Just as indicated above, translators of other languages also concentrated on the archaic, wise, and unusual quality of Yoda’s language.</p>
+
 	
