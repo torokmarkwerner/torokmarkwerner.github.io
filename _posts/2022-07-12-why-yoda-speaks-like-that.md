@@ -147,3 +147,20 @@ tags: learning ESL star-wars
 <p>Actually, the problem is never with OSV. It is rather the S-part of the sentence, as the verb often carries the essential information about the subject, so much so that you don't need an explicit subject. Were one to use personal pronouns (<i>&eacute;n</i>, <i>te</i>, <i>ő</i> etc.) everywhere, they'd sound like the somewhat racist depiction of Native Americans in dubbed movies. And remember the case that I have already mentioned above: the copular <i>be</i> is implicit in third-person singular.</p>
 
 <p>Luckily, there's a handful of other solutions.</p>
+
+<div class="examples"><ol>
+<table>
+<tbody>
+<tr><td></td><td>EN</td><td>Neutral HU</td><td>Proposed Translation</td></tr>
+<tr><td><li></li></td><td>More to learn, he has.</td><td>Sokat kell még tanulnia.	</td><td>Sokat tanulnia kell még.</td></tr>
+<tr><td><li></li></td><td>I hope right you are.</td><td>Remélem, hogy igazad van.</td><td>Hogy igazad van, remélem.</td></tr>
+<tr><td><li></li></td><td>Good friends you are.</td><td>Jó barátok vagytok.</td><td>Barátaim, jók, vagytok.</td></tr>
+<tr><td><li></li></td><td>Stay and help you, I will.</td><td>Maradok és segítek neked.</td><td>Maradok és neked segítek.</td></tr>
+<tr><td><li></li></td><td>But agree on you taking this boy as your Padawan learner, I do not.</td><td>De azzal nem értek egyet, hogy a fiú a padawanod legyen.</td><td>De, hogy a fiú a padawanod legyen, egyet azzal nem értek.</td></tr>
+	</tbody>
+	</table>
+	</ol>
+	</div>
+	
+	
+	
