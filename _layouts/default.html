@@ -9,6 +9,32 @@
   </head>
   
 <style>
+  .examples {
+background-color:;
+  counter-increment: my-sec-counter;
+  counter-reset: my-sec-counter2;
+}
+
+.examples ol {
+counter-reset: my-sec-counter2;
+list-style-type: none;
+display:table;
+border-collapse: separate;
+border-spacing: 0.5em;
+padding:0.5em 2em 0.5em 2em;
+}
+
+.examples ol li {
+display: table-row;
+}
+
+.examples ol li::before {
+  counter-increment: my-sec-counter2;
+  content: counter(my-sec-counter) counter(my-sec-counter2, upper-alpha) " ";
+  display:table-cell;
+  text-align:left;
+  width:2em
+}
 ::-moz-selection { /* Code for Firefox */
   color: auto;
   background: auto;
