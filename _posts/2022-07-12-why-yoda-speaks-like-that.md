@@ -69,7 +69,7 @@ tags: translation ESL star-wars
 
 <p><img src="/Amigurumi_Baby_Yoda.jpg"></p>
 
-<p><i>Amigurumi Baby Yoda</i>. Photo: Lskbrown (<a href="https://commons.m.wikimedia.org/wiki/File:Amigurumi_Baby_Yoda.jpg" style="color:#0563c1; text-decoration:underline">Wikipedia</a>).</p>
+<p><i>Amigurumi Baby Yoda</i>. Photo: Lskbrown (<a href="https://commons.m.wikimedia.org/wiki/File:Amigurumi_Baby_Yoda.jpg" target="_blank">Wikipedia</a>).</p>
 
 <hr>
 
@@ -77,7 +77,7 @@ tags: translation ESL star-wars
 
 <p>Some say that OSV structures have something to do with the fact that Yoda was born more than eight centuries before the events of the first movie (chronologically speaking). His age shows in his language being an archaic version of the Galactic Basic (English spoken in the Star Wars universe), just as Shakespeare would sound strange if he were alive today.</p>
 
-<p>Shakespeare is a good parallel to Yoda in that he also makes use of the syntactic freedom the users of Early Modern English enjoyed (cf. Right glad I am he was not at this fray. [<i>Romeo and Juliet</i>]). His archaic diction adds to his wisdom, and also, it results in a mysterious, mythical atmosphere that surrounds him as the misty swamp does his little hut. At the same time, it makes it harder for his listeners to decipher his message; a characteristic that <a href="https://www.theatlantic.com/entertainment/archive/2015/12/hmmmmm/420798/" target="_blank">some</a> might call "riddle-like".</p>
+<p>Shakespeare is a good parallel to Yoda in that he also makes use of the syntactic freedom the users of Early Modern English enjoyed (cf. Right glad I am he was not at this fray. [<i>Romeo and Juliet</i>]). His archaic diction adds to his wisdom, and also, it results in a mysterious, mythical atmosphere that surrounds him as the misty swamp does his little hut. At the same time, it makes it harder for his listeners to decipher his message; a characteristic that <a href="https://www.theatlantic.com/entertainment/archive/2015/12/hmmmmm/420798" target="_blank">some</a> might call "riddle-like".</p>
 
 <p class="highlighted-text">Nonetheless, being a speaking puzzle is not the only explanation for Yodish. It may well be quite the opposite.</p>
 
@@ -109,7 +109,7 @@ tags: translation ESL star-wars
 
 <p><img src="/50010698591_7a93c11338_o.jpg"></p>
 
-<p><i>Still Life with Baby Yoda</i>. Photo: Eric Peacock (<a href="https://www.flickr.com/photos/evilpeacock/5001069859">Flickr</a>).</p>
+<p><i>Still Life with Baby Yoda</i>. Photo: Eric Peacock (<a href="https://www.flickr.com/photos/evilpeacock/5001069859" target="_blanK">Flickr</a>).</p>
 
 <hr>
 
@@ -117,7 +117,7 @@ tags: translation ESL star-wars
 
 <p>During the past days as we were having a Star Wars marathon, what stroke me the most was that <span class="highlighted-text">the speech of the Hungarian Yoda was very much ordinary.</span></p>
 
-<p>Of course, I am not the first person noticing this peculiarity, a journalist at the Hungarian linguist blog <i>Nyelv &eacute;s Tudom&aacute;ny</i> (Language and Science) already wrote about in <a href="https://m.nyest.hu/hirek/yoda-mester-es-a-nyelvtipologia" style="color:#0563c1; text-decoration:underline">her 2010 article</a> <i>Master Yoda and Language Typology</i>.</p>
+<p>Of course, I am not the first person noticing this peculiarity, a journalist at the Hungarian linguist blog <i>Nyelv &eacute;s Tudom&aacute;ny</i> (Language and Science) already wrote about in <a href="https://m.nyest.hu/hirek/yoda-mester-es-a-nyelvtipologia" target="_blank">her 2010 article</a> <i>Master Yoda and Language Typology</i>.</p>
 
 <p>Hungarian, as she also remarks, has a free word order (<i>szabad szórend</i>), but it doesn't mean that you can do whatever you want with the phrases in a sentence. The element that you put right before the verb is the focus of the sentence. However, the basic word order of a neutral sentence is subject-verb-object (SVO), and even though you <i>can</i> deviate from this, some structures may sound just as mysterious, poetic, or enigmatic as Yodish lines to an English speaker.</p>
 
@@ -191,7 +191,12 @@ tags: translation ESL star-wars
 </div>
 	
 <h2 id="what's-up-with-other-languages">What’s Up with Other Languages?</h2>
-<p>It was not until 11 years ago that Reddit user Shakedown_1979 raised a similar question on the translation of Yodaspeak. Now the list the people of Reddit made of it is very interesting.</p>
-<p>Just as indicated above, translators of other languages also concentrated on the archaic, wise, and unusual quality of Yoda’s language.</p>
+<p>It was not until 11 years ago that Reddit user <i>Shakedown_1979</i> raised <a href="https://www.reddit.com/r/linguistics/comments/gfoov/what_is_yodas_syntax_in_foreign_dubssubtitles_in" target="_blank">a similar question</a> on the translation of Yodaspeak. The worldwide discussion started with their list containing 11 languages and the way Yoda’s language was adapted to them, but many languages were added thanks to the contribution of people from all around the world.</p>
+<p>Unlike Hungarians, <span class="highlighted-text">
+translators of other languages seemed to have concentrated on the archaic, wise, and unusual quality of Yoda’s language.</span></p>
+<p>In Turkish, for example, the OSV was applied due to the alleged preference of that structure in Ottoman poetry, but archaisms were added in Japanese and Romanian, too. For Czech, Polish, and Estonian viewers, the syntax of their own Yodas sound quite weird, and putting the object before the verb (SOV, OVS) does so in other Slavic languages (such as Russian), as well, while the Polish and Estonian translations both applied strange foci – just like I did above.</p>
+<p>Now it is question time. Why do you think Hungarian translators did very little to translate Yodish, and what other ways do you think Yodish may be translated to Hungarian?</p>
+<p>Let me know what you think in the comments!</p>
+
 
 	
