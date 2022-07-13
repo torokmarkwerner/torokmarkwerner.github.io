@@ -200,8 +200,13 @@ body {
   display: none;
   }
   
+#sticky img {
+  width: 100%;
+  }
+  
 @media (max-width: 767px) {
-#hamburger { 
+#hamburger {
+    display: block;
     position: fixed;
     background: lightskyblue;
     top: 10px;
@@ -232,6 +237,9 @@ body {
     min-width:fit-content;
     z-index: 2
     }
+#sticky img {
+  width: 40vw;
+  }
 #close {
     position:relative;
     font-size:50px;
@@ -277,7 +285,7 @@ document.getElementById("background").style.display = "none"
   
 <div id="sticky">
 <div id="close" onclick="hideNav()">&times;</div>
-<div style="display: inline-flex;vertical-align: bottom;"><img src="https://avatars.githubusercontent.com/u/98919050" style="width:40vw"/></div>
+<div style="display: inline-flex;vertical-align: bottom;"><img src="https://avatars.githubusercontent.com/u/98919050"/></div>
 <div  id="about" class="pages-button">ABOUT</div>
 <div id="projects" class="pages-button">PROJECTS</div>
 <div id="blog" class="pages-button">BLOG</div>
