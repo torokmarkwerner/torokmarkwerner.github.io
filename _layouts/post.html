@@ -1,11 +1,6 @@
 ---
 layout: default
 ---
-<style>
-  body {
-    width:100%;
-  }
-</style>
 <p>{{ page.date | date: "%-d %B %Y" }}  | <span class="ert">
     ERT:
     {% assign words = page.content | strip_html | number_of_words %}
