@@ -2,94 +2,21 @@
 layout: home
 title: "Home"
 ---
-<style>
-#letters div, #M, #T {
-    background-color:;
-}
+<div id="letters" style="text-align: center;background-color: black;height: 20vw;width: 20vw;position: relative;">
 
-#M div {
-  background-color: black;
-}
-#T div {
-  background-color: lightskyblue;
-}
-#T {
-  left:120%;
-  transition: left 2s;
-  transition-delay: 1.5s;
-}
-#M {
-  left:200%;
-  transition: left 2s;
-  transition-delay: 1.5s;
-}
-</style>
+<span style="
+    color: lightskyblue;
+    font-family: Tahoma;
+    font-size: 12vw;
+    font-weight: bold;
+    line-height: 20vw;
+">T</span>
+<span style="
+    color: palegreen;
+    font-family: Tahoma;
+    font-size: 12vw;
+    font-weight: bold;
+    line-height: 20vw;
+">M</span>
 
-<div id="letters" style="height: 20vw;width: 20vw;position: relative;">
-
-<div id="M" style="position:absolute;top:0%;width:100%;height:100%;z-index:1">
-<div style="
-    top: 0%;
-    left: 0%;
-    position: absolute;
-    width: 20%;
-    height: 100%;
-"></div><div style="
-    top: 0%;
-    left: 40%;
-    position: absolute;
-    width: 20%;
-    height: 100%;
-"></div><div style="
-    top: 0%;
-    left: 80%;
-    position: absolute;
-    width: 20%;
-    height: 100%;
-"></div><div style="
-    top: 0%;
-    left: 0%;
-    position: absolute;
-    width: 100%;
-    height: 40%;
-"></div>
 </div>
-
-
-<div id="T" style="position:absolute;top:0%;width:100%;height:100%;z-index:1">
-<div style="
-    top: 0%;
-    left: 20%;
-    position: absolute;
-    width: 20%;
-    height: 100%;
-"></div><div style="
-    top: 0%;
-    left: 0%;
-    position: absolute;
-    width: 60%;
-    height: 20%;
-"></div>
-</div>
-
-
-
-<div style="
-  background-color:palegreen;
-
-    right: 0;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    position: absolute;
-"></div>
-</div>
-
-<script>
-tea = document.getElementById("T");
-emm = document.getElementById("M");
-
-window.addEventListener("load",function(){
-tea.style.left = "0%" 
-emm.style.left = "0%"})
-</script>
