@@ -2,6 +2,7 @@
 layout: post
 title: Why Yoda Speaks Like That
 tags: translation ESL star-wars
+image: 13103469483_c017f772f4_c.jpg
 ---
 <p>Since 1977, the year the first episode of Star Wars was released, the epic space opera has been mesmerising generations after generations. Now when I say epic, I am not only referring to the enormous money that these movies usually require, nor do I have their impressive box office results in mind. <i>Epic</i> here is an adjective that you can use to describe a grandiose work of art that is embedded in a mythical universe, in a world that is highly elaborate to the minutest detail.</p>
 
