@@ -294,7 +294,7 @@ document.getElementById("demo").appendChild(commentBody)
   <ul>
     {% for related_post in site.related_posts limit: 5 %}
     <div><a href="{{ related_post.url }}">{{ related_post.title }}</a></div>
-      <div><img src="{{ related_post.image }}"></div>
+      <div><img src="/images/{{ related_post.image }}"></div>
     {% endfor %}
   </ul>
 </div>
