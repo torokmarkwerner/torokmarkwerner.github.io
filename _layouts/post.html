@@ -290,14 +290,26 @@ document.getElementById("demo").appendChild(commentBody)
 }
 </script>
 <hr>
+<style>
+    .related-post-image {
+     max-width: 50%;
+     padding: 5px 0;
+    }
+@media (max-width: 767px) {
+    .related-post-image {
+     max-width: 75%;
+     padding: 5px 0;
+    }
+    }
+</style>
 <div>
-  <h2 style="padding:0">Related Posts</h2>
+  <div style="font-size: 150%;font-weight: bold;font-variant: all-petite-caps;padding: 5px 10px;">Related Posts</div>
   <div style="padding-bottom: 22px">
     {% for related_post in site.related_posts limit: 5 %}
-    <div style="font-variant-caps: all-small-caps;padding: 10px;font-size:110%">
+    <div style="font-variant-caps: all-small-caps;padding: 5px 10px;font-size:110%">
                 <a href="{{ related_post.url }}">{{ related_post.title }}</a></div>
       <div>
-                <img style="max-width: 75%;padding: 5px 0;" 
+                <img class="related-post-image"
                      src="/images/{{ related_post.image }}"></div>
     {% endfor %}
   </div>
