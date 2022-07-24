@@ -19,7 +19,7 @@ tags: translation ESL star-wars
 
 <p>Given the fact that filmmakers don't have unlimited hours for a movie, epic movies necessarily involve parts of the universe that can't be fully explained on-screen and are left to audiences, especially to the fan base, to find out more about. One of the widely debated questions of the Star Wars universe is Master Yoda's syntax, that is, the way he constructs his sentences, word by word.</p>
 
-<p><img src="/13103469483_c017f772f4_c.jpg"></p>
+<p><img src="/images/13103469483_c017f772f4_c.jpg"></p>
 
 <p><i>Jedi Master Yoda.</i> Photo: Thomas Hawk (<a href="https://www.flickr.com/photos/thomashawk/13103469483" target="_blank">Flickr</a>).</p>
 
@@ -67,7 +67,7 @@ tags: translation ESL star-wars
 
 <p><span class="highlighted-text">That is to say, an error is when you don't know the code, so you break it.</span> However, Yoda seems to know the code, as approximately one in every five of his sentences is in SVO. So, it is not accidental, nor is it an error of some kind. The only question is the function of the unusual syntax.</p>
 
-<p><img src="/Amigurumi_Baby_Yoda.jpg"></p>
+<p><img src="/images/Amigurumi_Baby_Yoda.jpg"></p>
 
 <p><i>Amigurumi Baby Yoda</i>. Photo: Lskbrown (<a href="https://commons.m.wikimedia.org/wiki/File:Amigurumi_Baby_Yoda.jpg" target="_blank">Wikipedia</a>).</p>
 
@@ -107,7 +107,7 @@ tags: translation ESL star-wars
 
 <p>Here, Yoda leads Luke to the conclusion that, with his training complete, he has become a Jedi. However, this is an inference that only the most inattentive would make: even though Luke has finished his training, he still needs to overcome a challenge that lies in front of the Padawan; namely, he needs to confront Darth Vader.</p>
 
-<p><img src="/50010698591_7a93c11338_o.jpg"></p>
+<p><img src="/images/50010698591_7a93c11338_o.jpg"></p>
 
 <p><i>Still Life with Baby Yoda</i>. Photo: Eric Peacock (<a href="https://www.flickr.com/photos/evilpeacock/5001069859" target="_blanK">Flickr</a>).</p>
 
