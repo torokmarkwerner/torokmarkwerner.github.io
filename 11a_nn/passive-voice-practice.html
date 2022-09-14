@@ -1,0 +1,158 @@
+<style>
+.task-buttons {
+  background-color: lightblue;
+  border: 1px black solid;
+  border-radius: 2em;
+  padding: 1em
+}
+.task-buttons:hover {
+  opacity:0.9;
+  cursor:pointer;
+}
+.task-inputs {
+  border: 1px black solid;
+  padding:0.5em
+}
+.task-list li {
+  padding-bottom:0.5em
+}
+.task-list div {
+  padding-bottom:0.5em
+}
+</style>
+
+<div>
+<h2>
+Passive Voice Practice
+</h2>
+<div>
+<b>Complete the second sentence so that it has a similar meaning to the first sentence, using the word given. Do not change the word given.</b>
+</div>
+<ol class="task-list">
+<li>
+<div>
+We think the treasure dates from the thirteenth century.
+</div>
+<div>
+<b>think</b>
+</div>
+It <input class="task-inputs"> from the thirteenth century. <button class="task-buttons">CHECK</button>
+</li>
+<li>
+<div>
+Your hair needs cutting.
+</div>
+<div>
+<b>get</b>
+</div>
+You <input class="task-inputs"> cut. <button class="task-buttons">CHECK</button>
+</li>
+<li>
+<div>
+Jill's parents are making her study hard.
+</div>
+<div>
+<b>made</b>
+</div>
+Jill <input class="task-inputs"> her parents. <button class="task-buttons">CHECK</button>
+</li>
+<li>
+<div>
+Apparently the ship did not sustain any damage.
+</div>
+<div>
+<b>appears</b>
+</div>
+The ship <input class="task-inputs"> any damage. <button class="task-buttons">CHECK</button>
+</li>
+<li>
+<div>
+It is thought that the two injured men were repairing overhead cables.</div>
+<div>
+<b>have</b>
+</div>
+The two injured men <input class="task-inputs"> overhead cables. <button class="task-buttons">CHECK</button>
+</li>
+<li>
+<div>
+There is rumour that the escaped prisoner is living in Spain.
+</div>
+<div>
+<b>be</b>
+</div>
+The escaped prisoner <input class="task-inputs"> living in Spain. <button class="task-buttons">CHECK</button>
+</li>
+<li>
+<div>
+We have agreed to meet again in a fortnight.</div>
+<div>
+<b>will</b>
+</div>
+It has <input class="task-inputs"> meet again in a fortnight. <button class="task-buttons">CHECK</button>
+</li>
+<li>
+<div>
+We decided to try again later.</div>
+<div>
+<b>would</b>
+</div>
+It was <input class="task-inputs"> try again later. <button class="task-buttons">CHECK</button>
+</li>
+<li>
+<div>
+There is confirmation of Mr Jackson's intended resignation.</div>
+<div>
+<b>that</b>
+</div>
+It is <input class="task-inputs"> to resign. <button class="task-buttons">CHECK</button>
+</li>
+<li>
+<div>
+Most of the committee thought it was not a viable solution.</div>
+<div>
+<b>think</b>
+</div>
+It was thought <input class="task-inputs"> by most of the committee. <button class="task-buttons">CHECK</button>
+</li>
+</ol>
+
+</div>
+
+<script>
+
+function check(answer,correctAnswer) {
+if (answer === correctAnswer) {
+alert("GOOD")
+} else {
+alert("BAD");
+}
+}
+
+answers = [
+"is thought to be",
+"have to get your hair",
+"is being made to study hard by",
+"appears not to have sustained",
+"are thought to have been repairing",
+"is rumoured to be",
+"been agreed that we will",
+"decided that we would",
+"confirmed that Mr Jackson is about",
+"not to be a viable solution"
+];
+btns = document.getElementsByClassName("task-buttons");
+inputs = document.getElementsByClassName("task-inputs");
+//alert(inputs[0].value == undefined)
+//alert(btns.length === inputs.length)
+for (let i=0; i<btns.length; i++) {
+btns[i].addEventListener("click",
+function() {
+if(inputs[i].value === answers[i] && inputs[i].value != undefined) { 
+inputs[i].style.backgroundColor = "lightgreen";
+//<span style='font-weight:bold;color:green'>" + answers[i] + "</span>");
+} else {
+inputs[i].style.backgroundColor = "#FAA0A0";
+}
+});
+}
+</script>
