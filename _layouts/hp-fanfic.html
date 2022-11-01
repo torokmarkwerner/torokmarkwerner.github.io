@@ -1,19 +1,18 @@
 ---
 layout: hp-default
 ---
-<script>
-  author = '{{ page.author }}'
 
-  alert(author);
-  
-  function sendPlusOne() {
-  xhr = new XMLHttpRequest();
-dataTable = "https://script.google.com/macros/s/AKfycbzh61GzScy5bCNPDFL_6d_CDwTljnu3oNY6VfdUtQMVfhIbB3h-fAMybRemOgFAe_iL/exec"
+<script>
+
+function sendPlusOne() {
+xhr = new XMLHttpRequest();
+dataTable = "https://script.google.com/macros/s/AKfycbyYc-8x4hLy4TM5ASnU2sw1OfkHGe4PnrlmkvOLBvEL9dEHomicOatwWiuxJXxUuY4/exec"
 xhr.open('POST', dataTable, true);
 xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-xhr.send('name=' + author);
+xhr.send('name=' + "Török Márk");
 document.getElementById("heart").removeEventListener("click",sendPlusOne)
-  }
+}
 
 document.getElementById("heart").addEventListener("click",sendPlusOne)
+
 </script>
