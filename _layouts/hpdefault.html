@@ -113,8 +113,10 @@ align-content:flex-start;
       </tbody>
       </table>
     <p>{{page.content}}</p>
-  </div>
+  {% else %}
+  {{page.content}}
   {% endif %}
+</div>
 
 <div class="footer" style="flex-grow:1">
 <p>
