@@ -128,7 +128,7 @@ align-content:flex-start;
       document.getElementById("heart").removeEventListener("click",sendPlusOne)
       document.getElementById("heart").style.filter = "brightness(100%)"
       document.getElementById("heart").style.cursor = "inherit"
-      document.getElementById("heart").nextElementSibling().innerHTML = Number(document.getElementById("heart").nextElementSibling().innerHTML) + 1
+      document.getElementById("heart").parentElement.nextElementSibling.innerText = Number(document.getElementById("heart").parentElement.nextElementSibling.innerText) + 1
       }
       document.getElementById("heart").addEventListener("click",sendPlusOne)
       </script>
