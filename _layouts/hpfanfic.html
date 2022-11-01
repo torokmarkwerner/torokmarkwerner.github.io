@@ -1,10 +1,8 @@
 ---
 layout: hpdefault
 ---
-
 <script>
   alert("{{ page.author }}")
-
 function sendPlusOne() {
 xhr = new XMLHttpRequest();
 dataTable = "https://script.google.com/macros/s/AKfycbzh61GzScy5bCNPDFL_6d_CDwTljnu3oNY6VfdUtQMVfhIbB3h-fAMybRemOgFAe_iL/exec"
@@ -13,7 +11,5 @@ xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
 xhr.send('name=' + "Török Márk");
 document.getElementById("heart").removeEventListener("click",sendPlusOne)
 }
-
 document.getElementById("heart").addEventListener("click",sendPlusOne)
-
 </script>
