@@ -120,7 +120,6 @@ align-content:flex-start;
       xhr.open('POST', dataTable, true);
       xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
       xhr.send('name=' + encodeURI(myVar));
-      alert(encodeURI(myVar))
       document.getElementById("heart").removeEventListener("click",sendPlusOne)
       }
       document.getElementById("heart").addEventListener("click",sendPlusOne)
