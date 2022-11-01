@@ -1,5 +1,5 @@
 ---
-layout: hp-default
+layout: hp-fanfic
 title: Harry Potter és a negyven rabló
 published: true
 author: Török Márk
