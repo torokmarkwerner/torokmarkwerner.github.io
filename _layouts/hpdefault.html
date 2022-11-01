@@ -111,8 +111,13 @@ align-content:flex-start;
         </tr>
       </tbody>
       </table>
-      
-      <script>
+<style>
+#heart:hover {
+  cursor:pointer;
+}
+</style>      
+
+<script>
         var myVar = "{{page.author | json}}"
       function sendPlusOne() {
       xhr = new XMLHttpRequest();
@@ -121,6 +126,8 @@ align-content:flex-start;
       xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
       xhr.send('name=' + encodeURI(myVar));
       document.getElementById("heart").removeEventListener("click",sendPlusOne)
+      document.getElementById("heart").style.filter = "brightness(100%)"
+      document.getElementById("heart").style.cursor = "inherit"
       }
       document.getElementById("heart").addEventListener("click",sendPlusOne)
       </script>
