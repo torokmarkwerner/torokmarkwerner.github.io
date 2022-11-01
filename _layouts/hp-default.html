@@ -99,8 +99,10 @@ align-content:flex-start;
 <div id="main">
 
   {% if page.title != "HP Fanfiction | Kezdőlap" %}
-  <h2>{{page.title}}</h2>
-  {{page.content}}
+  <div style="color: black;background-color: #fcf3ae;margin: 0 5%;padding: 5%;">
+    <h2>{{page.title}}</h2>
+    <p>{{page.content}}</p>
+  </div>
   {% else %}
   {{page.content}}
   {% endif %}
