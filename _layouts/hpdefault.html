@@ -131,6 +131,26 @@ align-content:flex-start;
       document.getElementById("heart").parentElement.nextElementSibling.innerText = Number(document.getElementById("heart").parentElement.nextElementSibling.innerText) + 1
       }
       document.getElementById("heart").addEventListener("click",sendPlusOne)
+
+  dataTable = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQzsfeZNjSPfjP0yTllvKxjgDJvMQx1-ifLSC4vl1xQ2DEyRmGADAAF1HB7itpEzcAZjaAUdO8y3I4p/pub?output=csv"
+  xhr=new XMLHttpRequest();
+  xhr.open("GET", dataTable, false);
+    xhr.onreadystatechange = function () {
+        if(xhr.readyState === 4) {
+            if(xhr.status === 200 || xhr.status == 0) {
+               	data = xhr.responseText.split(/\n/);
+						}
+        }
+    }
+    xhr.send();
+scoreTable = {}
+for (i=1;i<data.length;i++) {
+name = data[i].split(",")[0];
+score = Number(data[i].split(",")[1]);
+scoreTable[name] = score;
+}
+document.getElementById("heart").parentElement.nextElementSibling.innerText = scoreTable[name];
+
       </script>
 
     <p>{{page.content}}</p>
