@@ -118,13 +118,13 @@ align-content:flex-start;
 </style>      
 
 <script>
-        var myVar = "{{page.author | json}}"
+        var name = "{{page.author | json}}"
       function sendPlusOne() {
       xhr = new XMLHttpRequest();
       dataTable = "https://script.google.com/macros/s/AKfycbzh61GzScy5bCNPDFL_6d_CDwTljnu3oNY6VfdUtQMVfhIbB3h-fAMybRemOgFAe_iL/exec"
       xhr.open('POST', dataTable, true);
       xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-      xhr.send('name=' + encodeURI(myVar));
+      xhr.send('name=' + encodeURI(name));
       document.getElementById("heart").removeEventListener("click",sendPlusOne)
       document.getElementById("heart").style.filter = "brightness(100%)"
       document.getElementById("heart").style.cursor = "inherit"
