@@ -100,7 +100,12 @@ align-content:flex-start;
 </div>
 <div id="main">
 
+  {% if page.title != "HP Fanfiction | Kezdőlap" %}
+  <h2>{{page.title}}</h2>
+  <p>{{page.content}}</p>
+  {% else %}
   {{page.content}}
+  {% endif %}
 
 <div class="footer" style="flex-grow:1">
 <p>
