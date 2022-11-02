@@ -118,13 +118,13 @@ align-content:flex-start;
 </style>      
 
 <script>
-        var name = "{{page.author | json}}"
+        var varName = "{{page.author | json}}"
       function sendPlusOne() {
       xhr = new XMLHttpRequest();
       dataTable = "https://script.google.com/macros/s/AKfycbzh61GzScy5bCNPDFL_6d_CDwTljnu3oNY6VfdUtQMVfhIbB3h-fAMybRemOgFAe_iL/exec"
       xhr.open('POST', dataTable, true);
       xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-      xhr.send('name=' + encodeURI(name));
+      xhr.send('name=' + encodeURI(varName));
       document.getElementById("heart").removeEventListener("click",sendPlusOne)
       document.getElementById("heart").style.filter = "brightness(100%)"
       document.getElementById("heart").style.cursor = "inherit"
@@ -149,7 +149,7 @@ name = data[i].split(",")[0];
 score = Number(data[i].split(",")[1]);
 scoreTable[name] = score;
 }
-document.getElementById("heart").parentElement.nextElementSibling.innerText = scoreTable[name];
+document.getElementById("heart").parentElement.nextElementSibling.innerText = scoreTable[varName];
 
       </script>
 
@@ -423,6 +423,21 @@ document.getElementById("heart").parentElement.nextElementSibling.innerText = sc
   </script>
 
   {% else %}
+
+  <script>
+    var varName = "{{page.author | json}}"
+    dataTable = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQzsfeZNjSPfjP0yTllvKxjgDJvMQx1-ifLSC4vl1xQ2DEyRmGADAAF1HB7itpEzcAZjaAUdO8y3I4p/pub?output=csv"
+    xhr=new XMLHttpRequest();
+    xhr.open("GET", dataTable, false);
+      xhr.onreadystatechange = function () {
+          if(xhr.readyState === 4) {
+              if(xhr.status === 200 || xhr.status == 0) {
+                   data = xhr.responseText.split(/\n/);
+              }
+          }
+      }
+      xhr.send();
+      </script>
     {% assign hpfanfiction = site.pages | where_exp: "item" , "item.path contains 'hpfanfiction/'"%}
     {% for item in hpfanfiction %}
     <div class="story">
