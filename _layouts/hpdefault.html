@@ -457,8 +457,8 @@ document.getElementById("heart").parentElement.nextElementSibling.innerText = sc
         xhr.send();
 
     tds = document.getElementsByTagName("td");
-    for (i=1; i<tds.length; i+=2) {
-      tds[i].innerHTML = data.find(element => element.split(",")[0] === tds[i].parentElement.parentElement.parentElement.previousElementSibling.previousElementSibling.innerHTML).split(",")[1]
+    for (i=0; i<tds.length; i+=2) {
+      tds[i+1].innerHTML = data.find(element => element.split(",")[0] === tds[i].parentElement.parentElement.parentElement.previousElementSibling.previousElementSibling.innerHTML).split(",")[1]
     }
         </script>
 
