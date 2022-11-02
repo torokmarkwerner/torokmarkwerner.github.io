@@ -424,24 +424,10 @@ document.getElementById("heart").parentElement.nextElementSibling.innerText = sc
 
   {% else %}
 
-  <script>
-    var varName = "{{page.author | json}}"
-    dataTable = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQzsfeZNjSPfjP0yTllvKxjgDJvMQx1-ifLSC4vl1xQ2DEyRmGADAAF1HB7itpEzcAZjaAUdO8y3I4p/pub?output=csv"
-    xhr=new XMLHttpRequest();
-    xhr.open("GET", dataTable, false);
-      xhr.onreadystatechange = function () {
-          if(xhr.readyState === 4) {
-              if(xhr.status === 200 || xhr.status == 0) {
-                   data = xhr.responseText.split(/\n/);
-              }
-          }
-      }
-      xhr.send();
-      </script>
     {% assign hpfanfiction = site.pages | where_exp: "item" , "item.path contains 'hpfanfiction/'"%}
     {% for item in hpfanfiction %}
     <div class="story">
-    {{item.author}}
+    <p>{{item.author}}</p>
     <p>{{item.title}}</p>
     <table class="comment-like">
       <tbody>
@@ -455,6 +441,26 @@ document.getElementById("heart").parentElement.nextElementSibling.innerText = sc
       </table>
     </div>
     {% endfor %}
+
+    <script>
+      var varName = "{{page.author | json}}"
+      dataTable = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQzsfeZNjSPfjP0yTllvKxjgDJvMQx1-ifLSC4vl1xQ2DEyRmGADAAF1HB7itpEzcAZjaAUdO8y3I4p/pub?output=csv"
+      xhr=new XMLHttpRequest();
+      xhr.open("GET", dataTable, false);
+        xhr.onreadystatechange = function () {
+            if(xhr.readyState === 4) {
+                if(xhr.status === 200 || xhr.status == 0) {
+                     data = xhr.responseText.split(/\n/);
+                }
+            }
+        }
+        xhr.send();
+
+    tds = document.getElementsByTagName("td");
+    for (i=1; i<tds.length; i+=2) {
+      tds[i].innerHTML = data.find(element => element.split(",")[0] === tds[i].parentElement.parentElement.parentElement.previousElementSibling.previousElementSibling.innerHTML)
+    }
+        </script>
 
   {{page.content}}
   {% endif %}
