@@ -461,7 +461,7 @@ document.getElementById("heart").parentElement.nextElementSibling.innerText = sc
         xhr.send();
 
     tds = document.getElementsByTagName("td");
-    for (i=4; i<tds.length; i+=4) {
+    for (i=3; i<tds.length; i+=4) {
       tds[i].innerHTML = data.find(element => element.split(",")[0] === tds[i].parentElement.parentElement.parentElement.previousElementSibling.previousElementSibling.innerHTML).split(",")[1]
     }
         </script>
