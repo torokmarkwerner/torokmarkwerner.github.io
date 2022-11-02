@@ -480,7 +480,7 @@ document.getElementById("heart").parentElement.nextElementSibling.innerText = sc
 
        tds = document.getElementsByTagName("td");
     for (i=1; i<tds.length; i+=4) {
-      tds[i].innerHTML = links.filter(element => element === "https://torokmarkwerner.github.io/hp-fanfiction/harry-potter-es-a-negyven-rablo.html").length;
+      tds[i].innerHTML = links.filter(element => element === tds[i].parentElement.parentElement.parentElement.parentElement.href).length;
     }
        alert(links)
    };
