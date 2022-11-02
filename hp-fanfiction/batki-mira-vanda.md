@@ -1,5 +1,5 @@
 ---
-layout: hpfanfic
+layout: post
 title: [Cím nélkül]
 published: true
 author: Batki Míra Vanda
