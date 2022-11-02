@@ -336,6 +336,7 @@ document.getElementById("heart").parentElement.nextElementSibling.innerText = sc
        }
      
        numCom = posts.length;
+       document.getElementById("heart").parentElement.previousElementSibling.innerText = numCom;
        postCommentNumber = document.createElement("DIV");
        if (numCom<2) {postCommentNumber.innerHTML = numCom + " comment"} else {postCommentNumber.innerHTML = numCom + " comments"};
        postCommentNumber.className = "post-comment-number"
