@@ -4,8 +4,7 @@ title: [Cím nélkül]
 published: true
 author: Batki Míra Vanda
 ---
-Harry végre már mindent értett. Hát persze, hogy oda kell menni, ezt eddig, hogy is nem
-tudta. Egy hely, ahova egy árva lélek sem teszi be a lábát, de mégsem gyanakszik erre senki.
+Harry végre már mindent értett. Hát persze, hogy oda kell menni, ezt eddig, hogy is nem tudta. Egy hely, ahova egy árva lélek sem teszi be a lábát, de mégsem gyanakszik erre senki.
 Hisztis Myrtle mosdója. Hiszen Myrtle sem látta, hogy mi ölte meg. Így minden összeáll.
 Már tudták, hogy hol kell keresni, csak azt nem, hogy pontosan hol van. Harryben csak úgy
 dúlt az izgalom és egyben az idegesség. Mi van, ha nem találják meg? Eddig eljutottak és mindezt
@@ -106,6 +105,6 @@ hibája az egész. Az, hogy nem ment le egyből a titkok kamrájában, az, hogy 
 miatta és a kételkedései miatt. Nem tehet róla más csak ő.
 
 Nem szólt egy szót sem és elvonult. Nem bírta nézni. Nem tudta elviselni, hogy a legjobb
-barátja az ő hibájából vesztette el egy szerettét, vagy lehet, hogy mégsem egyedül ú volt a hibás.
+barátja az ő hibájából vesztette el egy szerettét, vagy lehet, hogy mégsem egyedül ő volt a hibás.
 Volt még valaki, aki ebben közrejátszott. Valaki, aki ezt még élvezte is. Szerintem mind tudjunk ki
 az akiről szó van. És ezen a valakin bosszút kell állni.
