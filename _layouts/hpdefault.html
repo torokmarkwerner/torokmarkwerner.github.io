@@ -157,7 +157,7 @@ document.getElementById("heart").parentElement.nextElementSibling.innerText = sc
 
 
     <style>
-      .post-comment-number {
+      #post-comment-number {
         font-size:110%;
         font-weight: bold;
         padding:1em;
@@ -212,6 +212,8 @@ document.getElementById("heart").parentElement.nextElementSibling.innerText = sc
       }
       </style>
 
+<p id="post-comment-number"></p>
+
  <script>
   dataTable = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQg6dmeH1EYHwCm1zLmGSI34IC9Uchtf8pWL3KfqnPIMbSbFl-DB1jptcCjuIlP3e4mRVmcG7PbGuGz/pub?gid=100847974&single=true&output=csv"
   xhr=new XMLHttpRequest();
@@ -231,10 +233,8 @@ if (link === window.location.href) {
   comments.push(data[i])
 }
 }
-document.getElementById("post-comment-number").innerHTML = comments.length + " hozzászólás"
+document.getElementById("post-comment-number").innerHTML = (comments.length + " hozzászólás")
  </script>
-
-<p id="post-comment-number"></p>
 
 <div id="leave-a-comment" style="padding: 0em 1em;font-size: 110%;font-weight: bold;">Hozzászólás írása</div>
 
