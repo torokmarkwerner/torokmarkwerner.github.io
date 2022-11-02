@@ -14,8 +14,8 @@ background-image:url("https://static1.squarespace.com/static/5907e7e7440243daba0
 }
 </style>
 
-{% assign hp-fanfiction = site.pages | where_exp: "hp-fanfiction" , "item.path contains 'hp-fanfiction'"%}
-{% for item in site.hp-fanfiction %}
+{% assign hpfanfiction = site.pages | where_exp: "hp-fanfiction" , "item.path contains 'hp-fanfiction'"%}
+{% for item in hpfanfiction %}
 <div class="story">
   <p>{{ item.title }}</p>
   </div>
