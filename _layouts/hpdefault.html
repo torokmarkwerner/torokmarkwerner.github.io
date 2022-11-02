@@ -475,7 +475,9 @@ document.getElementById("heart").parentElement.nextElementSibling.innerText = sc
        
        
        for (i=0; i<data.length; i++) {
+        if (data[i].split(",").length > 3) {
        links.push(data[i].split(",")[3])
+        }
        }
 
        tds = document.getElementsByTagName("td");
