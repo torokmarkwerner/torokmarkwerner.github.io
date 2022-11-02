@@ -76,7 +76,7 @@ parancsolva, hogy ne csináljon semmit, így már nemakart tehetetlenül ülni.
 
 -Nincs időnk erre Harry. Mond!
 
--Első emeleti női mosdó, a csapnál.
+-- Első emeleti női mosdó, a csapnál.
 
 Még végig sem mondta a mondatott, amikor az összes tanár kiviharzott a teremből.
 
