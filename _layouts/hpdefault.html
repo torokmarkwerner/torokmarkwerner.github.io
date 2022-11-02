@@ -223,7 +223,7 @@ document.getElementById("heart").parentElement.nextElementSibling.innerText = sc
   <tr><td style="width:50%"><div style="width:100%"><input type="text" style="width:100%" placeholder="Név"></div></td><td style="width:50%"><div style="        display:flex;
           align-items:center;">
   <input type="checkbox"><label><i>Robot</i> vagyok.</label></div></td></tr>
-  <tr><td colspan="2"><textarea style="width:100%;height:15vh;resize:none" placeholder="Szólj hozzá itt!"></textarea></td></tr>
+  <tr><td colspan="2"><textarea style="width:100%;height:15vh;resize:none" placeholder="Hozzászólás írása..."></textarea></td></tr>
   <tr><td colspan="2"> <div style="display:flex;justify-content:flex-end;padding: 0.5em 1em 1em 0em;">
   <button class="submit-button">
   Küldés
@@ -241,7 +241,7 @@ document.getElementById("heart").parentElement.nextElementSibling.innerText = sc
   commenterCommentData = "";
     buttonData = document.getElementsByClassName("submit-button")[document.getElementsByClassName("submit-button").length-1];
     sampleForm =  document.createElement("DIV");
-    sampleForm.innerHTML = '<table style="width:100%"><tbody><tr><td style="width:50%"><div style="width:100%"><input type="text" style="width:100%" placeholder="Name"></div></td><td style="width:50%"><div style="display:flex;align-items:center;"><input type="checkbox"><label>I <i>am</i> a robot.</label></div></td></tr><tr><td colspan="2"><textarea style="width:100%;height:15vh;resize:none" placeholder="Write your comment here"></textarea></td></tr><tr><td colspan="2"> <div style="display:flex;justify-content:flex-end;padding: 0.5em 1em 1em 0em;"><button class="submit-button">Submit</button></div></td></tr></tbody></table>'
+    sampleForm.innerHTML = '<table style="width:100%"><tbody><tr><td style="width:50%"><div style="width:100%"><input type="text" style="width:100%" placeholder="Név"></div></td><td style="width:50%"><div style="display:flex;align-items:center;"><input type="checkbox"><label><i>Robot</i> vagyok.</label></div></td></tr><tr><td colspan="2"><textarea style="width:100%;height:15vh;resize:none" placeholder="Hozzászólás írása..."></textarea></td></tr><tr><td colspan="2"> <div style="display:flex;justify-content:flex-end;padding: 0.5em 1em 1em 0em;"><button class="submit-button">Küldés</button></div></td></tr></tbody></table>'
   
   function submitButton(){
     document.getElementById("leave-a-comment").classList.add("leave-a-comment1");
@@ -274,7 +274,7 @@ document.getElementById("heart").parentElement.nextElementSibling.innerText = sc
      //alert(xhttp.responseText)
          // Typical action to be performed when the document is ready:
          if (xhttp.responseText === "Successful submission") {
-          buttonData.parentElement.parentElement.parentElement.parentElement.parentElement.innerHTML = "Köszönjük, hozzászólása a moderátor jóváhagyása után fog megjelenni.."
+          buttonData.parentElement.parentElement.parentElement.parentElement.parentElement.innerHTML = "Köszönjük, hozzászólása a moderátor jóváhagyása után fog megjelenni."
          } else if (xhttp.responseText != "Successful submission") {
           buttonData.parentElement.parentElement.parentElement.parentElement.parentElement.innerHTML = "Hiba történt. Frissítse az oldalt."       
          }
@@ -289,10 +289,10 @@ document.getElementById("heart").parentElement.nextElementSibling.innerText = sc
   document.getElementById("leave-a-comment").addEventListener("click",function(){
   document.getElementById("leave-a-comment").classList.remove("leave-a-comment1");
     container = document.getElementsByClassName("comment-form-container")[document.getElementsByClassName("comment-form-container").length-1];
-    if(container.innerText === "Thank you, your comment will be visible after approval.") {
+    if(container.innerText === "Köszönjük, hozzászólása a moderátor jóváhagyása után fog megjelenni.") {
     container.innerHTML = ""
       sampleForm =  document.createElement("DIV");
-    sampleForm.innerHTML = '<table style="width:100%"><tbody><tr><td style="width:50%"><div style="width:100%"><input type="text" style="width:100%" placeholder="Name"></div></td><td style="width:50%"><div style="display:flex;align-items:center;"><input type="checkbox"><label>I <i>am</i> a robot.</label></div></td></tr><tr><td colspan="2"><textarea style="width:100%;height:15vh;resize:none" placeholder="Write your comment here"></textarea></td></tr><tr><td colspan="2"> <div style="display:flex;justify-content:flex-end;padding: 0.5em 1em 1em 0em;"><button class="submit-button">Submit</button></div></td></tr></tbody></table>'
+      sampleForm.innerHTML = '<table style="width:100%"><tbody><tr><td style="width:50%"><div style="width:100%"><input type="text" style="width:100%" placeholder="Név"></div></td><td style="width:50%"><div style="display:flex;align-items:center;"><input type="checkbox"><label><i>Robot</i> vagyok.</label></div></td></tr><tr><td colspan="2"><textarea style="width:100%;height:15vh;resize:none" placeholder="Hozzászólás írása..."></textarea></td></tr><tr><td colspan="2"> <div style="display:flex;justify-content:flex-end;padding: 0.5em 1em 1em 0em;"><button class="submit-button">Küldés</button></div></td></tr></tbody></table>'
     container.appendChild(sampleForm)
     }
     container.style.display = "block"
@@ -405,7 +405,7 @@ document.getElementById("heart").parentElement.nextElementSibling.innerText = sc
     
        this.parentElement.style.display = "block";
            sampleForm =  document.createElement("DIV");
-    sampleForm.innerHTML = '<table style="width:100%"><tbody><tr><td style="width:50%"><div style="width:100%"><input type="text" style="width:100%" placeholder="Name"></div></td><td style="width:50%"><div style="display:flex;align-items:center;"><input type="checkbox"><label>I <i>am</i> a robot.</label></div></td></tr><tr><td colspan="2"><textarea style="width:100%;height:15vh;resize:none" placeholder="Write your comment here"></textarea></td></tr><tr><td colspan="2"> <div style="display:flex;justify-content:flex-end;padding: 0.5em 1em 1em 0em;"><button class="submit-button">Submit</button></div></td></tr></tbody></table>'
+           sampleForm.innerHTML = '<table style="width:100%"><tbody><tr><td style="width:50%"><div style="width:100%"><input type="text" style="width:100%" placeholder="Név"></div></td><td style="width:50%"><div style="display:flex;align-items:center;"><input type="checkbox"><label><i>Robot</i> vagyok.</label></div></td></tr><tr><td colspan="2"><textarea style="width:100%;height:15vh;resize:none" placeholder="Hozzászólás írása..."></textarea></td></tr><tr><td colspan="2"> <div style="display:flex;justify-content:flex-end;padding: 0.5em 1em 1em 0em;"><button class="submit-button">Küldés</button></div></td></tr></tbody></table>'
          //alert(sampleForm.innerHTML)
        this.parentElement.appendChild(sampleForm)
         
