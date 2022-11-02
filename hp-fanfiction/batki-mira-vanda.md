@@ -3,6 +3,7 @@ layout: hpfanfic
 title: [Cím nélkül]
 published: true
 author: Batki Míra Vanda
+permalink: /hp-fanfiction/batki-mira-vanda.md
 ---
 Harry végre már mindent értett. Hát persze, hogy oda kell menni, ezt eddig, hogy is nem
 tudta. Egy hely, ahova egy árva lélek sem teszi be a lábát, de mégsem gyanakszik erre senki.
@@ -11,14 +12,12 @@ Már tudták, hogy hol kell keresni, csak azt nem, hogy pontosan hol van. Harryb
 dúlt az izgalom és egyben az idegesség. Mi van, ha nem találják meg? Eddig eljutottak és mindezt
 a semmiért? Viszont lehet, hogy az sem jó, ha megtalálják. veszélybe sodorják az életüket. Még
 előttük van az élet és...
-
 Ron egyszer csak utána kiáltott, mert Harry véletlen túlfutott. Lockhart remegve állt Ron
 mellett és a szemével végig egy menekülési útvonalat keresett, ahol a fiúk nem érik utol. Harry
 gyorsan visszament az első emeleti mosdó ajtajához és miközben benyitottak érezte, hogy Ron is
 nagyon stresszes, ami valahogy őt lenyugtatta. Az, hogy ezek az érzések Ronon is átfutottak olyan
 érzést keltett benne, hogy a jelenlegi gondolatai nem alaptalanok és ez egy kis önbizalmat adott
 neki.
-
 Myrtle előjött az egyik WC-ből, valószínűleg meghallotta, hogy benyitottak. A két fiú elé
 repült és már épp szólalt volna meg, de Ron annyit mondott, hogy ne most és elkezdett keresni
 bármit, ami egy kapuhoz hasonlít. Harry berángatta a tanár urat is és már ő is nekiállt keresgélni,
