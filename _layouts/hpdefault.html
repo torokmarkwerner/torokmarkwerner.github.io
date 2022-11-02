@@ -441,7 +441,7 @@ document.getElementById("heart").parentElement.nextElementSibling.innerText = sc
     {% assign hpfanfiction = site.pages | where_exp: "item" , "item.path contains 'hpfanfiction/'"%}
     {% for item in hpfanfiction %}
     <div class="story">
-    item.author
+    {{item.author}}
     <p>{{item.title}}</p>
     </div>
     {% endfor %}
