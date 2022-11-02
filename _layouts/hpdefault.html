@@ -426,7 +426,7 @@ document.getElementById("heart").parentElement.nextElementSibling.innerText = sc
 
     {% assign hpfanfiction = site.pages | where_exp: "item" , "item.path contains 'hpfanfiction/'"%}
     {% for item in hpfanfiction %}
-    <div class="story">
+    <div class="story"><a href="torokmarkwerner.github.io/ + {{ item.path }}">
     <p>{{item.author}}</p>
     <p>{{item.title}}</p>
     <table class="comment-like">
@@ -439,6 +439,7 @@ document.getElementById("heart").parentElement.nextElementSibling.innerText = sc
         </tr>
       </tbody>
       </table>
+    </a>
     </div>
     {% endfor %}
 
