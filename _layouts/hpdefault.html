@@ -217,16 +217,16 @@ document.getElementById("heart").parentElement.nextElementSibling.innerText = sc
   <div style="min-width:fit-content;max-width:50vw;padding-right:10%" id="demo">
   </div>
   
-  <div id="leave-a-comment" style="padding: 0em 1em;font-size: 110%;font-weight: bold;">Leave a comment</div>
+  <div id="leave-a-comment" style="padding: 0em 1em;font-size: 110%;font-weight: bold;">Hozzászólás írása</div>
   <div class="comment-form-container" style="min-width:fit-content;max-width:50vw;">
   <table style="width:100%"><tbody>
-  <tr><td style="width:50%"><div style="width:100%"><input type="text" style="width:100%" placeholder="Name"></div></td><td style="width:50%"><div style="        display:flex;
+  <tr><td style="width:50%"><div style="width:100%"><input type="text" style="width:100%" placeholder="Név"></div></td><td style="width:50%"><div style="        display:flex;
           align-items:center;">
-  <input type="checkbox"><label>I <i>am</i> a robot.</label></div></td></tr>
-  <tr><td colspan="2"><textarea style="width:100%;height:15vh;resize:none" placeholder="Write your comment here"></textarea></td></tr>
+  <input type="checkbox"><label><i>Robot</i> vagyok.</label></div></td></tr>
+  <tr><td colspan="2"><textarea style="width:100%;height:15vh;resize:none" placeholder="Szólj hozzá itt!"></textarea></td></tr>
   <tr><td colspan="2"> <div style="display:flex;justify-content:flex-end;padding: 0.5em 1em 1em 0em;">
   <button class="submit-button">
-  Submit
+  Küldés
   </button>
   </div></td></tr>
    
@@ -338,7 +338,7 @@ document.getElementById("heart").parentElement.nextElementSibling.innerText = sc
        numCom = posts.length;
        document.getElementById("heart").parentElement.previousElementSibling.innerText = numCom;
        postCommentNumber = document.createElement("DIV");
-       if (numCom<2) {postCommentNumber.innerHTML = numCom + " comment"} else {postCommentNumber.innerHTML = numCom + " comments"};
+       if (numCom<1) {postCommentNumber.innerHTML = "Nincs hozzászólás"} else {postCommentNumber.innerHTML = numCom + " hozzászólás"};
        postCommentNumber.className = "post-comment-number"
        document.getElementById("demo").prepend(postCommentNumber);
        
@@ -373,7 +373,7 @@ document.getElementById("heart").parentElement.nextElementSibling.innerText = sc
   
   reply = document.createElement("BUTTON");
   reply.className = "reply-button";
-  reply.innerText = "Reply";
+  reply.innerText = "Válasz";
   replyDiv.appendChild(reply)
   
   commentBody.className = "post-comment";
