@@ -426,7 +426,7 @@ document.getElementById("heart").parentElement.nextElementSibling.innerText = sc
 
     {% assign hpfanfiction = site.pages | where_exp: "item" , "item.path contains 'hpfanfiction/'"%}
     {% for item in hpfanfiction %}
-    <div class="story"><a href="torokmarkwerner.github.io/ + {{ item.path }}">
+    <div class="story"><a href="{{ item.path }}">
     <p>{{item.author}}</p>
     <p>{{item.title}}</p>
     <table class="comment-like">
@@ -458,8 +458,8 @@ document.getElementById("heart").parentElement.nextElementSibling.innerText = sc
         xhr.send();
 
     tds = document.getElementsByTagName("td");
-    for (i=0; i<tds.length; i+=2) {
-      tds[i+1].innerHTML = data.find(element => element.split(",")[0] === tds[i].parentElement.parentElement.parentElement.previousElementSibling.previousElementSibling.innerHTML).split(",")[1]
+    for (i=4; i<tds.length; i+=4) {
+      tds[i].innerHTML = data.find(element => element.split(",")[0] === tds[i].parentElement.parentElement.parentElement.previousElementSibling.previousElementSibling.innerHTML).split(",")[1]
     }
         </script>
 
