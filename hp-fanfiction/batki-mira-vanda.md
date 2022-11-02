@@ -70,13 +70,13 @@ parancsolva, hogy ne csináljon semmit, így már nemakart tehetetlenül ülni.
 
 -Nem ülhetek itt tétlenül, amíg a társaim veszélyben vannak!
 
-- Nem kérés volt. Most pedig mond el, hogy hova menjünk pontosan.
+– Nem kérés volt. Most pedig mond el, hogy hova menjünk pontosan.
 
 -megmutatom. - Próbálkozott Harry.
 
 -Nincs időnk erre Harry. Mond!
 
-- Első emeleti női mosdó, a csapnál.
+-Első emeleti női mosdó, a csapnál.
 
 Még végig sem mondta a mondatott, amikor az összes tanár kiviharzott a teremből.
 
