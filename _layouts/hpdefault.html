@@ -215,6 +215,7 @@ document.getElementById("heart").parentElement.nextElementSibling.innerText = sc
 <p id="post-comment-number"></p>
 
  <script>
+  comments = []
   dataTable = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQg6dmeH1EYHwCm1zLmGSI34IC9Uchtf8pWL3KfqnPIMbSbFl-DB1jptcCjuIlP3e4mRVmcG7PbGuGz/pub?gid=100847974&single=true&output=csv"
   xhr=new XMLHttpRequest();
   xhr.open("GET", dataTable, false);
@@ -226,8 +227,8 @@ document.getElementById("heart").parentElement.nextElementSibling.innerText = sc
         }
     }
     xhr.send();
-comments = []
-for (i=1;i<data.length;i++) {
+
+    for (i=1;i<data.length;i++) {
 link = data[i].split(",")[3].split("#")[0];
 if (link === window.location.href) {
   comments.push(data[i])
