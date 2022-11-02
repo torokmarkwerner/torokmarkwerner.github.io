@@ -479,8 +479,8 @@ document.getElementById("heart").parentElement.nextElementSibling.innerText = sc
        }
 
        tds = document.getElementsByTagName("td");
-    for (i=0; i<tds.length; i+=4) {
-      tds[i+1].innerHTML = data.filter(element => element.split("#")[0] === "https://torokmarkwerner.github.io/hp-fanfiction/harry-potter-es-a-negyven-rablo.html").length;
+    for (i=1; i<tds.length; i+=4) {
+      tds[i].innerHTML = data.filter(element => element.split("#")[0] === "https://torokmarkwerner.github.io/hp-fanfiction/harry-potter-es-a-negyven-rablo.html").length;
     }
        
    };
