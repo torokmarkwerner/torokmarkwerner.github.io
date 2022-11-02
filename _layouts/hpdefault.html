@@ -173,7 +173,7 @@ document.getElementById("heart").parentElement.nextElementSibling.innerText = sc
 
 <script>
   submitButton = document.getElementsByClassName("submit-button")[0];
-  commenterNameData = ""
+  commenterNameData = document.getElementsByClassName("comment-form-container").getElementsByTagName("input")[0].value
   commenterCheckBoxcheckedData = ""
   token = ""
   commenterCommentData = ""
@@ -182,6 +182,7 @@ document.getElementById("heart").parentElement.nextElementSibling.innerText = sc
   replyToName = ""
   
   function sendReply(){
+    alert(commenterNameData)
   xhttp = new XMLHttpRequest();
   url = "https://docs.google.com/forms/d/e/1FAIpQLSet7XoxVOxwyGuYrz7udB5TR_LDIv7DYLDJoOuHbgppnvRWZQ/formResponse?&submit=Submit?usp=pp_url&entry.606167625=name&entry.1229498615=comment&entry.1380949646=link&entry.147435530=recaptcha&entry.1946259841=postid&entry.1236747308=replyto&entry.1205740511=replytoname&entry.153096065=moderaterd&entry.1977353494=original"
   fetch(url)
