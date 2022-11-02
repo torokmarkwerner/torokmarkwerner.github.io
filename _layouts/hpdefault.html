@@ -214,29 +214,6 @@ document.getElementById("heart").parentElement.nextElementSibling.innerText = sc
 
 <p id="post-comment-number"></p>
 
- <script>
-  comments = []
-  dataTable = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQg6dmeH1EYHwCm1zLmGSI34IC9Uchtf8pWL3KfqnPIMbSbFl-DB1jptcCjuIlP3e4mRVmcG7PbGuGz/pub?gid=100847974&single=true&output=csv"
-  xhr=new XMLHttpRequest();
-  xhr.open("GET", dataTable, false);
-    xhr.onreadystatechange = function () {
-        if(xhr.readyState === 4) {
-            if(xhr.status === 200 || xhr.status == 0) {
-               	data = xhr.responseText.split(/\n/);
-						}
-        }
-    }
-    xhr.send();
-
-    for (i=1;i<data.length;i++) {
-link = data[i].split(",")[3].split("#")[0];
-if (link === window.location.href) {
-  comments.push(data[i])
-}
-}
-document.getElementById("post-comment-number").innerHTML = (comments.length + " hozzászólás")
- </script>
-
 <div id="leave-a-comment" style="padding: 1em;font-size: 110%;font-weight: bold;">Hozzászólás írása</div>
 
 <div class="comment-form-container" style="min-width:fit-content;max-width:50vw;">
