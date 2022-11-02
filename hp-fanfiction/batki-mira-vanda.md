@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: hpdefault
 title: [Cím nélkül]
 published: true
 author: Batki Míra Vanda
