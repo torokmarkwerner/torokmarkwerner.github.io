@@ -423,9 +423,11 @@ document.getElementById("heart").parentElement.nextElementSibling.innerText = sc
   </script>
 
   {% else %}
-  <div class="story">
-    {% for item in site.hpfanfiction %}  
-        <h1>{{ item.title }}</h1>
+    {% assign hpfanfiction = site.pages | where_exp: "item" , "item.path contains 'hpfanfiction'"%}
+    {% for item in hpfanfiction %}
+    <div class="story">
+    {{item.title}}
+    </div>
     {% endfor %}
   </div>
 
