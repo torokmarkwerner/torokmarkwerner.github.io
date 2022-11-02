@@ -3,6 +3,15 @@ layout: hpdefault
 title: "HP Fanfiction | Kezdőlap"
 permalink: /hp-fanfiction
 ---
+<div class="posts">
+  {% for post in site.posts %}
+    <div class="story">
+
+      <h1><a class="post-title" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+</div>
+  {% endfor %}
+</div>
+
 <style>
 .footer {
   color: white;
@@ -13,15 +22,6 @@ min-height:2000px;
 background-image:url("https://static1.squarespace.com/static/5907e7e7440243daba01563a/t/5ee8ad488ae9b41907ca4fcc/1592307037327/VladPan_Desktop_Wallpaper.jpg");
 }
 </style>
-
-<div class="posts">
-  {% for post in site.posts %}
-    <div class="story">
-
-      <h1><a class="post-title" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-</div>
-  {% endfor %}
-</div>
 
 <div class="story">
 <div>
