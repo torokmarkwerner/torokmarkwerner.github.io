@@ -154,13 +154,13 @@ document.getElementById("heart").parentElement.nextElementSibling.innerText = sc
       </script>
 
     <p>{{page.content}}</p>
-<hr>
+
 <p>Hozzászólások</p>
 <div class="comment-form-container" style="min-width:fit-content;max-width:50vw;">
   <table style="width:100%"><tbody>
   <tr><td style="width:50%"><div style="width:100%"><input type="text" style="width:100%" placeholder="Name"></div></td><td style="width:50%"><div style="        display:flex;
           align-items:center;">
-  <input type="checkbox"><label><i>Robot</i> vagyok.</label></div></td></tr>
+  <input style="display:hidden" type="checkbox"></div></td></tr>
   <tr><td colspan="2"><textarea style="width:100%;height:15vh;resize:none" placeholder="Write your comment here"></textarea></td></tr>
   <tr><td colspan="2"> <div style="display:flex;justify-content:flex-end;padding: 0.5em 1em 1em 0em;">
   <button class="submit-button">
@@ -173,7 +173,7 @@ document.getElementById("heart").parentElement.nextElementSibling.innerText = sc
 
 <script>
   submitButton = document.getElementsByClassName("submit-button")[0];
-  commenterNameData = document.getElementsByClassName("comment-form-container").getElementsByTagName("input")[0].value
+  commenterNameData = document.getElementsByClassName("comment-form-container")[0].getElementsByTagName("input")[0].value
   commenterCheckBoxcheckedData = ""
   token = ""
   commenterCommentData = ""
