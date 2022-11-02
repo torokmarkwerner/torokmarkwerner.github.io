@@ -170,22 +170,40 @@ Submit
   </tbody></table>
 </div>
 
+<div class="comment-form-container" style="min-width:fit-content;max-width:50vw;">
+  <table style="width:100%"><tbody>
+  <tr><td style="width:50%"><div style="width:100%"><input type="text" style="width:100%" placeholder="Name"></div></td><td style="width:50%"><div style="        display:flex;
+          align-items:center;">
+  <input type="checkbox"><label>I <i>am</i> a robot.</label></div></td></tr>
+  <tr><td colspan="2"><textarea style="width:100%;height:15vh;resize:none" placeholder="Write your comment here"></textarea></td></tr>
+  <tr><td colspan="2"> <div style="display:flex;justify-content:flex-end;padding: 0.5em 1em 1em 0em;">
+  <button class="submit-button">
+  Submit
+  </button>
+  </div></td></tr>
+   
+    </tbody></table>
+  </div>
+  </div>
+
 <script>
-  commenterNameData = "Mark"
-  commenterCheckBoxcheckedData = "false"
+  submitButton = document.getElementByClassName("submit-button")[0];
+  commenterNameData = ""
+  commenterCheckBoxcheckedData = ""
   token = ""
-  commenterCommentData = "ajfNEOIJPFWJ"
-  link = "Hrrr"
+  commenterCommentData = ""
+  link = ""
   replyTo = ""
   replyToName = ""
-  
   
   function sendReply(){
   xhttp = new XMLHttpRequest();
   url = "https://docs.google.com/forms/d/e/1FAIpQLSet7XoxVOxwyGuYrz7udB5TR_LDIv7DYLDJoOuHbgppnvRWZQ/formResponse?&submit=Submit?usp=pp_url&entry.606167625=name&entry.1229498615=comment&entry.1380949646=link&entry.147435530=recaptcha&entry.1946259841=postid&entry.1236747308=replyto&entry.1205740511=replytoname&entry.153096065=moderaterd&entry.1977353494=original"
-  fetch(url)    
+  fetch(url)
+  submitButton.remove()  
   }
-  sendReply();
+
+submitButton.addEventListener("click",sendReply)
   </script>  
 
   {% else %}
