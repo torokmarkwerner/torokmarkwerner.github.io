@@ -155,7 +155,64 @@ document.getElementById("heart").parentElement.nextElementSibling.innerText = sc
 
     <p>{{page.content}}</p>
 
+
+    <style>
+      .post-comment-number {
+        font-size:110%;
+        font-weight: bold;
+        padding:1em;
+      }
+      .post-comment {
+       clear:right;
+       padding-left:1em;
+       max-width:100%;
+      }
+      .post-comment-content, .post-comment-header, .reply-button-container {
+        padding:1em
+      }
+      .post-comment-date {
+        color:gray;
+      }
+      .post-comment-name {
+        font-weight:bold;
+        padding-right:0.5em;
+      }
+      .reply-button, .submit-button {
+       border:none;
+       background-color: antiquewhite;
+       padding:0.6em;
+       font-size: 90%;
+       font-variant: all-petite-caps;
+       cursor: pointer;
+      }
+      .reply-button:hover, .submit-button:hover {
+       opacity:0.9
+      }
+      #comment-section input[type=text], textarea {
+      padding:0.5em;
+      font-family:inherit;
+      font-size:100%;
+      box-sizing: border-box;
+      }
+      #comment-section input[type=checkbox] {
+      min-height:20px;
+      min-width:20px
+      }
+      #comment-section label {
+        font-size: clamp(0.5em, 2.5vw, 1.5em);
+      }
+      .comment-form-container {
+        padding:1em 10% 1em 1em;
+      }
+      .leave-a-comment1:hover {
+        text-decoration: underline;
+        cursor:pointer;
+        color:blue
+      }
+      </style>
+
 <p>Hozzászólások</p>
+
 <div class="comment-form-container" style="min-width:fit-content;max-width:50vw;">
   <table style="width:100%"><tbody>
   <tr><td style="width:50%"><div style="width:100%"><input type="text" style="width:100%" placeholder="Name"></div></td><td style="width:50%"><div style="        display:flex;
