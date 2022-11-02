@@ -429,7 +429,7 @@ document.getElementById("heart").parentElement.nextElementSibling.innerText = sc
 
     {% assign hpfanfiction = site.pages | where_exp: "item" , "item.path contains 'hp-fanfiction/'"%}
     {% for item in hpfanfiction %}
-    <div class="story"><a href="https://torokmarkwerner.github.io/{{ item.path }}">
+    <div class="story"><a href="https://torokmarkwerner.github.io/{{ item.path | replace: '.md', '.html' }}">
     <p>{{item.author}}</p>
     <p>{{item.title}}</p>
     <table class="comment-like">
