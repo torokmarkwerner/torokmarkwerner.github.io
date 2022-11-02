@@ -3,7 +3,6 @@ layout: hpfanfic
 title: [Cím nélkül]
 published: true
 author: Batki Míra Vanda
-permalink: /hp-fanfiction/batki-mira-vanda.html
 ---
 Harry végre már mindent értett. Hát persze, hogy oda kell menni, ezt eddig, hogy is nem
 tudta. Egy hely, ahova egy árva lélek sem teszi be a lábát, de mégsem gyanakszik erre senki.
