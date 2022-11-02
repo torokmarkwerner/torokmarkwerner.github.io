@@ -482,7 +482,6 @@ document.getElementById("heart").parentElement.nextElementSibling.innerText = sc
     for (i=1; i<tds.length; i+=4) {
       tds[i].innerHTML = links.filter(element => element === tds[i].parentElement.parentElement.parentElement.parentElement.href).length;
     }
-       alert(links)
    };
   }
    xhttp.open("GET", "https://docs.google.com/spreadsheets/d/e/2PACX-1vQg6dmeH1EYHwCm1zLmGSI34IC9Uchtf8pWL3KfqnPIMbSbFl-DB1jptcCjuIlP3e4mRVmcG7PbGuGz/pub?gid=0&single=true&output=csv", true);
