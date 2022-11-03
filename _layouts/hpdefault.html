@@ -399,7 +399,7 @@ document.getElementById("heart").parentElement.nextElementSibling.innerText = sc
        for (i=0; i<replyButtons.length; i++) {
        replyButtons[i].addEventListener("click",function(){
        replyTo = this.parentElement.parentElement.id
-       replyToName = this.parentElement.parentElement.children[0].children[0].innerText
+       replyToName = encodeURIComponent(this.parentElement.parentElement.children[0].children[0].innerText);
        document.getElementById("leave-a-comment").classList.add("leave-a-comment1");
        for (i=0; i<replyButtons.length; i++) {
        replyButtons[i].parentElement.style.display = "flex"
