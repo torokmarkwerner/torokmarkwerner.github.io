@@ -258,7 +258,7 @@ document.getElementById("heart").parentElement.nextElementSibling.innerText = sc
      document.getElementsByClassName("submit-button")[i].addEventListener("click",function() {
        container = this.parentElement.parentElement.parentElement.parentElement.parentElement;
       //name	comment	link	recaptcha	reply-to	reply-to-name checked
-       commenterNameData = container.getElementsByTagName("input")[0].value 
+       commenterNameData = encodeURIComponent(container.getElementsByTagName("input")[0].value)
        commenterCheckBoxcheckedData = container.getElementsByTagName("input")[1].checked
        commenterCommentData = encodeURIComponent(container.getElementsByTagName("textarea")[0].value);
        buttonData = this;
