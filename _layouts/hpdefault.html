@@ -63,6 +63,7 @@ align-content:flex-start;
 }
 
 #main .story {
+  font-family: "Times New Roman";
   z-index:2;
   border: 1px solid;
   box-shadow: 5px 10px;
@@ -438,7 +439,7 @@ document.getElementById("heart").parentElement.nextElementSibling.innerText = sc
     {% assign hpfanfiction = site.pages | where_exp: "item" , "item.path contains 'hp-fanfiction/'"%}
     {% for item in hpfanfiction %}
     <div class="story"><a href="https://torokmarkwerner.github.io/{{ item.path | replace: '.md', '.html' }}">
-    <p>{{item.author}}</p>
+    <p style="text-transform: uppercase;font-size:80%">{{item.author}}</p>
     <p>{{item.title}}</p>
     <table class="comment-like">
       <tbody>
