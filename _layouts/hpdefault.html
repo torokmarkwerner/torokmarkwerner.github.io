@@ -80,7 +80,6 @@ align-content:flex-start;
   text-align:center;
   align-items: center;
   font-family: "Crimson Text";
-  font-size:14pt;
 }
 #main .story:hover {
   background-color:#FBD308;
@@ -439,7 +438,7 @@ document.getElementById("heart").parentElement.nextElementSibling.innerText = sc
     {% assign hpfanfiction = site.pages | where_exp: "item" , "item.path contains 'hp-fanfiction/'"%}
     {% for item in hpfanfiction %}
     <div class="story"><a href="https://torokmarkwerner.github.io/{{ item.path | replace: '.md', '.html' }}">
-    <p style="text-transform: uppercase;font-size:80%">{{item.author}}</p>
+    <p style="text-transform:uppercase;font-size:80%">{{item.author}}</p>
     <p>{{item.title}}</p>
     <table class="comment-like">
       <tbody>
