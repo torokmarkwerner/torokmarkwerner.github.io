@@ -2,7 +2,7 @@
 layout: hpdefault
 title: A Bodzapálca
 published: true
-author: Alexander Szonja
+author: Bátorkeszi-Kiss Dorottya
 ---
 A csatának vége. Nincs több veszély, bujkálás, áldozat. Harrynek nem kell többé takargatnia sebhelyét avégett, hogy fel ne ismerjék a halálfalók. Nem kell többé azon aggódnia, puszta létezésével hány barátját teszi ki veszélynek a következő napon. 
 
