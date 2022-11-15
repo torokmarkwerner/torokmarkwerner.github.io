@@ -108,6 +108,7 @@ function sendPlusOne() {
        // alert('option=' + encodeURI(this.innerHTML) + '&path=' + location.pathname);
        // alert(this.vote)
       this.vote = this.vote + 1
+      votesSoFar += 1
 
 for (u=0; u<voteBox.children.length; u++) {
 voteBox.children[u].removeEventListener("click",sendPlusOne)
