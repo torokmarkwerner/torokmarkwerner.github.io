@@ -59,6 +59,12 @@ Eventually, it mirrors the purist attitude that has appeared in then Prince Char
 
 What do you make of it? Vote below.
 
+<div id="vote-box">
+<div>he is old and senile</div>
+<div>he is a grammar nazi</div>
+<div>he implies that they're already on the way forward</div>
+</div>
+
 <style>
 #vote-box div {
   width:100%;
@@ -67,12 +73,6 @@ What do you make of it? Vote below.
   padding: 0.5em
 }
 </style>
-
-<div id="vote-box">
-<div>he is old and senile</div>
-<div>he is a grammar nazi</div>
-<div>he implies that they're already on the way forward</div>
-</div>
 
 <script>
 voteBox = document.getElementById("vote-box");
