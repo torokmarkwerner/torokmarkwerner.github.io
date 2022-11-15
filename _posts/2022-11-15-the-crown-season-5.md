@@ -104,8 +104,8 @@ function sendPlusOne() {
       dataTable = "https://script.google.com/macros/s/AKfycbxnnDxKx2AWA9lnK4paphOPhBeSQMI_9w48ZpfuSBrvgU6C5e_Jdffk99-PE92bOwRGyQ/exec"
       xhr.open('POST', dataTable, true);
       xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-      xhr.send('name=' + encodeURI(this.innerHTML) + '&path=' + location.pathname);
-      alert('name=' + encodeURI(this.innerHTML) + '&path=' + location.pathname);
+      xhr.send('option=' + encodeURI(this.innerHTML) + '&path=' + location.pathname);
+       // alert('option=' + encodeURI(this.innerHTML) + '&path=' + location.pathname);
 
       this.removeEventListener("click",sendPlusOne)
        // alert(this.vote)
