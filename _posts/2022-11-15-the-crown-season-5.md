@@ -21,15 +21,15 @@ The reason I am discussing all this is that there is a scene in the new season o
 
 <div style="margin-left:2em">
 
-<p><b>LORD CHAMBERLAIN<b>: And so, in consultation with Her Majesty the Queen and His Royal Highness the Duke of Edinburgh, we've decided to set up an informal council of war. A task force to safeguard the monarchy's survival in a rapidly changing world. And, since the idea is to find new directions for a way forward...
+<p><b>LORD CHAMBERLAIN</b>: And so, in consultation with Her Majesty the Queen and His Royal Highness the Duke of Edinburgh, we've decided to set up an informal council of war. A task force to safeguard the monarchy's survival in a rapidly changing world. And, since the idea is to find new directions for a way forward...</p>
 
-<p><b>HIS ROYAL HIGHNESS<b>: Ahead.
+<p><b>HIS ROYAL HIGHNESS</b>: Ahead.</p>
 
-<p><b>LORD CHAMBERLAIN<b>: Sir?
+<p><b>LORD CHAMBERLAIN</b>: Sir?</p>
 
-<p><b>HIS ROYAL HIGHNESS<b>: Ahead, David.
+<p><b>HIS ROYAL HIGHNESS</b>: Ahead, David.</p>
 
-<p><b>LORD CHAMBERLAIN<b>: Way ahead... we would call it the Way Ahead Group.
+<p><b>LORD CHAMBERLAIN</b>: Way ahead... we would call it the Way Ahead Group.</p>
 
 </div>
 
