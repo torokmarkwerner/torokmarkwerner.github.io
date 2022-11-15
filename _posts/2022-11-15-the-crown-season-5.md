@@ -61,7 +61,6 @@ What do you make of it? Vote below.
 
 <style>
 #vote-box div {
-  width:100%;
   border: 1pt black solid;
   margin: 0.5em;
   padding: 0.5em
