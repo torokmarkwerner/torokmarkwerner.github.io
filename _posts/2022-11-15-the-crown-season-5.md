@@ -55,4 +55,6 @@ Eventually, it mirrors the purist attitude that has appeared in then Prince Char
 
 <p>The <i>Queen Victoria Syndrome.</i></p>
 
+<hr>
+
 ## 3. 
