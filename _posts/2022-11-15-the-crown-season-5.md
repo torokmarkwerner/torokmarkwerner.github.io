@@ -38,7 +38,7 @@ The reason I am discussing all this is that there is a scene in the new season o
 ## 1. Semantics: little difference
 Let's just first address the white elephant in here: just another metaphor, <span style="font-variant-caps: all-petite-caps;">progress is forward motion along a path</span>.
 
-According to Cambridge  Dictionary, <a href="https://dictionary.cambridge.org/dictionary/english/forward" target="_blank"><i>forward</i></a> and <a href="https://dictionary.cambridge.org/dictionary/english/ahead" target="_blank"><i>ahead</i></a> both mean in or into the future, and, by extension, are used in expressions related to progress, development, or achievement (cf. a step forward, get ahead, [way] ahead of sy/sg).
+According to Cambridge  Dictionary, <a href="https://dictionary.cambridge.org/dictionary/english/forward" target="_blank"><i>forward</i></a> and <a href="https://dictionary.cambridge.org/dictionary/english/ahead" target="_blank"><i>ahead</i></a> both mean in or into the future, and, by extension, are used in expressions related to progress, development, or achievement (cf. *a step forward*, *get ahead*, [way] *ahead of sy/sg*).
 
 The use of the expressions <i>the way ahead</i> and <i>the way ahead</i>, on the other hand, is a whole different issue. Clearly, Prince Philip is strongly opposed to <i>forward</i> here, and truly, he is not <i>forward</i>-thinking at all. Yes, pun intended. 
 
