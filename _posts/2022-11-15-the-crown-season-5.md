@@ -105,7 +105,7 @@ function sendPlusOne() {
       xhr.open('POST', dataTable, true);
       xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
       xhr.send('name=' + encodeURI(this.innerHTML) + '&path=' + location.pathname);
-       // alert('name=' + encodeURI(this.innerHTML) + '&path=' + location.pathname);
+      alert('name=' + encodeURI(this.innerHTML) + '&path=' + location.pathname);
 
       this.removeEventListener("click",sendPlusOne)
        // alert(this.vote)
