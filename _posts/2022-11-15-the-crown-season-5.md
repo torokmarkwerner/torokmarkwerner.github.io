@@ -69,7 +69,6 @@ What do you make of it? Vote below.
 #vote-box div:not(.clicked):hover {
   cursor: pointer;
   background: cornflowerblue;
-  color: white;
 }
 </style>
 
