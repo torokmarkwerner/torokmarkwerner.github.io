@@ -51,4 +51,8 @@ Given that His Royal Highness in Season 5 tends to remind the viewers of a dodde
 
 Eventually, it mirrors the purist attitude that has appeared in then Prince Charles's speech about the English language devolving in a worrying degree. Make no mistake: purist is just a fancy word for what we call a grammar nazi in everyday contexts. And may I go out on a limb to say <span class="highlighted-text">a grammar nazi is to language as a ultra-conservative royalist is to society?</span>
 
+<p><img src="/assets/charles-meme.jpg"></p>
+
+<p>The <i>Queen Victoria Syndrome.</i></p>
+
 ## 3. 
