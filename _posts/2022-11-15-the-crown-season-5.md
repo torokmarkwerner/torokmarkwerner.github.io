@@ -65,17 +65,25 @@ What do you make of it? Vote below.
 <div>he implies that they're already on the way forward</div>
 </div>
 
+<style>
+#vote-box div {
+  width:100%;
+  border: 1pt black solid;
+  margin: 0.5em;
+  padding: 0.5em
+}
+</style>
+
+<div id="vote-box">
+<div>he is old and senile</div>
+<div>he is a grammar nazi</div>
+<div>he implies that they're already on the way forward</div>
+</div>
+
 <script>
 voteBox = document.getElementById("vote-box");
-options = voteBox.children;
 
-function voteFunction(el) {
-alert(el.vote)
-}
-
-for (i=0; i<voteBox.children; i++) {
-    voteBox.children[i].addEventListener("click",voteFunction)
-}
+votesSoFar = 0;
 
 dataTable = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTmAenGaAXRN67aTVPZ_0M9jJ-diAkpyZMWVvHfKGHMz3sGFnf4sFBphOhLH4BBhn-UX_Q0R99Wtz2k/pub?gid=0&single=true&output=csv"
   xhr=new XMLHttpRequest();
@@ -92,7 +100,25 @@ dataTable = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTmAenGaAXRN67aTVPZ
 for (i=1;i<data.length;i++) {
 option = data[i].split(",")[0];
 voteNum = Number(data[i].split(",")[1]);
-options.find(element => element.innerHTML === option)[0].vote = voteNum
+votesSoFar += voteNum
+Array.from(voteBox.children).find(element => element.innerHTML === option).vote = voteNum
 }
 
+
+function sendPlusOne() {
+      xhr = new XMLHttpRequest();
+      dataTable = "https://script.google.com/macros/s/AKfycbxnnDxKx2AWA9lnK4paphOPhBeSQMI_9w48ZpfuSBrvgU6C5e_Jdffk99-PE92bOwRGyQ/exec"
+      xhr.open('POST', dataTable, true);
+      xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+      //xhr.send('name=' + encodeURI(el.innerHTML) + '&path=' + location.pathname);
+       // alert('name=' + encodeURI(this.innerHTML) + '&path=' + location.pathname);
+
+      this.removeEventListener("click",sendPlusOne)
+      alert(this.vote)
+      this.style.background = "linear-gradient(to right, red 0%, red " + (this.vote/votesSoFar*100) + "%, transparent " + (this.vote/votesSoFar*100) + "%, transparent 100%)"
+      }
+
+for (u=0; u<voteBox.children.length; u++) {
+voteBox.children[u].addEventListener("click",sendPlusOne)
+}
 </script>
