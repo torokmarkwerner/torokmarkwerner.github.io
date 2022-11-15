@@ -32,13 +32,13 @@ The reason I am discussing all this is that there is a scene in the new season o
 ## 1. Semantics: little difference
 Let's just first address the white elephant in here: just another metaphor, PROGRESS IS FORWARD MOTION ALONG A PATH.
 
-According to Cambridge  Dictionary, <i>forward</i> and <i>ahead</i> both mean in or into the future, and, by extension, are used in expressions related to progress, development, or achievement (cf. a step forward, get ahead, [way] ahead of sy/sg).
+According to Cambridge  Dictionary, <a href="https://dictionary.cambridge.org/dictionary/english/forward" target="_blank"><i>forward</i></a> and <a href="https://dictionary.cambridge.org/dictionary/english/ahead" target="_blank"><i>ahead</i></a> both mean in or into the future, and, by extension, are used in expressions related to progress, development, or achievement (cf. a step forward, get ahead, [way] ahead of sy/sg).
 
 The use of the expressions <i>the way ahead</i> and <i>the way ahead</i>, on the other hand, is a whole different issue. Clearly, Prince Philip is strongly opposed to <i>forward</i> here, and truly, he is not <i>forward</i>-thinking at all. Yes, pun intended. 
 
 Here, <i>ahead</i> draws the focus onto the way <i>so far</i>, in contrast to <i>forward</i> focusing on the way <i>still to go</i>. After all, His Royal Highness might just want to express his dissatisfaction with the way the Royals are treated those days.
 
-<p style="font-size:80%">No spoiler: they're treated badly. No spoiler: they deserve the most of it.</p>
+<p style="font-size:80%">No spoiler: they were treated badly. No spoiler: they deserved most of it.</p>
 
 ## 2. Pragmatics: he an old grammar nazi
 Given that His Royal Highness in Season 5 tends to remind the viewers of a doddery old man, it wouldn't surprise us to see him interrupting, correcting people all the time, telling them how to behave, speak, and so on. Were that the case, his interrupting would be, after all, just another symptome of the problem being discussed in the meeting.
