@@ -42,7 +42,7 @@ According to Cambridge  Dictionary, <a href="https://dictionary.cambridge.org/di
 
 The use of the expressions <i>the way ahead</i> and <i>the way ahead</i>, on the other hand, is a whole different issue. Clearly, Prince Philip is strongly opposed to <i>forward</i> here, and truly, he is not <i>forward</i>-thinking at all. Yes, pun intended. 
 
-Here, <i>ahead</i> draws the focus onto the way <i>so far</i>, in contrast to <i>forward</i> focusing on the way <i>still to go</i>. After all, His Royal Highness might just want to express his dissatisfaction with the way the Royals are treated those days.
+Here, <i>ahead</i> draws the focus onto the way <i>so far</i>, in contrast to <i>forward</i> focusing on the way <i>still to go</i>. After all, His Royal Highness might just want to express his dissatisfaction with the way the Royals are treated those days, in spite of their achievements so far.
 
 <p style="font-size:80%">No spoiler: they were treated badly. No spoiler: they deserved most of it.</p>
 
@@ -57,4 +57,41 @@ Eventually, it mirrors the purist attitude that has appeared in then Prince Char
 
 <hr>
 
-## 3. 
+What do you make of it? Vote below.
+
+<div id="vote-box">
+<div>he is old and senile</div>
+<div>he is a grammar nazi</div>
+<div>he implies that they're already on the way forward</div>
+</div>
+
+<script>
+voteBox = document.getElementById("vote-box");
+
+function voteFunction(el) {
+alert(el.vote)
+}
+
+for (i=0; i<voteBox.children; i++) {
+    voteBox.children[i].addEventListener("click",voteFunction)
+}
+
+dataTable = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTmAenGaAXRN67aTVPZ_0M9jJ-diAkpyZMWVvHfKGHMz3sGFnf4sFBphOhLH4BBhn-UX_Q0R99Wtz2k/pub?gid=0&single=true&output=csv"
+  xhr=new XMLHttpRequest();
+  xhr.open("GET", dataTable, false);
+    xhr.onreadystatechange = function () {
+        if(xhr.readyState === 4) {
+            if(xhr.status === 200 || xhr.status == 0) {
+               	data = xhr.responseText.split(/\n/);
+						}
+        }
+    }
+    xhr.send();
+
+for (i=1;i<data.length;i++) {
+option = data[i].split(",")[0];
+voteNum = Number(data[i].split(",")[1]);
+voteBox.children.find(element.innerHTML === option)[0].vote = voteNum
+}
+
+</script>
