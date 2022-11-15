@@ -63,7 +63,8 @@ What do you make of it? Vote below.
 #vote-box div {
   border: 1pt black solid;
   margin: 0.5em;
-  padding: 0.5em
+  padding: 0.5em;
+  cursor: pointer;
 }
 </style>
 
@@ -112,6 +113,7 @@ function sendPlusOne() {
 for (u=0; u<voteBox.children.length; u++) {
 voteBox.children[u].removeEventListener("click",sendPlusOne)
 voteBox.children[u].style.background = "linear-gradient(to right, lightskyblue " + (voteBox.children[u].vote/votesSoFar*100) + "%, palegreen " + (voteBox.children[u].vote/votesSoFar*100) + "%, palegreen 100%)"
+voteBox.children[u].style.cursor = "inherit"
 }
 
       }
