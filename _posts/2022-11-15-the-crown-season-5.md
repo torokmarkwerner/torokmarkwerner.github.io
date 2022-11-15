@@ -66,6 +66,12 @@ What do you make of it? Vote below.
   padding: 0.5em;
   cursor: pointer;
 }
+#vote-box div:not(.clicked):hover {
+  cursor: pointer;
+  opacity: 0.9;
+  color: black;
+  background: pink;
+}
 </style>
 
 <div id="vote-box">
@@ -114,6 +120,7 @@ for (u=0; u<voteBox.children.length; u++) {
 voteBox.children[u].removeEventListener("click",sendPlusOne)
 voteBox.children[u].style.background = "linear-gradient(to right, #D8BFD8 " + (voteBox.children[u].vote/votesSoFar*100) + "%, whitesmoke " + (voteBox.children[u].vote/votesSoFar*100) + "%, whitesmoke 100%)"
 voteBox.children[u].style.cursor = "inherit"
+voteBox.children[u].classList.add("clicked")
 }
 
       }
