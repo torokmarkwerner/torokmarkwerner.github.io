@@ -111,7 +111,7 @@ function sendPlusOne() {
 
 for (u=0; u<voteBox.children.length; u++) {
 voteBox.children[u].removeEventListener("click",sendPlusOne)
-voteBox.children[u].style.background = "linear-gradient(to right, red 0%, red " + (voteBox.children[u].vote/votesSoFar*100) + "%, transparent " + (voteBox.children[u].vote/votesSoFar*100) + "%, transparent 100%)"
+voteBox.children[u].style.background = "linear-gradient(to right, lightskyblue " + (voteBox.children[u].vote/votesSoFar*100) + "%, palegreen " + (voteBox.children[u].vote/votesSoFar*100) + "%, palegreen 100%)"
 }
 
       }
