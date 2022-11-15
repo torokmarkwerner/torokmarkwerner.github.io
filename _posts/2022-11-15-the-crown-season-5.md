@@ -49,7 +49,7 @@ Here, <i>ahead</i> draws the focus onto the way <i>so far</i>, in contrast to <i
 ## 2. Pragmatics: he an old grammar nazi
 Given that His Royal Highness in Season 5 tends to remind the viewers of a doddery old man, it wouldn't surprise us to see him interrupting, correcting people all the time, telling them how to behave, speak, and so on. Were that the case, his interrupting would be, after all, just another symptome of the problem being discussed in the meeting.
 
-Eventually, it mirrors the purist attitude that has appeared in then Prince Charles's speech about the English language devolving in a worrying degree. Make no mistake: purist is just a fancy word for what we call a grammar nazi in everyday contexts. And may I go out on a limb to say <span class="highlighted-text">a grammar nazi is to language as a ultra-conservative royalist is to society?</span>
+Eventually, it mirrors the purist attitude that has appeared in then Prince Charles's speech about the English language devolving in a worrying degree. Make no mistake: purist is just a fancy word for what we call a grammar nazi in everyday contexts. And may I go out on a limb to say <span class="highlighted-text">a grammar nazi is to language as a royalist is to society?</span>
 
 <p><img src="/assets/charles-meme.jpg"></p>
 
