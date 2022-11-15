@@ -7,7 +7,7 @@ image: the-crown.jpg
 ---
 There is nothing new in the palpable tension between the portrayal of Englishmen in coursebooks (such as the English File and Solutions) and the reality of Britain. The tea-sipping, ever so polite Englishmen are what's left from the long-forgotten (?) Empire, and such colonial discourses are still all around us teachers and students of ESL.
 
-Nevertheless, the demise of Elisabeth II placed ESL teachers between the horns of a dilemma. <span class="highlihted-text">May we address the controversies surrounding the Royals, or go on teaching what we were taught to?</span>
+Nevertheless, the demise of Elisabeth II placed ESL teachers between the horns of a dilemma. <span class="highlighted-text">May we address the controversies surrounding the Royals, or go on teaching what we were taught to?</span>
 
 The way I see it, <i>The Crown</i> is not only an one-of-a-kind historical drama series with elaborate stage design, but also, a product of imaginative speculation, sheding light on stories that have been either kept secret, or blurred by the non-stop media attention that the royal family suffered since the past century.
 
@@ -27,7 +27,7 @@ The reason I am discussing all this is that there is a scene in the new season o
 
 **LORD CHAMBERLAIN**: Way ahead... we would call it the Way Ahead Group.
 
-### Why does Prince Philip correct the Lord Chamberlain there?
+<span class="highlighted-text">Why does Prince Philip correct the Lord Chamberlain there?</span>
 
 ## 1. SEMANTICS: LITTLE DIFFERENCE
 At first, it got me thinking, "There should be a difference between <i>forward</i> and <i>ahead</i>, or at least some subtle one between <i>the way forward</i> and <i>the way ahead</i>. From what I gathered, there is little difference between them if any. 
