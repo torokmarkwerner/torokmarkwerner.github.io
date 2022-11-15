@@ -68,9 +68,8 @@ What do you make of it? Vote below.
 }
 #vote-box div:not(.clicked):hover {
   cursor: pointer;
-  opacity: 0.9;
-  color: black;
-  background: pink;
+  color: white;
+  background: black;
 }
 </style>
 
