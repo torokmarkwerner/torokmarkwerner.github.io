@@ -104,11 +104,11 @@ function sendPlusOne() {
       dataTable = "https://script.google.com/macros/s/AKfycbxnnDxKx2AWA9lnK4paphOPhBeSQMI_9w48ZpfuSBrvgU6C5e_Jdffk99-PE92bOwRGyQ/exec"
       xhr.open('POST', dataTable, true);
       xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-      //xhr.send('name=' + encodeURI(el.innerHTML) + '&path=' + location.pathname);
+      xhr.send('name=' + encodeURI(this.innerHTML) + '&path=' + location.pathname);
        // alert('name=' + encodeURI(this.innerHTML) + '&path=' + location.pathname);
 
       this.removeEventListener("click",sendPlusOne)
-      alert(this.vote)
+       // alert(this.vote)
       this.style.background = "linear-gradient(to right, red 0%, red " + (this.vote/votesSoFar*100) + "%, transparent " + (this.vote/votesSoFar*100) + "%, transparent 100%)"
       }
 
