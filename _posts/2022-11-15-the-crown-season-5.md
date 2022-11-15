@@ -19,6 +19,8 @@ The way I see it, <i>The Crown</i> is not only an one-of-a-kind historical drama
 
 The reason I am discussing all this is that there is a scene in the new season of <i>The Crown</i> that I was unable to wrap my head around. The scene revolves around a meeting in Edinburgh, involving the senior members of the royal family and a bunch of lords. The meeting was initiated by the Lord Chamberlain that time, David Ogilvy, and was opened by the late Prince Philip, His Royal Highness.
 
+<div style="margin-left:2em">
+
 **LORD CHAMBERLAIN**: And so, in consultation with Her Majesty the Queen and His Royal Highness the Duke of Edinburgh, we've decided to set up an informal council of war. A task force to safeguard the monarchy's survival in a rapidly changing world. And, since the idea is to find new directions for a way forward...
 
 **HIS ROYAL HIGHNESS**: Ahead.
@@ -28,6 +30,8 @@ The reason I am discussing all this is that there is a scene in the new season o
 **HIS ROYAL HIGHNESS**: Ahead, David.
 
 **LORD CHAMBERLAIN**: Way ahead... we would call it the Way Ahead Group.
+
+</div>
 
 <span class="highlighted-text">Why does Prince Philip correct the Lord Chamberlain there?</span>
 
