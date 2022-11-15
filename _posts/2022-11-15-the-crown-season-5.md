@@ -59,12 +59,6 @@ Eventually, it mirrors the purist attitude that has appeared in then Prince Char
 
 What do you make of it? Vote below.
 
-<div id="vote-box">
-<div>he is old and senile</div>
-<div>he is a grammar nazi</div>
-<div>he implies that they're already on the way forward</div>
-</div>
-
 <style>
 #vote-box div {
   width:100%;
@@ -73,6 +67,12 @@ What do you make of it? Vote below.
   padding: 0.5em
 }
 </style>
+
+<div id="vote-box">
+<div>he is old and senile</div>
+<div>he is a grammar nazi</div>
+<div>he implies that they're already on the way forward</div>
+</div>
 
 <script>
 voteBox = document.getElementById("vote-box");
@@ -104,7 +104,7 @@ function sendPlusOne() {
       dataTable = "https://script.google.com/macros/s/AKfycbxnnDxKx2AWA9lnK4paphOPhBeSQMI_9w48ZpfuSBrvgU6C5e_Jdffk99-PE92bOwRGyQ/exec"
       xhr.open('POST', dataTable, true);
       xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-      xhr.send('name=' + encodeURI(el.innerHTML) + '&path=' + location.pathname);
+      //xhr.send('name=' + encodeURI(el.innerHTML) + '&path=' + location.pathname);
        // alert('name=' + encodeURI(this.innerHTML) + '&path=' + location.pathname);
 
       this.removeEventListener("click",sendPlusOne)
