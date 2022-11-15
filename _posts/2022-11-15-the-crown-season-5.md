@@ -91,7 +91,7 @@ dataTable = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTmAenGaAXRN67aTVPZ
 for (i=1;i<data.length;i++) {
 option = data[i].split(",")[0];
 voteNum = Number(data[i].split(",")[1]);
-voteBox.children.find(element.innerHTML === option)[0].vote = voteNum
+voteBox.children.find(element => element.innerHTML === option)[0].vote = voteNum
 }
 
 </script>
