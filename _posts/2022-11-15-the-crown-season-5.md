@@ -67,6 +67,7 @@ What do you make of it? Vote below.
 
 <script>
 voteBox = document.getElementById("vote-box");
+options = voteBox.children;
 
 function voteFunction(el) {
 alert(el.vote)
@@ -91,7 +92,7 @@ dataTable = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTmAenGaAXRN67aTVPZ
 for (i=1;i<data.length;i++) {
 option = data[i].split(",")[0];
 voteNum = Number(data[i].split(",")[1]);
-voteBox.children.find(element => element.innerHTML === option)[0].vote = voteNum
+options.find(element => element.innerHTML === option)[0].vote = voteNum
 }
 
 </script>
