@@ -106,11 +106,15 @@ function sendPlusOne() {
       xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
       xhr.send('option=' + encodeURI(this.innerHTML) + '&path=' + location.pathname);
        // alert('option=' + encodeURI(this.innerHTML) + '&path=' + location.pathname);
-
-      this.removeEventListener("click",sendPlusOne)
        // alert(this.vote)
-      this.style.background = "linear-gradient(to right, red 0%, red " + (this.vote/votesSoFar*100) + "%, transparent " + (this.vote/votesSoFar*100) + "%, transparent 100%)"
+      this.vote = this.vote + 1
       }
+
+      for (u=0; u<voteBox.children.length; u++) {
+voteBox.children[u].removeEventListener("click",sendPlusOne)
+voteBox.children[u].style.background = "linear-gradient(to right, red 0%, red " + (voteBox.children[u].vote/votesSoFar*100) + "%, transparent " + (voteBox.children[u].vote/votesSoFar*100) + "%, transparent 100%)"
+}
+      
 
 for (u=0; u<voteBox.children.length; u++) {
 voteBox.children[u].addEventListener("click",sendPlusOne)
