@@ -74,14 +74,16 @@ span.innerHTML = words[i];
 span.addEventListener("click",function() {addWord(this.innerHTML)});
 document.getElementById("words").appendChild(span);
 }
-if (document.getElementById("words").lastElementChild) {
+if (document.getElementById("words").lastElementChild && j > 0) {
 document.getElementById("words").lastElementChild.scrollIntoView()
 }
 n++
 words = []
 }
 
+j = 0;
 startAsking()
+j++
 
 function addWord(el) {
 
