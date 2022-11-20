@@ -63,11 +63,12 @@
     <div style="margin:0.5em;border: 1pt black solid;" class="button" onclick="moveNext(document.getElementById('text').children[start[start.length-1]].lastElementChild,30)">Nappali</div>
     <div style="margin:0.5em;border: 1pt black solid;" class="button" onclick="moveNext(document.getElementById('text').children[start[start.length-1]].lastElementChild,46)">Hálószoba</div>
     <div style="display:block;background-color:black;color:white;margin:0.5em;border: 1pt black solid;" class="button" onclick="if(start.length > 1) {moveNext(document.getElementById('text').children[start[start.length-1]].lastElementChild,start[start.length-2]); start.pop(); start.pop()}">Vissza</div>
+    <div style="display: block;background-color: darkgray;color: black;margin: 0.5em;border: 1pt solid black;visibility: visible;" class="button" onclick="moveNext(document.getElementById('text').children[start[start.length-1]].lastElementChild,67)">Jelentés megírása</div>
     </div>
     
     <div id="text" style="width:80%;font-family: Times New Roman;padding:0.5em;">
     <div>
-    Tegnap este holtan találták a kispesti lakásában özv. Tóth Pálnét.<div style="display:block;margin: 0.5em;" class="button" onclick="moveNext(this,1); document.getElementById('navigation').children[document.getElementById('navigation').children.length-1].style.visibility = 'visible'">[...]</div>
+    Tegnap este holtan találták a kispesti lakásában özv. Tóth Pálnét.<div style="display:block;margin: 0.5em;" class="button" onclick="moveNext(this,1); document.getElementById('navigation').children[document.getElementById('navigation').children.length-1].style.visibility = 'visible'; document.getElementById('navigation').children[document.getElementById('navigation').children.length-2].style.visibility = 'visible'">[...]</div>
     </div>
     <div>Fia, Tóth Imre minden vasárnap meglátogatta a nőt, kb. fél hétkor érkezett meg általában az anyjához. Most hiába csengetett, az anyja nem nyitott ajtót. Ekkor a férfinak rossz előérzete támadt. <div style="display:block;margin: 0.5em;" class="button" onclick="moveNext(this,2)">[...]</div>
     </div>
@@ -496,6 +497,21 @@
       <div>
         SZŰCS JUDIT: Hát tudja, ha esetleg túladagolta valamelyik gyógyszert... véletlenül, úgy értem!<span></span>
       </div>
+
+<div>
+  <h2>
+    A jelentést írásban kell leadnod.
+    </h2>
+    <h2>
+    A jelentés megírásához az alábbi kérdésekre kell válaszolnod, megindokolva a válaszodat.
+    </h2>
+    <ul>
+    <li>Baleset vagy gyilkosság történt?</li>
+    <li>Mit fog mutatni az igazságügyi boncolás?</li>
+    <li>Ha gyilkosság történt, ki az elkövető?</li>
+    <li>Ha gyilkosság történt, mi volt az elkövető indítéka?</li>
+    </ul>
+</div>
     
     </div>
     
