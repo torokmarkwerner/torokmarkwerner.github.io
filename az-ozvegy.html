@@ -1,0 +1,479 @@
+<style>
+    #navigation div {
+      visibility: hidden;
+      display: none;
+    }
+    
+    div {
+      margin-bottom: 10pt;
+      line-height: 1.5em;
+    }
+    li {
+      margin-bottom: 10pt;
+    }
+    body {
+      overflow: scroll;
+      color:black;
+      padding:0;
+      margin:0;
+      background-color:white;
+    }
+    .button {
+      display: inline;
+      /*font-weight: bold;*/
+      line-height: 2em;
+      min-width: 2em;
+      text-align: center;
+      background-color: #E6BF83;
+      padding: 0.3em;
+      margin: 0.1em
+    }
+    .button:hover {
+      cursor: pointer;
+      opacity: 0.9;
+    }
+    ul {
+        list-style-type: '– ';
+    }
+    </style>
+    
+    <h1 style="text-align:center;">Az özvegy</h1>
+    <div style="display:flex">
+    <div id="navigation" style="text-align:center;padding: 0.5em 0.5em;min-width:fit-content">
+    <div style="display:;margin:0.5em;border: 1pt black solid;" class="button" onclick="moveNext(document.getElementById('text').children[start[start.length-1]].lastElementChild,18)">Konyha</div>
+    <div style="display:;margin:0.5em;border: 1pt black solid;" class="button" onclick="moveNext(document.getElementById('text').children[start[start.length-1]].lastElementChild,30)">Nappali</div>
+    <div style="display:;margin:0.5em;border: 1pt black solid;" class="button" onclick="moveNext(document.getElementById('text').children[start[start.length-1]].lastElementChild,46)">Hálószoba</div>
+    <div style="display:block;background-color:black;color:white;margin:0.5em;border: 1pt black solid;" class="button" onclick="if(start.length > 1) {moveNext(document.getElementById('text').children[start[start.length-1]].lastElementChild,start[start.length-2]); start.pop(); start.pop()}">Vissza</div>
+    </div>
+    
+    <div id="text" style="width:80%;font-family: Times New Roman;padding:0.5em;font-size:">
+    <div>
+    Tegnap este holtan találták a kispesti lakásában özv. Tóth Pálnét.<div style="display:block;margin: 0.5em;" class="button" onclick="moveNext(this,1); document.getElementById('navigation').children[document.getElementById('navigation').children.length-1].style.visibility = 'visible'">[...]</div>
+    </div>
+    <div>Fia, Tóth Imre minden vasárnap meglátogatta a nőt, kb. fél hétkor érkezett meg általában az anyjához. Most hiába csengetett, az anyja nem nyitott ajtót. Ekkor a férfinak rossz előérzete támadt. <div style="display:block;margin: 0.5em;" class="button" onclick="moveNext(this,2)">[...]</div>
+    </div>
+    <div>Mivel a férfi nem találta a kulcsát a lakáshoz, átsietett a szomszédba a pótkulcsért. A szomszéd, Vincze Ilona segítségével be tudott jutni a lakásba, de özv. Tóth Pálné már eszméletlen volt, nem lélegzett, és a férfi nem tudta kitapintani a pulzusát.
+    <div style="display:block;margin: 0.5em;" class="button" onclick="moveNext(this,3)">[...]</div>
+    </div>
+    <div>
+    Vincze Ilona azonnal tárcsázta a <div class="button" onclick="moveNext(this,4)">112</div>-t.
+    </div>
+    <div>
+    <div>112: Halló, tessék, segélyhívó központ. Miben segíthetek?</div>
+    <div>V. I.: Halló, küldjenek egy mentőt azonnal, a szomszédom rosszul van!</div>
+    <div>112: Hol van most, asszonyom?</div>
+    <div>V. I.: Hát hol lennék, a szomszédban vagyok. [<i>A háttérből: Margó utca 56.</i>] Budapest, Margó Tivadar utca 56.</div>
+    <div style="display:block;margin: 0.5em;" class="button" onclick="moveNext(this,5)">[...]</div>
+    </div>
+    
+    <div>
+    <div>112: XIX. kerület?</div>
+    <div>V. I.: Igen, Kispest.</div>
+    <div>112: És mi a probléma a szomszéddal?</div>
+    <div>V. I.: Nem tudom, nem lélegzik… hát küldjék már azt a mentőt!</div>
+    <div>112: Nem lélegzik, rendben. Ért Ön vagy a jelenlévők közül valaki a mesterséges lélegeztetéshez?</div>
+    <div style="display:block;margin: 0.5em;" class="button" onclick="moveNext(this,6)">[...]</div>
+    </div>
+    
+    <div>
+    A kiérkező mentők már nem tudtak segíteni az idős nőn. A halál beállta: 19:15.
+    <div style="display:block;margin: 0.5em;" class="button" onclick="moveNext(this,7)">[...]</div>
+    </div>
+    
+    <div>Ma reggel a Watson15 Magánnyomozó Iroda telefonhívást kapott Tóth Imrétől.<div style="display:block;margin: 0.5em;" class="button" onclick="moveNext(this,8)">[...]</div></div>
+    <div>
+    <ul>
+    <li>A férfi azt kérte az Irodától, hogy vizsgáljuk meg az ügyet, mert sehogy sem áll össze neki. Persze, ez gyakran megesik, sokan nem tudják elfogadni olyan könnyen, hogy feldobta a pacskert ez meg az, aztán alkudozni kezdenek. Éppen ezért a hasonló megbízásokat nem szoktuk elfogadni, csak akkor, ha a gyanú még a temetés után is fennáll. Viszont a pasi annyi pénzt ajánlott, amire bolondok lennénk nemet mondani – mondta a Főnök. – Nézzétek meg a lakást, csak ennyit kérek. Aztán majd azt mondjuk, hogy nem találtunk semmi használhatót.</li>
+    </ul>
+    <div style="display:block;margin: 0.5em;" class="button" onclick="moveNext(this,9)">[...]</div>
+    </div>
+    
+    <div>
+    <ul>
+      <li>Rendben, Főnök. De mit nézzünk meg rajta?</li>
+      <li>Nem nagy ügy. Azt magyarázza a férfi, hogy szerinte kirabolták a nénit.</li>
+      <li>Mit vittek el?</li>
+      <li>Pont ez az… hogy nem vittek el semmit.</li>
+      <li>Akkor meg honnan veszi, hogy rablás volt?</li>
+      <li>Valamit magyarázott az ajtóról meg a zárakról, de a Rita azt már nem tudta feljegyezni. Minek van akkor, kérdeztem is tőle, hát erre vettük fel! Na, mindegy… itt a száma, egyeztess a pasival, hogy mikor mehetnétek.</li>
+    </ul>
+    <div style="display:block;margin: 0.5em;" class="button" onclick="moveNext(this,10)">[...]</div>
+    </div>
+    
+    <div>
+    <div>TÓTH IMRE: Mondom, hogy rablás volt, annak kellett lennie. Csak aztán valami történt, és le kellett lépniük.</div>
+    <div>TE: Honnan veszi mindezt, uram?</div>
+    <div>TÓTH IMRE: Az ajtó zárva volt.</div>
+    <div>TE: Az előbb még azt mondta, hogy ebben nem volt semmi szokatlan. A néni zárta az ajtót, mert félt, hogy kirabolják.</div>
+    <div>TÓTH IMRE: De pont ez az! Amikor ott voltunk a szomszéddal, nem értettem, miért van furcsa érzésem.</div>
+    <div>TE: És most?</div>
+    <div style="display:block;margin: 0.5em;" class="button" onclick="moveNext(this,11)">[...]</div>
+    </div>
+    
+    <div>
+    <div>TÓTH IMRE: Hát az ajtó zárva volt, de amikor elfordult a kulcs, lenyomtam a kilincset, és rögtön nyílt az ajtó.</div>
+    <div>TE: Uram… ne haragudjon, de hát így működnek az ajtók.</div>
+    <div>TÓTH IMRE: Nem arról beszélek, nem ért engem. Elsőre kinyílt az ajtó, nem volt rajta a tolózár és nem volt rajta az ajtólánc sem.</div>
+    <div>TE: Azt mondja?</div>
+    <div>TÓTH IMRE: Igen, igen. És tudja mit? A kulcs sem volt a zárban, sőt sehol se találtuk!</div>
+    <div style="display:block;margin: 0.5em;" class="button" onclick="moveNext(this,12);">[...]</div>
+    </div>
+    
+    <div>
+    A lakás <div class="button" onclick="moveNext(this,13)">dohos</div> volt.
+    </div>
+    
+    <div>
+    A gardróbot nyitva hagyták, hogy szellőzzön. Bent nagy halmokban álltak a kabátok, nadrágok, öltönyök: a néhai <div class="button" onclick="moveNext(this,14)">Tóth Pál</div> ruhatára.
+    </div>
+    
+    <div>
+    Mielőtt idejöttünk, megnézted, mit lehet tudni a családról. A Google egy <div class="button" onclick="moveNext(this,15)">gyászjelentést</div> dobott fel Tóth Pál nevére.
+    </div>
+    
+    <div>
+    “A gyászoló család mély fájdalommal tudatja, hogy Tóth Pál 2018. május 13-án, életének 78. évében, tragikus hirtelenséggel elhunyt. Az elhunytat a <div class="button" onclick="moveNext(this,16)">Magyar Madártani és Természetvédelmi Egyesület</div> saját halottjának tekinti.”
+    </div>
+    
+    <div>
+    Az öreg annyit adományozott az egyesületnek, amiből egy teljes madárrezervátum felépült a Velencei-tónál. Azért valami csak nem stimmelhetett a <div class="button" onclick="moveNext(this,17); for (i=0; i<document.getElementById('navigation').children.length; i++) {document.getElementById('navigation').children[i].style.visibility = 'visible'; document.getElementById('navigation').children[i].style.display = 'block'}">pénzekkel</div>, mert az EU vizsgálódni kezdett az ügyben. Persze nem találtak semmit.
+    </div>
+    
+    <div>
+    Egy biztos, a Tóthéknak volt mit a tejbe aprítania.<span></span>
+    </div>
+    
+    <div>
+    A férfi megmutatta, hol találták meg özv. Tóth Pálnét. Az idős nő a <div class="button" onclick="moveNext(this,19);">konyhaasztalnál</div> ült, a feje az asztallapra bukott. Most csak egy üres szék volt ott, a testet már reggel elvitte két nagydarab fickó, akiket a temetkezési vállalkozó küldött. A konyha <div class="button" onclick="moveNext(this,21)">patyolattiszta</div> volt, az <div class="button" onclick="moveNext(this,29);">edények</div> még ott száradtak a mosogató mellett.
+    </div>
+    
+    <div>
+    Az asztalon csak egy <div class="button" onclick="moveNext(this,20);">üres gyógyszertartó</div> volt. HÉTFŐ, KEDD, SZERDA, stb.
+    </div>
+    
+    <div>
+    Ezek szerint minden héten kiszámolta, miből, mikor, mennyit kell bevenni.<span></span>
+    </div>
+    
+    <div>
+    TÓTH IMRE: Jár hozzá egy ilyen, tudja, <div class="button" onclick="moveNext(this,22)">szociális munkás</div>. Biztos az takarított fel.
+    </div>
+    
+    <div>
+    TÓTH IMRE: A neve? Valami <div class="button" onclick="moveNext(this,23)">Dávid</div>.
+    </div>
+    
+    <div>
+    TÓTH IMRE: Már két éve dolgozik itt, azután fogadtuk fel, hogy Apa meghalt. Megbízható embernek ismertem, <div class="button" onclick="moveNext(this,24)">de most nem tudom, mit mondjak</div>.
+    </div>
+    
+    <div>
+    TÓTH IMRE: Hát azt mondja a <div class="button" onclick="moveNext(this,25)">szomszéd</div>, hogy ő volt az, aki utoljára itt volt Anyánál. A lépcsőn találkoztak, nagyon sietett, talán észre se vette az Ilit, úgy futott.
+    </div>
+    
+    <div>
+    TÓTH IMRE: <div class="button" onclick="moveNext(this,26)">Ilike</div>, vagyis hogy Vincze Ilona. Itt lakik a szomszédban, vele találtuk meg Anyát, szegényt.
+    </div>
+    
+    <div>
+    VINCZE ILONA: Hát, nem hiszem, hogy sokkal többet tudok mondani Önnek, mint amit Imi mondott. Találkoztam felfelé a fiúval, nagyon sietett, ennyi. Aztán hallottam, hogy nyílik az ajtó a szomszédban, aztán gyorsan csukódik is, azt hittem, a <div class="button" onclick="moveNext(this,27)">fiú</div> volt, hogy valamit ott felejtett. Aztán meg átcsengetett az Imi, hogy kellene neki a kulcs, és akkor megtaláltuk a Mari nénit. Mit mondjak még?
+    </div>
+    
+    <div>
+    VINCZE ILONA: Én nem ismertem, csak látásból. Már két-három éve járt a Mari nénihez, de a néni nem panaszkodott rá. Legalábbis nekem nem. <div class="button" onclick="moveNext(this,28)">Mondjuk annyira nem voltunk jóban.</div>
+    </div>
+    
+    <div>
+    VINCZE ILONA: Mármint nem voltunk beszélőviszonyban.<span></span>
+    </div>
+    
+    <div>
+    Két csésze, két csészealj, két kanál. Furcsa.<span></span>
+    </div>
+    
+    <div>
+    A nappali szokatlanul <div class="button" onclick="moveNext(this,31)">sötét</div> volt.
+    </div>
+    
+    <div>
+    <ul>
+    <li>Leszakadt a redőny – mondta Tóth Imre, és már nyúlt is volna a villanykapcsolóhoz, de te elkaptad a kezét.</li>
+    <li>Vigyázzon, ujjlenyomatok lehetnek a kapcsolón!</li>
+    </ul>
+    <div style="display:block;margin: 0.5em;" class="button" onclick="moveNext(this,32);">[ujjlenyomatok]</div>
+    </div>
+    
+    <div>
+    <ul>
+    <li>Ellenőrizted, de nem voltak ujjlenyomatok a kapcsolón.
+    Felkapcsolhatom már?</li>
+    <li>Nyugodtan.</li>
+    </ul>
+    <div style="display:block;margin: 0.5em;" class="button" onclick="moveNext(this,33);">[villany]</div>
+    </div>
+    
+    <div>
+    A lámpafényben látni lehetett a port a levegőben. Egyedül a tévé felé forgatott fotelen mutatkoztak meg a mindennapos használat jelei. Mellette egy kisasztal volt, rajta egy <div class="button" onclick="moveNext(this,34);">toll</div> és egy <div class="button" onclick="moveNext(this,35);">könyv</div>.
+    </div>
+    
+    <div>
+    Kék golyóstoll, semmi különös.<span></span>
+    </div>
+    
+    <div>
+    Egy napló, a néni naplója. Amíg Tóth és a társad a könyveket nézegeti a polcon, a kabátod belső zsebébe dugod a <div class="button" onclick="moveNext(this,36);">naplót</div>.
+    </div>
+    
+    <div>
+    <div>2022. 10. 14.</div>
+    <div>Ma elintéztem azt az otromba kutyát, nem fog többet felzavarni éjnek idején. A hülye szomszéd temetést rendez neki, engem is meghívott. Kutya legyek, ha megyek.</div>
+    <div>2022. 11. 05.</div>
+    <div>Ma megtudtam valamit, amit bárcsak ne tudtam volna meg. Felhívtam <div class="button" onclick="moveNext(this.parentElement,37);">J-t</div> utána, nem tagadta. Megígérte, hogy elmondja neki, aztán elválnak. Én kedvelem J-t, de a fiam az a fiam. Csak a másikkal mi legyen, azt nem tudom.</div>
+    <div>2022. 11. 17.</div>
+    <div>Beszéltem az ügyvéddel, jövő héten csináljuk az új <div class="button" onclick="moveNext(this.parentElement,42)">végrendeletet</div>. Ha eddig nem mondta el, ezután sem fogja. Erről ennyit, de tőlem az a szuka egy vasat se kap.</div>
+    </div>
+    
+    <div>
+    TÓTH IMRE: J? Hát nem nagyon voltak barátai... Talán <div class="button" onclick="moveNext(this,38)">Judit</div> lesz az.
+    </div>
+    
+    <div>
+    TÓTH IMRE: Judit a feleségem. Hogy mi a száma? <div class="button" onclick="moveNext(this,39)">Miért akar vele beszélni?</div>
+    </div>
+    
+    <div>
+    TÓTH IMRE: Na, nem mintha… itt van a száma, <div class="button" onclick="moveNext(this,40)">hívja fel</div>.
+    </div>
+    
+    <div>
+    SZŰCS JUDIT: Hogy mi? <div class="button" onclick="moveNext(this,41)">Mit ígértem én meg?</div> Nem tudom, miről beszél. Voltak neki furcsa történetei, szerintem kicsit demens volt már a vége felé, csak Imi nem akarta észrevenni. Biztos csak álmodta, aztán leírta a naplójába ezek szerint.
+    </div>
+    
+    <div>
+    SZŰCS JUDIT: Megcsalni az Imit? Hát, akkor nem engem keres, 20 éve hűséges felesége vagyok! Jó, nem voltunk puszipajtások az anyjával, de éppen ezért nem is nagyon jártam át hozzá!<span></span>
+    </div>
+    
+    <div>
+    TÓTH IMRE: Hogy új végrendeletet írt volna? Nem, arról nem tudok semmit. <div class="button" onclick="moveNext(this,43)">Honnan veszi ezt?</div>
+    </div>
+    
+    <div>
+    TÓTH IMRE: Ja, hát volt egy <div class="button" onclick="moveNext(this,44)">végrendelet</div>, de semmi különös: mindent rám hagyott. Apa után nem maradt senkije rajtam kívül, még egy távoli rokon sem.
+    </div>
+    
+    <div>
+    TÓTH IMRE: Felőlem felhívhatjuk az <div class="button" onclick="moveNext(this,45)">ügyvédet</div>, persze, de nem hiszem, hogy sokat segítene.
+    </div>
+    
+    <div>
+    <div>DR. ÚJVÁRY: Igen, múlt héten bejelentkezett, aztán mondta, hogy módosítani akar valamit. Vagyis nem is ezt a szót használta. Ki akarta egészíteni a végrendeletet.</div>
+    <div>TE: Azt nem említette, hogy miért?</div>
+    <div>DR. ÚJVÁRY: Azt mondta, hogy változások álltak be a körülményekben. Ennél többet nem árult el nekem sem, és erősködött, hogy inkább majd személyesen meséli el, mi történt.</div><span></span>
+    </div>
+    
+    <div>
+    A hálószobában katonás rend uralkodik, a néni íróasztalán egy <div class="button" onclick="moveNext(this,47)">naptárat</div> találsz.
+    </div>
+    
+    <div>
+    <style>
+    td {
+      text-align:center;
+      width:15%;
+      max-width:20px;
+    }
+    tr:nth-of-type(even) {
+      height:2em
+    }
+    tr:nth-of-type(odd) {
+    background-color: #EDDA74;
+    height:2em
+    }
+    </style>
+    <div style="font-size:150%;text-align:center;background-color:#ECE5B6;padding:0.5em">
+    November
+    </div>
+    <table style="width: 100%;background-color:">
+    <tbody>
+      <tr>
+        <td>31</td>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><div class="button" style="font-size:150%;background-color:transparent" onclick="moveNext(this.parentElement.parentElement.parentElement.parentElement,48)">🐕</div></td>
+        <td><div class="button" style="font-size:;background-color:transparent" onclick="moveNext(this.parentElement.parentElement.parentElement.parentElement,50)">❤️</div></td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+        <td>10</td>
+        <td>11</td>
+        <td>12</td>
+        <td>13</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><div class="button" style="font-size:150%;background-color:transparent" onclick="moveNext(this.parentElement.parentElement.parentElement.parentElement,49)">🙂</div></td>
+        <td></td>
+        <td></td>
+        <td><div class="button" style="font-size:;background-color:transparent" onclick="moveNext(this.parentElement.parentElement.parentElement.parentElement,50)">❤️</div></td>
+      </tr>
+      <tr>
+        <td>14</td>
+        <td>15</td>
+        <td>16</td>
+        <td>17</td>
+        <td>18</td>
+        <td>19</td>
+        <td>20</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><div class="button" style="font-size:;background-color:transparent" onclick="moveNext(this.parentElement.parentElement.parentElement.parentElement,50)">❤️</div></td>
+      </tr>
+      <tr>
+        <td>21</td>
+        <td>22</td>
+        <td>23</td>
+        <td>24</td>
+        <td>25</td>
+        <td>26</td>
+        <td>27</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td><div class="button" style="font-size:150%;background-color:transparent" onclick="moveNext(this.parentElement.parentElement.parentElement.parentElement,51)">🤝</div></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><div class="button" style="font-size:;background-color:transparent" onclick="moveNext(this.parentElement.parentElement.parentElement.parentElement,50)">❤️</div></td>
+      </tr>
+      <tr>
+        <td>28</td>
+        <td>29</td>
+        <td>30</td>
+        <td>31</td>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><div class="button" style="font-size:;background-color:transparent" onclick="moveNext(this.parentElement.parentElement.parentElement.parentElement,50)">❤️</div></td>
+      </tr>
+    </tbody>
+    </table>
+    </div>
+    
+    <div style="width:50%">
+    <div style="background-color:#EDDA74;line-height:2em;text-align:center;">
+    November 5.
+    </div>
+    <div style="text-align:center"><div class="button" onclick="moveNext(this.parentElement,52)">Csöpi</div> megmérgezése 🐕 </div>
+    
+    <div style="display:block;margin: 0.5em;" class="button" onclick="moveNext(this,47);">[vissza a naptárhoz]</div>
+    </div>
+    
+    <div style="width:50%">
+    <div style="background-color:#EDDA74;line-height:2em;text-align:center;">
+    November 10.
+    </div>
+    <div style="text-align:center"><div class="button" onclick="moveNext(this.parentElement,52)">Csöpi</div> temetése 🙂 </div>
+    
+    <div style="display:block;margin: 0.5em;" class="button" onclick="moveNext(this,47);">[vissza a naptárhoz]</div>
+    </div>
+    
+    <div style="width:50%">
+    <div style="background-color:#EDDA74;line-height:2em;text-align:center;">
+    November 5.
+    </div>
+    <div style="text-align:center">16:00 | <div class="button" onclick="moveNext(this.parentElement,57)">Dávid</div> hoz vacsorát</div>
+    <div style="text-align:center">18:30 | Imrus jön ❤️</div>
+    <div style="display:block;margin: 0.5em;" class="button" onclick="moveNext(this,47);">[vissza a naptárhoz]</div>
+    </div>
+    
+    <div style="width:50%">
+    <div style="background-color:#EDDA74;line-height:2em;text-align:center;">
+    November 5.
+    </div>
+    <div style="text-align:center">Újváry: új végrendelet 🤝</div>
+    
+    <div style="display:block;margin: 0.5em;" class="button" onclick="moveNext(this,47);">[vissza a naptárhoz]</div>
+    </div>
+    
+    <div>
+    TÓTH IMRE: Csöpi? <div class="button" onclick="moveNext(this,53)">A szomszéd kutyája</div>, azt hiszem. A múlt héten döglött meg.
+    </div>
+    
+    <div>
+    VINCZE ILONA: Csöpikém, drágám. Nagyon szerette a Mari nénit, de az meg olyan utálatos volt vele! Szegény Csöpike, megmérgezte… hm, <div class="button" onclick="moveNext(this,54)">valaki</div>. A múlt héten temettük.
+    </div>
+    
+    <div>
+    VINCZE ILONA: Hát szerintem mind tudjuk, hogy ki lehetett. Na, de halottról jót vagy semmit. <div class="button" onclick="moveNext(this,55)">Amúgy is megkapta, amit...</div> Már elnézést, de na.
+    </div>
+    
+    <div>
+    VINCZE ILONA: Hát nyilván nem volt a legjobb kapcsolatom vele, de hát kinek van jó viszonya a szomszédaival... Mármint nem kívántam volna, hogy meghaljon, de azért <div class="button" onclick="moveNext(this,55)">megérdemelte</div>, azt kell mondanom.
+    </div>
+    
+    <div>
+    VINCZE ILONA: Szerintem ezt azért a hülye is összerakja. Minden héten kétszer felhívta a közös képviselőt, hogy a kutyámra panaszkodjon, meg néha át is jött, hogy elmondja, idegesíti a kutya. Aztán egyik nap megmérgezik a kutyámat, ez a némber meg csak mosolyog, amikor mondom neki. Hát, ki nevet végén, igaz?<span></span>
+    </div>
+    
+    <div>TÓTH IMRE: Tessék, itt a száma, <div class="button" onclick="moveNext(this,58)">hívja fel.</div>
+    </div>
+    
+    <div>MOLNÁR DÁVID: Igen, hallottam, <div class="button" onclick="moveNext(this,59)">sajnálom szegényt</div>, kedves néni volt.
+    </div>
+    
+    <div>MOLNÁR DÁVID: Hogy micsoda? Persze, hogy siettem, hát már fél órája ment a meccs. Katar-Ecuador, tudja. Vittem neki vacsorát, bevette a <div class="button" onclick="moveNext(this,60)">gyógyszereket</div>, beszélgettem vele kicsit, aztán leléceltem.
+    </div>
+    
+    <div>
+    <div>MOLNÁR DÁVID: Dehogyis adagoltam túl a gyógyszereit! Ha akartam volna, akkor se tudtam volna túladagolni, mert mindegyik gyógyszernek más volt a színe meg az alakja. A szívgyógyszerére meg különösen vigyáztam, nehogy túlpörgesse a szívét!</div>
+    </div>
+    
+    </div>
+    
+    </div>
+    
+    <script>
+    
+    start = [0]
+    
+    for (i=start[0]+1; i<document.getElementById("text").children.length; i++) {
+    document.getElementById("text").children[i].style.display = "none"
+    }
+    
+    function moveNext(el,x) {
+    start.push(x)
+    //alert(start)
+    el.parentElement.style.display = "none";
+    el.parentElement.parentElement.children[x].style.display = "block"
+    }
+    </script>
