@@ -7,7 +7,10 @@ image: christmas-fireplace.jpg
 ---
 <script src="/chord-player.js"></script>
 <style>
-sup { vertical-align: top; position: relative; top: -0.5em; }
+sup {
+  vertical-align: top;
+  font-size: 0.6em
+  }
 .play, .chord {
   font-family: "Times New Roman";
   font-size: 100%;
