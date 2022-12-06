@@ -58,8 +58,8 @@ Chord progressions, or in other words, the way a song progresses from one chord 
 
 <div>
 <button class="play" onclick="playProgression(this)">▶</button>
+<button class="chord" onclick="playChord(this)">G</button>
 <button class="chord" onclick="playChord(this)">C</button>
-<button class="chord" onclick="playChord(this)">F</button>
 <button class="chord" onclick="playChord(this)">D</button>
 <button class="chord" onclick="playChord(this)">G</button>
 </div>
@@ -70,8 +70,8 @@ The dominant seventh is an alternative for the dominant chord, which causes a mo
 
 <div>
 <button class="play" onclick="playProgression(this)">▶</button>
+<button class="chord" onclick="playChord(this)">G</button>
 <button class="chord" onclick="playChord(this)">C</button>
-<button class="chord" onclick="playChord(this)">F</button>
 <button class="chord" onclick="playChord(this)">D7</button>
 <button class="chord" onclick="playChord(this)">G</button>
 </div>
@@ -80,7 +80,7 @@ The dominant seventh is an alternative for the dominant chord, which causes a mo
 
 Nonetheless, dominant seventh awake tension that needs resolution immediately. That’s why, more often than not, D7 leads us back to G. If it is our home chord, the root, we’re alright set. But what if it isn’t our root? Then it is called tonicization, meaning that the chord calls for a tonic that is not the tonic of the key. For example, D7 can be placed into a chord progression as the following: C F D7 G. As soon as we start leaning towards that direction (ie. G), we are dealing with modulation and a different key than what we’ve started with.
 
-Tonicization:
+Tonicization (in C):
 <div>
 <button class="play" onclick="playProgression(this)">▶</button>
 <button class="chord" onclick="playChord(this)">C</button>
@@ -89,7 +89,7 @@ Tonicization:
 <button class="chord" onclick="playChord(this)">G</button>
 </div>
 
-Modulation:
+Modulation (C → G):
 <div>
 <button class="play" onclick="playProgression(this)">▶</button>
 <button class="chord" onclick="playChord(this)">C</button>
@@ -128,16 +128,16 @@ Likewise, D7 might just be a jazzy alternative for D. On the other hand, it is a
 
 <div>
 <button class="play" onclick="playProgression(this)">▶</button>
+<button class="chord" onclick="playChord(this)">G</button>
 <button class="chord" onclick="playChord(this)">C</button>
-<button class="chord" onclick="playChord(this)">F</button>
 <button class="chord" onclick="playChord(this)">D</button>
 <button class="chord" onclick="playChord(this)">G</button>
 </div>
 
 <div>
 <button class="play" onclick="playProgression(this)">▶</button>
+<button class="chord" onclick="playChord(this)">G</button>
 <button class="chord" onclick="playChord(this)">C</button>
-<button class="chord" onclick="playChord(this)">F</button>
 <button class="chord" onclick="playChord(this)">D7</button>
 <button class="chord" onclick="playChord(this)">G</button>
 </div>
