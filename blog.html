@@ -10,7 +10,7 @@ permalink: /blog/
 
       <h1><a class="post-title" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
       <div>{{ post.date | date: "%-d %B %Y" }} | <span class="ert">
-    ERT:
+  <acronym title="Estimated reading time">ERT</acronym>:
     {% assign words = post.content | strip_html | number_of_words %}
     {% assign ert = words | divided_by:250 | at_least: 1 %}
     {{ ert }} min{% if ert != 1 %}s{% endif %}
