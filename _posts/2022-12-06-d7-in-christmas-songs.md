@@ -34,7 +34,7 @@ background-color:khaki;
 </style>
 When it’s Christmas, it’s time for carolling.
 
-It happened that I grabbed my guitar last Thursday to set the mood for December. I was checking out the guitar chords of some evergreens (yes, pun intended) when I noticed something strange. A chord kept coming up, regardless of what song I was strumming along: the mighty D7. No matter if it’s White Christmas, O Come All Ye Faithful, or We Wish You A Merry Christmas, D7 is apparently a must-have for yuletide composers.
+It happened that I grabbed my guitar last Thursday to set the mood for December. I was checking out the guitar chords of some evergreens (yes, pun intended) when I noticed something strange. A chord kept coming up, regardless of what song I was strumming along: the mighty D7. No matter if it’s *White Christmas*, *O Come All Ye Faithful*, or *We Wish You A Merry Christmas*, D7 is apparently a must-have for yuletide composers.
 
 The rabbit hole of D7 is an incredible place. Once you start unravelling the mystery, new horizons show and memories come flooding back, memories of deadly boring solfège lessons. It seems D7 isn’t the only thing these goldies have in common, they’re also written in the key of G with D7 functioning as a dominant seventh.
 
@@ -122,7 +122,7 @@ Why D7 then?
 
 Before we answer, let’s just take a detour to explore another honourable mention when it comes to christmassy chords.
 It’s been 6 years since journalist Adam Ragusea figured out what the most christmassy chord is, namely the Dm7b5. And in came musician Adam Neely to almost immediately debunk his theory, interpreting the function of that god-awful transcription of a chord as one that, in that context, adds bittersweetness to the melody, as minor sevenths usually do.
-Neely also indicates that it might be the roots of today’s popular Christmas songs where we should start investigating, as most of these songs (eg. White Christmas, Have Yourself a Merry Little Christmas) were written in an era where these bittersweet harmonies were quite popular in the US.
+Neely also indicates that it might be the roots of today’s popular Christmas songs where we should start investigating, as most of these songs (eg. *White Christmas*, *Have Yourself a Merry Little Christmas*) were written in an era where these bittersweet harmonies were quite popular in the US.
 
 Likewise, D7 might just be a jazzy alternative for D. On the other hand, it is arguably true that the dominant seventh evokes greater desire to resolve on the home chord. What if this what makes D7, G7, C7, B7 etc. so ubiquitous in Christmas songs?
 
