@@ -34,7 +34,7 @@ background-color:khaki;
 </style>
 When it’s Christmas, it’s time for carolling.
 
-It happened that I grabbed my guitar last Thursday to set the mood for December. I was checking out the guitar chords of some evergreens (yes, pun intended) when I noticed something strange. A chord kept coming up, regardless of what song I was strumming along: the mighty D7. No matter if it’s *White Christmas*, *O Come All Ye Faithful*, or *We Wish You A Merry Christmas*, D7 is apparently a must-have for yuletide composers.
+It happened that I grabbed my guitar last Thursday to set the mood for December. I was checking out the guitar chords of some evergreens (yes, pun intended) when I noticed something strange. A chord kept coming up, regardless of what song I was strumming along: the mighty D7. No matter if it’s <a href="https://tabs.ultimate-guitar.com/tab/bing-crosby/white-christmas-chords-902543" target="_blank">*White Christmas*</a>, <a href="https://tabs.ultimate-guitar.com/tab/casting-crowns/o-come-all-ye-faithful-chords-899101" target="_blank">*O Come All Ye Faithful*</a>, or <a href="https://tabs.ultimate-guitar.com/tab/the-irish-rovers/we-wish-you-a-merry-christmas-chords-1009149" target="_blank">*We Wish You A Merry Christmas*</a>, D7 is apparently a must-have for yuletide composers.
 
 <span class="highlighted-text">The rabbit hole of D7 is an incredible place.</span> Once you start unravelling the mystery, new horizons show and memories come flooding back, memories of deadly boring solfège lessons. It seems D7 isn’t the only thing these goldies have in common, they’re also written in the key of G with D7 functioning as a dominant seventh.
 
@@ -108,7 +108,7 @@ All in all, D7 is a dominant seventh that may function as a V7 chord in a I IV V
 
 Huh. Now back to Christmas.
 
-As established above, Christmas songs are often written in the key of G which is a go-to “happy” key, or the reason might just be that it is an “easy” key for guitarist with most of its basic chords can be played as an open chord (except for F#dim), that is, as unbarred chords, chords without your finger pressing down the strings across the fingerboard.
+As established above, Christmas songs are often written in the key of G which is a go-to “happy” key, or the reason might just be that it is <a href="https://www.guitartricks.com/forum/t/5524?t=5524#:~:text=Most%20Christmas%20songs%20are%20played%20in%20the%20key%20of%20G%20on%20the%20guitar%2C" target="_blank">an “easy” key for guitarist</a> with most of its basic chords can be played as an open chord (except for F#dim), that is, as unbarred chords, chords without your finger pressing down the strings across the fingerboard.
 
 Now, in the key of G, you can always have D or D7 as a dominant, so it is quite obvious we have a lot of those around the house if it is a song written in G.
 
@@ -121,7 +121,7 @@ Why D7 then?
 <hr>
 
 Before we answer, let’s just take a detour to explore another honourable mention when it comes to christmassy chords.
-It’s been 6 years since journalist Adam Ragusea figured out what the most christmassy chord is, namely the Dm7b5. And in came musician Adam Neely to almost immediately debunk his theory, interpreting the function of that god-awful transcription of a chord as one that, in that context, adds bittersweetness to the melody, as minor sevenths usually do.
+It’s been 6 years since journalist <a href="https://www.youtube.com/watch?v=xm4LO22-cyY" target="_blank">Adam Ragusea figured out what the most christmassy chord is</a>, namely the Dm7b5. And in came musician <a href="https://www.youtube.com/watch?v=V5WfgMVtueo" target="_blank">Adam Neely to almost immediately debunk his theory</a>, interpreting the function of that god-awful transcription of a chord as one that, in that context, adds bittersweetness to the melody, as minor sevenths usually do.
 Neely also indicates that it might be the roots of today’s popular Christmas songs where we should start investigating, as most of these songs (eg. *White Christmas*, *Have Yourself a Merry Little Christmas*) were written in an era where these bittersweet harmonies were quite popular in the US.
 
 Likewise, D7 might just be a jazzy alternative for D. On the other hand, <span class="highlighted-text">it is arguably true that the dominant seventh evokes an even greater desire to resolve on the home chord</span>. What if this what makes D7, G7, C7, B7 etc. so ubiquitous in Christmas songs?
