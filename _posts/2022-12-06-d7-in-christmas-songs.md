@@ -36,7 +36,7 @@ When it’s Christmas, it’s time for carolling.
 
 It happened that I grabbed my guitar last Thursday to set the mood for December. I was checking out the guitar chords of some evergreens (yes, pun intended) when I noticed something strange. A chord kept coming up, regardless of what song I was strumming along: the mighty D7. No matter if it’s *White Christmas*, *O Come All Ye Faithful*, or *We Wish You A Merry Christmas*, D7 is apparently a must-have for yuletide composers.
 
-The rabbit hole of D7 is an incredible place. Once you start unravelling the mystery, new horizons show and memories come flooding back, memories of deadly boring solfège lessons. It seems D7 isn’t the only thing these goldies have in common, they’re also written in the key of G with D7 functioning as a dominant seventh.
+<span class="highlighted-text">The rabbit hole of D7 is an incredible place.</span> Once you start unravelling the mystery, new horizons show and memories come flooding back, memories of deadly boring solfège lessons. It seems D7 isn’t the only thing these goldies have in common, they’re also written in the key of G with D7 functioning as a dominant seventh.
 
 <p><img src="/assets/christmas-fireplace.jpg"></p>
 
@@ -76,7 +76,7 @@ The dominant seventh is an alternative for the dominant chord, which causes a mo
 <button class="chord" onclick="playChord(this)">G</button>
 </div>
 
-That is why the application of the dominant seventh brings an uncanny feeling, an unheimlich feeling if you will, truly in its Freudian sense, feeling of being at home, but not quite. Nostalgia might be another emotion that dominant sevenths evoke. It comes as no surprise that the root of the Greek word refers to a certain ‘homecoming pain’, in a broader sense, longing back for the past that’s lost forever, except for our memories.
+<span class="highlighted-text">That is why the application of the dominant seventh brings an uncanny feeling.</span> An unheimlich feeling if you will, truly in its Freudian sense, feeling of being at home, but not quite. Nostalgia might be another emotion that dominant sevenths evoke. It comes as no surprise that the root of the Greek word refers to a certain ‘homecoming pain’, in a broader sense, longing back for the past that’s lost forever, except for our memories.
 
 Nonetheless, dominant seventh awake tension that needs resolution immediately. That’s why, more often than not, D7 leads us back to G. If it is our home chord, the root, we’re alright set. But what if it isn’t our root? Then it is called tonicization, meaning that the chord calls for a tonic that is not the tonic of the key. For example, D7 can be placed into a chord progression as the following: C F D7 G. As soon as we start leaning towards that direction (ie. G), we are dealing with modulation and a different key than what we’ve started with.
 
@@ -124,7 +124,7 @@ Before we answer, let’s just take a detour to explore another honourable menti
 It’s been 6 years since journalist Adam Ragusea figured out what the most christmassy chord is, namely the Dm7b5. And in came musician Adam Neely to almost immediately debunk his theory, interpreting the function of that god-awful transcription of a chord as one that, in that context, adds bittersweetness to the melody, as minor sevenths usually do.
 Neely also indicates that it might be the roots of today’s popular Christmas songs where we should start investigating, as most of these songs (eg. *White Christmas*, *Have Yourself a Merry Little Christmas*) were written in an era where these bittersweet harmonies were quite popular in the US.
 
-Likewise, D7 might just be a jazzy alternative for D. On the other hand, it is arguably true that the dominant seventh evokes greater desire to resolve on the home chord. What if this what makes D7, G7, C7, B7 etc. so ubiquitous in Christmas songs?
+Likewise, D7 might just be a jazzy alternative for D. On the other hand, <span class="highlighted-text">it is arguably true that the dominant seventh evokes an even greater desire to resolve on the home chord</span>. What if this what makes D7, G7, C7, B7 etc. so ubiquitous in Christmas songs?
 
 <div>
 <button class="play" onclick="playProgression(this)">▶</button>
@@ -142,7 +142,7 @@ Likewise, D7 might just be a jazzy alternative for D. On the other hand, it is a
 <button class="chord" onclick="playChord(this)">G</button>
 </div>
 
-Causing tension that is always released the same way, they’re chords that mirror our waiting for Christmas, the suspense before the overflow of joyous celebration with the family around the fireplace.
+Causing tension that is always released the same way, <span class="highlighted-text">they’re chords that mirror our waiting for Christmas, the suspense before the overflow of joyous celebration with the family around the fireplace.</span>
 
 Similarly, remembering the long auld, almost forgotten Christmases evokes nostalgia, that is to say, it is Christmas but not that Christmas. D7 is the chord of nostalgia in that it brings us nice memories just to take us back home with a bittersweet taste in our mouth.
 
