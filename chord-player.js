@@ -192,7 +192,7 @@ var audioContext = new (window.AudioContext || window.webkitAudioContext);
 progression = []
 startTime = 1;
 
-for (u=1;u<pitches.length;u++) {
+for (u=0;u<pitches.length;u++) {
 el.disabled = true
 note = {}
 note.name = pitches[u]
