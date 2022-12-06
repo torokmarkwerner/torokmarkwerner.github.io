@@ -124,7 +124,7 @@ Before we answer, let’s just take a detour to explore another honourable menti
 It’s been 6 years since journalist <a href="https://www.youtube.com/watch?v=xm4LO22-cyY" target="_blank">Adam Ragusea figured out what the most christmassy chord is</a>, namely the Dm7b5. And in came musician <a href="https://www.youtube.com/watch?v=V5WfgMVtueo" target="_blank">Adam Neely to almost immediately debunk his theory</a>, interpreting the function of that god-awful transcription of a chord as one that, in that context, adds bittersweetness to the melody, as minor sevenths usually do.
 Neely also indicates that it might be the roots of today’s popular Christmas songs where we should start investigating, as most of these songs (eg. *White Christmas*, *Have Yourself a Merry Little Christmas*) were written in an era where these bittersweet harmonies were quite popular in the US.
 
-Likewise, D7 might just be a jazzy alternative for D. On the other hand, <span class="highlighted-text">it is arguably true that the dominant seventh evokes an even greater desire to resolve on the home chord</span>. What if this what makes D7, G7, C7, B7 etc. so ubiquitous in Christmas songs?
+Likewise, D7 might just be a jazzy alternative for D. On the other hand, it is arguably true that the dominant seventh evokes an even greater desire to resolve on the home chord. What if this what makes D7, G7, C7, B7 etc. so ubiquitous in Christmas songs?
 
 <div>
 <button class="play" onclick="playProgression(this)">▶</button>
