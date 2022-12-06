@@ -1,6 +1,6 @@
 ---
 layout: post
-title: D7 in Christmas songs
+title: D⁷ in Christmas songs
 published: true
 tags: christmas guitar music chords
 image: christmas-fireplace.jpg
