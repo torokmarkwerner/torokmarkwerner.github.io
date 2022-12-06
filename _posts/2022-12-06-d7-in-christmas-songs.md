@@ -32,49 +32,6 @@ background-color:khaki;
   color: black;
 }
 </style>
-
-G major scale: 
-<button class="play" onclick="playNotes(this,['G4', 'A4', 'B4', 'C5', 'D5', 'E5', 'F#5', 'G5'])">
-▶
-</button>
-
-<div>
-<button class="play" onclick="playProgression(this)">
-▶
-</button>
-<button class="chord" onclick="playChord(this)">
-C
-</button>
-
-<button class="chord" onclick="playChord(this)">
-F
-</button>
-
-<button class="chord" onclick="playChord(this)">
-D7
-</button>
-
-<button class="chord" onclick="playChord(this)">
-G
-</button>
-
-<button class="chord" onclick="playChord(this)">
-G7
-</button>
-
-<button class="chord" onclick="playChord(this)">
-C
-</button>
-
-<button class="chord" onclick="playChord(this)">
-D
-</button>
-
-<button class="chord" onclick="playChord(this)">
-G
-</button>
-</div>
-
 When it’s Christmas, it’s time for carolling.
 
 It happened that I grabbed my guitar last Thursday to set the mood for December. I was checking out the guitar chords of some evergreens (yes, pun intended) when I noticed something strange. A chord kept coming up, regardless of what song I was strumming along: the mighty D7. No matter if it’s White Christmas, O Come All Ye Faithful, or We Wish You A Merry Christmas, D7 is apparently a must-have for yuletide composers.
@@ -85,34 +42,70 @@ The rabbit hole of D7 is an incredible place. Once you start unravelling the mys
 
 <p><i>It's time to get yourself a mug of hot chocolate, pop some corn, and get comfortable in front of the fireplace.</i></p>
 
-The function of chords in a key
+<hr>
+
+## The function of chords in a key
+
 What’s that gibberish? You may ask. Based on my research and my blurred memories from my early years of music education, songs are written in keys, meaning that they’re arranged with the help of pitches from a particular scale. For instance, the key of G (ie. the G major scale) consists of seven pitches: G, A, B, C, D, E, F#.
 
-[G MAJOR SCALE]:
+The G major scale consists of the following pitches:
+<button class="play" onclick="playNotes(this,['G4', 'A4', 'B4', 'C5', 'D5', 'E5', 'F#5', 'G5'])">
+▶
+</button>
 
 OK, so now we have a key. The above pitches serve as the roots of the seven chords in the key of G, that is, the base pitch of the chord. These chords are assigned roman numbers (lowercase if it’s a minor chord), based on their place in the scale: I, ii, iii, IV, V etc. These numbers indicate the function of the given chord in the given key.
 
 Chord progressions, or in other words, the way a song progresses from one chord to another, are based on these chord functions. One of the most frequent chord progressions is I-IV-V-I, which starts from the tonic (the chord established with the root of the key), goes to the subdominant, the fourth chord, culminates in the dominant, causing a great deal of tension, and finally, resolves in the tonic (also known as the home chord). That leaves us G-C-D-G in the key of G.
 
-[G-C-D-G]
+<div>
+<button class="play" onclick="playProgression(this)">▶</button>
+<button class="chord" onclick="playChord(this)">C</button>
+<button class="chord" onclick="playChord(this)">F</button>
+<button class="chord" onclick="playChord(this)">D</button>
+<button class="chord" onclick="playChord(this)">G</button>
+</div>
 
-The dominant seventh
+## The dominant seventh
 
 The dominant seventh is an alternative for the dominant chord, which causes a momentary ambiguity, a slight tension, as one of its notes is not in the scale. Let’s just take a look at D and D7, for example. D consists of D, F#, and A, while D7 spices up the whole thing with the addition of C (a seventh note, hence the name), which gives the chord a touch of dissonance with a contrast between the third and the seventh, F# and C. Again, it’s mainly because C is not on a scale of D major, but it belongs to the relative minor (Dm).
 
-[G-C-D7-G]
+<div>
+<button class="play" onclick="playProgression(this)">▶</button>
+<button class="chord" onclick="playChord(this)">C</button>
+<button class="chord" onclick="playChord(this)">F</button>
+<button class="chord" onclick="playChord(this)">D7</button>
+<button class="chord" onclick="playChord(this)">G</button>
+</div>
 
 That is why the application of the dominant seventh brings an uncanny feeling, an unheimlich feeling if you will, truly in its Freudian sense, feeling of being at home, but not quite. Nostalgia might be another emotion that dominant sevenths evoke. It comes as no surprise that the root of the Greek word refers to a certain ‘homecoming pain’, in a broader sense, longing back for the past that’s lost forever, except for our memories.
 
 Nonetheless, dominant seventh awake tension that needs resolution immediately. That’s why, more often than not, D7 leads us back to G. If it is our home chord, the root, we’re alright set. But what if it isn’t our root? Then it is called tonicization, meaning that the chord calls for a tonic that is not the tonic of the key. For example, D7 can be placed into a chord progression as the following: C F D7 G. As soon as we start leaning towards that direction (ie. G), we are dealing with modulation and a different key than what we’ve started with.
 
-Tonicization: [C-F-D7-G]
+Tonicization:
+<div>
+<button class="play" onclick="playProgression(this)">▶</button>
+<button class="chord" onclick="playChord(this)">C</button>
+<button class="chord" onclick="playChord(this)">F</button>
+<button class="chord" onclick="playChord(this)">D7</button>
+<button class="chord" onclick="playChord(this)">G</button>
+</div>
 
-Modulation: [C-F-D7-G-G7-C-D-G]
+Modulation:
+<div>
+<button class="play" onclick="playProgression(this)">▶</button>
+<button class="chord" onclick="playChord(this)">C</button>
+<button class="chord" onclick="playChord(this)">F</button>
+<button class="chord" onclick="playChord(this)">D7</button>
+<button class="chord" onclick="playChord(this)">G</button>
+<button class="chord" onclick="playChord(this)">G7</button>
+<button class="chord" onclick="playChord(this)">C</button>
+<button class="chord" onclick="playChord(this)">D</button>
+<button class="chord" onclick="playChord(this)">G</button>
+</div>
 
 All in all, D7 is a dominant seventh that may function as a V7 chord in a I IV V7 I progression (as an ambiguous substitution for D), or it may resolve on another tonic (tonicization), possibly introducing a new key (modulation).
 
-The dominant sevenths in Christmas songs
+## The dominant sevenths in Christmas songs
 
 Huh. Now back to Christmas.
 
@@ -128,9 +121,21 @@ Neely also indicates that it might be the roots of today’s popular Christmas s
 
 Likewise, D7 might just be a jazzy alternative for D. On the other hand, it is arguably true that the dominant seventh evokes greater desire to resolve on the home chord. What if this what makes D7, G7, C7, B7 etc. so ubiquitous in Christmas songs?
 
-[G-C-D-G]
+<div>
+<button class="play" onclick="playProgression(this)">▶</button>
+<button class="chord" onclick="playChord(this)">C</button>
+<button class="chord" onclick="playChord(this)">F</button>
+<button class="chord" onclick="playChord(this)">D</button>
+<button class="chord" onclick="playChord(this)">G</button>
+</div>
 
-[G-C-D7-G]
+<div>
+<button class="play" onclick="playProgression(this)">▶</button>
+<button class="chord" onclick="playChord(this)">C</button>
+<button class="chord" onclick="playChord(this)">F</button>
+<button class="chord" onclick="playChord(this)">D7</button>
+<button class="chord" onclick="playChord(this)">G</button>
+</div>
 
 Causing tension that is always released the same way, they’re chords that mirror our waiting for Christmas, the suspense before the overflow of joyous celebration with the family around the fireplace.
 
