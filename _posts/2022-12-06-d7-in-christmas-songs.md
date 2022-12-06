@@ -46,9 +46,8 @@ The rabbit hole of D7 is an incredible place. Once you start unravelling the mys
 
 ## The function of chords in a key
 
-What’s that gibberish? You may ask. Based on my research and my blurred memories from my early years of music education, songs are written in keys, meaning that they’re arranged with the help of pitches from a particular scale. For instance, the key of G (ie. the G major scale) consists of seven pitches: G, A, B, C, D, E, F#.
+What’s that gibberish? You may ask. Based on my research and my blurred memories from my early years of music education, songs are written in keys, meaning that they’re arranged with the help of pitches from a particular scale. For instance, the key of G (ie. the G major scale) consists of the following seven pitches: G, A, B, C, D, E, F#:
 
-The G major scale consists of the following pitches:
 <button class="play" onclick="playNotes(this,['G4', 'A4', 'B4', 'C5', 'D5', 'E5', 'F#5', 'G5'])">
 ▶
 </button>
@@ -114,6 +113,12 @@ As established above, Christmas songs are often written in the key of G which is
 Now, in the key of G, you can always have D or D7 as a dominant, so it is quite obvious we have a lot of those around the house if it is a song written in G.
 
 Why D7 then?
+
+<p><img src="/assets/christmas-street-snowing.jpg"></p>
+
+<p><i>These houses do not have a clue of the impending danger of D7 chords invading the city.</i></p>
+
+<hr>
 
 Before we answer, let’s just take a detour to explore another honourable mention when it comes to christmassy chords.
 It’s been 6 years since journalist Adam Ragusea figured out what the most christmassy chord is, namely the Dm7b5. And in came musician Adam Neely to almost immediately debunk his theory, interpreting the function of that god-awful transcription of a chord as one that, in that context, adds bittersweetness to the melody, as minor sevenths usually do.
