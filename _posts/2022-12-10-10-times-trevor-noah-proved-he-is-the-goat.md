@@ -21,6 +21,8 @@ Of course, these achievements in themselves fail to show why I consider Trevor N
 
 <p><i>The Daily Show with Trevor Noah</i>. Image: (<a href="https://www.paramountplus.com/shows/the-daily-show-with-trevor-noah" target="_blank">Paramount Plus</a>).</p>
 
+<hr>
+
 ## 1. Interviewing Tomi Lahren
 
 “I’m in the lion’s den, Trevor,” says Tomi Lahren as she enters the set.
@@ -139,9 +141,11 @@ I once looked into postcolonial comedy. There’s an intriguing idea somewhere t
 
 When Trevor was back in South Africa for a short time, he visited his late grandmother Gogo in Soweto. Now, you must know that Trevor’s mom was a single parent, so Gogo took the lion’s share in Trevor’s upbringing. That required great care with the child, literally, “born a crime”, as it was illegal in apartheid for a White man and a Black woman to have a child together. Trevor even describes a situation in his book where his mother had to deny him in a local shop when asked whose child he was, fearing, not without foundation, that Trevor may be taken if the truth gets found out.
 
-<p><img src="/assets/born-a-crime-cover.jpg"></p>
+<p style="text-align:center"><img src="/assets/born-a-crime-cover.jpg"></p>
 
-<p><i>Born a Crime</i> by Trevor Noah. Image: (<a href="https://en.wikipedia.org/wiki/Born_a_Crime" target="_blank">Wikipedia</a>).</p>
+<p style="text-align:center"><i>Born a Crime</i> by Trevor Noah. Image: (<a href="https://en.wikipedia.org/wiki/Born_a_Crime" target="_blank">Wikipedia</a>).</p>
+
+<hr>
 
 Gogo recalls the struggles of South African people against that system, or how afraid she was from the Flying Squads (patrolling policemen in apartheid) taking Trevor when playing on the streets with the black kids. Of course, she also shares what Trevor and his mom were like as children, both naughty and headstrong.
 
