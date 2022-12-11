@@ -33,7 +33,7 @@ With his audience bursting out in boo’s of contempt on the side, Trevor puts g
 
 “What do you wish people would understand about you on the other side,” he asks Tomi.
 
-On the top of all this, his general communication supports this kind of openness without ever letting himself be hammered by Tomi’s ready-made panels (eg. “a black man is 18.5 times more likely to shoot a police officer than a police officer is to shoot a black man”). One of the main sources of this is upward inflection, which is the question-like elevation of voice at the end of positive sentences (“So what you’re saying is you have to right to say anything you want, so shut up?”).
+On the top of all this, his general communication supports this kind of openness without ever letting himself be hammered by Tomi’s ready-made panels (eg. “a black man is 18.5 times more likely to shoot a police officer than a police officer is to shoot a black man”). One of the main sources of this is upward inflection, which is the question-like elevation of voice at the end of statement-like sentences (“So what you’re saying is you have to right to say anything you want, so shut up?”).
 
 Such an interview between a conservative Republican and a progressive supporter of minority rights is exactly what a world getting more and more polarised needs now. The fact that, shortly after the interview was conducted, rumours started that Trevor and Tomi are dating tells a lot.
 
@@ -61,7 +61,7 @@ Obama had already guested at Jimmy Kimmel’s, Jimmy Fallon’s, and Stephen Col
 
 With Trevor, however, it was less about comedy. There was no audience, there was no studio, no teleprompter, just two black men discussing Russia interfering 2016 elections, polarisation in the US, Obamacare. With Trump winning the presidential race in November, this interview is one that reflects a depressing Christmastime that was followed by an even more depressing era, both affectively and economically.
 
-At the end of the <a href="https://www.cc.com/video/zwlq5r/the-daily-show-with-trevor-noah-exclusive-barack-obama-full-interview" target="_blank">22-minutes interview</a>, Trevor shakes hands with the President, saying “thank you, sir,” to which President Obama just responds casually, “thank you, man.”
+At the end of the <a href="https://www.cc.com/video/zwlq5r/the-daily-show-with-trevor-noah-exclusive-barack-obama-full-interview" target="_blank">22-minutes interview</a>, Trevor shakes hands with the President, saying “thank you, sir,” to which <span class="highlighted-text">President Obama just responds casually, “thank you, man.”</span>
 
 [Unfortunately, the full 2016 interview is not available on YouTube anymore, so if you are not located in the US, you have to access Comedy Central Online via a VPN. <a href="https://hola.org" target="_blank">Hola</a> works wonders.]
 
@@ -75,7 +75,7 @@ Having these two wonderful hosts in the same studio, it is sometimes hard to dec
 
 Along with this genuine modesty, Trevor starts his inquiries with I-statements, describing his own personal connection to his guests and the topics at hand, which adds a personal touch to the conversation and opens easier paths to more controversial, hence more provoking topics. This is how he found manageable means of communication with Tomi Lahren, Will Smith, and Maggie Haberman, and this is how he interacted with Oprah. Starting from the Leadership Academy For Girls in South Africa, the conversation flew flawlessly towards Michael Jackson, the #metoo movement, and Oprah’s interviews with Neverland victims.
 
-In addition to the 17-minute interview, Oprah also participated in another segment, *Between the Scenes*. The *Between the Scenes* segment of *The Daily Show* usually involves Trevor receiving questions from the audience and discussing them before the crew is ready to go on. Of course, having Oprah on the show, it was different: Trevor used the opportunity to have two audience members to ask Oprah their questions. But before that, he threw in a question which is quite emblematic of what kind of host will be missed in him: <span class="highlighted-text">How many normal random things happen to you?</span>
+In addition to <a href="https://www.cc.com/video/547gj1/the-daily-show-with-trevor-noah-oprah-winfrey-the-path-made-clear-using-her-platform-as-a-force-for-good-extended-interview" target="_blank">the 17-minute interview</a>, Oprah also participated in another segment, *Between the Scenes*. The *Between the Scenes* segment of *The Daily Show* usually involves Trevor receiving questions from the audience and discussing them before the crew is ready to go on. Of course, having Oprah on the show, it was different: Trevor used the opportunity to have two audience members to ask Oprah their questions. But before that, he threw in a question which is quite emblematic of what kind of host will be missed in him: <span class="highlighted-text">How many normal random things happen to you?</span>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/TLhJCerHFAw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -87,7 +87,7 @@ One time he was asked about what he would transplant to America from South Afric
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/LoBJOkhtDQQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Of course, starting a conversation with his audience also brought us some unforgettable moments; like that time Trevor talked with a Frenchman in the audience about living in Atlanta and French fries (which turned out to be not from France), or with an Egyptian woman about the similarities between Egyptian leaders and Donald Trump. Or when he had a guy who had to change his name because he was always selected by the airport security for a precheck.
+Of course, starting a conversation with his audience also brought us some unforgettable moments; like that time Trevor talked with a Frenchman in the audience about living in Atlanta and French fries (which turned out to be not from France), or with an Egyptian woman about the similarities between Egyptian leaders and Donald Trump. Or when he had a guy who had to change his name because he was always selected by the airport security for a pre-check.
 
 I could go on and on about how swiftly and wittily Trevor reacted to these questions and stories, never offending these people, but see for yourself:
 
@@ -107,7 +107,7 @@ Well, Trevor caused no disappointment in that. Criticising the corrupt cosiness 
 
 But the audience members not walking out on him is more about what shined through his words all along and what he immaculately summarised in the final part of his speech:
 
-“The reason we're here is to honour and celebrate the fourth estate, and what you stand for: an additional check and balance that holds power to account and gives voice to those who otherwise wouldn't have one, and I'm not just talking about CNN or Fox or any of the other major organizations. I’m talking about everyone, you know; the young journalists we saw today, intrepid journalists who aren't even in this room in Flint, Michigan, or that daring reporters at *The Des Moines Register*, or the unflinching local newscaster in El Paso, Texas. Every single one of you, whether you like it or not, is a bastion of democracy.”
+“The reason we're here is to honour and celebrate the fourth estate, and what you stand for: an additional check and balance that holds power to account and gives voice to those who otherwise wouldn't have one, and I'm not just talking about CNN or Fox or any of the other major organizations. <span class="highlighted-text">I’m talking about everyone, you know; the young journalists we saw today, intrepid journalists who aren't even in this room in Flint, Michigan, or that daring reporters at *The Des Moines Register*, or the unflinching local newscaster in El Paso, Texas. Every single one of you, whether you like it or not, is a bastion of democracy.”</span>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_fpxCuorKjA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -119,7 +119,7 @@ But let’s not jump ahead and continue our reel of the greatest moments of Trev
 
 This insightful remark maddened the French ambassador to the US, so much so that he sent a letter to Trevor, in which he resentfully complained about the comedian “denying [the French players] Frenchness” by celebrating an African victory. However, Trevor didn’t just back up without a fight, he commented on the issue and put it into the broader context of (post)colonialism, wisely reflecting on the difference between the alt-right and him talking about these players as Africans:
 
-“When I'm saying they're African, I'm not saying it as a way to exclude them from their Frenchness, but I'm rather using it to include them in my Africanness.”
+<span class="highlighted-text">“When I'm saying they're African, I'm not saying it as a way to exclude them from their Frenchness, but I'm rather using it to include them in my Africanness.”</span>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/COD9hcTpGWQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
