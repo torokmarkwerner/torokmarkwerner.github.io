@@ -104,7 +104,7 @@ In addition to <a href="https://www.cc.com/video/547gj1/the-daily-show-with-trev
 
 <div class="video-container">
 <iframe src="https://www.youtube.com/embed/TLhJCerHFAw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<div>
+</div>
 
 ## 5. *Between the Scenes*
 
