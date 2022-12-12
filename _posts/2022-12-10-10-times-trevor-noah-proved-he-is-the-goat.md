@@ -5,6 +5,7 @@ published: true
 tags: trevor-noah the-daily-show comedy politics racism USA
 image: the-daily-show-with-trevor-noah.jpg
 ---
+<p>
 After his announcement of leaving *The Daily Show* in September, yesterday marked the day Trevor Noah hosted the show for the very last time. The South African comedian spent seven years on Comedy Central, during which time he:
 
 *	interviewed President Obama, Michelle Obama, Oprah,
@@ -16,6 +17,7 @@ After his announcement of leaving *The Daily Show* in September, yesterday marke
 * released three Netflix specials.
 
 Of course, these achievements in themselves fail to show why I consider Trevor Noah one of the greatest TV hosts and comedians of all time. That’s why I compiled a list of 10 of his most memorable moments, let them be interviews with political figures (from the left and the right), heartfelt conversations with his audience, or an insightful monologue on France winning the World Cup.
+</p>
 
 <p><img src="/assets/the-daily-show-with-trevor-noah.jpg"></p>
 
