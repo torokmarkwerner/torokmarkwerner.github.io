@@ -1,10 +1,28 @@
 ---
 layout: post
-title: 10 Times Trevor Noah Proved He's the GOAT of All GOATs
+title: 10 Times Trevor Noah Proved He's the GOAT of GOATs
 published: true
 tags: trevor-noah the-daily-show comedy politics racism USA
 image: the-daily-show-with-trevor-noah.jpg
 ---
+<style>
+.video-container {
+  position: relative;
+  padding-bottom: 50%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  }
+
+.video-container iframe, .video-container object, .video-container embed { 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  }
+</style>
+
 After his announcement of leaving *The Daily Show* in September, yesterday marked the day Trevor Noah hosted the show for the very last time. The South African comedian spent seven years on Comedy Central, during which time he:
 
 *	interviewed President Obama, Michelle Obama, Oprah,
@@ -39,7 +57,9 @@ On the top of all this, his general communication supports this kind of openness
 
 Such an interview between a conservative Republican and a progressive supporter of minority rights is exactly what a world getting more and more polarised needs now. The fact that, shortly after the interview was conducted, rumours started that Trevor and Tomi are dating tells a lot.
 
+<div class="video-container">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/F2xv4fba65U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 ## 2. *The Daily Social Distancing Show*
 
