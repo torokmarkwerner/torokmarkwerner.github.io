@@ -8,8 +8,7 @@ image: the-daily-show-with-trevor-noah.jpg
 <style>
 .video-container {
   position: relative;
-  padding-bottom: 50%;
-  padding-top: 30px;
+  padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
   }
