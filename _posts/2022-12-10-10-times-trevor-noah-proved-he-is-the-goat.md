@@ -57,7 +57,7 @@ On the top of all this, his general communication supports this kind of openness
 Such an interview between a conservative Republican and a progressive supporter of minority rights is exactly what a world getting more and more polarised needs now. The fact that, shortly after the interview was conducted, rumours started that Trevor and Tomi are dating tells a lot.
 
 <div class="video-container">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/F2xv4fba65U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/F2xv4fba65U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ## 2. *The Daily Social Distancing Show*
@@ -72,7 +72,9 @@ The production crew of *TDS* started streaming *The Daily Social Distancing Show
 
 Here’s the first episode of *The Daily Social Distancing Show* that may remind you of the hard times we went through those days with perhaps one or two laughable memories, provided that we are now entering the post-COVID times.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/yhB9D06_ef4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/yhB9D06_ef4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 ## 3. Obama
 
@@ -88,7 +90,9 @@ At the end of the <a href="https://www.cc.com/video/zwlq5r/the-daily-show-with-t
 
 As for now, I will just put another interview here, one featuring a much more relaxed, retired President Obama, after Democrats retained the Senate, and an equally loosened-up Trevor Noah, one month before his leaving the show.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/mqaODYJ702s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/mqaODYJ702s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 ## 4. Oprah
 
@@ -98,7 +102,9 @@ Along with this genuine modesty, Trevor starts his inquiries with I-statements, 
 
 In addition to <a href="https://www.cc.com/video/547gj1/the-daily-show-with-trevor-noah-oprah-winfrey-the-path-made-clear-using-her-platform-as-a-force-for-good-extended-interview" target="_blank">the 17-minute interview</a>, Oprah also participated in another segment, *Between the Scenes*. The *Between the Scenes* segment of *The Daily Show* usually involves Trevor receiving questions from the audience and discussing them before the crew is ready to go on. Of course, having Oprah on the show, it was different: Trevor used the opportunity to have two audience members to ask Oprah their questions. But before that, he threw in a question which is quite emblematic of what kind of host will be missed in him: <span class="highlighted-text">How many normal random things happen to you?</span>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/TLhJCerHFAw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/TLhJCerHFAw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div>
 
 ## 5. *Between the Scenes*
 
@@ -106,13 +112,17 @@ Some of my favourite moments with Trevor happened in the segment of *TDS* called
 
 One time he was asked about what he would transplant to America from South African culture. Anytime he draws a parallel between the US and South Africa, no matter if it is 911 operators, racism, infrastructure, or Hollywood, it is pure gold. His answer to this one is, again, down-to-earth, pointing at serious issues from a personal angle of the everyman.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/LoBJOkhtDQQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/LoBJOkhtDQQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 Of course, starting a conversation with his audience also brought us some unforgettable moments; like that time Trevor talked with a Frenchman in the audience about living in Atlanta and French fries (which turned out to be not from France), or with an Egyptian woman about the similarities between Egyptian leaders and Donald Trump. Or when he had a guy who had to change his name because he was always selected by the airport security for a pre-check.
 
 I could go on and on about how swiftly and wittily Trevor reacted to these questions and stories, never offending these people, but see for yourself:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/rloo13M6C8o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/rloo13M6C8o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 ## 6. White House Correspondents’ Dinner
 
@@ -130,7 +140,9 @@ But the audience members not walking out on him is more about what shined throug
 
 “The reason we're here is to honour and celebrate the fourth estate, and what you stand for: an additional check and balance that holds power to account and gives voice to those who otherwise wouldn't have one, and I'm not just talking about CNN or Fox or any of the other major organizations. <span class="highlighted-text">I’m talking about everyone, you know; the young journalists we saw today, intrepid journalists who aren't even in this room in Flint, Michigan, or that daring reporters at *The Des Moines Register*, or the unflinching local newscaster in El Paso, Texas. Every single one of you, whether you like it or not, is a bastion of democracy.”</span>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_fpxCuorKjA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/_fpxCuorKjA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 ## 7. France winning the World Cup
 
@@ -142,7 +154,9 @@ This insightful remark maddened the French ambassador to the US, so much so that
 
 <span class="highlighted-text">“When I'm saying they're African, I'm not saying it as a way to exclude them from their Frenchness, but I'm rather using it to include them in my Africanness.”</span>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/COD9hcTpGWQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/COD9hcTpGWQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 This year, by the way, <a href="https://www.youtube.com/watch?v=8kyOFQpfXBI" target="_blank">Trevor is rooting for Ghana, Senegal, Brazil, and France</a>. Well, as for now, France’s still in the game!
 
@@ -154,7 +168,9 @@ One more thing I liked about him is his philosophy on doing the accents: he’s 
 
 I once looked into postcolonial comedy. There’s an intriguing idea somewhere that one of the most defining characteristics of postcolonial humour is the twofold identity of the colonised: being part of two cultures at the same time enables Trevor, for example, to subvert the colonial discourse. Discussing the “sing-song-y” qualities of Trinidadian accent, Trevor does a bit on a Trinidadian Liam Neeson on the phone with the kidnappers to make a point. Again, see for yourself how that sounds:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/yWI61kpFEAA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/yWI61kpFEAA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 ## 9.	Grandma
 
@@ -168,7 +184,9 @@ When Trevor was back in South Africa for a short time, he visited his late grand
 
 Gogo recalls the struggles of South African people against that system, or how afraid she was from the Flying Squads (patrolling policemen in apartheid) taking Trevor when playing on the streets with the black kids. Of course, she also shares what Trevor and his mom were like as children, both naughty and headstrong.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/1s5iz6ml-qA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/1s5iz6ml-qA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 ## 10.	Farewell
 
@@ -178,4 +196,6 @@ Ronny Chieng’s skit, for example, was quite heart-warming. The Asian correspon
 
 All five correspondents said goodbye in their own way, and it was all so emotional. However, the best was when in the end of the goodbye ceremony, a “senior” field correspondent showed up to “finger the pulse” of New Yorkers on Trevor’s departure. Well, as always, New Yorkers tell you the truth:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Ptb-Hsbhu5k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/Ptb-Hsbhu5k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
