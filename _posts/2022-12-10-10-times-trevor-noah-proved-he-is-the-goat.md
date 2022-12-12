@@ -5,23 +5,6 @@ published: true
 tags: trevor-noah the-daily-show comedy politics racism USA
 image: the-daily-show-with-trevor-noah.jpg
 ---
-<style>
-.video-container {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-  }
-
-.video-container iframe, .video-container object, .video-container embed { 
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  }
-</style>
-
 After his announcement of leaving *The Daily Show* in September, yesterday marked the day Trevor Noah hosted the show for the very last time. The South African comedian spent seven years on Comedy Central, during which time he:
 
 *	interviewed President Obama, Michelle Obama, Oprah,
