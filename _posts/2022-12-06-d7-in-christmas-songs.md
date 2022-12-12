@@ -4,6 +4,7 @@ title: D⁷ in Christmas songs
 published: true
 tags: christmas guitar music chords
 image: christmas-fireplace.jpg
+excerpt_separator: <!--end-of-excerpt-->
 ---
 <script src="/chord-player.js"></script>
 <style>
@@ -39,6 +40,7 @@ background-color:khaki;
 When it’s Christmas, it’s time for carolling.
 
 It happened that I grabbed my guitar last Thursday to set the mood for December. I was checking out the guitar chords of some evergreens (yes, pun intended) when I noticed something strange. A chord kept coming up, regardless of what song I was strumming along: the mighty D<sup>7</sup>. No matter if it’s <a href="https://tabs.ultimate-guitar.com/tab/bing-crosby/white-christmas-chords-902543" target="_blank">*White Christmas*</a>, <a href="https://tabs.ultimate-guitar.com/tab/casting-crowns/o-come-all-ye-faithful-chords-899101" target="_blank">*O Come All Ye Faithful*</a>, or <a href="https://tabs.ultimate-guitar.com/tab/the-irish-rovers/we-wish-you-a-merry-christmas-chords-1009149" target="_blank">*We Wish You A Merry Christmas*</a>, D<sup>7</sup> is apparently a must-have for yuletide composers.
+<!--end-of-excerpt-->
 
 <span class="highlighted-text">The rabbit hole of D<sup>7</sup> is an incredible place.</span> Once you start unravelling the mystery, new horizons show and memories come flooding back, memories of deadly boring solfège lessons. It seems D<sup>7</sup> isn’t the only thing these goldies have in common, they’re also written in the key of G with D<sup>7</sup> functioning as a dominant seventh.
 

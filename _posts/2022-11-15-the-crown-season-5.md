@@ -4,12 +4,14 @@ title: The Way Forward... Ahead
 published: true
 tags: the-crown movies
 image: the-crown.jpg
+excerpt_separator: <!--end-of-excerpt-->
 ---
 There is nothing new in the palpable tension between the portrayal of Englishmen in coursebooks (such as the English File and Solutions) and the reality of Britain. The tea-sipping, ever so polite Englishmen are what's left from the long-forgotten (?) Empire, and such colonial discourses are still all around us teachers and students of ESL.
 
 Nevertheless, the demise of Elisabeth II placed ESL teachers on the horns of a dilemma. <span class="highlighted-text">May we address the controversies surrounding the Royals, or go on teaching what we were taught to?</span>
 
 The way I see it, <i>The Crown</i> is not only an one-of-a-kind historical drama series with elaborate stage design, but also, a product of imaginative speculation, sheding light on stories that have been either kept secret, or blurred by the nonstop media attention that the royal family suffered since the past century.
+<!--end-of-excerpt-->
 
 <p><img src="/assets/the-crown.jpg"></p>
 
