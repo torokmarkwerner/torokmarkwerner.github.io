@@ -61,7 +61,7 @@ Here’s the first episode of *The Daily Social Distancing Show* that may remind
 <iframe src="https://www.youtube.com/embed/yhB9D06_ef4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<h2 style="padding-left:1em">3. President Obama: "Thank you, man"</h2>
+<h2 style="padding-left:1em">3. President Obama: "Thank You, Man"</h2>
 
 Rarely do American presidents invite talk show hosts to the White House, so it was quite a historical moment for all of us. Presumably, the reason for President Obama doing so was that he could support Hillary Clinton’s presidential campaign, fearing that the radical ideas of Donald Trump and the controversies around Hillary’s emails might lose the Democrats an important race; an ominous suspicion that turned out to shape America’s reality and politics for the next four years (and on and on and on and on…).
 
@@ -173,7 +173,7 @@ Gogo recalls the struggles of South African people against that system, or how a
 <iframe src="https://www.youtube.com/embed/1s5iz6ml-qA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-<h2 style="padding-left:1em">10. Farewell</h2>
+<h2 style="padding-left:1em">10. Bidding Farewell</h2>
 
 Of course, Trevor had to go, but the correspondents for *The Daily Show* didn’t just let him without a word or two. Michael Kosta, Desi Lydic, Ronny Chieng, Roy Wood Jr., and Dulcé Sloan bid farewell to their – our – great host in a segment that was introduced this year in *TDS*: the correspondents not doing the weather, the traffic, the stocks etc. but rather commenting on, joking about, the current news.
 
