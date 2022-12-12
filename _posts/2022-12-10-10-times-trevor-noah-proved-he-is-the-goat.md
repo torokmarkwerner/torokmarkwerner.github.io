@@ -25,7 +25,7 @@ Of course, these achievements in themselves fail to show why I consider Trevor N
 
 <hr>
 
-## 1. Interviewing Tomi Lahren
+<h2 style="padding-left:1em">1. Interviewing Tomi Lahren</h2>
 
 “I’m in the lion’s den, Trevor,” says Tomi Lahren as she enters the set.
 
@@ -45,7 +45,7 @@ Such an interview between a conservative Republican and a progressive supporter 
 <iframe src="https://www.youtube.com/embed/F2xv4fba65U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-## 2. *The Daily Social Distancing Show*
+<h2 style="padding-left:1em">2. <i>The Daily Social Distancing Show</i></h2>
 
 In the wake of 2020, COVID hit the world, hard.
 
@@ -61,7 +61,7 @@ Here’s the first episode of *The Daily Social Distancing Show* that may remind
 <iframe src="https://www.youtube.com/embed/yhB9D06_ef4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-## 3. Obama
+<h2 style="padding-left:1em">3. President Obama: "Thank you, man"</h2>
 
 Rarely do American presidents invite talk show hosts to the White House, so it was quite a historical moment for all of us. Presumably, the reason for President Obama doing so was that he could support Hillary Clinton’s presidential campaign, fearing that the radical ideas of Donald Trump and the controversies around Hillary’s emails might lose the Democrats an important race; an ominous suspicion that turned out to shape America’s reality and politics for the next four years (and on and on and on and on…).
 
@@ -79,7 +79,7 @@ As for now, I will just put another interview here, one featuring a much more re
 <iframe src="https://www.youtube.com/embed/mqaODYJ702s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-## 4. Oprah
+<h2 style="padding-left:1em">4. Interviewing Oprah</h2>
 
 Having these two wonderful hosts in the same studio, it is sometimes hard to decide if it is Oprah at Trevor’s or the other way round. The audience applauds her arrival for 50 seconds straight, not letting Trevor starting his first sentence. However, Trevor is the GOAT, remember? He pulls a joke, and then goes on discussing, quite wittingly, the enormous effect Oprah has on people.
 
@@ -91,7 +91,7 @@ In addition to <a href="https://www.cc.com/video/547gj1/the-daily-show-with-trev
 <iframe src="https://www.youtube.com/embed/TLhJCerHFAw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-## 5. *Between the Scenes*
+<h2 style="padding-left:1em">5. <i>Between the Scenes</i></h2>
 
 Some of my favourite moments with Trevor happened in the segment of *TDS* called *Between the Scenes*, in which Trevor turns to the audience and answer their questions, having a casual chit-chat with them, or commenting on serious topics that were not included in the show.
 
@@ -109,7 +109,7 @@ I could go on and on about how swiftly and wittily Trevor reacted to these quest
 <iframe src="https://www.youtube.com/embed/rloo13M6C8o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-## 6. White House Correspondents’ Dinner
+<h2 style="padding-left:1em">6. Hosting the White House Correspondents’ Dinner</h2>
 
 The White House Correspondents’ Dinner is an annual event of, as the name suggests, the White House correspondents, journalist covering the sometimes problematic functioning of the administration and the White House. The get-together is traditionally attended by most members of the current administration including the president and the vice-president. Another tradition is to invite a comedian to roast politicians and media figures sitting by the tables, often causing a public outcry and guests standing up and leaving the event.
 
@@ -129,7 +129,7 @@ But the audience members not walking out on him is more about what shined throug
 <iframe src="https://www.youtube.com/embed/_fpxCuorKjA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-## 7. France winning the World Cup
+<h2 style="padding-left:1em">7. France Winning the World Cup</h2>
 
 Tonight, France might make it to the semi-finals, but I don’t want to spoil it, especially because I’m on a losing streak when it comes to the 2022 Football World Cup. Back in 2018, when they did make it there, they triumphed over Croatia 4-2. History might just repeat itself, provided that Croatia beats Argentina next Tuesday.
 
@@ -145,7 +145,7 @@ This insightful remark maddened the French ambassador to the US, so much so that
 
 This year, by the way, <a href="https://www.youtube.com/watch?v=8kyOFQpfXBI" target="_blank">Trevor is rooting for Ghana, Senegal, Brazil, and France</a>. Well, as for now, France’s still in the game!
 
-## 8.	Accents
+<h2 style="padding-left:1em">8.	Doing the Accents</h2>
 
 Ah, doing the accents: Trevor’s number one skit! As he explains, the reason he’s so good with accents might be his family background, where at least three languages were spoken (English, Swiss German, Xhosa), not mentioning the accents of English he was surrounded as a child. In his book Born a Crime, he goes into details on how he had to learn proper English in school, and how his prayers were regarded more valuable than African prayers, as it was widely believed that God speaks the English of the colonisers.
 
@@ -157,7 +157,7 @@ I once looked into postcolonial comedy. There’s an intriguing idea somewhere t
 <iframe src="https://www.youtube.com/embed/yWI61kpFEAA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-## 9.	Grandma
+<h2 style="padding-left:1em">9.	"Oh Trevor, he's never forgotten his roots!"</h2>
 
 When Trevor was back in South Africa for a short time, he visited his late grandmother Gogo in Soweto. Now, you must know that Trevor’s mom was a single parent, so Gogo took the lion’s share in Trevor’s upbringing. That required great care with the child, literally, “born a crime”, as it was illegal in apartheid for a White man and a Black woman to have a child together. Trevor even describes a situation in his book where his mother had to deny him in a local shop when asked whose child he was, fearing, not without foundation, that Trevor may be taken if the truth gets found out.
 
@@ -173,7 +173,7 @@ Gogo recalls the struggles of South African people against that system, or how a
 <iframe src="https://www.youtube.com/embed/1s5iz6ml-qA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-## 10.	Farewell
+<h2 style="padding-left:1em">10. Farewell</h2>
 
 Of course, Trevor had to go, but the correspondents for *The Daily Show* didn’t just let him without a word or two. Michael Kosta, Desi Lydic, Ronny Chieng, Roy Wood Jr., and Dulcé Sloan bid farewell to their – our – great host in a segment that was introduced this year in *TDS*: the correspondents not doing the weather, the traffic, the stocks etc. but rather commenting on, joking about, the current news.
 
