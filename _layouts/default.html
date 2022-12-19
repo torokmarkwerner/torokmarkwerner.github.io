@@ -8,6 +8,10 @@
      <link rel="shortcut icon" type="image/x-icon" href="/favicon.png?">
   </head>
 <style>
+  .pages-button a {
+    text-decoration: none;
+    color: inherit;
+  }
     .video-container {
       position: relative;
       padding-bottom: 56.25%;
@@ -311,10 +315,10 @@ document.getElementById("background").style.display = "none"
 <div id="sticky">
 <div id="close" onclick="hideNav()">&times;</div>
 <div style="display: inline-flex;vertical-align: bottom;"><img src="https://avatars.githubusercontent.com/u/98919050"/></div>
-<div  id="about" class="pages-button">ABOUT</div>
-<div id="projects" class="pages-button">PROJECTS</div>
-<div id="blog" class="pages-button">BLOG</div>
-<div id="contact" class="pages-button">CONTACT</div>
+<div  id="about" class="pages-button"><a href="/about">ABOUT</a></div>
+<div id="projects" class="pages-button"><a href="/projects">PROJECTS</a></div>
+<div id="blog" class="pages-button"><a href="/blog">BLOG</a></div>
+<div id="contact" class="pages-button"><a href="/contact">CONTACT</a></div>
 <div style="text-align:center">
 <a href="https://www.facebook.com/torok.mark.werner" target="_blank" class="fa fa-facebook"></a>
 <a href="mailto:torokmarkwerner@gmail.com" target="_blank" class="fa fa-google"></a>
@@ -326,7 +330,6 @@ document.getElementById("background").style.display = "none"
 //alert(document.location.pathname + " --> And this is the substring:" + document.location.pathname.toString().substring(1,document.location.pathname.toString().length-1))
 pages = document.getElementsByClassName("pages-button");
 for (i=0; i<pages.length; i++) {
-pages[i].addEventListener("click",function() {window.open("https://torokmarkwerner.github.io/" + this.textContent.toLowerCase(), "_self")});
   if(("/" + pages[i].textContent.toLowerCase() + "/") === document.location.pathname) {
     pages[i].classList.toggle("pages-button-current");
     pages[i].style.backgroundColor = "palegreen";
