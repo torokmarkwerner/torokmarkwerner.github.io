@@ -8,9 +8,10 @@
      <link rel="shortcut icon" type="image/x-icon" href="/favicon.png?">
   </head>
 <style>
-  .pages-button a {
+  .pages-button {
     text-decoration: none;
     color: inherit;
+    display: block;
   }
     .video-container {
       position: relative;
@@ -315,10 +316,10 @@ document.getElementById("background").style.display = "none"
 <div id="sticky">
 <div id="close" onclick="hideNav()">&times;</div>
 <div style="display: inline-flex;vertical-align: bottom;"><img src="https://avatars.githubusercontent.com/u/98919050"/></div>
-<div  id="about" class="pages-button"><a href="/about">ABOUT</a></div>
-<div id="projects" class="pages-button"><a href="/projects">PROJECTS</a></div>
-<div id="blog" class="pages-button"><a href="/blog">BLOG</a></div>
-<div id="contact" class="pages-button"><a href="/contact">CONTACT</a></div>
+<a id="about" class="pages-button" href="/about">ABOUT</a>
+<a id="projects" class="pages-button" href="/projects">PROJECTS</a>
+<a id="blog" class="pages-button" href="/blog">BLOG</a>
+<a id="contact" class="pages-button" href="/contact">CONTACT</a>
 <div style="text-align:center">
 <a href="https://www.facebook.com/torok.mark.werner" target="_blank" class="fa fa-facebook"></a>
 <a href="mailto:torokmarkwerner@gmail.com" target="_blank" class="fa fa-google"></a>
