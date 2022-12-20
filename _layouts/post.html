@@ -13,6 +13,66 @@ layout: default
     [<a class="tag-name" href="/tag/{{ tag_name }}">{{ tag_name | upcase}}</a>]
   {% endfor %}
 </span></p>
+{% if page.tags contains "movies" %}
+<style>
+  #rating-container2 {
+    max-width:100px;
+  }
+  #rating-container {
+    padding:0;
+    margin:0;
+    position:relative;
+    font-size:150%;
+    width:100%;
+    }
+  
+  #rating-basic-stars {
+    padding:0;
+    margin:0;
+    color: grey;
+    position: relative;
+    width: 100%;
+    overflow:hidden;
+  }
+  
+  #rating-rating {
+    padding:0;
+    margin:0;
+    color: orange;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% * var(--rate)/5);
+    overflow:hidden;
+  }
+  .rating-scoretable {
+    padding: 0.5em 0;
+    table-layout:fixed;
+    width:100%;
+    text-align:center;
+    border-collapse:;
+  }
+  .rating-scoretable td {
+    border: 1px black solid;
+    height:2em
+  }
+  .rating-scoretable th {
+    color:white;
+    font-weight: normal;
+    background-color:black;
+  }
+  </style>
+  
+  <div id="rating-container2">
+  <div style="text-align:center;background-color:antiquewhite;padding:0.5em">
+  <b style="font-size:150%;">page.score</b>/5
+  </div>
+  <div id="rating-container">
+  <div id="rating-basic-stars">★★★★★</div>
+  <div id="rating-rating" style="--rate:{{ page.score }}">★★★★★</div>
+  </div>
+  </div>
+{% endif %}
 {{ content }}
 <hr>
 <div style="font-size:150%;font-weight:bold;font-variant:all-petite-caps;padding:5px 10px;">Comments</div>
