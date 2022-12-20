@@ -3,6 +3,7 @@ layout: post
 title: The Way Forward... Ahead
 published: true
 tags: the-crown movies
+score: 3.7
 image: the-crown.jpg
 excerpt_separator: <!--end-of-excerpt-->
 ---
