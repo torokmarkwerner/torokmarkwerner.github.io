@@ -7,6 +7,55 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="shortcut icon" type="image/x-icon" href="/favicon.png?">
   </head>
+  <style>
+    #rating-container2 {
+      max-width:100px;
+    }
+    #rating-container {
+      padding:0;
+      margin:0;
+      position:relative;
+      font-size:150%;
+      width:100%;
+      }
+    
+    #rating-basic-stars {
+      padding:0;
+      margin:0;
+      color: grey;
+      position: relative;
+      width: 100%;
+      overflow:hidden;
+    }
+    
+    #rating-rating {
+      padding:0;
+      margin:0;
+      color: orange;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: calc(100% * var(--rate)/5);
+      overflow:hidden;
+    }
+    .rating-scoretable {
+      display:none;
+      padding: 0.5em 0;
+      table-layout:fixed;
+      width:100%;
+      text-align:center;
+      border-collapse:;
+    }
+    .rating-scoretable td {
+      border: 1px black solid;
+      height:2em
+    }
+    .rating-scoretable th {
+      color:white;
+      font-weight: normal;
+      background-color:black;
+    }
+    </style>
 <style>
   .pages-button {
     text-decoration: none;
