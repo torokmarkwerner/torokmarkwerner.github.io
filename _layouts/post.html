@@ -304,6 +304,25 @@ document.getElementById("demo").appendChild(commentBody)
 </script>
 <hr>
 <style>
+  .related-post-title-container {
+    position:absolute;
+    padding:0.5em 1em;
+    bottom:0.5em;
+    font-variant-caps:all-small-caps;
+    text-align:center;
+    font-size:110%;
+    background-color:khaki;
+    width:calc(80% - 2em);
+  }
+  .related-post-title-container a {
+    color:black;
+    text-decoration:none;
+  }
+  .related-post-title-container a:hover {
+    cursor:pointer;
+   font-weight:bold;
+  }
+
     .related-post-image {
      max-width: 80%;
      padding: 5px 0;
@@ -314,14 +333,18 @@ document.getElementById("demo").appendChild(commentBody)
      padding: 5px 0;
     }
     }
+.related-post-image:hover {
+ cursor:pointer;
+ opacity:0.8
+}
 </style>
 <div>
   <div style="font-size: 150%;font-weight: bold;font-variant: all-petite-caps;padding: 5px 10px;max-width:80%">Related Posts</div>
   <div style="padding-bottom: 22px;width:80%">
     {% for related_post in site.related_posts limit: 5 %}
     <div style="position:relative">
-    <div style="position:absolute;padding:0.5em 1em;bottom:0.5em;font-variant-caps: all-small-caps;text-align:center;font-size:110%;background-color:khaki;width:calc(80% - 2em);">
-                <a style="color:black;text-decoration:none;" href="{{ related_post.url }}">{{ related_post.title }}</a></div>
+    <div class="related-post-title-container">
+                <a href="{{ related_post.url }}">{{ related_post.title }}</a></div>
       <div>
         <a href="{{ related_post.url }}"><img class="related-post-image"
                      src="/assets/{{ related_post.image }}"></a></div>
