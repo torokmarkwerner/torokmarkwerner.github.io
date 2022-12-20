@@ -323,8 +323,8 @@ document.getElementById("demo").appendChild(commentBody)
     <div style="position:absolute;padding:0.5em 1em;bottom:0.5em;font-variant-caps: all-small-caps;text-align:center;font-size:110%;background-color:khaki;width:calc(80% - 2em);">
                 <a style="color:black;text-decoration:none;" href="{{ related_post.url }}">{{ related_post.title }}</a></div>
       <div>
-                <img class="related-post-image"
-                     src="/assets/{{ related_post.image }}"></div>
+        <a href="{{ related_post.url }}"><img class="related-post-image"
+                     src="/assets/{{ related_post.image }}"></a></div>
     </div>
     {% endfor %}
   </div>
