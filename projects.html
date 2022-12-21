@@ -81,9 +81,9 @@ function checkVisibility(){
   
  
   </script>
-    {% assign projects = site.projects | where: "title", "Text Adventure" %}
+    {% assign projects = site.projects | where: "title", "Text Adventure" | first %}
     {% for project in projects %}
-    {{ project.complete }}
+    <p>{{ project.complete }}</p>
     {% endfor %}
 <p>Below you can see a list of projects I have either finished or I am currently working on. 
 You can read more about a particular project by clicking on its box.</p>
