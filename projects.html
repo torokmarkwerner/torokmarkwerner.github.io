@@ -81,7 +81,7 @@ function checkVisibility(){
   
  
   </script>
-    {% assign projects = site.projects | find: "title", "Text Adventure" %}
+    {% assign projects = site.projects | where: "title", "Text Adventure" %}
     {% for project in projects %}
     {{ project.complete }}
     {% endfor %}
