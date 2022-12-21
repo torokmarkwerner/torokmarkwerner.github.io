@@ -89,6 +89,8 @@ For example, interactive fiction (including text adventure and point-and-click g
 <div style="grid-template-columns: 1fr 1fr;display: grid;
   justify-content: center;width:50%;margin-right:auto;margin-left:10vw;
   align-content: center;grid-row-gap: 1vw;grid-column-gap: 5vw;">
+  {% assign project = site.projects | find: "title", "Text Adventure" %}
+{% project.complete %}
   <div class="container" style="background-color:crimson;"><div class="divy">
   TEXT ADVENTURE
 <div class="progress-container">
