@@ -100,45 +100,55 @@ For example, interactive fiction (including text adventure and point-and-click g
 </div>
 </div>
   </div></div>
-  <div class="container" style="background-color:cornflowerblue"><div class="divy">
+
+  {% assign project = site.pages | where: "title", "Point and Click" | first %}
+  <div class="container" style="--color:{{ project.progressColor }}"><div class="divy">
   POINT AND CLICK
 <div class="progress-container">
 <div class="progress-whole">
-<div class="progress-so-far" style="--progress:10%"></div>
+<div class="progress-so-far" style="--progress:{{ project.complete }}"></div>
 </div>
 </div>
   </div></div>
   <div class="scrollForMore" id="scrollForMore" style="text-align:center;grid-column:1/span 2;display:table;font-size:1vw;line-height:1vw;">[SCROLL DOWN FOR MORE]</div>
-  <div class="container" style="background-color:forestgreen;"><div class="divy">
+  
+  {% assign project = site.pages | where: "title", "Storyline Teaching" | first %}
+  <div class="container" style="--color:{{ project.progressColor }};"><div class="divy">
 STORYLINE TEACHING
 <div class="progress-container">
 <div class="progress-whole">
-<div class="progress-so-far" style="--progress:60%"></div>
+<div class="progress-so-far" style="--progress:{{ project.complete }}"></div>
 </div>
 </div>
 </div></div>
-  <div class="container" style="background-color:orange"><div class="divy">
+
+  {% assign project = site.pages | where: "title", "Hangman" | first %}
+  <div class="container" style="--color:{{ project.progressColor }}"><div class="divy">
 HANGMAN
 <div class="progress-container">
 <div class="progress-whole">
-<div class="progress-so-far" style="--progress:100%"></div>
+<div class="progress-so-far" style="--progress:{{ project.complete }}"></div>
 </div>
 </div>
 </div></div>
     <div class="scrollForMore" style="visibility:none;text-align:center;grid-column:1/span 2;display:table;font-size:1vw;line-height:1vw;">[SCROLL DOWN FOR MORE]</div>
-  <div class="container" style="background-color:khaki;"><div class="divy">
+  
+    {% assign project = site.pages | where: "title", "Gap Filling Generator" | first %}
+    <div class="container" style="--color:{{ project.progressColor }}"><div class="divy">
 GAP FILLING GENERATOR
 <div class="progress-container">
 <div class="progress-whole">
-<div class="progress-so-far" style="--progress:95%"></div>
+<div class="progress-so-far" style="--progress:{{ project.complete }}"></div>
 </div>
 </div>
 </div></div>
-  <div class="container" style="background-color:black;color:white"><div class="divy">
+    
+    {% assign project = site.pages | where: "title", "Friendly Feud" | first %}
+    <div class="container" style="--color:{{ project.progressColor }};color:white"><div class="divy">
 FRIENDLY FEUD
 <div class="progress-container">
 <div class="progress-whole">
-<div class="progress-so-far" style="--progress:70%"></div>
+<div class="progress-so-far" style="--progress:{{ project.complete }}"></div>
 </div>
 </div>
 </div></div>
