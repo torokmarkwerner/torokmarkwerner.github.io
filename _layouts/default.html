@@ -8,6 +8,14 @@
      <link rel="shortcut icon" type="image/x-icon" href="/favicon.png?">
   </head>
   <style>
+    summary {
+      color:crimson;
+      font-weight:bold;
+      content:"SPOILER"
+    }
+    summary:hover {
+      cursor:pointer
+    }
     #rating-container2 {
       max-width:100px;
     }
@@ -316,7 +324,7 @@ body {
   width: 40vw;
   }
 #close {
-    display: inline-block;
+    display: block;
     position:relative;
     font-size:50px;
     top: 10px;
@@ -327,7 +335,6 @@ body {
     color:white;
     text-align:center;
     line-height:50px;
-    vertical-align: middle;
     font-weight:bold;
     margin-bottom:20px;
 }
