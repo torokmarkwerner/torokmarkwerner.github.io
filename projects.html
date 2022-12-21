@@ -47,7 +47,7 @@ permalink: /projects/
   width:100%;height:0em;line-height:0em;background-color:#f5f5f5;border-radius:10px;transition: all 0.5s
 }
 .progress-so-far {
-  height:0em;line-height:0em;background-color:#04AA6D;border-radius:10px;transition: all 0.5s
+  height:0em;line-height:0em;background-color:#04AA6D;border-radius:10px;transition: all 0.5s;width:var(--progress)
 }
 </style>
   <script>
@@ -89,13 +89,13 @@ For example, interactive fiction (including text adventure and point-and-click g
 <div style="grid-template-columns: 1fr 1fr;display: grid;
   justify-content: center;width:50%;margin-right:auto;margin-left:10vw;
   align-content: center;grid-row-gap: 1vw;grid-column-gap: 5vw;">
-  
+
   {% assign project = site.pages | where: "title", "Text Adventure" | first %}
   <div class="container" style="background-color:crimson;"><div class="divy">
   TEXT ADVENTURE
 <div class="progress-container">
 <div class="progress-whole">
-<div class="progress-so-far" style="width:{{ project.complete }}></div>
+<div class="progress-so-far" style="--progress:{{ project.complete }}></div>
 </div>
 </div>
   </div></div>
@@ -103,7 +103,7 @@ For example, interactive fiction (including text adventure and point-and-click g
   POINT AND CLICK
 <div class="progress-container">
 <div class="progress-whole">
-<div class="progress-so-far" style="width:10%"></div>
+<div class="progress-so-far" style="--progress:10%"></div>
 </div>
 </div>
   </div></div>
@@ -112,7 +112,7 @@ For example, interactive fiction (including text adventure and point-and-click g
 STORYLINE TEACHING
 <div class="progress-container">
 <div class="progress-whole">
-<div class="progress-so-far" style="width:60%"></div>
+<div class="progress-so-far" style="--progress:60%"></div>
 </div>
 </div>
 </div></div>
@@ -120,7 +120,7 @@ STORYLINE TEACHING
 HANGMAN
 <div class="progress-container">
 <div class="progress-whole">
-<div class="progress-so-far" style="width:100%"></div>
+<div class="progress-so-far" style="--progress:100%"></div>
 </div>
 </div>
 </div></div>
@@ -129,7 +129,7 @@ HANGMAN
 GAP FILLING GENERATOR
 <div class="progress-container">
 <div class="progress-whole">
-<div class="progress-so-far" style="width:95%"></div>
+<div class="progress-so-far" style="--progress:95%"></div>
 </div>
 </div>
 </div></div>
@@ -137,7 +137,7 @@ GAP FILLING GENERATOR
 FRIENDLY FEUD
 <div class="progress-container">
 <div class="progress-whole">
-<div class="progress-so-far" style="width:70%"></div>
+<div class="progress-so-far" style="--progress:70%"></div>
 </div>
 </div>
 </div></div>
