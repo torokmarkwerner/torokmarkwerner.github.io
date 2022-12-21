@@ -87,12 +87,14 @@ You can read more about a particular project by clicking on its box.</p>
 However, I often create narrative designs which are only slightly inspired by ESL.  
 For example, interactive fiction (including text adventure and point-and-click games) is an area I would like to invest more time into after graudating.</p>
 {% assign project = site.pages | where: "title", "Text Adventure" | first %}
-<div style="width:{{ project.complete }};grid-template-columns: 1fr 1fr;display: grid;justify-content: center;margin-right:auto;margin-left:10vw;align-content: center;grid-row-gap: 1vw;grid-column-gap: 5vw;">
+<div style="grid-template-columns: 1fr 1fr;display: grid;
+  justify-content: center;width:50%;margin-right:auto;margin-left:10vw;
+  align-content: center;grid-row-gap: 1vw;grid-column-gap: 5vw;">
   <div class="container" style="background-color:crimson;"><div class="divy">
   TEXT ADVENTURE
 <div class="progress-container">
 <div class="progress-whole">
-<div class="progress-so-far" style="width:50%"></div>
+<div class="progress-so-far" style="width:{{ project.complete }}></div>
 </div>
 </div>
   </div></div>
