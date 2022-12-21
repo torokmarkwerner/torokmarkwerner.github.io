@@ -81,17 +81,13 @@ function checkVisibility(){
   
  
   </script>
-    {% assign project = site.pages | where: "title", "Text Adventure" | first %}
-    <p>{{ project.complete }}</p>
-
 <p>Below you can see a list of projects I have either finished or I am currently working on. 
 You can read more about a particular project by clicking on its box.</p>
 <p>Most of these projects are related to education, especially my majors, Hungarian and English as a Second Language (ESL). 
 However, I often create narrative designs which are only slightly inspired by ESL.  
 For example, interactive fiction (including text adventure and point-and-click games) is an area I would like to invest more time into after graudating.</p>
-<div style="grid-template-columns: 1fr 1fr;display: grid;
-  justify-content: center;width:50%;margin-right:auto;margin-left:10vw;
-  align-content: center;grid-row-gap: 1vw;grid-column-gap: 5vw;">
+{% assign project = site.pages | where: "title", "Text Adventure" | first %}
+<div style="width:{{ project.complete }};grid-template-columns: 1fr 1fr;display: grid;justify-content: center;margin-right:auto;margin-left:10vw;align-content: center;grid-row-gap: 1vw;grid-column-gap: 5vw;">
   <div class="container" style="background-color:crimson;"><div class="divy">
   TEXT ADVENTURE
 <div class="progress-container">
