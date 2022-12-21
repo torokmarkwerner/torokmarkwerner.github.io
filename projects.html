@@ -27,6 +27,7 @@ permalink: /projects/
   height:15vw;
   visibility: hidden;
   transition: all 0.5s;
+  background-color: var(--color)
 }
 
 .container:hover {
@@ -91,7 +92,7 @@ For example, interactive fiction (including text adventure and point-and-click g
   align-content: center;grid-row-gap: 1vw;grid-column-gap: 5vw;">
 
   {% assign project = site.pages | where: "title", "Text Adventure" | first %}
-  <div class="container" style="background-color:crimson;"><div class="divy">
+  <div class="container" style="--color:{{ project.progressColor }}"><div class="divy">
   TEXT ADVENTURE
 <div class="progress-container">
 <div class="progress-whole">
