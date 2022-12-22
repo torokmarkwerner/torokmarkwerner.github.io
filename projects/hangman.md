@@ -24,7 +24,9 @@ Violent as it may seem, students love the game without the slightest concern ove
 
 My motivation in creating an online hangman game was that I'm the worst player of the game. 
 Although I'm as good at spelling as they come, I have troubles with counting the dashes, revealing *all* positions of the word; in a word, I'm incompatible with Hangman. 
-That is why it was hugely important to me to create an algorhythm that, without fail, helps me in that. Luckily enough, I came across <a href="https://github.com/samuraitruong/oxford-3000" target="_blank">a Github repository</a> containing every word from the Oxford 3000 list. <a href="https://www.oxfordlearnersdictionaries.com/wordlist/american_english/oxford3000" target="_blank">The Oxford 3000</a> consists of the core vocabulary of English, equivalent to the vocabulary of an A2 level ESL student.
+That is why it was hugely important to me to create an algorhythm that, without fail, helps me in that. 
+
+Luckily enough, I came across <a href="https://github.com/samuraitruong/oxford-3000" target="_blank">a Github repository</a> containing every word from the Oxford 3000 list. <a href="https://www.oxfordlearnersdictionaries.com/wordlist/american_english/oxford3000" target="_blank">The Oxford 3000</a> consists of the core vocabulary of English, equivalent to the vocabulary of an A2 level ESL student.
 Even with the introduction of slight changes (excluding abbreviations and capitalised words), there are 3804 words on the list the game is based on.
 
 Compared to the word list, establishing a fair score system was way more challenging. 
