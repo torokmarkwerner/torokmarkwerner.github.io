@@ -13,7 +13,7 @@ Teachers of ESL often apply it in their classroom to revise vocabulary and impro
 
 The game is very simple.
 <ol>
-<li>One of the players thinks of a word and draws as many dashes ( ) on the board as many letters in the word (indicating word boundaries if necessary).</li>
+<li>One of the players thinks of a word and draws as many dashes (–) on the board as many letters in the word (indicating word boundaries if necessary).</li>
 <li>The other players take guesses on the letters. If they're right, the player reveals the position(s) of the given letter. If they're wrong, the player writes the letter separately from the word, and starts drawing a hanging tree by adding one additional element to it.</li>
 <li>If the drawing is complete, the guessers lose.</li>
 <li>The guesser may, at any point of the game, guess the word (without having to guess all the letters).</li>
