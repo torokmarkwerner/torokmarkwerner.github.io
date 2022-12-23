@@ -52,7 +52,7 @@ flex-wrap: wrap;
 }
 #sprite {
   --row: 0;
-  --column: 3;
+  --column: 0;
   background: url("https://drive.google.com/uc?export=view&id=1gmp3grswXU-KFuIllq1yOBpCp2gO1r8s") no-repeat calc(20%*var(--column)) calc(100%*var(--row));
 /* YOU HAVE TO CHANGE THESE VALUES A LINE ABOVE */
   background-size: 600%;
@@ -134,7 +134,7 @@ HANGMAN TOP 100
 <!-- DIAGRAM -->
 <div id="diagram-container" style="background-color:;flex: 0 0 50%;">
   
-<div id="sprite"></div>
+<div id="sprite" style="--row:0;--column:0"></div>
 
   
 </div>
@@ -414,7 +414,7 @@ dead = true
 document.getElementById("dictionary-button").style.display = "inline-block";
 document.getElementById("toplist-button").style.display = "inline-block";
 }
-if (x+1==6) {
+if (x==5) {
 document.getElementById("sprite").style.setProperty("--row",1);
 }
 
