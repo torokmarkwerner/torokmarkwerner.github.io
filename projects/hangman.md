@@ -112,17 +112,31 @@ flex-wrap: wrap;
   cursor: pointer;
 }
 </style>
+<div style="display:none" id="result">
+</div>
 <div id="hangman-container">
 
 <!-- TITLE, INSTRUCTION, NAME, SCORE, DASHES -->
 <div style="text-align:center;font-variant-caps:all-petite-caps;background-color:;flex: 0 0 100%;max-height:50%">
 <div style="padding:0.5em 0 0 0;font-size:300%;font-variant:normal;text-transform:">Hangman</div>
+
+<div id="enterName">
+<label for="hname">First, enter your name: </label><input type="text" id="hname"></div>
+
 <div style="padding:0.5em;">Guess the word(s) to save the ragdoll.</div>
 <table style="margin-left: auto;margin-right: auto;">
 <td id="hangmanName">Name: -</td><td id="hangmanScore">Score: -</td>
 </table>
 <span style="font-size:" id="solution">_ _ _ _   _ _</span>
 <div id="guessed" style="padding-bottom:0.5em">&nbsp;</div>
+<div id="guessed" style="padding-bottom:0.5em">&nbsp;</div>
+<button id="dictionary-button" style="display:none;text-align:center">
+LOOK IT UP
+</button> <button id="toplist-button" style="display:none;text-align:center">
+HANGMAN TOP 100
+</button>
+<div style="font-size:18pt;display:none" id="feedback">
+</div>
 </div>
 
 <!-- DIAGRAM -->
@@ -169,3 +183,268 @@ flex-wrap: wrap;
 </div>
 
 </div>
+
+<script>
+//localStorage.removeItem("hangmanName")
+//localStorage.removeItem("hangmanScore")
+inputs = document.getElementById("keyboard").getElementsByTagName("input");
+for (i=0; i<inputs.length; i++) {
+inputs[i].addEventListener("click",
+function() {
+//alert(this.value);
+event = new KeyboardEvent("keydown", {'key':this.value.toLowerCase()});
+document.dispatchEvent(event);
+});
+}
+
+document.getElementById("enterButton").addEventListener("click",function() {
+event = new KeyboardEvent("keydown", {'keyCode':13});
+document.dispatchEvent(event);
+});
+
+function validate(name) {
+dataTable = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSv5ei2Z50PY8g6JHN-6El5tN3jFpCsSSkKp94U16-bdJChqelUd5XRYuiwuemU4nmvhCvSh-g0EaxQ/pub?gid=0&single=true&output=csv"
+  xhr=new XMLHttpRequest();
+  xhr.open("GET", dataTable, false);
+    xhr.onreadystatechange = function ()
+    {
+        if(xhr.readyState === 4)
+        {
+            if(xhr.status === 200 || xhr.status == 0)
+            {
+data = xhr.responseText.split(/\n/);
+
+}
+        }
+    }
+    xhr.send();
+
+players = []
+names = []
+for (i=0;i<data.length;i++) {
+person = {}
+dname = data[i].split(",")[0];
+if (!names.includes(dname)) {
+names.push(dname);
+dscore = data[i].split(",")[1];
+person.name = dname;
+person.score = dscore;
+players.push(person)
+}
+}
+  
+  //alert(players[0].name)
+  if(names.includes(document.getElementById("hname").value)) {
+  alert("Name's taken. Choose something else.")
+  document.getElementById("hname").value = ""
+  } else {
+  dead = false;
+  localStorage.setItem("hangmanName",name);
+   localStorage.setItem("hangmanScore",0);
+  score = 0;
+  document.getElementById("enterName").remove();
+  document.getElementById("hangmanName").innerHTML = name;
+document.getElementById("hangmanScore").innerHTML = score;
+  }
+  
+  
+  
+}
+
+function scoreBoard() {
+dataTable = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSv5ei2Z50PY8g6JHN-6El5tN3jFpCsSSkKp94U16-bdJChqelUd5XRYuiwuemU4nmvhCvSh-g0EaxQ/pub?gid=0&single=true&output=csv"
+  xhr=new XMLHttpRequest();
+  xhr.open("GET", dataTable, false);
+    xhr.onreadystatechange = function ()
+    {
+        if(xhr.readyState === 4)
+        {
+            if(xhr.status === 200 || xhr.status == 0)
+            {
+data = xhr.responseText.split(/\n/);
+
+}
+        }
+    }
+    xhr.send();
+
+players = []
+names = []
+for (i=data.length-1;i>1;i--) {
+person = {}
+dname = data[i].split(",")[0];
+if (!names.includes(dname)) {
+names.push(dname);
+dscore = data[i].split(",")[1];
+person.dname = dname;
+person.score = dscore;
+players.push(person)
+}
+}
+
+name = localStorage.getItem("hangmanName");
+score = localStorage.getItem("hangmanScore");
+
+  
+//alert(personalRecords[personalRecords.length-1].score)
+if (localStorage.getItem("hangmanName") != null) {
+player = players.filter(element => element.name === name);
+document.getElementById("hangmanName").innerHTML = name;
+document.getElementById("hangmanScore").innerHTML = Number(localStorage.getItem("hangmanScore")).toFixed(2);
+
+}
+}
+
+if (localStorage.getItem("hangmanName") != null) {
+scoreBoard();
+}
+
+url = "https://raw.githubusercontent.com/torokmarkwerner/wordle-unlimited/main/oxford_3000_updated_for_hangman.txt"
+xhr = new XMLHttpRequest();
+xhr.open("GET", url, false);
+    xhr.onreadystatechange = function ()
+    {
+        if(xhr.readyState === 4)
+        {
+            if(xhr.status === 200 || xhr.status == 0)
+            {
+words = xhr.responseText.split("\n");
+}
+        }
+    }
+    xhr.send();
+    
+solution = words[Math.floor(Math.random() * words.length+1)].trim()
+//alert(solution)
+
+abc = "qwertzuiopasdfghjklyxcvbnm"
+//solution = "castle"
+lettersInIt = [];
+notInIt = []
+dead = true;
+
+//If localStorage contains a name, sets to false, otherwise you should give a name.
+
+if (localStorage.getItem("hangmanName") != null) {
+dead = false;
+document.getElementById("enterName").remove()
+} else {
+document.getElementById("hname").addEventListener("keydown",
+function(event) {
+if(event.keyCode == 13) {
+validate(document.getElementById("hname").value);
+}
+});
+}
+
+document.getElementById("solution").innerHTML = solution.replace(/ /g,'\xa0\xa0\xa0').replace(/[a-z]/g," _ ");
+
+
+document.addEventListener("keydown",
+function(event) {
+
+if (abc.indexOf(event.key.toLowerCase()) > -1 && dead==false && !document.getElementById("enterName")) {
+//alert(abc.indexOf(event.key.toLowerCase()) > -1);
+
+if (solution.indexOf(event.key.toLowerCase()) > -1) {
+//alert(solution.indexOf(event.key.toLowerCase()) > -1);
+//alert(lettersInIt)
+lettersInIt.push(event.key.toLowerCase());
+wordSoFar = "";
+for(i=0; i<solution.length; i++) {
+if(lettersInIt.includes(solution[i])) {
+wordSoFar += " <u>" + solution[i] + "</u> ";
+} else if (solution[i] != " ") {
+wordSoFar += " _ "
+} else {
+wordSoFar += '\xa0\xa0\xa0'
+}
+
+}
+document.getElementById("solution").innerHTML = wordSoFar;
+//alert(wordSoFar.replaceAll(/<.*?\>/g,"").replaceAll('\xa0\xa0\xa0',"*").replaceAll(" ","").replaceAll("*"," "))
+if (wordSoFar.replaceAll(/<.*?\>/g,"").replaceAll('\xa0\xa0\xa0',"*").replaceAll(" ","").replaceAll("*"," ") == solution) {
+lettersInIt = [];
+document.getElementById("solution").innerHTML = wordSoFar
+document.getElementById("feedback").innerHTML = "<div style='padding-bottom:0.5em;'>CONGRATS, YOU <u>W</u> <u>O</u> <u>N</u>.</div>PRESS ENTER TO PLAY AGAIN."
+document.getElementById("feedback").style.display = "block";
+dead = true;
+
+xhr = new XMLHttpRequest();
+dataTable = "https://script.google.com/macros/s/AKfycbyYc-8x4hLy4TM5ASnU2sw1OfkHGe4PnrlmkvOLBvEL9dEHomicOatwWiuxJXxUuY4/exec"
+xhr.open('POST', dataTable, true);
+xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+
+bonuses = {1:1.7,2:1.6,3:1.5,4:1.4,5:1.3,6:1.2}
+
+bonus = bonuses[solution.length];
+if (bonus == undefined) {
+bonus = 1;
+}
+//alert(bonus);
+
+
+score = (Number(score)+(11-notInIt.length)*bonus).toFixed(2)
+document.getElementById("hangmanScore").innerHTML = parseFloat(score);
+xhr.send('name=' + localStorage.getItem("hangmanName") + '&score=' + score);
+localStorage.setItem("hangmanScore",score);
+notInIt = [];
+
+document.getElementById("hangmanScore").innerHTML = score;
+
+
+document.getElementById("dictionary-button").style.display = "inline-block";
+document.getElementById("toplist-button").style.display = "inline-block";
+}
+
+} else if(!(notInIt.includes(event.key.toLowerCase()))) {
+notInIt.push(event.key.toLowerCase())
+document.getElementById("guessed").innerHTML = notInIt.join(", ");
+x = window.getComputedStyle(document.getElementById("sprite")).getPropertyValue("--z");
+y = window.getComputedStyle(document.getElementById("sprite")).getPropertyValue("--j");
+//alert(y);
+document.getElementById("sprite").style.setProperty("--z",x-1);
+if (y==-1 && x==-10) {
+lettersInIt = [];
+notInIt = [];
+sol = "";
+for(i=0; i<solution.length; i++) {
+if (solution[i] != " ") {
+sol += " <u>" + solution[i] + "</u> ";
+} else {
+sol += '\xa0\xa0\xa0';
+}
+}
+document.getElementById("solution").innerHTML = sol;
+document.getElementById("feedback").innerHTML = "<div style='padding-bottom:0.5em;'>OOPS, IT'S <u>D</u> <u>E</u> <u>A</u> <u>D</u>.</div>PRESS ENTER TO TRY AGAIN."
+document.getElementById("feedback").style.display = "block";
+dead = true
+document.getElementById("dictionary-button").style.display = "inline-block";
+document.getElementById("toplist-button").style.display = "inline-block";
+}
+if (x-1==-6) {
+document.getElementById("sprite").style.setProperty("--j",-1);
+}
+
+}
+
+
+} else if (event.keyCode == 13 && dead==true && !document.getElementById("enterName")) {
+dead = false;
+solution = words[Math.floor(Math.random() * words.length+1)].trim();
+document.getElementById("solution").innerHTML = solution.replace(/ /g,'\xa0\xa0\xa0').replace(/[a-z]/g," _ ");
+document.getElementById("feedback").innerHTML = "";
+document.getElementById("guessed").innerHTML = "&nbsp;";
+document.getElementById("sprite").style.setProperty("--j",0);
+document.getElementById("sprite").style.setProperty("--z",0);
+document.getElementById("dictionary-button").style.display = "none";
+document.getElementById("toplist-button").style.display = "none";
+document.getElementById("feedback").style.display = "none";
+//alert(solution)
+}
+
+});
+
+document.getElementById("dictionary-button").addEventListener("click",function(){window.open("https://www.oxfordlearnersdictionaries.com/definition/english/" + solution.replaceAll(" ","-"),"","width=500,height=500")});
+document.getElementById("toplist-button").addEventListener("click",function(){window.open("https://nemszamarsag.blogspot.com/p/hangman-top-100.html")});
+</script>
