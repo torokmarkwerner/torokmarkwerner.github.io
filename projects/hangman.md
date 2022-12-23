@@ -77,7 +77,6 @@ position:relative;
   border:none;
   padding:1em;
   margin:0.5em;
-  font-size:14pt;
   cursor:pointer;
   font-weight:bold;
 }
