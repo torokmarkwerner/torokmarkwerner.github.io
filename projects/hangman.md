@@ -36,6 +36,7 @@ body {
   font-family:"Calibri", "Arial", sans-serif;;
 }
 #hangman-container {
+position:relative;
 display: flex;
 max-height:80vh;
 width:100%;
@@ -107,6 +108,10 @@ flex-wrap: wrap;
 </style>
 <div id="hangman-container">
 
+<button style="position:absolute;top:0" onlick="openFullscreen(this.parent)">
+FS
+</button>
+
 <!-- TITLE, INSTRUCTION, NAME, SCORE, DASHES -->
 <div style="text-align:center;font-variant-caps:all-petite-caps;background-color:;flex: 0 0 100%;max-height:50%">
 <div style="padding:0.5em 0 0 0;font-size:300%;font-variant:normal;text-transform:">Hangman</div>
@@ -175,6 +180,17 @@ HANGMAN TOP 100
 </div>
 
 <script>
+
+function openFullscreen(x) {
+  if (x.requestFullscreen) {
+    x.requestFullscreen();
+  } else if (x.webkitRequestFullscreen) { /* Safari */
+    x.webkitRequestFullscreen();
+  } else if (x.msRequestFullscreen) { /* IE11 */
+    x.msRequestFullscreen();
+  }
+}
+
 //localStorage.removeItem("hangmanName")
 //localStorage.removeItem("hangmanScore")
 inputs = document.getElementById("keyboard").getElementsByTagName("input");
