@@ -47,6 +47,9 @@ flex-wrap: wrap;
   padding:0.5em;
 }
 #diagram-container {
+  display:flex;
+  justify-content:end;
+  align-items:center;
   aspect-ratio: 1/1;
   width:50%;
 }
@@ -143,7 +146,7 @@ HANGMAN TOP 100
 </div>
 
 <!-- KEYBOARD -->
-<div style="text-align:center;display:flex;align-items:center;justify-content:center;background-color:;flex: 0 0 50%;">
+<div style="text-align:center;display:flex;align-items:center;justify-content:start;background-color:;flex: 0 0 50%;">
   
   <div id="keyboard">
 <input type="button" value="Q">
