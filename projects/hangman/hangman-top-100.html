@@ -51,7 +51,7 @@ title: "Hangman Top 100"
     for (i=0; i<players.length; i++) {
       row = document.createElement("TR");
       rank = document.createElement("TD")
-      rank.innerHTML = i+1
+      rank.innerHTML = (i+1) + "."
       row.appendChild(rank);
       name1 = document.createElement("TD")
       name1.innerHTML = players[i].name;
