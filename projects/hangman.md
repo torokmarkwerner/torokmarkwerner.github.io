@@ -53,7 +53,40 @@ position:relative;
   align-items:center;
   aspect-ratio: 1/1;
   width:50%;
+  max-height:50vh;
+  flex: 0 0 50%;"
 }
+#feedback-container {
+margin: auto;
+text-align: center;
+flex: 0 0 100%;
+}
+#keyboard-container {
+  max-height:50vh;
+  text-align:center;
+  display:flex;
+  align-items:center;
+  justify-content:start;
+  flex: 0 0 50%;
+}
+@media (orientation:landscape) {
+#diagram-container {
+  flex: 0 0 50%;"
+  justify-content:center;
+}
+#feedback-container {
+flex: 0 0 100%;
+justify-content:end;
+text-align:center;
+}
+#keyboard-container {
+  max-height:50vh;
+  display:flex;
+  justify-content:start;
+  flex: 0 0 50%;
+}
+  }
+
 #sprite {
   --row: 0;
   --column: 0;
@@ -138,7 +171,7 @@ position:relative;
 <div id="guessed" style="padding-bottom:0.5em">&nbsp;</div>
 </div>
 
-<div style="width: 100%;margin: auto;text-align: center;">
+<div id="feedback-container">
 <button id="dictionary-button" style="display:none;text-align:center">
 LOOK IT UP
 </button> <button id="toplist-button" style="display:none;text-align:center">
@@ -149,7 +182,7 @@ HANGMAN TOP 100
 </div>
 
 <!-- DIAGRAM -->
-<div id="diagram-container" style="max-height:50vh;background-color:;flex: 0 0 50%;">
+<div id="diagram-container">
   
 <div id="sprite" style="--row:0;--column:0"></div>
 
@@ -157,7 +190,7 @@ HANGMAN TOP 100
 </div>
 
 <!-- KEYBOARD -->
-<div style="max-height:50vh;text-align:center;display:flex;align-items:center;justify-content:start;background-color:;flex: 0 0 50%;">
+<div id="keyboard-container">
   
   <div id="keyboard">
 <input type="button" value="Q">
