@@ -392,8 +392,8 @@ document.getElementById("toplist-button").style.display = "inline-block";
 } else if(!(notInIt.includes(event.key.toLowerCase()))) {
 notInIt.push(event.key.toLowerCase())
 document.getElementById("guessed").innerHTML = notInIt.join(", ");
-x = window.getComputedStyle(document.getElementById("sprite")).getPropertyValue("--column");
-y = window.getComputedStyle(document.getElementById("sprite")).getPropertyValue("--row");
+x = +window.getComputedStyle(document.getElementById("sprite")).getPropertyValue("--column");
+y = +window.getComputedStyle(document.getElementById("sprite")).getPropertyValue("--row");
 //alert(y);
 document.getElementById("sprite").style.setProperty("--column",x+1);
 if (y==1 && x==5) {
