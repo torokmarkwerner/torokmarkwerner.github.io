@@ -107,6 +107,10 @@ flex-wrap: wrap;
 </style>
 <div id="hangman-container">
 
+<button onclick="openFullscreen(document.getElementById('hangman-container'))">
+FS
+</button>
+
 <!-- TITLE, INSTRUCTION, NAME, SCORE, DASHES -->
 <div style="text-align:center;font-variant-caps:all-petite-caps;background-color:;flex: 0 0 100%;max-height:50%">
 <div style="padding:0.5em 0 0 0;font-size:300%;font-variant:normal;text-transform:">Hangman</div>
@@ -448,4 +452,16 @@ document.getElementById("feedback").style.display = "none";
 
 document.getElementById("dictionary-button").addEventListener("click",function(){window.open("https://www.oxfordlearnersdictionaries.com/definition/english/" + solution.replaceAll(" ","-"),"","width=500,height=500")});
 document.getElementById("toplist-button").addEventListener("click",function(){window.open("https://nemszamarsag.blogspot.com/p/hangman-top-100.html")});
+
+
+function openFullscreen(elem) {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
+}
+
 </script>
