@@ -59,30 +59,23 @@ flex-wrap: wrap;
   height:100%;
   width:100%;
 }
-#dictionary-button {
-  background-color:#3F48CC;
+#dictionary-button, #toplist-button  {
   color:white;
   border:none;
   padding:1em;
   margin:0.5em;
   font-size:14pt;
   cursor:pointer;
-  font-family: Georgia, Helvetica, sans-serif;
   font-weight:bold;
 }
-#dictionary-button:hover {
-  background-color:#1A73E8;
+#dictionary-button  {
+  background-color:#3F48CC;
 }
 #toplist-button {
   background-color:#25a83d;
-  color:white;
-  border:none;
-  padding:1em;
-  margin:0.5em;
-  font-size:14pt;
-  cursor:pointer;
-  font-family: Georgia, Helvetica, sans-serif;
-  font-weight:bold;
+}
+#dictionary-button:hover {
+  background-color:#1A73E8;
 }
 #toplist-button:hover {
   background-color:#24bf41;
@@ -127,8 +120,7 @@ flex-wrap: wrap;
 <table style="margin-left: auto;margin-right: auto;">
 <td id="hangmanName">Name: -</td><td id="hangmanScore">Score: -</td>
 </table>
-<span style="font-size:" id="solution">_ _ _ _   _ _</span>
-<div id="guessed" style="padding-bottom:0.5em">&nbsp;</div>
+<span style="font-size:" id="solution"></span>
 <div id="guessed" style="padding-bottom:0.5em">&nbsp;</div>
 <button id="dictionary-button" style="display:none;text-align:center">
 LOOK IT UP
