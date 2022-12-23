@@ -477,6 +477,7 @@ function openFullscreen(elem) {
   } else if (document.msExitFullscreen) { /* IE11 */
     document.msExitFullscreen();
   }
+  elem.scrollIntoView();
   } else {
 event.target.innerHTML = '<i class="material-icons">fullscreen_exit</i>'
   elem.style.backgroundColor = "white"
