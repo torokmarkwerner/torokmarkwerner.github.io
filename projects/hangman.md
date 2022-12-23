@@ -36,9 +36,6 @@ body {
   font-family:"Calibri", "Arial", sans-serif;;
 }
 #hangman-container {
-position:relative;
-left:0;
-top:0;
 display: flex;
 max-height:80vh;
 width:100%;
@@ -109,10 +106,6 @@ flex-wrap: wrap;
 }
 </style>
 <div id="hangman-container">
-
-<button style="position:absolute;top:0" onlick="openFullscreen(this.parentElement)">
-FS
-</button>
 
 <!-- TITLE, INSTRUCTION, NAME, SCORE, DASHES -->
 <div style="text-align:center;font-variant-caps:all-petite-caps;background-color:;flex: 0 0 100%;max-height:50%">
