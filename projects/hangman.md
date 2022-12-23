@@ -93,22 +93,18 @@ flex-wrap: wrap;
   vertical-align: middle;
 }
 #keyboard input, #keyboard #enterButton {
-  font-size:;
   color:white;
   background-color:black;
-  width: 2vw;
-  height: 2vw;
   margin-bottom: 0.5em;
   cursor: pointer;
   border:none;
+  padding:0.5em;
   border-radius: 5px;
-  font-size:1vw;
 }
 #keyboard input:hover, #keyboard #enterButton:hover {
   opacity: 0.9;
 }
 #keyboard #enterButton {
-  width: 5em;
   text-align: center;
   display: inline-block;
   position: relative;
