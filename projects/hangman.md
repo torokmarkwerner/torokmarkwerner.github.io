@@ -415,6 +415,7 @@ document.getElementById("dictionary-button").style.display = "inline-block";
 document.getElementById("toplist-button").style.display = "inline-block";
 }
 if (x==5) {
+document.getElementById("sprite").style.setProperty("--column",0);
 document.getElementById("sprite").style.setProperty("--row",1);
 }
 
