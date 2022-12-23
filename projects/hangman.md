@@ -39,7 +39,6 @@ body {
 display: flex;
 max-height:80vh;
 width:100%;
-min-width:400px;
 flex-wrap: wrap;
 }
 </style>
@@ -94,14 +93,16 @@ flex-wrap: wrap;
   vertical-align: middle;
 }
 #keyboard input, #keyboard #enterButton {
+  font-size:;
   color:white;
   background-color:black;
-  width: 6vw;
-  height: 6vw;
+  width: 2vw;
+  height: 2vw;
   margin-bottom: 0.5em;
   cursor: pointer;
   border:none;
   border-radius: 5px;
+  font-size:1vw;
 }
 #keyboard input:hover, #keyboard #enterButton:hover {
   opacity: 0.9;
