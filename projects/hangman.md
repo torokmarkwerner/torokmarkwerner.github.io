@@ -396,7 +396,7 @@ x = +window.getComputedStyle(document.getElementById("sprite")).getPropertyValue
 y = +window.getComputedStyle(document.getElementById("sprite")).getPropertyValue("--row");
 //alert(y);
 document.getElementById("sprite").style.setProperty("--column",x+1);
-if (y==1 && x==5) {
+if (y==1 && x==4) {
 lettersInIt = [];
 notInIt = [];
 sol = "";
