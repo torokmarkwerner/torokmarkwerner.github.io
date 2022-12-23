@@ -37,6 +37,8 @@ body {
 }
 #hangman-container {
 position:relative;
+left:0;
+top:0;
 display: flex;
 max-height:80vh;
 width:100%;
