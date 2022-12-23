@@ -42,6 +42,10 @@ body {
 .fullscreen::before {
   content:"fullscreen_exit"
 }
+.fullscreen-button {
+    top: 1em;
+    left: 1em;
+}
 }
 .fullscreen-button:hover {
   cursor:pointer;
