@@ -65,7 +65,8 @@ flex-wrap: wrap;
 }
 @media (max-width: 767px) {
     #sprite {
-      max-width:50vw;
+    max-width: 50vw;
+    max-height: 50vw;
     }
   }
 
