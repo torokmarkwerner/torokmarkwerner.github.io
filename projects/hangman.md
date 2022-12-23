@@ -455,7 +455,7 @@ document.getElementById("toplist-button").addEventListener("click",function(){wi
 
 
 function openFullscreen(elem) {
-  elem.style.backgroundColor = "inherit"
+  elem.style.backgroundColor = "white"
   if (elem.requestFullscreen) {
     elem.requestFullscreen();
   } else if (elem.webkitRequestFullscreen) { /* Safari */
