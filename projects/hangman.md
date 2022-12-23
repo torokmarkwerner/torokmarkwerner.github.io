@@ -75,7 +75,7 @@ flex: 0 0 100%;
 }
 @media only screen and (max-width: 767px) and (display-mode: fullscreen) and (orientation:landscape) {
 #diagram-container {
-  flex: 0 0 33%
+  flex: 0 0 33%;
   justify-content:center;
 }
 #feedback-container {
