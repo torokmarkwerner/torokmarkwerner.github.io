@@ -35,6 +35,14 @@ Compared to the word list, establishing a fair score system was way more challen
 body {
   font-family:"Calibri", "Arial", sans-serif;;
 }
+.fullscreen::before {
+  content:"fullscreen"
+}
+@media (display-mode: fullscreen) {
+.fullscreen::before {
+  content:"fullscreen_exit"
+}
+}
 .fullscreen-button:hover {
   cursor:pointer;
   opacity:0.9
@@ -156,8 +164,7 @@ text-align:center;
 </style>
 <div id="hangman-container">
 
-<button class="fullscreen-button" style="position:absolute;" onclick="toggleFullscreen(document.getElementById('hangman-container'))">
-<i class="material-icons">&#xe5d0;</i>
+<button class="fullscreen-button material-icons" style="position:absolute;" onclick="toggleFullscreen(document.getElementById('hangman-container'))">fullscreen<i class="fullscreen"></i>
 </button>
 
 <!-- TITLE, INSTRUCTION, NAME, SCORE, DASHES -->
@@ -508,7 +515,6 @@ document.getElementById("toplist-button").addEventListener("click",function(){wi
 
 function toggleFullscreen(elem) {
   if (document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement) {
-    event.target.outerHTML = '<i class="material-icons">fullscreen</i>'
     if (document.exitFullscreen) {
     document.exitFullscreen();
   } else if (document.webkitExitFullscreen) { /* Safari */
@@ -517,7 +523,6 @@ function toggleFullscreen(elem) {
     document.msExitFullscreen();
   }
   } else {
-event.target.outerHTML = '<i class="material-icons">fullscreen_exit</i>'
   elem.style.backgroundColor = "white"
   if (elem.requestFullscreen) {
     elem.requestFullscreen();
