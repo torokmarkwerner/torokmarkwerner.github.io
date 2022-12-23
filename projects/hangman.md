@@ -517,7 +517,7 @@ function toggleFullscreen(elem) {
     document.msExitFullscreen();
   }
   } else {
-event.target.innerHTML = '<i class="material-icons">fullscreen_exit</i>'
+event.target.outerHTML = '<i class="material-icons">fullscreen_exit</i>'
   elem.style.backgroundColor = "white"
   if (elem.requestFullscreen) {
     elem.requestFullscreen();
