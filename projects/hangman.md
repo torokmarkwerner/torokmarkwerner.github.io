@@ -488,7 +488,5 @@ event.target.innerHTML = '<i class="material-icons">fullscreen_exit</i>'
     elem.msRequestFullscreen();
   }
 }
-elem.scrollIntoView();
 }
-
 </script>
