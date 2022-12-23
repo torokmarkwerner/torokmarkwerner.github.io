@@ -468,6 +468,15 @@ document.getElementById("toplist-button").addEventListener("click",function(){wi
 
 
 function openFullscreen(elem) {
+  if (elem.fullscreenElement || elem.webkitFullscreenElement || elem.mozFullScreenElement) {
+    if (elem.exitFullscreen) {
+    elem.exitFullscreen();
+  } else if (elem.webkitExitFullscreen) { /* Safari */
+    elem.webkitExitFullscreen();
+  } else if (elem.msExitFullscreen) { /* IE11 */
+    elem.msExitFullscreen();
+  }
+  } else {
   elem.style.backgroundColor = "white"
   if (elem.requestFullscreen) {
     elem.requestFullscreen();
@@ -476,6 +485,7 @@ function openFullscreen(elem) {
   } else if (elem.msRequestFullscreen) { /* IE11 */
     elem.msRequestFullscreen();
   }
+}
 }
 
 </script>
