@@ -392,11 +392,11 @@ document.getElementById("toplist-button").style.display = "inline-block";
 } else if(!(notInIt.includes(event.key.toLowerCase()))) {
 notInIt.push(event.key.toLowerCase())
 document.getElementById("guessed").innerHTML = notInIt.join(", ");
-x = window.getComputedStyle(document.getElementById("sprite")).getPropertyValue("--z");
-y = window.getComputedStyle(document.getElementById("sprite")).getPropertyValue("--j");
+x = window.getComputedStyle(document.getElementById("sprite")).getPropertyValue("--column");
+y = window.getComputedStyle(document.getElementById("sprite")).getPropertyValue("--row");
 //alert(y);
-document.getElementById("sprite").style.setProperty("--z",x-1);
-if (y==-1 && x==-10) {
+document.getElementById("sprite").style.setProperty("--column",x+1);
+if (y==1 && x==5) {
 lettersInIt = [];
 notInIt = [];
 sol = "";
@@ -414,8 +414,8 @@ dead = true
 document.getElementById("dictionary-button").style.display = "inline-block";
 document.getElementById("toplist-button").style.display = "inline-block";
 }
-if (x-1==-6) {
-document.getElementById("sprite").style.setProperty("--j",-1);
+if (x+1==6) {
+document.getElementById("sprite").style.setProperty("--row",1);
 }
 
 }
@@ -427,8 +427,8 @@ solution = words[Math.floor(Math.random() * words.length+1)].trim();
 document.getElementById("solution").innerHTML = solution.replace(/ /g,'\xa0\xa0\xa0').replace(/[a-z]/g," _ ");
 document.getElementById("feedback").innerHTML = "";
 document.getElementById("guessed").innerHTML = "&nbsp;";
-document.getElementById("sprite").style.setProperty("--j",0);
-document.getElementById("sprite").style.setProperty("--z",0);
+document.getElementById("sprite").style.setProperty("--row",0);
+document.getElementById("sprite").style.setProperty("--column",0);
 document.getElementById("dictionary-button").style.display = "none";
 document.getElementById("toplist-button").style.display = "none";
 document.getElementById("feedback").style.display = "none";
