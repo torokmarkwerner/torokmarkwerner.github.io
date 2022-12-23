@@ -138,7 +138,7 @@ HANGMAN TOP 100
 </div>
 
 <!-- DIAGRAM -->
-<div id="diagram-container" style="background-color:;flex: 0 0 50%;">
+<div id="diagram-container" style="max-height:50vh;background-color:;flex: 0 0 50%;">
   
 <div id="sprite" style="--row:0;--column:0"></div>
 
@@ -146,7 +146,7 @@ HANGMAN TOP 100
 </div>
 
 <!-- KEYBOARD -->
-<div style="text-align:center;display:flex;align-items:center;justify-content:start;background-color:;flex: 0 0 50%;">
+<div style="max-height:50vh;text-align:center;display:flex;align-items:center;justify-content:start;background-color:;flex: 0 0 50%;">
   
   <div id="keyboard">
 <input type="button" value="Q">
