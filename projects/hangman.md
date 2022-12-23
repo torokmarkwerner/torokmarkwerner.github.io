@@ -110,7 +110,7 @@ flex-wrap: wrap;
 </style>
 <div id="hangman-container">
 
-<button style="position:absolute;top:0" onlick="openFullscreen(this.parent)">
+<button style="position:absolute;top:0" onlick="openFullscreen(this.parentElement)">
 FS
 </button>
 
