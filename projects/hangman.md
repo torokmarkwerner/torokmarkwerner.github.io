@@ -508,7 +508,7 @@ document.getElementById("toplist-button").addEventListener("click",function(){wi
 
 function toggleFullscreen(elem) {
   if (document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement) {
-    event.target.innerHTML = '<i class="material-icons">fullscreen</i>'
+    event.target.outerHTML = '<i class="material-icons">fullscreen</i>'
     if (document.exitFullscreen) {
     document.exitFullscreen();
   } else if (document.webkitExitFullscreen) { /* Safari */
