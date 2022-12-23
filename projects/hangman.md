@@ -469,6 +469,7 @@ document.getElementById("toplist-button").addEventListener("click",function(){wi
 
 function openFullscreen(elem) {
   if (document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement) {
+    event.target.innerHTML = '<i class="material-icons">fullscreen</i>'
     if (document.exitFullscreen) {
     document.exitFullscreen();
   } else if (document.webkitExitFullscreen) { /* Safari */
@@ -477,6 +478,7 @@ function openFullscreen(elem) {
     document.msExitFullscreen();
   }
   } else {
+event.target.innerHTML = '<i class="material-icons">fullscreen_exit</i>'
   elem.style.backgroundColor = "white"
   if (elem.requestFullscreen) {
     elem.requestFullscreen();
