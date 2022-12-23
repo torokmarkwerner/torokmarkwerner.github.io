@@ -63,13 +63,14 @@ flex-wrap: wrap;
   aspect-ratio: 1/1;
   max-height: 50vh;
 }
+
 @media (max-width: 767px) {
     #sprite {
     max-width: 50vw;
     max-height: 50vw;
     }
   }
-
+  
 #dictionary-button, #toplist-button  {
   color:white;
   border:none;
@@ -119,7 +120,7 @@ flex-wrap: wrap;
 <div id="hangman-container">
 
 <button onclick="openFullscreen(document.getElementById('hangman-container'))">
-FS
+<i class="material-icons">&#xe5d0;</i>
 </button>
 
 <!-- TITLE, INSTRUCTION, NAME, SCORE, DASHES -->
