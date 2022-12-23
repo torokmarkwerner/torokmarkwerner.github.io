@@ -54,7 +54,7 @@ position:relative;
   aspect-ratio: 1/1;
   width:50%;
   max-height:50vh;
-  flex: 0 0 50%;"
+  flex: 0 0 50%;
 }
 #feedback-container {
 margin: auto;
@@ -71,11 +71,11 @@ flex: 0 0 100%;
 }
 @media (orientation:landscape) {
 #diagram-container {
-  flex: 0 0 50%;"
+  flex: 0 0 33%
   justify-content:center;
 }
 #feedback-container {
-flex: 0 0 100%;
+flex: 0 0 33%;
 justify-content:end;
 text-align:center;
 }
@@ -83,7 +83,7 @@ text-align:center;
   max-height:50vh;
   display:flex;
   justify-content:start;
-  flex: 0 0 50%;
+  flex: 0 0 33%;
 }
   }
 
