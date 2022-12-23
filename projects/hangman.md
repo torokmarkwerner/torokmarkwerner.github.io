@@ -35,6 +35,10 @@ Compared to the word list, establishing a fair score system was way more challen
 body {
   font-family:"Calibri", "Arial", sans-serif;;
 }
+.fullscreen-button:hover {
+  cursor:pointer;
+  opacity:0.9
+}
 #hangman-container {
 display: flex;
 max-height:80vh;
@@ -69,7 +73,7 @@ flex: 0 0 100%;
   justify-content:start;
   flex: 0 0 50%;
 }
-@media (display-mode: fullscreen) and (orientation:landscape) {
+@media (max-width: 767px) and (display-mode: fullscreen) and (orientation:landscape) {
 #diagram-container {
   flex: 0 0 33%
   justify-content:center;
@@ -152,7 +156,7 @@ text-align:center;
 </style>
 <div id="hangman-container">
 
-<button style="position:absolute;top:1em;left:1em" onclick="openFullscreen(document.getElementById('hangman-container'))">
+<button class="fullscreen-button" style="position:absolute;top:1em;left:1em" onclick="toggleFullscreen(document.getElementById('hangman-container'))">
 <i class="material-icons">&#xe5d0;</i>
 </button>
 
@@ -502,7 +506,7 @@ document.getElementById("dictionary-button").addEventListener("click",function()
 document.getElementById("toplist-button").addEventListener("click",function(){window.open("https://nemszamarsag.blogspot.com/p/hangman-top-100.html")});
 
 
-function openFullscreen(elem) {
+function toggleFullscreen(elem) {
   if (document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement) {
     event.target.innerHTML = '<i class="material-icons">fullscreen</i>'
     if (document.exitFullscreen) {
