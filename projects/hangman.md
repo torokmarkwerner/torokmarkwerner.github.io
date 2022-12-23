@@ -164,7 +164,7 @@ text-align:center;
 </style>
 <div id="hangman-container">
 
-<button class="fullscreen-button material-icons" style="position:absolute;" onclick="toggleFullscreen(document.getElementById('hangman-container'))">fullscreen<i class="fullscreen"></i>
+<button class="fullscreen-button material-icons" style="position:absolute;" onclick="toggleFullscreen(document.getElementById('hangman-container'))"><span class="fullscreen"></span>
 </button>
 
 <!-- TITLE, INSTRUCTION, NAME, SCORE, DASHES -->
