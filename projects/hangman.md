@@ -56,8 +56,9 @@ flex-wrap: wrap;
   background: url("https://drive.google.com/uc?export=view&id=1gmp3grswXU-KFuIllq1yOBpCp2gO1r8s") no-repeat calc(20%*var(--column)) calc(100%*var(--row));
 /* YOU HAVE TO CHANGE THESE VALUES A LINE ABOVE */
   background-size: 600%;
-  height:100%;
-  width:100%;
+  width: 100%;
+  aspect-ratio: 1/1;
+  max-height: 50vh;
 }
 #dictionary-button, #toplist-button  {
   color:white;
