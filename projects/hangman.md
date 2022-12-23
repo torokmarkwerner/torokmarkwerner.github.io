@@ -514,7 +514,7 @@ document.getElementById("feedback").style.display = "none";
 });
 
 document.getElementById("dictionary-button").addEventListener("click",function(){window.open("https://www.oxfordlearnersdictionaries.com/definition/english/" + solution.replaceAll(" ","-"),"","width=500,height=500")});
-document.getElementById("toplist-button").addEventListener("click",function(){window.open("https://nemszamarsag.blogspot.com/p/hangman-top-100.html")});
+document.getElementById("toplist-button").addEventListener("click",function(){window.open("https://torokmarkwerner.github.io/projects/hangman/hangman-top-100.html")});
 
 
 function toggleFullscreen(elem) {
