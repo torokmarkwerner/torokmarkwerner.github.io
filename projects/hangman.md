@@ -127,7 +127,6 @@ text-align:center;
   padding:1em;
   margin:0.5em;
   cursor:pointer;
-  font-weight:bold;
 }
 #dictionary-button  {
   background-color:#3F48CC;
