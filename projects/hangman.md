@@ -69,7 +69,7 @@ flex: 0 0 100%;
   justify-content:start;
   flex: 0 0 50%;
 }
-@media (orientation:landscape) {
+@media (display-mode: fullscreen) and (orientation:landscape) {
 #diagram-container {
   flex: 0 0 33%
   justify-content:center;
