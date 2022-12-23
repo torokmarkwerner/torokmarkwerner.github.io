@@ -40,6 +40,7 @@ display: flex;
 max-height:80vh;
 width:100%;
 flex-wrap: wrap;
+position:relative;
 }
 </style>
 <style>
@@ -119,7 +120,7 @@ flex-wrap: wrap;
 </style>
 <div id="hangman-container">
 
-<button onclick="openFullscreen(document.getElementById('hangman-container'))">
+<button style="position:absolute;top:0;left:0" onclick="openFullscreen(document.getElementById('hangman-container'))">
 <i class="material-icons">&#xe5d0;</i>
 </button>
 
