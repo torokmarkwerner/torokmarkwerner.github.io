@@ -120,7 +120,7 @@ position:relative;
 </style>
 <div id="hangman-container">
 
-<button style="position:absolute;top:0;left:0" onclick="openFullscreen(document.getElementById('hangman-container'))">
+<button style="position:absolute;top:1em;left:1em" onclick="openFullscreen(document.getElementById('hangman-container'))">
 <i class="material-icons">&#xe5d0;</i>
 </button>
 
