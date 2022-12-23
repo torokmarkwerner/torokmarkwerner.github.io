@@ -137,16 +137,15 @@ position:relative;
 <span style="font-size:" id="solution"></span>
 <div id="guessed" style="padding-bottom:0.5em">&nbsp;</div>
 </div>
-</div>
 
 <div style="width: 100%;margin: auto;text-align: center;">
-<button id="dictionary-button" style="display: inline-block;text-align: center;">
+<button id="dictionary-button" style="display:none;text-align:center">
 LOOK IT UP
-</button> <button id="toplist-button" style="display: inline-block;text-align: center;">
+</button> <button id="toplist-button" style="display:none;text-align:center">
 HANGMAN TOP 100
 </button>
-<div style="display: block;width: 100%;" id="feedback">
-<div style="padding-bottom:0.5em;">OOPS, IT'S <u>D</u> <u>E</u> <u>A</u> <u>D</u>.</div>PRESS ENTER TO TRY AGAIN.</div>
+<div style="display:none" id="feedback">
+</div>
 </div>
 
 <!-- DIAGRAM -->
