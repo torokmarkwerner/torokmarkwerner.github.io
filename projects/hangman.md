@@ -47,7 +47,7 @@ flex-wrap: wrap;
   padding:0.5em;
 }
 #diagram-container {
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 1/1;
   width:50%;
 }
 #sprite {
@@ -105,8 +105,6 @@ flex-wrap: wrap;
   cursor: pointer;
 }
 </style>
-<div style="display:none" id="result">
-</div>
 <div id="hangman-container">
 
 <!-- TITLE, INSTRUCTION, NAME, SCORE, DASHES -->
