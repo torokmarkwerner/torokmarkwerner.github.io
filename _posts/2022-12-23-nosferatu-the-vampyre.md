@@ -20,13 +20,13 @@ Herzog's shots are mesmerising, in the '70s' horrors sense of the word There's a
 
 As a person who struggled through fantastic movies like *The Cabinet of Dr Caligari* (1920), I found it strange how much the language of movies, especially thrillers and horrors, has changed during the last three decades. Back in the '70s, filmmakers had to apply creative solutions, acrobats and trick shots to thrill their audience. In a way, *The Exorcist* (1973) paved the way for today's supernatural horrors with a rotating head sprinkling vomit all around in the room and an acrobat coming down the stairs in a bridge.
 
-Now, as I've said, Herzog's movie is much slower, therefore it doesn't allow for such solutions. It's not really horrifying, there's not one scene that we can describe as such (except for the rats, perhaps, who, incidentally, were Hungarian rats); it could be captivating, though, a little disquieting. In a way, unforgettable, even, at least the following three scenes are:
+Now, as I've said, Herzog's movie is much slower, therefore it doesn't allow for such solutions. It's not really horrifying, there's not one scene that we can describe as such (except for the rats, perhaps, who, incidentally, were Hungarian rats); it could be captivating, though, a little disquieting. In a way, unforgettable, even, at least the following four scenes are:
 
-<ol>
+<ul>
 <li>Roland Topor's every moment as Renfield (he could have been given more screen time);</li>
 <li>the sneezing kid when the ship arrives to Wismar;</li>
 <li>Nosferatu arriving to Wismar, as happy as a clam, and seems to have found his dream home (with uplifting runs of violin in the background, of course);</li>
-<li>a burlesque conversation between Rijk de Gooyer and Clemens Scheitz on arresting Van Helsing;</li>
-</ol>
+<li>a burlesque conversation between Rijk de Gooyer and Clemens Scheitz on arresting Van Helsing.</li>
+</ul>
 
 The slow pace of the movie may have something to do with the fact that it is an homage movie imitating an 1922 silent movie, *Nosferatu*. With *Nosferatu the Vampyre*, Herzog pays honour to "the greatest German film". Well, me and Herzog, we might be name buddies, but we're clearly not playing the same game.
