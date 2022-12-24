@@ -29,4 +29,4 @@ Now, as I've said, Herzog's movie is much slower, therefore it doesn't allow for
 <li>a burlesque conversation between Rijk de Gooyer and Clemens Scheitz on arresting Van Helsing;</li>
 </ol>
 
-The slow pace of the movie might come from the fact that it is an homage movie imitating an 1922 silent movie, *Nosferatu*. With *Nosferatu the Vampyre*, Herzog pays honour to "the greatest German film". Well, me and Herzog, we might be name buddies, but we're clearly not playing the same game.
+The slow pace of the movie may have something to do with the fact that it is an homage movie imitating an 1922 silent movie, *Nosferatu*. With *Nosferatu the Vampyre*, Herzog pays honour to "the greatest German film". Well, me and Herzog, we might be name buddies, but we're clearly not playing the same game.
