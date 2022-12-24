@@ -28,3 +28,5 @@ Now, as I've said, Herzog's movie is much slower, therefore it doesn't allow for
 <li>Nosferatu arriving to Wismar, as happy as a clam, and seems to have found his dream home (with uplifting runs of violin in the background, of course);</li>
 <li>a burlesque conversation between Rijk de Gooyer and Clemens Scheitz on arresting Van Helsing;</li>
 </ol>
+
+The slow pace of the movie might come from the fact that it is an homage movie imitating an 1922 silent movie, *Nosferatu*. With *Nosferatu the Vampyre*, Herzog pays honour to "the greatest German film". Well, me and Herzog, we might be name buddies, but we're clearly not playing the same game.
