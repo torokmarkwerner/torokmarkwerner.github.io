@@ -15,17 +15,8 @@ In the subsequent years, the so-called suburban sprawl intensified, including wh
 
 The riot, alongside with desegregation policies introduced in the field of education (cf. Milliken v. Bradley), led to the continuation of white flight, and gradually, the city was depopulated. By 2021, the population decreased to 630,000, which is just a little over the half of the city's population in 1980. The depopulation of the urban areas was largely supported by infrastructural developments that took place in the course of the last century. <a href="https://archive.nytimes.com/www.nytimes.com/interactive/2013/08/17/us/detroit-decline.html" target="_blank">As Amy Padnani discusses</a>, Detroit's downfall may also have something to do with the lack of public transport and the establishment of highways under the mayorship of Albert Cobo in the '50s. Highways helped white families leave the city, while the poor means of the public transportation system made the commuting of workers impossible.
 
-After all, it's no wonder that the patchily populated ghost streets of Detroit make up for a perfect setting for a horror movie, just like the blocks of the abandoned Soviet airbase in Kiskunlacháza (as seen in *Chernobyl Diaries* [2012]), or the ghost town stage-set in the Morrocan desert from *The Hills Have Eyes* (2006), or the lonesome streets of New York in *I Am Legend* (2007), emptied by special effects.
+After all, it's no wonder that the patchily populated ghost streets of Detroit make up for a perfect setting for a horror movie, just like the blocks of the abandoned Soviet airbase in Kiskunlacháza (as seen in *Chernobyl Diaries* [2012]), or the ghost town stage-set in the Morrocan desert from *The Hills Have Eyes* (2006), or the lonesome streets of New York in *I Am Legend* (2007), emptied by special effects. The uncanniness of Detroit is very much inherent, embedded in, and deeply entwined into, the urban fabric of the city. Take a look at any of the abandoned Detroit locations listed <a href="https://www.onlyinyourstate.com/michigan/detroit/abandoned-places-detroit-dt">here</a>, and you'll feel the strange uneasiness that works at its best in movies like the *Barbarian*
 
+Buildings imply human presence, so the lack of their inhabitants leaves this implication unfulfilled, giving rise to suspense, the fuel of good thrillers. But not only that, an abandoned piece of a settlement, let it be an asylum, a church, or a castle, is always part of a spatial narrative: there's always a reason a building is empty. At night, buildings are empty because, you know, people sleep; however, empty streets in broad daylight are not what they're supposed to be. That's why Tess's face grows grim as she notices that she spent the night in a run-down neighbourhood of Detroit.
 
-
-
-Sources:
-<ul>
-<li>https://archive.nytimes.com/www.nytimes.com/interactive/2013/08/17/us/detroit-decline.html</li>
-<li>https://www.forbes.com/sites/scottbeyer/2018/07/31/why-has-detroit-continued-to-decline/</li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-</ul>
+The concept of *Barbarian* is 
