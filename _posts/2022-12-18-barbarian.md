@@ -30,9 +30,7 @@ The angle from which *Barbarian* examines the #metoo movement is quite an intere
 <p>Of course, AJ *is* a bad person who pushes Tess down from the roof to save himself.</p>
 </details>
 
-There's a similar, thought-provoking twist 
-
-<details>
+There's a similar, thought-provoking twist <details>
 <summary>SPOILER</summary>
 <p>in the way Frank, the kidnapper and serial rapist is shown as a bedridden old geezer, pitiful, whereas the product of his crimes, the inbred creature referred to as The Mother is construed as the monster, fearful.</p>
 </details>
