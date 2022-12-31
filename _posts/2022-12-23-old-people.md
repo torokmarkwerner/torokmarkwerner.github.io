@@ -7,7 +7,7 @@ score: 2
 image: myke-simon-cinema.jpg
 excerpt_separator: <!--end-of-excerpt-->
 ---
-Have you seen Shyamalan's *Old* (2022)?*The Taking of Deborah Logan* (2014)? *The Relic* (2020)? *Hereditary* (2018)? And *The Visit* (2015)?
+Have you seen Shyamalan's *Old* (2022)? *The Taking of Deborah Logan* (2014)? *The Relic* (2020)? *Hereditary* (2018)? And *The Visit* (2015)?
 
 Getting old is scary, and *Old People* is another example for that. The basic concept of the German horror is the same as any other zombie with zombies swapped for elderly people. Straight outta Saalheim, 
 the retirement home.
