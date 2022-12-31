@@ -27,7 +27,7 @@ The angle from which *Barbarian* examines the #metoo movement is quite an intere
 
 <details>
 <summary>SPOILER</summary>
-<p>Of course, AJ *is* a bad person who pushes Tess down from the roof to save himself.</p>
+<p>Of course, AJ <i>is</i> a bad person who pushes Tess down from the roof to save himself.</p>
 </details>
 
 There's a similar, thought-provoking twist 
