@@ -36,6 +36,6 @@ There's a similar, thought-provoking twist
 <p>in the way Frank, the kidnapper and serial rapist is shown as a bedridden old geezer, pitiful, whereas the product of his crimes, the inbred creature referred to as The Mother is construed as the monster, fearful.</p>
 </details>
 
-The title adds even more complexity to all of this. Just as in the case of the well-known Hungarian short story by Zsigmond Móricz, we don't really get an affirmative answer as to who the Barbarians are. Are they the inhabitants of the Barbary Street where the house is at? Are they the degenerated dwellers of the basement? Are they the coward actor who fails to take responsibility for his actions?
+The title adds even more complexity to all of this. Just as in the case of <a href="https://www.yumpu.com/en/document/read/11386572/hungarian-short-stories-19th-and-20th-centuries/145" target="_blank">the Hungarian short story by Zsigmond Móricz</a>, we don't really get an affirmative answer as to who the Barbarians are. Are they the inhabitants of the Barbary Street where the house is at? Are they the degenerated dwellers of the basement? Are they the coward actor who fails to take responsibility for his actions?
 
 With Tess, the last person standing escaping the scene with The Ronettes singing *Be My Baby* in the background, the viewers are left without a decent ending and with a promising movie unmade.
