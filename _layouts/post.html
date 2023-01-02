@@ -344,7 +344,7 @@ document.getElementById("demo").appendChild(commentBody)
 <div>
   <div style="font-size: 150%;font-weight: bold;font-variant: all-petite-caps;padding: 5px 10px;max-width:80%">Related Posts</div>
   <div style="padding-bottom: 22px;width:80%">
-    {% for related_post in site.related_posts limit: 5 %}
+    {% for related_post in site.related_posts limit: 3 %}
     <div style="position:relative">
     <div class="related-post-title-container">
                 <a href="{{ related_post.url }}">{{ related_post.title }}</a></div>
