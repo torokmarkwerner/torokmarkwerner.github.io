@@ -4,11 +4,16 @@ title: Oh The Movies | The Invocation of Enver Simaku (2018)
 published: true
 tags: movies Albanian Spanish horror mockumentary
 score: 1.5
-image: myke-simon-cinema.jpg
+image: enver-simaku.jpg
 excerpt_separator: <!--end-of-excerpt-->
 ---
 When mockumentary meets horror, a good old found-footage/hand-cam horror is right around the corner. Marc Lledó Escartín, the director of *The Invocation of Enver Simaku* (2018) went for something else: he made a mockumentary with immensive narration. The plot of *Simaku* follows Julien whose wife was murdered during a pogrom in Albania. 18 years after the incident, the footage of that fateful night still haunts Julien's dreams, so he returns to Albania to find out more about the circumstances of his wife's death. *Simaku* is an awful movie, but it's also an interesting cautionary tale on how not to shoot a horror movie.
 <!--end-of-excerpt-->
+<p><img src="/assets/enver-simaku.jpg"></p>
+
+<p>Julien Blaschke as Julien in <i>The Invocation of Enver Simaku</i>. Image: <a href="https://www.netflix.com/title/81467143" target="_blank">Netflix</a>.</p>
+
+<hr>
 
 First of all, the coherence of the narrative is quite arbitrary. Even though we readily "suspense our disbelief" and buys into Julien just returning to Albania to find out more about the killer of his wife, the Communist "Anti-Paranormal Brigade" is much harder to get us do the same. However, Escartín's blunders in building a narrative would be easy to forgive, the exceptionally large amount of narration can't be disregarded. It seems that such narration could effectively kill any horror movie. Why is that, though?
 
