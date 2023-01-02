@@ -4,7 +4,7 @@ title: Oh The Movies | Barbarian (2022)
 published: true
 tags: movies American horror thriller mystery
 score: 3.5
-image: myke-simon-cinema.jpg
+image: barbarian.jpg
 excerpt_separator: <!--end-of-excerpt-->
 ---
 In spite the obvious generic differences, both <a href="/2022/12/19/8-mile.html">*8 Mile* (2002)</a> and *Barbarian* (2022) are set in Detroit and document vital aspects of the deteriorating city. What's more, the widely celebrated thriller *Don't Breathe* (2016) – featuring Hungarian actress Franciska Törőcsik – also takes place there; there's something in the Detroitan air that not only serves as a particularly fitting setting for these movies, urban space is very much a narrative in itself.
