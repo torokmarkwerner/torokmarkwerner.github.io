@@ -20,7 +20,7 @@ permalink: /blog/
   {% assign tags_hu = post.tags_hu | split: " " %}
   {% for tag in post.tags %}
     {% capture tag_name %}{{ tag }}{% endcapture %}
-    <div style="display:inline-block">[<a class="tag-name" href="/tag/{{ tag_name }}">{% if post.language == "hu" %}{{ tags_hu[forloop.index0] | upcase }}{% else %}{{ tag_name | upcase }}{% endif %}</a>] </div>
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/{{ tag_name }}">{% if post.language == "hu" %}{{ tags_hu[forloop.index0] | upcase }}{% else %}{{ tag_name | upcase }}{% endif %}</a>] </div>
   {% endfor %}
 </span></p>
       </div>
