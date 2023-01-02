@@ -25,7 +25,7 @@ permalink: /blog/
 </span></p>
       </div>
       <div class="entry">
-        {{ post.excerpt }}
+        {{ post.excerpt | replace: 'class="highlighted-text"','' }}
       </div>
 
       <a style="font-variant:all-petite-caps" href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
