@@ -5,6 +5,7 @@ published: true
 tags: movies American action gothic vampire horror
 score: 3
 image: van-helsing.jpg
+language: en
 excerpt_separator: <!--end-of-excerpt-->
 ---
 *Van Helsing* is an unusual steampunk adaptation of Shelley's *Frankenstein* and Stoker's *Dracula*. If this weren't enough, *Van Helsing* is also hesitant to decide whether it wants to be a serious flip on the stories or a parody of them.
