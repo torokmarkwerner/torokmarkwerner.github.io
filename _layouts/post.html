@@ -8,11 +8,11 @@ layout: default
     {{ ert }} min{% if ert != 1 %}s{% endif %}
 </span></p>
 <p><span>
-  <a class="tag-name" style="color:black" href="/tag/{{ post.language }}">{% if post.language == "en" %}<div class="language">English{% else %}<div class="language" style="background-color:crimson">magyar{% endif %}</div></a>
-  {% assign tags_hu = post.tags_hu | split: " " %}
-  {% for tag in post.tags %}
+  <a class="tag-name" style="color:black" href="/tag/{{ post.language }}">{% if page.language == "en" %}<div class="language">English{% else %}<div class="language" style="background-color:crimson">magyar{% endif %}</div></a>
+  {% assign tags_hu = page.tags_hu | split: " " %}
+  {% for tag in page.tags %}
     {% capture tag_name %}{{ tag }}{% endcapture %}
-    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/{{ tag_name }}">{% if post.language == "hu" %}{{ tags_hu[forloop.index0] | upcase }}{% else %}{{ tag_name | upcase }}{% endif %}</a>] </div>
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/{{ tag_name }}">{% if page.language == "hu" %}{{ tags_hu[forloop.index0] | upcase }}{% else %}{{ tag_name | upcase }}{% endif %}</a>] </div>
   {% endfor %}
 </span></p>
 {% if page.tags contains "movies" %}  
