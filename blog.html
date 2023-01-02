@@ -15,7 +15,12 @@ permalink: /blog/
     {% assign ert = words | divided_by:250 | at_least: 1 %}
     {{ ert }} min{% if ert != 1 %}s{% endif %}
 </span>
-<p><span>{% if post.language == "en" %}<a href="/tag/{{ post.language }}" style="color:black" class="language tag-name">English{% else %}<a href="/tag/{{ post.language }}" style="color:black;background-color:#fbd094" class="language tag-name">magyar{% endif %}</a>
+<p><span>
+  {% if post.language == "en" %}
+  <a href="/tag/{{ post.language }}" style="color:black" class="language tag-name">English</a>
+    {% else %}
+    <a href="/tag/{{ post.language }}" style="color:black;background-color:#fbd094" class="language tag-name">magyar</a>
+      {% endif %}
   {% assign tags_hu = post.tags_hu | split: " " %}
   {% for tag in post.tags %}
     {% capture tag_name %}{{ tag }}{% endcapture %}
