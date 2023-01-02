@@ -16,8 +16,8 @@ permalink: /blog/
     {{ ert }} min{% if ert != 1 %}s{% endif %}
 </span>
 <p><span>
-  {% if post.language == "en" %}<div class="language">{% else %}<div class="language" style="background-color:crimson">{% endif %}
-    <a class="tag-name" style="color:black" href="/tag/{{ post.language }}">{% if post.language == "en" %}English{% else %}magyar{% endif %}</a></div>
+  {% if post.language == "en" %}<a class="tag-name" style="color:black" href="/tag/{{ post.language }}"></a><div class="language">{% else %}<div class="language" style="background-color:crimson">{% endif %}
+    {% if post.language == "en" %}English{% else %}magyar{% endif %}</div></a>
   {% assign tags_hu = post.tags_hu | split: " " %}
   {% for tag in post.tags %}
     {% capture tag_name %}{{ tag }}{% endcapture %}
