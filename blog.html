@@ -17,8 +17,11 @@ permalink: /blog/
 </span>
 <p><span>
   <a href="/tag/{{ post.language }}" style="color:black" class="tag-name">
-    {% if post.language == "en" %}<div class="language">English</div>{% else %}<div class="language" style="background-color:#fbd094">magyar</div>
-      {% endif %}
+    {% if post.language == "en" %}
+    <span class="language">English</span>
+    {% else %}
+    <span class="language" style="background-color:#fbd094">magyar</span>
+    {% endif %}
     </a>
   {% assign tags_hu = post.tags_hu | split: " " %}
   {% for tag in post.tags %}
