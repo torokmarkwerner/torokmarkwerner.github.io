@@ -16,13 +16,11 @@ permalink: /blog/
     {{ ert }} min{% if ert != 1 %}s{% endif %}
 </span>
 <p><span>
-  <a href="/tag/{{ post.language }}" style="color:black" class="tag-name">
     {% if post.language == "en" %}
-    <span class="language">English</span>
+    <a href="/tag/{{ post.language }}" style="color:black" class="tag-name"><div class="language">English</div></a>
     {% else %}
-    <span class="language" style="background-color:#fbd094">magyar</span>
+    <a href="/tag/{{ post.language }}" style="color:black" class="tag-name"><div class="language" style="background-color:#fbd094">magyar</div></a>
     {% endif %}
-    </a>
   {% assign tags_hu = post.tags_hu | split: " " %}
   {% for tag in post.tags %}
     {% capture tag_name %}{{ tag }}{% endcapture %}
