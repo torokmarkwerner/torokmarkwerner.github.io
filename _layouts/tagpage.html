@@ -3,11 +3,19 @@ layout: default
 ---
 <div class="post">
 <ul>
+{% if !page.language %}
 {% for post in site.tags[page.tag] %}
   <li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }})<br>
     {{ post.description }}
   </li>
 {% endfor %}
+{% elsif page.language %}
+{% for post in site.tags[page.language] %}
+  <li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }})<br>
+    {{ post.description }}
+  </li>
+{% endfor %}
+{% endif %}
 </ul>
 </div>
 <hr>
