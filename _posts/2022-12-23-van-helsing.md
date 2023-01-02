@@ -9,7 +9,11 @@ excerpt_separator: <!--end-of-excerpt-->
 ---
 *Van Helsing* is an unusual steampunk adaptation of Shelley's *Frankenstein* and Stoker's *Dracula*. If this weren't enough, *Van Helsing* is also hesitant to decide whether it wants to be a serious flip on the stories or a parody of them.
 <!--end-of-excerpt-->
+<p><img src="/assets/van-helsing.jpg"></p>
 
+<p>Hugh Jackman on the set of <i>Van Helsing</i>. Image: <a href="https://www.imdb.com/title/tt0338526/mediaviewer/rm1277597696" target="_blank">IMDb</a>.</p>
+
+<hr>
 
 At first blink, the movie *is* meant to be a light-hearted comedy with many generic tropes subversed or reflected on. It's in the very first 15 minutes when we get the essential scene of buddy cop movies subversed: Van Helsing is told that "his results are unquestionable, but his methods attract far too much attention." Then we also get an ironical remark on the grandiose villain's monologue: "I think if you're going to kill someone, kill them; don't just stand there talking about it!"
 
