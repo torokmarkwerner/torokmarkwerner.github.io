@@ -8,7 +8,7 @@ layout: default
     {{ ert }} min{% if ert != 1 %}s{% endif %}
 </span></p>
 <p><span>
-  <a class="tag-name" style="color:black" href="/tag/{{ post.language }}">{% if page.language == "en" %}<div class="language">English{% else %}<div class="language" style="background-color:crimson">magyar{% endif %}</div></a>
+  <a class="tag-name" style="color:black" href="/tag/{{ page.language }}">{% if page.language == "en" %}<div class="language">English{% else %}<div class="language" style="background-color:crimson">magyar{% endif %}</div></a>
   {% assign tags_hu = page.tags_hu | split: " " %}
   {% for tag in page.tags %}
     {% capture tag_name %}{{ tag }}{% endcapture %}
