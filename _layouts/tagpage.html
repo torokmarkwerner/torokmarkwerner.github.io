@@ -10,7 +10,8 @@ layout: default
   </li>
 {% endfor %}
 {% else %}
-{% assign posts = site.posts | where: post.language, page.language -%}
+{% assign posts = site.posts | where: post.language, page.language %}
+ENGLISH
 {% for post in posts %}
   <li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }})<br>
     {{ post.description }}
