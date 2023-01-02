@@ -5,6 +5,7 @@ published: true
 tags: the-crown movies
 score: 3.7
 image: the-crown.jpg
+language: en
 excerpt_separator: <!--end-of-excerpt-->
 ---
 There is nothing new in the palpable tension between the portrayal of Englishmen in coursebooks (such as the English File and Solutions) and the reality of Britain. The tea-sipping, ever so polite Englishmen are what's left from the long-forgotten (?) Empire, and such colonial discourses are still all around us teachers and students of ESL.

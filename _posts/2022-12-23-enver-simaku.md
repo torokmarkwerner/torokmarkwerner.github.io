@@ -5,6 +5,7 @@ published: true
 tags: movies Albanian Spanish horror mockumentary
 score: 1.5
 image: enver-simaku.jpg
+language: en
 excerpt_separator: <!--end-of-excerpt-->
 ---
 When mockumentary meets horror, a good old found-footage/hand-cam horror is right around the corner. Marc Lledó Escartín, the director of *The Invocation of Enver Simaku* (2018) went for something else: he made a mockumentary with immensive narration. The plot of *Simaku* follows Julien whose wife was murdered during a pogrom in Albania. 18 years after the incident, the footage of that fateful night still haunts Julien's dreams, so he returns to Albania to find out more about the circumstances of his wife's death. *Simaku* is an awful movie, but it's also an interesting cautionary tale on how not to shoot a horror movie.

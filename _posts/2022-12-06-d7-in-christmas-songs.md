@@ -4,6 +4,7 @@ title: D⁷ in Christmas songs
 published: true
 tags: christmas guitar music chords
 image: christmas-fireplace.jpg
+language: en
 excerpt_separator: <!--end-of-excerpt-->
 ---
 <script src="/chord-player.js"></script>

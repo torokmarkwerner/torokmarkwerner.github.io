@@ -5,6 +5,7 @@ published: true
 tags: movies German French vampire horror
 score: 3
 image: nosferatu-the-vampyre.jpg
+language: en
 excerpt_separator: <!--end-of-excerpt-->
 ---
 Werner Herzog is a versatile master of cinematography. I remember seeing his *Grizzly Man* (2005) and listening to him narrating Timothy Treadwell's incredible story. Now, *Nosferatu the Vampyre* (1979) is a whole different story, and not just another shot at Bram Stoker's *Dracula*.

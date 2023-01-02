@@ -5,7 +5,7 @@ published: true
 tags: movies German horror getting-old
 score: 2
 image: old-people.jpg
-language: hu
+language: en
 excerpt_separator: <!--end-of-excerpt-->
 ---
 Have you seen Shyamalan's *Old* (2022)? *The Taking of Deborah Logan* (2014)? *The Relic* (2020)? *Hereditary* (2018)? And *The Visit* (2015)?

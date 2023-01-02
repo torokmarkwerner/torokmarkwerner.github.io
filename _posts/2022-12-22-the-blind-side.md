@@ -5,6 +5,7 @@ published: true
 tags: movies American sport drama
 score: 3
 image: myke-simon-cinema.jpg
+language: en
 excerpt_separator: <!--end-of-excerpt-->
 ---
 *The Blind Side* is an inspiring sport drama with Sandra Bullock, who was perfectly casted for a <acronym title="White Anglo-Saxon Protestant">WASP</acronym> housewife, Mrs Tuohy, embracing a young African-American athlete, Big Mike. Other than that, it's a perfect basis for an  case study on the concept of biographical movies.

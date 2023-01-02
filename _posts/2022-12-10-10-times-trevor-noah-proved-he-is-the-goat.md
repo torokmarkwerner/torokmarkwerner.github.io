@@ -4,6 +4,7 @@ title: 10 Times Trevor Noah Proved He's the GOAT of GOATs
 published: true
 tags: trevor-noah the-daily-show comedy politics racism USA
 image: the-daily-show-with-trevor-noah.jpg
+language: en
 excerpt_separator: <!--end-of-excerpt-->
 ---
 After his announcement of leaving *The Daily Show* in September, yesterday marked the day Trevor Noah hosted the show for the very last time. The South African comedian spent seven years on Comedy Central, during which time he:
