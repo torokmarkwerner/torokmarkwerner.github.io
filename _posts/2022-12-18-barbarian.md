@@ -39,3 +39,7 @@ There's a similar, thought-provoking twist
 The title adds even more complexity to all of this. Just as in the case of <a href="https://www.yumpu.com/en/document/read/11386572/hungarian-short-stories-19th-and-20th-centuries/145" target="_blank">the Hungarian short story by Zsigmond Móricz</a>, we don't really get an affirmative answer as to who the Barbarians are. Are they the inhabitants of the Barbary Street where the house is at? Are they the degenerated dwellers of the basement? Are they the coward actor who fails to take responsibility for his actions?
 
 With Tess, the last person standing escaping the scene with The Ronettes singing *Be My Baby* in the background, the viewers are left with an abrupt ending and a heroine barely survived. Other than that, the movie was OK.
+
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/jSPpbOGnFgk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</div>
