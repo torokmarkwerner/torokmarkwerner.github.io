@@ -1,5 +1,5 @@
 ---
 layout: tagpage
 title: "Language: English"
-lang: en
+language: en
 ---

@@ -4,7 +4,6 @@ layout: default
 <div class="post">
 <ul>
 {% if page.lang %}
-ENGLISH
 {% assign posts = site.posts | where: "language", page.lang %}
 {% for post in posts %}
   <li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }})<br>
