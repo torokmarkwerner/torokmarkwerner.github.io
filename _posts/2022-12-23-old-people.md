@@ -13,9 +13,9 @@ Have you seen Shyamalan's *Old* (2022)? *The Taking of Deborah Logan* (2014)? *T
 Getting old is scary, and *Old People* is another example for that. The basic concept of the German horror is the same as any other zombie with zombies swapped for elderly people. Straight outta Saalheim, 
 the retirement home.
 <!--end-of-excerpt-->
-<p><img src="/assets/old-people.jpg"></p>
+<div><img src="/assets/old-people.jpg"></div>
 
-<p>German ballerina Eveline Hall was a perfect pick for the role. Image: <a href="https://www.imdb.com/title/tt0338526/mediaviewer/rm4171171329" target="_blank">IMDb</a>.</p>
+<div style="margin-block-start: 0.5em;margin-block-end: 0.5em;font-size: 80%;">German ballerina Eveline Hall was a perfect pick for the role. Image: <a href="https://www.imdb.com/title/tt0338526/mediaviewer/rm4171171329" target="_blank">IMDb</a>.</div>
 
 <hr>
 

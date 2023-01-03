@@ -15,9 +15,9 @@ Nevertheless, the demise of Elisabeth II placed ESL teachers on the horns of a d
 The way I see it, <i>The Crown</i> is not only an one-of-a-kind historical drama series with elaborate stage design, but also, a product of imaginative speculation, sheding light on stories that have been either kept secret, or blurred by the nonstop media attention that the royal family suffered since the past century.
 <!--end-of-excerpt-->
 
-<p><img src="/assets/the-crown.jpg"></p>
+<div><img src="/assets/the-crown.jpg"></div>
 
-<p><i>A crown. Not St Edward's, but a regular old crown.</i></p>
+<div style="margin-block-start: 0.5em;margin-block-end: 0.5em;font-size: 80%;"><i>A crown. Not St Edward's, but a regular old crown.</i></div>
 
 <hr>
 
@@ -55,9 +55,9 @@ Given that His Royal Highness in Season 5 tends to remind the viewers of a dodde
 
 Eventually, it mirrors the purist attitude that has appeared in then Prince Charles's speech about the English language devolving in a worrying degree. Make no mistake: purist is just a fancy word for what we call a grammar nazi in everyday contexts. And may I go out on a limb to say <span class="highlighted-text">a grammar nazi is to language as a royalist is to society?</span>
 
-<p><img src="/assets/charles-meme.jpg"></p>
+<div><img src="/assets/charles-meme.jpg"></div>
 
-<p>The <i>Queen Victoria Syndrome.</i></p>
+<div style="margin-block-start: 0.5em;margin-block-end: 0.5em;font-size: 80%;">The <i>Queen Victoria Syndrome.</i></div>
 
 <hr>
 

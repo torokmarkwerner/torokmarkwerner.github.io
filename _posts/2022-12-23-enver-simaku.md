@@ -10,9 +10,9 @@ excerpt_separator: <!--end-of-excerpt-->
 ---
 When mockumentary meets horror, a good old found-footage/hand-cam horror is right around the corner. Marc Lledó Escartín, the director of *The Invocation of Enver Simaku* (2018) went for something else: he made a mockumentary with immensive narration. The plot of *Simaku* follows Julien whose wife was murdered during a pogrom in Albania. 18 years after the incident, the footage of that fateful night still haunts Julien's dreams, so he returns to Albania to find out more about the circumstances of his wife's death. *Simaku* is an awful movie, but it's also an interesting cautionary tale on how not to shoot a horror movie.
 <!--end-of-excerpt-->
-<p><img src="/assets/enver-simaku.jpg"></p>
+<div><img src="/assets/enver-simaku.jpg"></div>
 
-<p>Julien Blaschke as Julien in <i>The Invocation of Enver Simaku</i>. Image: <a href="https://www.netflix.com/title/81467143" target="_blank">Netflix</a>.</p>
+<div style="margin-block-start: 0.5em;margin-block-end: 0.5em;font-size: 80%;">Julien Blaschke as Julien in <i>The Invocation of Enver Simaku</i>. Image: <a href="https://www.netflix.com/title/81467143" target="_blank">Netflix</a>.</div>
 
 <hr>
 

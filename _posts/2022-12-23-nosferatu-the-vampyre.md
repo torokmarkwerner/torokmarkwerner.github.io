@@ -13,9 +13,9 @@ Werner Herzog is a versatile master of cinematography. I remember seeing his *Gr
 
 Herzog's shots are mesmerising, in the '70s' horrors sense of the word There's an extensive use of close-ups, a shade of white so cold that it is barely white anymore, and the (micro-)movements of the camera that resembles modern-day hand camera horrors. The dreamlike sequences are exceptionally convincing; however, the slow pace of the movie with the genre's ubiquitous suspense adds up to hard-to-consume "cinematic experience", and we're not accustomed to such movies.
 
-<p><img src="/assets/nosferatu-the-vampyre.jpg"></p>
+<div><img src="/assets/nosferatu-the-vampyre.jpg"></div>
 
-<p>Klaus Kinski as Nosferatu. Image: <a href="https://www.imdb.com/title/tt0079641/mediaviewer/rm879112448/" target="_blank">IMDb</a>.</p>
+<div style="margin-block-start: 0.5em;margin-block-end: 0.5em;font-size: 80%;">Klaus Kinski as Nosferatu. Image: <a href="https://www.imdb.com/title/tt0079641/mediaviewer/rm879112448/" target="_blank">IMDb</a>.</div>
 
 <hr>
 

@@ -20,9 +20,9 @@ After his announcement of leaving *The Daily Show* in September, yesterday marke
 Of course, these achievements in themselves fail to show why I consider Trevor Noah one of the greatest TV hosts and comedians of all time. That’s why I compiled a list of 10 of his most memorable moments, let them be interviews with political figures (from the left and the right), heartfelt conversations with his audience, or an insightful monologue on France winning the World Cup.
 <!--end-of-excerpt-->
 
-<p><img src="/assets/the-daily-show-with-trevor-noah.jpg"></p>
+<div><img src="/assets/the-daily-show-with-trevor-noah.jpg"></div>
 
-<p><i>The Daily Show with Trevor Noah</i>. Image: (<a href="https://www.paramountplus.com/shows/the-daily-show-with-trevor-noah" target="_blank">Paramount Plus</a>).</p>
+<div style="margin-block-start: 0.5em;margin-block-end: 0.5em;font-size: 80%;"><i>The Daily Show with Trevor Noah</i>. Image: (<a href="https://www.paramountplus.com/shows/the-daily-show-with-trevor-noah" target="_blank">Paramount Plus</a>).</div>
 
 <hr>
 
@@ -162,9 +162,9 @@ I once looked into postcolonial comedy. There’s an intriguing idea somewhere t
 
 When Trevor was back in South Africa for a short time, he visited his late grandmother Gogo in Soweto. Now, you must know that Trevor’s mom was a single parent, so Gogo took the lion’s share in Trevor’s upbringing. That required great care with the child, literally, “born a crime”, as it was illegal in apartheid for a White man and a Black woman to have a child together. Trevor even describes a situation in his book where his mother had to deny him in a local shop when asked whose child he was, fearing, not without foundation, that Trevor may be taken if the truth gets found out.
 
-<p style="text-align:center"><img src="/assets/born-a-crime-cover.jpg"></p>
+<div style="text-align:center"><img src="/assets/born-a-crime-cover.jpg"></div>
 
-<p style="text-align:center"><i>Born a Crime</i> by Trevor Noah. Image: (<a href="https://en.wikipedia.org/wiki/Born_a_Crime" target="_blank">Wikipedia</a>).</p>
+<div style="margin-block-start: 0.5em;margin-block-end: 0.5em;font-size: 80%;text-align:center"><i>Born a Crime</i> by Trevor Noah. Image: (<a href="https://en.wikipedia.org/wiki/Born_a_Crime" target="_blank">Wikipedia</a>).</div>
 
 <hr>
 

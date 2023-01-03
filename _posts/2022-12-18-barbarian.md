@@ -10,9 +10,9 @@ excerpt_separator: <!--end-of-excerpt-->
 ---
 In spite the obvious generic differences, both <a href="/2022/12/19/8-mile.html">*8 Mile* (2002)</a> and *Barbarian* (2022) are set in Detroit and document vital aspects of the deteriorating city. What's more, the widely celebrated thriller *Don't Breathe* (2016) – featuring Hungarian actress Franciska Törőcsik – also takes place there; there's something in the Detroitan air that not only serves as a particularly fitting setting for these movies, urban space is very much a narrative in itself.
 <!--end-of-excerpt-->
-<p><img src="/assets/barbarian.jpg"></p>
+<div><img src="/assets/barbarian.jpg"></div>
 
-<p>Georgina Campbell as Tess in <i>Barbarian</i>. Image: <a href="https://www.imdb.com/title/tt0079641/mediaviewer/rm19271169/" target="_blank">IMDb</a>.</p>
+<div style="margin-block-start: 0.5em;margin-block-end: 0.5em;font-size: 80%;">Georgina Campbell as Tess in <i>Barbarian</i>. Image: <a href="https://www.imdb.com/title/tt0079641/mediaviewer/rm19271169/" target="_blank">IMDb</a>.</div>
 
 <hr>
 

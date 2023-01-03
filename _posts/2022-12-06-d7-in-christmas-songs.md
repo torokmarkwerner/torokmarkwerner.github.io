@@ -45,9 +45,9 @@ It happened that I grabbed my guitar last Thursday to set the mood for December.
 
 <span class="highlighted-text">The rabbit hole of D<sup>7</sup> is an incredible place.</span> Once you start unravelling the mystery, new horizons show and memories come flooding back, memories of deadly boring solfège lessons. It seems D<sup>7</sup> isn’t the only thing these goldies have in common, they’re also written in the key of G with D<sup>7</sup> functioning as a dominant seventh.
 
-<p><img src="/assets/christmas-fireplace.jpg"></p>
+<div><img src="/assets/christmas-fireplace.jpg"></div>
 
-<p><i>It's time to get yourself a mug of hot chocolate, pop some corn, and get comfortable in front of the fireplace.</i> Image: JillWellington (<a href="https://pixabay.com/photos/warm-and-cozy-popcorn-coffee-1975215" target="_blank">Pixabay</a>).</p>
+<div style="margin-block-start: 0.5em;margin-block-end: 0.5em;font-size: 80%;"><i>It's time to get yourself a mug of hot chocolate, pop some corn, and get comfortable in front of the fireplace.</i> Image: JillWellington (<a href="https://pixabay.com/photos/warm-and-cozy-popcorn-coffee-1975215" target="_blank">Pixabay</a>).</div>
 
 <hr>
 
@@ -121,9 +121,9 @@ Now, in the key of G, you can always have D or D<sup>7</sup> as a dominant, so i
 
 Why D<sup>7</sup> then?
 
-<p><img src="/assets/christmas-street-snowing.jpg"></p>
+<div><img src="/assets/christmas-street-snowing.jpg"></div>
 
-<p><i>These houses do not have a clue of the impending danger of D<sup>7</sup> chords invading the city.</i> Image: Couleur (<a href="https://pixabay.com/photos/christmas-lights-street-town-3834926" target="_blank">Pixabay</a>).</p>
+<div style="margin-block-start: 0.5em;margin-block-end: 0.5em;font-size: 80%;"><i>These houses do not have a clue of the impending danger of D<sup>7</sup> chords invading the city.</i> Image: Couleur (<a href="https://pixabay.com/photos/christmas-lights-street-town-3834926" target="_blank">Pixabay</a>).</div>
 
 <hr>
 

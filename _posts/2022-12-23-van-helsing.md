@@ -10,9 +10,9 @@ excerpt_separator: <!--end-of-excerpt-->
 ---
 *Van Helsing* is an unusual steampunk adaptation of Shelley's *Frankenstein* and Stoker's *Dracula*. If this weren't enough, *Van Helsing* is also hesitant to decide whether it wants to be a serious flip on the stories or a parody of them.
 <!--end-of-excerpt-->
-<p><img src="/assets/van-helsing.jpg"></p>
+<div><img src="/assets/van-helsing.jpg"></div>
 
-<p>Hugh Jackman on the set of <i>Van Helsing</i>. Image: <a href="https://www.imdb.com/title/tt0338526/mediaviewer/rm1277597696" target="_blank">IMDb</a>.</p>
+<div style="margin-block-start: 0.5em;margin-block-end: 0.5em;font-size: 80%;">Hugh Jackman on the set of <i>Van Helsing</i>. Image: <a href="https://www.imdb.com/title/tt0338526/mediaviewer/rm1277597696" target="_blank">IMDb</a>.</div>
 
 <hr>
 
