@@ -7,11 +7,11 @@ layout: default
     {% assign ert = words | divided_by:250 | at_least: 1 %}
     {{ ert }} min{% if ert != 1 %}s{% endif %}
 </span></p>
-<p>
+<div style="margin-block-start: 1em;margin-block-end: 1em;">
     {% if page.language == "en" %}
-    <a class="tag-name" style="color:black" href="/tag/{{ page.language }}"><span class="language">English</span></a>
+    <a class="tag-name" style="color:black" href="/tag/{{ page.language }}"><div class="language">English</div></a>
     {% else %}
-    <a class="tag-name" style="color:black" href="/tag/{{ page.language }}"><span class="language" style="background-color:#f69f9f">magyar</span></a>
+    <a class="tag-name" style="color:black" href="/tag/{{ page.language }}"><div class="language" style="background-color:#f69f9f">magyar</div></a>
     {% endif %}
 
   {% assign tags_hu = page.tags_hu | split: " " %}
@@ -19,7 +19,7 @@ layout: default
     {% capture tag_name %}{{ tag }}{% endcapture %}
     <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/{{ tag_name }}">{% if page.language == "hu" %}{{ tags_hu[forloop.index0] | upcase }}{% else %}{{ tag_name | upcase }}{% endif %}</a>] </div>
   {% endfor %}
-</p>
+</div>
 {% if page.tags contains "movies" %}  
   <div id="rating-container2">
   <div style="text-align:center;background-color:#ffff9a;padding:0.5em">
