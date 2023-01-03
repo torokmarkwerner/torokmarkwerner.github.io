@@ -9,6 +9,17 @@
      <link rel="shortcut icon" type="image/x-icon" href="/favicon.png?">
   </head>
   <style>
+.abc-parantheses {
+  counter-reset: abc;
+}
+.abc-parantheses > li {
+  list-style: none;
+  padding: 0 0.5em
+}
+.abc-parantheses > li:before {
+  content: counter(abc, lower-alpha) ") ";
+  counter-increment: abc;
+}
     .language {
     display: inline;
     background-color: #c5d8fc;
