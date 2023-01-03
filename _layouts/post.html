@@ -7,9 +7,7 @@ layout: default
     {% assign ert = words | divided_by:250 | at_least: 1 %}
     {{ ert }} min{% if ert != 1 %}s{% endif %}
 </span></p>
-<p><span>
-  <a href="https://google.com"><div style="height:4px;width:4px;background-color:red;"></div></a>
-  
+<div>
     {% if page.language == "en" %}
     <a class="tag-name" style="color:black" href="/tag/{{ page.language }}"><div class="language">English</div></a>
     {% else %}
@@ -21,7 +19,7 @@ layout: default
     {% capture tag_name %}{{ tag }}{% endcapture %}
     <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/{{ tag_name }}">{% if page.language == "hu" %}{{ tags_hu[forloop.index0] | upcase }}{% else %}{{ tag_name | upcase }}{% endif %}</a>] </div>
   {% endfor %}
-</span></p>
+</div>
 {% if page.tags contains "movies" %}  
   <div id="rating-container2">
   <div style="text-align:center;background-color:#ffff9a;padding:0.5em">
