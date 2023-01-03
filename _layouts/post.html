@@ -9,9 +9,9 @@ layout: default
 </span></p>
 <p>
     {% if page.language == "en" %}
-    <a class="tag-name" style="color:black" href="/tag/{{ page.language }}"><div class="language">English</div></a>
+    <a class="tag-name" style="color:black" href="/tag/{{ page.language }}"><span class="language">English</span></a>
     {% else %}
-    <a class="tag-name" style="color:black" href="/tag/{{ page.language }}"><div class="language" style="background-color:#f69f9f">magyar</div></a>
+    <a class="tag-name" style="color:black" href="/tag/{{ page.language }}"><span class="language" style="background-color:#f69f9f">magyar</span></a>
     {% endif %}
 
   {% assign tags_hu = page.tags_hu | split: " " %}
