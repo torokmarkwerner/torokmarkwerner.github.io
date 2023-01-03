@@ -28,7 +28,13 @@ layout: default
 {% endif %}
 {{ content }}
 <hr>
-<div style="font-size:150%;font-weight:bold;font-variant:all-petite-caps;padding:5px 10px;">{% if page.language == "en" %}Comments{% else %}Hozzászólások{% endif %}<div>
+<div style="font-size:150%;font-weight:bold;font-variant:all-petite-caps;padding:5px 10px;">
+  {% if page.language == "en" %}
+  Comments
+  {% else %}
+  Hozzászólások
+  {% endif %}
+  <div>
 <script>
 pages = document.getElementsByClassName("pages-button");
 for (i=0; i<pages.length; i++) {
