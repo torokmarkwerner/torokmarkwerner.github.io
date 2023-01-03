@@ -115,13 +115,13 @@ min-width:20px
 <div id="leave-a-comment" style="padding: 0em 1em;font-size: 110%;font-weight: bold;">{% if page.language == 'en' %}Leave a comment{% else %}Hozzászólás írása{% endif %}</div>
 <div class="comment-form-container" style="min-width:fit-content;max-width:50vw;">
 <table style="width:100%"><tbody>
-<tr><td style="width:50%"><div style="width:100%"><input type="text" style="width:100%" placeholder="Name"></div></td><td style="width:50%"><div style="        display:flex;
+<tr><td style="width:50%"><div style="width:100%"><input type="text" style="width:100%" placeholder="{% if page.language == 'en' %}Name{% else %}Név{% endif %}"></div></td><td style="width:50%"><div style="        display:flex;
         align-items:center;">
-<input type="checkbox"><label>I <i>am</i> a robot.</label></div></td></tr>
-<tr><td colspan="2"><textarea style="width:100%;height:15vh;resize:none" placeholder="Write your comment here"></textarea></td></tr>
+<input type="checkbox"><label>{% if page.language == 'en' %}I <i>am</i> a robot.{% else %}<i>Robot</i> vagyok.{% endif %}</label></div></td></tr>
+<tr><td colspan="2"><textarea style="width:100%;height:15vh;resize:none" placeholder="{% if page.language == 'en' %}Write your comment here{% else %}Hozzászólás szövege{% endif %}"></textarea></td></tr>
 <tr><td colspan="2"> <div style="display:flex;justify-content:flex-end;padding: 0.5em 1em 1em 0em;">
 <button class="submit-button">
-Submit
+{% if page.language == 'en' %}Submit{% else %}Küldés{% endif %}
 </button>
 </div></td></tr>
  
