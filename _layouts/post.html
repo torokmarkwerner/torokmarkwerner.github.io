@@ -232,7 +232,7 @@ function loadXMLDoc() {
    
      numCom = posts.length;
      postCommentNumber = document.createElement("DIV");
-     if (numCom<2) {postCommentNumber.innerHTML = numCom + " comment"} else {postCommentNumber.innerHTML = numCom + " comments"};
+     if (numCom<2) {postCommentNumber.innerHTML = numCom + "{% if page.language == 'en' %} comment{% else %} hozzászólás{% endif %}"} else {postCommentNumber.innerHTML = numCom + " comments"};
      postCommentNumber.className = "post-comment-number"
      document.getElementById("demo").prepend(postCommentNumber);
      
