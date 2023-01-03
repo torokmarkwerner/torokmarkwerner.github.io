@@ -8,13 +8,14 @@ layout: default
     {{ ert }} min{% if ert != 1 %}s{% endif %}
 </span></p>
 <p><span>
-  <a class="tag-name" style="color:black" href="/tag/{{ page.language }}">
+  <a href="https://google.com"><div style="height:4px;width:4px;background-color:red;"></div></a>
+  
     {% if page.language == "en" %}
-      <div class="language">English</div>
+    <a class="tag-name" style="color:black" href="/tag/{{ page.language }}"><div class="language">English</div></a>
     {% else %}
-      <div class="language" style="background-color:#f69f9f">magyar</div>
+    <a class="tag-name" style="color:black" href="/tag/{{ page.language }}"><div class="language" style="background-color:#f69f9f">magyar</div></a>
     {% endif %}
-  </a>
+
   {% assign tags_hu = page.tags_hu | split: " " %}
   {% for tag in page.tags %}
     {% capture tag_name %}{{ tag }}{% endcapture %}
