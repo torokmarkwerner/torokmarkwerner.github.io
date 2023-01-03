@@ -185,7 +185,9 @@ document.getElementById("leave-a-comment").addEventListener("click",function(){
 document.getElementById("leave-a-comment").classList.remove("leave-a-comment1");
   container = document.getElementsByClassName("comment-form-container")[document.getElementsByClassName("comment-form-container").length-1];
   if(container.innerText === "{% if page.language == 'en' %}Thank you, your comment will be visible after approval.{% else %}Köszönjük, hozzászólása a moderátor jóváhagyása után fog megjelenni.{% endif %}") {
-  container.innerHTML = ""
+    replyTo = ""
+    replyToName = ""    
+    container.innerHTML = ""
     sampleForm =  document.createElement("DIV");
     sampleForm.innerHTML = '<table style="width:100%"><tbody><tr><td style="width:50%"><div style="width:100%"><input type="text" style="width:100%" placeholder="' + "{% if page.language == 'en' %}Name{% else %}Név{% endif %}" + '"></div></td><td style="width:50%"><div style=" display:flex; align-items:center;"><input type="checkbox"><label>' + "{% if page.language == 'en' %}I <i>am</i> a robot.{% else %}<i>Robot</i> vagyok.{% endif %}" + '</label></div></td></tr><tr><td colspan="2"><textarea style="width:100%;height:15vh;resize:none" placeholder="' + "{% if page.language == 'en' %}Write your comment here{% else %}Hozzászólás szövege{% endif %}" + '"></textarea></td></tr><tr><td colspan="2"> <div style="display:flex;justify-content:flex-end;padding: 0.5em 1em 1em 0em;"><button class="submit-button">' + "{% if page.language == 'en' %}Submit{% else %}Küldés{% endif %}" + '</button></div></td></tr> </tbody></table>'
   container.appendChild(sampleForm)
