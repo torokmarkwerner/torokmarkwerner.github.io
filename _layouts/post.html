@@ -144,7 +144,7 @@ function submitButton(){
    document.getElementsByClassName("submit-button")[i].addEventListener("click",function() {
      container = this.parentElement.parentElement.parentElement.parentElement.parentElement;
     //name	comment	link	recaptcha	reply-to	reply-to-name checked
-     commenterNameData = container.getElementsByTagName("input")[0].value 
+     commenterNameData = encodeURIComponent(container.getElementsByTagName("input")[0].value);
      commenterCheckBoxcheckedData = container.getElementsByTagName("input")[1].checked
      commenterCommentData = encodeURIComponent(container.getElementsByTagName("textarea")[0].value);
      buttonData = this;
@@ -267,7 +267,7 @@ replyDiv.className = "reply-button-container"
 
 reply = document.createElement("BUTTON");
 reply.className = "reply-button";
-reply.innerText = "Reply";
+reply.innerText = "{% if page.language == 'en' %}Reply{% else %}Válasz{% endif %}";
 replyDiv.appendChild(reply)
 
 commentBody.className = "post-comment";
@@ -284,7 +284,7 @@ document.getElementById("demo").appendChild(commentBody)
      for (i=0; i<replyButtons.length; i++) {
      replyButtons[i].addEventListener("click",function(){
      replyTo = this.parentElement.parentElement.id
-     replyToName = this.parentElement.parentElement.children[0].children[0].innerText
+     replyToName = encodeURIComponent(this.parentElement.parentElement.children[0].children[0].innerText)
      document.getElementById("leave-a-comment").classList.add("leave-a-comment1");
      for (i=0; i<replyButtons.length; i++) {
      replyButtons[i].parentElement.style.display = "flex"
