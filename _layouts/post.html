@@ -28,7 +28,7 @@ layout: default
 {% endif %}
 {{ content }}
 <hr>
-<div style="font-size:150%;font-weight:bold;font-variant:all-petite-caps;padding:5px 10px;">Comments</div>
+<div style="font-size:150%;font-weight:bold;font-variant:all-petite-caps;padding:5px 10px;">{% if page.language == "en" %}Comments{% else %}Hozzászólások{% endif %}<div>
 <script>
 pages = document.getElementsByClassName("pages-button");
 for (i=0; i<pages.length; i++) {
@@ -39,9 +39,6 @@ for (i=0; i<pages.length; i++) {
   }
 }
 </script>
-<head>
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
-</head>
 <style>
 .post-comment-number {
   font-size:110%;
