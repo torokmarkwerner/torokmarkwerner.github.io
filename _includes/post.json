@@ -1,5 +1,4 @@
 {
-    "id": "{{ forloop.index }}",
     "url": "{{ post.url }}",
     "title": "{{ post.title }}",
     "text": " {{ post.content | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip_html | remove:'"' }}",
