@@ -31,12 +31,13 @@ title: "Home"
 
 <script>
 var posts = data
+document.getElementById("search-results").innerHTML = data[1].title
 box = document.getElementById("search-box");
 
 function search() {
 for (i=0; i<posts.length; i++) {
 
-if (posts[i].text.indexOf("box.innerHTML") > -1) {
+if (posts[i].text.indexOf(box.innerHTML) > -1) {
 result = document.createElement("DIV");
 result.innerHTML = posts[i].title;
 document.getElementById("search-results").appendChild(result);
