@@ -47,8 +47,9 @@ text = document.createElement("P");
 index = posts[i].text.indexOf(box.value);
 nextSpace = posts[i].text.indexOf(" ",index);
 previousSpace = posts[i].text.lastIndexOf(" ",index);
-text.innerHTML = posts[i].text.slice(previousSpace+1,nextSpace-1)
-result.appendChild(title).appendChild(text)
+text.innerHTML = posts[i].text.slice(previousSpace,nextSpace)
+result.appendChild(title)
+result.appendChild(text)
 document.getElementById("search-results").appendChild(result);
 }
 
