@@ -8,9 +8,9 @@ data = [
     {% assign projects = site.pages | where: 'layout', 'project' %}
     {% for project in projects %}
     {
-        "url": "{{ post.url }}",
-        "title": "{{ post.title }}",
-        "text": " {{ post.content | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip_html | remove:'"' }}",
+        "url": "{{ project.url }}",
+        "title": "{{ project.title }}",
+        "text": " {{ project.content | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip_html | remove:'"' }}",
         "tags": "{% for scope in project.scope %}{{ scope }}{% endfor %}"
     }
     {% endfor %}
