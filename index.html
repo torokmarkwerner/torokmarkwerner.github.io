@@ -30,7 +30,6 @@ title: "Home"
 </div>
 
 <script>
-var posts = data;
 document.getElementById("search-results").innerHTML = data[1].title
 box = document.getElementById("search-box");
 
@@ -39,17 +38,24 @@ document.getElementById("search-results").innerHTML = ""
 for (i=0; i<posts.length; i++) {
 
 if (posts[i].text.indexOf(box.value) > -1) {
+
 result = document.createElement("DIV")
 title = document.createElement("H4");
 title.innerHTML = posts[i].title;
-text = document.createElement("P");
-
-index = posts[i].text.indexOf(box.value);
-nextSpace = posts[i].text.indexOf(" ",index);
-previousSpace = posts[i].text.lastIndexOf(" ",index);
-text.innerHTML = posts[i].text.slice(previousSpace,nextSpace)
 result.appendChild(title)
+
+words = data[i].text.split(" ");
+text = document.createElement("UL");
+
+for (z=0; z<words.length; z++) {
+    index = words[z].indexOf(box.value)
+    li = document.createElement("LI")
+    li.innerHTML = words.slice(index-3,index+3)
+    text.appendChild(li);
+}
+
 result.appendChild(text)
+
 document.getElementById("search-results").appendChild(result);
 }
 
