@@ -2,7 +2,7 @@
 ---
 data = [
     {% for post in site.posts %}
-      {% include post.json %}{% unless forloop.last %},{% endunless %}
+      {% include post.json %},
     {% endfor %}
 
     {% assign projects = site.pages | where: 'layout', 'project' %}
@@ -13,6 +13,7 @@ data = [
         "text": " {{ project.content | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip_html | remove:'"' }}",
         "tags": "{% for scope in project.scope %}{{ scope }}{% endfor %}"
     }
+    {% unless forloop.last %},{% endunless %}
     {% endfor %}
 
 ]
