@@ -41,18 +41,21 @@ if (data[i].text.indexOf(box.value) > -1) {
 
 result = document.createElement("DIV")
 title = document.createElement("H4");
-title.innerHTML = data[i].title;
+title.innerHTML = "<a target='_blank' href='" + data[i].url + "'>" + data[i].title + "</a>";
 result.appendChild(title)
 
 text = document.createElement("UL");
 
 words = data[i].text.split(" ");
 
+counter = 0;
+
 for (z=0; z<words.length; z++) {
     index = words[z].indexOf(box.value)
-    if(index > -1) {
+    if(index > -1 && counter < 5) {
+    counter++
     li = document.createElement("LI")
-    li.innerHTML = words.slice(z-3,z+3).join(" ")
+    li.innerHTML = "... " + words.slice(z-3,z+3).join(" ") + " ..."
     text.appendChild(li);
     }
 }
