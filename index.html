@@ -39,8 +39,16 @@ document.getElementById("search-results").innerHTML = ""
 for (i=0; i<posts.length; i++) {
 
 if (posts[i].text.indexOf(box.value) > -1) {
-result = document.createElement("DIV");
-result.innerHTML = posts[i].title;
+result = document.createElement("DIV")
+title = document.createElement("H4");
+title.innerHTML = posts[i].title;
+text = document.createElement("P");
+
+index = posts[i].text.indexOf(box.value);
+nextSpace = posts[i].text.indexOf(" ",index);
+previousSpace = posts[i].text.lastIndexOf(" ",index);
+text.innerHTML = posts[i].slice(previousSpace+1,nextSpace-1)
+result.appendChild(title).appendChild(text)
 document.getElementById("search-results").appendChild(result);
 }
 
