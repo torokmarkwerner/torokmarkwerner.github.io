@@ -35,13 +35,13 @@ box = document.getElementById("search-box");
 
 function search() {
 document.getElementById("search-results").innerHTML = ""
-for (i=0; i<posts.length; i++) {
+for (i=0; i<data.length; i++) {
 
-if (posts[i].text.indexOf(box.value) > -1) {
+if (data[i].text.indexOf(box.value) > -1) {
 
 result = document.createElement("DIV")
 title = document.createElement("H4");
-title.innerHTML = posts[i].title;
+title.innerHTML = data[i].title;
 result.appendChild(title)
 
 words = data[i].text.split(" ");
