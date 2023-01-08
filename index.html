@@ -20,3 +20,28 @@ title: "Home"
 ">M</span>
 
 </div>
+
+
+<script src="posts.json" type="text/javascript"></script>
+<input id="search-box">
+<button onclick="search()">SEARCH</button>
+
+<div id="search-results">
+</div>
+
+<script>
+posts = JSON.parse(data)
+box = document.getElementById("search-box");
+
+function search() {
+for (i=0; i<posts.length; i++) {
+
+if (posts.text.indexOf("box.innerHTML") > -1) {
+result = document.createElement("DIV");
+result.innerHTML = posts.title;
+document.getElementById("search-results").appendChild(result);
+}
+
+}
+}
+</script>
