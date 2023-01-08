@@ -4,4 +4,7 @@ data = [
     {% for post in site.posts %}
       {% include post.json %}{% unless forloop.last %},{% endunless %}
     {% endfor %}
+    {% for project in site.projects %}
+      {% include post.json %}{% unless forloop.last %},{% endunless %}
+    {% endfor %}
 ]
