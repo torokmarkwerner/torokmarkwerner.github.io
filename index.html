@@ -55,7 +55,7 @@ for (z=0; z<words.length; z++) {
     if(index > -1 && counter < 5) {
     counter++
     li = document.createElement("LI")
-    li.innerHTML = "... " + words.slice(z-3,z-1).join(" ") + "<b>" + words[z] + "</b>" + words.slice(z+1,z+3).join(" ") + " ..."
+    li.innerHTML = "... " + words.slice(z-3,z-1).join(" ") + " <b>" + words[z] + "</b> " + words.slice(z+1,z+3).join(" ") + " ..."
     text.appendChild(li);
     }
 }
