@@ -37,7 +37,7 @@ function search() {
 document.getElementById("search-results").innerHTML = ""
 for (i=0; i<data.length; i++) {
 
-if (data[i].text.indexOf(box.value) > -1) {
+if (data[i].text.toLowerCase().indexOf(box.value.toLowerCase()) > -1) {
 
 result = document.createElement("DIV")
 title = document.createElement("H4");
@@ -51,11 +51,11 @@ words = data[i].text.split(" ");
 counter = 0;
 
 for (z=0; z<words.length; z++) {
-    index = words[z].indexOf(box.value)
+    index = words[z].toLowerCase().indexOf(box.value.toLowerCase())
     if(index > -1 && counter < 5) {
     counter++
     li = document.createElement("LI")
-    li.innerHTML = "... " + [words.slice(z-3,z-1),"<b>",words[z],"</b>",words.slice(z+1,z+3)].join(" ") + " ..."
+    li.innerHTML = "... " + words.slice(z-3,z-1).join(" ") + "<b>" + words[z] + "</b>" + words.slice(z+1,z+3).join(" ") + " ..."
     text.appendChild(li);
     }
 }
