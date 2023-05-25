@@ -8,4 +8,4 @@ image: Europe_2022_MRD_Corvids.png
 language: en
 excerpt_separator: <!--end-of-excerpt-->
 ---
-<img src="/assets/Europe_2022_MRD_Corvids.png">
+<p style="text-align:center"><img src="/assets/Europe_2022_MRD_Corvids.png" width="50%"></p>
