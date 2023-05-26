@@ -35,7 +35,7 @@ Not the most endearing terms, are they? Well, in Western culture, these black bi
 
 Significant as they are in our culture, it is no surprise that Corvids have a culture of their own with social customs such as <a href="https://www.youtube.com/watch?v=0QyHybSLj6A" target="_blank">funerals</a> and highly sophisticated strategies to scare various animals of prey away from their territory (see <a href="https://www.youtube.com/watch?v=Qt-pB1R64mI" target="_blank">a hooded crow getting two cats really miffed</a> or <a href="https://www.youtube.com/watch?v=USN8spjKFlU" target="_blank">two little magpies taunting a fox</a>). They even cooperate with more distant members of their families as you can see <a href="https://www.youtube.com/watch?v=sJBIMwHDjXE" target="_blank">here</a>, for example, with a sparrowhawk harassed by two magpies and a carrion crow. Their intrepidity knows no limit in protecting their chicks and they even put up a fight with humans in the vicinity of the nest.
 
-And if the above evidence would not suffice, I will give the floor to David Attenborough who explains how city crows use cars to crack chestnuts at the crosswalk:
+And if the above evidence did not suffice, I will give the floor to David Attenborough who explains how city crows use cars to crack chestnuts at the crosswalk:
 
 <div class="video-container">
 <iframe src="https://www.youtube.com/embed/BGPGknpq3e0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
