@@ -7,7 +7,22 @@ type = "reading-text"
 type = "reading-matching"
 type = "reading-true-or-false"
 */
+
+var type = "reading-dialogue"
+
 score = 0
+
+var solutions = [
+"Is there a membership fee?",
+"What can I do if my library card is not accepted?",
+"How many books can I borrow?",
+"Can someone else pick up my books?",
+"How long can I keep my borrowed materials?",
+"How many times can I renew the items that I borrowed?",
+"What happens if I lose or damage the borrowed item?",
+"What can I take into the reading rooms?",
+"If the library doesn’t have a title I’m looking for, is it possible to order it from another library?"
+]
 
 picked = ""
 function pickAnswer(el) {
