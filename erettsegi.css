@@ -1,0 +1,196 @@
+.gap,
+.gap-disabled,
+.default-gap {
+  display: inline-block;
+  min-width: 5em;
+  width: fit-content;
+  min-height: 1em;
+  line-height: 1em;
+  background-color: lightgray;
+  border: 1pt solid black;
+  text-align: center;
+  padding: 0.2em;
+  margin: 0.1em;
+  vertical-align: middle;
+}
+
+.uoe-free>input.gap,
+input.gap-disabled,
+input.default-gap {
+  display: inline-block;
+  font-family: inherit;
+  font-size: inherit;
+  min-width: 5em;
+  width: 5em;
+  vertical-align: center;
+}
+
+.gap-container {
+  padding: 0.5em 0;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/*
+div :is(:has(.gap), :has(.default-gap), :has(.gap-disabled)) {
+  padding: 0.5em 0;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+}
+*/
+
+.reading-true-or-false>#task>.gap-container>.radio-container {
+  display: flex;
+  min-width: fit-content;
+  max-width: 100vw
+}
+
+.reading-true-or-false>#task>.gap-container>.radio-container>label {
+  cursor: pointer;
+  flex: 1 1 33%;
+  margin: 0 0.1em;
+  border: 1pt black solid;
+  text-align: center;
+}
+
+.reading-true-or-false>#task>.gap-container>.radio-container>label [type="radio"] {
+  display: none;
+}
+
+.reading-true-or-false>#task>.gap-container>.radio-container>label>[type="radio"]+span {
+  width: 100%;
+  min-width: 6em;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-variant: small-caps
+}
+
+.reading-true-or-false>#task>.gap-container>.radio-container>label>[disabled]+span {
+  cursor: text;
+}
+
+.reading-true-or-false>#task>.gap-container>.radio-container>label> :checked+span {
+  background-color: dodgerblue;
+}
+
+.reading-matching>#task>div> :is(.gap, .default-gap, .gap-disabled) {
+  flex: 1;
+  display: flex;
+  min-height: 3em;
+  align-items: center;
+}
+
+.reading-matching>#task>div>div:first-child {
+  display: flex;
+  flex: 0 0 30%;
+  justify-content: center;
+  text-align: center;
+}
+
+.reading-matching>#word-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.reading-matching>#word-list> :is(.gap, .default-gap, .gap-disabled) {
+  flex: 1 0 25%;
+  display: flex;
+  min-height: 3em;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.reading-matching>#task>div> :is(.gap, .default-gap, .gap-disabled) {
+  display: flex;
+  line-height: 1.9em;
+  padding: 0.2em;
+  justify-content: center;
+}
+
+.reading-sentence-gap-txt>#task> :is(.gap) {
+  border: black 0pt solid;
+  min-inline-size: 15em;
+  line-height: inherit;
+}
+
+.reading-sentence-gap-txt>#task> :is(.gap-disabled, .default-gap) {
+  line-height: inherit;
+  display: inline;
+  border: black 0pt solid;
+}
+
+.reading-sentence-gap-txt> :is(#word-list, #task)> :is(.gap, .gap-disabled, .default-gap) {
+  text-align: left;
+  vertical-align: middle
+}
+
+.reading-sentence-gap> :is(#task, #word-list)> :is(.gap, .gap-disabled, .default-gap) {
+  display: block;
+  margin: 0.5em 0;
+  min-width: 15em;
+  height: fit-content;
+  min-height: 1em;
+  line-height: 1.5em;
+  padding: 0.5em;
+}
+
+:is(.reading-sentence-gap, .reading-sentence-gap-txt)>#word-list {
+  max-height: 50vh;
+  height: fit-content;
+  overflow-y: scroll;
+}
+
+#word-list .gap {
+  margin: 0.2em;
+  transition: visibility 0.3s linear, opacity 0.3s linear;
+}
+
+.gap:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.gap-disabled:disabled {
+  color: inherit;
+  }
+
+.picked {
+  background-color: black;
+  color: white
+}
+
+.check-button,
+.show-button {
+  font-size: normal;
+  font-family: inherit;
+  background-color: lightgreen;
+  min-width: 5em;
+  border: 0pt;
+  padding: 0.5em;
+  margin: 0.5em 0.1em;
+}
+
+.check-button:hover,
+.show-button:hover {
+  cursor: pointer;
+  opacity: 0.9
+}
+
+.show-button {
+  background-color: lightblue
+}
+
+.correct {
+  background-color: lightgreen
+}
+
+.incorrect {
+  background-color: #FFC300
+}
