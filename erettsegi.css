@@ -173,7 +173,7 @@ input.default-gap) {
 
 .check-button,
 .show-button {
-  font-size: normal;
+  font-size: auto;
   font-family: inherit;
   background-color: lightgreen;
   min-width: 5em;
