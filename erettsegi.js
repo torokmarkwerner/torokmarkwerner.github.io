@@ -8,8 +8,8 @@ type = "reading-matching"
 type = "reading-true-or-false"
 */
 
-var type
-var taskId
+var type;
+var taskId;
 
 score = 0
 
