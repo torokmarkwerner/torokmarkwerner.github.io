@@ -13,15 +13,7 @@ var taskId;
 
 score = 0
 
-var solutions = [
-"B",
-"C",
-"B",
-"A",
-"A",
-"B",
-"C"
-]
+var solutions;
 
 trueOrFalse = {"true":"A","false":"B","doesn't say":"C"}
 
