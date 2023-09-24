@@ -14,9 +14,9 @@
   vertical-align: middle;
 }
 
-.uoe-free>input.gap,
+.uoe-free-gap-filling :is(input.gap,
 input.gap-disabled,
-input.default-gap {
+input.default-gap) {
   display: inline-block;
   font-family: inherit;
   font-size: inherit;
@@ -33,23 +33,13 @@ input.default-gap {
   align-items: center;
 }
 
-/*
-div :is(:has(.gap), :has(.default-gap), :has(.gap-disabled)) {
-  padding: 0.5em 0;
-  display: flex;
-  width: 100%;
-  flex-wrap: wrap;
-  align-items: center;
-}
-*/
-
-.reading-true-or-false>#task>.gap-container>.radio-container {
+.reading-true-or-false .radio-container {
   display: flex;
   min-width: fit-content;
   max-width: 100vw
 }
 
-.reading-true-or-false>#task>.gap-container>.radio-container>label {
+.reading-true-or-false .radio-container label {
   cursor: pointer;
   flex: 1 1 33%;
   margin: 0 0.1em;
@@ -57,11 +47,11 @@ div :is(:has(.gap), :has(.default-gap), :has(.gap-disabled)) {
   text-align: center;
 }
 
-.reading-true-or-false>#task>.gap-container>.radio-container>label [type="radio"] {
+.reading-true-or-false .radio-container label [type="radio"] {
   display: none;
 }
 
-.reading-true-or-false>#task>.gap-container>.radio-container>label>[type="radio"]+span {
+.reading-true-or-false .radio-container label [type="radio"] + span {
   width: 100%;
   min-width: 6em;
   height: 100%;
@@ -71,34 +61,43 @@ div :is(:has(.gap), :has(.default-gap), :has(.gap-disabled)) {
   font-variant: small-caps
 }
 
-.reading-true-or-false>#task>.gap-container>.radio-container>label>[disabled]+span {
+.reading-true-or-false .radio-container label [disabled] + span {
   cursor: text;
 }
 
-.reading-true-or-false>#task>.gap-container>.radio-container>label> :checked+span {
+.reading-true-or-false .radio-container label :checked + span {
   background-color: dodgerblue;
 }
 
-.reading-matching>#task>div> :is(.gap, .default-gap, .gap-disabled) {
+.reading-matching #task :is(.gap, .default-gap, .gap-disabled) {
   flex: 1;
   display: flex;
   min-height: 3em;
   align-items: center;
 }
 
-.reading-matching>#task>div>div:first-child {
+.reading-matching .gap-container div:first-child {
   display: flex;
   flex: 0 0 30%;
   justify-content: center;
   text-align: center;
 }
 
-.reading-matching>#word-list {
-  display: flex;
-  flex-wrap: wrap;
+#task {
+  line-height: 1.5em;
 }
 
-.reading-matching>#word-list> :is(.gap, .default-gap, .gap-disabled) {
+#word-list {
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 1;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  padding: 0.5em 0;
+}
+
+.reading-matching #word-list :is(.gap, .default-gap, .gap-disabled) {
   flex: 1 0 25%;
   display: flex;
   min-height: 3em;
@@ -107,31 +106,35 @@ div :is(:has(.gap), :has(.default-gap), :has(.gap-disabled)) {
   justify-content: center;
 }
 
-.reading-matching>#task>div> :is(.gap, .default-gap, .gap-disabled) {
+.reading-matching #task :is(.gap, .default-gap, .gap-disabled) {
   display: flex;
   line-height: 1.9em;
   padding: 0.2em;
   justify-content: center;
 }
 
-.reading-sentence-gap-txt>#task> :is(.gap) {
+:is(.reading-matching,.reading-true-or-false) > div:not(.instructions) {
+ line-height: 1.5em;
+}
+
+.reading-text #task .gap {
   border: black 0pt solid;
   min-inline-size: 15em;
   line-height: inherit;
 }
 
-.reading-sentence-gap-txt>#task> :is(.gap-disabled, .default-gap) {
+.reading-text #task :is(.gap-disabled, .default-gap) {
   line-height: inherit;
   display: inline;
   border: black 0pt solid;
 }
 
-.reading-sentence-gap-txt> :is(#word-list, #task)> :is(.gap, .gap-disabled, .default-gap) {
+.reading-text :is(.gap, .gap-disabled, .default-gap) {
   text-align: left;
   vertical-align: middle
 }
 
-.reading-sentence-gap> :is(#task, #word-list)> :is(.gap, .gap-disabled, .default-gap) {
+.reading-dialogue :is(.gap, .gap-disabled, .default-gap) {
   display: block;
   margin: 0.5em 0;
   min-width: 15em;
@@ -141,7 +144,7 @@ div :is(:has(.gap), :has(.default-gap), :has(.gap-disabled)) {
   padding: 0.5em;
 }
 
-:is(.reading-sentence-gap, .reading-sentence-gap-txt)>#word-list {
+:is(.reading-dialogue, .reading-text) #word-list {
   max-height: 50vh;
   height: fit-content;
   overflow-y: scroll;

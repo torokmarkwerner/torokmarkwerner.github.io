@@ -8,29 +8,34 @@ type = "reading-matching"
 type = "reading-true-or-false"
 */
 
-var type = "reading-dialogue"
+type = "reading-true-or-false"
+taskId = "23-may-standard-reading-4"
 
 score = 0
 
-var solutions = [
-"Is there a membership fee?",
-"What can I do if my library card is not accepted?",
-"How many books can I borrow?",
-"Can someone else pick up my books?",
-"How long can I keep my borrowed materials?",
-"How many times can I renew the items that I borrowed?",
-"What happens if I lose or damage the borrowed item?",
-"What can I take into the reading rooms?",
-"If the library doesn’t have a title I’m looking for, is it possible to order it from another library?"
+solutions = [
+"B",
+"C",
+"B",
+"A",
+"A",
+"B",
+"C"
 ]
 
+trueOrFalse = {"true":"A","false":"B","doesn't say":"C"}
+
 picked = ""
+pickedId = ""
 function pickAnswer(el) {
 selection = document.querySelector("#word-list > .picked");
 if(selection!=null) {
 selection.classList.toggle("picked")
 }
 picked = el.innerHTML
+if (el.id) {
+pickedId = el.id
+}
 el.classList.toggle("picked")
 }
 
@@ -40,6 +45,9 @@ if (type == "reading-text") {
 el.style.display = "inline"
 }
 el.innerHTML = picked
+if (pickedId != "") {
+el.id = pickedId
+}
 picked = ""
 selection = document.querySelector("#word-list > .picked");
 if(selection!=null) {
@@ -52,10 +60,10 @@ taskGaps = document.querySelectorAll("#task > div > .gap")
 } else if (type == "reading-true-or-false") {
 taskGaps = document.querySelectorAll(".radio-container:not(.default)")
 } else /*if (type == "uoe-word-transformation" || type == "uoe-closed-gap-filling" || type == "uoe-free-gap-filling" || type == "reading-dialogue" || type == "reading-text") */ {
-taskGaps = document.querySelectorAll("#task > .gap")
+taskGaps = document.querySelectorAll("#task .gap")
 }
 
-wordListGaps = document.querySelectorAll("#word-list > .gap")
+wordListGaps = document.querySelectorAll("#word-list .gap")
 
 /*taskGaps are: GAPS if it's a gap-filling task, RADIO-CONTAINERS if it's a true-or-false task, and GAPS inside a div tag if it's a matching task.*/
 
@@ -80,7 +88,8 @@ if (type == "uoe-word-transformation" || type == "uoe-free-gap-filling") {
 taskGaps[i].classList.remove("incorrect");
 
 if (!(taskGaps[i].disabled) && taskGaps[i].value.toLowerCase() != "" && (taskGaps[i].value.toLowerCase() == solutions[i] || solutions[i].includes(taskGaps[i].value.toLowerCase()) == true)) {
-taskGaps[i].classList.add("correct")
+taskGaps[i].classList.add("correct","gap-disabled")
+taskGaps[i].classList.remove("gap")
 taskGaps[i].disabled = true
 score++;
 } else if (!(taskGaps[i].disabled)) {
@@ -89,8 +98,9 @@ taskGaps[i].classList.add("incorrect")
 
 } else if (type == "uoe-closed-gap-filling" || type == "reading-dialogue" || type == "reading-text" || type == "reading-matching") {
 taskGaps[i].classList.remove("incorrect");
-if (!(taskGaps[i].classList.contains("correct")) && taskGaps[i].innerHTML == solutions[i] && !(taskGaps[i].classList.contains("gap-disabled"))) {
-taskGaps[i].classList.add("correct");
+if (!(taskGaps[i].classList.contains("correct")) && taskGaps[i].id.replace((taskId + "-"),"") == solutions[i] && !(taskGaps[i].classList.contains("gap-disabled"))) {
+taskGaps[i].classList.add("gap-disabled","correct");
+taskGaps[i].classList.remove("gap");
 taskGaps[i].replaceWith(taskGaps[i].cloneNode(true));
 score++;
 } else {
@@ -104,7 +114,7 @@ taskGaps[i].querySelectorAll('label > [type="radio"]').forEach((element) => {ele
 radio = taskGaps[i].querySelector(":checked");
 
 if (radio != null) {
-if (radio.nextElementSibling.innerHTML == solutions[i] && !(radio.disabled)) {
+if (trueOrFalse[radio.nextElementSibling.innerHTML] == solutions[i] && !(radio.disabled)) {
 taskGaps[i].querySelectorAll('label > [type="radio"]').forEach((element) => {element.disabled = true;});
 radio.nextElementSibling.classList.add("correct");
 radio.checked = false;
@@ -131,7 +141,7 @@ taskGaps[i].style.width = taskGaps[i].value.length + "ch";
 taskGaps[i].replaceWith(taskGaps[i].cloneNode(true));
 
 } else if (type == "uoe-closed-gap-filling" || type == "reading-dialogue" || type == "reading-text" || type == "reading-matching") {
-taskGaps[i].innerHTML = solutions[i]
+taskGaps[i].innerHTML = Array.from(wordListGaps).find(x => x.id == (taskId + "-" + solutions[i])).innerHTML;
 taskGaps[i].classList.add("gap-disabled");
 taskGaps[i].classList.remove("gap","incorrect");
 taskGaps[i].replaceWith(taskGaps[i].cloneNode(true));
@@ -142,7 +152,7 @@ for (k=0; k<taskGaps[i].querySelectorAll('label > [type="radio"]').length; k++) 
 radio = taskGaps[i].querySelectorAll('label > [type="radio"]')[k];
 radio.nextElementSibling.classList.remove("incorrect","correct");
 radio.disabled = true
-if (radio.nextElementSibling.innerHTML != solutions[i]) {
+if (radio.nextElementSibling.innerHTML != Object.keys(trueOrFalse).find(key => trueOrFalse[key] === solutions[i])) {
 radio.checked = false;
 } else {
 radio.checked = true;
