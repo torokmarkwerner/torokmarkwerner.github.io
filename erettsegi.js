@@ -8,8 +8,8 @@ type = "reading-matching"
 type = "reading-true-or-false"
 */
 
-type = "reading-true-or-false"
-taskId = "23-may-standard-reading-4"
+type
+taskId
 
 score = 0
 
