@@ -12,6 +12,8 @@
   padding: 0.2em;
   margin: 0.1em;
   vertical-align: middle;
+  font-family: inherit;
+  font-size: inherit;
 }
 
 .uoe-free-gap-filling :is(input.gap,
