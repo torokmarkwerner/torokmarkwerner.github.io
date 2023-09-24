@@ -8,12 +8,12 @@ type = "reading-matching"
 type = "reading-true-or-false"
 */
 
-type
-taskId
+var type
+var taskId
 
 score = 0
 
-solutions = [
+var solutions = [
 "B",
 "C",
 "B",
