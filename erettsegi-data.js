@@ -1,4 +1,5 @@
 data = 
+[
 {
     taskId: "23-may-standard-uoe-1",
     type: "uoe-word-transformation",
@@ -21,4 +22,4 @@ data =
     text: "<p>We asked flight attendants about the most (0) (irritate) things passengers do on planes.</p><p>As any frequent traveler will tell you, traveling by air can be a rather (1) (stress) experience, especially as more and more flights are (2) (delay) or canceled. But it's important to remember that (3) (fly) is a miracle, and those who help you get from point A to point B safely — your flight crew members — deserve the highest respect.</p><p>&quot;Our job is much more than serving food and drinks. We are safety professionals and are trained to handle (4) (emerge) situations that can occur during a flight,&quot; Andy, a current crew member at a major airline, shared with Travel + Leisure.</p><p>So, how can you get treated like a VIP in the air by your cabin crew? It couldn’t be (5) (simple): be nice.</p><p>&quot;If you show me a little respect, I'll be more than happy to make your flight as (6) (enjoy) as possible,&quot; said Andy.</p><p>We carried out a survey to ask flight attendants about what passengers do that crew members find (7) (annoy). Here are the most offensive actions you should avoid: touching a crew member without their (8) (permit), asking for water (9) (immediate) upon boarding, using the bathroom at an inappropriate time, pressing the call bell every two minutes, and last but not least, not saying thank you.</p>",
     text2: "",
   }
-  
+]
