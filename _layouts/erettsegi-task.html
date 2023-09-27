@@ -1,10 +1,10 @@
 <!doctype html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         {% assign pageData = page.task_id | split: "-" %}
+        <script> alert("{{ pageData.length }}") </script>
         {% if pageData[3] == "uoe" %}
         <title>Use of English: Task {{ pageData[4] }} 
             ({{ pageData[1] | slice: 0 | upcase }}{{ pageData[1] | slice: 1 pageData[1].length-1 }} {{ pageData[0] }})</title>
