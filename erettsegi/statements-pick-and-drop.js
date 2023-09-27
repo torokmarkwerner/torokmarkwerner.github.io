@@ -48,7 +48,7 @@ wordListGaps = document.querySelectorAll("#word-list .gap")
 if (document.getElementById("word-list")) {
 for (i=0; i<taskGaps.length; i++) {
 taskGaps[i].addEventListener("click",function(){if(this.innerText == ""){dropAnswer(this);}else{
-wordList = document.getElementById("word-list"); gap = document.createElement("DIV"); gap.innerHTML = this.innerHTML; gap.classList.add("gap"); gap.addEventListener("click",function(){pickAnswer(this)}); wordList.appendChild(gap); this.innerHTML = ""; if (type == "reading-text") {this.style.display = "inline-block"}
+wordList = document.getElementById("word-list"); gap = document.createElement("DIV"); gap.innerHTML = this.innerHTML; gap.classList.add("gap"); gap.addEventListener("click",function(){pickAnswer(this)}); wordList.appendChild(gap); this.innerHTML = ""; if (type == "reading-text") {this.style.display = "inline-block"; this.style.verticalAlign = "middle"}
 }});
 }
 }
