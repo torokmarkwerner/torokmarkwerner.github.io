@@ -7,7 +7,7 @@
     <title>
         {% assign permalink = page.permalink %}
         {% assign length = permalink.size | minus: 1 %}
-        {{ permalink | slice: 1, length | remove: "erettsegi/" | replace: "/"," / " }}
+        {{ permalink | slice: 1, length | remove: "erettsegi/" | replace: "/"," / " | replace: "standard","közép" | replace: "higher","emelt" | replace: "uoe","nyelvhelyesség" | replace: "reading","olvasott szöveg értése" }}
     </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -16,7 +16,7 @@
 </head>
 
 <body style="display:flex">
-    <div style="flex:1;min-width:100px">
+    <div style="flex:1;min-width:100px;max-width:15%">
         <style>
             #hamburger {
                 display: block;
