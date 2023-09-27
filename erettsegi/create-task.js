@@ -117,7 +117,27 @@ function populateHTML(x) {
   showButton.addEventListener("click", showAnswers)
 
   taskBody.appendChild(checkButton);
-  taskBody.appendChild(showButton)
+  taskBody.appendChild(showButton);
 
-  document.body.appendChild(taskBody)
+modalClose = document.createElement("SPAN");
+modalClose.className = "modal-close";
+modalClose.innerHTML = "&times;";
+modalClose.addEventListener("click",function() {this.parentElement.parentElement.style.display = "none"})
+
+modalP = document.createElement("P");
+
+modalBox = document.createElement("DIV");
+modalBox.id = "score-modal";
+modalBox.className = "modal-box";
+
+modalBox.appendChild(modalClose);
+modalBox.appendChild(modalP);
+
+modalBasis = document.createElement("DIV");
+modalBasis.className = "modal-basis";
+
+modalBasis.appendChild(modalBox);
+
+document.body.appendChild(modalBasis);
+  document.body.appendChild(taskBody);
 }
