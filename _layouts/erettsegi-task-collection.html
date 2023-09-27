@@ -22,7 +22,7 @@
             #hamburger {
                 display: block;
                 position: fixed;
-                background: lightskyblue;
+                background-color: lightskyblue;
                 top: 10px;
                 left: 10px;
                 width: 50px;
@@ -59,7 +59,12 @@
  <p>{{ page.url }}</p>
         {% assign tasks = site.pages | where_exp: "item" , "item.url contains page.permalink" %}
         {% for task in tasks %}
-        <li><a href="{{ task.url }}">{{ task.title }}</a></li>
+        <li><a href="{{ task.url }}">
+            {% assign pageData = task.task_id | split: "-" %}
+            {{ pageData[0] | replace: "standard", "közép" | replace: "higher", "emelt" }} / {{ pageData[1] }} / 
+            {{ pageData[2] | replace: "uoe", "nyelvhelyesség" | replace: "reading", "olvasott szöveg értése" }} / 
+            {{ pageData[3] }} 
+        </a></li>
         {% endfor %}
 
     </div>
