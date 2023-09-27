@@ -3,6 +3,8 @@
 .default-gap {
   display: inline-block;
   min-width: 5em;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
   width: fit-content;
   min-height: 1em;
   line-height: 1em;
@@ -37,6 +39,8 @@
 
 .reading-true-or-false .radio-container {
   display: flex;
+  min-width: -moz-fit-content;
+  min-width: -webkit-fit-content;
   min-width: fit-content;
   max-width: 100vw
 }
@@ -153,7 +157,10 @@
   display: block;
   margin: 0.5em 0;
   min-width: 15em;
+  height: -moz-fit-content;
+  height: -webkit-fit-content;
   height: fit-content;
+  
   min-height: 1em;
   line-height: 1.5em;
   padding: 0.5em;
@@ -162,6 +169,8 @@
 .reading-dialogue #word-list,
 .reading-text #word-list {
   max-height: 50vh;
+  height: -moz-fit-content;
+  height: -webkit-fit-content;
   height: fit-content;
   overflow-y: scroll;
 }
