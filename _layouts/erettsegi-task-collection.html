@@ -59,11 +59,9 @@
             {% assign depthChild = task.path | split: "/" | size %}
             {% if depthChild == depth %}
             <li style="padding-bottom:1em"><a href="{{ task.url }}">
-                    {% assign length = task.path | size | minus: 2 %}
-                    {{ task.path | slice: 1, length | remove: "erettsegi/" | replace: "/"," / " | replace:
-                    "standard","közép" |
-                    replace: "higher","emelt" | replace: "uoe","nyelvhelyesség" | replace: "reading","olvasott szöveg
-                    értése" }}
+                    {{ task.path | remove: "erettsegi/" | replace: "/"," / " | replace: "-", " / " | replace:
+                    "standard", "közép" | replace: "higher", "emelt" | replace: "uoe", "nyelvhelyesség" | replace:
+                    "reading", "olvasott szöveg értése" | remove: ".html" }}
                 </a></li>
             {% endif %}
             {% endfor %}
