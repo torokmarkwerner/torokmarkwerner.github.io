@@ -54,7 +54,7 @@
 
     <div>
 {{ page.permalink }}
-        {% assign tasks = site.pages | where_exp: "item" , "item.path contains page.permalink"%}
+        {% assign tasks = site.pages | where_exp: "item" , "item.path contains page.permalink" %}
         {% for task in tasks %}
         <li><a href="{{ task.url }}">{{ task.title }}</a></li>
         {% endfor %}
