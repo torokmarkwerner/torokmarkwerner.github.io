@@ -53,8 +53,12 @@
     </div>
 
     <div>
+ <p>{{ page.permalink }}</p>
+ <p>{{ page.path }}</p>
+ <p>{{ page.dir }}</p>
+ <p>{{ page.url }}</p>
  <ul>
-        {% assign tasks = site.pages | where_exp: "item" , "item.url contains page.permalink" %}
+        {% assign parentFolder = page.path | remove: page.filter_id %}
         {% assign tasks = tasks | where_exp: "item" , "item.url != page.url" %}
         {% for task in tasks %}
         <li style="padding-bottom:1em"><a href="{{ task.url }}">
