@@ -16,9 +16,9 @@
   font-size: inherit;
 }
 
-.uoe-free-gap-filling :is(input.gap,
-input.gap-disabled,
-input.default-gap) {
+.uoe-free-gap-filling input.gap,
+.uoe-free-gap-filling input.gap-disabled,
+.uoe-free-gap-filling input.default-gap {
   display: inline-block;
   font-family: inherit;
   font-size: inherit;
@@ -71,7 +71,9 @@ input.default-gap) {
   background-color: dodgerblue;
 }
 
-.reading-matching #task :is(.gap, .default-gap, .gap-disabled) {
+.reading-matching #task .gap,
+.reading-matching #task .default-gap,
+.reading-matching #task  .gap-disabled {
   flex: 1;
   display: flex;
   min-height: 3em;
@@ -99,7 +101,9 @@ input.default-gap) {
   padding: 0.5em 0;
 }
 
-.reading-matching #word-list :is(.gap, .default-gap, .gap-disabled) {
+.reading-matching #word-list .gap,
+.reading-matching #word-list .default-gap,
+.reading-matching #word-list .gap-disabled {
   flex: 1 0 25%;
   display: flex;
   min-height: 3em;
@@ -108,14 +112,17 @@ input.default-gap) {
   justify-content: center;
 }
 
-.reading-matching #task :is(.gap, .default-gap, .gap-disabled) {
+.reading-matching #task .gap,
+.reading-matching #task .default-gap,
+.reading-matching #task .gap-disabled {
   display: flex;
   line-height: 1.9em;
   padding: 0.2em;
   justify-content: center;
 }
 
-:is(.reading-matching,.reading-true-or-false) > div:not(.instructions) {
+.reading-matching > div:not(.instructions),
+.reading-true-or-false > div:not(.instructions) {
  line-height: 1.5em;
 }
 
@@ -125,19 +132,24 @@ input.default-gap) {
   line-height: inherit;
 }
 
-.reading-text #task :is(.gap-disabled, .default-gap) {
+.reading-text #task .gap-disabled,
+.reading-text #task .default-gap {
   line-height: inherit;
   display: inline;
   border: black 0pt solid;
   vertical-align: baseline;
 }
 
-.reading-text :is(.gap, .gap-disabled, .default-gap) {
+.reading-text .gap,
+.reading-text .gap-disabled,
+.reading-text .default-gap {
   text-align: left;
   vertical-align: middle
 }
 
-.reading-dialogue :is(.gap, .gap-disabled, .default-gap) {
+.reading-dialogue .gap,
+.reading-dialogue .gap-disabled,
+.reading-dialogue .default-gap {
   display: block;
   margin: 0.5em 0;
   min-width: 15em;
@@ -147,7 +159,8 @@ input.default-gap) {
   padding: 0.5em;
 }
 
-:is(.reading-dialogue, .reading-text) #word-list {
+.reading-dialogue #word-list,
+.reading-text #word-list {
   max-height: 50vh;
   height: fit-content;
   overflow-y: scroll;
