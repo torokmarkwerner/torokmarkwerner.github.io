@@ -57,19 +57,14 @@
  <p>{{ page.dir }}</p>
  <p>{{ page.url }}</p>
  <ul>
-    {% assign parentDirectoryDepth = page.dir | split: "/" | size | plus: 1  %}
-    {{ parentDirectoryDepth }}
-    {% assign tasks = site.pages | where_exp: "item" , "item.url contains page.permalink" %}
+    {% assign tasks = site.pages | where_exp: "item" , "item.dir == page.dir" %}
         {% for task in tasks %}
- {% assign childDirectoryDepth = task.dir | split: "/" | size %}
- {% if childDirectoryDepth == parentDirectoryDepth %}
         <li style="padding-bottom:1em"><a href="{{ task.url }}">
             {{ task.dir }}
             {% assign length = task.dir | size | minus: 2 %}
             {{ task.dir | slice: 1, length | remove: "erettsegi/" | replace: "/"," / " | replace: "standard","közép" |
             replace: "higher","emelt" | replace: "uoe","nyelvhelyesség" | replace: "reading","olvasott szöveg értése" }}
         </a></li>
-{% endif %}
         {% endfor %}
 </ul>
     </div>
