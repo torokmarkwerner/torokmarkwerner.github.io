@@ -129,6 +129,7 @@ input.default-gap) {
   line-height: inherit;
   display: inline;
   border: black 0pt solid;
+  vertical-align: baseline;
 }
 
 .reading-text :is(.gap, .gap-disabled, .default-gap) {
