@@ -8,12 +8,7 @@ type = "reading-matching"
 type = "reading-true-or-false"
 */
 
-var type;
-var taskId;
-
 score = 0
-
-var solutions;
 
 trueOrFalse = {"true":"A","false":"B","doesn't say":"C"}
 
