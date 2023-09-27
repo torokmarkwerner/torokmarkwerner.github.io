@@ -59,12 +59,13 @@
  <p>{{ page.url }}</p>
  <ul>
     {% assign parentFolders = page.path | split: "/" %}
+    {% directChildren = parentFolder.size | plus: 1 %}
     {{ parentFolder.size }}
     {% assign tasks = site.pages | where_exp: "item" , "item.url contains page.permalink" %}
         {% assign tasks = tasks | where_exp: "item" , "item.url != page.url" %}
         {% for task in tasks %}
  {% assign childrenFolder = task.path | split: "/" %}
- {% if childrenFolder.size == parentFolder.size | plus: 1 %}
+ {% if childrenFolder.size == directChildren %}
         <li style="padding-bottom:1em"><a href="{{ task.url }}">
 
             {% assign pageData = task.task_id | split: "-" %}
