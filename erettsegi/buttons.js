@@ -44,7 +44,8 @@ function checkAnswers() {
     
     }
     }
-    alert(score + "/" + (taskGaps.length))
+    document.getElementById("score-modal").parentElement.style.display = "flex";
+    document.getElementById("score-modal").querySelector("p").innerHTML = (score + "/" + (taskGaps.length);
     }
     
     function showAnswers(){
