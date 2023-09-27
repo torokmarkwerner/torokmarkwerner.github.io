@@ -58,7 +58,8 @@
  <p>{{ page.dir }}</p>
  <p>{{ page.url }}</p>
  <ul>
-    {% assign parentFolder = page.path | remove: page.filter_id %}
+    {% assign parentFolder = page.path | split: "/" %}
+    {{ parentFolder }}
     {% assign tasks = site.pages | where_exp: "item" , "item.url contains page.permalink" %}
         {% assign tasks = tasks | where_exp: "item" , "item.url != page.url" %}
         {% for task in tasks %}
