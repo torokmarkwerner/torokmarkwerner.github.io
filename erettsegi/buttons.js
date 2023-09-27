@@ -45,7 +45,7 @@ function checkAnswers() {
     }
     }
     document.querySelector("#score-modal").parentElement.style.display = "flex";
-    document.querySelector("#score-modal p").innerHTML = (score + "/" + (taskGaps.length));
+    document.querySelector("#score-modal p").innerHTML = score + "/" + taskGaps.length;
     }
     
     function showAnswers(){
