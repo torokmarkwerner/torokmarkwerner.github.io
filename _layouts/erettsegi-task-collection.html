@@ -7,7 +7,8 @@
     <title>
         {% assign permalink = page.permalink %}
         {% assign length = permalink.size | minus: 2 %}
-        {{ permalink | slice: 1, length | remove: "erettsegi/" | replace: "/"," / " | replace: "standard","közép" | replace: "higher","emelt" | replace: "uoe","nyelvhelyesség" | replace: "reading","olvasott szöveg értése" }}
+        {{ permalink | slice: 1, length | remove: "erettsegi/" | replace: "/"," / " | replace: "standard","közép" |
+        replace: "higher","emelt" | replace: "uoe","nyelvhelyesség" | replace: "reading","olvasott szöveg értése" }}
     </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -52,9 +53,10 @@
     </div>
 
     <div>
-{% assign posts = site.pages | where_exp: "item" , "item.path contains page.permalink"%}
-        {% for post in posts %}
-          <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+
+        {% assign tasks = site.pages | where_exp: "item" , "item.path contains page.permalink"%}
+        {% for task in tasks %}
+        <li><a href="{{ task.url }}">{{ task.title }}</a></li>
         {% endfor %}
 
     </div>
