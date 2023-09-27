@@ -59,7 +59,7 @@
  <ul>
     {% assign depth = page.path | split: "/" | size | plus: 1 %}
     <p>{{ depth }}</p>
-    {% assign tasks = site.pages | where_exp: "item" , "item.dir == page.dir" %}
+    {% assign tasks = site.pages | where_exp: "item" , "item.url contains page.permalink" %}
         {% for task in tasks %}
     {% assign depthChild = task.path | split: "/" | size %}
     {% if depthChild == depth %}
