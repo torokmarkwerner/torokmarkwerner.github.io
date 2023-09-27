@@ -1,9 +1,9 @@
-score = 0
+score = 0;
 
-trueOrFalse = {"true":"A","false":"B","doesn't say":"C"}
+trueOrFalse = {"true":"A","false":"B","doesn't say":"C"};
 
-picked = ""
-pickedId = ""
+picked = "";
+pickedId = "";
 function pickAnswer(el) {
 selection = document.querySelector("#word-list > .picked");
 if(selection!=null) {
@@ -19,16 +19,17 @@ el.classList.toggle("picked")
 function dropAnswer(el) {
 isVisibleThen()
 if (type == "reading-text") {
-el.style.display = "inline"
+el.style.display = "inline";
+el.style.verticalAlign = "baseline";
 }
-el.innerHTML = picked
+el.innerHTML = picked;
 if (pickedId != "") {
-el.id = pickedId
+el.id = pickedId;
 }
-picked = ""
+picked = "";
 selection = document.querySelector("#word-list > .picked");
 if(selection!=null) {
-selection.outerHTML = ""
+selection.outerHTML = "";
 }
 }
 
