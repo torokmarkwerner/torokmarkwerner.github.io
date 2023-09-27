@@ -57,14 +57,14 @@
  <p>{{ page.dir }}</p>
  <p>{{ page.url }}</p>
  <ul>
-    {% assign parentDirectoryDepth = page.path | split: "/" | size | plus: 1  %}
+    {% assign parentDirectoryDepth = page.dir | split: "/" | size | plus: 1  %}
     {{ parentDirectoryDepth }}
     {% assign tasks = site.pages | where_exp: "item" , "item.url contains page.permalink" %}
         {% for task in tasks %}
- {% if task.path | split: "/" | size == parentDirectoryDepth %}
+ {% if task.dir | split: "/" | size == parentDirectoryDepth %}
         <li style="padding-bottom:1em"><a href="{{ task.url }}">
-            {% assign length = task.permalink | size | minus: 2 %}
-            {{ task.permalink | slice: 1, length | remove: "erettsegi/" | replace: "/"," / " | replace: "standard","közép" |
+            {% assign length = task.dir | size | minus: 2 %}
+            {{ task.dir | slice: 1, length | remove: "erettsegi/" | replace: "/"," / " | replace: "standard","közép" |
             replace: "higher","emelt" | replace: "uoe","nyelvhelyesség" | replace: "reading","olvasott szöveg értése" }}
         </a></li>
 {% endif %}
