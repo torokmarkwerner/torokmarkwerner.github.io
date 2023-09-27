@@ -1,13 +1,3 @@
-/*
-type = "uoe-word-transformation"
-type = "uoe-closed-gap-filling"
-type = "uoe-free-gap-filling"
-type = "reading-dialogue"
-type = "reading-text"
-type = "reading-matching"
-type = "reading-true-or-false"
-*/
-
 score = 0
 
 trueOrFalse = {"true":"A","false":"B","doesn't say":"C"}
