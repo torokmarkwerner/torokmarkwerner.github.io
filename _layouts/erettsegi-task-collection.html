@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
         {% assign permalink = page.permalink %}
-        {% assign length = permalink.size | minus: 1 %}
+        {% assign length = permalink.size | minus: 2 %}
         {{ permalink | slice: 1, length | remove: "erettsegi/" | replace: "/"," / " | replace: "standard","közép" | replace: "higher","emelt" | replace: "uoe","nyelvhelyesség" | replace: "reading","olvasott szöveg értése" }}
     </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
