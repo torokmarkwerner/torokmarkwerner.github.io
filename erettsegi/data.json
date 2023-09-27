@@ -1,6 +1,6 @@
 [
   {
-    "taskId": "23-may-standard-uoe-1",
+    "taskId": "standard-23-may-uoe-1",
     "type": "uoe-word-transformation",
     "solutions": "[[\"stressful\", \"stressed\", \"stressing\"], [\"delayed\"],  [\"flying\", \"flight\"],  [\"emergency\", \"emergent\", \"emerging\"], [\"simpler\"],  [\"enjoyable\"],  [\"annoying\"], [\"permission\"],  [\"immediately\"]]",
     "taskTitle": "Task 1",
@@ -12,7 +12,7 @@
     "text2": ""
   },
   {
-    "taskId": "23-may-standard-uoe-2",
+    "taskId": "standard-23-may-uoe-2",
     "type": "uoe-closed-gap-filling",
     "solutions": "[\"D\", \"H\", \"F\", \"K\", \"M\", \"A\", \"G\", \"I\"]",
     "taskTitle": "Task 2",
@@ -24,7 +24,7 @@
     "text2": ""
   },
   {
-    "taskId": "23-may-standard-uoe-3",
+    "taskId": "standard-23-may-uoe-3",
     "type": "uoe-free-gap-filling",
     "solutions": "[[\"to\"],[\"up\"],[\"as\",\"in\",\"become\",\"becoming\",\"inspire\"],[\"to\"],[\"be\",\"feel\"],[\"like\",\"resembling\"],[\"makes\"],[\"out\",\"in\",\"their\"]]",
     "taskTitle": "Task 3",
@@ -36,7 +36,7 @@
     "text2": ""
   },
   {
-    "taskId": "23-may-standard-reading-1",
+    "taskId": "standard-23-may-reading-1",
     "type": "reading-dialogue",
     "solutions": "[\"G\",\"F\",\"H\",\"B\",\"K\",\"L\",\"M\",\"I\",\"D\"]",
     "taskTitle": "Task 1",
@@ -48,7 +48,7 @@
     "text2": ""
   },
   {
-    "taskId": "23-may-standard-reading-2",
+    "taskId": "standard-23-may-reading-2",
     "type": "reading-text",
     "solutions": "[\"H\",\"G\",\"D\",\"A\",\"I\",\"B\"]",
     "taskTitle": "Task 2",
@@ -60,7 +60,7 @@
     "text2": ""
   },
   {
-    "taskId": "23-may-standard-reading-3",
+    "taskId": "standard-23-may-reading-3",
     "type": "reading-matching",
     "solutions": "[\"B\",\"F\",\"D\",\"I\",\"E\",\"H\"]",
     "taskTitle": "Task 3",
@@ -72,7 +72,7 @@
     "text2": "<div class='gap-container'><div>In The Yellow Room</div><div class='gap'></div></div><div class='gap-container'><div>In The Pink Room</div><div class='gap'></div></div><div class='gap-container'><div>In The Green Room</div><div class='gap'></div></div><div class='gap-container'><div>In The Grey Room</div><div class='gap'></div></div><div class='gap-container'><div>In The Black Room</div><div class='gap'></div></div><div class='gap-container'><div>In The Blue Room</div><div class='gap'></div></div><div class='gap-container'><div>In The Red Room</div><div class='gap'></div></div>"
   },
   {
-    "taskId": "23-may-standard-reading-4",
+    "taskId": "standard-23-may-reading-4",
     "type": "reading-true-or-false",
     "solutions": "[\"B\",\"C\",\"B\",\"A\",\"A\",\"B\",\"C\"]",
     "taskTitle": "Task 4",
