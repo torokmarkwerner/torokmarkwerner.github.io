@@ -5,9 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-        {% assign permalink = page.permalink %}
-        {% assign length = permalink.size | minus: 2 %}
-        {{ permalink | slice: 1, length | remove: "erettsegi/" | replace: "/"," / " | replace: "standard","közép" |
+        {% assign length = page.permalink | size | minus: 2 %}
+        {{ page.permalink | slice: 1, length | remove: "erettsegi/" | replace: "/"," / " | replace: "standard","közép" |
         replace: "higher","emelt" | replace: "uoe","nyelvhelyesség" | replace: "reading","olvasott szöveg értése" }}
     </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -58,18 +57,15 @@
  <p>{{ page.dir }}</p>
  <p>{{ page.url }}</p>
  <ul>
-    {% assign parentFolder = page.path | split: "/" | size | plus: 1  %}
-    {{ parentFolder }}
+    {% assign parentDirectoryDepth = page.path | split: "/" | size | plus: 1  %}
+    {{ parentDirectoryDepth }}
     {% assign tasks = site.pages | where_exp: "item" , "item.url contains page.permalink" %}
         {% for task in tasks %}
- {% assign childrenFolder = task.path | split: "/" %}
- {% if childrenFolder.size == parentFolder %}
+ {% if task.path | split: "/" | size == parentDirectoryDepth %}
         <li style="padding-bottom:1em"><a href="{{ task.url }}">
-
-            {% assign pageData = task.task_id | split: "-" %}
-            {{ pageData[0] | replace: "standard", "közép" | replace: "higher", "emelt" }} / {{ pageData[1] }} / 
-            {{ pageData[2] | replace: "uoe", "nyelvhelyesség" | replace: "reading", "olvasott szöveg értése" }} / 
-            {{ pageData[3] }} 
+            {% assign length = task.permalink | size | minus: 2 %}
+            {{ task.permalink | slice: 1, length | remove: "erettsegi/" | replace: "/"," / " | replace: "standard","közép" |
+            replace: "higher","emelt" | replace: "uoe","nyelvhelyesség" | replace: "reading","olvasott szöveg értése" }}
         </a></li>
 {% endif %}
         {% endfor %}
