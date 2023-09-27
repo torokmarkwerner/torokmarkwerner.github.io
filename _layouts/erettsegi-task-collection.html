@@ -52,10 +52,9 @@
     </div>
 
     <div>
-{% assign searchexp = {{ page.permalink }} %}
-{% assign pages = site.pages | where_exp: "item" , "item.path contains searchexp"%}
+{% assign pages = site.pages | where_exp: "item" , "item.path contains page.permalink"%}
         {% for page in pages %}
-          <li><a href="{{ page.url }}">{{ post.title }}</a></li>
+          <li><a href="{{ page.url }}">{{ page.title }}</a></li>
         {% endfor %}
 
     </div>
