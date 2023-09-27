@@ -58,17 +58,21 @@
  <p>{{ page.dir }}</p>
  <p>{{ page.url }}</p>
  <ul>
-    {% assign parentFolder = page.path | split: "/" %}
+    {% assign parentFolders = page.path | split: "/" %}
     {{ parentFolder.size }}
     {% assign tasks = site.pages | where_exp: "item" , "item.url contains page.permalink" %}
         {% assign tasks = tasks | where_exp: "item" , "item.url != page.url" %}
         {% for task in tasks %}
+ {% assign childrenFolder = task.path | split: "/" %}
+ {% if childrenFolder.size == parentFolder.size | plus: 1 %}
         <li style="padding-bottom:1em"><a href="{{ task.url }}">
+
             {% assign pageData = task.task_id | split: "-" %}
             {{ pageData[0] | replace: "standard", "közép" | replace: "higher", "emelt" }} / {{ pageData[1] }} / 
             {{ pageData[2] | replace: "uoe", "nyelvhelyesség" | replace: "reading", "olvasott szöveg értése" }} / 
             {{ pageData[3] }} 
         </a></li>
+{% endif %}
         {% endfor %}
 </ul>
     </div>
