@@ -199,3 +199,37 @@ input.default-gap) {
 .incorrect {
   background-color: #FFC300
 }
+
+.modal-basis {
+  z-index: 2;
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.7);
+  vertical-align: middle;
+}
+
+.modal-box {
+  margin: auto;
+  background-color: white;
+  width: 80%;
+  padding: 0.5em;
+  text-align: center;
+  border-radius: 0.2em;
+  border: 1pt black solid;
+}
+
+.modal-close {
+  float: right;
+  font-weight: bold;
+  color: #aaaaaa;
+  font-size: 28px;
+}
+
+.modal-close:hover {
+  color: black;
+  cursor: pointer;
+}
