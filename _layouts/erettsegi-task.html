@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         {% assign pageData = page.task_id | split: "-" %}
         {% if pageData[3] == "uoe" %}
-        <title>Use of English: Task {{ pageData[4] }} ({{ pageData[1] | camelcase }} {{ pageData[0] }})</title>
+        <title>Use of English: Task {{ pageData[4] }} ({{ pageData[1] | slice 0 | upcase }} {{ pageData[0] }})</title>
         {% else %}
         <title>Reading</title>
         {% endif %}
