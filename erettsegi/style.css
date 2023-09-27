@@ -31,6 +31,8 @@
 
 .gap-container {
   padding: 0.5em 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
   flex-wrap: wrap;
@@ -38,6 +40,8 @@
 }
 
 .reading-true-or-false .radio-container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   min-width: -moz-fit-content;
   min-width: -webkit-fit-content;
@@ -61,6 +65,8 @@
   width: 100%;
   min-width: 6em;
   height: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -79,12 +85,16 @@
 .reading-matching #task .default-gap,
 .reading-matching #task  .gap-disabled {
   flex: 1;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   min-height: 3em;
   align-items: center;
 }
 
 .reading-matching .gap-container div:first-child {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   flex: 0 0 30%;
   justify-content: center;
@@ -96,6 +106,8 @@
 }
 
 #word-list {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
   z-index: 1;
@@ -109,6 +121,8 @@
 .reading-matching #word-list .default-gap,
 .reading-matching #word-list .gap-disabled {
   flex: 1 0 25%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   min-height: 3em;
   align-items: center;
@@ -119,6 +133,8 @@
 .reading-matching #task .gap,
 .reading-matching #task .default-gap,
 .reading-matching #task .gap-disabled {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   line-height: 1.9em;
   padding: 0.2em;
@@ -177,6 +193,8 @@
 
 #word-list .gap {
   margin: 0.2em;
+  -webkit-transition: visibility 0.3s linear, opacity 0.3s linear;
+  -moz-transition: visibility 0.3s linear, opacity 0.3s linear;
   transition: visibility 0.3s linear, opacity 0.3s linear;
 }
 
@@ -241,6 +259,8 @@
   width: 80%;
   padding: 0.5em;
   text-align: center;
+  -webkit-border-radius: 0.2em;
+  -moz-border-radius: 0.2em;
   border-radius: 0.2em;
   border: 1pt black solid;
 }
@@ -252,7 +272,8 @@
   font-size: 28px;
 }
 
-.modal-close:hover {
+.modal-close:hover,
+.modal-close:focus {
   color: black;
   cursor: pointer;
 }
