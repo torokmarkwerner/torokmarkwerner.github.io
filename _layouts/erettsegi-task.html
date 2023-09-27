@@ -3,15 +3,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% assign pageData = page.task_id | split: "-" %}
-        {% if pageData[3] == "uoe" %}
-{{ pageData[0] | slice: 0 | upcase }}{{ pageData[0] | slice: 1, pageData[0].size }} / 
-{{ pageData[2] | slice: 0 | upcase }}{{ pageData[2] | slice: 1, pageData[2].size }} {{ pageData[1] }} / 
-Use of English / 
+    <title>
+{% assign pageData = page.task_id | split: "-" %}
+{{ pageData[0] }} / {{ pageData[1] }}{{ pageData[2] }} / 
+{{ pageData[3] | replace: "uoe", "Use of English" | replace: "reading", "Reading" }} / 
 {{ pageData[4] }} 
-        {% else %}
-        Reading
-        {% endif %}
     </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
