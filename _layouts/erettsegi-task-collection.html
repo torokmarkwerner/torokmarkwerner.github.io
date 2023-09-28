@@ -16,7 +16,7 @@
 </head>
 
 <body style="display:flex">
-    <div style="flex:1;min-width:100px;max-width:15%">
+    <div style="flex:1;width:100px">
         <style>
             #hamburger {
                 display: block;
@@ -51,7 +51,7 @@
         </div>
     </div>
 
-    <div>
+    <div style="width:calc(100% - 100px)">
        <h1>{% assign title = page.path | remove: "erettsegi/" | replace: "/"," / " | replace: "-", " / " | replace:
         "standard", "közép" | replace: "higher", "emelt" | replace: "uoe", "nyelvhelyesség" | replace:
         "reading", "olvasott szöveg értése" | remove: ".html" | remove: ".md" %} {{ title }}</h1>
