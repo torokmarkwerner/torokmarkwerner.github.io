@@ -14,6 +14,6 @@ Az érettségiző először az írásbeli vizsgát írja meg, amelynek a követk
 
 Az írásbeli és a szóbeli vizsgán az elérhető pontszámnak legalább 12%-át kell teljesíteni, ez tehát azt jelenti, hogy az írásbelin az elérhető 117 pontból min. 15 pont kell a sikeres vizsgához (a szóbelin ugyanez 4 pont).
 
-Az írásbeli vizsga időtartama viszonylag hosszú, ezért két, egyenként 90 perces menetben zajlik, egy 15 perces szünettel. Ezt a vizsgát az érettségizők egyszerre írják általában májusban (a klímaváltozásnak köszönhetően egyre melegebb időjárási körülmények mellett), majd egy hónapra rá egyénileg vesznek részt a kb. 15 perces szóbelin (szurkolj, hogy legyen klíma).
+Az írásbeli vizsga viszonylag hosszú, ezért két, egyenként 90 perces menetben zajlik, egy 15 perces szünettel. Ezt a vizsgát az érettségizők egyszerre írják általában májusban (a klímaváltozásnak köszönhetően egyre melegebb időjárási körülmények mellett), majd egy hónapra rá egyénileg vesznek részt a kb. 15 perces szóbelin (szurkolj, hogy legyen klíma).
 
 Az alábbiakban a korábbi évek vizsgafeladataival tudsz gyakorolni az érettségire. Jó munkát!
