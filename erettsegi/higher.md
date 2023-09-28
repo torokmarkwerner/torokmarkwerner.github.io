@@ -10,7 +10,7 @@ Az érettségiző először az írásbeli vizsgát írja meg, amelynek a követk
 - hallott szöveg értése (30 perc, 30 pont*),
 - íráskészség (90 perc, 30 pont*).
 
-*Ezek vizsgapontok, a feladatok összpontszáma nem feltétlenül adja ki ezt, ezért a feladatpontokat egy táblázat alapján átszámítják, így lesznek belőlük vizsgapontok.
+<p style="font-size:small">*Ezek vizsgapontok, a feladatok összpontszáma nem feltétlenül adja ki ezt, ezért a feladatpontokat egy táblázat alapján átszámítják, így lesznek belőlük vizsgapontok.</p>
 
 Az írásbeli és a szóbeli vizsgán az elérhető pontszámnak legalább 12%-át kell teljesíteni, ez tehát azt jelenti, hogy az írásbelin az elérhető 120 pontból min. 15 pont kell a sikeres vizsgához (a szóbelin ugyanez 4 pont).
 
