@@ -1,0 +1,1029 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TM | Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.png?">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  </head>
+  <style>
+#search-button:hover {
+  opacity: 0.9;
+  cursor:pointer;
+}
+.abc-parantheses {
+  counter-reset: abc;
+}
+.abc-parantheses > li {
+  list-style: none;
+  padding: 0.5em 0
+}
+.abc-parantheses > li:before {
+  content: counter(abc, lower-alpha) ") ";
+  counter-increment: abc;
+}
+    .language {
+    display: inline;
+    background-color: #b5d5ff;
+    padding: 0.5em;
+    text-transform: uppercase;
+    }
+    summary {
+      color:crimson;
+      font-weight:bold
+    }
+    summary:hover {
+      cursor:pointer;
+      opacity:0.9
+    }
+    #rating-container2 {
+      max-width:100px;
+    }
+    #rating-container {
+      padding:0;
+      margin:0;
+      position:relative;
+      font-size:150%;
+      width:100%;
+      }
+    
+    #rating-basic-stars {
+      padding:0;
+      margin:0;
+      color: grey;
+      position: relative;
+      width: 100%;
+      overflow:hidden;
+    }
+    
+    #rating-rating {
+      padding:0;
+      margin:0;
+      color: orange;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: calc(100% * var(--rate)/5);
+      overflow:hidden;
+    }
+    .rating-scoretable {
+      display:none;
+      padding: 0.5em 0;
+      table-layout:fixed;
+      width:100%;
+      text-align:center;
+    }
+    .rating-scoretable td {
+      border: 1px black solid;
+      height:2em
+    }
+    .rating-scoretable th {
+      color:white;
+      font-weight: normal;
+      background-color:black;
+    }
+    </style>
+<style>
+  .pages-button {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      }
+    
+    .video-container iframe, .video-container object, .video-container embed { 
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      }
+</style>
+<style>
+  acronym[title] {
+    text-decoration-thickness: from-font;
+    text-underline-position: from-font;
+  }
+  html, body { height: 100%; }
+  .toc {
+    background-color: lemonchiffon;
+    padding: 1em;
+    min-width:50%;
+    width:fit-content;
+    font-variant-caps: petite-caps;
+  }
+  .toc div {
+    padding-top: 0.5em;
+    font-weight: bold;
+    text-align:center;
+  }
+  .toc ul {
+    padding-inline-start: 1em;
+    padding-inline-end: 1em;
+    margin-block-start: 1em;
+    margin-block-end: 0em;
+    list-style: none;
+  }
+  .toc li {
+    padding-bottom:1em
+  }
+  .toc li a {
+    text-decoration: none;
+  }
+  #content-container h2 {
+  padding-top:0.5em
+  }
+  .highlighted-text {
+    background-color: antiquewhite;
+    padding: 0.5em;
+    font-size: 115%;
+    font-weight: bold;
+    display:block;
+  }
+  #content-container img:not(.related-post-image) {
+    max-width: 100%
+  }
+  .examples table {
+  border-collapse:collapse
+  }
+  .examples td {
+  padding: 0.5em;
+  border:0.5px black solid
+  }
+  .examples tr td:nth-child(1) {
+  min-width:fit-content;
+  text-align:center;
+  }
+  .examples {
+  counter-increment: my-sec-counter;
+  counter-reset: my-sec-counter2;
+}
+
+.examples ol {
+counter-reset: my-sec-counter2;
+list-style-type: none;
+display:table;
+border-collapse: separate;
+border-spacing: 0.5em;
+padding:0.5em 2em 0.5em 2em;
+padding-inline-start: 0;
+}
+
+.examples ol li {
+display: table-row;
+}
+
+.examples ol li::before {
+  counter-increment: my-sec-counter2;
+  content: counter(my-sec-counter) counter(my-sec-counter2, upper-alpha) " ";
+  display:table-cell;
+  text-align:left;
+  width:2em;
+  vertical-align:middle;
+}
+::-moz-selection { /* Code for Firefox */
+  color: HighlightText;
+  background: Highlight;
+}
+::selection {
+  color: HighlightText;
+  background: Highlight;
+}
+.tag-name {
+  color: chocolate;
+  font-weight: bold;
+  text-decoration: none;
+  }
+.tag-name:hover {
+  opacity:0.9
+  }
+.post-title {
+    display: inline-block;
+    background-color: lightgoldenrodyellow;
+    color: black;
+    text-decoration: none;
+    padding: 0.5em;
+  }
+.post-title:hover {
+  background-color: antiquewhite;
+  opacity:0.9;
+  }
+.fa.fa-facebook, .fa.fa-google, .fa.fa-linkedin {
+ font-size: 20px;
+ width: 40px;
+ height: 40px;
+ line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0.5em 0.2em;
+  border-radius:5px;
+  }
+  .fa.fa-facebook:hover, .fa.fa-google:hover, .fa.fa-linkedin:hover {
+    cursor:pointer;
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+</style>
+  <style>
+body {
+  font-family: "Calibri", "Arial", sans-serif;
+  margin: 0;
+  border: 0;
+  padding:0;
+    width:100%;
+  overflow-y: scroll;
+  }
+.page-wrapper {
+  width:80vw;
+  display:flex;
+  min-height:100%;
+  height:fit-content;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  padding-top:10px
+}
+#sticky {
+  text-align:center;
+  width:20vw;
+    position: sticky;
+    top: 10px;
+    align-self: flex-start;
+}
+.pages-button {
+  font-size:125%;
+  padding: 0.5em;
+}
+.pages-button:hover {
+  background-color:lightskyblue;
+  cursor:pointer;
+  font-weight:bold;
+}
+.pages-button-current {
+      background-color:palegreen;
+      
+    }
+#content-container {
+      padding:0 0 0 2em;
+      width:40vw
+    }
+    
+@media (max-width: 767px) {
+    .sticky {
+      display:none;
+    }
+    #content-container {
+      width:80vw;
+    }
+  }
+    
+</style>
+<body>
+<div class="page-wrapper">
+  <div id="background" style="opacity:0.8;width:100%;height:100%;background-color:black;top:0;left:0;position:fixed;display:none;z-index:2">
+</div>
+
+<style>
+#hamburger {
+  display: none;
+  }
+  
+#sticky img {
+  width: 100%;
+  }
+#close {
+  display: none;
+  }
+@media (max-width: 767px) {
+#hamburger {
+    display: block;
+    position: fixed;
+    background: lightskyblue;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    transition: all 0.5s;
+}
+.hamburger-line {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 8.5px auto;
+}
+#hamburger:hover {
+  opacity:0.8;
+  cursor:pointer;
+}
+#sticky {
+    background-color: white;
+    position: fixed;
+    top:0px;
+    left:0px;
+    width:50%;
+    height:100%;
+    transform: translate3d(-100vw, 0, 0);
+    transition: all 0.5s;
+    min-width:fit-content;
+    z-index: 3
+    }
+#sticky img {
+  width: 40vw;
+  }
+#close {
+    display: block;
+    position:relative;
+    font-size:50px;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    background-color:black;
+    color:white;
+    text-align:center;
+    line-height:50px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+#close:hover {
+  cursor:pointer;
+}
+ }
+</style>
+
+<div>
+<div id="hamburger" onclick="openNav()">
+<div class="hamburger-line"></div>
+<div class="hamburger-line"></div>
+<div class="hamburger-line"></div>
+</div>
+</div>
+
+<script>
+function openNav() {
+document.getElementById("sticky").style.transform = "translate3d(0, 0, 0)"
+document.getElementById("hamburger").style.display = "none"
+document.getElementById("background").style.display = "block"
+}
+
+function hideNav() {
+document.getElementById("sticky").style.transform = "translate3d(-100vw, 0, 0)"
+document.getElementById("hamburger").style.display = "block"
+document.getElementById("background").style.display = "none"
+}
+</script>
+  
+<div id="sticky">
+<div id="close" onclick="hideNav()">&times;</div>
+<div style="display: inline-flex;vertical-align: bottom;"><img src="https://avatars.githubusercontent.com/u/98919050"/></div>
+<a id="about" class="pages-button" href="/about">ABOUT</a>
+<a id="projects" class="pages-button" href="/projects">PROJECTS</a>
+<a id="blog" class="pages-button" href="/blog">BLOG</a>
+<a id="contact" class="pages-button" href="/contact">CONTACT</a>
+<div style="text-align:center">
+<a href="https://www.facebook.com/torok.mark.werner" target="_blank" class="fa fa-facebook"></a>
+<a href="mailto:torokmarkwerner@gmail.com" target="_blank" class="fa fa-google"></a>
+<a href="https://www.linkedin.com/in/torok-mark-werner" target="_blank" class="fa fa-linkedin"></a>
+  </div>
+</div>
+
+  <script>
+//alert(document.location.pathname + " --> And this is the substring:" + document.location.pathname.toString().substring(1,document.location.pathname.toString().length-1))
+pages = document.getElementsByClassName("pages-button");
+for (i=0; i<pages.length; i++) {
+  if(("/" + pages[i].textContent.toLowerCase() + "/") === document.location.pathname) {
+    pages[i].classList.toggle("pages-button-current");
+    pages[i].style.backgroundColor = "palegreen";
+    pages[i].style.fontWeight = "bold"
+  }
+}
+</script>
+<div id="content-container">
+<h1>Blog</h1>
+    <div class="posts">
+  
+    <article style="padding-bottom:1.5em;" class="post">
+
+      <h1><a class="post-title" href="/2023/05/25/the-hooded-crow-the-pigeon-and-the-trash-can.html">The Hooded Crow, The Pigeon, and the Trash Can</a></h1>
+      <div>25 May 2023 | <span class="ert">
+  <acronym title="Estimated reading time">ERT</acronym>:
+    
+    
+    3 mins
+</span>
+<p><span>
+  <a class="tag-name" style="color:black" href="/tag/en"><div class="language">English</div></a>
+  
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/environment">ENVIRONMENT</a>] </div>
+  
+</span></p>
+      </div>
+      <div class="entry">
+        <p>I remember when I first saw a hooded crow (<em>dolmányos varjú</em>). I was around 15 and went for an afternoon trip from our home town to Budapest. We visited a cosy little park at the Buda end of Elisabeth Bridge, and there were these strange-looking, gray-chested crows.</p>
+
+      </div>
+
+      <a style="font-variant:all-petite-caps" href="/2023/05/25/the-hooded-crow-the-pigeon-and-the-trash-can.html" class="read-more">Read More</a>
+    </article>
+  
+    <article style="padding-bottom:1.5em;" class="post">
+
+      <h1><a class="post-title" href="/2022/12/23/van-helsing.html">Oh The Movies | Van Helsing (2004)</a></h1>
+      <div>23 December 2022 | <span class="ert">
+  <acronym title="Estimated reading time">ERT</acronym>:
+    
+    
+    1 min
+</span>
+<p><span>
+  <a class="tag-name" style="color:black" href="/tag/en"><div class="language">English</div></a>
+  
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/movies">MOVIES</a>] </div>
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/American">AMERICAN</a>] </div>
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/action">ACTION</a>] </div>
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/gothic">GOTHIC</a>] </div>
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/vampire">VAMPIRE</a>] </div>
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/horror">HORROR</a>] </div>
+  
+</span></p>
+      </div>
+      <div class="entry">
+        <p><em>Van Helsing</em> is an unusual steampunk adaptation of Shelley’s <em>Frankenstein</em> and Stoker’s <em>Dracula</em>. If this weren’t enough, <em>Van Helsing</em> is also hesitant to decide whether it wants to be a serious flip on the stories or a parody of them.</p>
+
+      </div>
+
+      <a style="font-variant:all-petite-caps" href="/2022/12/23/van-helsing.html" class="read-more">Read More</a>
+    </article>
+  
+    <article style="padding-bottom:1.5em;" class="post">
+
+      <h1><a class="post-title" href="/2022/12/23/old-people.html">Oh The Movies | Old People (2022)</a></h1>
+      <div>23 December 2022 | <span class="ert">
+  <acronym title="Estimated reading time">ERT</acronym>:
+    
+    
+    1 min
+</span>
+<p><span>
+  <a class="tag-name" style="color:black" href="/tag/en"><div class="language">English</div></a>
+  
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/movies">MOVIES</a>] </div>
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/German">GERMAN</a>] </div>
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/horror">HORROR</a>] </div>
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/getting-old">GETTING-OLD</a>] </div>
+  
+</span></p>
+      </div>
+      <div class="entry">
+        <p>Have you seen Shyamalan’s <em>Old</em> (2022)? <em>The Taking of Deborah Logan</em> (2014)? <em>The Relic</em> (2020)? <em>Hereditary</em> (2018)? And <em>The Visit</em> (2015)?</p>
+
+<p>Getting old is scary, and <em>Old People</em> is another example for that. The basic concept of the German horror is the same as any other zombie with zombies swapped for elderly people. Straight outta Saalheim, 
+the retirement home.</p>
+
+      </div>
+
+      <a style="font-variant:all-petite-caps" href="/2022/12/23/old-people.html" class="read-more">Read More</a>
+    </article>
+  
+    <article style="padding-bottom:1.5em;" class="post">
+
+      <h1><a class="post-title" href="/2022/12/23/nosferatu-the-vampyre.html">Oh The Movies | Nosferatu the Vampyre (1979)</a></h1>
+      <div>23 December 2022 | <span class="ert">
+  <acronym title="Estimated reading time">ERT</acronym>:
+    
+    
+    1 min
+</span>
+<p><span>
+  <a class="tag-name" style="color:black" href="/tag/en"><div class="language">English</div></a>
+  
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/movies">MOVIES</a>] </div>
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/German">GERMAN</a>] </div>
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/French">FRENCH</a>] </div>
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/vampire">VAMPIRE</a>] </div>
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/horror">HORROR</a>] </div>
+  
+</span></p>
+      </div>
+      <div class="entry">
+        <p>Werner Herzog is a versatile master of cinematography. I remember seeing his <em>Grizzly Man</em> (2005) and listening to him narrating Timothy Treadwell’s incredible story. Now, <em>Nosferatu the Vampyre</em> (1979) is a whole different story, and not just another shot at Bram Stoker’s <em>Dracula</em>.</p>
+
+      </div>
+
+      <a style="font-variant:all-petite-caps" href="/2022/12/23/nosferatu-the-vampyre.html" class="read-more">Read More</a>
+    </article>
+  
+    <article style="padding-bottom:1.5em;" class="post">
+
+      <h1><a class="post-title" href="/2022/12/23/enver-simaku.html">Oh The Movies | The Invocation of Enver Simaku (2018)</a></h1>
+      <div>23 December 2022 | <span class="ert">
+  <acronym title="Estimated reading time">ERT</acronym>:
+    
+    
+    1 min
+</span>
+<p><span>
+  <a class="tag-name" style="color:black" href="/tag/en"><div class="language">English</div></a>
+  
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/movies">MOVIES</a>] </div>
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/Albanian">ALBANIAN</a>] </div>
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/Spanish">SPANISH</a>] </div>
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/horror">HORROR</a>] </div>
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/mockumentary">MOCKUMENTARY</a>] </div>
+  
+</span></p>
+      </div>
+      <div class="entry">
+        <p>When mockumentary meets horror, a good old found-footage/hand-cam horror is right around the corner. Marc Lledó Escartín, the director of <em>The Invocation of Enver Simaku</em> (2018) went for something else: he made a mockumentary with immensive narration. The plot of <em>Simaku</em> follows Julien whose wife was murdered during a pogrom in Albania. 18 years after the incident, the footage of that fateful night still haunts Julien’s dreams, so he returns to Albania to find out more about the circumstances of his wife’s death. <em>Simaku</em> is an awful movie, but it’s also an interesting cautionary tale on how not to shoot a horror movie.</p>
+
+      </div>
+
+      <a style="font-variant:all-petite-caps" href="/2022/12/23/enver-simaku.html" class="read-more">Read More</a>
+    </article>
+  
+    <article style="padding-bottom:1.5em;" class="post">
+
+      <h1><a class="post-title" href="/2022/12/22/the-blind-side.html">Oh The Movies | The Blind Side (2009)</a></h1>
+      <div>22 December 2022 | <span class="ert">
+  <acronym title="Estimated reading time">ERT</acronym>:
+    
+    
+    2 mins
+</span>
+<p><span>
+  <a class="tag-name" style="color:black" href="/tag/en"><div class="language">English</div></a>
+  
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/movies">MOVIES</a>] </div>
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/American">AMERICAN</a>] </div>
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/sport">SPORT</a>] </div>
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/drama">DRAMA</a>] </div>
+  
+</span></p>
+      </div>
+      <div class="entry">
+        <p><em>The Blind Side</em> is an inspiring sport drama with Sandra Bullock, who was perfectly casted for a <acronym title="White Anglo-Saxon Protestant">WASP</acronym> housewife, Mrs Tuohy, embracing a young African-American athlete, Big Mike. Other than that, it’s a perfect basis for an  case study on the concept of biographical movies.</p>
+
+
+      </div>
+
+      <a style="font-variant:all-petite-caps" href="/2022/12/22/the-blind-side.html" class="read-more">Read More</a>
+    </article>
+  
+    <article style="padding-bottom:1.5em;" class="post">
+
+      <h1><a class="post-title" href="/2022/12/20/gothika.html">Oh The Movies | Gothika (2003)</a></h1>
+      <div>20 December 2022 | <span class="ert">
+  <acronym title="Estimated reading time">ERT</acronym>:
+    
+    
+    1 min
+</span>
+<p><span>
+  <a class="tag-name" style="color:black" href="/tag/en"><div class="language">English</div></a>
+  
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/movies">MOVIES</a>] </div>
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/American">AMERICAN</a>] </div>
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/horror">HORROR</a>] </div>
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/thriller">THRILLER</a>] </div>
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/mystery">MYSTERY</a>] </div>
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/asylum">ASYLUM</a>] </div>
+  
+</span></p>
+      </div>
+      <div class="entry">
+        <p>In this 2003 classic, Halle Berry plays a desperate pychiatrist who gets possessed by one of her patients’ ghost. No matter how hard she tries, Halle Berry could not really kill the movie with her ham-like acting. Even though her screaming all the time easily exhausts the viewer, the plot holds firm with a so-so unexpected twist in the end. And there’s even a young Robert Downey Jr. somewhere. And Penelopé Cruz, I guess? Wasn’t really paying attention.</p>
+
+      </div>
+
+      <a style="font-variant:all-petite-caps" href="/2022/12/20/gothika.html" class="read-more">Read More</a>
+    </article>
+  
+    <article style="padding-bottom:1.5em;" class="post">
+
+      <h1><a class="post-title" href="/2022/12/20/birdman.html">Oh The Movies | Birdman (2014)</a></h1>
+      <div>20 December 2022 | <span class="ert">
+  <acronym title="Estimated reading time">ERT</acronym>:
+    
+    
+    1 min
+</span>
+<p><span>
+  <a class="tag-name" style="color:black" href="/tag/en"><div class="language">English</div></a>
+  
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/movies">MOVIES</a>] </div>
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/American">AMERICAN</a>] </div>
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/black-comedy">BLACK-COMEDY</a>] </div>
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/drama">DRAMA</a>] </div>
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/superhero">SUPERHERO</a>] </div>
+  
+</span></p>
+      </div>
+      <div class="entry">
+        <p>A very arty way of self-loving, from Hollywood to Hollywood with a mild touch of Broadway. For some reason, I would always mistake <em>Birdman</em> for <em>Kingsmen</em>, but today I learned the difference. The movie is a one-shot dramady with a struggling actor who is dying to prove the world he’s more than his signature movie character, the Birdman.</p>
+
+      </div>
+
+      <a style="font-variant:all-petite-caps" href="/2022/12/20/birdman.html" class="read-more">Read More</a>
+    </article>
+  
+    <article style="padding-bottom:1.5em;" class="post">
+
+      <h1><a class="post-title" href="/2022/12/19/8-mile.html">Oh The Movies | 8 Mile (2002)</a></h1>
+      <div>19 December 2022 | <span class="ert">
+  <acronym title="Estimated reading time">ERT</acronym>:
+    
+    
+    1 min
+</span>
+<p><span>
+  <a class="tag-name" style="color:black" href="/tag/en"><div class="language">English</div></a>
+  
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/movies">MOVIES</a>] </div>
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/American">AMERICAN</a>] </div>
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/music">MUSIC</a>] </div>
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/drama">DRAMA</a>] </div>
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/rap">RAP</a>] </div>
+  
+</span></p>
+      </div>
+      <div class="entry">
+        <p><em>8 Mile</em> is a semi-autobiographical movie about B-Rabbit (Eminem), an aspiring rapper in the ’90s’ rap scene of Detroit. The protagonist seeks to launch a career in hip-hop while stuck in a rat race with his awful job at a car (?) factory and his even more awful family living in a trailer park. The movie creates an original atmosphere of tragicomedy, which is hardly ever seen in hood movies. They either dramatically overexaggerate the exasperations of poverty and crime, or quite the opposite, they tend to dip the story in comedy, catering more for the consumers’ taste.</p>
+
+      </div>
+
+      <a style="font-variant:all-petite-caps" href="/2022/12/19/8-mile.html" class="read-more">Read More</a>
+    </article>
+  
+    <article style="padding-bottom:1.5em;" class="post">
+
+      <h1><a class="post-title" href="/2022/12/18/barbarian.html">Oh The Movies | Barbarian (2022)</a></h1>
+      <div>18 December 2022 | <span class="ert">
+  <acronym title="Estimated reading time">ERT</acronym>:
+    
+    
+    3 mins
+</span>
+<p><span>
+  <a class="tag-name" style="color:black" href="/tag/en"><div class="language">English</div></a>
+  
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/movies">MOVIES</a>] </div>
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/American">AMERICAN</a>] </div>
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/horror">HORROR</a>] </div>
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/thriller">THRILLER</a>] </div>
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/mystery">MYSTERY</a>] </div>
+  
+</span></p>
+      </div>
+      <div class="entry">
+        <p>In spite the obvious generic differences, both <a href="/2022/12/19/8-mile.html"><em>8 Mile</em> (2002)</a> and <em>Barbarian</em> (2022) are set in Detroit and document vital aspects of the deteriorating city. What’s more, the widely celebrated thriller <em>Don’t Breathe</em> (2016) – featuring Hungarian actress Franciska Törőcsik – also takes place there; there’s something in the Detroitan air that not only serves as a particularly fitting setting for these movies, urban space is very much a narrative in itself.</p>
+
+      </div>
+
+      <a style="font-variant:all-petite-caps" href="/2022/12/18/barbarian.html" class="read-more">Read More</a>
+    </article>
+  
+    <article style="padding-bottom:1.5em;" class="post">
+
+      <h1><a class="post-title" href="/2022/12/10/10-times-trevor-noah-proved-he-is-the-goat.html">10 Times Trevor Noah Proved He's the GOAT of GOATs</a></h1>
+      <div>10 December 2022 | <span class="ert">
+  <acronym title="Estimated reading time">ERT</acronym>:
+    
+    
+    11 mins
+</span>
+<p><span>
+  <a class="tag-name" style="color:black" href="/tag/en"><div class="language">English</div></a>
+  
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/trevor-noah">TREVOR-NOAH</a>] </div>
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/the-daily-show">THE-DAILY-SHOW</a>] </div>
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/comedy">COMEDY</a>] </div>
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/politics">POLITICS</a>] </div>
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/racism">RACISM</a>] </div>
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/USA">USA</a>] </div>
+  
+</span></p>
+      </div>
+      <div class="entry">
+        <p>After his announcement of leaving <em>The Daily Show</em> in September, yesterday marked the day Trevor Noah hosted the show for the very last time. The South African comedian spent seven years on Comedy Central, during which time he:</p>
+
+<ul>
+  <li>interviewed President Obama, Michelle Obama, Oprah,</li>
+  <li>hosted the White House Correspondents’ Dinner,</li>
+  <li>hosted the Grammy’s,</li>
+  <li>published his autobiography on growing up during the South African apartheid as a mixed race child (hence the title <em>Born a Crime</em>),</li>
+  <li>voiced a Wakandan AI system in <em>Black Panther</em> and <em>Black Panther: Wakanda Forever</em>,</li>
+  <li>carried us all the way through Corona times by relocating <em>The Daily Show</em> into his own New York apartment,</li>
+  <li>released three Netflix specials.</li>
+</ul>
+
+<p>Of course, these achievements in themselves fail to show why I consider Trevor Noah one of the greatest TV hosts and comedians of all time. That’s why I compiled a list of 10 of his most memorable moments, let them be interviews with political figures (from the left and the right), heartfelt conversations with his audience, or an insightful monologue on France winning the World Cup.</p>
+
+      </div>
+
+      <a style="font-variant:all-petite-caps" href="/2022/12/10/10-times-trevor-noah-proved-he-is-the-goat.html" class="read-more">Read More</a>
+    </article>
+  
+    <article style="padding-bottom:1.5em;" class="post">
+
+      <h1><a class="post-title" href="/2022/12/06/d7-in-christmas-songs.html">D⁷ in Christmas songs</a></h1>
+      <div>6 December 2022 | <span class="ert">
+  <acronym title="Estimated reading time">ERT</acronym>:
+    
+    
+    4 mins
+</span>
+<p><span>
+  <a class="tag-name" style="color:black" href="/tag/en"><div class="language">English</div></a>
+  
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/christmas">CHRISTMAS</a>] </div>
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/guitar">GUITAR</a>] </div>
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/music">MUSIC</a>] </div>
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/chords">CHORDS</a>] </div>
+  
+</span></p>
+      </div>
+      <div class="entry">
+        <script src="/chord-player.js"></script>
+
+<style>
+sup {
+  vertical-align: top;
+  font-size: 0.6em
+  }
+.play, .chord {
+  font-family: "Times New Roman";
+  font-size: 100%;
+  padding: 1em;
+  margin: 0.5em;
+  border:none;
+  min-width: 5em;
+  min-height: 3em
+}
+.play:hover, .chord:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+.chord {
+background-color: palegreen;
+}
+.play {
+background-color:khaki;
+}
+.play:disabled, .chord:disabled {
+  border: none;
+  background-color: "";
+  color: black;
+}
+</style>
+
+<p>When it’s Christmas, it’s time for carolling.</p>
+
+<p>It happened that I grabbed my guitar last Thursday to set the mood for December. I was checking out the guitar chords of some evergreens (yes, pun intended) when I noticed something strange. A chord kept coming up, regardless of what song I was strumming along: the mighty D<sup>7</sup>. No matter if it’s <a href="https://tabs.ultimate-guitar.com/tab/bing-crosby/white-christmas-chords-902543" target="_blank"><em>White Christmas</em></a>, <a href="https://tabs.ultimate-guitar.com/tab/casting-crowns/o-come-all-ye-faithful-chords-899101" target="_blank"><em>O Come All Ye Faithful</em></a>, or <a href="https://tabs.ultimate-guitar.com/tab/the-irish-rovers/we-wish-you-a-merry-christmas-chords-1009149" target="_blank"><em>We Wish You A Merry Christmas</em></a>, D<sup>7</sup> is apparently a must-have for yuletide composers.</p>
+
+      </div>
+
+      <a style="font-variant:all-petite-caps" href="/2022/12/06/d7-in-christmas-songs.html" class="read-more">Read More</a>
+    </article>
+  
+    <article style="padding-bottom:1.5em;" class="post">
+
+      <h1><a class="post-title" href="/2022/11/15/the-crown-season-5.html">The Way Forward... Ahead</a></h1>
+      <div>15 November 2022 | <span class="ert">
+  <acronym title="Estimated reading time">ERT</acronym>:
+    
+    
+    2 mins
+</span>
+<p><span>
+  <a class="tag-name" style="color:black" href="/tag/en"><div class="language">English</div></a>
+  
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/the-crown">THE-CROWN</a>] </div>
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/movies">MOVIES</a>] </div>
+  
+</span></p>
+      </div>
+      <div class="entry">
+        <p>There is nothing new in the palpable tension between the portrayal of Englishmen in coursebooks (such as the English File and Solutions) and the reality of Britain. The tea-sipping, ever so polite Englishmen are what’s left from the long-forgotten (?) Empire, and such colonial discourses are still all around us teachers and students of ESL.</p>
+
+<p>Nevertheless, the demise of Elisabeth II placed ESL teachers on the horns of a dilemma. <span >May we address the controversies surrounding the Royals, or go on teaching what we were taught to?</span></p>
+
+<p>The way I see it, <i>The Crown</i> is not only an one-of-a-kind historical drama series with elaborate stage design, but also, a product of imaginative speculation, sheding light on stories that have been either kept secret, or blurred by the nonstop media attention that the royal family suffered since the past century.</p>
+
+      </div>
+
+      <a style="font-variant:all-petite-caps" href="/2022/11/15/the-crown-season-5.html" class="read-more">Read More</a>
+    </article>
+  
+    <article style="padding-bottom:1.5em;" class="post">
+
+      <h1><a class="post-title" href="/2022/07/12/why-yoda-speaks-like-that.html">Why Yoda Speaks Like That</a></h1>
+      <div>12 July 2022 | <span class="ert">
+  <acronym title="Estimated reading time">ERT</acronym>:
+    
+    
+    9 mins
+</span>
+<p><span>
+  <a class="tag-name" style="color:black" href="/tag/en"><div class="language">English</div></a>
+  
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/translation">TRANSLATION</a>] </div>
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/ESL">ESL</a>] </div>
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/star-wars">STAR-WARS</a>] </div>
+  
+</span></p>
+      </div>
+      <div class="entry">
+        <p>Since 1977, the year the first episode of Star Wars was released, the epic space opera has been mesmerising generations after generations. Now when I say epic, I am not only referring to the enormous money that these movies usually require, nor do I have their impressive box office results in mind. <i>Epic</i> here is an adjective that you can use to describe a grandiose work of art that is embedded in a mythical universe, in a world that is highly elaborate to the minutest detail.</p>
+
+      </div>
+
+      <a style="font-variant:all-petite-caps" href="/2022/07/12/why-yoda-speaks-like-that.html" class="read-more">Read More</a>
+    </article>
+  
+    <article style="padding-bottom:1.5em;" class="post">
+
+      <h1><a class="post-title" href="/2022/01/27/the-house.html">Filmek | Egy ház, három család (2022)</a></h1>
+      <div>27 January 2022 | <span class="ert">
+  <acronym title="Estimated reading time">ERT</acronym>:
+    
+    
+    2 mins
+</span>
+<p><span>
+  <a class="tag-name" style="color:black" href="/tag/hu"><div class="language" style="background-color:#f69f9f">magyar</div></a>
+  
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/movies">FILMEK</a>] </div>
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/stop-motion">STOP-MOTION</a>] </div>
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/anthology">ANTOLÓGIA</a>] </div>
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/animated">ANIMÁCIÓS</a>] </div>
+  
+</span></p>
+      </div>
+      <div class="entry">
+        <p>A már tavaly decemberben beharangozott és idén debütált <i>The House</i> (magyar címén: <i>Egy ház, három család</i>) című stop-motion antológia viszonylag ismeretlen rendezők kísértetiesen fura bábfilmjeit fűzi össze egy hátborzongató kötetté.</p>
+
+      </div>
+
+      <a style="font-variant:all-petite-caps" href="/2022/01/27/the-house.html" class="read-more">Read More</a>
+    </article>
+  
+</div>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

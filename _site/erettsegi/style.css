@@ -1,0 +1,289 @@
+.uoe-free-gap-filling,
+.uoe-closed-gap-filling,
+.uoe-word-transformation,
+.reading-dialogue,
+.reading-text,
+.reading-matching,
+.reading-true-or-false {
+  width: calc(100% - 100px);
+}
+
+.gap,
+.gap-disabled,
+.default-gap {
+  display: inline-block;
+  min-width: 5em;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+  min-height: 1em;
+  line-height: 1em;
+  background-color: lightgray;
+  border: 1pt solid black;
+  text-align: center;
+  padding: 0.2em;
+  margin: 0.1em;
+  vertical-align: middle;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.uoe-free-gap-filling input.gap,
+.uoe-free-gap-filling input.gap-disabled,
+.uoe-free-gap-filling input.default-gap {
+  display: inline-block;
+  font-family: inherit;
+  font-size: inherit;
+  min-width: 5em;
+  width: 5em;
+  vertical-align: center;
+}
+
+.gap-container {
+  padding: 0.5em 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.reading-true-or-false .radio-container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: -moz-fit-content;
+  min-width: -webkit-fit-content;
+  min-width: fit-content;
+  max-width: 100vw
+}
+
+.reading-true-or-false .radio-container label {
+  cursor: pointer;
+  flex: 1 1 33%;
+  margin: 0 0.1em;
+  border: 1pt black solid;
+  text-align: center;
+}
+
+.reading-true-or-false .radio-container label [type="radio"] {
+  display: none;
+}
+
+.reading-true-or-false .radio-container label [type="radio"]+span {
+  width: 100%;
+  min-width: 6em;
+  height: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-variant: small-caps
+}
+
+.reading-true-or-false .radio-container label [disabled]+span {
+  cursor: text;
+}
+
+.reading-true-or-false .radio-container label :checked+span {
+  background-color: dodgerblue;
+}
+
+.reading-matching #task .gap,
+.reading-matching #task .default-gap,
+.reading-matching #task .gap-disabled {
+  flex: 1;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 3em;
+  align-items: center;
+}
+
+.reading-matching .gap-container div:first-child {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex: 0 0 30%;
+  justify-content: center;
+  text-align: center;
+}
+
+#task {
+  line-height: 1.5em;
+}
+
+#word-list {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 1;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  padding: 0.5em 0;
+}
+
+.reading-matching #word-list .gap,
+.reading-matching #word-list .default-gap,
+.reading-matching #word-list .gap-disabled {
+  flex: 1 0 25%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 3em;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.reading-matching #task .gap,
+.reading-matching #task .default-gap,
+.reading-matching #task .gap-disabled {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 1.9em;
+  padding: 0.2em;
+  justify-content: center;
+}
+
+.reading-matching>div:not(.instructions),
+.reading-true-or-false>div:not(.instructions) {
+  line-height: 1.5em;
+}
+
+.reading-text #task .gap {
+  border: black 0pt solid;
+  min-inline-size: 15em;
+  line-height: inherit;
+}
+
+.reading-text #task .gap-disabled,
+.reading-text #task .default-gap {
+  line-height: inherit;
+  display: inline;
+  border: black 0pt solid;
+  vertical-align: baseline;
+}
+
+.reading-text .gap,
+.reading-text .gap-disabled,
+.reading-text .default-gap {
+  text-align: left;
+  vertical-align: middle;
+}
+
+.reading-dialogue .gap,
+.reading-dialogue .gap-disabled,
+.reading-dialogue .default-gap {
+  display: block;
+  margin: 0.5em 0;
+  min-width: 15em;
+  height: -moz-fit-content;
+  height: -webkit-fit-content;
+  height: fit-content;
+
+  min-height: 1em;
+  line-height: 1.5em;
+  padding: 0.5em;
+}
+
+.reading-dialogue #word-list,
+.reading-text #word-list {
+  max-height: 50vh;
+  height: -moz-fit-content;
+  height: -webkit-fit-content;
+  height: fit-content;
+  overflow-y: scroll;
+}
+
+#word-list .gap {
+  margin: 0.2em;
+  -webkit-transition: visibility 0.3s linear, opacity 0.3s linear;
+  -moz-transition: visibility 0.3s linear, opacity 0.3s linear;
+  transition: visibility 0.3s linear, opacity 0.3s linear;
+}
+
+.gap:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.gap-disabled:disabled {
+  color: inherit;
+}
+
+.picked {
+  background-color: black;
+  color: white
+}
+
+.check-button,
+.show-button {
+  font-size: auto;
+  font-family: inherit;
+  background-color: lightgreen;
+  min-width: 5em;
+  border: 0pt;
+  padding: 0.5em;
+  margin: 0.5em 0.1em;
+}
+
+.check-button:hover,
+.show-button:hover {
+  cursor: pointer;
+  opacity: 0.9
+}
+
+.show-button {
+  background-color: lightblue
+}
+
+.correct {
+  background-color: lightgreen
+}
+
+.incorrect {
+  background-color: #FFC300
+}
+
+.modal-basis {
+  z-index: 2;
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  vertical-align: middle;
+}
+
+.modal-box {
+  margin: auto;
+  background-color: white;
+  width: 80%;
+  padding: 0.5em;
+  text-align: center;
+  -webkit-border-radius: 0.2em;
+  -moz-border-radius: 0.2em;
+  border-radius: 0.2em;
+  border: 1pt black solid;
+}
+
+.modal-close {
+  float: right;
+  font-weight: bold;
+  color: #aaaaaa;
+  font-size: 28px;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  color: black;
+  cursor: pointer;
+}

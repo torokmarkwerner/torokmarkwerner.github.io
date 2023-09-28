@@ -1,0 +1,1002 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TM | Why Yoda Speaks Like That</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.png?">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  </head>
+  <style>
+#search-button:hover {
+  opacity: 0.9;
+  cursor:pointer;
+}
+.abc-parantheses {
+  counter-reset: abc;
+}
+.abc-parantheses > li {
+  list-style: none;
+  padding: 0.5em 0
+}
+.abc-parantheses > li:before {
+  content: counter(abc, lower-alpha) ") ";
+  counter-increment: abc;
+}
+    .language {
+    display: inline;
+    background-color: #b5d5ff;
+    padding: 0.5em;
+    text-transform: uppercase;
+    }
+    summary {
+      color:crimson;
+      font-weight:bold
+    }
+    summary:hover {
+      cursor:pointer;
+      opacity:0.9
+    }
+    #rating-container2 {
+      max-width:100px;
+    }
+    #rating-container {
+      padding:0;
+      margin:0;
+      position:relative;
+      font-size:150%;
+      width:100%;
+      }
+    
+    #rating-basic-stars {
+      padding:0;
+      margin:0;
+      color: grey;
+      position: relative;
+      width: 100%;
+      overflow:hidden;
+    }
+    
+    #rating-rating {
+      padding:0;
+      margin:0;
+      color: orange;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: calc(100% * var(--rate)/5);
+      overflow:hidden;
+    }
+    .rating-scoretable {
+      display:none;
+      padding: 0.5em 0;
+      table-layout:fixed;
+      width:100%;
+      text-align:center;
+    }
+    .rating-scoretable td {
+      border: 1px black solid;
+      height:2em
+    }
+    .rating-scoretable th {
+      color:white;
+      font-weight: normal;
+      background-color:black;
+    }
+    </style>
+<style>
+  .pages-button {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      }
+    
+    .video-container iframe, .video-container object, .video-container embed { 
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      }
+</style>
+<style>
+  acronym[title] {
+    text-decoration-thickness: from-font;
+    text-underline-position: from-font;
+  }
+  html, body { height: 100%; }
+  .toc {
+    background-color: lemonchiffon;
+    padding: 1em;
+    min-width:50%;
+    width:fit-content;
+    font-variant-caps: petite-caps;
+  }
+  .toc div {
+    padding-top: 0.5em;
+    font-weight: bold;
+    text-align:center;
+  }
+  .toc ul {
+    padding-inline-start: 1em;
+    padding-inline-end: 1em;
+    margin-block-start: 1em;
+    margin-block-end: 0em;
+    list-style: none;
+  }
+  .toc li {
+    padding-bottom:1em
+  }
+  .toc li a {
+    text-decoration: none;
+  }
+  #content-container h2 {
+  padding-top:0.5em
+  }
+  .highlighted-text {
+    background-color: antiquewhite;
+    padding: 0.5em;
+    font-size: 115%;
+    font-weight: bold;
+    display:block;
+  }
+  #content-container img:not(.related-post-image) {
+    max-width: 100%
+  }
+  .examples table {
+  border-collapse:collapse
+  }
+  .examples td {
+  padding: 0.5em;
+  border:0.5px black solid
+  }
+  .examples tr td:nth-child(1) {
+  min-width:fit-content;
+  text-align:center;
+  }
+  .examples {
+  counter-increment: my-sec-counter;
+  counter-reset: my-sec-counter2;
+}
+
+.examples ol {
+counter-reset: my-sec-counter2;
+list-style-type: none;
+display:table;
+border-collapse: separate;
+border-spacing: 0.5em;
+padding:0.5em 2em 0.5em 2em;
+padding-inline-start: 0;
+}
+
+.examples ol li {
+display: table-row;
+}
+
+.examples ol li::before {
+  counter-increment: my-sec-counter2;
+  content: counter(my-sec-counter) counter(my-sec-counter2, upper-alpha) " ";
+  display:table-cell;
+  text-align:left;
+  width:2em;
+  vertical-align:middle;
+}
+::-moz-selection { /* Code for Firefox */
+  color: HighlightText;
+  background: Highlight;
+}
+::selection {
+  color: HighlightText;
+  background: Highlight;
+}
+.tag-name {
+  color: chocolate;
+  font-weight: bold;
+  text-decoration: none;
+  }
+.tag-name:hover {
+  opacity:0.9
+  }
+.post-title {
+    display: inline-block;
+    background-color: lightgoldenrodyellow;
+    color: black;
+    text-decoration: none;
+    padding: 0.5em;
+  }
+.post-title:hover {
+  background-color: antiquewhite;
+  opacity:0.9;
+  }
+.fa.fa-facebook, .fa.fa-google, .fa.fa-linkedin {
+ font-size: 20px;
+ width: 40px;
+ height: 40px;
+ line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0.5em 0.2em;
+  border-radius:5px;
+  }
+  .fa.fa-facebook:hover, .fa.fa-google:hover, .fa.fa-linkedin:hover {
+    cursor:pointer;
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+</style>
+  <style>
+body {
+  font-family: "Calibri", "Arial", sans-serif;
+  margin: 0;
+  border: 0;
+  padding:0;
+    width:100%;
+  overflow-y: scroll;
+  }
+.page-wrapper {
+  width:80vw;
+  display:flex;
+  min-height:100%;
+  height:fit-content;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  padding-top:10px
+}
+#sticky {
+  text-align:center;
+  width:20vw;
+    position: sticky;
+    top: 10px;
+    align-self: flex-start;
+}
+.pages-button {
+  font-size:125%;
+  padding: 0.5em;
+}
+.pages-button:hover {
+  background-color:lightskyblue;
+  cursor:pointer;
+  font-weight:bold;
+}
+.pages-button-current {
+      background-color:palegreen;
+      
+    }
+#content-container {
+      padding:0 0 0 2em;
+      width:40vw
+    }
+    
+@media (max-width: 767px) {
+    .sticky {
+      display:none;
+    }
+    #content-container {
+      width:80vw;
+    }
+  }
+    
+</style>
+<body>
+<div class="page-wrapper">
+  <div id="background" style="opacity:0.8;width:100%;height:100%;background-color:black;top:0;left:0;position:fixed;display:none;z-index:2">
+</div>
+
+<style>
+#hamburger {
+  display: none;
+  }
+  
+#sticky img {
+  width: 100%;
+  }
+#close {
+  display: none;
+  }
+@media (max-width: 767px) {
+#hamburger {
+    display: block;
+    position: fixed;
+    background: lightskyblue;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    transition: all 0.5s;
+}
+.hamburger-line {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 8.5px auto;
+}
+#hamburger:hover {
+  opacity:0.8;
+  cursor:pointer;
+}
+#sticky {
+    background-color: white;
+    position: fixed;
+    top:0px;
+    left:0px;
+    width:50%;
+    height:100%;
+    transform: translate3d(-100vw, 0, 0);
+    transition: all 0.5s;
+    min-width:fit-content;
+    z-index: 3
+    }
+#sticky img {
+  width: 40vw;
+  }
+#close {
+    display: block;
+    position:relative;
+    font-size:50px;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    background-color:black;
+    color:white;
+    text-align:center;
+    line-height:50px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+#close:hover {
+  cursor:pointer;
+}
+ }
+</style>
+
+<div>
+<div id="hamburger" onclick="openNav()">
+<div class="hamburger-line"></div>
+<div class="hamburger-line"></div>
+<div class="hamburger-line"></div>
+</div>
+</div>
+
+<script>
+function openNav() {
+document.getElementById("sticky").style.transform = "translate3d(0, 0, 0)"
+document.getElementById("hamburger").style.display = "none"
+document.getElementById("background").style.display = "block"
+}
+
+function hideNav() {
+document.getElementById("sticky").style.transform = "translate3d(-100vw, 0, 0)"
+document.getElementById("hamburger").style.display = "block"
+document.getElementById("background").style.display = "none"
+}
+</script>
+  
+<div id="sticky">
+<div id="close" onclick="hideNav()">&times;</div>
+<div style="display: inline-flex;vertical-align: bottom;"><img src="https://avatars.githubusercontent.com/u/98919050"/></div>
+<a id="about" class="pages-button" href="/about">ABOUT</a>
+<a id="projects" class="pages-button" href="/projects">PROJECTS</a>
+<a id="blog" class="pages-button" href="/blog">BLOG</a>
+<a id="contact" class="pages-button" href="/contact">CONTACT</a>
+<div style="text-align:center">
+<a href="https://www.facebook.com/torok.mark.werner" target="_blank" class="fa fa-facebook"></a>
+<a href="mailto:torokmarkwerner@gmail.com" target="_blank" class="fa fa-google"></a>
+<a href="https://www.linkedin.com/in/torok-mark-werner" target="_blank" class="fa fa-linkedin"></a>
+  </div>
+</div>
+
+  <script>
+//alert(document.location.pathname + " --> And this is the substring:" + document.location.pathname.toString().substring(1,document.location.pathname.toString().length-1))
+pages = document.getElementsByClassName("pages-button");
+for (i=0; i<pages.length; i++) {
+  if(("/" + pages[i].textContent.toLowerCase() + "/") === document.location.pathname) {
+    pages[i].classList.toggle("pages-button-current");
+    pages[i].style.backgroundColor = "palegreen";
+    pages[i].style.fontWeight = "bold"
+  }
+}
+</script>
+<div id="content-container">
+<h1>Why Yoda Speaks Like That</h1>
+    <p>12 July 2022  | <span class="ert">
+    <acronym title="Estimated reading time">ERT</acronym>:
+    
+    
+    9 mins
+</span></p>
+<div style="margin-block-start: 1em;margin-block-end: 1em;">
+    
+    <a class="tag-name" style="color:black" href="/tag/en"><div class="language">English</div></a>
+    
+
+  
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/translation">TRANSLATION</a>] </div>
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/ESL">ESL</a>] </div>
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/star-wars">STAR-WARS</a>] </div>
+  
+</div>
+
+<p>Since 1977, the year the first episode of Star Wars was released, the epic space opera has been mesmerising generations after generations. Now when I say epic, I am not only referring to the enormous money that these movies usually require, nor do I have their impressive box office results in mind. <i>Epic</i> here is an adjective that you can use to describe a grandiose work of art that is embedded in a mythical universe, in a world that is highly elaborate to the minutest detail.</p>
+<!--end-of-excerpt-->
+
+<div class="toc">
+<div>Table of Contents</div>
+<ul>
+	<li><a href="#how-yoda-speaks">How Yoda Speaks</a></li>
+	<li><a href="#language-transfer">Language Transfer</a></li>
+	<li><a href="#when-900-years-old-you-reach">When 900 Years Old You Reach</a></li>
+	<li><a href="#inversion">Inversion</a></li>
+	<li><a href="#dubbing-yoda-in-hungarian">Dubbing Yoda in Hungarian</a></li>
+	<li><a href="#what's-up-with-other-languages">What’s Up with Other Languages?</a></li>
+</ul>
+</div>
+
+<p>Given the fact that filmmakers don't have unlimited hours for a movie, epic movies necessarily involve parts of the universe that can't be fully explained on-screen and are left to audiences, especially to the fan base, to find out more about. One of the widely debated questions of the Star Wars universe is Master Yoda's syntax, that is, the way he constructs his sentences, word by word.</p>
+
+<div><img src="/assets/13103469483_c017f772f4_c.jpg" /></div>
+
+<div style="margin-block-start: 0.5em;margin-block-end: 0.5em;font-size: 80%;"><i>Jedi Master Yoda.</i> Photo: Thomas Hawk (<a href="https://www.flickr.com/photos/thomashawk/13103469483" target="_blank">Flickr</a>).</div>
+
+<hr />
+
+<h2 id="how-yoda-speaks">How Yoda Speaks</h2>
+
+<p>Let's first take a look at how Yoda speaks.</p>
+
+<div class="examples"><ol>
+<li>More to learn, he has... (<i>The Phantom Menace</i>)</li>
+<li>Good friends you are. (<i>Revenge of the Sith</i>)</li>
+<li>Found someone, you have. (<i>The Empire Strikes Back</i>)</li>
+</ol></div>
+
+<p>If you Google "why Yoda speaks like that", the most common way to describe Yodish or Yodaspeak &ndash; as fans call his way to build sentences &ndash; is using the concepts of <i>syntax</i>, the way words (and phrases) are organised into sentences.</p>
+
+<p style="font-size:80%">Whoever speaks a little bit of English knows that the usual way to speak of themselves reading a book is "I am reading a book" where <i>I</i> is the subject, <i>am reading </i>is the verb, and <i>a book</i> is the object, a word that designates the most typical of those: a physical object. That gets us a subject-verb-object (SVO) word order, which is the general syntax of English statements (also called <i>declaratives</i>), and that is why English is often referred to as an SVO type of language among other languages like German, Polish, French, Italian, Spanish etc.</p>
+
+<p>As opposed to modern-day English, <span class="highlighted-text">Yoda's lines above are based on an object-subject-verb (OSV) syntax.</span> For example, the sentence "More to learn, he has" has an object <i>more to learn</i>, a subject <i>he</i>, and a verb <i>has</i>, which are put in an OSV order, meaning that the object comes first, then the subject, and then the verb.</p>
+
+<p style="font-size:80%">Now, for the non-beginners, it is plain and clear that this is very much of an oversimplification. In our second example ("Good friends you are."), the phrase <i>good friends</i> can't even be an object, as this sentence is based on a no-object structure (AKA intransitive) with a state-of-being verb (<i>be</i>). And even though the third line includes an object (<i>someone</i>), it is the main verb (<i>found</i>) that is put in the front, which leaves us with a split verb phrase (<i>have</i> | <i>found</i>). Suffice to say, the syntax of Yodish is much more complex than it seems, but it is, indeed, the OSV structure that dominates it.</p>
+
+<h2 id="language-transfer">Language Transfer</h2>
+
+<p>It seems that, at least on the surface, Yodish is as simple as it gets. Well, the answer to the question <i>How?</i> is relatively simple; however, the reason why Yoda speaks like that is a different issue. The most common answer that a Star Wars fan would give you is a long-standing misconception: Yoda apparently transfers the syntax of his first language and applies those rules to English.</p>
+
+<p>Many Hungarian ESL (English as a Second Language) learners do something similar: they simply forget to use a verb in a sentence, especially in sentences with <i>be</i> in first-person singular. The English sentence "The wall is white." translates into "A fal fehér." in Hungarian where the adjective (<i>fehér</i>) takes on the role of a predicate, compared to the usual case with a verb. And that is why Hungarian students are more likely to produce errors such as *The wall white, *I reading, *She born in 2011 etc.</p>
+
+<p>Similarly, Yoda is heavily influenced by his mother tongue, fans argue, that is, he uses syntactic rules alien to modern English because his mother tongue works with an OSV structure. But is it true, and, if not, is it possible to deny it?</p>
+
+<p>After having checked the Old Trilogy as well as the New Trilogy (OT and NT, respectively), I can assure you: Yoda also uses other structures such as SVO and inverted SVO. Examples include the following:</p>
+
+<div class="examples"><ol>
+<li>Fear is the path to the dark side... fear leads to anger... anger leads to hate... hate leads to suffering. (<i>The Phantom Menace</i>)</li>
+<li>You seek Yoda. (<i>The Empire Strikes Back</i>)</li>
+<li>Twilight is upon me and soon night must fall. (<i>Return of the Jedi</i>)</li>
+<li>Not far are we from the emergency ship. (<i>Revenge of the Sith</i>)</li>
+<li>No more training do you require. (<i>Return of the Jedi</i>)</li>
+</ol></div>
+
+<p>Let's just take the second and the fifth, so that we have each an example for SVO and inverted SVO. In the line "You seek Yoda", <i>you</i> is the subject, <i>seek </i>is the verb, and <i>Yoda </i>is the object. Easy as pie, isn't it? The negative inversion in the fifth line is just a little different: because of the fronting of <i>no more training</i>, Yoda needs <i>do</i>-support, i.e. the inclusion of an auxiliary <i>do</i>, and that is what makes the sentence different from <i>More to learn, he has </i>(see above).</p>
+
+<p>Now the only question is how you define an error, and that is a question of high importance if you want to learn, and eventually speak, a language. What Merriam-Webster gives us is some mumbo jumbo about an ignorant or imprudent deviation from a code of behaviour, but that suits us well. Breaking it down into three chunks, so that we can digest it more easily, we arrive at ignorance + deviation + code.</p>
+
+<p><span class="highlighted-text">That is to say, an error is when you don't know the code, so you break it.</span> However, Yoda seems to know the code, as approximately one in every five of his sentences is in SVO. So, it is not accidental, nor is it an error of some kind. The only question is the function of the unusual syntax.</p>
+
+<div><img src="/assets/Amigurumi_Baby_Yoda.jpg" /></div>
+
+<div style="margin-block-start: 0.5em;margin-block-end: 0.5em;font-size: 80%;"><i>Amigurumi Baby Yoda</i>. Photo: Lskbrown (<a href="https://commons.m.wikimedia.org/wiki/File:Amigurumi_Baby_Yoda.jpg" target="_blank">Wikipedia</a>).</div>
+
+<hr />
+
+<h2 id="when-900-years-old-you-reach">When 900 Years Old You Reach</h2>
+
+<p>Some say that OSV structures have something to do with the fact that Yoda was born more than eight centuries before the events of the first movie (chronologically speaking). His age shows in his language being an archaic version of the Galactic Basic (English spoken in the Star Wars universe), just as Shakespeare would sound strange if he were alive today.</p>
+
+<p>Shakespeare is a good parallel to Yoda in that he also makes use of the syntactic freedom the users of Early Modern English enjoyed (cf. Right glad I am he was not at this fray. [<i>Romeo and Juliet</i>]). His archaic diction adds to his wisdom, and also, it results in a mysterious, mythical atmosphere that surrounds him as the misty swamp does his little hut. At the same time, it makes it harder for his listeners to decipher his message; a characteristic that <a href="https://www.theatlantic.com/entertainment/archive/2015/12/hmmmmm/420798" target="_blank">some</a> might call "riddle-like".</p>
+
+<p class="highlighted-text">Nonetheless, being a speaking puzzle is not the only explanation for Yodish. It may well be quite the opposite.</p>
+
+<h2 id="inversion">Inversion</h2>
+
+<p>What we, learners of ESL, can take away from the way Yoda speaks is efficiency: the little green Jedi master doesn't speak much, but when he does, you'd better listen! His syntax supports your attention, "[Yoda's] language was designed to make you focus on the boring philosophical lessons," as George Lucas recalls.</p>
+
+<p>If used for the right purposes, inversion is truly a wonderful device, and it serves its master well just as a lightsabre does the Jedi. Both of these structures are about putting emphasis on the elements of a sentence. Consider the sentence that every Padawan wants to hear someday: "You require no more training." If Yoda places<i> </i>the object <i>no more training </i>to the front, i.e. he says "No more training do you require.", he puts more emphasis on the fact that it is not more training Luke needs but something else.</p>
+
+<p class="highlighted-text">Now again, we know if for a fact that Yoda knows what he's doing.</p>
+
+<p>Check out what he means when using an inversion here:</p>
+
+<div class="examples" style="counter-set: my-sec-counter 4">
+<ol>
+<li>
+ <table>
+ <tbody>
+   <tr><td>YODA</td><td>No more training do you require. Already know you that which you need.</td></tr>
+   <tr><td>LUKE</td><td>Then I <i>am</i> a Jedi.</td></tr>
+   <tr><td>YODA</td><td>No. Not yet. One thing remains. Vader. You must confront Vader. Then, only then, a Jedi will you be. And confront him, you will.</td></tr>
+ </tbody>
+ </table>
+</li>
+</ol>
+</div>
+
+<p>Here, Yoda leads Luke to the conclusion that, with his training complete, he has become a Jedi. However, this is an inference that only the most inattentive would make: even though Luke has finished his training, he still needs to overcome a challenge that lies in front of the Padawan; namely, he needs to confront Darth Vader.</p>
+
+<div><img src="/assets/50010698591_7a93c11338_o.jpg" /></div>
+
+<div style="margin-block-start: 0.5em;margin-block-end: 0.5em;font-size: 80%;"><i>Still Life with Baby Yoda</i>. Photo: Eric Peacock (<a href="https://www.flickr.com/photos/evilpeacock/5001069859" target="_blanK">Flickr</a>).</div>
+
+<hr />
+
+<h2 id="dubbing-yoda-in-hungarian">Dubbing Yoda in Hungarian</h2>
+
+<p>During the past days as we were having a Star Wars marathon, what stroke me the most was that <span class="highlighted-text">the speech of the Hungarian Yoda was very much ordinary.</span></p>
+
+<p>Of course, I am not the first person noticing this peculiarity, a journalist at the Hungarian linguist blog <i>Nyelv &eacute;s Tudom&aacute;ny</i> (Language and Science) already wrote about in <a href="https://m.nyest.hu/hirek/yoda-mester-es-a-nyelvtipologia" target="_blank">her 2010 article</a> <i>Master Yoda and Language Typology</i>.</p>
+
+<p>Hungarian, as she also remarks, has a free word order (<i>szabad szórend</i>), but it doesn't mean that you can do whatever you want with the phrases in a sentence. The element that you put right before the verb is the focus of the sentence. However, the basic word order of a neutral sentence is subject-verb-object (SVO), and even though you <i>can</i> deviate from this, some structures may sound just as mysterious, poetic, or enigmatic as Yodish lines to an English speaker.</p>
+
+<p>For example, the OSV-ed translation of the famous quote "May the Force be with you" would be "Veled az Erő legyen." Given the focus at <i>az Erő</i> (the Force), this sentence would refer to the <i>force </i>as an alternative to something else, let's say, another abstract idea such as love. Check out the following mini-discourse, based on <i>Nyelv és Tudomány</i>:</p>
+
+<div class="examples">
+<ol>
+<li>
+ <table>
+ <tbody>
+   <tr><td>OBI-WAN</td><td>May the Force be with you!</td><td>Az Erő legyen veled!</td></tr>
+   <tr><td>YODA</td><td>And may love with you!</td><td>Veled a szeretet legyen.</td></tr>
+ </tbody>
+ </table>
+</li>
+</ol>
+</div>
+
+<p>In comparison, the Hungarian OSV would sound strange in an environment where the subject doesn't need to be stressed.</p>
+
+<div class="examples" style="counter-set:my-sec-counter 5">
+<ol style="counter-set: my-sec-counter2 1">
+<li>
+ <table>
+ <tbody>
+   <tr><td>OBI-WAN</td><td>May the Force be with you!</td><td>Az Erő legyen veled!</td></tr>
+   <tr><td>YODA</td><td>May the Force be with you!</td><td>Veled az Erő legyen.</td></tr>
+ </tbody>
+ </table>
+</li>
+</ol>
+</div>
+
+<p>Functionally speaking, this is almost identical to what we were dealing with in the previous part. The syntactic riddle that Luke faces when Yoda uses the inverted order in a conventional way (cf. "No more training do you require" [but a challenge, you need.]) could easily be translated to Hungarian.</p>
+
+<p>Actually, the problem is never with OSV. It is rather the S-part of the sentence, as the verb often carries the essential information about the subject, so much so that you don't need an explicit subject. Were one to use personal pronouns (<i>&eacute;n</i>, <i>te</i>, <i>ő</i> etc.) everywhere, they'd sound like the somewhat racist depiction of Native Americans in dubbed movies. And remember the case that I have already mentioned above: the copular <i>be</i> is implicit in third-person singular.</p>
+
+<p class="highlighted-text">Luckily, there's a handful of other solutions.</p>
+
+<div class="examples" style="counter-set:my-sec-counter 5">
+<ol style="counter-set:my-sec-counter2 2">
+<table>
+<tbody>
+<tr style="text-align:center;font-weight:bold"><td style="border:none"></td><td style="font-size: 120%;font-variant: all-petite-caps">English</td><td style="font-variant: all-petite-caps">Neutral Hungarian</td><td style="font-variant: all-petite-caps">Proposed Translation</td></tr>
+<tr><td><li></li></td><td>More to learn, he has.</td><td>Sokat kell még tanulnia.</td><td>Sokat tanulnia kell még.</td></tr>
+<tr><td><li></li></td><td>I hope right you are.</td><td>Remélem, hogy igazad van.</td><td>Hogy igazad van, remélem.</td></tr>
+<tr><td><li></li></td><td>Good friends you are.</td><td>Jó barátok vagytok.</td><td>Barátaim, jók, vagytok.</td></tr>
+<tr><td><li></li></td><td>Stay and help you, I will.</td><td>Maradok és segítek neked.</td><td>Maradok és neked segítek.</td></tr>
+<tr><td><li></li></td><td>But agree on you taking this boy as your Padawan learner, I do not.</td><td>De azzal nem értek egyet, hogy a fiú a padawanod legyen.</td><td>De, hogy a fiú a padawanod legyen, egyet azzal nem értek.</td></tr>
+	</tbody>
+	</table>
+	</ol>
+	</div>
+
+<p>The techniques I used here were the following: OSV (5C, 5D), appostion (<i>értelmező jelző</i> [5E]), main clause–subordinate clause inversion (5D), and unusual focus (5F). However, the length of the sentence very much limited the number of solutions as the shorter the sentence was, the less combinations there were for me to replace the words in it.</p>
+<p>Sure, this doesn’t tell you a lot, as we know: language is all about context. Without a discourse, the strangeness of 5F is close to non-existent. Therefore, we have to check what surrounds it:</p>
+
+<div class="examples" style="counter-set: my-sec-counter 5">
+<ol style="counter-set: my-sec-counter2 7">
+<li>
+ <table>
+ <tbody>
+   <tr><td>LUKE</td><td>Now will you move along, little fella?  We've got a lot of work to do.</td><td>Most már állj tovább, kisbarátom! Nekünk sok dolgunk van még itt.</td></tr>
+   <tr><td>YODA</td><td>No!  No, no!  <b>Stay and help you, I will.</b> Find your friend, hmm?</td><td>Nem! Nem, nem! <b>Maradok és neked segítek.</b> A barátod megtalálni, hm?</td></tr>
+   <tr><td>LUKE</td><td>I'm not looking for a friend. I'm looking for a Jedi Master.</td><td>Nem a barátomat keresem, hanem egy Jedi mestert.</td></tr>
+ </tbody>
+ </table>
+</li>
+</ol>
+</div>
+
+<h2 id="what's-up-with-other-languages">What’s Up with Other Languages?</h2>
+<p>It was not until 11 years ago that Reddit user <i>Shakedown_1979</i> raised <a href="https://www.reddit.com/r/linguistics/comments/gfoov/what_is_yodas_syntax_in_foreign_dubssubtitles_in" target="_blank">a similar question</a> on the translation of Yodaspeak. The worldwide discussion started with their list containing 11 languages and the way Yoda’s language was adapted to them, but many languages were added thanks to the contribution of people from all around the world.</p>
+<p>Unlike Hungarians, <span class="highlighted-text">
+translators of other languages seemed to have concentrated on the archaic, wise, and unusual quality of Yoda’s language.</span></p>
+<p>In Turkish, for example, the OSV was applied due to the alleged preference of that structure in Ottoman poetry, but archaisms were added in Japanese and Romanian, too. For Czech, Polish, and Estonian viewers, the syntax of their own Yodas sound quite weird, and putting the object before the verb (SOV, OVS) does so in other Slavic languages (such as Russian), as well, while the Polish and Estonian translations both applied strange foci – just like I did above.</p>
+<p>Now it is question time. Why do you think Hungarian translators did very little to translate Yodish, and what other ways do you think Yodish may be translated to Hungarian?</p>
+<p>Let me know what you think in the comments!</p>
+
+
+<hr>
+
+<div style="font-size:150%;font-weight:bold;font-variant:all-petite-caps;padding:5px 10px;">
+  
+    Comments
+  
+</div>
+
+<script>
+pages = document.getElementsByClassName("pages-button");
+for (i=0; i<pages.length; i++) {
+  if(("/" + pages[i].textContent.toLowerCase() + "/") === "/blog/") {
+    pages[i].classList.toggle("pages-button-current");
+    pages[i].style.backgroundColor = "palegreen";
+    pages[i].style.fontWeight = "bold"
+  }
+}
+</script>
+<style>
+.post-comment-number {
+  font-size:110%;
+  font-weight: bold;
+  padding:1em;
+}
+.post-comment {
+ clear:right;
+ padding-left:1em;
+ max-width:100%;
+}
+.post-comment-content, .post-comment-header, .reply-button-container {
+  padding:1em
+}
+.post-comment-date {
+  color:gray;
+}
+.post-comment-name {
+  font-weight:bold;
+  padding-right:0.5em;
+}
+.reply-button, .submit-button {
+ border:none;
+ background-color: antiquewhite;
+ padding:0.6em;
+ font-size: 90%;
+ font-variant: all-petite-caps;
+ cursor: pointer;
+}
+.reply-button:hover, .submit-button:hover {
+ opacity:0.9
+}
+#comment-section input[type=text], textarea {
+padding:0.5em;
+font-family:inherit;
+font-size:100%;
+box-sizing: border-box;
+}
+#comment-section input[type=checkbox] {
+min-height:20px;
+min-width:20px
+}
+#comment-section label {
+  font-size: clamp(0.5em, 2.5vw, 1.5em);
+}
+.comment-form-container {
+  padding:1em 10% 1em 1em;
+}
+.leave-a-comment1:hover {
+  text-decoration: underline;
+  cursor:pointer;
+  color:blue
+}
+</style>
+<div id="comment-section">
+<button id="recaptcha" style="display:none" class="g-recaptcha" data-sitekey="6Ld802sgAAAAABSZiOb1YDO0ApjEkmx4PNVh03tM" data-callback="onSubmit">
+</button>
+<div style="min-width:fit-content;max-width:50vw;padding-right:10%" id="demo">
+</div>
+
+<div id="leave-a-comment" style="padding: 0em 1em;font-size: 110%;font-weight: bold;">Leave a comment</div>
+<div class="comment-form-container" style="min-width:fit-content;max-width:50vw;">
+<table style="width:100%"><tbody>
+<tr><td style="width:50%"><div style="width:100%"><input type="text" style="width:100%" placeholder="Name"></div></td><td style="width:50%"><div style="        display:flex;
+        align-items:center;">
+<input type="checkbox"><label>I <i>am</i> a robot.</label></div></td></tr>
+<tr><td colspan="2"><textarea style="width:100%;height:15vh;resize:none" placeholder="Write your comment here"></textarea></td></tr>
+<tr><td colspan="2"> <div style="display:flex;justify-content:flex-end;padding: 0.5em 1em 1em 0em;">
+<button class="submit-button">
+Submit
+</button>
+</div></td></tr>
+ 
+  </tbody></table>
+</div>
+</div>
+<script>
+replyTo = ""
+replyToName = ""
+commenterNameData = "";
+commenterCheckBoxcheckedData = "";
+commenterCommentData = "";
+  buttonData = document.getElementsByClassName("submit-button")[document.getElementsByClassName("submit-button").length-1];
+  sampleForm =  document.createElement("DIV");
+  sampleForm.innerHTML = '<table style="width:100%"><tbody><tr><td style="width:50%"><div style="width:100%"><input type="text" style="width:100%" placeholder="' + "Name" + '"></div></td><td style="width:50%"><div style=" display:flex; align-items:center;"><input type="checkbox"><label>' + "I <i>am</i> a robot." + '</label></div></td></tr><tr><td colspan="2"><textarea style="width:100%;height:15vh;resize:none" placeholder="' + "Write your comment here" + '"></textarea></td></tr><tr><td colspan="2"> <div style="display:flex;justify-content:flex-end;padding: 0.5em 1em 1em 0em;"><button class="submit-button">' + "Submit" + '</button></div></td></tr> </tbody></table>'
+
+function submitButton(){
+  document.getElementById("leave-a-comment").classList.add("leave-a-comment1");
+ for (i=0; i<document.getElementsByClassName("submit-button").length; i++) {
+   document.getElementsByClassName("submit-button")[i].addEventListener("click",function() {
+     container = this.parentElement.parentElement.parentElement.parentElement.parentElement;
+    //name	comment	link	recaptcha	reply-to	reply-to-name checked
+     commenterNameData = encodeURIComponent(container.getElementsByTagName("input")[0].value);
+     commenterCheckBoxcheckedData = container.getElementsByTagName("input")[1].checked
+     commenterCommentData = encodeURIComponent(container.getElementsByTagName("textarea")[0].value);
+     buttonData = this;
+     if (commenterNameData && commenterCommentData && commenterCheckBoxcheckedData != true) {
+     this.disabled = true;
+     document.getElementById("recaptcha").click()
+     }
+                                                                                           });
+ }
+}
+
+loadXMLDoc()
+  
+submitButton()
+  
+onSubmit = function(token){
+  var xhttp = new XMLHttpRequest();
+xhttp.open("POST", "https://script.google.com/macros/s/AKfycbzkFnl2gLfM7QlU_PHOCao5zMBX_rUZqx6_0jhgu-5fdg3juuNFHY0D_MrIa0TSXNDxwQ/exec", true);
+
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+   //alert(xhttp.responseText)
+       // Typical action to be performed when the document is ready:
+       if (xhttp.responseText === "Successful submission") {
+        buttonData.parentElement.parentElement.parentElement.parentElement.parentElement.innerHTML = "Thank you, your comment will be visible after approval."
+       } else if (xhttp.responseText != "Successful submission") {
+        buttonData.parentElement.parentElement.parentElement.parentElement.parentElement.innerHTML = "Something went wrong. Refresh the page and try again."       
+       }
+    }
+};
+
+xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+  
+xhttp.send('name=' + commenterNameData + '&checked=' + commenterCheckBoxcheckedData + "&g-recaptcha-response=" + token + "&comment=" + commenterCommentData + "&link=" + window.location.href.split("#")[0] + "&reply-to=" + replyTo + "&reply-to-name=" + replyToName);
+}
+  
+document.getElementById("leave-a-comment").addEventListener("click",function(){
+  replyTo = ""
+  replyToName = ""  
+document.getElementById("leave-a-comment").classList.remove("leave-a-comment1");
+  container = document.getElementsByClassName("comment-form-container")[document.getElementsByClassName("comment-form-container").length-1];
+  if(container.innerText === "Thank you, your comment will be visible after approval.") {  
+    container.innerHTML = ""
+    sampleForm =  document.createElement("DIV");
+    sampleForm.innerHTML = '<table style="width:100%"><tbody><tr><td style="width:50%"><div style="width:100%"><input type="text" style="width:100%" placeholder="' + "Name" + '"></div></td><td style="width:50%"><div style=" display:flex; align-items:center;"><input type="checkbox"><label>' + "I <i>am</i> a robot." + '</label></div></td></tr><tr><td colspan="2"><textarea style="width:100%;height:15vh;resize:none" placeholder="' + "Write your comment here" + '"></textarea></td></tr><tr><td colspan="2"> <div style="display:flex;justify-content:flex-end;padding: 0.5em 1em 1em 0em;"><button class="submit-button">' + "Submit" + '</button></div></td></tr> </tbody></table>'
+  container.appendChild(sampleForm)
+  }
+  container.style.display = "block"
+submitButton();
+
+ for (i=0; i<replyButtons.length; i++) {
+     replyButtons[i].parentElement.style.display = "flex"
+     replyButtons[i].style.display = "block"
+     if (replyButtons[i].nextElementSibling) {
+     replyButtons[i].nextElementSibling.remove()
+     }
+     }
+     
+});
+
+function loadXMLDoc() {
+ var xhttp = new XMLHttpRequest();
+ xhttp.onreadystatechange = function() {
+   if (this.readyState == 4 && this.status == 200) {
+     
+     posts = []
+     columns = this.responseText.split("\r\n")[0].split(",").length; //For possible future purposes.
+     data = this.responseText.split("\r\n");
+     
+     
+     for (i=0; i<data.length; i++) {
+     if (data[i].split(",")[3] === window.location.href.split("#")[0] && data[i].split(",")[8] === "1") {
+     postObject = {
+     "date":data[i].split(",")[0],
+     "name":data[i].split(",")[1],
+     "comment":data[i].split(",")[2],
+     "link":data[i].split(",")[3],
+     "recaptcha":data[i].split(",")[4],
+     "post-id":data[i].split(",")[5],
+     "reply-to":data[i].split(",")[6],
+     "reply-to-name":data[i].split(",")[7],
+     "moderated":data[i].split(",")[8]
+     }
+     posts.push(postObject)
+     }
+     }
+   
+     numCom = posts.length;
+     postCommentNumber = document.createElement("DIV");
+     if (numCom<2) {postCommentNumber.innerHTML = numCom + " comment"} else {postCommentNumber.innerHTML = numCom + " comments"};
+     postCommentNumber.className = "post-comment-number"
+     document.getElementById("demo").prepend(postCommentNumber);
+     
+     for (i=0;i<posts.length;i++) {
+     commentBody = document.createElement("DIV");
+     commentBody.setAttribute("id",posts[i]["post-id"]);
+     
+     header = document.createElement("DIV");
+     header.className = "post-comment-header"
+commenterName = document.createElement("SPAN");
+commenterName.className = "post-comment-name"
+commenterName.innerText = posts[i].name;
+date = document.createElement("SPAN");
+date.className = "post-comment-date"
+date.innerText = posts[i].date;
+header.appendChild(commenterName);
+header.appendChild(date);
+
+comment = document.createElement("DIV");
+if (posts[i]["reply-to"] === "") {
+comment.innerText = decodeURIComponent(posts[i].comment);
+} else {
+comment.innerHTML = "<a href='#" + posts[i]["reply-to"] + "'>@" + posts[i]["reply-to-name"] + "</a> " + decodeURIComponent(posts[i].comment);
+}
+comment.style.backgroundColor = "lightgoldenrodyellow";
+comment.className = "post-comment-content"
+
+replyDiv = document.createElement("DIV");
+replyDiv.style.display = "flex";
+replyDiv.style.justifyContent = "flex-end"
+replyDiv.className = "reply-button-container"
+
+reply = document.createElement("BUTTON");
+reply.className = "reply-button";
+reply.innerText = "Reply";
+replyDiv.appendChild(reply)
+
+commentBody.className = "post-comment";
+
+commentBody.appendChild(header)
+commentBody.appendChild(comment)
+commentBody.appendChild(replyDiv)
+
+document.getElementById("demo").appendChild(commentBody)
+     }
+     
+     
+     replyButtons = document.getElementsByClassName("reply-button");
+     for (i=0; i<replyButtons.length; i++) {
+     replyButtons[i].addEventListener("click",function(){
+     replyTo = this.parentElement.parentElement.id
+     replyToName = encodeURIComponent(this.parentElement.parentElement.children[0].children[0].innerText)
+     document.getElementById("leave-a-comment").classList.add("leave-a-comment1");
+     for (i=0; i<replyButtons.length; i++) {
+     replyButtons[i].parentElement.style.display = "flex"
+     replyButtons[i].style.display = "block"
+     if (replyButtons[i].nextElementSibling) {
+     replyButtons[i].nextElementSibling.remove()
+     }
+     }
+     this.style.display = "none";
+     document.getElementsByClassName("comment-form-container")[document.getElementsByClassName("comment-form-container").length-1].style.display = "block"
+     document.getElementsByClassName("comment-form-container")[document.getElementsByClassName("comment-form-container").length-1].style.display = "none"
+  
+     this.parentElement.style.display = "block";
+         sampleForm =  document.createElement("DIV");
+         sampleForm.innerHTML = '<table style="width:100%"><tbody><tr><td style="width:50%"><div style="width:100%"><input type="text" style="width:100%" placeholder="' + "Name" + '"></div></td><td style="width:50%"><div style=" display:flex; align-items:center;"><input type="checkbox"><label>' + "I <i>am</i> a robot." + '</label></div></td></tr><tr><td colspan="2"><textarea style="width:100%;height:15vh;resize:none" placeholder="' + "Write your comment here" + '"></textarea></td></tr><tr><td colspan="2"> <div style="display:flex;justify-content:flex-end;padding: 0.5em 1em 1em 0em;"><button class="submit-button">' + "Submit" + '</button></div></td></tr> </tbody></table>'
+       //alert(sampleForm.innerHTML)
+     this.parentElement.appendChild(sampleForm)
+      
+       
+     submitButton();
+     })
+     }
+     //document.getElementById("demo").innerHTML = JSON.stringify(posts)
+   }
+ };
+ xhttp.open("GET", "https://docs.google.com/spreadsheets/d/e/2PACX-1vQg6dmeH1EYHwCm1zLmGSI34IC9Uchtf8pWL3KfqnPIMbSbFl-DB1jptcCjuIlP3e4mRVmcG7PbGuGz/pub?gid=0&single=true&output=csv", true);
+ xhttp.send();
+}
+</script>
+<hr>
+<style>
+  .related-post-title-container {
+    position:absolute;
+    z-index:2;
+    padding:0.5em 1em;
+    bottom:0.5em;
+    font-variant-caps:all-small-caps;
+    text-align:center;
+    font-size:110%;
+    background-color: #ffff9a;
+    width:calc(80% - 2em);
+  }
+  .related-post-title-container a {
+    color:black;
+    text-decoration:none;
+  }
+  .related-post-title-container a:hover {
+    cursor:pointer;
+   font-weight:bold;
+  }
+
+    .related-post-image {
+     z-index:1;
+     max-width: 80%;
+     padding: 5px 0;
+    }
+@media (max-width: 767px) {
+    .related-post-image {
+     padding: 5px 0;
+    }
+    }
+.related-post-image:hover {
+ cursor:pointer;
+ opacity:0.8
+}
+</style>
+<!--
+<div>
+  <div style="font-size: 150%;font-weight: bold;font-variant: all-petite-caps;padding: 5px 10px;max-width:80%">Related Posts</div>
+  <div style="padding-bottom: 22px;width:80%">
+    
+    <div style="position:relative">
+    <div class="related-post-title-container">
+                <a href="/2023/05/25/the-hooded-crow-the-pigeon-and-the-trash-can.html">The Hooded Crow, The Pigeon, and the Trash Can</a></div>
+      <div>
+        <a href="/2023/05/25/the-hooded-crow-the-pigeon-and-the-trash-can.html"><img class="related-post-image"
+                     src="/assets/Europe_2022_MRD_Corvids.png"></a></div>
+    </div>
+    
+    <div style="position:relative">
+    <div class="related-post-title-container">
+                <a href="/2022/12/23/van-helsing.html">Oh The Movies | Van Helsing (2004)</a></div>
+      <div>
+        <a href="/2022/12/23/van-helsing.html"><img class="related-post-image"
+                     src="/assets/van-helsing.jpg"></a></div>
+    </div>
+    
+    <div style="position:relative">
+    <div class="related-post-title-container">
+                <a href="/2022/12/23/old-people.html">Oh The Movies | Old People (2022)</a></div>
+      <div>
+        <a href="/2022/12/23/old-people.html"><img class="related-post-image"
+                     src="/assets/old-people.jpg"></a></div>
+    </div>
+    
+  </div>
+</div>
+-->
+
+</div>
+
+</div>
+
+</body>
+
+</html>

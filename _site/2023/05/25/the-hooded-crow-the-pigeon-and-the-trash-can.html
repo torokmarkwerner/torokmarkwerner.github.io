@@ -1,0 +1,835 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TM | The Hooded Crow, The Pigeon, and the Trash Can</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.png?">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  </head>
+  <style>
+#search-button:hover {
+  opacity: 0.9;
+  cursor:pointer;
+}
+.abc-parantheses {
+  counter-reset: abc;
+}
+.abc-parantheses > li {
+  list-style: none;
+  padding: 0.5em 0
+}
+.abc-parantheses > li:before {
+  content: counter(abc, lower-alpha) ") ";
+  counter-increment: abc;
+}
+    .language {
+    display: inline;
+    background-color: #b5d5ff;
+    padding: 0.5em;
+    text-transform: uppercase;
+    }
+    summary {
+      color:crimson;
+      font-weight:bold
+    }
+    summary:hover {
+      cursor:pointer;
+      opacity:0.9
+    }
+    #rating-container2 {
+      max-width:100px;
+    }
+    #rating-container {
+      padding:0;
+      margin:0;
+      position:relative;
+      font-size:150%;
+      width:100%;
+      }
+    
+    #rating-basic-stars {
+      padding:0;
+      margin:0;
+      color: grey;
+      position: relative;
+      width: 100%;
+      overflow:hidden;
+    }
+    
+    #rating-rating {
+      padding:0;
+      margin:0;
+      color: orange;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: calc(100% * var(--rate)/5);
+      overflow:hidden;
+    }
+    .rating-scoretable {
+      display:none;
+      padding: 0.5em 0;
+      table-layout:fixed;
+      width:100%;
+      text-align:center;
+    }
+    .rating-scoretable td {
+      border: 1px black solid;
+      height:2em
+    }
+    .rating-scoretable th {
+      color:white;
+      font-weight: normal;
+      background-color:black;
+    }
+    </style>
+<style>
+  .pages-button {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      }
+    
+    .video-container iframe, .video-container object, .video-container embed { 
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      }
+</style>
+<style>
+  acronym[title] {
+    text-decoration-thickness: from-font;
+    text-underline-position: from-font;
+  }
+  html, body { height: 100%; }
+  .toc {
+    background-color: lemonchiffon;
+    padding: 1em;
+    min-width:50%;
+    width:fit-content;
+    font-variant-caps: petite-caps;
+  }
+  .toc div {
+    padding-top: 0.5em;
+    font-weight: bold;
+    text-align:center;
+  }
+  .toc ul {
+    padding-inline-start: 1em;
+    padding-inline-end: 1em;
+    margin-block-start: 1em;
+    margin-block-end: 0em;
+    list-style: none;
+  }
+  .toc li {
+    padding-bottom:1em
+  }
+  .toc li a {
+    text-decoration: none;
+  }
+  #content-container h2 {
+  padding-top:0.5em
+  }
+  .highlighted-text {
+    background-color: antiquewhite;
+    padding: 0.5em;
+    font-size: 115%;
+    font-weight: bold;
+    display:block;
+  }
+  #content-container img:not(.related-post-image) {
+    max-width: 100%
+  }
+  .examples table {
+  border-collapse:collapse
+  }
+  .examples td {
+  padding: 0.5em;
+  border:0.5px black solid
+  }
+  .examples tr td:nth-child(1) {
+  min-width:fit-content;
+  text-align:center;
+  }
+  .examples {
+  counter-increment: my-sec-counter;
+  counter-reset: my-sec-counter2;
+}
+
+.examples ol {
+counter-reset: my-sec-counter2;
+list-style-type: none;
+display:table;
+border-collapse: separate;
+border-spacing: 0.5em;
+padding:0.5em 2em 0.5em 2em;
+padding-inline-start: 0;
+}
+
+.examples ol li {
+display: table-row;
+}
+
+.examples ol li::before {
+  counter-increment: my-sec-counter2;
+  content: counter(my-sec-counter) counter(my-sec-counter2, upper-alpha) " ";
+  display:table-cell;
+  text-align:left;
+  width:2em;
+  vertical-align:middle;
+}
+::-moz-selection { /* Code for Firefox */
+  color: HighlightText;
+  background: Highlight;
+}
+::selection {
+  color: HighlightText;
+  background: Highlight;
+}
+.tag-name {
+  color: chocolate;
+  font-weight: bold;
+  text-decoration: none;
+  }
+.tag-name:hover {
+  opacity:0.9
+  }
+.post-title {
+    display: inline-block;
+    background-color: lightgoldenrodyellow;
+    color: black;
+    text-decoration: none;
+    padding: 0.5em;
+  }
+.post-title:hover {
+  background-color: antiquewhite;
+  opacity:0.9;
+  }
+.fa.fa-facebook, .fa.fa-google, .fa.fa-linkedin {
+ font-size: 20px;
+ width: 40px;
+ height: 40px;
+ line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0.5em 0.2em;
+  border-radius:5px;
+  }
+  .fa.fa-facebook:hover, .fa.fa-google:hover, .fa.fa-linkedin:hover {
+    cursor:pointer;
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+</style>
+  <style>
+body {
+  font-family: "Calibri", "Arial", sans-serif;
+  margin: 0;
+  border: 0;
+  padding:0;
+    width:100%;
+  overflow-y: scroll;
+  }
+.page-wrapper {
+  width:80vw;
+  display:flex;
+  min-height:100%;
+  height:fit-content;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  padding-top:10px
+}
+#sticky {
+  text-align:center;
+  width:20vw;
+    position: sticky;
+    top: 10px;
+    align-self: flex-start;
+}
+.pages-button {
+  font-size:125%;
+  padding: 0.5em;
+}
+.pages-button:hover {
+  background-color:lightskyblue;
+  cursor:pointer;
+  font-weight:bold;
+}
+.pages-button-current {
+      background-color:palegreen;
+      
+    }
+#content-container {
+      padding:0 0 0 2em;
+      width:40vw
+    }
+    
+@media (max-width: 767px) {
+    .sticky {
+      display:none;
+    }
+    #content-container {
+      width:80vw;
+    }
+  }
+    
+</style>
+<body>
+<div class="page-wrapper">
+  <div id="background" style="opacity:0.8;width:100%;height:100%;background-color:black;top:0;left:0;position:fixed;display:none;z-index:2">
+</div>
+
+<style>
+#hamburger {
+  display: none;
+  }
+  
+#sticky img {
+  width: 100%;
+  }
+#close {
+  display: none;
+  }
+@media (max-width: 767px) {
+#hamburger {
+    display: block;
+    position: fixed;
+    background: lightskyblue;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    transition: all 0.5s;
+}
+.hamburger-line {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 8.5px auto;
+}
+#hamburger:hover {
+  opacity:0.8;
+  cursor:pointer;
+}
+#sticky {
+    background-color: white;
+    position: fixed;
+    top:0px;
+    left:0px;
+    width:50%;
+    height:100%;
+    transform: translate3d(-100vw, 0, 0);
+    transition: all 0.5s;
+    min-width:fit-content;
+    z-index: 3
+    }
+#sticky img {
+  width: 40vw;
+  }
+#close {
+    display: block;
+    position:relative;
+    font-size:50px;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    background-color:black;
+    color:white;
+    text-align:center;
+    line-height:50px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+#close:hover {
+  cursor:pointer;
+}
+ }
+</style>
+
+<div>
+<div id="hamburger" onclick="openNav()">
+<div class="hamburger-line"></div>
+<div class="hamburger-line"></div>
+<div class="hamburger-line"></div>
+</div>
+</div>
+
+<script>
+function openNav() {
+document.getElementById("sticky").style.transform = "translate3d(0, 0, 0)"
+document.getElementById("hamburger").style.display = "none"
+document.getElementById("background").style.display = "block"
+}
+
+function hideNav() {
+document.getElementById("sticky").style.transform = "translate3d(-100vw, 0, 0)"
+document.getElementById("hamburger").style.display = "block"
+document.getElementById("background").style.display = "none"
+}
+</script>
+  
+<div id="sticky">
+<div id="close" onclick="hideNav()">&times;</div>
+<div style="display: inline-flex;vertical-align: bottom;"><img src="https://avatars.githubusercontent.com/u/98919050"/></div>
+<a id="about" class="pages-button" href="/about">ABOUT</a>
+<a id="projects" class="pages-button" href="/projects">PROJECTS</a>
+<a id="blog" class="pages-button" href="/blog">BLOG</a>
+<a id="contact" class="pages-button" href="/contact">CONTACT</a>
+<div style="text-align:center">
+<a href="https://www.facebook.com/torok.mark.werner" target="_blank" class="fa fa-facebook"></a>
+<a href="mailto:torokmarkwerner@gmail.com" target="_blank" class="fa fa-google"></a>
+<a href="https://www.linkedin.com/in/torok-mark-werner" target="_blank" class="fa fa-linkedin"></a>
+  </div>
+</div>
+
+  <script>
+//alert(document.location.pathname + " --> And this is the substring:" + document.location.pathname.toString().substring(1,document.location.pathname.toString().length-1))
+pages = document.getElementsByClassName("pages-button");
+for (i=0; i<pages.length; i++) {
+  if(("/" + pages[i].textContent.toLowerCase() + "/") === document.location.pathname) {
+    pages[i].classList.toggle("pages-button-current");
+    pages[i].style.backgroundColor = "palegreen";
+    pages[i].style.fontWeight = "bold"
+  }
+}
+</script>
+<div id="content-container">
+<h1>The Hooded Crow, The Pigeon, and the Trash Can</h1>
+    <p>25 May 2023  | <span class="ert">
+    <acronym title="Estimated reading time">ERT</acronym>:
+    
+    
+    3 mins
+</span></p>
+<div style="margin-block-start: 1em;margin-block-end: 1em;">
+    
+    <a class="tag-name" style="color:black" href="/tag/en"><div class="language">English</div></a>
+    
+
+  
+  
+    
+    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/environment">ENVIRONMENT</a>] </div>
+  
+</div>
+
+<p>I remember when I first saw a hooded crow (<em>dolmányos varjú</em>). I was around 15 and went for an afternoon trip from our home town to Budapest. We visited a cosy little park at the Buda end of Elisabeth Bridge, and there were these strange-looking, gray-chested crows.
+<!--end-of-excerpt--></p>
+
+<p>Of course, I had already seen carrion crows (<em>kormos varjú</em>) and rooks (<em>vetési varjú</em>), but it seems to me that I hadn’t ever come across their hooded relatives before. Since then, I associate hooded crows with the city and carrion crows with the countryside, and I like to think that carrion crows are compelled to move inwards due to the lack of food on the countryside in the winter.</p>
+
+<div style="text-align:center"><img src="/assets/Europe_2022_MRD_Corvids.png" width="50%" /></div>
+
+<div style="margin-block-start: 0.5em;margin-block-end: 0.5em;font-size: 80%;text-align:center">The hooded crow. Source: <a href="https://commons.wikimedia.org/wiki/File:Europe_2022_MRD_Corvids.tiff" target="_blank">Mike Dickinson</a>.</div>
+
+<p>As for the hooded crow, my inference is that it inhabits the city, so much so that it adapted greatly to the big city life. It was years ago when I first noticed that crows fly to trash cans, land on the top of it, and try to fish some food out of it. They also measure how full the can is, and if the trask is too low for them to pinch on, they fly on to the next one, systematically checking the trash cans in the area.</p>
+
+<p>But it hasn’t been until recently that I’ve noticed another kind of adaptive behaviour in the urban environment. As the hooded crow landed on the trash can, two street pigeons flew closer. The crow was not successful for the first time, and it got scared by some walkers-by, and so did the pigeons. Nevertheless, the second time was a hit, the crow scattered trash all over the sidewalk and found something to chew on in it. To my surprise, the pigeons stayed until the crow left, and then they also started looking for some food in there. They knew what the crow was doing there and they were waiting for the right time to chip in.</p>
+
+<p>However, back to Corvids. They’re social animals living in family groups, and they often feed on carrions (hence the name of the carrion crow), or form foraging groups and scour the area for whatever there is to eat. The high level of cooperation that is needed to such undertakings could be one reason underlying their remarkable intelligence, as it is assumed to have been the case with humans by the Hungarian Centre of Ecological Research (see <a href="https://elkh.org/en/news/according-to-the-latest-results-of-cer-researchers-the-proto-language-may-have-developed-in" target="_blank">this article</a> for more on this).</p>
+
+<p>The most prominent feature of their intelligence lies in their communicative skills. Even though we all know Poe’s poem <em>The Raven</em> (“Quoth the Raven ‘Nevermore.’”), it’s a lesser-known fact that ravens can, in reality, mimic human speech. <a href="https://www.youtube.com/watch?v=AfsnHVaScjg" target="_blank">Mischief</a>, the white-necked raven, and <a href="https://www.youtube.com/watch?v=2d3dOam9Hg4" target="_blank">Fable</a>, the common raven, became virtual celebrities on Youtube because of their immensive skills when it comes to imitate speech, and even crows (like <a href="https://www.youtube.com/watch?v=O9epnUBQHXI" target="_blank">Tuck</a>) demonstrate this behaviour to some extent.</p>
+
+<p>In the wild, corvids do use a colourful palet of callings, so that they can cooperate within their groups, which is another intriguing aspect to touch upon if you’re interested in ornithology as well as in learning English. Although a group of birds is called a ‘flock’, the collective nouns used for the gatherings of Corvidae are as follows:</p>
+<ul>
+  <li>a crow → a murder of crows</li>
+  <li>a raven → an unkindness/conspiracy of ravens</li>
+  <li>a magpie → a conventicle/mischief of magpies</li>
+  <li>a rook → a parliament/building of rooks</li>
+</ul>
+
+<p>Not the most endearing terms, are they? Well, in Western culture, these black birds generally have a reputation of being friends with the devil, Death, and the underworld. For example, Poe made use of the raven’s common depiction as a prophet, a messenger of the dead, and Odin sends his two ravens Huginn (Thought) and Muninn (Memory) to gather information on how’s it going in his realms. And let’s not forget about the six ravens of the Tower of London who are carefully tended to by the yeomans lest the Crown falls - I mean, would it really be so unfortunate?</p>
+
+<p>Significant as they are in our culture, it is no surprise that Corvids have a culture of their own with social customs such as <a href="https://www.youtube.com/watch?v=0QyHybSLj6A" target="_blank">funerals</a> and highly sophisticated strategies to scare various animals of prey away from their territory (see <a href="https://www.youtube.com/watch?v=Qt-pB1R64mI" target="_blank">a hooded crow getting two cats really miffed</a> or <a href="https://www.youtube.com/watch?v=USN8spjKFlU" target="_blank">two little magpies taunting a fox</a>). They even cooperate with more distant members of their families as you can see <a href="https://www.youtube.com/watch?v=sJBIMwHDjXE" target="_blank">here</a>, for example, with a sparrowhawk harassed by two magpies and a carrion crow. Their intrepidity knows no limit in protecting their chicks and they even put up a fight with humans in the vicinity of the nest. It should be noted, though, that their disruptive behaviour may well be playful in nature, especially in cases when the crow does <em>not</em>, in fact, protect their territory (e.g., <a href="https://www.youtube.com/watch?v=i_ta33bMB70" target="_blank">this video</a> shows a Russian crow snowboarding on a car), which in turn raises serious questions on the importance and use of play in the animal world (check out <a href="https://blogs.scientificamerican.com/guest-blog/so-you-think-you-know-why-animals-play" target="_blank">this ‘edutaining’ article</a> for more).</p>
+
+<p>And if the above evidence did not suffice, I’d like to give the floor to David Attenborough who explains how city crows use cars to crack chestnuts at the crosswalk:</p>
+
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/BGPGknpq3e0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</div>
+
+<hr>
+
+<div style="font-size:150%;font-weight:bold;font-variant:all-petite-caps;padding:5px 10px;">
+  
+    Comments
+  
+</div>
+
+<script>
+pages = document.getElementsByClassName("pages-button");
+for (i=0; i<pages.length; i++) {
+  if(("/" + pages[i].textContent.toLowerCase() + "/") === "/blog/") {
+    pages[i].classList.toggle("pages-button-current");
+    pages[i].style.backgroundColor = "palegreen";
+    pages[i].style.fontWeight = "bold"
+  }
+}
+</script>
+<style>
+.post-comment-number {
+  font-size:110%;
+  font-weight: bold;
+  padding:1em;
+}
+.post-comment {
+ clear:right;
+ padding-left:1em;
+ max-width:100%;
+}
+.post-comment-content, .post-comment-header, .reply-button-container {
+  padding:1em
+}
+.post-comment-date {
+  color:gray;
+}
+.post-comment-name {
+  font-weight:bold;
+  padding-right:0.5em;
+}
+.reply-button, .submit-button {
+ border:none;
+ background-color: antiquewhite;
+ padding:0.6em;
+ font-size: 90%;
+ font-variant: all-petite-caps;
+ cursor: pointer;
+}
+.reply-button:hover, .submit-button:hover {
+ opacity:0.9
+}
+#comment-section input[type=text], textarea {
+padding:0.5em;
+font-family:inherit;
+font-size:100%;
+box-sizing: border-box;
+}
+#comment-section input[type=checkbox] {
+min-height:20px;
+min-width:20px
+}
+#comment-section label {
+  font-size: clamp(0.5em, 2.5vw, 1.5em);
+}
+.comment-form-container {
+  padding:1em 10% 1em 1em;
+}
+.leave-a-comment1:hover {
+  text-decoration: underline;
+  cursor:pointer;
+  color:blue
+}
+</style>
+<div id="comment-section">
+<button id="recaptcha" style="display:none" class="g-recaptcha" data-sitekey="6Ld802sgAAAAABSZiOb1YDO0ApjEkmx4PNVh03tM" data-callback="onSubmit">
+</button>
+<div style="min-width:fit-content;max-width:50vw;padding-right:10%" id="demo">
+</div>
+
+<div id="leave-a-comment" style="padding: 0em 1em;font-size: 110%;font-weight: bold;">Leave a comment</div>
+<div class="comment-form-container" style="min-width:fit-content;max-width:50vw;">
+<table style="width:100%"><tbody>
+<tr><td style="width:50%"><div style="width:100%"><input type="text" style="width:100%" placeholder="Name"></div></td><td style="width:50%"><div style="        display:flex;
+        align-items:center;">
+<input type="checkbox"><label>I <i>am</i> a robot.</label></div></td></tr>
+<tr><td colspan="2"><textarea style="width:100%;height:15vh;resize:none" placeholder="Write your comment here"></textarea></td></tr>
+<tr><td colspan="2"> <div style="display:flex;justify-content:flex-end;padding: 0.5em 1em 1em 0em;">
+<button class="submit-button">
+Submit
+</button>
+</div></td></tr>
+ 
+  </tbody></table>
+</div>
+</div>
+<script>
+replyTo = ""
+replyToName = ""
+commenterNameData = "";
+commenterCheckBoxcheckedData = "";
+commenterCommentData = "";
+  buttonData = document.getElementsByClassName("submit-button")[document.getElementsByClassName("submit-button").length-1];
+  sampleForm =  document.createElement("DIV");
+  sampleForm.innerHTML = '<table style="width:100%"><tbody><tr><td style="width:50%"><div style="width:100%"><input type="text" style="width:100%" placeholder="' + "Name" + '"></div></td><td style="width:50%"><div style=" display:flex; align-items:center;"><input type="checkbox"><label>' + "I <i>am</i> a robot." + '</label></div></td></tr><tr><td colspan="2"><textarea style="width:100%;height:15vh;resize:none" placeholder="' + "Write your comment here" + '"></textarea></td></tr><tr><td colspan="2"> <div style="display:flex;justify-content:flex-end;padding: 0.5em 1em 1em 0em;"><button class="submit-button">' + "Submit" + '</button></div></td></tr> </tbody></table>'
+
+function submitButton(){
+  document.getElementById("leave-a-comment").classList.add("leave-a-comment1");
+ for (i=0; i<document.getElementsByClassName("submit-button").length; i++) {
+   document.getElementsByClassName("submit-button")[i].addEventListener("click",function() {
+     container = this.parentElement.parentElement.parentElement.parentElement.parentElement;
+    //name	comment	link	recaptcha	reply-to	reply-to-name checked
+     commenterNameData = encodeURIComponent(container.getElementsByTagName("input")[0].value);
+     commenterCheckBoxcheckedData = container.getElementsByTagName("input")[1].checked
+     commenterCommentData = encodeURIComponent(container.getElementsByTagName("textarea")[0].value);
+     buttonData = this;
+     if (commenterNameData && commenterCommentData && commenterCheckBoxcheckedData != true) {
+     this.disabled = true;
+     document.getElementById("recaptcha").click()
+     }
+                                                                                           });
+ }
+}
+
+loadXMLDoc()
+  
+submitButton()
+  
+onSubmit = function(token){
+  var xhttp = new XMLHttpRequest();
+xhttp.open("POST", "https://script.google.com/macros/s/AKfycbzkFnl2gLfM7QlU_PHOCao5zMBX_rUZqx6_0jhgu-5fdg3juuNFHY0D_MrIa0TSXNDxwQ/exec", true);
+
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+   //alert(xhttp.responseText)
+       // Typical action to be performed when the document is ready:
+       if (xhttp.responseText === "Successful submission") {
+        buttonData.parentElement.parentElement.parentElement.parentElement.parentElement.innerHTML = "Thank you, your comment will be visible after approval."
+       } else if (xhttp.responseText != "Successful submission") {
+        buttonData.parentElement.parentElement.parentElement.parentElement.parentElement.innerHTML = "Something went wrong. Refresh the page and try again."       
+       }
+    }
+};
+
+xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+  
+xhttp.send('name=' + commenterNameData + '&checked=' + commenterCheckBoxcheckedData + "&g-recaptcha-response=" + token + "&comment=" + commenterCommentData + "&link=" + window.location.href.split("#")[0] + "&reply-to=" + replyTo + "&reply-to-name=" + replyToName);
+}
+  
+document.getElementById("leave-a-comment").addEventListener("click",function(){
+  replyTo = ""
+  replyToName = ""  
+document.getElementById("leave-a-comment").classList.remove("leave-a-comment1");
+  container = document.getElementsByClassName("comment-form-container")[document.getElementsByClassName("comment-form-container").length-1];
+  if(container.innerText === "Thank you, your comment will be visible after approval.") {  
+    container.innerHTML = ""
+    sampleForm =  document.createElement("DIV");
+    sampleForm.innerHTML = '<table style="width:100%"><tbody><tr><td style="width:50%"><div style="width:100%"><input type="text" style="width:100%" placeholder="' + "Name" + '"></div></td><td style="width:50%"><div style=" display:flex; align-items:center;"><input type="checkbox"><label>' + "I <i>am</i> a robot." + '</label></div></td></tr><tr><td colspan="2"><textarea style="width:100%;height:15vh;resize:none" placeholder="' + "Write your comment here" + '"></textarea></td></tr><tr><td colspan="2"> <div style="display:flex;justify-content:flex-end;padding: 0.5em 1em 1em 0em;"><button class="submit-button">' + "Submit" + '</button></div></td></tr> </tbody></table>'
+  container.appendChild(sampleForm)
+  }
+  container.style.display = "block"
+submitButton();
+
+ for (i=0; i<replyButtons.length; i++) {
+     replyButtons[i].parentElement.style.display = "flex"
+     replyButtons[i].style.display = "block"
+     if (replyButtons[i].nextElementSibling) {
+     replyButtons[i].nextElementSibling.remove()
+     }
+     }
+     
+});
+
+function loadXMLDoc() {
+ var xhttp = new XMLHttpRequest();
+ xhttp.onreadystatechange = function() {
+   if (this.readyState == 4 && this.status == 200) {
+     
+     posts = []
+     columns = this.responseText.split("\r\n")[0].split(",").length; //For possible future purposes.
+     data = this.responseText.split("\r\n");
+     
+     
+     for (i=0; i<data.length; i++) {
+     if (data[i].split(",")[3] === window.location.href.split("#")[0] && data[i].split(",")[8] === "1") {
+     postObject = {
+     "date":data[i].split(",")[0],
+     "name":data[i].split(",")[1],
+     "comment":data[i].split(",")[2],
+     "link":data[i].split(",")[3],
+     "recaptcha":data[i].split(",")[4],
+     "post-id":data[i].split(",")[5],
+     "reply-to":data[i].split(",")[6],
+     "reply-to-name":data[i].split(",")[7],
+     "moderated":data[i].split(",")[8]
+     }
+     posts.push(postObject)
+     }
+     }
+   
+     numCom = posts.length;
+     postCommentNumber = document.createElement("DIV");
+     if (numCom<2) {postCommentNumber.innerHTML = numCom + " comment"} else {postCommentNumber.innerHTML = numCom + " comments"};
+     postCommentNumber.className = "post-comment-number"
+     document.getElementById("demo").prepend(postCommentNumber);
+     
+     for (i=0;i<posts.length;i++) {
+     commentBody = document.createElement("DIV");
+     commentBody.setAttribute("id",posts[i]["post-id"]);
+     
+     header = document.createElement("DIV");
+     header.className = "post-comment-header"
+commenterName = document.createElement("SPAN");
+commenterName.className = "post-comment-name"
+commenterName.innerText = posts[i].name;
+date = document.createElement("SPAN");
+date.className = "post-comment-date"
+date.innerText = posts[i].date;
+header.appendChild(commenterName);
+header.appendChild(date);
+
+comment = document.createElement("DIV");
+if (posts[i]["reply-to"] === "") {
+comment.innerText = decodeURIComponent(posts[i].comment);
+} else {
+comment.innerHTML = "<a href='#" + posts[i]["reply-to"] + "'>@" + posts[i]["reply-to-name"] + "</a> " + decodeURIComponent(posts[i].comment);
+}
+comment.style.backgroundColor = "lightgoldenrodyellow";
+comment.className = "post-comment-content"
+
+replyDiv = document.createElement("DIV");
+replyDiv.style.display = "flex";
+replyDiv.style.justifyContent = "flex-end"
+replyDiv.className = "reply-button-container"
+
+reply = document.createElement("BUTTON");
+reply.className = "reply-button";
+reply.innerText = "Reply";
+replyDiv.appendChild(reply)
+
+commentBody.className = "post-comment";
+
+commentBody.appendChild(header)
+commentBody.appendChild(comment)
+commentBody.appendChild(replyDiv)
+
+document.getElementById("demo").appendChild(commentBody)
+     }
+     
+     
+     replyButtons = document.getElementsByClassName("reply-button");
+     for (i=0; i<replyButtons.length; i++) {
+     replyButtons[i].addEventListener("click",function(){
+     replyTo = this.parentElement.parentElement.id
+     replyToName = encodeURIComponent(this.parentElement.parentElement.children[0].children[0].innerText)
+     document.getElementById("leave-a-comment").classList.add("leave-a-comment1");
+     for (i=0; i<replyButtons.length; i++) {
+     replyButtons[i].parentElement.style.display = "flex"
+     replyButtons[i].style.display = "block"
+     if (replyButtons[i].nextElementSibling) {
+     replyButtons[i].nextElementSibling.remove()
+     }
+     }
+     this.style.display = "none";
+     document.getElementsByClassName("comment-form-container")[document.getElementsByClassName("comment-form-container").length-1].style.display = "block"
+     document.getElementsByClassName("comment-form-container")[document.getElementsByClassName("comment-form-container").length-1].style.display = "none"
+  
+     this.parentElement.style.display = "block";
+         sampleForm =  document.createElement("DIV");
+         sampleForm.innerHTML = '<table style="width:100%"><tbody><tr><td style="width:50%"><div style="width:100%"><input type="text" style="width:100%" placeholder="' + "Name" + '"></div></td><td style="width:50%"><div style=" display:flex; align-items:center;"><input type="checkbox"><label>' + "I <i>am</i> a robot." + '</label></div></td></tr><tr><td colspan="2"><textarea style="width:100%;height:15vh;resize:none" placeholder="' + "Write your comment here" + '"></textarea></td></tr><tr><td colspan="2"> <div style="display:flex;justify-content:flex-end;padding: 0.5em 1em 1em 0em;"><button class="submit-button">' + "Submit" + '</button></div></td></tr> </tbody></table>'
+       //alert(sampleForm.innerHTML)
+     this.parentElement.appendChild(sampleForm)
+      
+       
+     submitButton();
+     })
+     }
+     //document.getElementById("demo").innerHTML = JSON.stringify(posts)
+   }
+ };
+ xhttp.open("GET", "https://docs.google.com/spreadsheets/d/e/2PACX-1vQg6dmeH1EYHwCm1zLmGSI34IC9Uchtf8pWL3KfqnPIMbSbFl-DB1jptcCjuIlP3e4mRVmcG7PbGuGz/pub?gid=0&single=true&output=csv", true);
+ xhttp.send();
+}
+</script>
+<hr>
+<style>
+  .related-post-title-container {
+    position:absolute;
+    z-index:2;
+    padding:0.5em 1em;
+    bottom:0.5em;
+    font-variant-caps:all-small-caps;
+    text-align:center;
+    font-size:110%;
+    background-color: #ffff9a;
+    width:calc(80% - 2em);
+  }
+  .related-post-title-container a {
+    color:black;
+    text-decoration:none;
+  }
+  .related-post-title-container a:hover {
+    cursor:pointer;
+   font-weight:bold;
+  }
+
+    .related-post-image {
+     z-index:1;
+     max-width: 80%;
+     padding: 5px 0;
+    }
+@media (max-width: 767px) {
+    .related-post-image {
+     padding: 5px 0;
+    }
+    }
+.related-post-image:hover {
+ cursor:pointer;
+ opacity:0.8
+}
+</style>
+<!--
+<div>
+  <div style="font-size: 150%;font-weight: bold;font-variant: all-petite-caps;padding: 5px 10px;max-width:80%">Related Posts</div>
+  <div style="padding-bottom: 22px;width:80%">
+    
+    <div style="position:relative">
+    <div class="related-post-title-container">
+                <a href="/2022/12/23/van-helsing.html">Oh The Movies | Van Helsing (2004)</a></div>
+      <div>
+        <a href="/2022/12/23/van-helsing.html"><img class="related-post-image"
+                     src="/assets/van-helsing.jpg"></a></div>
+    </div>
+    
+    <div style="position:relative">
+    <div class="related-post-title-container">
+                <a href="/2022/12/23/old-people.html">Oh The Movies | Old People (2022)</a></div>
+      <div>
+        <a href="/2022/12/23/old-people.html"><img class="related-post-image"
+                     src="/assets/old-people.jpg"></a></div>
+    </div>
+    
+    <div style="position:relative">
+    <div class="related-post-title-container">
+                <a href="/2022/12/23/nosferatu-the-vampyre.html">Oh The Movies | Nosferatu the Vampyre (1979)</a></div>
+      <div>
+        <a href="/2022/12/23/nosferatu-the-vampyre.html"><img class="related-post-image"
+                     src="/assets/nosferatu-the-vampyre.jpg"></a></div>
+    </div>
+    
+  </div>
+</div>
+-->
+
+</div>
+
+</div>
+
+</body>
+
+</html>

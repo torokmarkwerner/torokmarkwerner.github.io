@@ -1,0 +1,467 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>HP Fanfiction | Cím nélkül</title>
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.png?">
+<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Julius+Sans+One|Oswald" rel="stylesheet">
+<link href="http://fonts.cdnfonts.com/css/harry-potter" rel="stylesheet">
+</head>
+
+<style>
+.comment-like {
+  margin:auto;min-width:60%;max-width:80%;table-layout: fixed;border-collapse: collapse;text-align:center;vertical-align:center;
+}
+a {
+text-decoration: none;
+}
+a:not(.maintitle) {
+  color: inherit;
+}
+a:not(.maintitle):hover {
+  color:#9900cc;
+}
+.story a:hover {
+  color:black;
+}
+body {
+  position:relative;
+  background-image: linear-gradient(to right, #0B2A38, #12383F, #071E35, #011D31);
+  top:0;
+  left:0;
+  padding:0;
+  margin:0;
+}
+#stars {
+  z-index:-1;
+  position:absolute;
+  top:200pt;
+  left:0;
+  background-image:url("https://torokmarkwerner.github.io/hp-stars.png");
+  background-repeat:repeat;
+  height: calc(100% - 200pt);
+  width:100%;
+}
+#main {
+  z-index:0;
+   background-repeat: no-repeat;
+  background-position-x:center;
+  background-position-y:bottom;
+  left:0;
+  bottom:0;
+display:flex;
+flex-wrap: wrap;
+flex-direction:row;
+align-content:flex-start;
+  justify-content: center;
+}
+
+#main .story {
+  font-family: "Times New Roman";
+  z-index:2;
+  border: 1px solid;
+  box-shadow: 5px 10px;
+  margin:2%;
+  padding:2%;
+  min-width: 150px;
+  max-width: 200px;
+  min-height: 150px;
+  max-height: 200px;
+  flex: 1 0 20%;
+  /*display: flex;*/
+  background-color:#C5B96D;
+  color:black;
+  text-align:center;
+  align-items: center;
+}
+#main .story:hover {
+  background-color:#FBD308;
+  opacity:0.97;
+  cursor:pointer;
+}
+.footer {
+  font-family: "Crimson Text", Georgia;
+  text-align:center;
+  width:100%;
+  padding:3%;
+  font-size:85%;
+}
+</style>
+<body>
+<div id="stars">
+</div>
+<div style="text-align:center;display:block"><a class="maintitle" href="https://torokmarkwerner.github.io/h-p-fanfiction">
+<h1 style="text-align:center;color:#FBD308">
+<img style="max-width: 100%;max-height:200pt;margin-bottom:-60px" src="https://torokmarkwerner.github.io/title.png" /><br><span style="font-family: 'Oswald', Helvetica Neue;font-size: 26pt;">ÉS A HETEDIK CÉSEK</span>
+</h1></a>
+</div>
+<div id="main">
+
+  
+  <div style="color: black;background-color: #C5B96D;margin: 0 15%;padding: 5%;">
+    <h2>Cím nélkül</h2>
+    <p style="font-size: 80%;">Írta: JEREB MÍRA</p>
+    <table class="comment-like" style="min-width: 15%;max-width: 80%;margin:0">
+      <tbody>
+        <tr>
+          <td><img src="https://d33v4339jhl8k0.cloudfront.net/docs/assets/55e7171d90336027d77078f6/images/5a75c4a22c7d3a4a4198c56a/file-Og6PGLfTD5.png" width="30px" /></td>
+          <td>0</td>
+          <td><img id="heart" style="filter: brightness(500%);" src="https://www.freepnglogos.com/uploads/heart-png/emoji-heart-33.png" width="30px" /></td>
+          <td>0</td>
+        </tr>
+      </tbody>
+      </table>
+<style>
+#heart:hover {
+  cursor:pointer;
+}
+</style>      
+
+<script>
+        var varName = "Jereb Míra"
+      function sendPlusOne() {
+      xhr = new XMLHttpRequest();
+      dataTable = "https://script.google.com/macros/s/AKfycbzh61GzScy5bCNPDFL_6d_CDwTljnu3oNY6VfdUtQMVfhIbB3h-fAMybRemOgFAe_iL/exec"
+      xhr.open('POST', dataTable, true);
+      xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+      xhr.send('name=' + encodeURI(varName));
+      document.getElementById("heart").removeEventListener("click",sendPlusOne)
+      document.getElementById("heart").style.filter = "brightness(100%)"
+      document.getElementById("heart").style.cursor = "inherit"
+      document.getElementById("heart").parentElement.nextElementSibling.innerText = Number(document.getElementById("heart").parentElement.nextElementSibling.innerText) + 1
+      }
+      document.getElementById("heart").addEventListener("click",sendPlusOne)
+
+  dataTable = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQzsfeZNjSPfjP0yTllvKxjgDJvMQx1-ifLSC4vl1xQ2DEyRmGADAAF1HB7itpEzcAZjaAUdO8y3I4p/pub?output=csv"
+  xhr=new XMLHttpRequest();
+  xhr.open("GET", dataTable, false);
+    xhr.onreadystatechange = function () {
+        if(xhr.readyState === 4) {
+            if(xhr.status === 200 || xhr.status == 0) {
+               	data = xhr.responseText.split(/\n/);
+						}
+        }
+    }
+    xhr.send();
+scoreTable = {}
+for (i=1;i<data.length;i++) {
+name = data[i].split(",")[0];
+score = Number(data[i].split(",")[1]);
+scoreTable[name] = score;
+}
+document.getElementById("heart").parentElement.nextElementSibling.innerText = scoreTable[varName];
+
+      </script>
+
+    <p>Sirius egy helyben ült és meredt maga elé. A földre lehulló könnyein kívül semmit sem érzékelt. A világ, amit eddig lármásnak és harsánynak ismert, most elnémult. Üressé, színtelenné és feleslegessé vált.</p>
+
+<p>Lily és James hiánya hullámokban rátörve marta mellkasát. Soha többet nem nevethet a barátaival együtt. Soha többet nem zokoghat a karjaikban. Soha többet nem köszönheti meg, hogy ők voltak az elsők akik szerették. Most, hogy már nem teheti meg, annyi mindent mondana még nekik. Ezeknek a tudata lassan és kínzóan ható méregként lepték el a gondolatait.</p>
+
+<p>Képtelen volt rendesen lélegezni. Egyre rendszertelenebbül zihált és amikor megpróbált egy mély lélegzetet venni, csak mégjobban elkezdett remegni.</p>
+
+<p>A bűntudat percek múlásával egyre súlyosabbá, nehezebbé vált görnyedt vállain. Ha nem adja át Féregfarknak a titokgazda szerepet, talán haloweeni cukorkákat ennének varázslatosan puha szőnyegén. De átadta a szerepet és egy csecsemővel a kezében ül egyedül a szőnyegen, ami még sohasem volt kényelmetlenebb.</p>
+
+<p>Peter Pettigrew. Ha rágondol, összeszorul a gyomra. Tíz éve legjobb barátok, a Tekergők jóban-rosszban. Órákat ültek Remus betegágya mellett a teliholdak után. A Roxfort elhagyatott folyosóin tervezgették legújabb tréfáikat. Együtt sírtak, amikor kiderült, hogy Lily terhes. De ezek már csak keserédes emlékek.</p>
+
+<p>Hisz mi maradt belőlük? Egy áruló, aki egy gyilkost választott a barátai helyett és két összetört lelkitárs, akik ebben a négyemberes szövetségben találták minden boldogságukat. De ez már a háború martalékává vált.</p>
+
+<p>Minél részletesebbben gondolta végig újra meg újra az eseményeket Black, annál ingerültebb lett. Peter, az egyik ember, akiben James a legjobban bízott, elárulta. Tizenegy éves koruk óta támszt nyújtottak egymásnak, segítették a másikat, akkor még azt gondolva, hogy minden örökké tart. De úgylátszik az évek során kígyót melengettek a keblükön. Sirius dühös volt magára, mert korábban nem vette észre. Biztosan volt valami jel, hiszen Pettigrew sosem tudta jól palástolni az érzéseit.</p>
+
+<p>Peter, minden bizonnyal most is sétálgat az új gyilkos barátaival, mesélve nekik a cselének részletetit. Hogyan verte át a régi, naív barátait, akiket elvakítottak a szép iskolai emlékek. Hogyan tett egy ártatlan kisfiút árvává. Majd felrobbanhat az izgalomtol Pettigrew, most, hogy végre kilépve a csodálatos barátai árnyékából képes volt önállóan hatalmas cselekedeteket véghez vinni. James mindig bíztatta félénk barátjukat bátrabb, ravaszabb, veszélyesebb tettekre. Bár csak pár év elteltével, de sikerült egyet megvalósítania neki, gondolta keserűen Sirius.</p>
+
+<p>Gyűlölte ezt az egész helyzetet, legszívesebben Féregfark után eredt volna, de tudta, hogy nem teheti. Egy békésen szunyókáló csecsemő fekszik a kezében, nem érheti utol éppen most, a bosszúvágy mérges tüze. Harryre kell koncentrálnia, hogy ne őrüljön bele a Féregfark iránti gyűlöletbe és a fájadolmba.</p>
+
+<p>Könnyektől homályos tekintettel pillant le a keresztfiára és némán fogadalmat tesz neki. Harrynek nem kell majd félni, mert Sirius itt lesz vele. Vigyázni fog rá, szeretni fogja, játékokat vesz neki és mesél a szüleiről. Harrynek nem kell bizonytalannak lennie, mert Sirius ott lesz vele élete minden fontos pillanatában, segít neki a házi feladataiban és támogatja ahogy tőle telik.</p>
+
+<p>És Siriusnak sem kell félnie, mert Harry itt lesz vele és célt ad a mindennapjainak. Talán az évek múlásával és egy boldog kisfiú mellett készen fog állni az újra színekkel teli életre.</p>
+
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  </head>
+  <style>
+  .post-comment-number {
+    font-size:110%;
+    font-weight: bold;
+    padding:1em;
+    margin: 30px 0;
+  }
+  .post-comment {
+   clear:right;
+   padding-left:1em;
+   max-width:100%;
+  }
+  .post-comment-content, .post-comment-header, .reply-button-container {
+    padding: 0.5em 1em;
+  }
+  .post-comment-content a {
+    color:blue;
+  }
+  .post-comment-date {
+    /*color:gray;*/
+  }
+  .post-comment-name {
+    font-weight:bold;
+    padding-right:0.5em;
+  }
+  .reply-button, .submit-button {
+   font-family: "Times New Roman";
+   font-size: 13pt;
+   border:none;
+   background-color: antiquewhite;
+   padding:0.6em;
+   font-variant: all-petite-caps;
+   cursor: pointer;
+  }
+  .reply-button:hover, .submit-button:hover {
+   opacity:0.9
+  }
+  #comment-section input[type=text], textarea {
+  padding:0.5em;
+  font-family:inherit;
+  font-size:100%;
+  box-sizing: border-box;
+  }
+  #comment-section input[type=checkbox] {
+  min-height:20px;
+  min-width:20px
+  }
+  #comment-section label {
+    font-size: clamp(0.5em, 2.5vw, 1.5em);
+  }
+  .comment-form-container {
+    padding:1em 10% 1em 1em;
+  }
+  .leave-a-comment1:hover {
+    text-decoration: none;
+    cursor:pointer;
+    color:purple
+  }
+  </style>
+  <div id="comment-section">
+  <button id="recaptcha" style="display:none" class="g-recaptcha" data-sitekey="6Ld802sgAAAAABSZiOb1YDO0ApjEkmx4PNVh03tM" data-callback="onSubmit">
+  </button>
+  <div style="min-width:fit-content;max-width:50vw;padding-right:10%" id="demo">
+  </div>
+  
+  <div id="leave-a-comment" style="padding: 0em 1em;font-size: 110%;font-weight: bold;">Hozzászólás írása</div>
+  <div class="comment-form-container" style="min-width:fit-content;max-width:50vw;">
+  <table style="width:100%"><tbody>
+  <tr><td style="width:50%"><div style="width:100%"><input type="text" style="width:100%" placeholder="Név"></div></td><td style="width:50%"><div style="        display:flex;
+          align-items:center;">
+  <input type="checkbox"><label><i>Robot</i> vagyok.</label></div></td></tr>
+  <tr><td colspan="2"><textarea style="width:100%;height:15vh;resize:none" placeholder="Hozzászólás írása..."></textarea></td></tr>
+  <tr><td colspan="2"> <div style="display:flex;justify-content:flex-end;padding: 0em 1em 1em 0em;">
+  <button class="submit-button">
+  Küldés
+  </button>
+  </div></td></tr>
+   
+    </tbody></table>
+  </div>
+  </div>
+  <script>
+  replyTo = ""
+  replyToName = ""
+  commenterNameData = "";
+  commenterCheckBoxcheckedData = "";
+  commenterCommentData = "";
+    buttonData = document.getElementsByClassName("submit-button")[document.getElementsByClassName("submit-button").length-1];
+    sampleForm =  document.createElement("DIV");
+    sampleForm.innerHTML = '<table style="width:100%"><tbody><tr><td style="width:50%"><div style="width:100%"><input type="text" style="width:100%" placeholder="Név"></div></td><td style="width:50%"><div style="display:flex;align-items:center;"><input type="checkbox"><label><i>Robot</i> vagyok.</label></div></td></tr><tr><td colspan="2"><textarea style="width:100%;height:15vh;resize:none" placeholder="Hozzászólás írása..."></textarea></td></tr><tr><td colspan="2"> <div style="display:flex;justify-content:flex-end;padding: 0em 1em 1em 0em;"><button class="submit-button">Küldés</button></div></td></tr></tbody></table>'
+  
+  function submitButton(){
+    document.getElementById("leave-a-comment").classList.add("leave-a-comment1");
+   for (i=0; i<document.getElementsByClassName("submit-button").length; i++) {
+     document.getElementsByClassName("submit-button")[i].addEventListener("click",function() {
+       container = this.parentElement.parentElement.parentElement.parentElement.parentElement;
+      //name	comment	link	recaptcha	reply-to	reply-to-name checked
+       commenterNameData = encodeURIComponent(container.getElementsByTagName("input")[0].value)
+       commenterCheckBoxcheckedData = container.getElementsByTagName("input")[1].checked
+       commenterCommentData = encodeURIComponent(container.getElementsByTagName("textarea")[0].value);
+       buttonData = this;
+       if (commenterNameData && commenterCommentData && commenterCheckBoxcheckedData != true) {
+       this.disabled = true;
+       document.getElementById("recaptcha").click()
+       }
+                                                                                             });
+   }
+  }
+  
+  loadXMLDoc()
+    
+  submitButton()
+    
+  onSubmit = function(token){
+    var xhttp = new XMLHttpRequest();
+  xhttp.open("POST", "https://script.google.com/macros/s/AKfycbzkFnl2gLfM7QlU_PHOCao5zMBX_rUZqx6_0jhgu-5fdg3juuNFHY0D_MrIa0TSXNDxwQ/exec", true);
+  
+  xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+     //alert(xhttp.responseText)
+         // Typical action to be performed when the document is ready:
+         if (xhttp.responseText === "Successful submission") {
+          buttonData.parentElement.parentElement.parentElement.parentElement.parentElement.innerHTML = "Köszönjük, hozzászólásod a moderátor jóváhagyása után fog megjelenni."
+         } else if (xhttp.responseText != "Successful submission") {
+          buttonData.parentElement.parentElement.parentElement.parentElement.parentElement.innerHTML = "Hiba történt. Frissítsd az oldalt."       
+         }
+      }
+  };
+  
+  xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    
+  xhttp.send('name=' + commenterNameData + '&checked=' + commenterCheckBoxcheckedData + "&g-recaptcha-response=" + token + "&comment=" + commenterCommentData + "&link=" + window.location.href.split("#")[0] + "&reply-to=" + replyTo + "&reply-to-name=" + replyToName);
+  }
+    
+  document.getElementById("leave-a-comment").addEventListener("click",function(){
+  document.getElementById("leave-a-comment").classList.remove("leave-a-comment1");
+    container = document.getElementsByClassName("comment-form-container")[document.getElementsByClassName("comment-form-container").length-1];
+    if(container.innerText === "Köszönjük, hozzászólásod a moderátor jóváhagyása után fog megjelenni.") {
+    container.innerHTML = ""
+      sampleForm =  document.createElement("DIV");
+      sampleForm.innerHTML = '<table style="width:100%"><tbody><tr><td style="width:50%"><div style="width:100%"><input type="text" style="width:100%" placeholder="Név"></div></td><td style="width:50%"><div style="display:flex;align-items:center;"><input type="checkbox"><label><i>Robot</i> vagyok.</label></div></td></tr><tr><td colspan="2"><textarea style="width:100%;height:15vh;resize:none" placeholder="Hozzászólás írása..."></textarea></td></tr><tr><td colspan="2"> <div style="display:flex;justify-content:flex-end;padding: 0em 1em 1em 0em;"><button class="submit-button">Küldés</button></div></td></tr></tbody></table>'
+    container.appendChild(sampleForm)
+    }
+    container.style.display = "block"
+  submitButton();
+  
+   for (i=0; i<replyButtons.length; i++) {
+       replyButtons[i].parentElement.style.display = "flex"
+       replyButtons[i].style.display = "block"
+       if (replyButtons[i].nextElementSibling) {
+       replyButtons[i].nextElementSibling.remove()
+       }
+       }
+       
+  });
+  
+  function loadXMLDoc() {
+   var xhttp = new XMLHttpRequest();
+   xhttp.onreadystatechange = function() {
+     if (this.readyState == 4 && this.status == 200) {
+       
+       posts = []
+       columns = this.responseText.split("\r\n")[0].split(",").length; //For possible future purposes.
+       data = this.responseText.split("\r\n");
+       
+       
+       for (i=0; i<data.length; i++) {
+       if (data[i].split(",")[3] === window.location.href.split("#")[0] && data[i].split(",")[8] === "1") {
+       postObject = {
+       "date":data[i].split(",")[0],
+       "name":data[i].split(",")[1],
+       "comment":data[i].split(",")[2],
+       "link":data[i].split(",")[3],
+       "recaptcha":data[i].split(",")[4],
+       "post-id":data[i].split(",")[5],
+       "reply-to":data[i].split(",")[6],
+       "reply-to-name":data[i].split(",")[7],
+       "moderated":data[i].split(",")[8]
+       }
+       posts.push(postObject)
+       }
+       }
+     
+       numCom = posts.length;
+       document.getElementById("heart").parentElement.previousElementSibling.innerText = numCom;
+       postCommentNumber = document.createElement("DIV");
+       if (numCom<1) {postCommentNumber.innerHTML = "Nincs hozzászólás"} else {postCommentNumber.innerHTML = numCom + " hozzászólás"};
+       postCommentNumber.className = "post-comment-number"
+       document.getElementById("demo").prepend(postCommentNumber);
+       
+       for (i=0;i<posts.length;i++) {
+       commentBody = document.createElement("DIV");
+       commentBody.setAttribute("id",posts[i]["post-id"]);
+       
+       header = document.createElement("DIV");
+       header.className = "post-comment-header"
+  commenterName = document.createElement("SPAN");
+  commenterName.className = "post-comment-name"
+  commenterName.innerText = posts[i].name;
+  date = document.createElement("SPAN");
+  date.className = "post-comment-date"
+  date.innerText = posts[i].date;
+  header.appendChild(commenterName);
+  header.appendChild(date);
+  
+  comment = document.createElement("DIV");
+  if (posts[i]["reply-to"] === "") {
+  comment.innerText = decodeURIComponent(posts[i].comment);
+  } else {
+  comment.innerHTML = "<a href='#" + posts[i]["reply-to"] + "'>@" + posts[i]["reply-to-name"] + "</a> " + decodeURIComponent(posts[i].comment);
+  }
+  comment.style.backgroundColor = "lightgoldenrodyellow";
+  comment.className = "post-comment-content"
+  
+  replyDiv = document.createElement("DIV");
+  replyDiv.style.display = "flex";
+  replyDiv.style.justifyContent = "flex-end"
+  replyDiv.className = "reply-button-container"
+  
+  reply = document.createElement("BUTTON");
+  reply.className = "reply-button";
+  reply.innerText = "Válasz";
+  replyDiv.appendChild(reply)
+  
+  commentBody.className = "post-comment";
+  
+  commentBody.appendChild(header)
+  commentBody.appendChild(comment)
+  commentBody.appendChild(replyDiv)
+  
+  document.getElementById("demo").appendChild(commentBody)
+       }
+       
+       
+       replyButtons = document.getElementsByClassName("reply-button");
+       for (i=0; i<replyButtons.length; i++) {
+       replyButtons[i].addEventListener("click",function(){
+       replyTo = this.parentElement.parentElement.id
+       replyToName = encodeURIComponent(this.parentElement.parentElement.children[0].children[0].innerText);
+       document.getElementById("leave-a-comment").classList.add("leave-a-comment1");
+       for (i=0; i<replyButtons.length; i++) {
+       replyButtons[i].parentElement.style.display = "flex"
+       replyButtons[i].style.display = "block"
+       if (replyButtons[i].nextElementSibling) {
+       replyButtons[i].nextElementSibling.remove()
+       }
+       }
+       this.style.display = "none";
+       document.getElementsByClassName("comment-form-container")[document.getElementsByClassName("comment-form-container").length-1].style.display = "block"
+       document.getElementsByClassName("comment-form-container")[document.getElementsByClassName("comment-form-container").length-1].style.display = "none"
+    
+       this.parentElement.style.display = "block";
+           sampleForm =  document.createElement("DIV");
+           sampleForm.innerHTML = '<table style="width:100%"><tbody><tr><td style="width:50%"><div style="width:100%"><input type="text" style="width:100%" placeholder="Név"></div></td><td style="width:50%"><div style="display:flex;align-items:center;"><input type="checkbox"><label><i>Robot</i> vagyok.</label></div></td></tr><tr><td colspan="2"><textarea style="width:100%;height:15vh;resize:none" placeholder="Hozzászólás írása..."></textarea></td></tr><tr><td colspan="2"> <div style="display:flex;justify-content:flex-end;padding: 0em 1em 1em 0em;"><button class="submit-button">Küldés</button></div></td></tr></tbody></table>'
+         //alert(sampleForm.innerHTML)
+       this.parentElement.appendChild(sampleForm)
+        
+         
+       submitButton();
+       })
+       }
+       //document.getElementById("demo").innerHTML = JSON.stringify(posts)
+     }
+   };
+   xhttp.open("GET", "https://docs.google.com/spreadsheets/d/e/2PACX-1vQg6dmeH1EYHwCm1zLmGSI34IC9Uchtf8pWL3KfqnPIMbSbFl-DB1jptcCjuIlP3e4mRVmcG7PbGuGz/pub?gid=0&single=true&output=csv", true);
+   xhttp.send();
+  }
+  </script>
+
+  
+
+  <div class="footer" style="flex-grow:1">
+    <p>
+    <a href="https://torokmarkwerner.github.io" target="_blank">TM</a> 🧙, 7C | 2022 </p><p>
+    Háttér: <a href="https://www.vladislavpantic.com/" target="_blank">Vladislav Pantic</a></p></div>
+  </div> 
+  </div>
+
+ 
+
+</body>
+  
+</html>
