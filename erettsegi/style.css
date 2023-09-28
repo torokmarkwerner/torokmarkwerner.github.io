@@ -1,3 +1,13 @@
+.uoe-free-gap-filling,
+.uoe-closed-gap-filling,
+.uoe-word-transformation,
+.reading-dialogue,
+.reading-text,
+.reading-matching,
+.reading-true-or-false {
+  width: calc(100% - 100px);
+}
+
 .gap,
 .gap-disabled,
 .default-gap {
@@ -61,7 +71,7 @@
   display: none;
 }
 
-.reading-true-or-false .radio-container label [type="radio"] + span {
+.reading-true-or-false .radio-container label [type="radio"]+span {
   width: 100%;
   min-width: 6em;
   height: 100%;
@@ -73,17 +83,17 @@
   font-variant: small-caps
 }
 
-.reading-true-or-false .radio-container label [disabled] + span {
+.reading-true-or-false .radio-container label [disabled]+span {
   cursor: text;
 }
 
-.reading-true-or-false .radio-container label :checked + span {
+.reading-true-or-false .radio-container label :checked+span {
   background-color: dodgerblue;
 }
 
 .reading-matching #task .gap,
 .reading-matching #task .default-gap,
-.reading-matching #task  .gap-disabled {
+.reading-matching #task .gap-disabled {
   flex: 1;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -141,9 +151,9 @@
   justify-content: center;
 }
 
-.reading-matching > div:not(.instructions),
-.reading-true-or-false > div:not(.instructions) {
- line-height: 1.5em;
+.reading-matching>div:not(.instructions),
+.reading-true-or-false>div:not(.instructions) {
+  line-height: 1.5em;
 }
 
 .reading-text #task .gap {
@@ -176,7 +186,7 @@
   height: -moz-fit-content;
   height: -webkit-fit-content;
   height: fit-content;
-  
+
   min-height: 1em;
   line-height: 1.5em;
   padding: 0.5em;
@@ -205,7 +215,7 @@
 
 .gap-disabled:disabled {
   color: inherit;
-  }
+}
 
 .picked {
   background-color: black;
@@ -249,7 +259,7 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0,0,0,0.7);
+  background-color: rgba(0, 0, 0, 0.7);
   vertical-align: middle;
 }
 
