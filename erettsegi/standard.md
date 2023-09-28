@@ -1,6 +1,5 @@
 ---
 layout: erettsegi-task-collection
-filter_id: "standard"
 permalink: /erettsegi/standard/
 ---
 A középszintű angol érettségi két részből áll, úgymint: írásbeli és szóbeli vizsga.
