@@ -61,7 +61,7 @@
             <li style="padding-bottom:1em"><a href="{{ task.url }}">
                     {{ task.path | remove: "erettsegi/" | replace: "/"," / " | replace: "-", " / " | replace:
                     "standard", "közép" | replace: "higher", "emelt" | replace: "uoe", "nyelvhelyesség" | replace:
-                    "reading", "olvasott szöveg értése" | remove: ".html" }}
+                    "reading", "olvasott szöveg értése" | remove: ".html" | remove: ".md" }}
                 </a></li>
             {% endif %}
             {% endfor %}
