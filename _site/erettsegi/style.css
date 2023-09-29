@@ -1,11 +1,5 @@
-.uoe-free-gap-filling,
-.uoe-closed-gap-filling,
-.uoe-word-transformation,
-.reading-dialogue,
-.reading-text,
-.reading-matching,
-.reading-true-or-false {
-  width: calc(100% - 100px);
+h2 {
+padding-top: 0;
 }
 
 .gap,

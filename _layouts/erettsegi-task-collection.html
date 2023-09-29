@@ -1,60 +1,9 @@
-<!doctype html>
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        {% assign length = page.permalink | size | minus: 2 %}
-        {{ page.permalink | slice: 1, length | remove: "erettsegi/" | replace: "/"," / " | replace: "standard","közép" |
-        replace: "higher","emelt" | replace: "uoe","nyelvhelyesség" | replace: "reading","olvasott szöveg értése" }}
-    </title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.png?">
-    <link rel="stylesheet" href="https://torokmarkwerner.github.io/erettsegi/style.css">
-</head>
-
-<body style="display:flex">
-    <div style="flex:1;width:100px">
-        <style>
-            #hamburger {
-                display: block;
-                position: fixed;
-                background-color: lightskyblue;
-                top: 10px;
-                left: 10px;
-                width: 50px;
-                height: 50px;
-                transition: all 0.5s;
-            }
-
-            .hamburger-line {
-                width: 35px;
-                height: 5px;
-                background-color: black;
-                margin: 8.5px auto;
-            }
-
-            #hamburger:hover {
-                opacity: 0.8;
-                cursor: pointer;
-            }
-        </style>
-
-        <div>
-            <div id="hamburger" onclick="openNav()">
-                <div class="hamburger-line"></div>
-                <div class="hamburger-line"></div>
-                <div class="hamburger-line"></div>
-            </div>
-        </div>
-    </div>
-
-    <div style="width:calc(100% - 100px)">
-       <h1>{% assign title = page.path | remove: "erettsegi/" | replace: "/"," / " | replace: "-", " / " | replace:
-        "standard", "közép" | replace: "higher", "emelt" | replace: "uoe", "nyelvhelyesség" | replace:
-        "reading", "olvasott szöveg értése" | remove: ".html" | remove: ".md" %} {{ title }}</h1>
+---
+layout: default
+---
+    <div>
+{% include erettsegi-titles.html %}
+       <h1>{{ htitle }}</h1>
        {{ content }} 
         <ul>
             {% assign depth = page.path | split: "/" | size | plus: 1 %}
@@ -63,15 +12,11 @@
             {% assign depthChild = task.path | split: "/" | size %}
             {% if depthChild == depth %}
             <li style="padding-bottom:1em"><a href="{{ task.url }}">
-                    {{ task.path | remove: "erettsegi/" | replace: "/"," / " | replace: "-", " / " | replace:
-                    "standard", "közép" | replace: "higher", "emelt" | replace: "uoe", "nyelvhelyesség" | replace:
-                    "reading", "olvasott szöveg értése" | remove: ".html" | remove: ".md" }}
+                    {{ task.path | replace: "/"," / " | replace: "-", " / " | remove: ".html" | remove: ".md" | remove: title | remove_first: "/ " | replace:
+        "standard", "közép" | replace: "higher", "emelt" | replace: "uoe", "nyelvhelyesség" | replace:
+        "reading", "olvasott szöveg értése" | replace: "erettsegi","érettségi" }}
                 </a></li>
             {% endif %}
             {% endfor %}
         </ul>
     </div>
-
-</body>
-
-</html>

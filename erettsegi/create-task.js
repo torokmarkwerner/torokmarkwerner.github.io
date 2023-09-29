@@ -138,6 +138,6 @@ modalBasis.className = "modal-basis";
 
 modalBasis.appendChild(modalBox);
 
-document.body.appendChild(modalBasis);
-  document.body.appendChild(taskBody);
+document.getElementById("content-container").appendChild(modalBasis);
+  document.getElementById("content-container").appendChild(taskBody);
 }

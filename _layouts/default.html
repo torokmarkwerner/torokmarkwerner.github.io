@@ -3,7 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TM | {{ page.title }}</title>
+    <title>
+{% include erettsegi-titles.html %}
+{% if page.path contains "erettsegi" %}
+{{ htitle }}
+{% else %}
+TM | {{ page.title }}
+{% endif %}</title>
+{% if page.path contains "erettsegi" %}
+<link rel="stylesheet" href="/erettsegi/style.css">
+{% endif %}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.png?">
@@ -138,9 +147,11 @@
   .toc li a {
     text-decoration: none;
   }
-  #content-container h2 {
+{% unless page.path contains "erettsegi" %}
+#content-container h2 {
   padding-top:0.5em
   }
+{% endunless %} 
   .highlighted-text {
     background-color: antiquewhite;
     padding: 0.5em;
@@ -299,6 +310,7 @@ body {
   }
     
 </style>
+
 <body>
 <div class="page-wrapper">
   <div id="background" style="opacity:0.8;width:100%;height:100%;background-color:black;top:0;left:0;position:fixed;display:none;z-index:2">
@@ -419,6 +431,7 @@ for (i=0; i<pages.length; i++) {
   }
 }
 </script>
+
 <div id="content-container">
 <h1>{{ page.title }}</h1>
     {{ content }}
