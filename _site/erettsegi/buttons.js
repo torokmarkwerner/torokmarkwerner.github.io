@@ -26,11 +26,13 @@ function checkAnswers() {
     
     } else {
     /*TRUE-OR-FALSE*/
-    taskGaps[i].querySelectorAll('label > [type="radio"]').forEach((element) => {element.nextElementSibling.classList.remove("incorrect")})
     
     radio = taskGaps[i].querySelector(":checked");
     
     if (radio != null) {
+
+    taskGaps[i].querySelectorAll('label > [type="radio"]').forEach((element) => {element.nextElementSibling.classList.remove("incorrect")})
+
     if (trueOrFalse[radio.nextElementSibling.innerHTML] == solutions[i] && !(radio.disabled)) {
     taskGaps[i].querySelectorAll('label > [type="radio"]').forEach((element) => {element.disabled = true;});
     radio.nextElementSibling.classList.add("correct");
