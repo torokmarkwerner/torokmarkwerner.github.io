@@ -7,16 +7,20 @@ layout: default
        {{ content }} 
         <ul>
             {% assign depth = page.path | split: "/" | size | plus: 1 %}
-            {% assign tasks = site.pages | where_exp: "item" , "item.url contains page.permalink" %}
-            {% for task in tasks %}
-            {% assign depthChild = task.path | split: "/" | size %}
-            {% if depthChild == depth %}
+            {% if depth == 3 %}
+            {% assign tasks = site.pages | where_exp: "item" , "item.url contains page.permalink" | sort: "path" | reverse %}
+            {% else %}
+            {% assign tasks = site.pages | where_exp: "item" , "item.url contains page.permalink" | sort: "path" %}
+            {% endif %}
+   {% for task in tasks %}
+    {% assign depthChild = task.path | split: "/" | size %}
+        {% if depthChild == depth %}
             <li style="padding-bottom:1em"><a href="{{ task.url }}">
                     {{ task.path | replace: "/"," / " | replace: "-", " / " | remove: ".html" | remove: ".md" | remove: title | remove_first: "/ " | replace:
         "standard", "közép" | replace: "higher", "emelt" | replace: "uoe", "nyelvhelyesség" | replace:
         "reading", "olvasott szöveg értése" | replace: "erettsegi","érettségi" }}
                 </a></li>
-            {% endif %}
-            {% endfor %}
+        {% endif %}
+    {% endfor %}
         </ul>
     </div>

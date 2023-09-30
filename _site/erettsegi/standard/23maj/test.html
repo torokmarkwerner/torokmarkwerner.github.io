@@ -1,0 +1,34 @@
+<style>
+iframe #content-container {
+	position:absolute;
+}
+
+</style>
+
+<iframe src="/erettsegi/standard/23maj/reading/reading-1" width="100%" height="100%" frameborder="0"></iframe>
+<iframe src="/erettsegi/standard/23maj/reading/reading-2" width="100%" height="100%" frameborder="0"></iframe>
+<iframe src="/erettsegi/standard/23maj/reading/reading-3" width="100%" height="100%" frameborder="0"></iframe>
+<iframe src="/erettsegi/standard/23maj/reading/reading-4" width="100%" height="100%" frameborder="0"></iframe>
+
+
+<script type="text/javascript">
+
+iframes = document.getElementsByTagName("iframe");
+
+s = (document.body.scrollHeight / 2);
+
+	function resizeFrames() {
+
+for (iframe of iframes) {
+iframe.contentDocument.querySelectorAll(".page-wrapper > :not(#content-container)").forEach(x => x.style.display = "none")
+/*iframe.contentDocument.getElementById("content-container").style.width = "100%"
+iframe.style.height = iframe.contentDocument.body.scrollHeight + "px"
+iframe.contentDocument.getElementById("word-list").style.maxHeight = s + "px"*/
+}
+	}
+	
+window.onload = 
+	resizeFrames;
+
+window.addEventListener("message",function(e){if(e.data == "resizeFrames") { resizeFrames()}})
+</script>
