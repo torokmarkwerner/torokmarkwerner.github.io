@@ -145,13 +145,13 @@
     },
     {
         "taskId": "standard-22okt-uoe-2",
-        "type": "uoe-closed-gap-filling",
+        "type": "uoe-multiple-choice",
         "solutions": "[\"B\",\"C\",\"C\",\"A\",\"A\",\"D\",\"B\",\"B\"]",
         "taskTitle": "Task 2",
         "instructions": "[\"You are going to read an article about the mystery of the Hanging Gardens of Babylon. Some words are missing from the text\",\"Choose the most appropriate answer from the options for each gap in the text\",\"There is one example at the beginning.\"]",
-        "wordList": "[[{\"A\":\"might be\"},{\"B\":\"were\"},{\"C\":\"had\"},{\"D\":\"have been\"}],[{\"A\":\"as\"},{\"B\":\"very\"},{\"C\":\"so\"},{\"D\":\"much\"}],[{\"A\":\"then\"},{\"B\":\"there\"},{\"C\":\"than\"},{\"D\":\"that\"}],[{\"A\":\"far\"},{\"B\":\"much\"},{\"C\":\"many\"},{\"D\":\"that\"}],[{\"A\":\"has\"},{\"B\":\"had\"},{\"C\":\"never\"},{\"D\":\"was\"}],[{\"A\":\"How\"},{\"B\":\"Must\"},{\"C\":\"Would\"},{\"D\":\"Did\"}],[{\"A\":\"passed\"},{\"B\":\"past\"},{\"C\":\"several\"},{\"D\":\"late\"}],[{\"A\":\"certain\"},{\"B\":\"unlikely\"},{\"C\":\"likely\"},{\"D\":\"certainly\"}]]",
+        "wordList": "[{\"A\":\"with\",\"B\":\"in\",\"C\":\"of\",\"D\":\"about\"},{\"A\":\"might be\",\"B\":\"were\",\"C\":\"had\",\"D\":\"have been\"},{\"A\":\"as\",\"B\":\"very\",\"C\":\"so\",\"D\":\"much\"},{\"A\":\"then\",\"B\":\"there\",\"C\":\"than\",\"D\":\"that\"},{\"A\":\"far\",\"B\":\"much\",\"C\":\"many\",\"D\":\"that\"},{\"A\":\"has\",\"B\":\"had\",\"C\":\"never\",\"D\":\"was\"},{\"A\":\"How\",\"B\":\"Must\",\"C\":\"Would\",\"D\":\"Did\"},{\"A\":\"passed\",\"B\":\"past\",\"C\":\"several\",\"D\":\"late\"},{\"A\":\"certain\",\"B\":\"unlikely\",\"C\":\"likely\",\"D\":\"certainly\"}]",
         "textTitle": "THE HANGING GARDENS OF BABYLON",
-        "example": "of",
+        "example": "C",
         "text": "<p>Ancient writers describe a fantastic series (0) gardens constructed at the ancient city of Babylon in modern-day Iraq. It’s not clear when these gardens (9) built, but some writers were (10) impressed that they called them a “wonder of the world”. Around 250 B.C., Philo of Byzantium wrote that the Hanging Gardens had “plants grown at a height above ground level, and the roots are planted in an upper terrace rather (11) in the earth.”</p><p>So (12) , archaeologists who have excavated Babylon have been unable to find the remains of the garden. This (13) left archaeologists with a question: (14) the hanging gardens really exist? In 2013, a researcher at the University of Oxford proposed that the gardens were actually located at the Assyrian city of Nineveh. Over the (15) two decades, both Babylon and Nineveh have suffered damage from wars, and it seems (16) that this mystery will ever be solved.</p>",
         "text2": ""
     },

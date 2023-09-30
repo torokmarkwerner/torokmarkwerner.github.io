@@ -22,6 +22,29 @@ padding-top: 0;
   font-size: inherit;
 }
 
+.uoe-multiple-choice .default-gap {
+  color: white;
+  background-color: black;
+  opacity: 1;
+}
+
+.uoe-multiple-choice option:disabled {
+  background-color: white;
+  color: black;
+}
+
+.uoe-multiple-choice select[disabled] {
+  color: inherit;
+  opacity: 1;
+}
+
+.uoe-multiple-choice .gap,
+.uoe-multiple-choice .gap-disabled,
+.uoe-multiple-choice .default-gap {
+  vertical-align: baseline;
+  padding: 0;
+  }
+
 .uoe-free-gap-filling input.gap,
 .uoe-free-gap-filling input.gap-disabled,
 .uoe-free-gap-filling input.default-gap {
