@@ -100,7 +100,7 @@
         "type": "reading-dialogue",
         "solutions": "[\"H\",\"G\",\"B\",\"E\",\"D\"]",
         "taskTitle": "Task 2",
-        "instructions": "[\"In the following text about volunteering, the headings have been removed.\",\"Your task is to match the headings to the paragraphs.\",\"Place the headings into the appropriate box.\",\"There are two extra headings that you do not need.\"\"Place the headings in the gaps as in the example.\"]",
+        "instructions": "[\"In the following text about volunteering, the headings have been removed.\",\"Your task is to match the headings to the paragraphs.\",\"Place the headings into the appropriate box.\",\"There are two extra headings that you do not need.\",\"Place the headings in the gaps as in the example.\"]",
         "wordList": "[{\"Find what fits your timetable\":\"A\"},{\"Look after abandoned pets\":\"B\"},{\"Find what's best for you\":\"C\"},{\"Support a health-related cause\":\"D\"},{\"Help the environment\":\"E\"},{\"Help and see the world\":\"F\"},{\"Help during the holiday season\":\"G\"},{\"Help kids learn and grow\":\"H\"}]",
         "textTitle": "VOLUNTEERING",
         "example": "Find what's best for you",

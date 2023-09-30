@@ -1,4 +1,4 @@
-fetch("https://torokmarkwerner.github.io/erettsegi/data.json").then((response) => {
+fetch("/erettsegi/data.json").then((response) => {
   return response.json()
 }).then((data) => {
   populateHTML(data)
