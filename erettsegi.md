@@ -10,21 +10,7 @@ Idegen nyelvekből (és informatikából) 11. évfolyamon lehetőséged van (egy
 
 Ezen az oldalon olyan interaktív feladatokat találsz, amelyeket az elmúlt évek írásbeli feladatsorai alapján állítottam össze. Lényeges különbség köztük és az érettségi feladatok között, hogy az érettségin a válaszaidat mindig a feladat mellett/alatt található fehér dobozokba vagy pontozott vonalra kell beírnod, a feladat szövegének megfelelően.
 
-<div style="font-size:small;display:flex;width:80%;align-items:center;padding:1.5em 0.5em">
-	<div style="flex-basis:auto;padding:0.5em">1)</div>
-    <div style="flex:1 1 auto;margin:0 0.5em 0 0;text-align:center;border-bottom:1pt black dotted;color:blue">
-    be
-    </div>
-    <div style="flex-basis:auto;display:table;border-collapse:collapse;padding-left:0.5em">
-        <div style="display:table-cell;width:1.5em;height:1.5em;border: 1pt black solid;text-align:center;vertical-align:middle">
-            1)
-        </div>
-        <div style="display:table-cell;width:1.5em;height:1.5em;border: 1pt black solid;background-color:lightgray">
-        </div>
-    </div>
-</div>
-
-<div style="font-size:small;display:flex;width:80%;align-items:center;padding:1.5em 0.5em">
+<div style="font-size:small;display:flex;width:50%;align-items:center;padding:1.5em 0.5em">
     <div style="flex:1 1 auto;padding:0.5em">
         Theodore Roosevelt took off in a small boat down the Little Missouri River
         to catch a (10) <div style="display:inline-block;border-bottom: 1pt black solid;padding: 0 0.5em;color:blue">couple</div> of thieves who had stolen his favorite rowboat.
@@ -34,6 +20,20 @@ Ezen az oldalon olyan interaktív feladatokat találsz, amelyeket az elmúlt év
             1)
         </div>
         <div style="display:table-cell;width:1.5em;height:1.5em;border: 1pt black solid;color:blue;text-align:center;vertical-align:middle">D
+        </div>
+        <div style="display:table-cell;width:1.5em;height:1.5em;border: 1pt black solid;background-color:lightgray">
+        </div>
+    </div>
+</div>
+
+<div style="font-size:small;display:flex;width:50%;align-items:center;padding:1.5em 0.5em">
+	<div style="flex-basis:auto;padding:0.5em">1)</div>
+    <div style="flex:1 1 auto;margin:0 0.5em 0 0;text-align:center;border-bottom:1pt black dotted;color:blue">
+    be
+    </div>
+    <div style="flex-basis:auto;display:table;border-collapse:collapse;padding-left:0.5em">
+        <div style="display:table-cell;width:1.5em;height:1.5em;border: 1pt black solid;text-align:center;vertical-align:middle">
+            1)
         </div>
         <div style="display:table-cell;width:1.5em;height:1.5em;border: 1pt black solid;background-color:lightgray">
         </div>
