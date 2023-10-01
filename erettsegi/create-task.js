@@ -19,6 +19,7 @@ function populateHTML(x) {
 
     taskBody = document.createElement("DIV");
     taskBody.className = type;
+    taskBody.id = taskId;
     h2 = document.createElement("H2");
     h2.innerHTML = taskTitle;
     taskBody.appendChild(h2)
@@ -35,7 +36,7 @@ function populateHTML(x) {
 
     if (wordList.length > 0 && type != "uoe-multiple-choice") {
         wordListContainer = document.createElement("DIV");
-        wordListContainer.id = "word-list"
+        wordListContainer.classList.add("word-list")
 
         for (i = 0; i < wordList.length; i++) {
             div = document.createElement("DIV");
@@ -50,7 +51,7 @@ function populateHTML(x) {
     }
 
     task = document.createElement("DIV");
-    task.id = "task";
+    task.classList.add("task");
 
     h3 = document.createElement("H3");
     h3.innerHTML = textTitle;

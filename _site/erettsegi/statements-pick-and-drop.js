@@ -5,7 +5,8 @@ trueOrFalse = {"true":"A","false":"B","doesn't say":"C"};
 picked = "";
 pickedId = "";
 function pickAnswer(el) {
-selection = document.querySelector("#word-list > .picked");
+    console.log(taskId + " ... " + document.getElementById(taskId).innerHTML)
+selection = document.getElementById(taskId).querySelector(".word-list > .picked");
 if(selection!=null) {
 selection.classList.toggle("picked")
 }
@@ -27,28 +28,28 @@ if (pickedId != "") {
 el.id = pickedId;
 }
 picked = "";
-selection = document.querySelector("#word-list > .picked");
+selection = document.getElementById(taskId).querySelector(".word-list > .picked");
 if(selection!=null) {
 selection.outerHTML = "";
 }
 }
 
 if (type == "reading-matching") {
-taskGaps = document.querySelectorAll("#task > div > .gap")
+taskGaps = document.getElementById(taskId).querySelectorAll(".task > div > .gap")
 } else if (type == "reading-true-or-false") {
-taskGaps = document.querySelectorAll(".radio-container:not(.default)")
+taskGaps = document.getElementById(taskId).querySelectorAll(".radio-container:not(.default)")
 } else /*if (type == "uoe-word-transformation" || type == "uoe-closed-gap-filling" || type == "uoe-free-gap-filling" || type == "reading-dialogue" || type == "reading-text") */ {
-taskGaps = document.querySelectorAll("#task .gap")
+taskGaps = document.getElementById(taskId).querySelectorAll(".task .gap")
 }
 
-wordListGaps = document.querySelectorAll("#word-list .gap")
+wordListGaps = document.getElementById(taskId).querySelectorAll(".word-list .gap")
 
 /*taskGaps are: GAPS if it's a gap-filling task, RADIO-CONTAINERS if it's a true-or-false task, and GAPS inside a div tag if it's a matching task.*/
 
-if (document.getElementById("word-list")) {
+if (document.getElementById(taskId).getElementsByClassName("word-list")[0]) {
 for (i=0; i<taskGaps.length; i++) {
 taskGaps[i].addEventListener("click",function(){if(this.innerText == ""){dropAnswer(this);}else{
-wordList = document.getElementById("word-list"); gap = document.createElement("DIV"); gap.innerHTML = this.innerHTML; gap.classList.add("gap"); gap.addEventListener("click",function(){pickAnswer(this)}); wordList.appendChild(gap); this.innerHTML = ""; if (type == "reading-text") {this.style.display = "inline-block"; this.style.verticalAlign = "middle"}
+wordList = document.getElementById(taskId).getElementsByClassName("word-list")[0]; gap = document.createElement("DIV"); gap.innerHTML = this.innerHTML; gap.classList.add("gap"); gap.addEventListener("click",function(){pickAnswer(this)}); wordList.appendChild(gap); this.innerHTML = ""; if (type == "reading-text") {this.style.display = "inline-block"; this.style.verticalAlign = "middle"}
 }});
 }
 }
@@ -73,8 +74,8 @@ for (i=0; i<wordListGaps.length; i++) {
 
 isVisibleThen()
 
-if(document.getElementById("word-list")) {
-document.getElementById("word-list").addEventListener("scroll",function(){isVisibleThen()
+if(document.getElementById(taskId).getElementsByClassName("word-list")[0]) {
+document.getElementById(taskId).getElementsByClassName("word-list")[0].addEventListener("scroll",function(){isVisibleThen()
 /*alert(wordListGaps[4].offsetTop + " " + " ")*/
 })
 }

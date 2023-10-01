@@ -117,13 +117,13 @@ padding-top: 0;
   color: white;
 }
 
-.reading-true-or-false #task {
+.reading-true-or-false .task {
   padding-top: 1em;
 }
 
-.reading-matching #task .gap,
-.reading-matching #task .default-gap,
-.reading-matching #task .gap-disabled {
+.reading-matching .task .gap,
+.reading-matching .task .default-gap,
+.reading-matching .task .gap-disabled {
   flex: 1;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -141,11 +141,11 @@ padding-top: 0;
   text-align: center;
 }
 
-#task {
+.task {
   line-height: 1.5em;
 }
 
-#word-list {
+.word-list {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -157,9 +157,9 @@ padding-top: 0;
   padding: 0.5em 0;
 }
 
-.reading-matching #word-list .gap,
-.reading-matching #word-list .default-gap,
-.reading-matching #word-list .gap-disabled {
+.reading-matching .word-list .gap,
+.reading-matching .word-list .default-gap,
+.reading-matching .word-list .gap-disabled {
   flex: 1 0 25%;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -170,9 +170,9 @@ padding-top: 0;
   justify-content: center;
 }
 
-.reading-matching #task .gap,
-.reading-matching #task .default-gap,
-.reading-matching #task .gap-disabled {
+.reading-matching .task .gap,
+.reading-matching .task .default-gap,
+.reading-matching .task .gap-disabled {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -186,14 +186,14 @@ padding-top: 0;
   line-height: 1.5em;
 }
 
-.reading-text #task .gap {
+.reading-text .task .gap {
   border: black 0pt solid;
   min-inline-size: 15em;
   line-height: inherit;
 }
 
-.reading-text #task .gap-disabled,
-.reading-text #task .default-gap {
+.reading-text .task .gap-disabled,
+.reading-text .task .default-gap {
   line-height: inherit;
   display: inline;
   border: black 0pt solid;
@@ -222,8 +222,8 @@ padding-top: 0;
   padding: 0.5em;
 }
 
-.reading-dialogue #word-list,
-.reading-text #word-list {
+.reading-dialogue .word-list,
+.reading-text .word-list {
   max-height: 50vh;
   height: -moz-fit-content;
   height: -webkit-fit-content;
@@ -231,7 +231,7 @@ padding-top: 0;
   overflow-y: scroll;
 }
 
-#word-list .gap {
+.word-list .gap {
   margin: 0.2em;
   -webkit-transition: visibility 0.3s linear, opacity 0.3s linear;
   -moz-transition: visibility 0.3s linear, opacity 0.3s linear;
