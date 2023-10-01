@@ -4,6 +4,13 @@ fetch("/erettsegi/data.json").then((response) => {
     populateHTML(data)
 })
 
+score = 0;
+
+trueOrFalse = {"true":"A","false":"B","doesn't say":"C"};
+
+picked = "";
+pickedId = "";
+
 
 function populateHTML(x) {
     taskJSON = x.find(y => y.taskId == taskId);
@@ -126,9 +133,9 @@ function populateHTML(x) {
     }
 
 
-    script = document.createElement("SCRIPT");
+/*    script = document.createElement("SCRIPT");
     script.src = "/erettsegi/statements-pick-and-drop.js"
-    taskBody.appendChild(script)
+    taskBody.appendChild(script)*/
 
     checkButton = document.createElement("BUTTON");
     checkButton.className = "check-button";
@@ -164,4 +171,39 @@ function populateHTML(x) {
 
     document.getElementById("content-container").appendChild(modalBasis);
     document.getElementById("content-container").appendChild(taskBody);
+
+if (type == "reading-matching") {
+taskGaps = document.getElementById(taskId).querySelectorAll(".task > div > .gap")
+} else if (type == "reading-true-or-false") {
+taskGaps = document.getElementById(taskId).querySelectorAll(".radio-container:not(.default)")
+} else /*if (type == "uoe-word-transformation" || type == "uoe-closed-gap-filling" || type == "uoe-free-gap-filling" || type == "reading-dialogue" || type == "reading-text") */ {
+taskGaps = document.getElementById(taskId).querySelectorAll(".task .gap")
+}
+
+wordListGaps = document.getElementById(taskId).querySelectorAll(".word-list .gap")
+
+/*taskGaps are: GAPS if it's a gap-filling task, RADIO-CONTAINERS if it's a true-or-false task, and GAPS inside a div tag if it's a matching task.*/
+
+if (document.getElementById(taskId).getElementsByClassName("word-list")[0]) {
+for (i=0; i<taskGaps.length; i++) {
+taskGaps[i].addEventListener("click",function(){if(this.innerText == ""){dropAnswer(this);}else{
+wordList = document.getElementById(taskId).getElementsByClassName("word-list")[0]; gap = document.createElement("DIV"); gap.innerHTML = this.innerHTML; gap.classList.add("gap"); gap.addEventListener("click",function(){pickAnswer(this)}); wordList.appendChild(gap); this.innerHTML = ""; if (type == "reading-text") {this.style.display = "inline-block"; this.style.verticalAlign = "middle"}
+}});
+}
+}
+
+for (i=0; i<wordListGaps.length; i++) {
+wordListGaps[i].addEventListener("click",function(){pickAnswer(this);});
+}
+
+/*If there are options (word-list), word-list gaps can be picked and dropped into task gaps. OR if a taskGap has already been filled in, the gap goes back to the word-list.*/
+
+isVisibleThen()
+
+if(document.getElementById(taskId).getElementsByClassName("word-list")[0]) {
+document.getElementById(taskId).getElementsByClassName("word-list")[0].addEventListener("scroll",function(){isVisibleThen()
+/*alert(wordListGaps[4].offsetTop + " " + " ")*/
+})
+}
+
 }
