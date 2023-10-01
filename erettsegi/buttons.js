@@ -75,11 +75,11 @@ function showAnswers() {
             taskGaps[i].classList.add("gap-disabled");
             taskGaps[i].classList.remove("gap", "incorrect");
             taskGaps[i].replaceWith(taskGaps[i].cloneNode(true));
-} else if(type == "uoe-multiple-choice") {
-taskGaps[i].value = solutions[i];
-taskGaps[i].classList.remove("incorrect","correct")
-taskGaps[i].classList.add("gap-disabled")
-taskGaps[i].querySelectorAll(":not([value='" + solutions[i] + "'])").forEach(x => x.disabled = true)
+        } else if (type == "uoe-multiple-choice") {
+            taskGaps[i].value = solutions[i];
+            taskGaps[i].classList.remove("incorrect", "correct")
+            taskGaps[i].classList.add("gap-disabled")
+            taskGaps[i].querySelectorAll(":not([value='" + solutions[i] + "'])").forEach(x => x.disabled = true)
         } else {
             /*TRUE-OR-FALSE*/
             for (k = 0; k < taskGaps[i].querySelectorAll('label > [type="radio"]').length; k++) {
