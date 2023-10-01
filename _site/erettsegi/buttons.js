@@ -24,14 +24,14 @@ function checkAnswers() {
                 taskGaps[i].classList.add("incorrect")
             }
         } else if (type == "uoe-multiple-choice") {
-            if (taskGaps[i].value == solutions[i]) {
+            if (taskGaps[i].value == solutions[i] && !taskGaps[i].classList.contains("gap-disabled")) {
                 taskGaps[i].classList.remove("incorrect")
                 taskGaps[i].classList.add("correct")
                 if (taskGaps[i].disabled == false) {
                     score++
                 }
                 taskGaps[i].disabled = true;
-            } else {
+            } else if (!taskGaps[i].classList.contains("gap-disabled")) {
                 taskGaps[i].classList.add("incorrect")
             }
         } else {

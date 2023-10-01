@@ -7,7 +7,7 @@ layout: default
        {{ content }} 
         <ul>
             {% assign depth = page.path | split: "/" | size | plus: 1 %}
-            {% if depth == 3 %}
+            {% if depth < 4 %}
             {% assign tasks = site.pages | where_exp: "item" , "item.url contains page.permalink" | sort: "path" | reverse %}
             {% else %}
             {% assign tasks = site.pages | where_exp: "item" , "item.url contains page.permalink" | sort: "path" %}
