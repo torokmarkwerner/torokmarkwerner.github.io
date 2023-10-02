@@ -3,7 +3,7 @@ function pickAnswer(el, id) {
     if (selection != null) {
         selection.classList.toggle("picked")
     }
-    picked = el.innerHTML
+    picked = el
     if (el.id) {
         pickedId = el.id
     }
@@ -11,12 +11,17 @@ function pickAnswer(el, id) {
 }
 
 function dropAnswer(el, id) {
+type = jsonData.find(task => task.taskId == id).type
+   
+if (picked.classList.contains(id)) {
     isVisibleThen(id)
     if (type == "reading-text") {
         el.style.display = "inline";
         el.style.verticalAlign = "baseline";
     }
-    el.innerHTML = picked;
+
+    el.innerHTML = picked.innerHTML;
+
     if (pickedId != "") {
         el.id = pickedId;
     }
@@ -25,6 +30,7 @@ function dropAnswer(el, id) {
     if (selection != null) {
         selection.outerHTML = "";
     }
+}
 }
 
 function isVisibleThen(id) {

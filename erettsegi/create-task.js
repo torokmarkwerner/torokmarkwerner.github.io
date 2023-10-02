@@ -1,11 +1,13 @@
-jsonData = []
+jsonData = [];
 
-score = 0;
+score = {};
 
 trueOrFalse = { "true": "A", "false": "B", "doesn't say": "C" };
 
 picked = "";
 pickedId = "";
+
+wordListGapsAll = {};
 
 function createTask(id) {
     fetch("/erettsegi/data.json").then((response, id) => {
@@ -17,7 +19,6 @@ function createTask(id) {
 }
 
 function populateHTML(x) {
-    console.log(x)
     taskId = x.taskId;
     type = x.type;
     solutions = JSON.parse(x.solutions);
@@ -55,6 +56,7 @@ function populateHTML(x) {
             div.innerHTML = Object.keys(wordList[i])[0]
             div.id = taskId + "-" + Object.values(wordList[i])[0]
             div.classList.add("gap")
+            div.classList.add(taskId)
             wordListContainer.appendChild(div)
         }
 
@@ -71,13 +73,13 @@ function populateHTML(x) {
     /* task.appendChild(h3) */
 
     if (type == "uoe-closed-gap-filling" || type == "reading-text") {
-        task.innerHTML = text.replace(/\(\d+\)/, "<span class='default-gap'>" + example + "</span> ").replace(/\(\d+\)/g, "<span class='gap'></span>").replace(/\(/g, "<b>(").replace(/\)/g, ")</b>")
+        task.innerHTML = text.replace(/\(\d+\)/, "<span class='default-gap " + taskId + "'>" + example + "</span> ").replace(/\(\d+\)/g, "<span class='gap " + taskId + "'></span>").replace(/\(/g, "<b>(").replace(/\)/g, ")</b>")
     } else if (type == "uoe-word-transformation" || type == "uoe-free-gap-filling") {
         task.innerHTML = text.replace(/\(\d+\)/, "<span class='default-gap'>" + example + "</span> ").replace(/\(\d+\)/g, "<input class='gap'> ")
     } else if (type == "reading-dialogue") {
-        task.innerHTML = text.replace(/\(\d+\)/, "<div class='default-gap'>" + example + "</div> ").replace(/\(\d+\)/g, "<div class='gap'></div>")
+        task.innerHTML = text.replace(/\(\d+\)/, "<div class='default-gap " + taskId + "'>" + example + "</div> ").replace(/\(\d+\)/g, "<div class='gap " + taskId + "'></div>")
     } else if (type == "reading-matching") {
-        task.innerHTML = text2.replace("<div class='gap'></div>", "<div class='default-gap'>" + example + "</div> ");
+        task.innerHTML = text2.replace("<div class='gap'></div>", "<div class='default-gap " + taskId + "'>" + example + "</div> ").replace(/\<div class\=\'gap\'\>\<\/div\>/g, "<div class='gap " + taskId + "'></div>")
     } else if (type == "uoe-multiple-choice") {
         task.innerHTML = text.replace(/\(\d+\)/, "<select class='default-gap'></select>").replace(/\(\d+\)/g, "<select class='gap'></select>")
 
@@ -153,26 +155,29 @@ function populateHTML(x) {
     taskBody.appendChild(checkButton);
     taskBody.appendChild(showButton);
 
-    modalClose = document.createElement("SPAN");
-    modalClose.className = "modal-close";
-    modalClose.innerHTML = "&times;";
-    modalClose.addEventListener("click", function() { this.parentElement.parentElement.style.display = "none" })
+    if (!document.getElementById("score-modal")) {
+        modalClose = document.createElement("DIV");
+        modalClose.className = "modal-close";
+        modalClose.innerHTML = "&times;";
+        modalClose.addEventListener("click", function() { this.parentElement.parentElement.style.display = "none" })
 
-    modalP = document.createElement("P");
+        modalP = document.createElement("P");
 
-    modalBox = document.createElement("DIV");
-    modalBox.id = "score-modal";
-    modalBox.className = "modal-box";
+        modalBox = document.createElement("DIV");
+        modalBox.id = "score-modal";
+        modalBox.className = "modal-box";
 
-    modalBox.appendChild(modalClose);
-    modalBox.appendChild(modalP);
+        modalBox.appendChild(modalClose);
+        modalBox.appendChild(modalP);
 
-    modalBasis = document.createElement("DIV");
-    modalBasis.className = "modal-basis";
+        modalBasis = document.createElement("DIV");
+        modalBasis.className = "modal-basis";
 
-    modalBasis.appendChild(modalBox);
+        modalBasis.appendChild(modalBox);
 
-    document.getElementById("content-container").appendChild(modalBasis);
+        document.getElementById("content-container").appendChild(modalBasis);
+    }
+
     document.getElementById("content-container").appendChild(taskBody);
 
     if (type == "reading-matching") {
@@ -183,7 +188,9 @@ function populateHTML(x) {
         taskGaps = document.getElementById(taskId).querySelectorAll(".task .gap")
     }
 
-    wordListGaps = document.getElementById(taskId).querySelectorAll(".word-list .gap")
+    score[taskId] = {"current":0,"max":taskGaps.length};
+
+    wordListGapsAll[taskId] = document.getElementById(taskId).querySelectorAll(".word-list .gap")
 
     /*taskGaps are: GAPS if it's a gap-filling task, RADIO-CONTAINERS if it's a true-or-false task, and GAPS inside a div tag if it's a matching task.*/
 
@@ -207,8 +214,8 @@ function populateHTML(x) {
         }
     }
 
-    for (i = 0; i < wordListGaps.length; i++) {
-        wordListGaps[i].addEventListener("click", function() { pickAnswer(this, x.taskId); });
+    for (i = 0; i < wordListGapsAll[taskId].length; i++) {
+        wordListGapsAll[taskId][i].addEventListener("click", function() { pickAnswer(this, x.taskId); });
     }
 
     /*If there are options (word-list), word-list gaps can be picked and dropped into task gaps. OR if a taskGap has already been filled in, the gap goes back to the word-list.*/

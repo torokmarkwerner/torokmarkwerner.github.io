@@ -294,6 +294,7 @@ padding-top: 0;
 }
 
 .modal-box {
+  position: relative;
   margin: auto;
   background-color: white;
   width: 80%;
@@ -306,7 +307,9 @@ padding-top: 0;
 }
 
 .modal-close {
-  float: right;
+  position: absolute;
+  top: 0.2em;
+  right: 0.5em;
   font-weight: bold;
   color: #aaaaaa;
   font-size: 28px;

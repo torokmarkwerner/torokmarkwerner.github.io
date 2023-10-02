@@ -436,8 +436,11 @@ for (i=0; i<pages.length; i++) {
 <script src="/erettsegi/create-task.js">
 </script>
 <script>
-{ % assign taskids = page.task_id | split: "," % } { % for taskid in taskids % }
-createTask(""); { % endfor % }
+ 
+createTask("standard-23maj-reading-1"); 
+createTask("standard-23maj-reading-2"); 
+createTask("standard-23maj-reading-3"); 
+createTask("standard-23maj-reading-4"); 
 </script>
 </div>
 

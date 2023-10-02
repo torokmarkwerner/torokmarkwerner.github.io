@@ -1,4 +1,8 @@
 function checkAnswers(tid) {
+task = jsonData.find(task => task.taskId == tid)
+
+    type = task.type;
+    solutions = JSON.parse(task.solutions);
 
     if (type == "reading-matching") {
         taskGaps = document.getElementById(tid).querySelectorAll(".task > div > .gap")
@@ -19,7 +23,7 @@ function checkAnswers(tid) {
                 taskGaps[i].classList.add("correct", "gap-disabled")
                 taskGaps[i].classList.remove("gap")
                 taskGaps[i].disabled = true
-                score++;
+                score[tid]["current"]++;
             } else if (!(taskGaps[i].disabled)) {
                 taskGaps[i].classList.add("incorrect")
             }
@@ -30,7 +34,7 @@ function checkAnswers(tid) {
                 taskGaps[i].classList.add("gap-disabled", "correct");
                 taskGaps[i].classList.remove("gap");
                 taskGaps[i].replaceWith(taskGaps[i].cloneNode(true));
-                score++;
+                score[tid]["current"]++;
             } else {
                 taskGaps[i].classList.add("incorrect")
             }
@@ -39,7 +43,7 @@ function checkAnswers(tid) {
                 taskGaps[i].classList.remove("incorrect")
                 taskGaps[i].classList.add("correct")
                 if (taskGaps[i].disabled == false) {
-                    score++
+                    score[tid]["current"]++
                 }
                 taskGaps[i].disabled = true;
             } else if (!taskGaps[i].classList.contains("gap-disabled")) {
@@ -58,7 +62,7 @@ function checkAnswers(tid) {
                     taskGaps[i].querySelectorAll('label > [type="radio"]').forEach((element) => { element.disabled = true; });
                     radio.nextElementSibling.classList.add("correct");
                     radio.checked = false;
-                    score++
+                    score[tid]["current"]++
                 } else if (!(radio.disabled)) {
                     radio.nextElementSibling.classList.add("incorrect")
                     radio.checked = false
@@ -68,7 +72,16 @@ function checkAnswers(tid) {
         }
     }
     document.querySelector("#score-modal").parentElement.style.display = "flex";
-    document.querySelector("#score-modal p").innerHTML = score + "/" + taskGaps.length;
+
+/*SCORE TABLE*/
+
+div = "";
+    for (b=0; b<Object.keys(score).length;b++) {
+div += ("<p>Task " + (b+1) + ": " + score[Object.keys(score)[b]]["current"] + "/" + score[Object.keys(score)[b]]["max"] + "</p>");
+}
+
+
+    document.querySelector("#score-modal p").innerHTML = div
 }
 
 function showAnswers(tid) {
@@ -78,8 +91,6 @@ task = jsonData.find(task => task.taskId == tid)
     type = task.type;
     solutions = JSON.parse(task.solutions);
 
-    console.log(solutions);
-
     if (type == "reading-matching") {
         taskGaps = document.getElementById(tid).querySelectorAll(".task > div > .gap")
     } else if (type == "reading-true-or-false") {
@@ -88,8 +99,7 @@ task = jsonData.find(task => task.taskId == tid)
         taskGaps = document.getElementById(tid).querySelectorAll(".task .gap")
     }
 
-    wordListGaps = document.getElementById(tid).querySelectorAll(".word-list .gap")
-
+wordListGaps = wordListGapsAll[tid]
     /*taskGaps are: GAPS if it's a gap-filling task, RADIO-CONTAINERS if it's a true-or-false task, and GAPS inside a div tag if it's a matching task.*/
 
 
