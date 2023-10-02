@@ -1,5 +1,5 @@
 function checkAnswers(tid) {
-task = jsonData.find(task => task.taskId == tid)
+    task = jsonData.find(task => task.taskId == tid)
 
     type = task.type;
     solutions = JSON.parse(task.solutions);
@@ -73,12 +73,17 @@ task = jsonData.find(task => task.taskId == tid)
     }
     document.querySelector("#score-modal").parentElement.style.display = "flex";
 
-/*SCORE TABLE*/
+    /*SCORE TABLE*/
 
-div = "";
-    for (b=0; b<Object.keys(score).length;b++) {
-div += ("<p>Task " + (b+1) + ": " + score[Object.keys(score)[b]]["current"] + "/" + score[Object.keys(score)[b]]["max"] + "</p>");
-}
+    div = "";
+    maxPart = 0;
+    currentPart = 0;
+    for (b = 0; b < Object.keys(score).length; b++) {
+        div += ("<p>Task " + (b + 1) + ": " + score[Object.keys(score)[b]]["current"] + "/" + score[Object.keys(score)[b]]["max"] + " (" + Math.round(score[Object.keys(score)[b]]["current"] / score[Object.keys(score)[b]]["max"] * 100) + "%" + ")</p>");
+        currentPart += score[Object.keys(score)[b]]["current"]
+        maxPart += score[Object.keys(score)[b]]["max"]
+    }
+    div += ("<p><b>" + currentPart + "/" + maxPart + " (" + Math.round(currentPart / maxPart * 100) + "%" + ")</b></p>")
 
 
     document.querySelector("#score-modal p").innerHTML = div
@@ -86,7 +91,7 @@ div += ("<p>Task " + (b+1) + ": " + score[Object.keys(score)[b]]["current"] + "/
 
 function showAnswers(tid) {
 
-task = jsonData.find(task => task.taskId == tid)
+    task = jsonData.find(task => task.taskId == tid)
 
     type = task.type;
     solutions = JSON.parse(task.solutions);
@@ -99,7 +104,7 @@ task = jsonData.find(task => task.taskId == tid)
         taskGaps = document.getElementById(tid).querySelectorAll(".task .gap")
     }
 
-wordListGaps = wordListGapsAll[tid]
+    wordListGaps = wordListGapsAll[tid]
     /*taskGaps are: GAPS if it's a gap-filling task, RADIO-CONTAINERS if it's a true-or-false task, and GAPS inside a div tag if it's a matching task.*/
 
 

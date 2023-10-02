@@ -13,7 +13,7 @@ function pickAnswer(el, id) {
 function dropAnswer(el, id) {
 type = jsonData.find(task => task.taskId == id).type
    
-if (picked.classList.contains(id)) {
+if (picked > "" && picked.classList.contains(id)) {
     isVisibleThen(id)
     if (type == "reading-text") {
         el.style.display = "inline";

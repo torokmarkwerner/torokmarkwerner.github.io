@@ -201,10 +201,12 @@ function populateHTML(x) {
                     wordList = document.getElementById(taskId).getElementsByClassName("word-list")[0];
                     gap = document.createElement("DIV");
                     gap.innerHTML = this.innerHTML;
-                    gap.classList.add("gap");
+                    this.classList.forEach(x => gap.classList.add(x))
+                    gap.id = this.id
                     gap.addEventListener("click", function() { pickAnswer(this, x.taskId) });
-                    wordList.appendChild(gap);
+                    document.getElementById(x.taskId).getElementsByClassName("word-list")[0].appendChild(gap);
                     this.innerHTML = "";
+                    this.removeAttribute("id")
                     if (type == "reading-text") {
                         this.style.display = "inline-block";
                         this.style.verticalAlign = "middle"
