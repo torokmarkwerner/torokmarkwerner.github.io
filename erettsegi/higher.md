@@ -1,5 +1,5 @@
 ---
-layout: erettsegi-task-collection
+layout: erettsegi-page
 permalink: /erettsegi/higher/
 ---
 Az emelt szintű angol érettségi két részből áll, úgymint: írásbeli és szóbeli vizsga.

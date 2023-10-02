@@ -1,5 +1,5 @@
 ---
-layout: erettsegi-task-collection
+layout: erettsegi-page
 permalink: /erettsegi/
 ---
 Az angol érettségi – ahogy az érettségik általában – kétszintű.
