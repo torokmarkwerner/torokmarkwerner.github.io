@@ -8,6 +8,6 @@ layout: default
 <script src="/erettsegi/create-task.js">
 </script>
 <script>
-{ % assign taskids = page.task_id | split: "," % } { % for taskid in taskids % }
-createTask("{{ taskid }}"); { % endfor % }
+{% assign taskids = page.task_id | split: "," %} {% for taskid in taskids %}
+createTask("{{ taskid }}"); {% endfor %}
 </script>
