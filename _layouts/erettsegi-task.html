@@ -13,7 +13,7 @@ layout: default
 {% assign taskids = page.task_id | split: "," %}
 {% else %}
 {% assign taskids = "" | split: "," %}
-{% assign tasks = site.pages | where_exp: "item" , "item.url contains page.permalink" %}
+{% assign tasks = site.pages | where_exp: "item" , "item.url contains page.permalink" | where_exp: "item" , "item.url != page.url" %}
 {% for task in tasks %}
 {% if task.url != page.url %}
 {% assign taskids = taskids | push: task.task_id %}
