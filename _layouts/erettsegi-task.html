@@ -15,14 +15,14 @@ layout: default
 {% assign taskids = "" | split: "," %}
 {% assign tasks = site.pages | where_exp: "item" , "item.url contains page.permalink" %}
 {% for task in tasks %}
-console.log("{{ task.task_id }}")
+{% if task.url != page.url %}
 {% assign taskids = taskids | push: task.task_id %}
+{% endif %}
 {% endfor %}
 {% endif %}
 
 {% for taskid in taskids %}
 createTask("{{ taskid }}");
 {% endfor %}
-
 
 </script>
