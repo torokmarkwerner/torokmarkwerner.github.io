@@ -1,8 +1,4 @@
-fetch("/erettsegi/data.json").then((response) => {
-    return response.json()
-}).then((data) => {
-    populateHTML(data)
-})
+jsonData = []
 
 score = 0;
 
@@ -11,18 +7,27 @@ trueOrFalse = { "true": "A", "false": "B", "doesn't say": "C" };
 picked = "";
 pickedId = "";
 
+function createTask(id) {
+    fetch("/erettsegi/data.json").then((response, id) => {
+        return response.json()
+    }).then((data) => {
+        jsonData = data;
+        populateHTML(data.find(task => task.taskId == id))
+    })
+}
 
 function populateHTML(x) {
-    taskJSON = x.find(y => y.taskId == taskId);
-    type = taskJSON.type;
-    solutions = JSON.parse(taskJSON.solutions);
-    taskTitle = taskJSON.taskTitle;
-    instructions = JSON.parse(taskJSON.instructions);
-    wordList = JSON.parse(taskJSON.wordList);
-    textTitle = taskJSON.textTitle;
-    example = taskJSON.example;
-    text = taskJSON.text;
-    text2 = taskJSON.text2;
+    console.log(x)
+    taskId = x.taskId;
+    type = x.type;
+    solutions = JSON.parse(x.solutions);
+    taskTitle = x.taskTitle;
+    instructions = JSON.parse(x.instructions);
+    wordList = JSON.parse(x.wordList);
+    textTitle = x.textTitle;
+    example = x.example;
+    text = x.text;
+    text2 = x.text2;
 
     taskBody = document.createElement("DIV");
     taskBody.className = type;
@@ -140,12 +145,10 @@ function populateHTML(x) {
     checkButton = document.createElement("BUTTON");
     checkButton.className = "check-button";
     checkButton.innerText = "CHECK ANSWERS";
-    checkButton.addEventListener("click", checkAnswers)
 
     showButton = document.createElement("BUTTON")
     showButton.className = "show-button";
     showButton.innerText = "SHOW ANSWERS";
-    showButton.addEventListener("click", showAnswers)
 
     taskBody.appendChild(checkButton);
     taskBody.appendChild(showButton);
@@ -187,34 +190,38 @@ function populateHTML(x) {
     if (document.getElementById(taskId).getElementsByClassName("word-list")[0]) {
         for (i = 0; i < taskGaps.length; i++) {
             taskGaps[i].addEventListener("click", function() {
-                if (this.innerText == "") { dropAnswer(this, taskId); } else {
+                if (this.innerText == "") { dropAnswer(this, x.taskId); } else {
                     wordList = document.getElementById(taskId).getElementsByClassName("word-list")[0];
                     gap = document.createElement("DIV");
                     gap.innerHTML = this.innerHTML;
                     gap.classList.add("gap");
-                    gap.addEventListener("click", function() { pickAnswer(this, taskId) });
+                    gap.addEventListener("click", function() { pickAnswer(this, x.taskId) });
                     wordList.appendChild(gap);
                     this.innerHTML = "";
-                    if (type == "reading-text") { this.style.display = "inline-block";
-                        this.style.verticalAlign = "middle" }
+                    if (type == "reading-text") {
+                        this.style.display = "inline-block";
+                        this.style.verticalAlign = "middle"
+                    }
                 }
             });
         }
     }
 
     for (i = 0; i < wordListGaps.length; i++) {
-        wordListGaps[i].addEventListener("click", function() { pickAnswer(this, taskId); });
+        wordListGaps[i].addEventListener("click", function() { pickAnswer(this, x.taskId); });
     }
 
     /*If there are options (word-list), word-list gaps can be picked and dropped into task gaps. OR if a taskGap has already been filled in, the gap goes back to the word-list.*/
 
-    isVisibleThen(taskId)
+    isVisibleThen(x.taskId)
 
     if (document.getElementById(taskId).getElementsByClassName("word-list")[0]) {
         document.getElementById(taskId).getElementsByClassName("word-list")[0].addEventListener("scroll", function() {
-            isVisibleThen(taskId)
+            isVisibleThen(x.taskId)
             /*alert(wordListGaps[4].offsetTop + " " + " ")*/
         })
     }
 
+    document.getElementById(taskId).getElementsByClassName("show-button")[0].addEventListener("click", function() { showAnswers(x.taskId) })
+    document.getElementById(taskId).getElementsByClassName("check-button")[0].addEventListener("click", function() { checkAnswers(x.taskId) })
 }

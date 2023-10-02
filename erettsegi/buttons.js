@@ -1,4 +1,15 @@
-function checkAnswers() {
+function checkAnswers(tid) {
+
+    if (type == "reading-matching") {
+        taskGaps = document.getElementById(tid).querySelectorAll(".task > div > .gap")
+    } else if (type == "reading-true-or-false") {
+        taskGaps = document.getElementById(tid).querySelectorAll(".radio-container:not(.default)")
+    } else /*if (type == "uoe-word-transformation" || type == "uoe-closed-gap-filling" || type == "uoe-free-gap-filling" || type == "reading-dialogue" || type == "reading-text") */ {
+        taskGaps = document.getElementById(tid).querySelectorAll(".task .gap")
+    }
+
+    /*taskGaps are: GAPS if it's a gap-filling task, RADIO-CONTAINERS if it's a true-or-false task, and GAPS inside a div tag if it's a matching task.*/
+
     for (i = 0; i < taskGaps.length; i++) {
 
         if (type == "uoe-word-transformation" || type == "uoe-free-gap-filling") {
@@ -15,7 +26,7 @@ function checkAnswers() {
 
         } else if (type == "uoe-closed-gap-filling" || type == "reading-dialogue" || type == "reading-text" || type == "reading-matching") {
             taskGaps[i].classList.remove("incorrect");
-            if (!(taskGaps[i].classList.contains("correct")) && taskGaps[i].id.replace((taskId + "-"), "") == solutions[i] && !(taskGaps[i].classList.contains("gap-disabled"))) {
+            if (!(taskGaps[i].classList.contains("correct")) && taskGaps[i].id.replace((tid + "-"), "") == solutions[i] && !(taskGaps[i].classList.contains("gap-disabled"))) {
                 taskGaps[i].classList.add("gap-disabled", "correct");
                 taskGaps[i].classList.remove("gap");
                 taskGaps[i].replaceWith(taskGaps[i].cloneNode(true));
@@ -60,7 +71,28 @@ function checkAnswers() {
     document.querySelector("#score-modal p").innerHTML = score + "/" + taskGaps.length;
 }
 
-function showAnswers() {
+function showAnswers(tid) {
+
+task = jsonData.find(task => task.taskId == tid)
+
+    type = task.type;
+    solutions = JSON.parse(task.solutions);
+
+    console.log(solutions);
+
+    if (type == "reading-matching") {
+        taskGaps = document.getElementById(tid).querySelectorAll(".task > div > .gap")
+    } else if (type == "reading-true-or-false") {
+        taskGaps = document.getElementById(tid).querySelectorAll(".radio-container:not(.default)")
+    } else /*if (type == "uoe-word-transformation" || type == "uoe-closed-gap-filling" || type == "uoe-free-gap-filling" || type == "reading-dialogue" || type == "reading-text") */ {
+        taskGaps = document.getElementById(tid).querySelectorAll(".task .gap")
+    }
+
+    wordListGaps = document.getElementById(tid).querySelectorAll(".word-list .gap")
+
+    /*taskGaps are: GAPS if it's a gap-filling task, RADIO-CONTAINERS if it's a true-or-false task, and GAPS inside a div tag if it's a matching task.*/
+
+
     for (i = 0; i < taskGaps.length; i++) {
         if (type == "uoe-word-transformation" || type == "uoe-free-gap-filling") {
             taskGaps[i].value = solutions[i].toString().replaceAll(",", " / ");
@@ -71,7 +103,7 @@ function showAnswers() {
             taskGaps[i].replaceWith(taskGaps[i].cloneNode(true));
 
         } else if (type == "uoe-closed-gap-filling" || type == "reading-dialogue" || type == "reading-text" || type == "reading-matching") {
-            taskGaps[i].innerHTML = Array.from(wordListGaps).find(x => x.id == (taskId + "-" + solutions[i])).innerHTML;
+            taskGaps[i].innerHTML = Array.from(wordListGaps).find(x => x.id == (tid + "-" + solutions[i])).innerHTML;
             taskGaps[i].classList.add("gap-disabled");
             taskGaps[i].classList.remove("gap", "incorrect");
             taskGaps[i].replaceWith(taskGaps[i].cloneNode(true));

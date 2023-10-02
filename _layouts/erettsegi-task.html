@@ -1,16 +1,13 @@
 ---
 layout: default
 ---
-    <script src="/erettsegi/buttons.js">
-    </script>
-
-    <script src="/erettsegi/statements-pick-and-drop.js">
-    </script>
-
-
-    <script src="/erettsegi/create-task.js">
-    </script>    
-
-    <script>
-    taskId = "{{ page.task_id }}";
-    </script>
+<script src="/erettsegi/buttons.js">
+</script>
+<script src="/erettsegi/statements-pick-and-drop.js">
+</script>
+<script src="/erettsegi/create-task.js">
+</script>
+<script>
+{ % assign taskids = page.task_id | split: "," % } { % for taskid in taskids % }
+createTask("{{ taskid }}"); { % endfor % }
+</script>
