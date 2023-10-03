@@ -70,28 +70,30 @@ padding-top: 0;
   display:flex;
   justify-content: center;
   align-items:center;
-  padding: 1em 0.5em;
-  flex: 0 0 70%;
-  background: lightgoldenrodyellow;
+  flex: 1 0 70%;
+  padding: 0 1em;
 }
 
 .reading-true-or-false .gap-container {
-  text-align:center;
-  align-items:stretch;
+  text-align: center;
+  align-items: stretch;
+  background-color: antiquewhite;
+  margin: 1em 0;
+  padding: 0.5em;
 }
 
 .reading-true-or-false .radio-container {
   display: table;
   height: fit-content;
   align-self:center;
-  border-top: 1pt solid black;
-  border-right: 1pt solid black;
-  border-left: 1pt solid black;
-  flex: 0 1 auto;
+  flex: 1 1 auto;
+  padding: 0.25em 0 0 0.5em;
 }
 
 .reading-true-or-false .radio-container label {
-  display: table-row;
+  display: table;
+  width: 100%;
+  padding: 0.25em 0;
   cursor: pointer;
 }
 
@@ -103,8 +105,17 @@ padding-top: 0;
   display: table-cell;
   vertical-align: middle;
   padding: 0.2em;
-  border-bottom: 1pt black solid;
-  font-variant: small-caps
+  border: 1pt black solid;
+  font-variant: small-caps;
+  background-color: lightgray;
+}
+
+.reading-true-or-false .radio-container label [type="radio"]+span.correct {
+  background-color: lightgreen
+}
+
+.reading-true-or-false .radio-container label [type="radio"]+span.incorrect {
+  background-color: #FFC300
 }
 
 .reading-true-or-false .radio-container label [disabled]+span {
@@ -112,7 +123,7 @@ padding-top: 0;
 }
 
 .reading-true-or-false .radio-container label :checked+span {
-  background-color: lightgray;
+  background-color: #d4a6f4;
 }
 
 .reading-true-or-false .default label :checked+span {
@@ -276,14 +287,6 @@ padding-top: 0;
   background-color: lightblue
 }
 
-.correct {
-  background-color: lightgreen
-}
-
-.incorrect {
-  background-color: #FFC300
-}
-
 .modal-basis {
   z-index: 2;
   position: fixed;
@@ -322,4 +325,12 @@ padding-top: 0;
 .modal-close:focus {
   color: black;
   cursor: pointer;
+}
+
+.correct {
+  background-color: lightgreen
+}
+
+.incorrect {
+  background-color: #FFC300
 }
