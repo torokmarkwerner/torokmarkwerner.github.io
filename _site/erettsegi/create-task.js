@@ -92,11 +92,12 @@ function populateHTML(x) {
                 option = document.createElement("OPTION");
                 option.value = (Object.keys(wordList[i]))[z]
                 option.innerHTML = (Object.values(wordList[i]))[z]
+                if (i == 0 && option.innerHTML == example) {
+                    option.selected = true
+                } else if (i == 0) {
+                    option.disabled = true
+                }
                 select.appendChild(option)
-            }
-            if (i == 0) {
-                select.querySelector("[value='" + example + "']").selected = true
-                select.querySelectorAll(":not([value='" + example + "'])").forEach(x => x.disabled = true)
             }
         }
 
@@ -188,7 +189,7 @@ function populateHTML(x) {
         taskGaps = document.getElementById(taskId).querySelectorAll(".task .gap")
     }
 
-    score[taskId] = {"current":0,"max":taskGaps.length};
+    score[taskId] = { "current": 0, "max": taskGaps.length };
 
     wordListGapsAll[taskId] = document.getElementById(taskId).querySelectorAll(".word-list .gap")
 
