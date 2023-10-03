@@ -71,7 +71,7 @@ padding-top: 0;
   justify-content: center;
   align-items:center;
   padding: 1em 0.5em;
-  flex: 0 0 70%;
+  flex: 1 0 70%;
   background: lightgoldenrodyellow;
 }
 
@@ -87,7 +87,7 @@ padding-top: 0;
   border-top: 1pt solid black;
   border-right: 1pt solid black;
   border-left: 1pt solid black;
-  flex: 0 1 auto;
+  flex: 1 1 auto;
 }
 
 .reading-true-or-false .radio-container label {
