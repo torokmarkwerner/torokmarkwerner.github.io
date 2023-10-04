@@ -145,6 +145,9 @@ function populateHTML(x) {
         script.src = "/erettsegi/statements-pick-and-drop.js"
         taskBody.appendChild(script)*/
 
+buttonContainer = document.createElement("DIV");
+buttonContainer.classList.add("button-container");
+
     checkButton = document.createElement("BUTTON");
     checkButton.className = "check-button";
     checkButton.innerText = "CHECK ANSWERS";
@@ -153,8 +156,10 @@ function populateHTML(x) {
     showButton.className = "show-button";
     showButton.innerText = "SHOW ANSWERS";
 
-    taskBody.appendChild(checkButton);
-    taskBody.appendChild(showButton);
+    buttonContainer.appendChild(checkButton);
+    buttonContainer.appendChild(showButton);
+
+    taskBody.appendChild(buttonContainer);
 
     if (!document.getElementById("score-modal")) {
         modalClose = document.createElement("DIV");

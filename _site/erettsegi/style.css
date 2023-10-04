@@ -70,8 +70,8 @@ padding-top: 0;
   display:flex;
   justify-content: center;
   align-items:center;
-  flex: 1 0 70%;
-  padding: 0 1em;
+  flex: 1 0 50%;
+  padding: 0 1em 0 1.5em;
 }
 
 .reading-true-or-false .gap-container {
@@ -79,7 +79,6 @@ padding-top: 0;
   align-items: stretch;
   background-color: antiquewhite;
   margin: 1em 0;
-  padding: 0.5em;
 }
 
 .reading-true-or-false .radio-container {
@@ -87,7 +86,7 @@ padding-top: 0;
   height: fit-content;
   align-self:center;
   flex: 1 1 auto;
-  padding: 0.25em 0 0 0.5em;
+  padding: 0.25em 0.5em 0 0.5em;
 }
 
 .reading-true-or-false .radio-container label {
@@ -123,7 +122,7 @@ padding-top: 0;
 }
 
 .reading-true-or-false .radio-container label :checked+span {
-  background-color: #d4a6f4;
+  background-color: lightskyblue;
 }
 
 .reading-true-or-false .default label :checked+span {
@@ -268,13 +267,14 @@ padding-top: 0;
 
 .check-button,
 .show-button {
-  font-size: auto;
+  flex: 1;
+  font-size: small;
   font-family: inherit;
   background-color: lightgreen;
   min-width: 5em;
   border: 0pt;
-  padding: 0.5em;
-  margin: 0.5em 0.1em;
+  padding: 1em;
+  margin: 0 0.1em;
 }
 
 .check-button:hover,
@@ -284,7 +284,13 @@ padding-top: 0;
 }
 
 .show-button {
-  background-color: lightblue
+  background-color: lightskyblue
+}
+
+.button-container {
+  display:flex;
+  gap: 0.5em;
+  padding-bottom: 1em;
 }
 
 .modal-basis {
