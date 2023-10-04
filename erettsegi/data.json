@@ -2,41 +2,10 @@
     {
         "taskId": "standard-23maj-reading-1",
         "type": "reading-dialogue",
-        "solutions":
-        [
-            "G",
-            "F",
-            "H",
-            "B",
-            "K",
-            "L",
-            "M",
-            "I",
-            "D"
-        ],
+        "solutions": "[\"G\",\"F\",\"H\",\"B\",\"K\",\"L\",\"M\",\"I\",\"D\"]",
         "taskTitle": "Task 1",
-        "instructions":
-        [
-            "Read the following questions and answers from the website of a library. The questions have been removed.",
-            "Your task is to place each question into the appropriate box.",
-            "There are two extra questions that you do not need.",
-            "Place the questions in the boxes as in the example."
-        ],
-        "wordList":
-        {
-            "A": "What other services does the library offer besides lending materials?",
-            "B": "Can someone else pick up my books?",
-            "C": "How do I get a library card?",
-            "D": "If the library doesn’t have a title I’m looking for, is it possible to order it from another library?",
-            "E": "Do you charge a fine if the items are not returned in time?",
-            "F": "What can I do if my library card is not accepted?",
-            "G": "Is there a membership fee?",
-            "H": "How many books can I borrow?",
-            "I": "What can I take into the reading rooms?",
-            "K": "How long can I keep my borrowed materials?",
-            "L": "How many times can I renew the items that I borrowed?",
-            "M": "What happens if I lose or damage the borrowed item?"
-        },
+        "instructions": "[\"Read the following questions and answers from the website of a library. The questions have been removed.\",\"Your task is to place each question into the appropriate box.\",\"There are two extra questions that you do not need.\",\"Place the questions in the boxes as in the example.\"]",
+        "wordList": "{\"A\":\"What other services does the library offer besides lending materials?\",\"B\":\"Can someone else pick up my books?\",\"C\":\"How do I get a library card?\",\"D\":\"If the library doesn’t have a title I’m looking for, is it possible to order it from another library?\",\"E\":\"Do you charge a fine if the items are not returned in time?\",\"F\":\"What can I do if my library card is not accepted?\",\"G\":\"Is there a membership fee?\",\"H\":\"How many books can I borrow?\",\"I\":\"What can I take into the reading rooms?\",\"K\":\"How long can I keep my borrowed materials?\",\"L\":\"How many times can I renew the items that I borrowed?\",\"M\":\"What happens if I lose or damage the borrowed item?\"}",
         "textTitle": "CITY LIBRARY FREQUENTLY ASKED QUESTIONS",
         "example": "How do I get a library card?",
         "text": "<p>Thank you for being interested in learning more about the City Library. Answers to the most common questions about our services can be found below.</p>(0)<p>You can apply for one in person at the circulation desk. You must bring a photo I.D. and a document that shows your address.</p>(1)<p>No, registration is free for local residents. However, people who live outside the city are required to pay if they want to join the library.</p>(2)<p>Check the dates on the card. You may need to renew your membership. Cards are valid for two years.</p>(3)<p>You can check out up to 20 items at a time, including books, e-books, magazines, CDs and DVDs.</p>(4)<p>Yes, but only if they can show your library card at the desk.</p>(5)<p>The loan period is four weeks. If you would like to keep the items longer, you may renew them in person or online.</p>(6)<p>Up to two times if no one else is waiting for them.</p>(7)<p>You will need to pay the replacement cost of the material that you are unable to return in the original condition.</p>(8)<p>Pencils, paper and a laptop. Bags bigger than A4 size and other items, such as food, drink and pens, must be left in lockers on the ground floor.</p>(9)<p>Yes, our librarians will place the request for you. However, depending on where it comes from, it can take a week or longer for the item to arrive.</p>",
@@ -45,36 +14,10 @@
     {
         "taskId": "standard-23maj-reading-2",
         "type": "reading-text",
-        "solutions":
-        [
-            "H",
-            "G",
-            "D",
-            "A",
-            "I",
-            "B"
-        ],
+        "solutions": "[\"H\",\"G\",\"D\",\"A\",\"I\",\"B\"]",
         "taskTitle": "Task 2",
-        "instructions":
-        [
-            "Read this article about providing internet service to mountain climbers.",
-            "Some sentences have been left out from the text.",
-            "Your task is to reconstruct the text by filling in the gaps from the list below.",
-            "Place the sentences in the boxes as in the example.",
-            "Remember that there are two extra letters that you do not need."
-        ],
-        "wordList":
-        {
-            "A": "As an added bonus, the tourist industry may benefit as well.",
-            "B": "But the plan caused anger among climbers and expedition guides.",
-            "C": "It’s also the world’s tallest mountain that’s not part of a mountain range.",
-            "D": "They’ll also be able to call for help if they need it.",
-            "E": "Scientists believe global warming is responsible for the loss of ice.",
-            "F": "They became the first recorded European climbers to reach Kilimanjaro’s summit in 1889.",
-            "G": "Roughly one third of the people who try to climb it finally give up.",
-            "H": "Most of them are trying to climb Mount Kilimanjaro.",
-            "I": "Only about 83% of the population in Tanzania can get cell phone service where they live."
-        },
+        "instructions": "[\"Read this article about providing internet service to mountain climbers.\",\"Some sentences have been left out from the text.\",\"Your task is to reconstruct the text by filling in the gaps from the list below.\",\"Place the sentences in the boxes as in the example.\",\"Remember that there are two extra letters that you do not need.\"]",
+        "wordList": "{\"A\":\"As an added bonus, the tourist industry may benefit as well.\",\"B\":\"But the plan caused anger among climbers and expedition guides.\",\"C\":\"It’s also the world’s tallest mountain that’s not part of a mountain range.\",\"D\":\"They’ll also be able to call for help if they need it.\",\"E\":\"Scientists believe global warming is responsible for the loss of ice.\",\"F\":\"They became the first recorded European climbers to reach Kilimanjaro’s summit in 1889.\",\"G\":\"Roughly one third of the people who try to climb it finally give up.\",\"H\":\"Most of them are trying to climb Mount Kilimanjaro.\",\"I\":\"Only about 83% of the population in Tanzania can get cell phone service where they live.\"}",
         "textTitle": "MOUNT KILIMANJARO GETS INTERNET SERVICE",
         "example": "It’s also the world’s tallest mountain that’s not part of a mountain range.",
         "text": "<p>At 5,895 meters, Mount Kilimanjaro is the highest mountain in Africa. (0)                It rises out of a large, flat area in Tanzania and Kenya. The mountain is part of Kilimanjaro National Park, which has around 50,000 visitors each year. (10)        But climbing Africa’s tallest mountain isn’t easy. It has snowy glaciers surrounding its peak.</p><p>(11)          </p><p>The government of Tanzania has recently set up a high-speed internet service on the mountain to make it easier for climbers to reach the top. They’ll be able to use the internet to check the weather and use navigation tools. (12)          </p><p>The government says safety is the main reason for setting up the internet service on the mountain. (13)        Having people post selfies on social media as they work their way up the tallest mountain could certainly make the spot even more popular with visitors. Residents in Tanzania, however, are upset that the government is focusing on tourists instead of helping the people who live in the country. (14)          </p><p>Also with tourists in mind, last year the Tanzanian government approved a $72 million project to build a cable car on Mount Kilimanjaro to allow tourists who weren’t climbers to enjoy the</p><p>mountain. (15)        It also bothered people who were worried about how the</p><p>construction might affect the environment on the mountain. They point out that as a World Heritage site, Mount Kilimanjaro is a place which is important to protect.</p>",
@@ -83,35 +26,10 @@
     {
         "taskId": "standard-23maj-reading-3",
         "type": "reading-matching",
-        "solutions":
-        [
-            "B",
-            "F",
-            "D",
-            "I",
-            "E",
-            "H"
-        ],
+        "solutions": "[\"B\",\"F\",\"D\",\"I\",\"E\",\"H\"]",
         "taskTitle": "Task 3",
-        "instructions":
-        [
-            "Read the following description of escape rooms available for adventurous teams and then read the half sentences that follow the text.",
-            "Your task is to match the half sentences based on the information in the text.",
-            "Place the half sentences in the white boxes as in the example.",
-            "Remember that there are two extra letters that you will not need."
-        ],
-        "wordList":
-        {
-            "A": "the story takes place in space.",
-            "B": "the team has to escape from an imaginary island which is full of mystery.",
-            "C": "your team must complete challenges to show that you are not spies.",
-            "D": "the players have to prevent an explosion in a tall building.",
-            "E": "the story is set in the past.",
-            "F": "the story starts with an accident.",
-            "G": "the team must save people from a sinking ship.",
-            "H": "the team’s mission is to solve a murder mystery.",
-            "I": "the team will go underground to search for something."
-        },
+        "instructions": "[\"Read the following description of escape rooms available for adventurous teams and then read the half sentences that follow the text.\",\"Your task is to match the half sentences based on the information in the text.\",\"Place the half sentences in the white boxes as in the example.\",\"Remember that there are two extra letters that you will not need.\"]",
+        "wordList": "{\"A\":\"the story takes place in space.\",\"B\":\"the team has to escape from an imaginary island which is full of mystery.\",\"C\":\"your team must complete challenges to show that you are not spies.\",\"D\":\"the players have to prevent an explosion in a tall building.\",\"E\":\"the story is set in the past.\",\"F\":\"the story starts with an accident.\",\"G\":\"the team must save people from a sinking ship.\",\"H\":\"the team’s mission is to solve a murder mystery.\",\"I\":\"the team will go underground to search for something.\"}",
         "textTitle": "CHOOSE YOUR ADVENTURE ",
         "example": "your team must complete challenges to show that you are not spies.",
         "text": "<p>If you’re looking for a fun afternoon with friends, book one of our escape rooms. Here are the missions for your team to choose from.</p><p>The Yellow Room: Spies must be removed from the ministry of wizards where you work. You have one hour to undertake a trial of magic to prove that you are true wizards.</p><p>The Pink Room: You find yourselves on a mysterious island, home to strange animals and magical plants. You’ll need to solve puzzles, unlock portals and find your way back to the real world.</p><p>The Green Room: Going on holiday overseas, your plane has crashed and now you’re all stuck on a small island in the Pacific Ocean. With the weather getting worse, you need a place to hide until the rescue team finds you. You have 45 minutes to build a shelter.</p><p>The Grey Room: The secret service has been working on locating and removing threats from the city centre. As a team of experts, you must find the last bomb at the top of a tower block and save the city.</p><p>The Black Room: Enter a mystical cave and navigate your way in the dark to find the magic lamp without being trapped forever. The cave is full of puzzles designed to guard the powerful lamp.</p><p>The Blue Room: Step into 1942, when the world is at war. As MI6’s top agents you’ve been chosen to discover the location of the enemy’s superweapons, destroy them and save Britain. The Red Room: The mystery takes place at a research laboratory, where a professor has been killed by one of his colleagues. You and your team are detectives who are invited to solve the case and find the criminal.</p>",
@@ -120,23 +38,10 @@
     {
         "taskId": "standard-23maj-reading-4",
         "type": "reading-true-or-false",
-        "solutions":
-        [
-            "B",
-            "C",
-            "B",
-            "A",
-            "A",
-            "B",
-            "C"
-        ],
+        "solutions": "[\"B\",\"C\",\"B\",\"A\",\"A\",\"B\",\"C\"]",
         "taskTitle": "Task 4",
-        "instructions":
-        [
-            "Read this article about some scientific research and then read the statements following it.",
-            "Click on <i>true</i> if it is true according to the article, mark it <i>false</i> if it is false, and mark it <i>doesn't say</i> if there isn’t enough information in the text to decide if it is true or not."
-        ],
-        "wordList": "",
+        "instructions": "[\"Read this article about some scientific research and then read the statements following it.\",\"Click on <i>true</i> if it is true according to the article, mark it <i>false</i> if it is false, and mark it <i>doesn't say</i> if there isn’t enough information in the text to decide if it is true or not.\"]",
+        "wordList": "\"\"",
         "textTitle": "SCIENTISTS LEARN THAT DOGS CAN SMELL STRESS \r",
         "example": "true",
         "text": "<p>Scientists ran an experiment which showed that dogs can tell the difference between the smell of a person when they’re relaxed and when they’re stressed.</p><p>Researchers at Queen’s University Belfast worked with four dogs and 36 humans. The dogs included in the study were pets, volunteered by their owners. First, researchers taught the dogs to use a special smell-testing device. Then, they collected sweat and breath samples from the human participants under two different conditions: in a non-stressful and a stressful situation. When people were calm, their blood pressure and heart rates were measured and then they were asked to wipe their skin with a clean piece of cloth. Then they had to put the cloth sample in a tube and breathe on it hard three times.</p><p>The study team then collected another round of breath and sweat samples a few minutes later, after the people had completed a difficult maths task, counting backward in their heads from 9,000 in units of 17 in front of two researchers for three minutes. The researchers kept telling the people to hurry up. After the task the participants reported feeling stressed, and their blood pressure and heart rate had gone up.</p><p>Then the dogs were given a relaxed and a stressed sample from each person. The dogs correctly identified the stressed sample in 94% of 720 tests.</p><p>The study provides evidence that dogs can smell stress from breath and sweat. Researchers say the skill could be useful when training therapy dogs.</p>",
@@ -145,52 +50,10 @@
     {
         "taskId": "standard-23maj-uoe-1",
         "type": "uoe-word-transformation",
-        "solutions":
-        [
-            [
-                "stressful",
-                "stressed",
-                "stressing"
-            ],
-            [
-                "delayed"
-            ],
-            [
-                "flying",
-                "flight"
-            ],
-            [
-                "emergency",
-                "emergent",
-                "emerging"
-            ],
-            [
-                "simpler"
-            ],
-            [
-                "enjoyable"
-            ],
-            [
-                "annoying"
-            ],
-            [
-                "permission"
-            ],
-            [
-                "immediately"
-            ]
-        ],
+        "solutions": "[[\"stressful\",\"stressed\",\"stressing\"],[\"delayed\"],[\"flying\",\"flight\"],[\"emergency\",\"emergent\",\"emerging\"],[\"simpler\"],[\"enjoyable\"],[\"annoying\"],[\"permission\"],[\"immediately\"]]",
         "taskTitle": "Task 1",
-        "instructions":
-        [
-            "You are going to read an article about what flight attendants don’t like about some passengers’ behavior.",
-            "Some words are missing from the text.",
-            "Use the words in brackets to form the words that fit in the gaps.",
-            "There might be cases when you do not have to change the word in brackets.",
-            "Use only one word for each gap.",
-            "There is an example at the beginning."
-        ],
-        "wordList": "",
+        "instructions": "[\"You are going to read an article about what flight attendants don’t like about some passengers’ behavior.\",\"Some words are missing from the text.\",\"Use the words in brackets to form the words that fit in the gaps.\",\"There might be cases when you do not have to change the word in brackets.\",\"Use only one word for each gap.\",\"There is an example at the beginning.\"]",
+        "wordList": "\"\"",
         "textTitle": "MAKE THEM HAPPY",
         "example": "irritating",
         "text": "<p>We asked flight attendants about the most (0)        (irritate) things passengers do on planes.</p><p>As any frequent traveler will tell you, traveling by air can be a rather (1)        (stress) experience, especially as more and more flights are (2)        (delay) or canceled. But it's important to remember that (3)        (fly) is a miracle, and those who help you get from point A to point B safely — your flight crew members — deserve the highest respect.</p><p>&quot;Our job is much more than serving food and drinks. We are safety professionals and are trained to handle (4)        (emerge) situations that can occur during a flight,&quot; Andy, a current crew member at a major airline, shared with Travel + Leisure.</p><p>So, how can you get treated like a VIP in the air by your cabin crew? It couldn’t be (5)                  (simple): be nice.</p><p>&quot;If you show me a little respect, I'll be more than happy to make your flight as (6)                  (enjoy) as possible,&quot; said Andy.</p><p>We carried out a survey to ask flight attendants about what passengers do that crew members find (7)        (annoy). Here are the most offensive actions you should avoid: touching a crew member without their (8)        (permit), asking for water (9)        (immediate) upon boarding, using the bathroom at an inappropriate time, pressing the call bell every two minutes, and last but not least, not saying thank you.</p>",
@@ -199,41 +62,10 @@
     {
         "taskId": "standard-23maj-uoe-2",
         "type": "uoe-closed-gap-filling",
-        "solutions":
-        [
-            "D",
-            "H",
-            "F",
-            "K",
-            "M",
-            "A",
-            "G",
-            "I"
-        ],
+        "solutions": "[\"D\",\"H\",\"F\",\"K\",\"M\",\"A\",\"G\",\"I\"]",
         "taskTitle": "Task 2",
-        "instructions":
-        [
-            "You are going to read an anecdote about Theodore Roosevelt, the 26th president of the U.S. Some words are missing from the text.",
-            "Your task is to choose the most appropriate word from the list for each gap in the text.",
-            "Each word can be used once.",
-            "There are three extra words that you do not need to use.",
-            "There is an example at the beginning."
-        ],
-        "wordList":
-        {
-            "A": "ACHIEVEMENT",
-            "B": "COULD",
-            "C": "ONCE",
-            "D": "COUPLE",
-            "E": "DIRECTION",
-            "F": "GIVE",
-            "G": "MANAGED",
-            "H": "SEVERAL",
-            "I": "SAY",
-            "K": "TAKE",
-            "L": "TELL",
-            "M": "WAY"
-        },
+        "instructions": "[\"You are going to read an anecdote about Theodore Roosevelt, the 26th president of the U.S. Some words are missing from the text.\",\"Your task is to choose the most appropriate word from the list for each gap in the text.\",\"Each word can be used once.\",\"There are three extra words that you do not need to use.\",\"There is an example at the beginning.\"]",
+        "wordList": "{\"A\":\"ACHIEVEMENT\",\"B\":\"COULD\",\"C\":\"ONCE\",\"D\":\"COUPLE\",\"E\":\"DIRECTION\",\"F\":\"GIVE\",\"G\":\"MANAGED\",\"H\":\"SEVERAL\",\"I\":\"SAY\",\"K\":\"TAKE\",\"L\":\"TELL\",\"M\":\"WAY\"}",
         "textTitle": "A BUSY JOURNEY",
         "example": "ONCE",
         "text": "<p>The famous biographer David McCullough (0)        told the following story from the early life of Theodore Roosevelt:</p><p>Once upon a time, in the coldest days of winter, in the Dakota Territory, Theodore Roosevelt took off in a small boat down the Little Missouri River to catch a (10)        of thieves who had stolen his favorite rowboat.</p><p>After (11)        days on the river, Roosevelt caught up with the thieves. He drew his trusty Winchester rifle, and forced them to (12)        up the stolen boat. Then he set off in a borrowed horse-drawn wagon to (13)        the thieves cross-country to prison. They traveled across the snow-covered wilderness to the railway at Dickinson, North Dakota, and Roosevelt walked the whole (14)                , the entire forty miles. It was an extraordinary (15)        . But what makes it especially important is that during that time, he (16)                to read all of Anna Karenina, Leo Tolstoy’s 900-page novel.</p><p>I often think of this story when I hear people (17)        they haven’t time to read.</p>",
@@ -242,50 +74,10 @@
     {
         "taskId": "standard-23maj-uoe-3",
         "type": "uoe-free-gap-filling",
-        "solutions":
-        [
-            [
-                "to"
-            ],
-            [
-                "up"
-            ],
-            [
-                "as",
-                "in",
-                "become",
-                "becoming",
-                "inspire"
-            ],
-            [
-                "to"
-            ],
-            [
-                "be",
-                "feel"
-            ],
-            [
-                "like",
-                "resembling"
-            ],
-            [
-                "makes"
-            ],
-            [
-                "out",
-                "in",
-                "their"
-            ]
-        ],
+        "solutions": "[[\"to\"],[\"up\"],[\"as\",\"in\",\"become\",\"becoming\",\"inspire\"],[\"to\"],[\"be\",\"feel\"],[\"like\",\"resembling\"],[\"makes\"],[\"out\",\"in\",\"their\"]]",
         "taskTitle": "Task 3",
-        "instructions":
-        [
-            "You are going to read an article about a new Barbie doll inspired by Dr. Jane Goodall, one of the world's most famous conservationists. Some words are missing from the text.",
-            "Your task is to fill in the gaps.",
-            "Use only one word in each gap.",
-            "There is an example at the beginning."
-        ],
-        "wordList": "",
+        "instructions": "[\"You are going to read an article about a new Barbie doll inspired by Dr. Jane Goodall, one of the world's most famous conservationists. Some words are missing from the text.\",\"Your task is to fill in the gaps.\",\"Use only one word in each gap.\",\"There is an example at the beginning.\"]",
+        "wordList": "\"\"",
         "textTitle": "DR. JANE GOODALL BARBIE DOLL MADE OF RECYCLED PLASTIC",
         "example": "be",
         "text": "<p>Barbie is going green with a new doll modeled after Dr. Jane Goodall, which will (0)        released next Tuesday ahead of World Chimpanzee Day. According (18)        Mattel company, Goodall's Barbie doll is made of 90 percent recycled plastic that otherwise would have ended (19)        in the ocean.</p><p>The 88-year-old researcher tells People Magazine she &quot;couldn’t be happier&quot; to see herself (20)                  a Barbie doll, something she long hoped for. Goodall says she wants her Barbie (21)                  &quot;inspire little girls&quot; everywhere. &quot;So many people know about Jane because they learn about me at school,&quot; she says, &quot;so I think they'll (22)        delighted to be given a Barbie Jane.&quot;</p><p>Lisa McKnight, Executive Vice President of Barbie and Dolls at Mattel, said in a statement that the company is &quot;excited to introduce&quot; the new doll. &quot;Kids need more role models (23)        Dr. Jane Goodall because imagining that they can be anything is just the beginning – seeing it (24)        a huge difference,&quot; said McKnight.</p><p>&quot;We hope this collection and our respect for women in science will inspire girls to learn more about green careers, how they can protect the planet, and act (25)        stories about the environment in their doll play,&quot; she added.</p>",
@@ -294,37 +86,10 @@
     {
         "taskId": "standard-22okt-reading-1",
         "type": "reading-dialogue",
-        "solutions":
-        [
-            "H",
-            "E",
-            "K",
-            "I",
-            "B",
-            "A",
-            "F"
-        ],
+        "solutions": "[\"H\",\"E\",\"K\",\"I\",\"B\",\"A\",\"F\"]",
         "taskTitle": "Task 1",
-        "instructions":
-        [
-            "Read the following collection of frequently asked questions and answers from the website of a language school. All of the questions have been removed.",
-            "Your task is to place each question into the appropriate box.",
-            "There are two extra questions that you do not need.",
-            "Place the questions in the boxes as in the example."
-        ],
-        "wordList":
-        {
-            "A": "Will I get a copy of the listening materials that are used in the class?",
-            "B": "Can I pay a deposit and then pay the rest of the fee later?",
-            "C": "What is the profile of the students on the courses?",
-            "D": "What is the minimum number of students?",
-            "E": "How do I know what level I am?",
-            "F": "If I like my teacher and classmates, can I continue with them next term?",
-            "G": "Am I allowed a discount if I book two courses?",
-            "H": "How big are the classes?",
-            "I": "Can I join a class in the second week?",
-            "K": "How soon should I enrol?"
-        },
+        "instructions": "[\"Read the following collection of frequently asked questions and answers from the website of a language school. All of the questions have been removed.\",\"Your task is to place each question into the appropriate box.\",\"There are two extra questions that you do not need.\",\"Place the questions in the boxes as in the example.\"]",
+        "wordList": "{\"A\":\"Will I get a copy of the listening materials that are used in the class?\",\"B\":\"Can I pay a deposit and then pay the rest of the fee later?\",\"C\":\"What is the profile of the students on the courses?\",\"D\":\"What is the minimum number of students?\",\"E\":\"How do I know what level I am?\",\"F\":\"If I like my teacher and classmates, can I continue with them next term?\",\"G\":\"Am I allowed a discount if I book two courses?\",\"H\":\"How big are the classes?\",\"I\":\"Can I join a class in the second week?\",\"K\":\"How soon should I enrol?\"}",
         "textTitle": "FAQS LANGUAGE COURSES UK",
         "example": "What is the profile of the students on the courses? ",
         "text": "<p>Cannot find the information you are looking for? Email info@languagecoursesuk.co.uk for a response within 24 hours.</p>(0)<p>Our evening courses are for adults of all ages and for all levels from beginners upwards. For most courses, the average age range will be mid-20s to mid-40s.</p>(1)<p>Our maximum class size is 12 students per class for face-to-face courses. If the course takes place online, the maximum class size is 10.</p>(2)<p>If you are unsure where to start or progress to, take our online placement test.</p>(3)<p>The earlier the better. If we don’t receive enough bookings for a course, we will regrettably have to cancel it.</p>(4)<p>Yes, if there is space in the classes, we can take bookings for students to join the class a week later, although there will be no discount on the price.</p>(5)<p>No, the entire amount must be paid by card at time of booking.</p>(6)<p>No, our coursebook CDs are designed to be used in class and with a teacher; they are not designed for self-study.</p>(7)<p>Although we can’t guarantee that your teacher will be available, we’ll do our best to assign them to your next level.</p>",
@@ -333,34 +98,10 @@
     {
         "taskId": "standard-22okt-reading-2",
         "type": "reading-dialogue",
-        "solutions":
-        [
-            "H",
-            "G",
-            "B",
-            "E",
-            "D"
-        ],
+        "solutions": "[\"H\",\"G\",\"B\",\"E\",\"D\"]",
         "taskTitle": "Task 2",
-        "instructions":
-        [
-            "In the following text about volunteering, the headings have been removed.",
-            "Your task is to match the headings to the paragraphs.",
-            "Place the headings into the appropriate box.",
-            "There are two extra headings that you do not need.",
-            "Place the headings in the gaps as in the example."
-        ],
-        "wordList":
-        {
-            "A": "Find what fits your timetable",
-            "B": "Look after abandoned pets",
-            "C": "Find what's best for you",
-            "D": "Support a health-related cause",
-            "E": "Help the environment",
-            "F": "Help and see the world",
-            "G": "Help during the holiday season",
-            "H": "Help kids learn and grow"
-        },
+        "instructions": "[\"In the following text about volunteering, the headings have been removed.\",\"Your task is to match the headings to the paragraphs.\",\"Place the headings into the appropriate box.\",\"There are two extra headings that you do not need.\",\"Place the headings in the gaps as in the example.\"]",
+        "wordList": "{\"A\":\"Find what fits your timetable\",\"B\":\"Look after abandoned pets\",\"C\":\"Find what's best for you\",\"D\":\"Support a health-related cause\",\"E\":\"Help the environment\",\"F\":\"Help and see the world\",\"G\":\"Help during the holiday season\",\"H\":\"Help kids learn and grow\"}",
         "textTitle": "VOLUNTEERING",
         "example": "Find what's best for you",
         "text": "<p>Volunteering is an opportunity to change lives, including your own. If you'd like to support a cause but can't afford to donate money, you can donate your time instead. So how do you go about it?</p>(0)<p>When volunteering, you can pick what really interests you and who or what is most deserving of your time. Here are some ideas to get you started:</p>(8)<p>Become a camp counsellor, or volunteer for an after-school sports program. Provide homework help in a specific subject or become a reading partner for students who struggle with reading.</p>(9)<p>Serve Christmas dinner to the homeless, volunteer at your local food bank, or distribute toys to kids. Local charities also may be able to use your help then.</p>(10)<p>Most shelters depend on volunteers to keep the cats and dogs happy and well exercised. And when you're walking rescued dogs, you get a workout too.</p>(11)<p>Join a conservation group and count wildlife or plants. Take part in a local park clean-up day. You don't have to be an outdoors type — you could help out in a park office or education centre as well.</p>(12)<p>Lots of us are close to people who have a medical problem. It can feel good to donate your time to an organization that raises money for research, delivers meals, or offers other help to people with an illness.</p><p>Volunteering gives you a place to be where you can have a good time, keep busy and make the world a better place.</p>",
@@ -369,23 +110,10 @@
     {
         "taskId": "standard-22okt-reading-3",
         "type": "reading-true-or-false",
-        "solutions":
-        [
-            "C",
-            "C",
-            "B",
-            "A",
-            "C",
-            "A",
-            "B"
-        ],
+        "solutions": "[\"C\",\"C\",\"B\",\"A\",\"C\",\"A\",\"B\"]",
         "taskTitle": "Task 3",
-        "instructions":
-        [
-            "Read this article about a meteorite that landed in a Canadian home and then read the statements (13-19) following it.",
-            "Click on <i>true</i> if it is true according to the article, mark it <i>false</i> if it is false, and mark it <i>doesn't say</i> if there isn’t enough information in the text to decide if it is true or not."
-        ],
-        "wordList": "",
+        "instructions": "[\"Read this article about a meteorite that landed in a Canadian home and then read the statements (13-19) following it.\",\"Click on <i>true</i> if it is true according to the article, mark it <i>false</i> if it is false, and mark it <i>doesn't say</i> if there isn’t enough information in the text to decide if it is true or not.\"]",
+        "wordList": "\"\"",
         "textTitle": "METEORITE CRASH-LANDED IN A CANADIAN WOMAN’S BED WHILE SHE SLEPT",
         "example": "false",
         "text": "<p>When Ruth Hamilton woke up on October 3 to the sound of her dog barking, followed shortly by an explosion and drywall pieces falling on her face, she was afraid there was a burglar in the house. But instead, she noticed a dark grey rock behind her pillows that matched the size of the hole in her ceiling.</p><p>The police officer who visited Ms Hamilton’s home first suspected that a nearby building site might be responsible for the damage. But the construction workers made the officer think of another explanation. They had heard a loud noise and seen an explosion in the sky just before Ms Hamilton reported the incident. “The police officer came back in and said: ‘Well, I think you have a meteorite in your bed,’” says Ms Hamilton.</p><p>Ms Hamilton shared the space-rock, which weighs about 1.3 kilograms, with researchers at the University of Western Ontario, which has a collection of meteorites, so they can study it further. &quot;It's certainly a meteorite,&quot; says meteor physicist Peter Brown, member of the research team. &quot;Everything about the story pointed to a meteorite fall, and the fact that the bright fireball had occurred basically right at the same time made it a pretty obvious case.&quot;</p><p>The researchers are asking local residents for videos that may have captured the fall of the fireball. They can use video to reconstruct the path that the meteorite followed from the asteroid belt to Earth.</p><p>Ms Hamilton considers herself lucky to be unharmed. “I didn’t get hurt,” she says. “I didn’t even get a scratch. So, all I had to do is have a shower and mop the floor.”</p><p>Because the meteorite landed on Ms Hamilton’s property, it belongs to her, and she plans to keep it as a souvenir of the unusual night. Her grandchildren also think it’s pretty cool.</p>",
@@ -394,42 +122,10 @@
     {
         "taskId": "standard-22okt-reading-4",
         "type": "reading-text",
-        "solutions":
-        [
-            "A",
-            "G",
-            "B",
-            "H",
-            "K",
-            "F",
-            "D",
-            "I",
-            "M"
-        ],
+        "solutions": "[\"A\",\"G\",\"B\",\"H\",\"K\",\"F\",\"D\",\"I\",\"M\"]",
         "taskTitle": "Task 4",
-        "instructions":
-        [
-            "Read this article about a library delivery service.",
-            "Some parts of sentences have been left out from the text.",
-            "Your task is to reconstruct the text by filling in the gaps from the list below.",
-            "Place the sentences in the boxes as in the example.",
-            "Remember that there are two extra letters that you do not need."
-        ],
-        "wordList":
-        {
-            "A": "have access to books",
-            "B": "work for delivering books to students, too",
-            "C": "delivered to their homes by drones",
-            "D": "required summer reading for a 14-year-old student",
-            "E": "used school buses to deliver reading material to kids",
-            "F": "loaded each book onto a drone",
-            "G": "deliver food and other items",
-            "H": "lived in the delivery zone",
-            "I": "allowed to request more than one book",
-            "K": "put them in a special package",
-            "L": "find a satisfied customer",
-            "M": "returned to in-person classes"
-        },
+        "instructions": "[\"Read this article about a library delivery service.\",\"Some parts of sentences have been left out from the text.\",\"Your task is to reconstruct the text by filling in the gaps from the list below.\",\"Place the sentences in the boxes as in the example.\",\"Remember that there are two extra letters that you do not need.\"]",
+        "wordList": "{\"A\":\"have access to books\",\"B\":\"work for delivering books to students, too\",\"C\":\"delivered to their homes by drones\",\"D\":\"required summer reading for a 14-year-old student\",\"E\":\"used school buses to deliver reading material to kids\",\"F\":\"loaded each book onto a drone\",\"G\":\"deliver food and other items\",\"H\":\"lived in the delivery zone\",\"I\":\"allowed to request more than one book\",\"K\":\"put them in a special package\",\"L\":\"find a satisfied customer\",\"M\":\"returned to in-person classes\"}",
         "textTitle": "DRONE DELIVERS BOOKS TO KIDS",
         "example": "delivered to their homes by drones",
         "text": "<p>Kids in the Montgomery County school district had a special way of getting books to read when</p><p> </p><p>the pandemic started: the books were (0)           </p><p>controlled aircraft, like a toy-sized plane or helicopter.</p><p> </p><p>. A drone is a small remote-</p><p> </p><p></p><p>Kelly Passek is a librarian at a local school. When schools closed because of the Covid-19 pandemic, she wanted to make sure students in her school district would still</p><p>(20)        .</p><p>A company called Wing Aviation uses drones to (21)        from restaurants and stores in Ms Passek’s town. She had used the drone service to have things delivered to her own home, and she thought it could (22)        .</p><p>The people at Wing agreed and the company began making deliveries. Students who</p><p>(23)        could fill out a Google form to request a specific book, or ask Ms Passek to choose one for them.</p><p>Ms Passek received the requests, then got the books from the library, (24)        , and took them to Wing’s shipping centre.</p><p>Wing (25)        , which flew to the delivery location, lowered the book on a cable, and released it when it was close to the ground.</p><p>The first book sent out this way – and maybe the first library book ever to be delivered by drone</p><p>– was All Quiet on the Western Front, by Erich Maria Remarque. It was (26)          </p><p>in the district.</p><p>The drones have a wingspan of about one metre, and weigh about 4.5 kilograms. They can carry packages that weigh up to 1.3 kilograms, so students were (27)        .</p><p>Students have now (28)        , but many are hoping to use the drone service in the future.</p>",
@@ -438,45 +134,10 @@
     {
         "taskId": "standard-22okt-uoe-1",
         "type": "uoe-word-transformation",
-        "solutions":
-        [
-            [
-                "pollution"
-            ],
-            [
-                "natural"
-            ],
-            [
-                "fashionable",
-                "in-fashion"
-            ],
-            [
-                "description"
-            ],
-            [
-                "offer"
-            ],
-            [
-                "suitable"
-            ],
-            [
-                "creative"
-            ],
-            [
-                "environmental"
-            ]
-        ],
+        "solutions": "[[\"pollution\"],[\"natural\"],[\"fashionable\",\"in-fashion\"],[\"description\"],[\"offer\"],[\"suitable\"],[\"creative\"],[\"environmental\"]]",
         "taskTitle": "Task 1",
-        "instructions":
-        [
-            "You are going to read an article about a new way of gardening. Some words are missing from the text.",
-            "Use the words in brackets to form the words that fit in the gaps.",
-            "Then fill in the gaps with the appropriate form of these words.",
-            "There might be cases when you do not have to change the word in brackets.",
-            "Use only one word for each gap.",
-            "There is an example at the beginning."
-        ],
-        "wordList": "",
+        "instructions": "[\"You are going to read an article about a new way of gardening. Some words are missing from the text.\",\"Use the words in brackets to form the words that fit in the gaps.\",\"Then fill in the gaps with the appropriate form of these words.\",\"There might be cases when you do not have to change the word in brackets.\",\"Use only one word for each gap.\",\"There is an example at the beginning.\"]",
+        "wordList": "\"\"",
         "textTitle": "RENT A GOAT",
         "example": "healthy",
         "text": "<p>It’s hard to keep your backyard tidy and (0)        (health) without harming the Earth. Just consider the tools. Lawn mowers use fossil fuels, adding to the (1)        (pollute) of the atmosphere every time you push them across the grass.</p><p></p><p>That’s why many are trying out a  more (2)        (nature) form of lawn care and management: goats. According to Forbes, goat rentals are becoming a(n) (3)           (fashion) service for homeowners and farmers who want to get their land under control.</p><p></p><p>Goat rental businesses function very simply. Customers call in with the (4)            (describe) of their land — the size, the landscape, and any other important features. Then the goat rental service makes a(n) (5)        (offer). Once the price is settled, the two parties agree on a(n) (6)        (suit) date of service. On that day, the goats arrive. They graze the grass until the evening, then leave, and possibly return the next morning if the size of the job makes it necessary. When their work is done, customers are left with a freshly manicured lawn, achieved without burning any fossil fuel.</p><p></p><p>These (7)        (create) businesses can send 100 or more goats at a time. Goats offer obvious (8)                (environment) benefits, since they replace both mowers and chemical insect killers.</p>",
@@ -485,36 +146,10 @@
     {
         "taskId": "standard-22okt-uoe-2",
         "type": "uoe-multiple-choice",
-        "solutions":
-        [
-            "B",
-            "C",
-            "C",
-            "A",
-            "A",
-            "D",
-            "B",
-            "B"
-        ],
+        "solutions": "[\"B\",\"C\",\"C\",\"A\",\"A\",\"D\",\"B\",\"B\"]",
         "taskTitle": "Task 2",
-        "instructions":
-        [
-            "You are going to read an article about the mystery of the Hanging Gardens of Babylon. Some words are missing from the text.",
-            "Choose the most appropriate answer from the options for each gap in the text.",
-            "There is one example at the beginning."
-        ],
-        "wordList":
-        [
-            "{\"with\":\"A\",\"in\":\"B\",\"of\":\"C\",\"about\":\"D\"}",
-            "{\"might be\":\"A\",\"were\":\"B\",\"had\":\"C\",\"have been\":\"D\"}",
-            "{\"as\":\"A\",\"very\":\"B\",\"so\":\"C\",\"much\":\"D\"}",
-            "{\"then\":\"A\",\"there\":\"B\",\"than\":\"C\",\"that\":\"D\"}",
-            "{\"far\":\"A\",\"much\":\"B\",\"many\":\"C\",\"that\":\"D\"}",
-            "{\"has\":\"A\",\"had\":\"B\",\"never\":\"C\",\"was\":\"D\"}",
-            "{\"How\":\"A\",\"Must\":\"B\",\"Would\":\"C\",\"Did\":\"D\"}",
-            "{\"passed\":\"A\",\"past\":\"B\",\"several\":\"C\",\"late\":\"D\"}",
-            "{\"certain\":\"A\",\"unlikely\":\"B\",\"likely\":\"C\",\"certainly\":\"D\"}"
-        ],
+        "instructions": "[\"You are going to read an article about the mystery of the Hanging Gardens of Babylon. Some words are missing from the text.\",\"Choose the most appropriate answer from the options for each gap in the text.\",\"There is one example at the beginning.\"]",
+        "wordList": "[\"{\\\"with\\\":\\\"A\\\",\\\"in\\\":\\\"B\\\",\\\"of\\\":\\\"C\\\",\\\"about\\\":\\\"D\\\"}\",\"{\\\"might be\\\":\\\"A\\\",\\\"were\\\":\\\"B\\\",\\\"had\\\":\\\"C\\\",\\\"have been\\\":\\\"D\\\"}\",\"{\\\"as\\\":\\\"A\\\",\\\"very\\\":\\\"B\\\",\\\"so\\\":\\\"C\\\",\\\"much\\\":\\\"D\\\"}\",\"{\\\"then\\\":\\\"A\\\",\\\"there\\\":\\\"B\\\",\\\"than\\\":\\\"C\\\",\\\"that\\\":\\\"D\\\"}\",\"{\\\"far\\\":\\\"A\\\",\\\"much\\\":\\\"B\\\",\\\"many\\\":\\\"C\\\",\\\"that\\\":\\\"D\\\"}\",\"{\\\"has\\\":\\\"A\\\",\\\"had\\\":\\\"B\\\",\\\"never\\\":\\\"C\\\",\\\"was\\\":\\\"D\\\"}\",\"{\\\"How\\\":\\\"A\\\",\\\"Must\\\":\\\"B\\\",\\\"Would\\\":\\\"C\\\",\\\"Did\\\":\\\"D\\\"}\",\"{\\\"passed\\\":\\\"A\\\",\\\"past\\\":\\\"B\\\",\\\"several\\\":\\\"C\\\",\\\"late\\\":\\\"D\\\"}\",\"{\\\"certain\\\":\\\"A\\\",\\\"unlikely\\\":\\\"B\\\",\\\"likely\\\":\\\"C\\\",\\\"certainly\\\":\\\"D\\\"}\"]",
         "textTitle": "THE HANGING GARDENS OF BABYLON",
         "example": "of",
         "text": "<p>Ancient writers describe a fantastic series (0)        gardens constructed at the ancient city of Babylon in modern-day Iraq. It’s not clear when these gardens (9)                built, but some writers were (10)        impressed that they called them a “wonder of the world”. Around 250 B.C., Philo of Byzantium wrote that the Hanging Gardens had “plants grown at a height above ground level, and the roots are planted in an upper terrace rather (11)        in the earth.”</p><p></p><p>So (12)        , archaeologists who have excavated Babylon have been unable to find the remains of the garden. This (13)        left archaeologists with a question: (14)                the hanging gardens really exist? In 2013, a researcher at the University of Oxford proposed that the gardens were actually located at the Assyrian city of Nineveh. Over the (15)                two decades, both Babylon and Nineveh have suffered damage from wars, and it seems</p><p>(16)        that this mystery will ever be solved.</p>",
@@ -523,52 +158,10 @@
     {
         "taskId": "standard-22okt-uoe-3",
         "type": "uoe-free-gap-filling",
-        "solutions":
-        [
-            [
-                "for"
-            ],
-            [
-                "there",
-                "here"
-            ],
-            [
-                "others",
-                "some",
-                "many"
-            ],
-            [
-                "that",
-                "which"
-            ],
-            [
-                "out",
-                "around"
-            ],
-            [
-                "to"
-            ],
-            [
-                "to",
-                "over",
-                "but"
-            ],
-            [
-                "all"
-            ],
-            [
-                "in"
-            ]
-        ],
+        "solutions": "[[\"for\"],[\"there\",\"here\"],[\"others\",\"some\",\"many\"],[\"that\",\"which\"],[\"out\",\"around\"],[\"to\"],[\"to\",\"over\",\"but\"],[\"all\"],[\"in\"]]",
         "taskTitle": "Task 3",
-        "instructions":
-        [
-            "You are going to read about a journalist’s experiences in the Bahamas. Some words are missing from the text.",
-            "Your task is to write the missing words in the gaps.",
-            "Use only <u>one</u> word in each gap.",
-            "There is an example at the beginning."
-        ],
-        "wordList": "",
+        "instructions": "[\"You are going to read about a journalist’s experiences in the Bahamas. Some words are missing from the text.\",\"Your task is to write the missing words in the gaps.\",\"Use only <u>one</u> word in each gap.\",\"There is an example at the beginning.\"]",
+        "wordList": "\"\"",
         "textTitle": "WHERE PIGS SWIM FREE",
         "example": "own",
         "text": "<p>For more than 30 years, I have photographed animals. It is important to me to portray animals as having their (0)        thoughts and personalities.</p><p>I heard about the swimming pigs from an Englishwoman, who told me that she was 300 feet offshore in the Bahamas when a pig smelled her pizza and swam out to ask (17)        a bite.</p><p>The pigs live on Big Major Cay, a tiny, uninhabited island with thick forests. About a dozen pigs live here, and (18)        are different stories about how that happened. Some say the pigs swam to the island after a shipwreck; (19)        say sailors left them here, planning to come back and eat them. Recently, they’ve become celebrities. The comedian Amy Schumer posted a photograph on Instagram (20)           showed her and her buddies hanging (21)        with one of the pigs on the island.</p><p> On the island, the pigs are very tolerant of tourists. They expect (22)                be fed. When I was there in February, a lot of people brought salad and bread. My guide, Dreko, said the pigs prefer anything (23)          salad, as they already have that on the island, but being pigs, they ate it all.</p><p> All in (24)        , it was more interesting to watch the people. They want this exciting pig experience and can become unbelievably and noisily happy, (25)        spite of the fact that they probably ate bacon and eggs for breakfast.</p>",
