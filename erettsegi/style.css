@@ -237,7 +237,7 @@ padding-top: 0;
 
 .reading-dialogue .word-list,
 .reading-text .word-list {
-  max-height: 50vh;
+  max-height: 40vh;
   height: -moz-fit-content;
   height: -webkit-fit-content;
   height: fit-content;

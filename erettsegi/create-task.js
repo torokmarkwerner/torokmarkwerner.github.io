@@ -47,14 +47,14 @@ function populateHTML(x) {
 
     taskBody.appendChild(ul)
 
-    if (wordList.length > 0 && type != "uoe-multiple-choice") {
+    if (Object.keys(wordList).length > 0 && type != "uoe-multiple-choice") {
         wordListContainer = document.createElement("DIV");
         wordListContainer.classList.add("word-list")
 
-        for (i = 0; i < wordList.length; i++) {
+        for (i = 0; i < Object.keys(wordList).length; i++) {
             div = document.createElement("DIV");
-            div.innerHTML = Object.keys(wordList[i])[0]
-            div.id = taskId + "-" + Object.values(wordList[i])[0]
+            div.innerHTML = Object.values(wordList)[i]
+            div.id = taskId + "-" + Object.keys(wordList)[i]
             div.classList.add("gap")
             div.classList.add(taskId)
             wordListContainer.appendChild(div)
@@ -90,8 +90,8 @@ function populateHTML(x) {
             select.appendChild(optionDefault)
             for (z = 0; z < Object.keys(wordList[i]).length; z++) {
                 option = document.createElement("OPTION");
-                option.value = (Object.keys(wordList[i]))[z]
-                option.innerHTML = (Object.values(wordList[i]))[z]
+                option.value = (Object.values(wordList[i]))[z]
+                option.innerHTML = (Object.keys(wordList[i]))[z]
                 if (i == 0 && option.innerHTML == example) {
                     option.selected = true
                 } else if (i == 0) {
@@ -125,15 +125,15 @@ function populateHTML(x) {
         taskText = document.createElement("DIV");
         taskText.innerHTML = text;
         taskBody.appendChild(taskText);
-
-        if (wordList.length > 0) {
+    
+            if (Object.keys(wordList).length > 0) {
             taskBody.appendChild(wordListContainer)
         }
 
         taskBody.appendChild(task)
 
     } else {
-        if (wordList.length > 0 && type != "uoe-multiple-choice") {
+        if (Object.keys(wordList).length > 0 && type != "uoe-multiple-choice") {
             taskBody.appendChild(wordListContainer)
         }
         task.insertBefore(h3, task.firstChild)
