@@ -71,14 +71,15 @@ padding-top: 0;
   justify-content: center;
   align-items:center;
   flex: 1 0 50%;
-  padding: 0 1em 0 1.5em;
+  padding: 0.5em 1.5em;
+  border: 1pt black solid;
 }
 
 .reading-true-or-false .gap-container {
   text-align: center;
   align-items: stretch;
-  background-color: antiquewhite;
-  margin: 1em 0;
+  margin: 1.5em 0;
+  padding: 0;
 }
 
 .reading-true-or-false .radio-container {
@@ -86,7 +87,7 @@ padding-top: 0;
   height: fit-content;
   align-self:center;
   flex: 1 1 auto;
-  padding: 0.25em 0.5em 0 0.5em;
+  padding: 0.25em 0.5em;
 }
 
 .reading-true-or-false .radio-container label {
@@ -128,10 +129,6 @@ padding-top: 0;
 .reading-true-or-false .default label :checked+span {
   background-color: black;
   color: white;
-}
-
-.reading-true-or-false .task {
-  padding-top: 1em;
 }
 
 .reading-matching .task .gap,
@@ -289,7 +286,7 @@ padding-top: 0;
 .button-container {
   display:flex;
   gap: 0.5em;
-  padding-bottom: 1em;
+  padding-bottom: 1.5em;
 }
 
 .modal-basis {
