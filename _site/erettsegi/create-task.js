@@ -73,7 +73,7 @@ function populateHTML(x) {
     /* task.appendChild(h3) */
 
     if (type == "uoe-closed-gap-filling" || type == "reading-text") {
-        task.innerHTML = text.replace(/\(\d+\)/, "<span class='default-gap " + taskId + "'>" + example + "</span> ").replace(/\(\d+\)/g, "<span class='gap " + taskId + "'></span>").replace(/\(/g, "<b>(").replace(/\)/g, ")</b>")
+        task.innerHTML = text.replace(/\(\d+\)/, "<span class='default-gap " + taskId + "'>" + example + "</span> ").replace(/\(\d+\)/g, "<span class='gap " + taskId + "'></span>")
     } else if (type == "uoe-word-transformation" || type == "uoe-free-gap-filling") {
         task.innerHTML = text.replace(/\(\d+\)/, "<span class='default-gap'>" + example + "</span> ").replace(/\(\d+\)/g, "<input class='gap'> ")
     } else if (type == "reading-dialogue") {

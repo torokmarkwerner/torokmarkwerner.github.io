@@ -1,422 +1,999 @@
-[
-    {
-        "taskId": "standard-23maj-reading-1",
-        "type": "reading-dialogue",
-        "solutions": "[\"G\",\"F\",\"H\",\"B\",\"K\",\"L\",\"M\",\"I\",\"D\"]",
-        "taskTitle": "Task 1",
-        "instructions": "[\"Read the following questions and answers from the website of a library. The questions have been removed.\",\"Your task is to place each question into the appropriate box.\",\"There are two extra questions that you do not need.\",\"Place the questions in the boxes as in the example.\"]",
-        "wordList": "{\"A\":\"What other services does the library offer besides lending materials?\",\"B\":\"Can someone else pick up my books?\",\"D\":\"If the library doesn’t have a title I’m looking for, is it possible to order it from another library?\",\"E\":\"Do you charge a fine if the items are not returned in time?\",\"F\":\"What can I do if my library card is not accepted?\",\"G\":\"Is there a membership fee?\",\"H\":\"How many books can I borrow?\",\"I\":\"What can I take into the reading rooms?\",\"K\":\"How long can I keep my borrowed materials?\",\"L\":\"How many times can I renew the items that I borrowed?\",\"M\":\"What happens if I lose or damage the borrowed item?\"}",
-        "textTitle": "CITY LIBRARY FREQUENTLY ASKED QUESTIONS",
-        "example": "How do I get a library card?",
-        "text": "<p>Thank you for being interested in learning more about the City Library. Answers to the most common questions about our services can be found below.</p>(0)<p>You can apply for one in person at the circulation desk. You must bring a photo I.D. and a document that shows your address.</p>(1)<p>No, registration is free for local residents. However, people who live outside the city are required to pay if they want to join the library.</p>(2)<p>Check the dates on the card. You may need to renew your membership. Cards are valid for two years.</p>(3)<p>You can check out up to 20 items at a time, including books, e-books, magazines, CDs and DVDs.</p>(4)<p>Yes, but only if they can show your library card at the desk.</p>(5)<p>The loan period is four weeks. If you would like to keep the items longer, you may renew them in person or online.</p>(6)<p>Up to two times if no one else is waiting for them.</p>(7)<p>You will need to pay the replacement cost of the material that you are unable to return in the original condition.</p>(8)<p>Pencils, paper and a laptop. Bags bigger than A4 size and other items, such as food, drink and pens, must be left in lockers on the ground floor.</p>(9)<p>Yes, our librarians will place the request for you. However, depending on where it comes from, it can take a week or longer for the item to arrive.</p>",
-        "text2": ""
-    },
-    {
-        "taskId": "standard-23maj-reading-2",
-        "type": "reading-text",
-        "solutions": "[\"H\",\"G\",\"D\",\"A\",\"I\",\"B\"]",
-        "taskTitle": "Task 2",
-        "instructions": "[\"Read this article about providing internet service to mountain climbers.\",\"Some sentences have been left out from the text.\",\"Your task is to reconstruct the text by filling in the gaps from the list below.\",\"Place the sentences in the boxes as in the example.\",\"Remember that there are two extra letters that you do not need.\"]",
-        "wordList": "{\"A\":\"As an added bonus, the tourist industry may benefit as well.\",\"B\":\"But the plan caused anger among climbers and expedition guides.\",\"D\":\"They’ll also be able to call for help if they need it.\",\"E\":\"Scientists believe global warming is responsible for the loss of ice.\",\"F\":\"They became the first recorded European climbers to reach Kilimanjaro’s summit in 1889.\",\"G\":\"Roughly one third of the people who try to climb it finally give up.\",\"H\":\"Most of them are trying to climb Mount Kilimanjaro.\",\"I\":\"Only about 83% of the population in Tanzania can get cell phone service where they live.\"}",
-        "textTitle": "MOUNT KILIMANJARO GETS INTERNET SERVICE",
-        "example": "It’s also the world’s tallest mountain that’s not part of a mountain range.",
-        "text": "<p>At 5,895 meters, Mount Kilimanjaro is the highest mountain in Africa. (0) It rises out of a large, flat area in Tanzania and Kenya. The mountain is part of Kilimanjaro National Park, which has around 50,000 visitors each year. (10) But climbing Africa’s tallest mountain isn’t easy. It has snowy glaciers surrounding its peak. (11) </p><p>The government of Tanzania has recently set up a high-speed internet service on the mountain to make it easier for climbers to reach the top. They’ll be able to use the internet to check the weather and use navigation tools. (12) </p><p>The government says safety is the main reason for setting up the internet service on the mountain. (13) Having people post selfies on social media as they work their way up the tallest mountain could certainly make the spot even more popular with visitors. Residents in Tanzania, however, are upset that the government is focusing on tourists instead of helping the people who live in the country. (14) </p><p>Also with tourists in mind, last year the Tanzanian government approved a $72 million project to build a cable car on Mount Kilimanjaro to allow tourists who weren’t climbers to enjoy the mountain. (15) It also bothered people who were worried about how the construction might affect the environment on the mountain. They point out that as a World Heritage site, Mount Kilimanjaro is a place which is important to protect.</p>",
-        "text2": ""
-    },
-    {
-        "taskId": "standard-23maj-reading-3",
-        "type": "reading-matching",
-        "solutions": "[\"B\",\"F\",\"D\",\"I\",\"E\",\"H\"]",
-        "taskTitle": "Task 3",
-        "instructions": "[\"Read the following description of escape rooms available for adventurous teams and then read the half sentences that follow the text.\",\"Your task is to match the half sentences based on the information in the text.\",\"Place the half sentences in the white boxes as in the example.\",\"Remember that there are two extra letters that you will not need.\"]",
-        "wordList": "{\"A\":\"the story takes place in space.\",\"B\":\"the team has to escape from an imaginary island which is full of mystery.\",\"D\":\"the players have to prevent an explosion in a tall building.\",\"E\":\"the story is set in the past.\",\"F\":\"the story starts with an accident.\",\"G\":\"the team must save people from a sinking ship.\",\"H\":\"the team’s mission is to solve a murder mystery.\",\"I\":\"the team will go underground to search for something.\"}",
-        "textTitle": "CHOOSE YOUR ADVENTURE ",
-        "example": "your team must complete challenges to show that you are not spies.",
-        "text": "<p>If you’re looking for a fun afternoon with friends, book one of our escape rooms. Here are the missions for your team to choose from.</p><p>The Yellow Room: Spies must be removed from the ministry of wizards where you work. You have one hour to undertake a trial of magic to prove that you are true wizards.</p><p>The Pink Room: You find yourselves on a mysterious island, home to strange animals and magical plants. You’ll need to solve puzzles, unlock portals and find your way back to the real world.</p><p>The Green Room: Going on holiday overseas, your plane has crashed and now you’re all stuck on a small island in the Pacific Ocean. With the weather getting worse, you need a place to hide until the rescue team finds you. You have 45 minutes to build a shelter.</p><p>The Grey Room: The secret service has been working on locating and removing threats from the city centre. As a team of experts, you must find the last bomb at the top of a tower block and save the city.</p><p>The Black Room: Enter a mystical cave and navigate your way in the dark to find the magic lamp without being trapped forever. The cave is full of puzzles designed to guard the powerful lamp.</p><p>The Blue Room: Step into 1942, when the world is at war. As MI6’s top agents you’ve been chosen to discover the location of the enemy’s superweapons, destroy them and save Britain. The Red Room: The mystery takes place at a research laboratory, where a professor has been killed by one of his colleagues. You and your team are detectives who are invited to solve the case and find the criminal.</p>",
-        "text2": "<div class='gap-container'><div>In The Yellow Room</div><div class='gap'></div></div><div class='gap-container'><div>In The Pink Room</div><div class='gap'></div></div><div class='gap-container'><div>In The Green Room</div><div class='gap'></div></div><div class='gap-container'><div>In The Grey Room</div><div class='gap'></div></div><div class='gap-container'><div>In The Black Room</div><div class='gap'></div></div><div class='gap-container'><div>In The Blue Room</div><div class='gap'></div></div><div class='gap-container'><div>In The Red Room</div><div class='gap'></div></div>"
-    },
-    {
-        "taskId": "standard-23maj-reading-4",
-        "type": "reading-true-or-false",
-        "solutions": "[\"B\",\"C\",\"B\",\"A\",\"A\",\"B\",\"C\"]",
-        "taskTitle": "Task 4",
-        "instructions": "[\"Read this article about some scientific research and then read the statements following it.\",\"Click on <i>true</i> if it is true according to the article, mark it <i>false</i> if it is false, and mark it <i>doesn't say</i> if there isn’t enough information in the text to decide if it is true or not.\"]",
-        "wordList": "{}",
-        "textTitle": "SCIENTISTS LEARN THAT DOGS CAN SMELL STRESS \r",
-        "example": "true",
-        "text": "<p>Scientists ran an experiment which showed that dogs can tell the difference between the smell of a person when they’re relaxed and when they’re stressed.</p><p>Researchers at Queen’s University Belfast worked with four dogs and 36 humans. The dogs included in the study were pets, volunteered by their owners. First, researchers taught the dogs to use a special smell-testing device. Then, they collected sweat and breath samples from the human participants under two different conditions: in a non-stressful and a stressful situation. When people were calm, their blood pressure and heart rates were measured and then they were asked to wipe their skin with a clean piece of cloth. Then they had to put the cloth sample in a tube and breathe on it hard three times.</p><p>The study team then collected another round of breath and sweat samples a few minutes later, after the people had completed a difficult maths task, counting backward in their heads from 9,000 in units of 17 in front of two researchers for three minutes. The researchers kept telling the people to hurry up. After the task the participants reported feeling stressed, and their blood pressure and heart rate had gone up.</p><p>Then the dogs were given a relaxed and a stressed sample from each person. The dogs correctly identified the stressed sample in 94% of 720 tests.</p><p>The study provides evidence that dogs can smell stress from breath and sweat. Researchers say the skill could be useful when training therapy dogs.</p>",
-        "text2": "<div class='gap-container'><div class='statement'>Four universities took part in the research.</div><form class='radio-container default'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> The experiment involved police dogs.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> Sweat and breath samples were collected from students.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> In the experiment the dogs smelled the participants’ clothes.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> The relaxed and stressed samples were taken on the same day.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> The stressful task lasted for three minutes.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> Each dog was given three samples to choose from.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> The study was published in an international journal.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div>"
-    },
-    {
-        "taskId": "standard-23maj-uoe-1",
-        "type": "uoe-word-transformation",
-        "solutions": "[[\"stressful\",\"stressed\",\"stressing\"],[\"delayed\"],[\"flying\",\"flight\"],[\"emergency\",\"emergent\",\"emerging\"],[\"simpler\"],[\"enjoyable\"],[\"annoying\"],[\"permission\"],[\"immediately\"]]",
-        "taskTitle": "Task 1",
-        "instructions": "[\"You are going to read an article about what flight attendants don’t like about some passengers’ behavior.\",\"Some words are missing from the text.\",\"Use the words in brackets to form the words that fit in the gaps.\",\"There might be cases when you do not have to change the word in brackets.\",\"Use only one word for each gap.\",\"There is an example at the beginning.\"]",
-        "wordList": "{}",
-        "textTitle": "MAKE THEM HAPPY",
-        "example": "irritating",
-        "text": "<p>We asked flight attendants about the most (0) <b>(irritate)</b> things passengers do on planes.</p><p>As any frequent traveler will tell you, traveling by air can be a rather (1) <b>(stress)</b> experience, especially as more and more flights are (2) <b>(delay)</b> or canceled. But it's important to remember that (3) <b>(fly)</b> is a miracle, and those who help you get from point A to point B safely — your flight crew members — deserve the highest respect.</p><p>&quot;Our job is much more than serving food and drinks. We are safety professionals and are trained to handle (4) <b>(emerge)</b> situations that can occur during a flight,&quot; Andy, a current crew member at a major airline, shared with Travel + Leisure.</p><p>So, how can you get treated like a VIP in the air by your cabin crew? It couldn’t be (5) <b>(simple)</b>: be nice.</p><p>&quot;If you show me a little respect, I'll be more than happy to make your flight as (6) <b>(enjoy)</b> as possible,&quot; said Andy.</p><p>We carried out a survey to ask flight attendants about what passengers do that crew members find (7) <b>(annoy)</b>. Here are the most offensive actions you should avoid: touching a crew member without their (8) <b>(permit)</b>, asking for water (9) <b>(immediate)</b> upon boarding, using the bathroom at an inappropriate time, pressing the call bell every two minutes, and last but not least, not saying thank you.</p>",
-        "text2": ""
-    },
-    {
-        "taskId": "standard-23maj-uoe-2",
-        "type": "uoe-closed-gap-filling",
-        "solutions": "[\"D\",\"H\",\"F\",\"K\",\"M\",\"A\",\"G\",\"I\"]",
-        "taskTitle": "Task 2",
-        "instructions": "[\"You are going to read an anecdote about Theodore Roosevelt, the 26th president of the U.S. Some words are missing from the text.\",\"Your task is to choose the most appropriate word from the list for each gap in the text.\",\"Each word can be used once.\",\"There are three extra words that you do not need to use.\",\"There is an example at the beginning.\"]",
-        "wordList": "{\"A\":\"ACHIEVEMENT\",\"B\":\"COULD\",\"D\":\"COUPLE\",\"E\":\"DIRECTION\",\"F\":\"GIVE\",\"G\":\"MANAGED\",\"H\":\"SEVERAL\",\"I\":\"SAY\",\"K\":\"TAKE\",\"L\":\"TELL\",\"M\":\"WAY\"}",
-        "textTitle": "A BUSY JOURNEY",
-        "example": "ONCE",
-        "text": "<p>The famous biographer David McCullough (0) told the following story from the early life of Theodore Roosevelt:</p><p>Once upon a time, in the coldest days of winter, in the Dakota Territory, Theodore Roosevelt took off in a small boat down the Little Missouri River to catch a (10) of thieves who had stolen his favorite rowboat.</p><p>After (11) days on the river, Roosevelt caught up with the thieves. He drew his trusty Winchester rifle, and forced them to (12) up the stolen boat. Then he set off in a borrowed horse-drawn wagon to (13) the thieves cross-country to prison. They traveled across the snow-covered wilderness to the railway at Dickinson, North Dakota, and Roosevelt walked the whole (14) , the entire forty miles. It was an extraordinary (15) . But what makes it especially important is that during that time, he (16) to read all of Anna Karenina, Leo Tolstoy’s 900-page novel.</p><p>I often think of this story when I hear people (17) they haven’t time to read.</p>",
-        "text2": ""
-    },
-    {
-        "taskId": "standard-23maj-uoe-3",
-        "type": "uoe-free-gap-filling",
-        "solutions": "[[\"to\"],[\"up\"],[\"as\",\"in\",\"become\",\"becoming\",\"inspire\"],[\"to\"],[\"be\",\"feel\"],[\"like\",\"resembling\"],[\"makes\"],[\"out\",\"in\",\"their\"]]",
-        "taskTitle": "Task 3",
-        "instructions": "[\"You are going to read an article about a new Barbie doll inspired by Dr. Jane Goodall, one of the world's most famous conservationists. Some words are missing from the text.\",\"Your task is to fill in the gaps.\",\"Use only one word in each gap.\",\"There is an example at the beginning.\"]",
-        "wordList": "{}",
-        "textTitle": "DR. JANE GOODALL BARBIE DOLL MADE OF RECYCLED PLASTIC",
-        "example": "be",
-        "text": "<p>Barbie is going green with a new doll modeled after Dr. Jane Goodall, which will (0) released next Tuesday ahead of World Chimpanzee Day. According (18) Mattel company, Goodall's Barbie doll is made of 90 percent recycled plastic that otherwise would have ended (19) in the ocean.</p><p>The 88-year-old researcher tells People Magazine she &quot;couldn’t be happier&quot; to see herself (20) a Barbie doll, something she long hoped for. Goodall says she wants her Barbie (21) &quot;inspire little girls&quot; everywhere. &quot;So many people know about Jane because they learn about me at school,&quot; she says, &quot;so I think they'll (22) delighted to be given a Barbie Jane.&quot;</p><p>Lisa McKnight, Executive Vice President of Barbie and Dolls at Mattel, said in a statement that the company is &quot;excited to introduce&quot; the new doll. &quot;Kids need more role models (23) Dr. Jane Goodall because imagining that they can be anything is just the beginning – seeing it (24) a huge difference,&quot; said McKnight.</p><p>&quot;We hope this collection and our respect for women in science will inspire girls to learn more about green careers, how they can protect the planet, and act (25) stories about the environment in their doll play,&quot; she added.</p>",
-        "text2": ""
-    },
-    {
-        "taskId": "standard-22okt-reading-1",
-        "type": "reading-dialogue",
-        "solutions": "[\"H\",\"E\",\"K\",\"I\",\"B\",\"A\",\"F\"]",
-        "taskTitle": "Task 1",
-        "instructions": "[\"Read the following collection of frequently asked questions and answers from the website of a language school. All of the questions have been removed.\",\"Your task is to place each question into the appropriate box.\",\"There are two extra questions that you do not need.\",\"Place the questions in the boxes as in the example.\"]",
-        "wordList": "{\"A\":\"Will I get a copy of the listening materials that are used in the class?\",\"B\":\"Can I pay a deposit and then pay the rest of the fee later?\",\"C\":\"What is the profile of the students on the courses?\",\"D\":\"What is the minimum number of students?\",\"E\":\"How do I know what level I am?\",\"F\":\"If I like my teacher and classmates, can I continue with them next term?\",\"G\":\"Am I allowed a discount if I book two courses?\",\"H\":\"How big are the classes?\",\"I\":\"Can I join a class in the second week?\",\"K\":\"How soon should I enrol?\"}",
-        "textTitle": "FAQS LANGUAGE COURSES UK",
-        "example": "What is the profile of the students on the courses? ",
-        "text": "<p>Cannot find the information you are looking for? Email info@languagecoursesuk.co.uk for a response within 24 hours.</p>(0)<p>Our evening courses are for adults of all ages and for all levels from beginners upwards. For most courses, the average age range will be mid-20s to mid-40s.</p>(1)<p>Our maximum class size is 12 students per class for face-to-face courses. If the course takes place online, the maximum class size is 10.</p>(2)<p>If you are unsure where to start or progress to, take our online placement test.</p>(3)<p>The earlier the better. If we don’t receive enough bookings for a course, we will regrettably have to cancel it.</p>(4)<p>Yes, if there is space in the classes, we can take bookings for students to join the class a week later, although there will be no discount on the price.</p>(5)<p>No, the entire amount must be paid by card at time of booking.</p>(6)<p>No, our coursebook CDs are designed to be used in class and with a teacher; they are not designed for self-study.</p>(7)<p>Although we can’t guarantee that your teacher will be available, we’ll do our best to assign them to your next level.</p>",
-        "text2": ""
-    },
-    {
-        "taskId": "standard-22okt-reading-2",
-        "type": "reading-dialogue",
-        "solutions": "[\"H\",\"G\",\"B\",\"E\",\"D\"]",
-        "taskTitle": "Task 2",
-        "instructions": "[\"In the following text about volunteering, the headings have been removed.\",\"Your task is to match the headings to the paragraphs.\",\"Place the headings into the appropriate box.\",\"There are two extra headings that you do not need.\",\"Place the headings in the gaps as in the example.\"]",
-        "wordList": "{\"A\":\"Find what fits your timetable\",\"B\":\"Look after abandoned pets\",\"D\":\"Support a health-related cause\",\"E\":\"Help the environment\",\"F\":\"Help and see the world\",\"G\":\"Help during the holiday season\",\"H\":\"Help kids learn and grow\"}",
-        "textTitle": "VOLUNTEERING",
-        "example": "Find what's best for you",
-        "text": "<p>Volunteering is an opportunity to change lives, including your own. If you'd like to support a cause but can't afford to donate money, you can donate your time instead. So how do you go about it?</p>(0)<p>When volunteering, you can pick what really interests you and who or what is most deserving of your time. Here are some ideas to get you started:</p>(8)<p>Become a camp counsellor, or volunteer for an after-school sports program. Provide homework help in a specific subject or become a reading partner for students who struggle with reading.</p>(9)<p>Serve Christmas dinner to the homeless, volunteer at your local food bank, or distribute toys to kids. Local charities also may be able to use your help then.</p>(10)<p>Most shelters depend on volunteers to keep the cats and dogs happy and well exercised. And when you're walking rescued dogs, you get a workout too.</p>(11)<p>Join a conservation group and count wildlife or plants. Take part in a local park clean-up day. You don't have to be an outdoors type — you could help out in a park office or education centre as well.</p>(12)<p>Lots of us are close to people who have a medical problem. It can feel good to donate your time to an organization that raises money for research, delivers meals, or offers other help to people with an illness.</p><p>Volunteering gives you a place to be where you can have a good time, keep busy and make the world a better place.</p>",
-        "text2": ""
-    },
-    {
-        "taskId": "standard-22okt-reading-3",
-        "type": "reading-true-or-false",
-        "solutions": "[\"C\",\"C\",\"B\",\"A\",\"C\",\"A\",\"B\"]",
-        "taskTitle": "Task 3",
-        "instructions": "[\"Read this article about a meteorite that landed in a Canadian home and then read the statements (13-19) following it.\",\"Click on <i>true</i> if it is true according to the article, mark it <i>false</i> if it is false, and mark it <i>doesn't say</i> if there isn’t enough information in the text to decide if it is true or not.\"]",
-        "wordList": "{}",
-        "textTitle": "METEORITE CRASH-LANDED IN A CANADIAN WOMAN’S BED WHILE SHE SLEPT",
-        "example": "false",
-        "text": "<p>When Ruth Hamilton woke up on October 3 to the sound of her dog barking, followed shortly by an explosion and drywall pieces falling on her face, she was afraid there was a burglar in the house. But instead, she noticed a dark grey rock behind her pillows that matched the size of the hole in her ceiling.</p><p>The police officer who visited Ms Hamilton’s home first suspected that a nearby building site might be responsible for the damage. But the construction workers made the officer think of another explanation. They had heard a loud noise and seen an explosion in the sky just before Ms Hamilton reported the incident. “The police officer came back in and said: ‘Well, I think you have a meteorite in your bed,’” says Ms Hamilton.</p><p>Ms Hamilton shared the space-rock, which weighs about 1.3 kilograms, with researchers at the University of Western Ontario, which has a collection of meteorites, so they can study it further. &quot;It's certainly a meteorite,&quot; says meteor physicist Peter Brown, member of the research team. &quot;Everything about the story pointed to a meteorite fall, and the fact that the bright fireball had occurred basically right at the same time made it a pretty obvious case.&quot;</p><p>The researchers are asking local residents for videos that may have captured the fall of the fireball. They can use video to reconstruct the path that the meteorite followed from the asteroid belt to Earth.</p><p>Ms Hamilton considers herself lucky to be unharmed. “I didn’t get hurt,” she says. “I didn’t even get a scratch. So, all I had to do is have a shower and mop the floor.”</p><p>Because the meteorite landed on Ms Hamilton’s property, it belongs to her, and she plans to keep it as a souvenir of the unusual night. Her grandchildren also think it’s pretty cool.</p>",
-        "text2": "<div class='gap-container'><div class='statement'>Ruth Hamilton was woken up by pieces of wall falling on her bed.</div><form class='radio-container default'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> The incident happened shortly after midnight.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> Ruth Hamilton’s home had been broken into before.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> The construction workers did not notice anything strange.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> Researchers are sure that the rock is a meteorite.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> Residents will be paid a small sum of money for sharing videos that capture the fireball.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> Ms Hamilton did not get injured when the space-rock hit her home.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> Ms Hamilton has given the meteorite to her grandchildren as a souvenir.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div>"
-    },
-    {
-        "taskId": "standard-22okt-reading-4",
-        "type": "reading-text",
-        "solutions": "[\"A\",\"G\",\"B\",\"H\",\"K\",\"F\",\"D\",\"I\",\"M\"]",
-        "taskTitle": "Task 4",
-        "instructions": "[\"Read this article about a library delivery service.\",\"Some parts of sentences have been left out from the text.\",\"Your task is to reconstruct the text by filling in the gaps from the list below.\",\"Place the sentences in the boxes as in the example.\",\"Remember that there are two extra letters that you do not need.\"]",
-        "wordList": "{\"A\":\"have access to books\",\"B\":\"work for delivering books to students, too\",\"D\":\"required summer reading for a 14-year-old student\",\"E\":\"used school buses to deliver reading material to kids\",\"F\":\"loaded each book onto a drone\",\"G\":\"deliver food and other items\",\"H\":\"lived in the delivery zone\",\"I\":\"allowed to request more than one book\",\"K\":\"put them in a special package\",\"L\":\"find a satisfied customer\",\"M\":\"returned to in-person classes\"}",
-        "textTitle": "DRONE DELIVERS BOOKS TO KIDS",
-        "example": "delivered to their homes by drones",
-        "text": "<p>Kids in the Montgomery County school district had a special way of getting books to read when the pandemic started: the books were (0) . A drone is a small remote-controlled aircraft, like a toy-sized plane or helicopter.</p><p>Kelly Passek is a librarian at a local school. When schools closed because of the Covid-19 pandemic, she wanted to make sure students in her school district would still (20) .</p><p>A company called Wing Aviation uses drones to (21) from restaurants and stores in Ms Passek’s town. She had used the drone service to have things delivered to her own home, and she thought it could (22) .</p><p>The people at Wing agreed and the company began making deliveries. Students who (23) could fill out a Google form to request a specific book, or ask Ms Passek to choose one for them.</p><p>Ms Passek received the requests, then got the books from the library, (24) , and took them to Wing’s shipping centre.</p><p>Wing (25) , which flew to the delivery location, lowered the book on a cable, and released it when it was close to the ground.</p><p>The first book sent out this way – and maybe the first library book ever to be delivered by drone – was <i>All Quiet on the Western Front</i>, by Erich Maria Remarque. It was (26) in the district.</p><p>The drones have a wingspan of about one metre, and weigh about 4.5 kilograms. They can carry packages that weigh up to 1.3 kilograms, so students were (27) .</p><p>Students have now (28) , but many are hoping to use the drone service in the future.</p>",
-        "text2": ""
-    },
-    {
-        "taskId": "standard-22okt-uoe-1",
-        "type": "uoe-word-transformation",
-        "solutions": "[[\"pollution\"],[\"natural\"],[\"fashionable\",\"in-fashion\"],[\"description\"],[\"offer\"],[\"suitable\"],[\"creative\"],[\"environmental\"]]",
-        "taskTitle": "Task 1",
-        "instructions": "[\"You are going to read an article about a new way of gardening. Some words are missing from the text.\",\"Use the words in brackets to form the words that fit in the gaps.\",\"Then fill in the gaps with the appropriate form of these words.\",\"There might be cases when you do not have to change the word in brackets.\",\"Use only one word for each gap.\",\"There is an example at the beginning.\"]",
-        "wordList": "{}",
-        "textTitle": "RENT A GOAT",
-        "example": "healthy",
-        "text": "<p>It’s hard to keep your backyard tidy and (0) <b>(health)</b> without harming the Earth. Just consider the tools. Lawn mowers use fossil fuels, adding to the (1) <b>(pollute)</b> of the atmosphere every time you push them across the grass.</p><p></p><p>That’s why many are trying out a more (2) <b>(nature)</b> form of lawn care and management: goats. According to Forbes, goat rentals are becoming a(n) (3) <b>(fashion)</b> service for homeowners and farmers who want to get their land under control.</p><p></p><p>Goat rental businesses function very simply. Customers call in with the (4) <b>(describe)</b> of their land — the size, the landscape, and any other important features. Then the goat rental service makes a(n) (5) <b>(offer)</b>. Once the price is settled, the two parties agree on a(n) (6) <b>(suit)</b> date of service. On that day, the goats arrive. They graze the grass until the evening, then leave, and possibly return the next morning if the size of the job makes it necessary. When their work is done, customers are left with a freshly manicured lawn, achieved without burning any fossil fuel.</p><p></p><p>These (7) <b>(create)</b> businesses can send 100 or more goats at a time. Goats offer obvious (8) <b>(environment)</b> benefits, since they replace both mowers and chemical insect killers.</p>",
-        "text2": ""
-    },
-    {
-        "taskId": "standard-22okt-uoe-2",
-        "type": "uoe-multiple-choice",
-        "solutions": "[\"B\",\"C\",\"C\",\"A\",\"A\",\"D\",\"B\",\"B\"]",
-        "taskTitle": "Task 2",
-        "instructions": "[\"You are going to read an article about the mystery of the Hanging Gardens of Babylon. Some words are missing from the text.\",\"Choose the most appropriate answer from the options for each gap in the text.\",\"There is one example at the beginning.\"]",
-        "wordList": "{\"0\":{\"with\":\"A\",\"in\":\"B\",\"of\":\"C\",\"about\":\"D\"},\"1\":{\"might be\":\"A\",\"were\":\"B\",\"had\":\"C\",\"have been\":\"D\"},\"2\":{\"as\":\"A\",\"very\":\"B\",\"so\":\"C\",\"much\":\"D\"},\"3\":{\"then\":\"A\",\"there\":\"B\",\"than\":\"C\",\"that\":\"D\"},\"4\":{\"far\":\"A\",\"much\":\"B\",\"many\":\"C\",\"that\":\"D\"},\"5\":{\"has\":\"A\",\"had\":\"B\",\"never\":\"C\",\"was\":\"D\"},\"6\":{\"How\":\"A\",\"Must\":\"B\",\"Would\":\"C\",\"Did\":\"D\"},\"7\":{\"passed\":\"A\",\"past\":\"B\",\"several\":\"C\",\"late\":\"D\"},\"8\":{\"certain\":\"A\",\"unlikely\":\"B\",\"likely\":\"C\",\"certainly\":\"D\"}}",
-        "textTitle": "THE HANGING GARDENS OF BABYLON",
-        "example": "of",
-        "text": "<p>Ancient writers describe a fantastic series (0) gardens constructed at the ancient city of Babylon in modern-day Iraq. It’s not clear when these gardens (9) built, but some writers were (10) impressed that they called them a “wonder of the world”. Around 250 B.C., Philo of Byzantium wrote that the Hanging Gardens had “plants grown at a height above ground level, and the roots are planted in an upper terrace rather (11) in the earth.”</p><p></p><p>So (12) , archaeologists who have excavated Babylon have been unable to find the remains of the garden. This (13) left archaeologists with a question: (14) the hanging gardens really exist? In 2013, a researcher at the University of Oxford proposed that the gardens were actually located at the Assyrian city of Nineveh. Over the (15) two decades, both Babylon and Nineveh have suffered damage from wars, and it seems (16) that this mystery will ever be solved.</p>",
-        "text2": ""
-    },
-    {
-        "taskId": "standard-22okt-uoe-3",
-        "type": "uoe-free-gap-filling",
-        "solutions": "[[\"for\"],[\"there\",\"here\"],[\"others\",\"some\",\"many\"],[\"that\",\"which\"],[\"out\",\"around\"],[\"to\"],[\"to\",\"over\",\"but\"],[\"all\"],[\"in\"]]",
-        "taskTitle": "Task 3",
-        "instructions": "[\"You are going to read about a journalist’s experiences in the Bahamas. Some words are missing from the text.\",\"Your task is to write the missing words in the gaps.\",\"Use only <u>one</u> word in each gap.\",\"There is an example at the beginning.\"]",
-        "wordList": "{}",
-        "textTitle": "WHERE PIGS SWIM FREE",
-        "example": "own",
-        "text": "<p>For more than 30 years, I have photographed animals. It is important to me to portray animals as having their (0) thoughts and personalities.</p><p>I heard about the swimming pigs from an Englishwoman, who told me that she was 300 feet offshore in the Bahamas when a pig smelled her pizza and swam out to ask (17) a bite.</p><p>The pigs live on Big Major Cay, a tiny, uninhabited island with thick forests. About a dozen pigs live here, and (18) are different stories about how that happened. Some say the pigs swam to the island after a shipwreck; (19) say sailors left them here, planning to come back and eat them. Recently, they’ve become celebrities. The comedian Amy Schumer posted a photograph on Instagram (20) showed her and her buddies hanging (21) with one of the pigs on the island.</p><p>On the island, the pigs are very tolerant of tourists. They expect (22) be fed. When I was there in February, a lot of people brought salad and bread. My guide, Dreko, said the pigs prefer anything (23) salad, as they already have that on the island, but being pigs, they ate it all.</p><p>All in (24) , it was more interesting to watch the people. They want this exciting pig experience and can become unbelievably and noisily happy, (25) spite of the fact that they probably ate bacon and eggs for breakfast.</p>",
-        "text2": ""
-    },
-    {
-        "taskId": "standard-22maj-reading-1",
-        "type": "reading-true-or-false",
-        "solutions": "[\"B\",\"A\",\"C\",\"B\",\"A\",\"B\",\"C\"]",
-        "taskTitle": "Task 1",
-        "instructions": "[\"Read this article about a road incident and the sentences following it.\",\"Click on <i>true</i> if it is true according to the article, mark it <i>false</i> if it is false, and mark it <i>doesn't say</i> if there isn’t enough information in the text to decide if it is true or not.\"]",
-        "wordList": "{}",
-        "textTitle": "FIVE-YEAR-OLD CAUGHT DRIVING PARENTS' CAR IN UTAH",
-        "example": "true",
-        "text": "<p>Five-year-old Adrian took the family car, and was only caught when police in Utah State stopped him on the freeway. A patrolman saw the car, which was crossing lanes at 50km/h, and made the car stop. He was shocked to discover the child behind the wheel, who said he was on his way to buy a Lamborghini.</p><p>The boy told police that he had left home after his mother refused to buy him the luxury car – lower-priced models cost over $180,000 –, which caused an argument.</p><p>&quot;He decided he'd take the car and go to a car salesman in California to buy one himself,&quot; Utah Highway Patrol said on Twitter, &quot;but he only had 3 dollars in his wallet.&quot;</p><p>Camera footage posted by the local TV shows the car in traffic before stopping at the police signal. Highway patrol first thought it might be a driver with health problems behind the wheel. In the recording, the officer can then be heard saying &quot;How old are you? You're five years old?&quot; when he sees the boy. The boy was sitting at the very edge of the seat to be able to reach the pedals. He was stopped about five minutes' drive from home.</p><p>No-one was hurt in the incident. The boy’s parents were at work and he was in the care of a relative when he took the car. Police asked parents to make sure car keys are not easily accessible to children.</p>",
-        "text2": "<div class='gap-container'><div class='statement'>The boy was stopped by the police.</div><form class='radio-container default'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> The boy told the policeman he was going to a toy shop.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> The boy wanted his mother to buy an expensive car but she said 'no'.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> The boy wanted to get the car as a present for his birthday.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> The boy’s wallet was empty.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> A video recording of the incident was made.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> The boy was injured in the car.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> The boy’s parents were interviewed by TV reporters.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div>"
-    },
-    {
-        "taskId": "standard-22maj-reading-2",
-        "type": "reading-dialogue",
-        "solutions": "[\"I\",\"A\",\"K\",\"F\",\"B\",\"G\",\"E\"]",
-        "taskTitle": "Task 2",
-        "instructions": "[\"Read the following questions and answers about buying products online. Some of the questions have been removed.\",\"Your task is to place each question into the appropriate box.\",\"There are two extra questions that you do not need.\",\"Place the questions in the boxes as in the example.\"]",
-        "wordList": "{\"A\":\"How can I check the status of my order?\",\"B\":\"How much time do I have if I decide to return an item?\",\"D\":\"When will I get my refund?\",\"E\":\"Why did I only receive part of my order?\",\"F\":\"How can I change my order?\",\"G\":\"My order is damaged – what can I do?\",\"H\":\"Are the products available for international delivery?\",\"I\":\"How long will it take for me to get my order?\",\"K\":\"Can I cancel my order?\"}",
-        "textTitle": "ONLINE SHOPPING – FREQUENTLY ASKED QUESTIONS",
-        "example": "How can I pay for my order?",
-        "text": "<p>Here you'll find answers to some of the questions we are asked most frequently. Please contact our customer service with any further questions you have.</p>(0)<p>We currently accept Visa, MasterCard and American Express. We also accept payment via PayPal.</p>(8)<p>For standard shipping, you should receive it within 4-5 business days.</p>(9)<p>We will notify you via email when your order is on the way. You can also track your delivery by clicking here.</p>(10)<p>Yes, but only within 30 minutes of placing it. You can, however, return any unwanted items to us for a refund once you receive them.</p>(11)<p>Unfortunately, once you’ve placed your order, we are unable to accept any changes. This means we cannot alter your payment details or the quantity, size or colour of the item you’ve ordered.</p>(12)<p>Unwanted items can be sent back to us in the original packaging within 35 days of purchase.</p>(13)<p>We are sorry to hear that your order did not arrive in perfect condition. Please contact our customer service team, who will be happy to help with your replacement order or refund.</p>(14)<p>While we do our best to ship all orders in one package, there are times when orders will ship from different locations. Please allow a little extra time for the next parcel to arrive.</p>",
-        "text2": ""
-    },
-    {
-        "taskId": "standard-22maj-reading-3",
-        "type": "reading-text",
-        "solutions": "[\"H\",\"E\",\"A\",\"D\",\"F\",\"K\",\"G\"]",
-        "taskTitle": "Task 3",
-        "instructions": "[\"Read this article about public restrooms in Japan.\",\"Some parts of sentences have been left out from the text.\",\"Your task is to reconstruct the text by filling in the gaps from the list below.\",\"Place the sentences in the boxes as in the example.\",\"Remember that there are two extra letters that you do not need.\"]",
-        "wordList": "{\"A\":\"the see-through walls solve two problems\",\"B\":\"upgrade public restrooms across the country\",\"D\":\"where they are located\",\"E\":\"the glass clears up again\",\"F\":\"others worry that the walls might not work properly\",\"G\":\"architects have been asked\",\"H\":\"and locks the door\",\"I\":\"privacy is needed from time to time\",\"K\":\"that will be installed across Tokyo\"}",
-        "textTitle": "JAPAN TRIES OUT SEE-THROUGH PUBLIC TOILETS",
-        "example": "including some with automatic lids and self-warming seats",
-        "text": "<p>In recent years, Japan has had many advanced and unusual toilets, (0) . Now one area of Tokyo is trying something completely new – public toilets with see-through walls. To be fair, the walls of the new public toilets aren’t always transparent. They are made of a special “smart glass”. When someone enters the toilet (15) , the glass becomes opaque – it clouds over so that no one can see in. When the door is unlocked, (16) .</p><p>The idea of a transparent public toilet may sound unusual, but (17) . Without ever entering the restroom, people can now check to see how clean it is, and whether anyone else is using it.</p><p>The new toilets have been built in two parks in Tokyo, which opened to the public this month. As the restrooms are lit up at night, they help provide light for the part of the parks (18) .</p><p>So far, the public has had mixed reactions to the see-through restrooms. Some people are excited to use them, while (19) and could allow them to be seen when they’re using the toilet.</p><p>Transparent toilets are just one of several new public toilet designs (20) in the coming months as part of the Tokyo Toilet Project. 16 designers and (21) to come up with new designs to improve the image of public restrooms in Tokyo.</p><p>The important part of improving public restrooms isn’t just about changing styles. It means making sure they are clean and well-lighted as well.</p>",
-        "text2": ""
-    },
-    {
-        "taskId": "standard-22maj-reading-4",
-        "type": "reading-matching",
-        "solutions": "[\"I\",\"D\",\"A\",\"H\",\"F\",\"B\"]",
-        "taskTitle": "Task 4",
-        "instructions": "[\"Read the following article about award-winning wildlife photos and then read the half sentences that follow the text.\",\"Your task is to match the half sentences based on the information in the text.\",\"Place the half sentences in the white boxes as in the example.\",\"Remember that there are three extra letters that you will not need.\"]",
-        "wordList": "{\"A\":\"won a prize for a portrait of an animal with an unusual ‘face’.\",\"B\":\"took a picture of a moment in the life of an animal family.\",\"D\":\"took a picture of a small endangered animal eating another animal.\",\"E\":\"show wildlife underwater.\",\"F\":\"was helped by another person to be able to take the picture.\",\"G\":\"is held every two years.\",\"H\":\"has three age categories.\",\"I\":\"had been waiting for months to take the award-winning picture.\",\"K\":\"was awarded in three categories.\"}",
-        "textTitle": "THE BEST WILDLIFE PHOTOS OF THE YEAR",
-        "example": "received over 40 thousand entries this year.",
-        "text": "<p>The Natural History Museum in London holds a yearly contest for the Wildlife Photographer of the Year, with over 10 categories. This year’s contest had 49,000 entries from around the world.</p><p>This year’s grand prize winner was Sergey Gorshkov’s picture of a Siberian tiger. Siberian tigers are endangered; only about 500 of them live in Russia’s far east. It took Mr. Gorshkov ten months to get a shot of one of them. It looks like the tiger is hugging the tree, but it’s actually trying to leave its smell as a way of communicating with other tigers.</p><p>Another endangered animal, a glass frog, was a category prize winner. Jaime Culebras said he had walked for four hours in the Andes mountains in the middle of a rainstorm, before he captured the picture of the frog snacking on a spider.</p><p>Mogens Trolle won the Animal Portraits prize with his picture of a young proboscis monkey, which is sitting calmly, enjoying the sunlight with its eyes closed. Proboscis monkeys look strange because the male’s nose can eventually grow so big that it hangs over its mouth and may have to be pushed aside to eat. They’re endangered and only found on Borneo and the islands nearby.</p><p>There is a separate contest for people under 18, known as the Young Wildlife Photographer of the Year. In this contest, pictures are judged in three separate age groups.</p><p>In the 10 and under category, Andrés Luis Dominguez Blanco of Spain won with his picture of a bird called a “stonechat” sitting on a bending plant. He asked his father to drive him to the field, in order to use the car as a hiding place for taking photographs. Andrés managed to take the picture without scaring the bird.</p><p>Another young winner, Liina Heikkinen had spent a day watching two adult foxes bring food to their cubs. After one parent brought home a goose, the cubs fought over it. Liina took a picture of a young fox eating the goose, while hiding away from his siblings.</p>",
-        "text2": "<div class='gap-container'><div>The Wildlife Photographer of the Year contest</div><div class='gap'></div></div><div class='gap-container'><div>Sergey Gorshkov</div><div class='gap'></div></div><div class='gap-container'><div>Jaime Culebras</div><div class='gap'></div></div><div class='gap-container'><div>Mogens Trolle</div><div class='gap'></div></div><div class='gap-container'><div>The Young Wildlife Photographer of the Year contest</div><div class='gap'></div></div><div class='gap-container'><div>Andrés Luis Dominguez Blanco</div><div class='gap'></div></div><div class='gap-container'><div>Liina Heikkinen</div><div class='gap'></div></div>"
-    },
-    {
-        "taskId": "standard-22maj-uoe-1",
-        "type": "uoe-word-transformation",
-        "solutions": "[[\"difficulty\"],[\"better\"],[\"achievements\"],[\"records\"],[\"professional\"],[\"extraordinary\",\"out-of-the-ordinary\",\"inordinary\",\"unordinary\"],[\"impossible\"],[\"famous\",\"famed\"]]",
-        "taskTitle": "Task 1",
-        "instructions": "[\"You are going to read an article about a Guinness World Record holder who builds houses of cards. Some words are missing from the text.\",\"Use the words in brackets to form the words that fit in the gaps.\",\"Then fill in the gaps with the appropriate form of these words.\",\"There might be cases when you do not have to change the word in brackets.\",\"Use only one word for each gap.\",\"There is an example at the beginning.\"]",
-        "wordList": "{}",
-        "textTitle": "THE HOUSE OF CARDS CHAMPION",
-        "example": "creations",
-        "text": "<p>Bryan Berg is a cardstacking legend from Iowa. He began building card structures with his grandfather when he was about 8 years old. He built his first (0) <b>(create)</b>, simple boxlike “houses,” with great (1) <b>(difficult)</b>. But Berg didn’t give it up and worked hard to make the cards stand much (2) <b>(good)</b> and longer. Today he holds the Guinness World Record for the largest playing card structure and the tallest house of cards — reaching the first of these (3) <b>(achieve)</b> while in high school. Since then, he’s broken each of his (4) <b>(record)</b> several times.</p><p></p><p>As a (5) <b>(profession)</b> cardstacker, Berg creates card structures around the world. They’re so strong, they can hold a cement brick, yet he never uses glue — nothing but thousands of regular playing cards. His most (6) <b>(ordinary)</b> creations include some really (7) <b>(possible)</b> structures, such as Cinderella’s castle from Walt Disney World, New York’s Empire State Building and the Guggenheim Museum, as well as these (8) <b>(fame)</b> Washington landmarks: the U.S. Capitol, the Lincoln Memorial and the Washington Monument.</p>",
-        "text2": ""
-    },
-    {
-        "taskId": "standard-22maj-uoe-2",
-        "type": "uoe-closed-gap-filling",
-        "solutions": "[\"H\",\"M\",\"G\",\"E\",\"L\",\"14)I\",\"K\",\"D\"]",
-        "taskTitle": "Task 2",
-        "instructions": "[\"You are going to read a joke about choosing the right present. Some words are missing from the text.\",\"Your task is to choose the most appropriate word from the list for each gap in the text.\",\"Each word can be used once.\",\"There are three extra words that you do not need to use.\",\"There is an example at the beginning.\"]",
-        "wordList": "{\"A\":\"ACCEPTING\",\"B\":\"AS\",\"D\":\"AT\",\"E\":\"BELIEVE\",\"F\":\"COULD\",\"G\":\"CHARMING\",\"H\":\"HAPPENS\",\"I\":\"HOW\",\"K\":\"MUST\",\"L\":\"OWNED\",\"M\":\"TAKES\"}",
-        "textTitle": "A COSTLY PRESENT",
-        "example": "FOR",
-        "text": "<p>A rich man walks into a pet store for people with fat wallets. He explains that he’s looking (0) a birthday present for his friend.</p><p>And his friend (9) to like birds, so he needs a very talented parrot. The store owner says that he’s just got some perfect birds and (10) the man over to a huge stand with three exotic parrots.</p><p>“These birds are very special; the first one here on the right speaks three languages, knows a bunch of jokes, loves whisky and Cuban cigars. We’re selling him for five million dollars. The second one on the left speaks ten languages fluently, is a(n) (11) entertainer and loves kids and women. (12) it or not, his ancestry goes back all the way to a parrot (13) by Queen Elizabeth I, and trust me, these birds know (14) to pass an anecdote from generation to generation! This one goes for fifty million dollars. And finally, the third one, here in the middle, is the most special and expensive; we are selling him for a hundred million.”</p><p></p><p>Amazed, the guy shouts: “He (15) speak at least twenty languages!” </p><p>“You know, this one doesn’t talk (16) all, but those two call him Boss,” the owner explains.</p>",
-        "text2": ""
-    },
-    {
-        "taskId": "standard-22maj-uoe-3",
-        "type": "uoe-free-gap-filling",
-        "solutions": "[[\"to\"],[\"their\"],[\"by\"],[\"of\"],[\"his\"],[\"for\"],[\"have\"],[\"that\",\"which\"],[\"one\"]]",
-        "taskTitle": "Task 3",
-        "instructions": "[\"You are going to read about the history of M&M’s. Some words are missing from the text.\",\"Your task is to write the missing words in the gaps.\",\"Use only <u>one</u> word in each gap.\",\"There is an example at the beginning.\"]",
-        "wordList": "{}",
-        "textTitle": "THE UNTOLD TRUTH OF M&M'S",
-        "example": "a",
-        "text": "<p>With so many colors and flavors to choose from, surely, there’s (0) pack of M&M’s for everyone. And it’s pretty safe (17) say almost everyone has tried these little candy-coated chocolates at some point in (18) lives.</p><p>M&M’s were first introduced in the U.S. (19) Forrest E. Mars in Newark, New Jersey in 1941. But the story started earlier. Frank C. Mars had founded a candy business in 1911, and his son, Forrest, took on the job years later. Forrest wasn’t too fond (20) how his father had been running the company, and he had a new candy idea of (21) own. So, he found a business partner to make the candy-coated chocolates.</p><p>Forrest Mars eventually paired up with Bruce Murrie, and they began making M&M’s at their new company Mars & Murrie, which has since put Twix, Snickers and lots of other brands on the market.</p><p>Original M&M’s and Peanut M&M’s were the only two flavors (22) quite some time, until Peanut Butter M&M’s debuted in 1989. Since then, more and more flavors (23) followed.</p><p>There are only a few brands (24) can say they made it to space. M&M’s is (25) of them. According to M&M’s history, M&Ms were actually the first candy to be chosen to go to space in 1981.</p>",
-        "text2": ""
-    },
-    {
-        "taskId": "standard-21okt-reading-1",
-        "type": "reading-dialogue",
-        "solutions": "[\"H\",\"D\",\"A\",\"I\",\"F\",\"E\",\"B\"]",
-        "taskTitle": "Task 1",
-        "instructions": "[\"In the following text about online gaming, the headings have been removed.\",\"Your task is to match the headings to the paragraphs.\",\"Place the headings into the appropriate box.\",\"There are two extra headings that you do not need.\",\"Place the headings in the gaps as in the example.\"]",
-        "wordList": "{\"A\":\"Say no to meeting in person.\",\"B\":\"Stay legal.\",\"D\":\"Protect your account.\",\"E\":\"Avoid unwanted charges.\",\"F\":\"Take regular breaks.\",\"G\":\"Avoid online interactions.\",\"H\":\"Keep personal information safe.\",\"I\":\"Know what to do if other players are ruining the game.\",\"K\":\"Notice and control your emotions during the game.\"}",
-        "textTitle": "TOP TIPS FOR GAMING",
-        "example": "Check if you are old enough to play.",
-        "text": "<p>Whether it is done via mobile devices or using games consoles, gaming is one of the top activities enjoyed by young people online. Here are our tips to play safely:</p>(0)<p>It is important to find out information on age ratings. Look out for the icon on the game that shows what age classification it has been given.</p>(1)<p>Don’t share identifying details like your full name, mobile phone number or address. Sharing this type of information could put you at great risk.</p>(2)<p>To avoid being hacked, pick a strong password. Make sure you include a combination of letters, numbers and symbols. Treat your password like your toothbrush: you shouldn't share it with anyone else.</p>(3)<p>Online friends are still strangers even if you have been talking to them for a long time and meeting someone you have only been in touch with online can be dangerous.</p>(4)<p>Make sure you know what tools are available if someone is being aggressive in a game. Learn how to block, mute, delete and report on the games and consoles you use.</p>(5)<p>Games have been designed to be fun and exciting and to keep us coming back for more. But remember, for healthy gameplay, it’s important to stop for at least five minutes every hour.</p>(6)<p>You may be asked to pay for items in the game or to upgrade to the next level. The amount may seem small, but you can run up a large bill before you even realise it. We suggest blocking in-app purchases.</p>(7)<p>Don’t break the law by downloading non-copyrighted games or cheat programmes to skip to a higher level.</p>",
-        "text2": ""
-    },
-    {
-        "taskId": "standard-21okt-reading-2",
-        "type": "reading-text",
-        "solutions": "[\"E\",\"H\",\"K\",\"B\",\"F\",\"D\",\"G\"]",
-        "taskTitle": "Task 2",
-        "instructions": "[\"Read this article about an unusual job advertisement.\",\"Some parts of sentences have been left out from the text.\",\"Your task is to reconstruct the text by filling in the gaps from the list below.\",\"Place the sentences in the boxes as in the example.\",\"Remember that there are two extra letters that you do not need.\"]",
-        "wordList": "{\"A\":\"always wear a wig, as well\",\"B\":\"if the parents have to work late\",\"D\":\"share that love of those characters\",\"E\":\"where they describe in detail\",\"F\":\"are crazy about Disney princesses\",\"G\":\"working just four days a week\",\"H\":\"a new character every month\",\"I\":\"looking after them when they are sick\",\"K\":\"perform regular nanny duties\"}",
-        "textTitle": "DISNEY PRINCESS FOR A NANNY?",
-        "example": "in a part-time nanny role",
-        "text": "<p>If you’re tired of your office job and want a creative challenge, you might want to consider this new position. A married couple are looking for someone to take care of their six-year-old twin girls (0) , but there’s a catch – you have to do it dressed as a Disney princess. The parents posted an advert on Childcare, (8) exactly what they are looking for.</p><p></p><p>You’ll need to dress and play (9) , whether that’s Anna from Frozen, Snow White, Rapunzel or Cinderella. The chosen nanny will be asked to arrange Disney-related activities, such as arts and crafts, baking and singing, as well as (10) , including picking the girls up from school, cooking dinner and putting them to bed (11) .</p><p></p><p>According to the couple, the twin girls (12) and their parents believe this is the best way to communicate some important values to them. The pair admit that it’s an unusual request, but want to use Disney princesses to teach the twins about “things like kindness, empathy, bravery and ambition.” According to the couple, the right person will “have a passion for all things Disney” and will be able to (13) with their girls.</p><p></p><p>The right candidate will take home £40,000 a year, (14) . The Disney costumes will also be paid for by the parents, and 25 days’ holiday is on the table.</p><p></p><p>So now is the time to ask yourself the question: Do you have what it takes to be a part-time Disney princess?</p>",
-        "text2": ""
-    },
-    {
-        "taskId": "standard-21okt-reading-3",
-        "type": "reading-matching",
-        "solutions": "[\"E\",\"I\",\"D\",\"A\",\"G\",\"H\"]",
-        "taskTitle": "Task 3",
-        "instructions": "[\"Read the following article about an incident on a plane and then read the half sentences that follow the text.\",\"Your task is to match the half sentences based on the information in the text.\",\"Place the half sentences in the white boxes as in the example.\",\"Remember that there are three extra letters that you will not need.\"]",
-        "wordList": "{\"A\":\"gave Mr Bennet sleeping pills.\",\"B\":\"apologised for the incident.\",\"D\":\"was unable to wake up Mr Bennet before take-off.\",\"E\":\"didn’t speak English well enough to explain the situation.\",\"F\":\"paid some money as compensation.\",\"G\":\"decided that Mr Bennet should get off the plane.\",\"H\":\"offered another flight a week later.\",\"I\":\"examined Mr Bennet and said that he was able to fly.\"}",
-        "textTitle": "CANADIAN MAN KICKED OFF WESTJET FLIGHT FOR BEING ASLEEP BEFORE TAKE-OFF",
-        "example": "missed part of the vacation.",
-        "text": "<p>Mr Bennett, his wife and their son were taking a WestJet flight from Toronto to Cuba on 13 October. Mr Bennet hadn’t slept well the night before, so before the flight he took a sleeping pill which he had been given by his doctor. He fell asleep immediately after boarding the plane. The trouble began when a flight attendant couldn’t wake him up as the plane was preparing to take off. He became worried that there was something medically wrong with the passenger. WestJet requires all passengers to be awake during take-off for safety reasons.</p><p></p><p>Mr Bennet’s wife, whose first language is not English, couldn’t tell the crew why he needed a rest. She was eventually able to wake her husband up, who explained he had taken medication. However, the cabin crew wanted him to get off the plane.</p><p></p><p>Paramedics were called, removed him from the plane, checked him and said he was medically fit to fly. Bennett also got an email from his doctor saying he was healthy enough to fly. However, they were not allowed back on the flight.</p><p></p><p>The family, who had booked an all-inclusive vacation in Cuba, were told by WestJet they could take the next flight the following week.</p><p></p><p>The Bennets didn’t want to miss a week of the family vacation, so instead of waiting for another WestJet flight, they paid more than $2,000 to buy a plane ticket from another airline. They had to cut their vacation short by two days.</p><p></p><p>The family would like to receive compensation from the airline.</p>",
-        "text2": "<div class='gap-container'><div>The Bennets</div><div class='gap'></div></div><div class='gap-container'><div>Mrs Bennet</div><div class='gap'></div></div><div class='gap-container'><div>Paramedics</div><div class='gap'></div></div><div class='gap-container'><div>A flight attendant</div><div class='gap'></div></div><div class='gap-container'><div>Mr Bennet’s doctor</div><div class='gap'></div></div><div class='gap-container'><div>The crew on the plane</div><div class='gap'></div></div><div class='gap-container'><div>The airline</div><div class='gap'></div></div>"
-    },
-    {
-        "taskId": "standard-21okt-reading-4",
-        "type": "reading-true-or-false",
-        "solutions": "[\"C\",\"B\",\"C\",\"B\",\"B\",\"A\",\"A\"]",
-        "taskTitle": "Task 4",
-        "instructions": "[\"Read this article about a strange work of land art in Australia and then read the statements following it.\",\"Click on <i>true</i> if it is true according to the article, mark it <i>false</i> if it is false, and mark it <i>doesn't say</i> if there isn’t enough information in the text to decide if it is true or not.\"]",
-        "wordList": "{}",
-        "textTitle": "MARREE MAN",
-        "example": "true",
-        "text": "<p>Since a pilot first noticed Marree Man in South Australia in 1998, the mysterious work of land art has attracted international attention. Marree Man is so large it is best viewed from high above. The artwork represents a hunter with what looks like a stick or boomerang in his hand. Its length is 3.5 kilometers (2.2 miles) from top to bottom.</p><p>For many years, Marree Man, named after a nearby town, was a well-known feature in satellite images of the area, but the wind and the rain destroyed many of the lines. By 2013, they were hardly visible in natural-color images.</p><p>In August 2016, local business owners, who were worried about the loss of what had become a tourist attraction, decided to restore the fading lines. They used machines to redraw Marree Man, which took them five days.</p><p>The restoration team thinks the updated work of art will last longer than the original because they designed it to trap water and planted trees along the lines. Over time, they hope plants will turn the lines green.</p><p>Who created the huge work of art, and why, remains unknown, although a cash reward has been announced for information about it. Some people believe that it was probably an artist living in Alice Springs who created Marree Man; others think that maybe the creator was an American.</p>",
-        "text2": "<div class='gap-container'><div class='statement'>It was a pilot who discovered the large geoglyph.</div><form class='radio-container default'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> The pilot was checking geographical data when he saw the huge image.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> Marree Man was discovered in the early 21st century.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> The artwork was named Marree Man immediately after its discovery.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> The lines of the image had completely disappeared by 2013.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> The restoration work lasted more than a week.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> The restoration team wants plants to grow along the lines.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> The creator of Marree Man has not been named yet.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div>"
-    },
-    {
-        "taskId": "standard-21okt-uoe-1",
-        "type": "uoe-closed-gap-filling",
-        "solutions": "[\"F\",\"E\",\"B\",\"K\",\"L\",\"G\",\"A\",\"H\"]",
-        "taskTitle": "Task 1",
-        "instructions": "[\"You are going to read an article about how a school in Derbyshire, England, is trying to get parents to talk to their children more. Some words are missing from the text.\",\"Your task is to choose the most appropriate word from the list for each gap in the text.\",\"Each word can be used once.\",\"There are three extra words that you do not need to use.\",\"There is an example at the beginning.\"]",
-        "wordList": "{\"A\":\"DONE\",\"D\":\"EITHER\",\"G\":\"REMIND\",\"K\":\"WHAT\",\"B\":\"EACH\",\"E\":\"LISTEN\",\"H\":\"SHOULDN’T\",\"L\":\"WHEN\",\"F\":\"PLACED\",\"I\":\"THAT\",\"M\":\"WON’T\"}",
-        "textTitle": "SMILES VS MOBILES",
-        "example": "DOWN",
-        "text": "<p>A school has asked parents to put (0) their phones and communicate with their children at the end of the day. The signs (1) at the entrances to Redwood Primary School in Derby advise adults to &quot;greet your child with a smile, not a mobile.&quot; The school said it wanted parents and children to talk and (2) more to each other at home. They have mostly received a positive response from parents.</p><p>Teachers Rachel Kirk and Sarah Chaffe produced signs for (3) of the school's three gates. &quot;(4) we've been trying to do is help parents be more effective (5) they're chatting with their children at home,&quot; said Ms Kirk. &quot;The signs are just to (6) parents how important it is to greet their children and encourage them to get into a conversation about all the fun things they have (7) that day.&quot;</p><p>However, Kerri Hilton, who has two children at the school, said: &quot;Parents (8) be told to pay attention to their children. I always ask my kids about their day at school.&quot;</p>",
-        "text2": ""
-    },
-    {
-        "taskId": "standard-21okt-uoe-2",
-        "type": "uoe-word-transformation",
-        "solutions": "[[\"Welsh\"],[\"recorded\"],[\"European\"],[\"used\"],[\"internationally\"],[\"programmer\",\"programer\"],[\"existing\",\"existent\"],[\"another\"],[\"looking\"]]",
-        "taskTitle": "Task 2",
-        "instructions": "[\"You are going to read an article about the origins of the @ sign. Some words are missing from the text.\",\"Use the words in brackets to form the words that fit in the gaps.\",\"Then fill in the gaps with the appropriate form of these words.\",\"There might be cases when you do not have to change the word in brackets.\",\"Use only one word for each gap.\",\"There is an example at the beginning.\"]",
-        "wordList": "{}",
-        "textTitle": "A WELL-KNOWN SIGN",
-        "example": "Hungarian",
-        "text": "<p>In Dutch the @ sign is called a “monkey tail”, in (0) <b>(Hungary)</b> a “maggot”, in Danish an “elephant’s trunk”, and in (9) <b>(Wales)</b> a “snail”. Appearing everywhere now in emails, the @ sign has history.</p><p></p><p>The first (10) <b>(record)</b> use was in <i>The Mannasses Chronicle</i> in 1345, where an @ sign is the first letter in the word ‘Amen’. By the 16th century, in southern (11) <b>(Europe)</b> documents of trade, the sign represented amphora, a storage jar (12) <b>(use)</b> since Roman times. By the 18th century it was called ‘commercial A’ and meant ‘at the rate of’ (eg.: 10 hats @ 1 shilling = 10 shillings).</p><p></p><p>It didn’t make it onto the earliest typewriters but was included by 1889, when it became a standard character. By 1963 @ was included in the new (13) <b>(international)</b> recognised character set. </p><p></p><p>In 1971 computer (14) <b>(programme)</b> Ray Tomlinson was at work on Arpanet, the prototype of the internet. He added some of his own code to an (15) <b>(exist)</b> programme and sent a message from one computer to (16) <b>(other)</b> – the first email. Ray needed a character to separate the message’s recipient from the computer it would arrive at, and (17) <b>(look)</b> down at his teletype keyboard, he chose the @ symbol and changed the world forever.</p>",
-        "text2": ""
-    },
-    {
-        "taskId": "standard-21okt-uoe-3",
-        "type": "uoe-free-gap-filling",
-        "solutions": "[[\"which\"],[\"it\"],[\"keep\"],[\"to\"],[\"with\"],[\"called\",\"named\"],[\"next\",\"close\",\"near\"],[\"of\",\"on\"]]",
-        "taskTitle": "Task 3",
-        "instructions": "[\"You are going to read an article about the history of ice cream. Some words are missing from the text.\",\"Your task is to write the missing words in the gaps.\",\"Use only <u>one</u> word in each gap.\",\"There is an example at the beginning.\"]",
-        "wordList": "{}",
-        "textTitle": "ICE-CREAM",
-        "example": "when",
-        "text": "<p>A kind of ice-cream was invented in China about 200 BC (0) a milk and rice mixture was frozen by packing it into snow. It is believed that Roman emperors sent slaves to mountain tops to bring back fresh snow, (18) was then flavoured and served as an early form of ice-cream.</p><p></p><p>The explorer, Marco Polo &#40;1254-1324&#41;, is believed to have seen ice-cream being made during his trip to China and introduced (19) to Italy. The King of England, Charles I, offered his chef £500 a year to (20) his ice-cream recipe a secret from the rest of England.</p><p></p><p>Ice Cream Sundaes were invented when it became illegal (21) sell ice-cream sodas on a Sunday in the American town of Evanston during the late 19th century. To get around the problem, some ice-cream sellers replaced the soda (22) syrup and called the dessert an &quot;Ice Cream Sunday&quot;. They changed the final &quot;y&quot; for an &quot;e&quot; to avoid upsetting religious leaders.</p><p></p><p>Probably a Syrian man (23) Ernest E Hamwi invented the ice-cream cone in 1904. During the St Louis World's Fair in the United States, his waffle booth stood (24) to an ice-cream seller who ran short (25) dishes. As a favour, Hamwi rolled a waffle to hold his ice-cream and the cone was born.</p>",
-        "text2": ""
-    },
-    {
-        "taskId": "standard-21maj-reading-1",
-        "type": "reading-dialogue",
-        "solutions": "[\"H\",\"A\",\"D\",\"F\",\"I\",\"E\"]",
-        "taskTitle": "Task 1",
-        "instructions": "[\"In the following interview about a common illness, the questions have been removed.\",\"Your task is to place each question into the appropriate box.\",\"There are two extra questions that you do not need.\",\"Place the questions in the boxes as in the example.\"]",
-        "wordList": "{\"A\":\"What are the signs and symptoms of a cold?\",\"B\":\"What’s the difference between a cold and flu?\",\"D\":\"Can a cold be passed from one person to another?\",\"E\":\"When should I go to the doctor?\",\"F\":\"How long do colds last?\",\"G\":\"Will taking vitamin C help me to prevent colds?\",\"H\":\"What causes colds?\",\"I\":\"What can I do to feel better?\"}",
-        "textTitle": "COPING WITH COLDS",
-        "example": "What exactly is a cold?",
-        "text": "<p>Despite being a minor illness, a cold can make you feel miserable. Here's some information about it.</p>(0)<p>A cold is in fact an infection which can affect the nose, throat, or sinuses.</p>(1)<p>The cold virus. When it gets through the nose and throat, the body answers with an immune system reaction. Dry air, lack of sleep, stress, or not eating properly can increase one’s chances of getting the cold virus.</p>(2)<p>What people first notice is usually a runny nose or sneezing. You also might feel very tired and have a sore throat, cough, headache, temperature, or muscle aches.</p>(3)<p>Well, viruses can stay alive in the air or on surfaces for hours. So, sick people can easily spread the cold to others if they don’t wash their hands after coughing or sneezing.</p>(4)<p>Although some people may be sick for as long as two weeks, most colds clear up within a week.</p>(5)<p>Getting plenty of rest and drinking warm liquids like tea or chicken soup can make you feel less miserable.</p>(6)<p>People who catch colds usually don't need medical attention. But talk to your GP if your symptoms get worse after 3 days instead of getting better.</p>",
-        "text2": ""
-    },
-    {
-        "taskId": "standard-21maj-reading-2",
-        "type": "reading-true-or-false",
-        "solutions": "[\"C\",\"B\",\"C\",\"A\",\"A\",\"B\"]",
-        "taskTitle": "Task 2",
-        "instructions": "[\"Read this article about valuable charity gifts and then read the sentences following it.\",\"Click on <i>true</i> if it is true according to the article, mark it <i>false</i> if it is false, and mark it <i>doesn't say</i> if there isn’t enough information in the text to decide if it is true or not.\"]",
-        "wordList": "{}",
-        "textTitle": "GOLD COINS FOUND IN A CHARITY KETTLE",
-        "example": "true",
-        "text": "<p>The Salvation Army regularly uses donation kettles to collect money for charity purposes. Not long ago they found five gold coins in their donation kettle at a food store in Mebane, North Carolina — three South African Krugerrand, one American Riverman and one Canadian Maple Leaf. All came in little plastic packages to keep them safe.</p><p>“We got the Riverman about a week ago, and we got the other four over the last two days,” said the Salvation Army spokesman. The organisation had already received such coins before with the exception of the Riverman.</p><p>All the coins were dropped in the kettle by an anonymous donor.</p><p>The organisation is planning to take the five coins to a shop in High Point to determine their value. “We have a guy that we go to every year. He buys them from us,” the spokesman said. The group will use the money they get for the coins like any other gifts they receive. “I think it’s amazing to get these coins every year because that is a really large donation,” the spokesman said.</p>",
-        "text2": "<div class='gap-container'><div class='statement'>The five coins found are all made of gold.</div><form class='radio-container default'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> The five coins are all of the same size.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> The five coins came within two days.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> The five coins were put in the kettle at night.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> It was not the first time someone had given the Salvation Army gold coins.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> The organisation doesn’t know who the coins came from.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> The Salvation Army is going to give the coins to a museum.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div>"
-    },
-    {
-        "taskId": "standard-21maj-reading-3",
-        "type": "reading-matching",
-        "solutions": "[\"E\",\"G\",\"B\",\"K\",\"H\",\"A\",\"F\"]",
-        "taskTitle": "Task 3",
-        "instructions": "[\"Read the following story about a prize-winning house and read the half sentences that follow the text.\",\"Your task is to match the half sentences based on the information in the text.\",\"Place the half sentences in the white boxes as in the example.\",\"Remember that there are two extra letters that you will not need.\"]",
-        "wordList": "{\"A\":\"to choose the winner.\",\"B\":\"to hand in a project and enter the competition.\",\"D\":\"to make a modern building out of an old one.\",\"E\":\"to build a Cubo house.\",\"F\":\"to find a site for building several\",\"G\":\"to organise the competition.\",\"H\":\"to work out the details of their projects.\",\"I\":\"to live in an old part of the city.\",\"K\":\"to help the participants in the finals.\"}",
-        "textTitle": "BAMBOO HOUSE: <i>CUBO</i> WINS TOP PRIZE",
-        "example": "to get the award of £50,000.",
-        "text": "<p>Earl Forlales, the creator of a house made of bamboo, has won a £50,000 top prize to develop cities for the future. Earl Forlales, 23, a graduate in engineering, was awarded first prize by the Royal Institute of Surveyors for his house, known as Cubo. The Royal Institute decided to give top prize to the house because of its use of low-cost eco-friendly material, and the speed with which it could be constructed. The house could be manufactured in a week, constructed in four hours and costs £60 per square metre.</p><p>The competition was aiming to find practical solutions to housing problems that the world’s cities face. There were more than 1,200 competitors; they were narrowed down to 12 finalists, who were given a mentor from the Royal Institute to help develop their ideas over several months and then finally build their houses.</p><p>The competition head judge said: “There is a need for clean and comfortable places to live for future generations. There were many exciting designs among the projects. However, Earl’s idea stood out for its cheap and simple solution to the world’s growing accommodation problem.”</p><p>The winner, Forlales has already selected a suitable area of land to start building his <i>Cubo</i> houses in Manila, capital of the Philippines, because there are huge pressures on housing in the city. He plans to begin work next year. He said: “<i>Cubo</i> started as an idea while I was spending time at my grandparents’ house – it is great that it will now become a reality.”</p>",
-        "text2": "<div class='gap-container'><div>A bamboo house project was chosen</div><div class='gap'></div></div><div class='gap-container'><div>It would take less than a day</div><div class='gap'></div></div><div class='gap-container'><div>Housing problems in cities encouraged the Royal Institute</div><div class='gap'></div></div><div class='gap-container'><div>More than a thousand people decided</div><div class='gap'></div></div><div class='gap-container'><div>The Royal Institute mentors were asked</div><div class='gap'></div></div><div class='gap-container'><div>It took the 12 competitors months</div><div class='gap'></div></div><div class='gap-container'><div>The judges considered the cost of the house in order</div><div class='gap'></div></div><div class='gap-container'><div>After winning the competition Earl Forlales managed</div><div class='gap'></div></div>"
-    },
-    {
-        "taskId": "standard-21maj-reading-4",
-        "type": "reading-text",
-        "solutions": "[[\"E\",\"K\"],[\"K\"],[\"B\"],[\"L\"],[\"I\"],[\"A\"],[\"H\"],[\"F\"]]",
-        "taskTitle": "Task 4",
-        "instructions": "[\"In this article about some traditional Christmas cakes called mince pies, some parts of sentences have been left out.\",\"Some parts of sentences have been left out from the text.\",\"Your task is to reconstruct the text by filling in the gaps from the list below.\",\"Place the sentences in the boxes as in the example.\",\"Remember that there are two extra letters that you do not need.\"]",
-        "wordList": "{\"A\":\"and missing Phil very much\",\"B\":\"that the pies were possibly hidden under the floorboards\",\"D\":\"to send back a thank-you note\",\"E\":\"and later given to the local museum\",\"F\":\"why sailor Davis never ate his mince pies\",\"G\":\"without a place to find them\",\"H\":\"what his mother was feeling\",\"I\":\"that sailor Davis was attending a radar training school\",\"K\":\"together with a letter\",\"L\":\"to protect what is yours\"}",
-        "textTitle": "WORLD WAR 2 MINCE PIES FOUND UNDER HOTEL FLOORBOARDS",
-        "example": "which were a wartime gift",
-        "text": "<p>The little cakes, (0) from a mother to her sailor son, were discovered at the Loch Hotel in Douglas on the Isle of Man. They were found during the hotel's 1998 renovation (20) . The pies are now on display for the first time.</p><p>Probably air-tight conditions under the hotel floor helped conserve the cakes for almost 80 years. They were sent to sailor Phil Davis (21) , which was signed &quot;love from mum&quot;.</p><p>Matthew Richardson, the museum’s curator said (22) so the other soldiers couldn’t find them. &quot;If you're in a shared room with five or six other men that you don't know, the only way (23) is to find a place to hide it,&quot; he said.</p><p>The sweets were found when the hotel was developed into apartments. The letter found with the box says (24) on the island. It gives news of happenings at the sailor's home in Birmingham, including details of family and friends enjoying the Christmas holidays together (25) . It also reads: &quot;We shall be glad to see you when you get some time off.&quot;</p><p>Mr Richardson said: &quot;This box of mince pies shows that although wars are international events, they have an effect at a very human level. Here was a young man, possibly away from home for the first time in his life, training to go to a war zone. We can only imagine (26) as she posted this box to him.&quot;</p><p>&quot;We can't say for sure (27) . Perhaps he was unexpectedly sent to the front and didn't have time to take them.&quot;</p>",
-        "text2": ""
-    },
-    {
-        "taskId": "standard-21maj-uoe-1",
-        "type": "uoe-word-transformation",
-        "solutions": "[[\"thanks\"],[\"lovers\"],[\"carefully\"],[\"based\"],[\"designer\"],[\"imagine\",\"imagined\"],[\"protected\"],[\"exhibition\",\"exhibit\"]]",
-        "taskTitle": "Task 1",
-        "instructions": "[\"You are going to read an article about new technology in art. Some words are missing from the text.\",\"Use the words in brackets to form the words that fit in the gaps.\",\"Then fill in the gaps with the appropriate form of these words.\",\"There might be cases when you do not have to change the word in brackets.\",\"Use only one word for each gap.\",\"There is an example at the beginning.\"]",
-        "wordList": "{}",
-        "textTitle": "RAIN ART",
-        "example": "pouring",
-        "text": "<p>Most people would laugh if you told them they could go for a nice walk in the (0) <b>(pour)</b> rain — without getting wet. But that idea has become reality, (1) <b>(thank)</b> to an amazing show which allows art (2) <b>(love)</b> to walk in falling water without getting soaked to the skin.</p><p></p><p>The art installation, titled the Rain Room, uses a 3D camera system that creates a (3) <b>(careful)</b> designed path through the heavy rain, (4) <b>(base)</b> on the movements of visitors.</p><p></p><p>Hannes Koch, the (5) <b>(design)</b> of the Rain Room told CCTV News: “I think the initial idea didn’t have much to do with rain; it had to do with how visitors (6) <b>(image)</b> it would feel to be inside rain but to be (7) <b>(protect)</b> from it.”</p><p></p><p>The Rain Room (8) <b>(exhibit)</b> has attracted thousands of visitors to the Barbican Centre in London. A permanent version of the Rain Room has opened at the Yuz Museum in Shanghai.</p>",
-        "text2": ""
-    },
-    {
-        "taskId": "standard-21maj-uoe-2",
-        "type": "uoe-closed-gap-filling",
-        "solutions": "[\"D\",\"B\",\"A\",\"C\",\"D\",\"B\",\"C\",\"D\"]",
-        "taskTitle": "Task 2",
-        "instructions": "[\"You are going to read an article about a new kind of family therapy. Some words are missing from the text.\",\"Choose the most appropriate answer from the options (A-D) for each gap (9-16) in the text.\",\"Write the letter of the appropriate answer in the white box.\",\"There is one example (0) at the beginning.\"]",
-        "wordList": "{\"0\":\"A While B under C during D through\",\"9\":\"A are like B have liked C used to like D would like\",\"10\":\"A Make B could C try D needed\",\"11\":\"A we’ve found B we’d find C we’ve founded D we might find\",\"12\":\"A lots B several C couple D few\",\"13\":\"A would get B had left C have saved D are sending\",\"14\":\"A and B without C while D instead\",\"15\":\"A need B had to C must D may\",\"16\":\"A sent back B hand C be given up D be returned\"}",
-        "textTitle": "YOUR KIDS CAN EAT FREE IF …",
-        "example": "during",
-        "text": "<p>Parents who give up their phones (0) dinner will be rewarded with free meals for their kids at a British restaurant chain. In December, Frankie & Benny’s is running its “no-phone” campaign as they (9) to see more families who pay attention to each other at the dinner table.</p><p></p><p>“We looked at various ways we (10) encourage people to communicate with each other at the dinner table, and (11) that giving families the chance to put down their phones for a (12) of hours is a great opportunity to bring them closer to each other,” a Frankie and Benny’s spokesperson explained.</p><p></p><p>Psychologist Susan Atkins agrees, saying: “By putting away screens parents (13) the message that their children are important to them … Parents are role models in everything that they do, so by talking to their kids (14) reading and typing messages they are teaching their kids when and where technology use is appropriate.”</p><p></p><p>If parents want to use the promotion, they (15) put their phones in a special box before the meal begins. After dinner, the phones will (16) to them, and their children’s meals will be free of charge.</p>",
-        "text2": ""
-    },
-    {
-        "taskId": "standard-21maj-uoe-3",
-        "type": "uoe-free-gap-filling",
-        "solutions": "[[\"was\"],[\"it\"],[\"at\"],[\"that\",\"which\"],[\"best\"],[\"what\",\"everything\",\"anything\"],[\"of\",\"showing\"],[\"for\"],[\"never\",\"hadn’t\",\"hardly\",\"scarcely\",\"barely\"]]",
-        "taskTitle": "Task 3",
-        "instructions": "[\"You are going to read an article about a lost wallet. Some words are missing from the text.\",\"Your task is to write the missing words in the gaps.\",\"Use only <u>one</u> word in each gap.\",\"There is an example at the beginning.\"]",
-        "wordList": "{}",
-        "textTitle": "LOST WALLET RETURNED",
-        "example": "his",
-        "text": "<p>Hunter Shamatt had just arrived in Las Vegas when he realized he had lost (0) wallet. It contained $60, a $400 paycheck, his bank card and his identification card. He was very upset, but he didn’t want to make a big deal of it because it (17) his sister’s wedding weekend. He thought he might have lost it on his Frontier flight from Omaha to Vegas, so he</p><p>called the airline and reported (18) missing. No luck.</p><p></p><p>After the wedding, a package arrived (19) his home. It contained his wallet — completely intact — with a note (20) said: “Hunter, I found this on a Frontier flight from Omaha to Vegas – row 12, under seat F. Thought you might want it back. All the (21) , Todd.”</p><p></p><p>And below that: “P.S. I rounded your cash up to an even $100 so you could celebrate getting your wallet back. Have Fun!!!”</p><p></p><p>It took Hunter Shamatt a few minutes to believe (22) the note said. He wanted to thank the kind stranger, so he posted a picture (23) the note on Facebook with a message asking (24) help to find Todd. Within days, he was in contact with the man, identified in local media reports as Todd Brown of Omaha.</p><p></p><p>Shamatt wrote Brown a heartfelt thank-you:</p><p></p><p>“Sir, what you’ve done for me is unheard of. I (25) expected to see my wallet again, let alone with $40 more. Thank you so much, I’ve got student loans and it makes all the difference.”</p>",
-        "text2": ""
-    }
-]
+
+
+[{"taskId":"standard-23maj-reading-1","type":"reading-dialogue","solutions":"[\"G\",\"F\",\"H\",\"B\",\"K\",\"L\",\"M\",\"I\",\"D\"]","taskTitle":"Task 1","instructions":"[\"Read the following questions and answers from the website of a library. The questions have been removed.\",\"Your task is to place each question into the appropriate box.\",\"There are two extra questions that you do not need.\",\"Place the questions in the boxes as in the example.\"]","wordList":"{\"A\":\"What other services does the library offer besides lending materials?\",\"B\":\"Can someone else pick up my books?\",\"D\":\"If the library doesn’t have a title I’m looking for, is it possible to order it from another library?\",\"E\":\"Do you charge a fine if the items are not returned in time?\",\"F\":\"What can I do if my library card is not accepted?\",\"G\":\"Is there a membership fee?\",\"H\":\"How many books can I borrow?\",\"I\":\"What can I take into the reading rooms?\",\"K\":\"How long can I keep my borrowed materials?\",\"L\":\"How many times can I renew the items that I borrowed?\",\"M\":\"What happens if I lose or damage the borrowed item?\"}","textTitle":"CITY LIBRARY FREQUENTLY ASKED QUESTIONS","example":"How do I get a library card?","text":"<p>Thank you for being interested in learning more about the City Library. Answers to the most common questions about our services can be found below.</p>(0)<p>You can apply for one in person at the circulation desk. You must bring a photo I.D. and a document that shows your address.</p>(1)<p>No, registration is free for local residents. However, people who live outside the city are required to pay if they want to join the library.</p>(2)<p>Check the dates on the card. You may need to renew your membership. Cards are valid for two years.</p>(3)<p>You can check out up to 20 items at a time, including books, e-books, magazines, CDs and DVDs.</p>(4)<p>Yes, but only if they can show your library card at the desk.</p>(5)<p>The loan period is four weeks. If you would like to keep the items longer, you may renew them in person or online.</p>(6)<p>Up to two times if no one else is waiting for them.</p>(7)<p>You will need to pay the replacement cost of the material that you are unable to return in the original condition.</p>(8)<p>Pencils, paper and a laptop. Bags bigger than A4 size and other items, such as food, drink and pens, must be left in lockers on the ground floor.</p>(9)<p>Yes, our librarians will place the request for you. However, depending on where it comes from, it can take a week or longer for the item to arrive.</p>","text2":""},
+{"taskId":"standard-23maj-reading-2","type":"reading-text","solutions":"[\"H\",\"G\",\"D\",\"A\",\"I\",\"B\"]","taskTitle":"Task 2","instructions":"[\"Read this article about providing internet service to mountain climbers.\",\"Some sentences have been left out from the text.\",\"Your task is to reconstruct the text by filling in the gaps from the list below.\",\"Place the sentences in the boxes as in the example.\",\"Remember that there are two extra letters that you do not need.\"]","wordList":"{\"A\":\"As an added bonus, the tourist industry may benefit as well.\",\"B\":\"But the plan caused anger among climbers and expedition guides.\",\"D\":\"They’ll also be able to call for help if they need it.\",\"E\":\"Scientists believe global warming is responsible for the loss of ice.\",\"F\":\"They became the first recorded European climbers to reach Kilimanjaro’s summit in 1889.\",\"G\":\"Roughly one third of the people who try to climb it finally give up.\",\"H\":\"Most of them are trying to climb Mount Kilimanjaro.\",\"I\":\"Only about 83% of the population in Tanzania can get cell phone service where they live.\"}","textTitle":"MOUNT KILIMANJARO GETS INTERNET SERVICE","example":"It’s also the world’s tallest mountain that’s not part of a mountain range.","text":"<p>At 5,895 meters, Mount Kilimanjaro is the highest mountain in Africa. (0) It rises out of a large, flat area in Tanzania and Kenya. The mountain is part of Kilimanjaro National Park, which has around 50,000 visitors each year. (10) But climbing Africa’s tallest mountain isn’t easy. It has snowy glaciers surrounding its peak. (11) </p><p>The government of Tanzania has recently set up a high-speed internet service on the mountain to make it easier for climbers to reach the top. They’ll be able to use the internet to check the weather and use navigation tools. (12) </p><p>The government says safety is the main reason for setting up the internet service on the mountain. (13) Having people post selfies on social media as they work their way up the tallest mountain could certainly make the spot even more popular with visitors. Residents in Tanzania, however, are upset that the government is focusing on tourists instead of helping the people who live in the country. (14) </p><p>Also with tourists in mind, last year the Tanzanian government approved a $72 million project to build a cable car on Mount Kilimanjaro to allow tourists who weren’t climbers to enjoy the mountain. (15) It also bothered people who were worried about how the construction might affect the environment on the mountain. They point out that as a World Heritage site, Mount Kilimanjaro is a place which is important to protect.</p>","text2":""},
+{"taskId":"standard-23maj-reading-3","type":"reading-matching","solutions":"[\"B\",\"F\",\"D\",\"I\",\"E\",\"H\"]","taskTitle":"Task 3","instructions":"[\"Read the following description of escape rooms available for adventurous teams and then read the half sentences that follow the text.\",\"Your task is to match the half sentences based on the information in the text.\",\"Place the half sentences in the white boxes as in the example.\",\"Remember that there are two extra letters that you will not need.\"]","wordList":"{\"A\":\"the story takes place in space.\",\"B\":\"the team has to escape from an imaginary island which is full of mystery.\",\"D\":\"the players have to prevent an explosion in a tall building.\",\"E\":\"the story is set in the past.\",\"F\":\"the story starts with an accident.\",\"G\":\"the team must save people from a sinking ship.\",\"H\":\"the team’s mission is to solve a murder mystery.\",\"I\":\"the team will go underground to search for something.\"}","textTitle":"CHOOSE YOUR ADVENTURE ","example":"your team must complete challenges to show that you are not spies.","text":"<p>If you’re looking for a fun afternoon with friends, book one of our escape rooms. Here are the missions for your team to choose from.</p><p>The Yellow Room: Spies must be removed from the ministry of wizards where you work. You have one hour to undertake a trial of magic to prove that you are true wizards.</p><p>The Pink Room: You find yourselves on a mysterious island, home to strange animals and magical plants. You’ll need to solve puzzles, unlock portals and find your way back to the real world.</p><p>The Green Room: Going on holiday overseas, your plane has crashed and now you’re all stuck on a small island in the Pacific Ocean. With the weather getting worse, you need a place to hide until the rescue team finds you. You have 45 minutes to build a shelter.</p><p>The Grey Room: The secret service has been working on locating and removing threats from the city centre. As a team of experts, you must find the last bomb at the top of a tower block and save the city.</p><p>The Black Room: Enter a mystical cave and navigate your way in the dark to find the magic lamp without being trapped forever. The cave is full of puzzles designed to guard the powerful lamp.</p><p>The Blue Room: Step into 1942, when the world is at war. As MI6’s top agents you’ve been chosen to discover the location of the enemy’s superweapons, destroy them and save Britain. The Red Room: The mystery takes place at a research laboratory, where a professor has been killed by one of his colleagues. You and your team are detectives who are invited to solve the case and find the criminal.</p>","text2":"<div class='gap-container'><div>In The Yellow Room</div><div class='gap'></div></div><div class='gap-container'><div>In The Pink Room</div><div class='gap'></div></div><div class='gap-container'><div>In The Green Room</div><div class='gap'></div></div><div class='gap-container'><div>In The Grey Room</div><div class='gap'></div></div><div class='gap-container'><div>In The Black Room</div><div class='gap'></div></div><div class='gap-container'><div>In The Blue Room</div><div class='gap'></div></div><div class='gap-container'><div>In The Red Room</div><div class='gap'></div></div>"},
+{"taskId":"standard-23maj-reading-4","type":"reading-true-or-false","solutions":"[\"B\",\"C\",\"B\",\"A\",\"A\",\"B\",\"C\"]","taskTitle":"Task 4","instructions":"[\"Read this article about some scientific research and then read the statements following it.\",\"Click on <i>true</i> if it is true according to the article, mark it <i>false</i> if it is false, and mark it <i>doesn't say</i> if there isn’t enough information in the text to decide if it is true or not.\"]","wordList":"{}","textTitle":"SCIENTISTS LEARN THAT DOGS CAN SMELL STRESS \r","example":"true","text":"<p>Scientists ran an experiment which showed that dogs can tell the difference between the smell of a person when they’re relaxed and when they’re stressed.</p><p>Researchers at Queen’s University Belfast worked with four dogs and 36 humans. The dogs included in the study were pets, volunteered by their owners. First, researchers taught the dogs to use a special smell-testing device. Then, they collected sweat and breath samples from the human participants under two different conditions: in a non-stressful and a stressful situation. When people were calm, their blood pressure and heart rates were measured and then they were asked to wipe their skin with a clean piece of cloth. Then they had to put the cloth sample in a tube and breathe on it hard three times.</p><p>The study team then collected another round of breath and sweat samples a few minutes later, after the people had completed a difficult maths task, counting backward in their heads from 9,000 in units of 17 in front of two researchers for three minutes. The researchers kept telling the people to hurry up. After the task the participants reported feeling stressed, and their blood pressure and heart rate had gone up.</p><p>Then the dogs were given a relaxed and a stressed sample from each person. The dogs correctly identified the stressed sample in 94% of 720 tests.</p><p>The study provides evidence that dogs can smell stress from breath and sweat. Researchers say the skill could be useful when training therapy dogs.</p>","text2":"<div class='gap-container'><div class='statement'>Four universities took part in the research.</div><form class='radio-container default'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> The experiment involved police dogs.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> Sweat and breath samples were collected from students.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> In the experiment the dogs smelled the participants’ clothes.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> The relaxed and stressed samples were taken on the same day.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> The stressful task lasted for three minutes.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> Each dog was given three samples to choose from.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> The study was published in an international journal.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div>"},
+{"taskId":"standard-23maj-uoe-1","type":"uoe-word-transformation","solutions":"[[\"stressful\",\"stressed\",\"stressing\"],[\"delayed\"],[\"flying\",\"flight\"],[\"emergency\",\"emergent\",\"emerging\"],[\"simpler\"],[\"enjoyable\"],[\"annoying\"],[\"permission\"],[\"immediately\"]]","taskTitle":"Task 1","instructions":"[\"You are going to read an article about what flight attendants don’t like about some passengers’ behavior.\",\"Some words are missing from the text.\",\"Use the words in brackets to form the words that fit in the gaps.\",\"There might be cases when you do not have to change the word in brackets.\",\"Use only one word for each gap.\",\"There is an example at the beginning.\"]","wordList":"{}","textTitle":"MAKE THEM HAPPY","example":"irritating","text":"<p>We asked flight attendants about the most (0) <b>(irritate)</b> things passengers do on planes.</p><p>As any frequent traveler will tell you, traveling by air can be a rather (1) <b>(stress)</b> experience, especially as more and more flights are (2) <b>(delay)</b> or canceled. But it's important to remember that (3) <b>(fly)</b> is a miracle, and those who help you get from point A to point B safely — your flight crew members — deserve the highest respect.</p><p>&quot;Our job is much more than serving food and drinks. We are safety professionals and are trained to handle (4) <b>(emerge)</b> situations that can occur during a flight,&quot; Andy, a current crew member at a major airline, shared with Travel + Leisure.</p><p>So, how can you get treated like a VIP in the air by your cabin crew? It couldn’t be (5) <b>(simple)</b>: be nice.</p><p>&quot;If you show me a little respect, I'll be more than happy to make your flight as (6) <b>(enjoy)</b> as possible,&quot; said Andy.</p><p>We carried out a survey to ask flight attendants about what passengers do that crew members find (7) <b>(annoy)</b>. Here are the most offensive actions you should avoid: touching a crew member without their (8) <b>(permit)</b>, asking for water (9) <b>(immediate)</b> upon boarding, using the bathroom at an inappropriate time, pressing the call bell every two minutes, and last but not least, not saying thank you.</p>","text2":""},
+{"taskId":"standard-23maj-uoe-2","type":"uoe-closed-gap-filling","solutions":"[\"D\",\"H\",\"F\",\"K\",\"M\",\"A\",\"G\",\"I\"]","taskTitle":"Task 2","instructions":"[\"You are going to read an anecdote about Theodore Roosevelt, the 26th president of the U.S. Some words are missing from the text.\",\"Your task is to choose the most appropriate word from the list for each gap in the text.\",\"Each word can be used once.\",\"There are three extra words that you do not need to use.\",\"There is an example at the beginning.\"]","wordList":"{\"A\":\"ACHIEVEMENT\",\"B\":\"COULD\",\"D\":\"COUPLE\",\"E\":\"DIRECTION\",\"F\":\"GIVE\",\"G\":\"MANAGED\",\"H\":\"SEVERAL\",\"I\":\"SAY\",\"K\":\"TAKE\",\"L\":\"TELL\",\"M\":\"WAY\"}","textTitle":"A BUSY JOURNEY","example":"ONCE","text":"<p>The famous biographer David McCullough (0) told the following story from the early life of Theodore Roosevelt:</p><p>Once upon a time, in the coldest days of winter, in the Dakota Territory, Theodore Roosevelt took off in a small boat down the Little Missouri River to catch a (10) of thieves who had stolen his favorite rowboat.</p><p>After (11) days on the river, Roosevelt caught up with the thieves. He drew his trusty Winchester rifle, and forced them to (12) up the stolen boat. Then he set off in a borrowed horse-drawn wagon to (13) the thieves cross-country to prison. They traveled across the snow-covered wilderness to the railway at Dickinson, North Dakota, and Roosevelt walked the whole (14) , the entire forty miles. It was an extraordinary (15) . But what makes it especially important is that during that time, he (16) to read all of Anna Karenina, Leo Tolstoy’s 900-page novel.</p><p>I often think of this story when I hear people (17) they haven’t time to read.</p>","text2":""},
+{"taskId":"standard-23maj-uoe-3","type":"uoe-free-gap-filling","solutions":"[[\"to\"],[\"up\"],[\"as\",\"in\",\"become\",\"becoming\",\"inspire\"],[\"to\"],[\"be\",\"feel\"],[\"like\",\"resembling\"],[\"makes\"],[\"out\",\"in\",\"their\"]]","taskTitle":"Task 3","instructions":"[\"You are going to read an article about a new Barbie doll inspired by Dr. Jane Goodall, one of the world's most famous conservationists. Some words are missing from the text.\",\"Your task is to fill in the gaps.\",\"Use only one word in each gap.\",\"There is an example at the beginning.\"]","wordList":"{}","textTitle":"DR. JANE GOODALL BARBIE DOLL MADE OF RECYCLED PLASTIC","example":"be","text":"<p>Barbie is going green with a new doll modeled after Dr. Jane Goodall, which will (0) released next Tuesday ahead of World Chimpanzee Day. According (18) Mattel company, Goodall's Barbie doll is made of 90 percent recycled plastic that otherwise would have ended (19) in the ocean.</p><p>The 88-year-old researcher tells People Magazine she &quot;couldn’t be happier&quot; to see herself (20) a Barbie doll, something she long hoped for. Goodall says she wants her Barbie (21) &quot;inspire little girls&quot; everywhere. &quot;So many people know about Jane because they learn about me at school,&quot; she says, &quot;so I think they'll (22) delighted to be given a Barbie Jane.&quot;</p><p>Lisa McKnight, Executive Vice President of Barbie and Dolls at Mattel, said in a statement that the company is &quot;excited to introduce&quot; the new doll. &quot;Kids need more role models (23) Dr. Jane Goodall because imagining that they can be anything is just the beginning – seeing it (24) a huge difference,&quot; said McKnight.</p><p>&quot;We hope this collection and our respect for women in science will inspire girls to learn more about green careers, how they can protect the planet, and act (25) stories about the environment in their doll play,&quot; she added.</p>","text2":""},
+{"taskId":"standard-22okt-reading-1","type":"reading-dialogue","solutions":"[\"H\",\"E\",\"K\",\"I\",\"B\",\"A\",\"F\"]","taskTitle":"Task 1","instructions":"[\"Read the following collection of frequently asked questions and answers from the website of a language school. All of the questions have been removed.\",\"Your task is to place each question into the appropriate box.\",\"There are two extra questions that you do not need.\",\"Place the questions in the boxes as in the example.\"]","wordList":"{\"A\":\"Will I get a copy of the listening materials that are used in the class?\",\"B\":\"Can I pay a deposit and then pay the rest of the fee later?\",\"C\":\"What is the profile of the students on the courses?\",\"D\":\"What is the minimum number of students?\",\"E\":\"How do I know what level I am?\",\"F\":\"If I like my teacher and classmates, can I continue with them next term?\",\"G\":\"Am I allowed a discount if I book two courses?\",\"H\":\"How big are the classes?\",\"I\":\"Can I join a class in the second week?\",\"K\":\"How soon should I enrol?\"}","textTitle":"FAQS LANGUAGE COURSES UK","example":"What is the profile of the students on the courses? ","text":"<p>Cannot find the information you are looking for? Email info@languagecoursesuk.co.uk for a response within 24 hours.</p>(0)<p>Our evening courses are for adults of all ages and for all levels from beginners upwards. For most courses, the average age range will be mid-20s to mid-40s.</p>(1)<p>Our maximum class size is 12 students per class for face-to-face courses. If the course takes place online, the maximum class size is 10.</p>(2)<p>If you are unsure where to start or progress to, take our online placement test.</p>(3)<p>The earlier the better. If we don’t receive enough bookings for a course, we will regrettably have to cancel it.</p>(4)<p>Yes, if there is space in the classes, we can take bookings for students to join the class a week later, although there will be no discount on the price.</p>(5)<p>No, the entire amount must be paid by card at time of booking.</p>(6)<p>No, our coursebook CDs are designed to be used in class and with a teacher; they are not designed for self-study.</p>(7)<p>Although we can’t guarantee that your teacher will be available, we’ll do our best to assign them to your next level.</p>","text2":""},
+{"taskId":"standard-22okt-reading-2","type":"reading-dialogue","solutions":"[\"H\",\"G\",\"B\",\"E\",\"D\"]","taskTitle":"Task 2","instructions":"[\"In the following text about volunteering, the headings have been removed.\",\"Your task is to match the headings to the paragraphs.\",\"Place the headings into the appropriate box.\",\"There are two extra headings that you do not need.\",\"Place the headings in the gaps as in the example.\"]","wordList":"{\"A\":\"Find what fits your timetable\",\"B\":\"Look after abandoned pets\",\"D\":\"Support a health-related cause\",\"E\":\"Help the environment\",\"F\":\"Help and see the world\",\"G\":\"Help during the holiday season\",\"H\":\"Help kids learn and grow\"}","textTitle":"VOLUNTEERING","example":"Find what's best for you","text":"<p>Volunteering is an opportunity to change lives, including your own. If you'd like to support a cause but can't afford to donate money, you can donate your time instead. So how do you go about it?</p>(0)<p>When volunteering, you can pick what really interests you and who or what is most deserving of your time. Here are some ideas to get you started:</p>(8)<p>Become a camp counsellor, or volunteer for an after-school sports program. Provide homework help in a specific subject or become a reading partner for students who struggle with reading.</p>(9)<p>Serve Christmas dinner to the homeless, volunteer at your local food bank, or distribute toys to kids. Local charities also may be able to use your help then.</p>(10)<p>Most shelters depend on volunteers to keep the cats and dogs happy and well exercised. And when you're walking rescued dogs, you get a workout too.</p>(11)<p>Join a conservation group and count wildlife or plants. Take part in a local park clean-up day. You don't have to be an outdoors type — you could help out in a park office or education centre as well.</p>(12)<p>Lots of us are close to people who have a medical problem. It can feel good to donate your time to an organization that raises money for research, delivers meals, or offers other help to people with an illness.</p><p>Volunteering gives you a place to be where you can have a good time, keep busy and make the world a better place.</p>","text2":""},
+{"taskId":"standard-22okt-reading-3","type":"reading-true-or-false","solutions":"[\"C\",\"C\",\"B\",\"A\",\"C\",\"A\",\"B\"]","taskTitle":"Task 3","instructions":"[\"Read this article about a meteorite that landed in a Canadian home and then read the statements (13-19) following it.\",\"Click on <i>true</i> if it is true according to the article, mark it <i>false</i> if it is false, and mark it <i>doesn't say</i> if there isn’t enough information in the text to decide if it is true or not.\"]","wordList":"{}","textTitle":"METEORITE CRASH-LANDED IN A CANADIAN WOMAN’S BED WHILE SHE SLEPT","example":"false","text":"<p>When Ruth Hamilton woke up on October 3 to the sound of her dog barking, followed shortly by an explosion and drywall pieces falling on her face, she was afraid there was a burglar in the house. But instead, she noticed a dark grey rock behind her pillows that matched the size of the hole in her ceiling.</p><p>The police officer who visited Ms Hamilton’s home first suspected that a nearby building site might be responsible for the damage. But the construction workers made the officer think of another explanation. They had heard a loud noise and seen an explosion in the sky just before Ms Hamilton reported the incident. “The police officer came back in and said: ‘Well, I think you have a meteorite in your bed,’” says Ms Hamilton.</p><p>Ms Hamilton shared the space-rock, which weighs about 1.3 kilograms, with researchers at the University of Western Ontario, which has a collection of meteorites, so they can study it further. &quot;It's certainly a meteorite,&quot; says meteor physicist Peter Brown, member of the research team. &quot;Everything about the story pointed to a meteorite fall, and the fact that the bright fireball had occurred basically right at the same time made it a pretty obvious case.&quot;</p><p>The researchers are asking local residents for videos that may have captured the fall of the fireball. They can use video to reconstruct the path that the meteorite followed from the asteroid belt to Earth.</p><p>Ms Hamilton considers herself lucky to be unharmed. “I didn’t get hurt,” she says. “I didn’t even get a scratch. So, all I had to do is have a shower and mop the floor.”</p><p>Because the meteorite landed on Ms Hamilton’s property, it belongs to her, and she plans to keep it as a souvenir of the unusual night. Her grandchildren also think it’s pretty cool.</p>","text2":"<div class='gap-container'><div class='statement'>Ruth Hamilton was woken up by pieces of wall falling on her bed.</div><form class='radio-container default'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> The incident happened shortly after midnight.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> Ruth Hamilton’s home had been broken into before.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> The construction workers did not notice anything strange.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> Researchers are sure that the rock is a meteorite.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> Residents will be paid a small sum of money for sharing videos that capture the fireball.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> Ms Hamilton did not get injured when the space-rock hit her home.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> Ms Hamilton has given the meteorite to her grandchildren as a souvenir.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div>"},
+{"taskId":"standard-22okt-reading-4","type":"reading-text","solutions":"[\"A\",\"G\",\"B\",\"H\",\"K\",\"F\",\"D\",\"I\",\"M\"]","taskTitle":"Task 4","instructions":"[\"Read this article about a library delivery service.\",\"Some parts of sentences have been left out from the text.\",\"Your task is to reconstruct the text by filling in the gaps from the list below.\",\"Place the sentences in the boxes as in the example.\",\"Remember that there are two extra letters that you do not need.\"]","wordList":"{\"A\":\"have access to books\",\"B\":\"work for delivering books to students, too\",\"D\":\"required summer reading for a 14-year-old student\",\"E\":\"used school buses to deliver reading material to kids\",\"F\":\"loaded each book onto a drone\",\"G\":\"deliver food and other items\",\"H\":\"lived in the delivery zone\",\"I\":\"allowed to request more than one book\",\"K\":\"put them in a special package\",\"L\":\"find a satisfied customer\",\"M\":\"returned to in-person classes\"}","textTitle":"DRONE DELIVERS BOOKS TO KIDS","example":"delivered to their homes by drones","text":"<p>Kids in the Montgomery County school district had a special way of getting books to read when the pandemic started: the books were (0) . A drone is a small remote-controlled aircraft, like a toy-sized plane or helicopter.</p><p>Kelly Passek is a librarian at a local school. When schools closed because of the Covid-19 pandemic, she wanted to make sure students in her school district would still (20) .</p><p>A company called Wing Aviation uses drones to (21) from restaurants and stores in Ms Passek’s town. She had used the drone service to have things delivered to her own home, and she thought it could (22) .</p><p>The people at Wing agreed and the company began making deliveries. Students who (23) could fill out a Google form to request a specific book, or ask Ms Passek to choose one for them.</p><p>Ms Passek received the requests, then got the books from the library, (24) , and took them to Wing’s shipping centre.</p><p>Wing (25) , which flew to the delivery location, lowered the book on a cable, and released it when it was close to the ground.</p><p>The first book sent out this way – and maybe the first library book ever to be delivered by drone – was <i>All Quiet on the Western Front</i>, by Erich Maria Remarque. It was (26) in the district.</p><p>The drones have a wingspan of about one metre, and weigh about 4.5 kilograms. They can carry packages that weigh up to 1.3 kilograms, so students were (27) .</p><p>Students have now (28) , but many are hoping to use the drone service in the future.</p>","text2":""},
+{"taskId":"standard-22okt-uoe-1","type":"uoe-word-transformation","solutions":"[[\"pollution\"],[\"natural\"],[\"fashionable\",\"in-fashion\"],[\"description\"],[\"offer\"],[\"suitable\"],[\"creative\"],[\"environmental\"]]","taskTitle":"Task 1","instructions":"[\"You are going to read an article about a new way of gardening. Some words are missing from the text.\",\"Use the words in brackets to form the words that fit in the gaps.\",\"Then fill in the gaps with the appropriate form of these words.\",\"There might be cases when you do not have to change the word in brackets.\",\"Use only one word for each gap.\",\"There is an example at the beginning.\"]","wordList":"{}","textTitle":"RENT A GOAT","example":"healthy","text":"<p>It’s hard to keep your backyard tidy and (0) <b>(health)</b> without harming the Earth. Just consider the tools. Lawn mowers use fossil fuels, adding to the (1) <b>(pollute)</b> of the atmosphere every time you push them across the grass.</p><p></p><p>That’s why many are trying out a more (2) <b>(nature)</b> form of lawn care and management: goats. According to Forbes, goat rentals are becoming a(n) (3) <b>(fashion)</b> service for homeowners and farmers who want to get their land under control.</p><p></p><p>Goat rental businesses function very simply. Customers call in with the (4) <b>(describe)</b> of their land — the size, the landscape, and any other important features. Then the goat rental service makes a(n) (5) <b>(offer)</b>. Once the price is settled, the two parties agree on a(n) (6) <b>(suit)</b> date of service. On that day, the goats arrive. They graze the grass until the evening, then leave, and possibly return the next morning if the size of the job makes it necessary. When their work is done, customers are left with a freshly manicured lawn, achieved without burning any fossil fuel.</p><p></p><p>These (7) <b>(create)</b> businesses can send 100 or more goats at a time. Goats offer obvious (8) <b>(environment)</b> benefits, since they replace both mowers and chemical insect killers.</p>","text2":""},
+{"taskId":"standard-22okt-uoe-2","type":"uoe-multiple-choice","solutions":"[\"B\",\"C\",\"C\",\"A\",\"A\",\"D\",\"B\",\"B\"]","taskTitle":"Task 2","instructions":"[\"You are going to read an article about the mystery of the Hanging Gardens of Babylon. Some words are missing from the text.\",\"Choose the most appropriate answer from the options for each gap in the text.\",\"There is one example at the beginning.\"]","wordList":"{\"0\":{\"with\":\"A\",\"in\":\"B\",\"of\":\"C\",\"about\":\"D\"},\"1\":{\"might be\":\"A\",\"were\":\"B\",\"had\":\"C\",\"have been\":\"D\"},\"2\":{\"as\":\"A\",\"very\":\"B\",\"so\":\"C\",\"much\":\"D\"},\"3\":{\"then\":\"A\",\"there\":\"B\",\"than\":\"C\",\"that\":\"D\"},\"4\":{\"far\":\"A\",\"much\":\"B\",\"many\":\"C\",\"that\":\"D\"},\"5\":{\"has\":\"A\",\"had\":\"B\",\"never\":\"C\",\"was\":\"D\"},\"6\":{\"How\":\"A\",\"Must\":\"B\",\"Would\":\"C\",\"Did\":\"D\"},\"7\":{\"passed\":\"A\",\"past\":\"B\",\"several\":\"C\",\"late\":\"D\"},\"8\":{\"certain\":\"A\",\"unlikely\":\"B\",\"likely\":\"C\",\"certainly\":\"D\"}}","textTitle":"THE HANGING GARDENS OF BABYLON","example":"of","text":"<p>Ancient writers describe a fantastic series (0) gardens constructed at the ancient city of Babylon in modern-day Iraq. It’s not clear when these gardens (9) built, but some writers were (10) impressed that they called them a “wonder of the world”. Around 250 B.C., Philo of Byzantium wrote that the Hanging Gardens had “plants grown at a height above ground level, and the roots are planted in an upper terrace rather (11) in the earth.”</p><p></p><p>So (12) , archaeologists who have excavated Babylon have been unable to find the remains of the garden. This (13) left archaeologists with a question: (14) the hanging gardens really exist? In 2013, a researcher at the University of Oxford proposed that the gardens were actually located at the Assyrian city of Nineveh. Over the (15) two decades, both Babylon and Nineveh have suffered damage from wars, and it seems (16) that this mystery will ever be solved.</p>","text2":""},
+{"taskId":"standard-22okt-uoe-3","type":"uoe-free-gap-filling","solutions":"[[\"for\"],[\"there\",\"here\"],[\"others\",\"some\",\"many\"],[\"that\",\"which\"],[\"out\",\"around\"],[\"to\"],[\"to\",\"over\",\"but\"],[\"all\"],[\"in\"]]","taskTitle":"Task 3","instructions":"[\"You are going to read about a journalist’s experiences in the Bahamas. Some words are missing from the text.\",\"Your task is to write the missing words in the gaps.\",\"Use only <u>one</u> word in each gap.\",\"There is an example at the beginning.\"]","wordList":"{}","textTitle":"WHERE PIGS SWIM FREE","example":"own","text":"<p>For more than 30 years, I have photographed animals. It is important to me to portray animals as having their (0) thoughts and personalities.</p><p>I heard about the swimming pigs from an Englishwoman, who told me that she was 300 feet offshore in the Bahamas when a pig smelled her pizza and swam out to ask (17) a bite.</p><p>The pigs live on Big Major Cay, a tiny, uninhabited island with thick forests. About a dozen pigs live here, and (18) are different stories about how that happened. Some say the pigs swam to the island after a shipwreck; (19) say sailors left them here, planning to come back and eat them. Recently, they’ve become celebrities. The comedian Amy Schumer posted a photograph on Instagram (20) showed her and her buddies hanging (21) with one of the pigs on the island.</p><p>On the island, the pigs are very tolerant of tourists. They expect (22) be fed. When I was there in February, a lot of people brought salad and bread. My guide, Dreko, said the pigs prefer anything (23) salad, as they already have that on the island, but being pigs, they ate it all.</p><p>All in (24) , it was more interesting to watch the people. They want this exciting pig experience and can become unbelievably and noisily happy, (25) spite of the fact that they probably ate bacon and eggs for breakfast.</p>","text2":""},
+{"taskId":"standard-22maj-reading-1","type":"reading-true-or-false","solutions":"[\"B\",\"A\",\"C\",\"B\",\"A\",\"B\",\"C\"]","taskTitle":"Task 1","instructions":"[\"Read this article about a road incident and the sentences following it.\",\"Click on <i>true</i> if it is true according to the article, mark it <i>false</i> if it is false, and mark it <i>doesn't say</i> if there isn’t enough information in the text to decide if it is true or not.\"]","wordList":"{}","textTitle":"FIVE-YEAR-OLD CAUGHT DRIVING PARENTS' CAR IN UTAH","example":"true","text":"<p>Five-year-old Adrian took the family car, and was only caught when police in Utah State stopped him on the freeway. A patrolman saw the car, which was crossing lanes at 50km/h, and made the car stop. He was shocked to discover the child behind the wheel, who said he was on his way to buy a Lamborghini.</p><p>The boy told police that he had left home after his mother refused to buy him the luxury car – lower-priced models cost over $180,000 –, which caused an argument.</p><p>&quot;He decided he'd take the car and go to a car salesman in California to buy one himself,&quot; Utah Highway Patrol said on Twitter, &quot;but he only had 3 dollars in his wallet.&quot;</p><p>Camera footage posted by the local TV shows the car in traffic before stopping at the police signal. Highway patrol first thought it might be a driver with health problems behind the wheel. In the recording, the officer can then be heard saying &quot;How old are you? You're five years old?&quot; when he sees the boy. The boy was sitting at the very edge of the seat to be able to reach the pedals. He was stopped about five minutes' drive from home.</p><p>No-one was hurt in the incident. The boy’s parents were at work and he was in the care of a relative when he took the car. Police asked parents to make sure car keys are not easily accessible to children.</p>","text2":"<div class='gap-container'><div class='statement'>The boy was stopped by the police.</div><form class='radio-container default'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> The boy told the policeman he was going to a toy shop.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> The boy wanted his mother to buy an expensive car but she said 'no'.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> The boy wanted to get the car as a present for his birthday.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> The boy’s wallet was empty.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> A video recording of the incident was made.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> The boy was injured in the car.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> The boy’s parents were interviewed by TV reporters.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div>"},
+{"taskId":"standard-22maj-reading-2","type":"reading-dialogue","solutions":"[\"I\",\"A\",\"K\",\"F\",\"B\",\"G\",\"E\"]","taskTitle":"Task 2","instructions":"[\"Read the following questions and answers about buying products online. Some of the questions have been removed.\",\"Your task is to place each question into the appropriate box.\",\"There are two extra questions that you do not need.\",\"Place the questions in the boxes as in the example.\"]","wordList":"{\"A\":\"How can I check the status of my order?\",\"B\":\"How much time do I have if I decide to return an item?\",\"D\":\"When will I get my refund?\",\"E\":\"Why did I only receive part of my order?\",\"F\":\"How can I change my order?\",\"G\":\"My order is damaged – what can I do?\",\"H\":\"Are the products available for international delivery?\",\"I\":\"How long will it take for me to get my order?\",\"K\":\"Can I cancel my order?\"}","textTitle":"ONLINE SHOPPING – FREQUENTLY ASKED QUESTIONS","example":"How can I pay for my order?","text":"<p>Here you'll find answers to some of the questions we are asked most frequently. Please contact our customer service with any further questions you have.</p>(0)<p>We currently accept Visa, MasterCard and American Express. We also accept payment via PayPal.</p>(8)<p>For standard shipping, you should receive it within 4-5 business days.</p>(9)<p>We will notify you via email when your order is on the way. You can also track your delivery by clicking here.</p>(10)<p>Yes, but only within 30 minutes of placing it. You can, however, return any unwanted items to us for a refund once you receive them.</p>(11)<p>Unfortunately, once you’ve placed your order, we are unable to accept any changes. This means we cannot alter your payment details or the quantity, size or colour of the item you’ve ordered.</p>(12)<p>Unwanted items can be sent back to us in the original packaging within 35 days of purchase.</p>(13)<p>We are sorry to hear that your order did not arrive in perfect condition. Please contact our customer service team, who will be happy to help with your replacement order or refund.</p>(14)<p>While we do our best to ship all orders in one package, there are times when orders will ship from different locations. Please allow a little extra time for the next parcel to arrive.</p>","text2":""},
+{"taskId":"standard-22maj-reading-3","type":"reading-text","solutions":"[\"H\",\"E\",\"A\",\"D\",\"F\",\"K\",\"G\"]","taskTitle":"Task 3","instructions":"[\"Read this article about public restrooms in Japan.\",\"Some parts of sentences have been left out from the text.\",\"Your task is to reconstruct the text by filling in the gaps from the list below.\",\"Place the sentences in the boxes as in the example.\",\"Remember that there are two extra letters that you do not need.\"]","wordList":"{\"A\":\"the see-through walls solve two problems\",\"B\":\"upgrade public restrooms across the country\",\"D\":\"where they are located\",\"E\":\"the glass clears up again\",\"F\":\"others worry that the walls might not work properly\",\"G\":\"architects have been asked\",\"H\":\"and locks the door\",\"I\":\"privacy is needed from time to time\",\"K\":\"that will be installed across Tokyo\"}","textTitle":"JAPAN TRIES OUT SEE-THROUGH PUBLIC TOILETS","example":"including some with automatic lids and self-warming seats","text":"<p>In recent years, Japan has had many advanced and unusual toilets, (0) . Now one area of Tokyo is trying something completely new – public toilets with see-through walls. To be fair, the walls of the new public toilets aren’t always transparent. They are made of a special “smart glass”. When someone enters the toilet (15) , the glass becomes opaque – it clouds over so that no one can see in. When the door is unlocked, (16) .</p><p>The idea of a transparent public toilet may sound unusual, but (17) . Without ever entering the restroom, people can now check to see how clean it is, and whether anyone else is using it.</p><p>The new toilets have been built in two parks in Tokyo, which opened to the public this month. As the restrooms are lit up at night, they help provide light for the part of the parks (18) .</p><p>So far, the public has had mixed reactions to the see-through restrooms. Some people are excited to use them, while (19) and could allow them to be seen when they’re using the toilet.</p><p>Transparent toilets are just one of several new public toilet designs (20) in the coming months as part of the Tokyo Toilet Project. 16 designers and (21) to come up with new designs to improve the image of public restrooms in Tokyo.</p><p>The important part of improving public restrooms isn’t just about changing styles. It means making sure they are clean and well-lighted as well.</p>","text2":""},
+{"taskId":"standard-22maj-reading-4","type":"reading-matching","solutions":"[\"I\",\"D\",\"A\",\"H\",\"F\",\"B\"]","taskTitle":"Task 4","instructions":"[\"Read the following article about award-winning wildlife photos and then read the half sentences that follow the text.\",\"Your task is to match the half sentences based on the information in the text.\",\"Place the half sentences in the white boxes as in the example.\",\"Remember that there are three extra letters that you will not need.\"]","wordList":"{\"A\":\"won a prize for a portrait of an animal with an unusual ‘face’.\",\"B\":\"took a picture of a moment in the life of an animal family.\",\"D\":\"took a picture of a small endangered animal eating another animal.\",\"E\":\"show wildlife underwater.\",\"F\":\"was helped by another person to be able to take the picture.\",\"G\":\"is held every two years.\",\"H\":\"has three age categories.\",\"I\":\"had been waiting for months to take the award-winning picture.\",\"K\":\"was awarded in three categories.\"}","textTitle":"THE BEST WILDLIFE PHOTOS OF THE YEAR","example":"received over 40 thousand entries this year.","text":"<p>The Natural History Museum in London holds a yearly contest for the Wildlife Photographer of the Year, with over 10 categories. This year’s contest had 49,000 entries from around the world.</p><p>This year’s grand prize winner was Sergey Gorshkov’s picture of a Siberian tiger. Siberian tigers are endangered; only about 500 of them live in Russia’s far east. It took Mr. Gorshkov ten months to get a shot of one of them. It looks like the tiger is hugging the tree, but it’s actually trying to leave its smell as a way of communicating with other tigers.</p><p>Another endangered animal, a glass frog, was a category prize winner. Jaime Culebras said he had walked for four hours in the Andes mountains in the middle of a rainstorm, before he captured the picture of the frog snacking on a spider.</p><p>Mogens Trolle won the Animal Portraits prize with his picture of a young proboscis monkey, which is sitting calmly, enjoying the sunlight with its eyes closed. Proboscis monkeys look strange because the male’s nose can eventually grow so big that it hangs over its mouth and may have to be pushed aside to eat. They’re endangered and only found on Borneo and the islands nearby.</p><p>There is a separate contest for people under 18, known as the Young Wildlife Photographer of the Year. In this contest, pictures are judged in three separate age groups.</p><p>In the 10 and under category, Andrés Luis Dominguez Blanco of Spain won with his picture of a bird called a “stonechat” sitting on a bending plant. He asked his father to drive him to the field, in order to use the car as a hiding place for taking photographs. Andrés managed to take the picture without scaring the bird.</p><p>Another young winner, Liina Heikkinen had spent a day watching two adult foxes bring food to their cubs. After one parent brought home a goose, the cubs fought over it. Liina took a picture of a young fox eating the goose, while hiding away from his siblings.</p>","text2":"<div class='gap-container'><div>The Wildlife Photographer of the Year contest</div><div class='gap'></div></div><div class='gap-container'><div>Sergey Gorshkov</div><div class='gap'></div></div><div class='gap-container'><div>Jaime Culebras</div><div class='gap'></div></div><div class='gap-container'><div>Mogens Trolle</div><div class='gap'></div></div><div class='gap-container'><div>The Young Wildlife Photographer of the Year contest</div><div class='gap'></div></div><div class='gap-container'><div>Andrés Luis Dominguez Blanco</div><div class='gap'></div></div><div class='gap-container'><div>Liina Heikkinen</div><div class='gap'></div></div>"},
+{"taskId":"standard-22maj-uoe-1","type":"uoe-word-transformation","solutions":"[[\"difficulty\"],[\"better\"],[\"achievements\"],[\"records\"],[\"professional\"],[\"extraordinary\",\"out-of-the-ordinary\",\"inordinary\",\"unordinary\"],[\"impossible\"],[\"famous\",\"famed\"]]","taskTitle":"Task 1","instructions":"[\"You are going to read an article about a Guinness World Record holder who builds houses of cards. Some words are missing from the text.\",\"Use the words in brackets to form the words that fit in the gaps.\",\"Then fill in the gaps with the appropriate form of these words.\",\"There might be cases when you do not have to change the word in brackets.\",\"Use only one word for each gap.\",\"There is an example at the beginning.\"]","wordList":"{}","textTitle":"THE HOUSE OF CARDS CHAMPION","example":"creations","text":"<p>Bryan Berg is a cardstacking legend from Iowa. He began building card structures with his grandfather when he was about 8 years old. He built his first (0) <b>(create)</b>, simple boxlike “houses,” with great (1) <b>(difficult)</b>. But Berg didn’t give it up and worked hard to make the cards stand much (2) <b>(good)</b> and longer. Today he holds the Guinness World Record for the largest playing card structure and the tallest house of cards — reaching the first of these (3) <b>(achieve)</b> while in high school. Since then, he’s broken each of his (4) <b>(record)</b> several times.</p><p></p><p>As a (5) <b>(profession)</b> cardstacker, Berg creates card structures around the world. They’re so strong, they can hold a cement brick, yet he never uses glue — nothing but thousands of regular playing cards. His most (6) <b>(ordinary)</b> creations include some really (7) <b>(possible)</b> structures, such as Cinderella’s castle from Walt Disney World, New York’s Empire State Building and the Guggenheim Museum, as well as these (8) <b>(fame)</b> Washington landmarks: the U.S. Capitol, the Lincoln Memorial and the Washington Monument.</p>","text2":""},
+{"taskId":"standard-22maj-uoe-2","type":"uoe-closed-gap-filling","solutions":"[\"H\",\"M\",\"G\",\"E\",\"L\",\"I\",\"K\",\"D\"]","taskTitle":"Task 2","instructions":"[\"You are going to read a joke about choosing the right present. Some words are missing from the text.\",\"Your task is to choose the most appropriate word from the list for each gap in the text.\",\"Each word can be used once.\",\"There are three extra words that you do not need to use.\",\"There is an example at the beginning.\"]","wordList":"{\"A\":\"ACCEPTING\",\"B\":\"AS\",\"D\":\"AT\",\"E\":\"BELIEVE\",\"F\":\"COULD\",\"G\":\"CHARMING\",\"H\":\"HAPPENS\",\"I\":\"HOW\",\"K\":\"MUST\",\"L\":\"OWNED\",\"M\":\"TAKES\"}","textTitle":"A COSTLY PRESENT","example":"FOR","text":"<p>A rich man walks into a pet store for people with fat wallets. He explains that he’s looking (0) a birthday present for his friend.</p><p>And his friend (9) to like birds, so he needs a very talented parrot. The store owner says that he’s just got some perfect birds and (10) the man over to a huge stand with three exotic parrots.</p><p>“These birds are very special; the first one here on the right speaks three languages, knows a bunch of jokes, loves whisky and Cuban cigars. We’re selling him for five million dollars. The second one on the left speaks ten languages fluently, is a(n) (11) entertainer and loves kids and women. (12) it or not, his ancestry goes back all the way to a parrot (13) by Queen Elizabeth I, and trust me, these birds know (14) to pass an anecdote from generation to generation! This one goes for fifty million dollars. And finally, the third one, here in the middle, is the most special and expensive; we are selling him for a hundred million.”</p><p></p><p>Amazed, the guy shouts: “He (15) speak at least twenty languages!” </p><p>“You know, this one doesn’t talk (16) all, but those two call him Boss,” the owner explains.</p>","text2":""},
+{"taskId":"standard-22maj-uoe-3","type":"uoe-free-gap-filling","solutions":"[[\"to\"],[\"their\"],[\"by\"],[\"of\"],[\"his\"],[\"for\"],[\"have\"],[\"that\",\"which\"],[\"one\"]]","taskTitle":"Task 3","instructions":"[\"You are going to read about the history of M&M’s. Some words are missing from the text.\",\"Your task is to write the missing words in the gaps.\",\"Use only <u>one</u> word in each gap.\",\"There is an example at the beginning.\"]","wordList":"{}","textTitle":"THE UNTOLD TRUTH OF M&M'S","example":"a","text":"<p>With so many colors and flavors to choose from, surely, there’s (0) pack of M&M’s for everyone. And it’s pretty safe (17) say almost everyone has tried these little candy-coated chocolates at some point in (18) lives.</p><p>M&M’s were first introduced in the U.S. (19) Forrest E. Mars in Newark, New Jersey in 1941. But the story started earlier. Frank C. Mars had founded a candy business in 1911, and his son, Forrest, took on the job years later. Forrest wasn’t too fond (20) how his father had been running the company, and he had a new candy idea of (21) own. So, he found a business partner to make the candy-coated chocolates.</p><p>Forrest Mars eventually paired up with Bruce Murrie, and they began making M&M’s at their new company Mars & Murrie, which has since put Twix, Snickers and lots of other brands on the market.</p><p>Original M&M’s and Peanut M&M’s were the only two flavors (22) quite some time, until Peanut Butter M&M’s debuted in 1989. Since then, more and more flavors (23) followed.</p><p>There are only a few brands (24) can say they made it to space. M&M’s is (25) of them. According to M&M’s history, M&Ms were actually the first candy to be chosen to go to space in 1981.</p>","text2":""},
+{"taskId":"standard-21okt-reading-1","type":"reading-dialogue","solutions":"[\"H\",\"D\",\"A\",\"I\",\"F\",\"E\",\"B\"]","taskTitle":"Task 1","instructions":"[\"In the following text about online gaming, the headings have been removed.\",\"Your task is to match the headings to the paragraphs.\",\"Place the headings into the appropriate box.\",\"There are two extra headings that you do not need.\",\"Place the headings in the gaps as in the example.\"]","wordList":"{\"A\":\"Say no to meeting in person.\",\"B\":\"Stay legal.\",\"D\":\"Protect your account.\",\"E\":\"Avoid unwanted charges.\",\"F\":\"Take regular breaks.\",\"G\":\"Avoid online interactions.\",\"H\":\"Keep personal information safe.\",\"I\":\"Know what to do if other players are ruining the game.\",\"K\":\"Notice and control your emotions during the game.\"}","textTitle":"TOP TIPS FOR GAMING","example":"Check if you are old enough to play.","text":"<p>Whether it is done via mobile devices or using games consoles, gaming is one of the top activities enjoyed by young people online. Here are our tips to play safely:</p>(0)<p>It is important to find out information on age ratings. Look out for the icon on the game that shows what age classification it has been given.</p>(1)<p>Don’t share identifying details like your full name, mobile phone number or address. Sharing this type of information could put you at great risk.</p>(2)<p>To avoid being hacked, pick a strong password. Make sure you include a combination of letters, numbers and symbols. Treat your password like your toothbrush: you shouldn't share it with anyone else.</p>(3)<p>Online friends are still strangers even if you have been talking to them for a long time and meeting someone you have only been in touch with online can be dangerous.</p>(4)<p>Make sure you know what tools are available if someone is being aggressive in a game. Learn how to block, mute, delete and report on the games and consoles you use.</p>(5)<p>Games have been designed to be fun and exciting and to keep us coming back for more. But remember, for healthy gameplay, it’s important to stop for at least five minutes every hour.</p>(6)<p>You may be asked to pay for items in the game or to upgrade to the next level. The amount may seem small, but you can run up a large bill before you even realise it. We suggest blocking in-app purchases.</p>(7)<p>Don’t break the law by downloading non-copyrighted games or cheat programmes to skip to a higher level.</p>","text2":""},
+{"taskId":"standard-21okt-reading-2","type":"reading-text","solutions":"[\"E\",\"H\",\"K\",\"B\",\"F\",\"D\",\"G\"]","taskTitle":"Task 2","instructions":"[\"Read this article about an unusual job advertisement.\",\"Some parts of sentences have been left out from the text.\",\"Your task is to reconstruct the text by filling in the gaps from the list below.\",\"Place the sentences in the boxes as in the example.\",\"Remember that there are two extra letters that you do not need.\"]","wordList":"{\"A\":\"always wear a wig, as well\",\"B\":\"if the parents have to work late\",\"D\":\"share that love of those characters\",\"E\":\"where they describe in detail\",\"F\":\"are crazy about Disney princesses\",\"G\":\"working just four days a week\",\"H\":\"a new character every month\",\"I\":\"looking after them when they are sick\",\"K\":\"perform regular nanny duties\"}","textTitle":"DISNEY PRINCESS FOR A NANNY?","example":"in a part-time nanny role","text":"<p>If you’re tired of your office job and want a creative challenge, you might want to consider this new position. A married couple are looking for someone to take care of their six-year-old twin girls (0) , but there’s a catch – you have to do it dressed as a Disney princess. The parents posted an advert on <i>Childcare</i>, (8) exactly what they are looking for.</p><p></p><p>You’ll need to dress and play (9) , whether that’s Anna from <i>Frozen</i>, Snow White, Rapunzel or Cinderella. The chosen nanny will be asked to arrange Disney-related activities, such as arts and crafts, baking and singing, as well as (10) , including picking the girls up from school, cooking dinner and putting them to bed (11) .</p><p></p><p>According to the couple, the twin girls (12) and their parents believe this is the best way to communicate some important values to them. The pair admit that it’s an unusual request, but want to use Disney princesses to teach the twins about “things like kindness, empathy, bravery and ambition.” According to the couple, the right person will “have a passion for all things Disney” and will be able to (13) with their girls.</p><p></p><p>The right candidate will take home £40,000 a year, (14) . The Disney costumes will also be paid for by the parents, and 25 days’ holiday is on the table.</p><p></p><p>So now is the time to ask yourself the question: Do you have what it takes to be a part-time Disney princess?</p>","text2":""},
+{"taskId":"standard-21okt-reading-3","type":"reading-matching","solutions":"[\"E\",\"I\",\"D\",\"A\",\"G\",\"H\"]","taskTitle":"Task 3","instructions":"[\"Read the following article about an incident on a plane and then read the half sentences that follow the text.\",\"Your task is to match the half sentences based on the information in the text.\",\"Place the half sentences in the white boxes as in the example.\",\"Remember that there are three extra letters that you will not need.\"]","wordList":"{\"A\":\"gave Mr Bennet sleeping pills.\",\"B\":\"apologised for the incident.\",\"D\":\"was unable to wake up Mr Bennet before take-off.\",\"E\":\"didn’t speak English well enough to explain the situation.\",\"F\":\"paid some money as compensation.\",\"G\":\"decided that Mr Bennet should get off the plane.\",\"H\":\"offered another flight a week later.\",\"I\":\"examined Mr Bennet and said that he was able to fly.\"}","textTitle":"CANADIAN MAN KICKED OFF WESTJET FLIGHT FOR BEING ASLEEP BEFORE TAKE-OFF","example":"missed part of the vacation.","text":"<p>Mr Bennett, his wife and their son were taking a WestJet flight from Toronto to Cuba on 13 October. Mr Bennet hadn’t slept well the night before, so before the flight he took a sleeping pill which he had been given by his doctor. He fell asleep immediately after boarding the plane. The trouble began when a flight attendant couldn’t wake him up as the plane was preparing to take off. He became worried that there was something medically wrong with the passenger. WestJet requires all passengers to be awake during take-off for safety reasons.</p><p></p><p>Mr Bennet’s wife, whose first language is not English, couldn’t tell the crew why he needed a rest. She was eventually able to wake her husband up, who explained he had taken medication. However, the cabin crew wanted him to get off the plane.</p><p></p><p>Paramedics were called, removed him from the plane, checked him and said he was medically fit to fly. Bennett also got an email from his doctor saying he was healthy enough to fly. However, they were not allowed back on the flight.</p><p></p><p>The family, who had booked an all-inclusive vacation in Cuba, were told by WestJet they could take the next flight the following week.</p><p></p><p>The Bennets didn’t want to miss a week of the family vacation, so instead of waiting for another WestJet flight, they paid more than $2,000 to buy a plane ticket from another airline. They had to cut their vacation short by two days.</p><p></p><p>The family would like to receive compensation from the airline.</p>","text2":"<div class='gap-container'><div>The Bennets</div><div class='gap'></div></div><div class='gap-container'><div>Mrs Bennet</div><div class='gap'></div></div><div class='gap-container'><div>Paramedics</div><div class='gap'></div></div><div class='gap-container'><div>A flight attendant</div><div class='gap'></div></div><div class='gap-container'><div>Mr Bennet’s doctor</div><div class='gap'></div></div><div class='gap-container'><div>The crew on the plane</div><div class='gap'></div></div><div class='gap-container'><div>The airline</div><div class='gap'></div></div>"},
+{"taskId":"standard-21okt-reading-4","type":"reading-true-or-false","solutions":"[\"C\",\"B\",\"C\",\"B\",\"B\",\"A\",\"A\"]","taskTitle":"Task 4","instructions":"[\"Read this article about a strange work of land art in Australia and then read the statements following it.\",\"Click on <i>true</i> if it is true according to the article, mark it <i>false</i> if it is false, and mark it <i>doesn't say</i> if there isn’t enough information in the text to decide if it is true or not.\"]","wordList":"{}","textTitle":"MARREE MAN","example":"true","text":"<p>Since a pilot first noticed Marree Man in South Australia in 1998, the mysterious work of land art has attracted international attention. Marree Man is so large it is best viewed from high above. The artwork represents a hunter with what looks like a stick or boomerang in his hand. Its length is 3.5 kilometers (2.2 miles) from top to bottom.</p><p>For many years, Marree Man, named after a nearby town, was a well-known feature in satellite images of the area, but the wind and the rain destroyed many of the lines. By 2013, they were hardly visible in natural-color images.</p><p>In August 2016, local business owners, who were worried about the loss of what had become a tourist attraction, decided to restore the fading lines. They used machines to redraw Marree Man, which took them five days.</p><p>The restoration team thinks the updated work of art will last longer than the original because they designed it to trap water and planted trees along the lines. Over time, they hope plants will turn the lines green.</p><p>Who created the huge work of art, and why, remains unknown, although a cash reward has been announced for information about it. Some people believe that it was probably an artist living in Alice Springs who created Marree Man; others think that maybe the creator was an American.</p>","text2":"<div class='gap-container'><div class='statement'>It was a pilot who discovered the large geoglyph.</div><form class='radio-container default'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> The pilot was checking geographical data when he saw the huge image.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> Marree Man was discovered in the early 21st century.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> The artwork was named Marree Man immediately after its discovery.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> The lines of the image had completely disappeared by 2013.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> The restoration work lasted more than a week.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> The restoration team wants plants to grow along the lines.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> The creator of Marree Man has not been named yet.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div>"},
+{"taskId":"standard-21okt-uoe-1","type":"uoe-closed-gap-filling","solutions":"[\"F\",\"E\",\"B\",\"K\",\"L\",\"G\",\"A\",\"H\"]","taskTitle":"Task 1","instructions":"[\"You are going to read an article about how a school in Derbyshire, England, is trying to get parents to talk to their children more. Some words are missing from the text.\",\"Your task is to choose the most appropriate word from the list for each gap in the text.\",\"Each word can be used once.\",\"There are three extra words that you do not need to use.\",\"There is an example at the beginning.\"]","wordList":"{\"A\":\"DONE\",\"D\":\"EITHER\",\"G\":\"REMIND\",\"K\":\"WHAT\",\"B\":\"EACH\",\"E\":\"LISTEN\",\"H\":\"SHOULDN’T\",\"L\":\"WHEN\",\"F\":\"PLACED\",\"I\":\"THAT\",\"M\":\"WON’T\"}","textTitle":"SMILES VS MOBILES","example":"DOWN","text":"<p>A school has asked parents to put (0) their phones and communicate with their children at the end of the day. The signs (1) at the entrances to Redwood Primary School in Derby advise adults to &quot;greet your child with a smile, not a mobile.&quot; The school said it wanted parents and children to talk and (2) more to each other at home. They have mostly received a positive response from parents.</p><p>Teachers Rachel Kirk and Sarah Chaffe produced signs for (3) of the school's three gates. &quot;(4) we've been trying to do is help parents be more effective (5) they're chatting with their children at home,&quot; said Ms Kirk. &quot;The signs are just to (6) parents how important it is to greet their children and encourage them to get into a conversation about all the fun things they have (7) that day.&quot;</p><p>However, Kerri Hilton, who has two children at the school, said: &quot;Parents (8) be told to pay attention to their children. I always ask my kids about their day at school.&quot;</p>","text2":""},
+{"taskId":"standard-21okt-uoe-2","type":"uoe-word-transformation","solutions":"[[\"Welsh\"],[\"recorded\"],[\"European\"],[\"used\"],[\"internationally\"],[\"programmer\",\"programer\"],[\"existing\",\"existent\"],[\"another\"],[\"looking\"]]","taskTitle":"Task 2","instructions":"[\"You are going to read an article about the origins of the @ sign. Some words are missing from the text.\",\"Use the words in brackets to form the words that fit in the gaps.\",\"Then fill in the gaps with the appropriate form of these words.\",\"There might be cases when you do not have to change the word in brackets.\",\"Use only one word for each gap.\",\"There is an example at the beginning.\"]","wordList":"{}","textTitle":"A WELL-KNOWN SIGN","example":"Hungarian","text":"<p>In Dutch the @ sign is called a “monkey tail”, in (0) <b>(Hungary)</b> a “maggot”, in Danish an “elephant’s trunk”, and in (9) <b>(Wales)</b> a “snail”. Appearing everywhere now in emails, the @ sign has history.</p><p></p><p>The first (10) <b>(record)</b> use was in <i>The Mannasses Chronicle</i> in 1345, where an @ sign is the first letter in the word ‘Amen’. By the 16th century, in southern (11) <b>(Europe)</b> documents of trade, the sign represented amphora, a storage jar (12) <b>(use)</b> since Roman times. By the 18th century it was called ‘commercial A’ and meant ‘at the rate of’ (eg.: 10 hats @ 1 shilling = 10 shillings).</p><p></p><p>It didn’t make it onto the earliest typewriters but was included by 1889, when it became a standard character. By 1963 @ was included in the new (13) <b>(international)</b> recognised character set. </p><p></p><p>In 1971 computer (14) <b>(programme)</b> Ray Tomlinson was at work on Arpanet, the prototype of the internet. He added some of his own code to an (15) <b>(exist)</b> programme and sent a message from one computer to (16) <b>(other)</b> – the first email. Ray needed a character to separate the message’s recipient from the computer it would arrive at, and (17) <b>(look)</b> down at his teletype keyboard, he chose the @ symbol and changed the world forever.</p>","text2":""},
+{"taskId":"standard-21okt-uoe-3","type":"uoe-free-gap-filling","solutions":"[[\"which\"],[\"it\"],[\"keep\"],[\"to\"],[\"with\"],[\"called\",\"named\"],[\"next\",\"close\",\"near\"],[\"of\",\"on\"]]","taskTitle":"Task 3","instructions":"[\"You are going to read an article about the history of ice cream. Some words are missing from the text.\",\"Your task is to write the missing words in the gaps.\",\"Use only <u>one</u> word in each gap.\",\"There is an example at the beginning.\"]","wordList":"{}","textTitle":"ICE-CREAM","example":"when","text":"<p>A kind of ice-cream was invented in China about 200 BC (0) a milk and rice mixture was frozen by packing it into snow. It is believed that Roman emperors sent slaves to mountain tops to bring back fresh snow, (18) was then flavoured and served as an early form of ice-cream.</p><p></p><p>The explorer, Marco Polo &#40;1254-1324&#41;, is believed to have seen ice-cream being made during his trip to China and introduced (19) to Italy. The King of England, Charles I, offered his chef £500 a year to (20) his ice-cream recipe a secret from the rest of England.</p><p></p><p>Ice Cream Sundaes were invented when it became illegal (21) sell ice-cream sodas on a Sunday in the American town of Evanston during the late 19th century. To get around the problem, some ice-cream sellers replaced the soda (22) syrup and called the dessert an &quot;Ice Cream Sunday&quot;. They changed the final &quot;y&quot; for an &quot;e&quot; to avoid upsetting religious leaders.</p><p></p><p>Probably a Syrian man (23) Ernest E Hamwi invented the ice-cream cone in 1904. During the St Louis World's Fair in the United States, his waffle booth stood (24) to an ice-cream seller who ran short (25) dishes. As a favour, Hamwi rolled a waffle to hold his ice-cream and the cone was born.</p>","text2":""},
+{"taskId":"standard-21maj-reading-1","type":"reading-dialogue","solutions":"[\"H\",\"A\",\"D\",\"F\",\"I\",\"E\"]","taskTitle":"Task 1","instructions":"[\"In the following interview about a common illness, the questions have been removed.\",\"Your task is to place each question into the appropriate box.\",\"There are two extra questions that you do not need.\",\"Place the questions in the boxes as in the example.\"]","wordList":"{\"A\":\"What are the signs and symptoms of a cold?\",\"B\":\"What’s the difference between a cold and flu?\",\"D\":\"Can a cold be passed from one person to another?\",\"E\":\"When should I go to the doctor?\",\"F\":\"How long do colds last?\",\"G\":\"Will taking vitamin C help me to prevent colds?\",\"H\":\"What causes colds?\",\"I\":\"What can I do to feel better?\"}","textTitle":"COPING WITH COLDS","example":"What exactly is a cold?","text":"<p>Despite being a minor illness, a cold can make you feel miserable. Here's some information about it.</p>(0)<p>A cold is in fact an infection which can affect the nose, throat, or sinuses.</p>(1)<p>The cold virus. When it gets through the nose and throat, the body answers with an immune system reaction. Dry air, lack of sleep, stress, or not eating properly can increase one’s chances of getting the cold virus.</p>(2)<p>What people first notice is usually a runny nose or sneezing. You also might feel very tired and have a sore throat, cough, headache, temperature, or muscle aches.</p>(3)<p>Well, viruses can stay alive in the air or on surfaces for hours. So, sick people can easily spread the cold to others if they don’t wash their hands after coughing or sneezing.</p>(4)<p>Although some people may be sick for as long as two weeks, most colds clear up within a week.</p>(5)<p>Getting plenty of rest and drinking warm liquids like tea or chicken soup can make you feel less miserable.</p>(6)<p>People who catch colds usually don't need medical attention. But talk to your GP if your symptoms get worse after 3 days instead of getting better.</p>","text2":""},
+{"taskId":"standard-21maj-reading-2","type":"reading-true-or-false","solutions":"[\"C\",\"B\",\"C\",\"A\",\"A\",\"B\"]","taskTitle":"Task 2","instructions":"[\"Read this article about valuable charity gifts and then read the sentences following it.\",\"Click on <i>true</i> if it is true according to the article, mark it <i>false</i> if it is false, and mark it <i>doesn't say</i> if there isn’t enough information in the text to decide if it is true or not.\"]","wordList":"{}","textTitle":"GOLD COINS FOUND IN A CHARITY KETTLE","example":"true","text":"<p>The Salvation Army regularly uses donation kettles to collect money for charity purposes. Not long ago they found five gold coins in their donation kettle at a food store in Mebane, North Carolina — three South African <i>Krugerrand</i>, one American <i>Riverman</i> and one Canadian <i>Maple Leaf</i>. All came in little plastic packages to keep them safe.</p><p>“We got the <i>Riverman</i> about a week ago, and we got the other four over the last two days,” said the Salvation Army spokesman. The organisation had already received such coins before with the exception of the <i>Riverman</i>.</p><p>All the coins were dropped in the kettle by an anonymous donor.</p><p>The organisation is planning to take the five coins to a shop in High Point to determine their value. “We have a guy that we go to every year. He buys them from us,” the spokesman said. The group will use the money they get for the coins like any other gifts they receive. “I think it’s amazing to get these coins every year because that is a really large donation,” the spokesman said.</p>","text2":"<div class='gap-container'><div class='statement'>The five coins found are all made of gold.</div><form class='radio-container default'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> The five coins are all of the same size.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> The five coins came within two days.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> The five coins were put in the kettle at night.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> It was not the first time someone had given the Salvation Army gold coins.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> The organisation doesn’t know who the coins came from.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div><div class='gap-container'><div class='statement'> The Salvation Army is going to give the coins to a museum.</div><form class='radio-container'><label><input name='t-f' type='radio'><span>true</span></label><label><input name='t-f' type='radio'><span>false</span></label><label><input name='t-f' type='radio'><span>doesn't say</span></label></form></div>"},
+{"taskId":"standard-21maj-reading-3","type":"reading-matching","solutions":"[\"E\",\"G\",\"B\",\"K\",\"H\",\"A\",\"F\"]","taskTitle":"Task 3","instructions":"[\"Read the following story about a prize-winning house and read the half sentences that follow the text.\",\"Your task is to match the half sentences based on the information in the text.\",\"Place the half sentences in the white boxes as in the example.\",\"Remember that there are two extra letters that you will not need.\"]","wordList":"{\"A\":\"to choose the winner.\",\"B\":\"to hand in a project and enter the competition.\",\"D\":\"to make a modern building out of an old one.\",\"E\":\"to build a <i>Cubo</i> house.\",\"F\":\"to find a site for building several <i>Cubo</i> houses.\",\"G\":\"to organise the competition.\",\"H\":\"to work out the details of their projects.\",\"I\":\"to live in an old part of the city.\",\"K\":\"to help the participants in the finals.\"}","textTitle":"BAMBOO HOUSE: <i>CUBO</i> WINS TOP PRIZE","example":"to get the award of £50,000.","text":"<p>Earl Forlales, the creator of a house made of bamboo, has won a £50,000 top prize to develop cities for the future. Earl Forlales, 23, a graduate in engineering, was awarded first prize by the Royal Institute of Surveyors for his house, known as <i>Cubo</i>. The Royal Institute decided to give top prize to the house because of its use of low-cost eco-friendly material, and the speed with which it could be constructed. The house could be manufactured in a week, constructed in four hours and costs £60 per square metre.</p><p>The competition was aiming to find practical solutions to housing problems that the world’s cities face. There were more than 1,200 competitors; they were narrowed down to 12 finalists, who were given a mentor from the Royal Institute to help develop their ideas over several months and then finally build their houses.</p><p>The competition head judge said: “There is a need for clean and comfortable places to live for future generations. There were many exciting designs among the projects. However, Earl’s idea stood out for its cheap and simple solution to the world’s growing accommodation problem.”</p><p>The winner, Forlales has already selected a suitable area of land to start building his <i>Cubo</i> houses in Manila, capital of the Philippines, because there are huge pressures on housing in the city. He plans to begin work next year. He said: “<i>Cubo</i> started as an idea while I was spending time at my grandparents’ house – it is great that it will now become a reality.”</p>","text2":"<div class='gap-container'><div>A bamboo house project was chosen</div><div class='gap'></div></div><div class='gap-container'><div>It would take less than a day</div><div class='gap'></div></div><div class='gap-container'><div>Housing problems in cities encouraged the Royal Institute</div><div class='gap'></div></div><div class='gap-container'><div>More than a thousand people decided</div><div class='gap'></div></div><div class='gap-container'><div>The Royal Institute mentors were asked</div><div class='gap'></div></div><div class='gap-container'><div>It took the 12 competitors months</div><div class='gap'></div></div><div class='gap-container'><div>The judges considered the cost of the house in order</div><div class='gap'></div></div><div class='gap-container'><div>After winning the competition Earl Forlales managed</div><div class='gap'></div></div>"},
+{"taskId":"standard-21maj-reading-4","type":"reading-text","solutions":"[[\"E\",\"K\"],[\"K\"],[\"B\"],[\"L\"],[\"I\"],[\"A\"],[\"H\"],[\"F\"]]","taskTitle":"Task 4","instructions":"[\"In this article about some traditional Christmas cakes called mince pies, some parts of sentences have been left out.\",\"Some parts of sentences have been left out from the text.\",\"Your task is to reconstruct the text by filling in the gaps from the list below.\",\"Place the sentences in the boxes as in the example.\",\"Remember that there are two extra letters that you do not need.\"]","wordList":"{\"A\":\"and missing Phil very much\",\"B\":\"that the pies were possibly hidden under the floorboards\",\"D\":\"to send back a thank-you note\",\"E\":\"and later given to the local museum\",\"F\":\"why sailor Davis never ate his mince pies\",\"G\":\"without a place to find them\",\"H\":\"what his mother was feeling\",\"I\":\"that sailor Davis was attending a radar training school\",\"K\":\"together with a letter\",\"L\":\"to protect what is yours\"}","textTitle":"WORLD WAR 2 MINCE PIES FOUND UNDER HOTEL FLOORBOARDS","example":"which were a wartime gift","text":"<p>The little cakes, (0) from a mother to her sailor son, were discovered at the Loch Hotel in Douglas on the Isle of Man. They were found during the hotel's 1998 renovation (20) . The pies are now on display for the first time.</p><p>Probably air-tight conditions under the hotel floor helped conserve the cakes for almost 80 years. They were sent to sailor Phil Davis (21) , which was signed &quot;love from mum&quot;.</p><p>Matthew Richardson, the museum’s curator said (22) so the other soldiers couldn’t find them. &quot;If you're in a shared room with five or six other men that you don't know, the only way (23) is to find a place to hide it,&quot; he said.</p><p>The sweets were found when the hotel was developed into apartments. The letter found with the box says (24) on the island. It gives news of happenings at the sailor's home in Birmingham, including details of family and friends enjoying the Christmas holidays together (25) . It also reads: &quot;We shall be glad to see you when you get some time off.&quot;</p><p>Mr Richardson said: &quot;This box of mince pies shows that although wars are international events, they have an effect at a very human level. Here was a young man, possibly away from home for the first time in his life, training to go to a war zone. We can only imagine (26) as she posted this box to him.&quot;</p><p>&quot;We can't say for sure (27) . Perhaps he was unexpectedly sent to the front and didn't have time to take them.&quot;</p>","text2":""},
+{"taskId":"standard-21maj-uoe-1","type":"uoe-word-transformation","solutions":"[[\"thanks\"],[\"lovers\"],[\"carefully\"],[\"based\"],[\"designer\"],[\"imagine\",\"imagined\"],[\"protected\"],[\"exhibition\",\"exhibit\"]]","taskTitle":"Task 1","instructions":"[\"You are going to read an article about new technology in art. Some words are missing from the text.\",\"Use the words in brackets to form the words that fit in the gaps.\",\"Then fill in the gaps with the appropriate form of these words.\",\"There might be cases when you do not have to change the word in brackets.\",\"Use only one word for each gap.\",\"There is an example at the beginning.\"]","wordList":"{}","textTitle":"RAIN ART","example":"pouring","text":"<p>Most people would laugh if you told them they could go for a nice walk in the (0) <b>(pour)</b> rain — without getting wet. But that idea has become reality, (1) <b>(thank)</b> to an amazing show which allows art (2) <b>(love)</b> to walk in falling water without getting soaked to the skin.</p><p></p><p>The art installation, titled the Rain Room, uses a 3D camera system that creates a (3) <b>(careful)</b> designed path through the heavy rain, (4) <b>(base)</b> on the movements of visitors.</p><p></p><p>Hannes Koch, the (5) <b>(design)</b> of the Rain Room told CCTV News: “I think the initial idea didn’t have much to do with rain; it had to do with how visitors (6) <b>(image)</b> it would feel to be inside rain but to be (7) <b>(protect)</b> from it.”</p><p></p><p>The Rain Room (8) <b>(exhibit)</b> has attracted thousands of visitors to the Barbican Centre in London. A permanent version of the Rain Room has opened at the Yuz Museum in Shanghai.</p>","text2":""},
+{"taskId":"standard-21maj-uoe-2","type":"uoe-closed-gap-filling","solutions":"[\"D\",\"B\",\"A\",\"C\",\"D\",\"B\",\"C\",\"D\"]","taskTitle":"Task 2","instructions":"[\"You are going to read an article about a new kind of family therapy. Some words are missing from the text.\",\"Choose the most appropriate answer from the options (A-D) for each gap (9-16) in the text.\",\"Write the letter of the appropriate answer in the white box.\",\"There is one example (0) at the beginning.\"]","wordList":"{\"0\":\"A While B under C during D through\",\"9\":\"A are like B have liked C used to like D would like\",\"10\":\"A Make B could C try D needed\",\"11\":\"A we’ve found B we’d find C we’ve founded D we might find\",\"12\":\"A lots B several C couple D few\",\"13\":\"A would get B had left C have saved D are sending\",\"14\":\"A and B without C while D instead\",\"15\":\"A need B had to C must D may\",\"16\":\"A sent back B hand C be given up D be returned\"}","textTitle":"YOUR KIDS CAN EAT FREE IF …","example":"during","text":"<p>Parents who give up their phones (0) dinner will be rewarded with free meals for their kids at a British restaurant chain. In December, Frankie & Benny’s is running its “no-phone” campaign as they (9) to see more families who pay attention to each other at the dinner table.</p><p></p><p>“We looked at various ways we (10) encourage people to communicate with each other at the dinner table, and (11) that giving families the chance to put down their phones for a (12) of hours is a great opportunity to bring them closer to each other,” a Frankie and Benny’s spokesperson explained.</p><p></p><p>Psychologist Susan Atkins agrees, saying: “By putting away screens parents (13) the message that their children are important to them … Parents are role models in everything that they do, so by talking to their kids (14) reading and typing messages they are teaching their kids when and where technology use is appropriate.”</p><p></p><p>If parents want to use the promotion, they (15) put their phones in a special box before the meal begins. After dinner, the phones will (16) to them, and their children’s meals will be free of charge.</p>","text2":""},
+{"taskId":"standard-21maj-uoe-3","type":"uoe-free-gap-filling","solutions":"[[\"was\"],[\"it\"],[\"at\"],[\"that\",\"which\"],[\"best\"],[\"what\",\"everything\",\"anything\"],[\"of\",\"showing\"],[\"for\"],[\"never\",\"hadn’t\",\"hardly\",\"scarcely\",\"barely\"]]","taskTitle":"Task 3","instructions":"[\"You are going to read an article about a lost wallet. Some words are missing from the text.\",\"Your task is to write the missing words in the gaps.\",\"Use only <u>one</u> word in each gap.\",\"There is an example at the beginning.\"]","wordList":"{}","textTitle":"LOST WALLET RETURNED","example":"his","text":"<p>Hunter Shamatt had just arrived in Las Vegas when he realized he had lost (0) wallet. It contained $60, a $400 paycheck, his bank card and his identification card. He was very upset, but he didn’t want to make a big deal of it because it (17) his sister’s wedding weekend. He thought he might have lost it on his Frontier flight from Omaha to Vegas, so he</p><p>called the airline and reported (18) missing. No luck.</p><p></p><p>After the wedding, a package arrived (19) his home. It contained his wallet — completely intact — with a note (20) said: “Hunter, I found this on a Frontier flight from Omaha to Vegas – row 12, under seat F. Thought you might want it back. All the (21) , Todd.”</p><p></p><p>And below that: “P.S. I rounded your cash up to an even $100 so you could celebrate getting your wallet back. Have Fun!!!”</p><p></p><p>It took Hunter Shamatt a few minutes to believe (22) the note said. He wanted to thank the kind stranger, so he posted a picture (23) the note on Facebook with a message asking (24) help to find Todd. Within days, he was in contact with the man, identified in local media reports as Todd Brown of Omaha.</p><p></p><p>Shamatt wrote Brown a heartfelt thank-you:</p><p></p><p>“Sir, what you’ve done for me is unheard of. I (25) expected to see my wallet again, let alone with $40 more. Thank you so much, I’ve got student loans and it makes all the difference.”</p>","text2":""}]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
