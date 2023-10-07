@@ -142,7 +142,7 @@ padding-top: 0;
   align-items: center;
 }
 
-.reading-matching .gap-container div:first-child {
+.half-sentence {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;

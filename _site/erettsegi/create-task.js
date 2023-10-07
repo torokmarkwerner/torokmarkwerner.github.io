@@ -53,7 +53,7 @@ function populateHTML(x) {
 
         for (i = 0; i < Object.keys(wordList).length; i++) {
             div = document.createElement("DIV");
-            div.innerHTML = Object.values(wordList)[i]
+            div.innerHTML = "<div>" + Object.values(wordList)[i] + "</div>"
             div.id = taskId + "-" + Object.keys(wordList)[i]
             div.classList.add("gap")
             div.classList.add(taskId)
