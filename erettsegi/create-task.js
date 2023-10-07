@@ -73,13 +73,13 @@ function populateHTML(x) {
     /* task.appendChild(h3) */
 
     if (type == "uoe-closed-gap-filling" || type == "reading-text") {
-        task.innerHTML = text.replace(/\(\d+\)/, "<span class='default-gap " + taskId + "'>" + example + "</span> ").replace(/\(\d+\)/g, "<span class='gap " + taskId + "'></span>")
+        task.innerHTML = text.replace(/\(\d+\)/, "<span class='default-gap " + taskId + "'>" + example + "</span>").replace(/\(\d+\)/g, "<span class='gap " + taskId + "'></span>")
     } else if (type == "uoe-word-transformation" || type == "uoe-free-gap-filling") {
-        task.innerHTML = text.replace(/\(\d+\)/, "<span class='default-gap'>" + example + "</span> ").replace(/\(\d+\)/g, "<input class='gap'> ")
+        task.innerHTML = text.replace(/\(\d+\)/, "<span class='default-gap'>" + example + "</span>").replace(/\(\d+\)/g, "<input class='gap'> ")
     } else if (type == "reading-dialogue") {
-        task.innerHTML = text.replace(/\(\d+\)/, "<div class='default-gap " + taskId + "'>" + example + "</div> ").replace(/\(\d+\)/g, "<div class='gap " + taskId + "'></div>")
+        task.innerHTML = text.replace(/\(\d+\)/, "<div class='default-gap " + taskId + "'>" + example + "</div>").replace(/\(\d+\)/g, "<div class='gap " + taskId + "'></div>")
     } else if (type == "reading-matching") {
-        task.innerHTML = text2.replace("<div class='gap'></div>", "<div class='default-gap " + taskId + "'>" + example + "</div> ").replace(/\<div class\=\'gap\'\>\<\/div\>/g, "<div class='gap " + taskId + "'></div>")
+        task.innerHTML = text2.replace("<div class='gap'></div>", "<div class='default-gap " + taskId + "'>" + example + "</div>").replace(/\<div class\=\'gap\'\>\<\/div\>/g, "<div class='gap " + taskId + "'></div>")
     } else if (type == "uoe-multiple-choice") {
         task.innerHTML = text.replace(/\(\d+\)/, "<select class='default-gap'></select>").replace(/\(\d+\)/g, "<select class='gap'></select>")
 
