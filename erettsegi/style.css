@@ -20,6 +20,7 @@ padding-top: 0;
   vertical-align: middle;
   font-family: inherit;
   font-size: inherit;
+  max-width: 100%;
 }
 
 .uoe-multiple-choice .default-gap {
@@ -243,6 +244,10 @@ padding-top: 0;
   height: -webkit-fit-content;
   height: fit-content;
   overflow-y: scroll;
+}
+
+.reading-free-gap-filling li {
+  padding: 0.5em 0 0.5em 0;
 }
 
 .word-list .gap {

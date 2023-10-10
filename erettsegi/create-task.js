@@ -76,6 +76,8 @@ function populateHTML(x) {
         task.innerHTML = text.replace(/\(\d+\)/, "<span class='default-gap " + taskId + "'>" + example + "</span>").replace(/\(\d+\)/g, "<span class='gap " + taskId + "'></span>")
     } else if (type == "uoe-word-transformation" || type == "uoe-free-gap-filling") {
         task.innerHTML = text.replace(/\(\d+\)/, "<span class='default-gap'>" + example + "</span>").replace(/\(\d+\)/g, "<input class='gap'> ")
+    } else if (type == "reading-free-gap-filling") {
+        task.innerHTML = text2.replace(/\(\d+\)/, "<span class='default-gap'>" + example + "</span>").replace(/\(\d+\)/g, "<input class='gap'>")
     } else if (type == "reading-dialogue" || type == "reading-headings") {
         task.innerHTML = text.replace(/\(\d+\)/, "<div class='default-gap " + taskId + "'>" + example + "</div>").replace(/\(\d+\)/g, "<div class='gap " + taskId + "'></div>")
     } else if (type == "reading-matching") {
@@ -118,7 +120,7 @@ function populateHTML(x) {
 
     /* task.appendChild(div) */
 
-    if (["reading-matching", "reading-true-or-false"].includes(type)) {
+    if (["reading-matching", "reading-true-or-false", "reading-free-gap-filling"].includes(type)) {
 
         taskBody.appendChild(h3)
 

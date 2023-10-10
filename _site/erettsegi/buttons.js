@@ -16,7 +16,7 @@ function checkAnswers(tid) {
 
     for (i = 0; i < taskGaps.length; i++) {
 
-        if (type == "uoe-word-transformation" || type == "uoe-free-gap-filling") {
+        if (type == "uoe-word-transformation" || type == "uoe-free-gap-filling" || type == "reading-free-gap-filling") {
             taskGaps[i].classList.remove("incorrect");
 
             if (!(taskGaps[i].disabled) && taskGaps[i].value.toLowerCase() != "" && (taskGaps[i].value.toLowerCase() == solutions[i] || solutions[i].includes(taskGaps[i].value.toLowerCase()) == true)) {
@@ -109,7 +109,7 @@ function showAnswers(tid) {
 
 
     for (i = 0; i < taskGaps.length; i++) {
-        if (type == "uoe-word-transformation" || type == "uoe-free-gap-filling") {
+        if (type == "uoe-word-transformation" || type == "uoe-free-gap-filling" || type == "reading-free-gap-filling") {
             taskGaps[i].value = solutions[i].toString().replaceAll(",", " / ");
             taskGaps[i].disabled = true;
             taskGaps[i].classList.add("gap-disabled");
