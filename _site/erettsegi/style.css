@@ -219,7 +219,10 @@ padding-top: 0;
 
 .reading-dialogue .gap,
 .reading-dialogue .gap-disabled,
-.reading-dialogue .default-gap {
+.reading-dialogue .default-gap,
+.reading-headings .gap,
+.reading-headings .gap-disabled,
+.reading-headings .default-gap {
   display: block;
   margin: 0.5em 0;
   min-width: 15em;
@@ -233,7 +236,8 @@ padding-top: 0;
 }
 
 .reading-dialogue .word-list,
-.reading-text .word-list {
+.reading-text .word-list,
+.reading-headings .word-list {
   max-height: 40vh;
   height: -moz-fit-content;
   height: -webkit-fit-content;
