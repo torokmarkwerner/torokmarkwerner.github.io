@@ -466,5 +466,41 @@
         "example": "island",
         "text": "<p>Queensland’s latest tourism campaign is offering job seekers a fantastic opportunity on the Great Barrier Reef in Queensland, Australia.</p><p><i>Tourism Queensland</i> is looking for applicants willing to walk white sandy beaches, sit under palm trees and swim with turtles as they soak up the sun. The successful candidate will be asked to keep a blog and photo diary in exchange for living on Hamilton Island, and a $150,000 monthly paycheck for half a year. According to the job advertisement, applicants must be willing to “swim, snorkel, make friends with locals and generally enjoy the tropical Queensland climate and lifestyle.”</p><p></p><p>The “island caretaker” position was created as part of a $1.7 million marketing strategy by <i>Tourism Queensland</i> to boost tourism on the island. Australian Marketing Institute president Roger James said the campaign was an interesting idea. “The goal is to find someone who is able to write interesting blog entries, post inspiring videos weekly, and show their followers that Queensland is worth visiting.”</p><p>The winning candidate must be a good swimmer, excellent communicator, be able to speak and write English, have an adventurous attitude, enjoy snorkelling and/or diving and be willing to try new things. The job includes free accommodation in a three-bedroom home on Hamilton Island with an amazing view of the sea.</p><p></p><p></p><p>(https://www.traveller.com.au)</p>",
         "text2": "<ol start='0'><li><i>Tourism Queensland</i> is looking for a(n) (0) caretaker on the Great Barrier Reef in Australia.</li><li>The job involves sunbathing and (22) in the sea.</li><li>The person who gets the job will have to write a(n) (23) about their adventures in Queensland.</li><li>The duration of the job is (24) months.</li><li>The island caretaker has to have a level of (25) good enough to communicate with locals.</li><li>The caretaker will have to share videos once a (26).</li><li>The person who gets the job will stay in a house for (27).</li></ol>"
+    },
+    {
+        "taskId": "standard-20okt-uoe-1",
+        "type": "uoe-word-transformation",
+        "solutions": "[\"exhausted\",\"difference\",\"first\",\"unfriendly\",\"annoying\",\"reply\",\"hard\",\"calmly\"]",
+        "taskTitle": "Task 1",
+        "instructions": "[\"You are going to read a joke about a father explaining words to his daughter.\",\"Use the words in brackets to form the words that fit in the gaps.\",\"There might be cases when you do not have to change the word in brackets.\",\"Use only one word for each gap.\",\"There is an example at the beginning.\"]",
+        "wordList": "{}",
+        "textTitle": "ANGRY OR FURIOUS?",
+        "example": "final",
+        "text": "<p>A young girl was preparing for her (0) <b>(finish)</b> exam. One day she came home (1) <b>(exhaust)</b> and asked her father, “Dad, what is the (2) <b>(differ)</b></p><p>between anger and fury?&quot; </p><p>The father replied, “The second is much stronger than the (3) <b>(one)</b>. Let me show you …”</p><p>The father went to the telephone and dialled a number at random. To the man who answered the phone, he said, “Hello, is Melvin there?”</p><p>A rather (4) <b>(friendly)</b> male voice answered, “There is no Melvin here. Check that number again!”</p><p>“See,” said the father to his daughter. “That man was not really happy with our call. He was probably busy, and found our call a bit (5) <b>(annoy)</b>. Now watch ...”</p><p>The father dialled the same number again. “Hello, is Melvin there?” asked the father. “Now look here!” came the heated (6) <b>(reply)</b>. “I’ve just told you that there is no Melvin here! Leave me alone!” The receiver was slammed down (7) <b>(hard)</b>.</p><p>The father turned to his daughter and said, “You see, that was anger. Now I’ll show you what fury means.”</p><p>He dialled the same number, and a violent voice shouted, “HELLO!”</p><p>The father (8) <b>(calm)</b> said, “Hello, this is Melvin. Have there been any calls for me?”</p><p>(http://jokestop.net)</p>",
+        "text2": ""
+    },
+    {
+        "taskId": "standard-20okt-uoe-2",
+        "type": "uoe-closed-gap-filling",
+        "solutions": "[\"D\",\"K\",\"B\",\"G\",\"H\",\"M\",\"F\",\"L\"]",
+        "taskTitle": "Task 2",
+        "instructions": "[\"You are going to read an article about a young boy who is planning his first business.\",\"Your task is to choose the most appropriate word from the list for each gap in the text.\",\"Each word can be used once.\",\"There is an example at the beginning.\",\"Remember that there are <u>three extra words</u> you do not need.\"]",
+        "wordList": "{\"A\":\"AS\",\"E\":\"HOW\",\" I\":\"LOCK\",\"B\":\"DECISIONS\",\"F\":\"KEY\",\"K\":\"NUMBERS\",\"G\":\"LACK\",\"L\":\"SLEEP\",\"D\":\"DOUBT\",\"H\":\"LIKE\",\"M\":\"WHAT\"}",
+        "textTitle": "BOY’S LETTER TO QANTAS BOSS",
+        "example": "ALREADY",
+        "text": "<p>Alex Jacquot may be only 10, but he has (0) learned one important lesson in business: when you are in (9), ask for advice. The Sydney schoolboy has big plans for his future airline “Oceania</p><p>Express”. He’s creating flight (10) and making important (11) about staff. He has already appointed his classmate Wolf his “vice-president”. Jacquot did not let his (12) of experience slow him down; he wrote a letter to Alan Joyce, chief executive of Qantas, the oldest airline in Australia, asking for advice on how to build his company further. (13) any smart businessman, Jacquot kept it short and sweet. “Please take me seriously,” he wrote. “I like working on my airline. Now, in the school holidays, I have more time to work. But I cannot think of anything else to do. Do you have any ideas of (14) I could do?” The boy is planning a nonstop flight from Sydney to London, and he knows that passenger comfort will be the (15) to Oceania Express’s success. “As it is a 25-hour flight, we are having a lot of trouble thinking about how passengers will (16),” Jacquot wrote. “Do you have any advice?”</p><p>(https://www.washingtonpost.com/)</p>",
+        "text2": ""
+    },
+    {
+        "taskId": "standard-20okt-uoe-3",
+        "type": "uoe-free-gap-filling",
+        "solutions": "[[\"has\"],[\"than\"],[\"on\",\"around\"],[\"never\",\"not\",\"hardly\"],[\"spend\",\"expend\"],[\"to\"],[\"as\",\"being\"],[\"because\"],[\"look\"]]",
+        "taskTitle": "Task 3",
+        "instructions": "[\"You are going to read about a street musician and his cat Bob.\",\"Some words are missing from the text.\",\"Your task is to fill in the gaps.\",\"Use only one word in each gap.\",\"There is an example at the beginning.\"]",
+        "wordList": "{}",
+        "textTitle": "HOMELESS MAN AND CAT WHO SAVED HIM",
+        "example": "from",
+        "text": "<p>James Bowen and his cat Bob became world famous after James wrote a story about how the animal rescued him (0) a life of homelessness and drug addiction.</p><p></p><p>Since then James Bowen (17) become a successful writer. His eight books, including the first, A Street Cat Named Bob, have sold nine million copies in more (18) 40 languages. The film adaptation won Best British Film in 2017 and is based (19) James and Bob’s relationship.</p><p>James will (20) forget the day when the injured stray cat turned up in the hallway outside his room in Tottenham, in spring 2007. James decided to (21) his last £30 on a visit to the vet to treat the cat’s injured leg. In that period, James Bowen’s world was a mess. His only aim in life was (22) survive – and keep off drugs. He earned some money</p><p>(23) a street musician. While he was playing, Bob was sitting in the guitar case.</p><p></p><p>‘It was only (24) of Bob that I changed my life,’ he says. ‘I had to be responsible as he needed me to (25) after him. Everything positive in my life started with him.’</p><p>(https://metro.co.uk)</p>",
+        "text2": ""
     }
 ]
