@@ -150,6 +150,7 @@ h2 {
     flex: 0 0 30%;
     justify-content: center;
     text-align: center;
+    padding: 0.5em;
 }
 
 .task {
