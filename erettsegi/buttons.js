@@ -28,7 +28,7 @@ function checkAnswers(tid) {
                 taskGaps[i].classList.add("incorrect")
             }
 
-        } else if (type == "uoe-closed-gap-filling" || type == "reading-dialogue" || type == "reading-headings" || type == "reading-text" || type == "reading-matching") {
+        } else if (type == "uoe-closed-gap-filling" || type == "reading-dialogue" || type == "reading-paragraphs" || type == "reading-headings" || type == "reading-text" || type == "reading-matching") {
             taskGaps[i].classList.remove("incorrect");
             if (!(taskGaps[i].classList.contains("correct")) && taskGaps[i].id.replace((tid + "-"), "") == solutions[i] && !(taskGaps[i].classList.contains("gap-disabled"))) {
                 taskGaps[i].classList.add("gap-disabled", "correct");
@@ -117,7 +117,7 @@ function showAnswers(tid) {
             taskGaps[i].style.width = taskGaps[i].value.length + "ch";
             taskGaps[i].replaceWith(taskGaps[i].cloneNode(true));
 
-        } else if (type == "uoe-closed-gap-filling" || type == "reading-dialogue" || type == "reading-headings" || type == "reading-text" || type == "reading-matching") {
+        } else if (type == "uoe-closed-gap-filling" || type == "reading-dialogue" || type == "reading-paragraphs" || type == "reading-headings" || type == "reading-text" || type == "reading-matching") {
             taskGaps[i].innerHTML = Array.from(wordListGaps).find(x => x.id == (tid + "-" + solutions[i])).innerHTML;
             taskGaps[i].classList.add("gap-disabled");
             taskGaps[i].classList.remove("gap", "incorrect");
