@@ -21,7 +21,6 @@ function checkAnswers(tid) {
 
             if (!(taskGaps[i].disabled) && taskGaps[i].value.toLowerCase() != "" && (taskGaps[i].value.toLowerCase() == solutions[i] || solutions[i].includes(taskGaps[i].value.toLowerCase()) == true)) {
                 taskGaps[i].classList.add("correct", "gap-disabled")
-                taskGaps[i].classList.remove("gap")
                 taskGaps[i].disabled = true
                 score[tid]["current"]++;
             } else if (!(taskGaps[i].disabled)) {
@@ -32,7 +31,6 @@ function checkAnswers(tid) {
             taskGaps[i].classList.remove("incorrect");
             if (!(taskGaps[i].classList.contains("correct")) && taskGaps[i].id.replace((tid + "-"), "") == solutions[i] && !(taskGaps[i].classList.contains("gap-disabled"))) {
                 taskGaps[i].classList.add("gap-disabled", "correct");
-                taskGaps[i].classList.remove("gap");
                 taskGaps[i].replaceWith(taskGaps[i].cloneNode(true));
                 score[tid]["current"]++;
             } else {
