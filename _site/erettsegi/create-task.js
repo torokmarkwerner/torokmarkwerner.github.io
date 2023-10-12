@@ -106,6 +106,28 @@ function populateHTML(x) {
 
 
 
+    } else if (type == "reading-multiple-choice") {
+
+      task.innerHTML = text2.replace(/\(\d+\)/, "<select class='default-gap'></select>").replace(/\(\d+\)/g, "<select class='gap'></select>")
+
+        for (i = 0; i < task.querySelectorAll("select").length; i++) {
+            select = task.querySelectorAll("select")[i]
+            optionDefault = document.createElement("OPTION");
+            optionDefault.style.display = "none"
+            select.appendChild(optionDefault)
+            for (z = 0; z < Object.keys(wordList).length; z++) {
+                option = document.createElement("OPTION");
+                option.value = Object.keys(wordList)[z]
+                option.innerHTML = Object.values(wordList)[z]
+                if (i == 0 && option.innerHTML == example) {
+                    option.selected = true
+                } else if (i == 0) {
+                    option.disabled = true
+                }
+                select.appendChild(option)
+            }
+        }
+
     } else {
         /*type == "reading-true-or-false"*/
         task.innerHTML = text2;
@@ -120,7 +142,7 @@ function populateHTML(x) {
 
     /* task.appendChild(div) */
 
-    if (["reading-matching", "reading-true-or-false", "reading-free-gap-filling"].includes(type)) {
+    if (["reading-matching", "reading-true-or-false", "reading-free-gap-filling", "reading-multiple-choice"].includes(type)) {
 
         taskBody.appendChild(h3)
 
@@ -128,7 +150,7 @@ function populateHTML(x) {
         taskText.innerHTML = text;
         taskBody.appendChild(taskText);
     
-            if (Object.keys(wordList).length > 0) {
+            if (Object.keys(wordList).length > 0 && type != "reading-multiple-choice") {
             taskBody.appendChild(wordListContainer)
         }
 

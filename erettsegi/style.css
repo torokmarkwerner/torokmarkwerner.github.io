@@ -23,25 +23,31 @@ h2 {
     max-width: 100%;
 }
 
-.uoe-multiple-choice .default-gap {
+.uoe-multiple-choice .default-gap,
+.reading-multiple-choice .default-gap {
     color: white;
     background-color: black;
     opacity: 1;
 }
 
-.uoe-multiple-choice option:disabled {
+.uoe-multiple-choice option:disabled,
+.reading-multiple-choice option:disabled  {
     background-color: white;
     color: black;
 }
 
-.uoe-multiple-choice select[disabled] {
+.uoe-multiple-choice select[disabled],
+.reading-multiple-choice select[disabled] {
     color: inherit;
     opacity: 1;
 }
 
 .uoe-multiple-choice .gap,
 .uoe-multiple-choice .gap-disabled,
-.uoe-multiple-choice .default-gap {
+.uoe-multiple-choice .default-gap,
+.reading-multiple-choice .gap,
+.reading-multiple-choice .gap-disabled,
+.reading-multiple-choice .default-gap {
     vertical-align: baseline;
     padding: 0;
 }

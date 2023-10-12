@@ -36,7 +36,7 @@ function checkAnswers(tid) {
             } else {
                 taskGaps[i].classList.add("incorrect")
             }
-        } else if (type == "uoe-multiple-choice") {
+        } else if (type == "uoe-multiple-choice" || type == "reading-multiple-choice") {
             if (taskGaps[i].value == solutions[i] && !taskGaps[i].classList.contains("gap-disabled")) {
                 taskGaps[i].classList.remove("incorrect")
                 taskGaps[i].classList.add("correct")
@@ -120,7 +120,7 @@ function showAnswers(tid) {
             taskGaps[i].classList.add("gap-disabled");
             taskGaps[i].classList.remove("gap", "incorrect");
             taskGaps[i].replaceWith(taskGaps[i].cloneNode(true));
-        } else if (type == "uoe-multiple-choice") {
+        } else if (type == "uoe-multiple-choice" || type == "reading-multiple-choice") {
             taskGaps[i].value = solutions[i];
             taskGaps[i].classList.remove("incorrect", "correct")
             taskGaps[i].classList.add("gap-disabled")
