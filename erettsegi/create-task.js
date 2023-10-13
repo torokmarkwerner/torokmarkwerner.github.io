@@ -74,14 +74,16 @@ function populateHTML(x) {
 
     if (type == "uoe-closed-gap-filling" || type == "reading-text") {
         task.innerHTML = text.replace(/\(\d+\)/, "<span class='default-gap " + taskId + "'>" + example + "</span>").replace(/\(\d+\)/g, "<span class='gap " + taskId + "'></span>")
-    } else if (type == "uoe-word-transformation" || type == "uoe-free-gap-filling") {
+    } else if (type == "uoe-word-transformation" || type == "uoe-jumbled-up-sentences" || type == "uoe-sentence-transformation" || type == "uoe-free-gap-filling" || type == "reading-summary") {
         task.innerHTML = text.replace(/\(\d+\)/, "<span class='default-gap'>" + example + "</span>").replace(/\(\d+\)/g, "<input class='gap'>")
     } else if (type == "reading-free-gap-filling") {
         task.innerHTML = text2.replace(/\(\d+\)/, "<span class='default-gap'>" + example + "</span>").replace(/\(\d+\)/g, "<input class='gap'>")
     } else if (type == "reading-dialogue" || type == "reading-headings" || type == "reading-paragraphs") {
         task.innerHTML = text.replace(/\(\d+\)/, "<div class='default-gap " + taskId + "'>" + example + "</div>").replace(/\(\d+\)/g, "<div class='gap " + taskId + "'></div>")
-    } else if (type == "reading-matching") {
+    } else if (type == "reading-half-sentences") {
         task.innerHTML = text2.replace("<div class='gap'></div>", "<div class='default-gap " + taskId + "'>" + example + "</div>").replace(/\<div class\=\'gap\'\>\<\/div\>/g, "<div class='gap " + taskId + "'></div>")
+    } else if (type == "reading-matching") {
+        task.innerHTML = text.replace(/\(\d+\)/, "<div>" + text2 + " <span class='default-gap " + taskId + "'>" + example + "</span>" + "</div>").replace(/\(\d+\)/g, "<div>" + text2 + " <span class='gap " + taskId + "'></span>" + "</div>")
     } else if (type == "uoe-multiple-choice") {
         task.innerHTML = text.replace(/\(\d+\)/, "<select class='default-gap'></select>").replace(/\(\d+\)/g, "<select class='gap'></select>")
 
@@ -142,7 +144,7 @@ function populateHTML(x) {
 
     /* task.appendChild(div) */
 
-    if (["reading-matching", "reading-true-or-false", "reading-free-gap-filling", "reading-multiple-choice"].includes(type)) {
+    if (["reading-half-sentences", "reading-true-or-false", "reading-free-gap-filling", "reading-multiple-choice"].includes(type)) {
 
         taskBody.appendChild(h3)
 
@@ -210,7 +212,7 @@ buttonContainer.classList.add("button-container");
 
     document.getElementById("content-container").appendChild(taskBody);
 
-    if (type == "reading-matching") {
+    if (type == "reading-half-sentences") {
         taskGaps = document.getElementById(taskId).querySelectorAll(".task > div > .gap")
     } else if (type == "reading-true-or-false") {
         taskGaps = document.getElementById(taskId).querySelectorAll(".radio-container:not(.default)")
@@ -235,9 +237,10 @@ buttonContainer.classList.add("button-container");
                     gap.id = this.id
                     gap.addEventListener("click", function() { pickAnswer(this, x.taskId) });
                     document.getElementById(x.taskId).getElementsByClassName("word-list")[0].appendChild(gap);
+                    isVisibleThen(x.taskId);
                     this.innerHTML = "";
                     this.removeAttribute("id")
-                    if (type == "reading-text") {
+                    if (["reading-text","reading-matching"].includes(type)) {
                         this.style.display = "inline-block";
                         this.style.verticalAlign = "middle"
                     }

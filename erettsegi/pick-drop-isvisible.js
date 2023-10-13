@@ -15,7 +15,7 @@ type = jsonData.find(task => task.taskId == id).type
    
 if (picked > "" && picked.classList.contains(id)) {
     isVisibleThen(id)
-    if (type == "reading-text") {
+    if (["reading-text","reading-matching"].includes(type)) {
         el.style.display = "inline";
         el.style.verticalAlign = "baseline";
     }

@@ -229,9 +229,174 @@
   
     
     <url>
+      <loc>http://localhost:4000/erettsegi/standard/05maj/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/05okt/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/06feb/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/06maj/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/06okt/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/07maj/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/07okt/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/08maj/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/08okt/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/09maj/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/09okt/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
       <loc>http://localhost:4000/erettsegi/standard/10maj/</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -246,7 +411,7 @@
     <url>
       <loc>http://localhost:4000/erettsegi/standard/10okt/</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -261,7 +426,7 @@
     <url>
       <loc>http://localhost:4000/erettsegi/standard/11maj/</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -276,7 +441,7 @@
     <url>
       <loc>http://localhost:4000/erettsegi/standard/11okt/</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -291,7 +456,7 @@
     <url>
       <loc>http://localhost:4000/erettsegi/standard/12maj/</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -306,7 +471,7 @@
     <url>
       <loc>http://localhost:4000/erettsegi/standard/12okt/</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -321,7 +486,7 @@
     <url>
       <loc>http://localhost:4000/erettsegi/standard/13maj/</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -336,7 +501,7 @@
     <url>
       <loc>http://localhost:4000/erettsegi/standard/13okt/</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -351,7 +516,7 @@
     <url>
       <loc>http://localhost:4000/erettsegi/standard/14maj/</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -366,7 +531,7 @@
     <url>
       <loc>http://localhost:4000/erettsegi/standard/14okt/</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -381,7 +546,7 @@
     <url>
       <loc>http://localhost:4000/erettsegi/standard/15maj/</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -396,7 +561,7 @@
     <url>
       <loc>http://localhost:4000/erettsegi/standard/15okt/</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -411,7 +576,7 @@
     <url>
       <loc>http://localhost:4000/erettsegi/standard/16maj/</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -426,7 +591,7 @@
     <url>
       <loc>http://localhost:4000/erettsegi/standard/16okt/</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -441,7 +606,7 @@
     <url>
       <loc>http://localhost:4000/erettsegi/standard/17maj/</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -456,7 +621,7 @@
     <url>
       <loc>http://localhost:4000/erettsegi/standard/17okt/</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -471,7 +636,7 @@
     <url>
       <loc>http://localhost:4000/erettsegi/standard/18maj/</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -486,7 +651,7 @@
     <url>
       <loc>http://localhost:4000/erettsegi/standard/18okt/</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -501,7 +666,7 @@
     <url>
       <loc>http://localhost:4000/erettsegi/standard/19maj/</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -516,7 +681,7 @@
     <url>
       <loc>http://localhost:4000/erettsegi/standard/19maj/</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -531,7 +696,7 @@
     <url>
       <loc>http://localhost:4000/erettsegi/standard/19okt/</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -546,7 +711,7 @@
     <url>
       <loc>http://localhost:4000/erettsegi/standard/20maj/</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -561,7 +726,7 @@
     <url>
       <loc>http://localhost:4000/erettsegi/standard/20okt/</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -576,7 +741,7 @@
     <url>
       <loc>http://localhost:4000/erettsegi/standard/21maj/</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -591,7 +756,7 @@
     <url>
       <loc>http://localhost:4000/erettsegi/standard/21okt/</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -606,7 +771,7 @@
     <url>
       <loc>http://localhost:4000/erettsegi/standard/22maj/</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -621,7 +786,7 @@
     <url>
       <loc>http://localhost:4000/erettsegi/standard/22okt/</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -636,7 +801,7 @@
     <url>
       <loc>http://localhost:4000/erettsegi/standard/23maj/</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -663,7 +828,7 @@
     <url>
       <loc>http://localhost:4000/about/</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -696,7 +861,7 @@
     <url>
       <loc>http://localhost:4000/blog/</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -717,7 +882,7 @@
     <url>
       <loc>http://localhost:4000/contact/</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -746,7 +911,7 @@
     <url>
       <loc>http://localhost:4000/erettsegi/</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -763,7 +928,7 @@
     <url>
       <loc>http://localhost:4000/projects/friendly-feud</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -778,7 +943,7 @@
     <url>
       <loc>http://localhost:4000/projects/gap-filling-generator</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -801,7 +966,7 @@
     <url>
       <loc>http://localhost:4000/h-p-fanfiction/</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -816,7 +981,7 @@
     <url>
       <loc>http://localhost:4000/projects/hangman/hangman-top-100.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -831,7 +996,7 @@
     <url>
       <loc>http://localhost:4000/projects/hangman</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -846,7 +1011,7 @@
     <url>
       <loc>http://localhost:4000/erettsegi/higher/</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -867,7 +1032,7 @@
     <url>
       <loc>http://localhost:4000/</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -912,7 +1077,7 @@
     <url>
       <loc>http://localhost:4000/projects/point-and-click</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -931,7 +1096,7 @@
     <url>
       <loc>http://localhost:4000/posts.json</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -948,7 +1113,7 @@
     <url>
       <loc>http://localhost:4000/projects/</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -965,24 +1130,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/14okt/reading/reading-1.html</loc>
+      <loc>http://localhost:4000/erettsegi/standard/18maj/reading/reading-1.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/23maj/reading/reading-1.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -995,144 +1145,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/19maj/reading/reading-1.html</loc>
+      <loc>http://localhost:4000/erettsegi/standard/09okt/reading/reading-1.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/17okt/reading/reading-1.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/12maj/reading/reading-1.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/15okt/reading/reading-1.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/15maj/reading/reading-1.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/21okt/reading/reading-1.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/13maj/reading/reading-1.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/18okt/reading/reading-1.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/10maj/reading/reading-1.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/22okt/reading/reading-1.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -1147,7 +1162,7 @@
     <url>
       <loc>http://localhost:4000/erettsegi/standard/10okt/reading/reading-1.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -1160,24 +1175,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/19okt/reading/reading-1.html</loc>
+      <loc>http://localhost:4000/erettsegi/standard/14okt/reading/reading-1.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/16maj/reading/reading-1.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -1190,24 +1190,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/11okt/reading/reading-1.html</loc>
+      <loc>http://localhost:4000/erettsegi/standard/23maj/reading/reading-1.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/17maj/reading/reading-1.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -1220,24 +1205,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/21maj/reading/reading-1.html</loc>
+      <loc>http://localhost:4000/erettsegi/standard/22okt/reading/reading-1.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/11maj/reading/reading-1.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -1250,9 +1220,24 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/13okt/reading/reading-1.html</loc>
+      <loc>http://localhost:4000/erettsegi/standard/19maj/reading/reading-1.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/17okt/reading/reading-1.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -1267,7 +1252,7 @@
     <url>
       <loc>http://localhost:4000/erettsegi/standard/14maj/reading/reading-1.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -1280,24 +1265,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/18maj/reading/reading-1.html</loc>
+      <loc>http://localhost:4000/erettsegi/standard/15maj/reading/reading-1.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/20okt/reading/reading-1.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -1310,9 +1280,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/16okt/reading/reading-1.html</loc>
+      <loc>http://localhost:4000/erettsegi/standard/13okt/reading/reading-1.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -1325,9 +1295,24 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/20maj/reading/reading-1.html</loc>
+      <loc>http://localhost:4000/erettsegi/standard/06feb/reading/reading-1.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/11maj/reading/reading-1.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -1342,7 +1327,292 @@
     <url>
       <loc>http://localhost:4000/erettsegi/standard/22maj/reading/reading-1.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/19okt/reading/reading-1.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/05okt/reading/reading-1.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/06maj/reading/reading-1.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/10maj/reading/reading-1.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/06okt/reading/reading-1.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/17maj/reading/reading-1.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/08okt/reading/reading-1.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/11okt/reading/reading-1.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/13maj/reading/reading-1.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/21okt/reading/reading-1.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/15okt/reading/reading-1.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/07maj/reading/reading-1.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/08maj/reading/reading-1.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/16okt/reading/reading-1.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/16maj/reading/reading-1.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/09maj/reading/reading-1.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/12maj/reading/reading-1.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/18okt/reading/reading-1.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/21maj/reading/reading-1.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -1357,7 +1627,7 @@
     <url>
       <loc>http://localhost:4000/erettsegi/standard/12okt/reading/reading-1.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -1370,9 +1640,54 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/20maj/reading/reading-2.html</loc>
+      <loc>http://localhost:4000/erettsegi/standard/20maj/reading/reading-1.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/20okt/reading/reading-1.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/05maj/reading/reading-1.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/07okt/reading/reading-1.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -1387,52 +1702,7 @@
     <url>
       <loc>http://localhost:4000/erettsegi/standard/16okt/reading/reading-2.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/13okt/reading/reading-2.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/20okt/reading/reading-2.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/14maj/reading/reading-2.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -1447,307 +1717,7 @@
     <url>
       <loc>http://localhost:4000/erettsegi/standard/21maj/reading/reading-2.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/17maj/reading/reading-2.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/16maj/reading/reading-2.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/19okt/reading/reading-2.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/10okt/reading/reading-2.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/11okt/reading/reading-2.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/15okt/reading/reading-2.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/19maj/reading/reading-2.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/13maj/reading/reading-2.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/21okt/reading/reading-2.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/17okt/reading/reading-2.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/10maj/reading/reading-2.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/15maj/reading/reading-2.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/14okt/reading/reading-2.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/12maj/reading/reading-2.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/22okt/reading/reading-2.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/18okt/reading/reading-2.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/22maj/reading/reading-2.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/23maj/reading/reading-2.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/18maj/reading/reading-2.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/11maj/reading/reading-2.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -1762,7 +1732,7 @@
     <url>
       <loc>http://localhost:4000/erettsegi/standard/12okt/reading/reading-2.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -1775,24 +1745,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/16okt/reading/reading-3.html</loc>
+      <loc>http://localhost:4000/erettsegi/standard/06okt/reading/reading-2.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/18maj/reading/reading-3.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -1805,24 +1760,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/16maj/reading/reading-3.html</loc>
+      <loc>http://localhost:4000/erettsegi/standard/07okt/reading/reading-2.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/14okt/reading/reading-3.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -1835,24 +1775,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/10okt/reading/reading-3.html</loc>
+      <loc>http://localhost:4000/erettsegi/standard/12maj/reading/reading-2.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/12okt/reading/reading-3.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -1865,24 +1790,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/23maj/reading/reading-3.html</loc>
+      <loc>http://localhost:4000/erettsegi/standard/20okt/reading/reading-2.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/18okt/reading/reading-3.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -1895,24 +1805,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/14maj/reading/reading-3.html</loc>
+      <loc>http://localhost:4000/erettsegi/standard/05maj/reading/reading-2.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/12maj/reading/reading-3.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -1925,24 +1820,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/20okt/reading/reading-3.html</loc>
+      <loc>http://localhost:4000/erettsegi/standard/17maj/reading/reading-2.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/15okt/reading/reading-3.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -1955,24 +1835,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/21okt/reading/reading-3.html</loc>
+      <loc>http://localhost:4000/erettsegi/standard/16maj/reading/reading-2.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/22maj/reading/reading-3.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -1985,9 +1850,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/17okt/reading/reading-3.html</loc>
+      <loc>http://localhost:4000/erettsegi/standard/11okt/reading/reading-2.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -2000,9 +1865,399 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/15maj/reading/reading-3.html</loc>
+      <loc>http://localhost:4000/erettsegi/standard/13maj/reading/reading-2.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/06maj/reading/reading-2.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/08maj/reading/reading-2.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/17okt/reading/reading-2.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/20maj/reading/reading-2.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/15okt/reading/reading-2.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/21okt/reading/reading-2.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/11maj/reading/reading-2.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/08okt/reading/reading-2.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/13okt/reading/reading-2.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/23maj/reading/reading-2.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/18maj/reading/reading-2.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/19okt/reading/reading-2.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/15maj/reading/reading-2.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/10okt/reading/reading-2.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/05okt/reading/reading-2.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/09maj/reading/reading-2.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/22maj/reading/reading-2.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/14maj/reading/reading-2.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/06feb/reading/reading-2.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/18okt/reading/reading-2.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/09okt/reading/reading-2.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/10maj/reading/reading-2.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/14okt/reading/reading-2.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/19maj/reading/reading-2.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/22okt/reading/reading-2.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/07maj/reading/reading-2.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -2017,7 +2272,7 @@
     <url>
       <loc>http://localhost:4000/erettsegi/standard/19maj/reading/reading-3.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -2030,24 +2285,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/11maj/reading/reading-3.html</loc>
+      <loc>http://localhost:4000/erettsegi/standard/14okt/reading/reading-3.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/13maj/reading/reading-3.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -2060,54 +2300,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/20maj/reading/reading-3.html</loc>
+      <loc>http://localhost:4000/erettsegi/standard/18okt/reading/reading-3.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/11okt/reading/reading-3.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/13okt/reading/reading-3.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/22okt/reading/reading-3.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -2122,7 +2317,7 @@
     <url>
       <loc>http://localhost:4000/erettsegi/standard/10maj/reading/reading-3.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -2135,9 +2330,129 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/17maj/reading/reading-3.html</loc>
+      <loc>http://localhost:4000/erettsegi/standard/22maj/reading/reading-3.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/14maj/reading/reading-3.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/22okt/reading/reading-3.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/09maj/reading/reading-3.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/05okt/reading/reading-3.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/10okt/reading/reading-3.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/15maj/reading/reading-3.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/06feb/reading/reading-3.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/18maj/reading/reading-3.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -2152,7 +2467,232 @@
     <url>
       <loc>http://localhost:4000/erettsegi/standard/19okt/reading/reading-3.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/08okt/reading/reading-3.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/13okt/reading/reading-3.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/21okt/reading/reading-3.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/23maj/reading/reading-3.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/11maj/reading/reading-3.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/15okt/reading/reading-3.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/17okt/reading/reading-3.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/20maj/reading/reading-3.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/08maj/reading/reading-3.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/05maj/reading/reading-3.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/13maj/reading/reading-3.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/06maj/reading/reading-3.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/17maj/reading/reading-3.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/11okt/reading/reading-3.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/16maj/reading/reading-3.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -2167,7 +2707,7 @@
     <url>
       <loc>http://localhost:4000/erettsegi/standard/21maj/reading/reading-3.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -2180,24 +2720,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/17maj/reading/reading-4.html</loc>
+      <loc>http://localhost:4000/erettsegi/standard/07okt/reading/reading-3.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/22okt/reading/reading-4.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -2210,24 +2735,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/13maj/reading/reading-4.html</loc>
+      <loc>http://localhost:4000/erettsegi/standard/20okt/reading/reading-3.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/10maj/reading/reading-4.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -2240,24 +2750,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/21okt/reading/reading-4.html</loc>
+      <loc>http://localhost:4000/erettsegi/standard/12maj/reading/reading-3.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/15maj/reading/reading-4.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -2270,24 +2765,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/13okt/reading/reading-4.html</loc>
+      <loc>http://localhost:4000/erettsegi/standard/06okt/reading/reading-3.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/11okt/reading/reading-4.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -2300,9 +2780,54 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/20maj/reading/reading-4.html</loc>
+      <loc>http://localhost:4000/erettsegi/standard/09okt/reading/reading-3.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/07maj/reading/reading-3.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/16okt/reading/reading-3.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/12okt/reading/reading-3.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -2317,7 +2842,7 @@
     <url>
       <loc>http://localhost:4000/erettsegi/standard/16okt/reading/reading-4.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -2330,174 +2855,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/11maj/reading/reading-4.html</loc>
+      <loc>http://localhost:4000/erettsegi/standard/07maj/reading/reading-4.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/19maj/reading/reading-4.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/22maj/reading/reading-4.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/18maj/reading/reading-4.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/17okt/reading/reading-4.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/15okt/reading/reading-4.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/23maj/reading/reading-4.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/20okt/reading/reading-4.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/12okt/reading/reading-4.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/14maj/reading/reading-4.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/10okt/reading/reading-4.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/21maj/reading/reading-4.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -2512,7 +2872,67 @@
     <url>
       <loc>http://localhost:4000/erettsegi/standard/12maj/reading/reading-4.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/06okt/reading/reading-4.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/20okt/reading/reading-4.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/12okt/reading/reading-4.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/11okt/reading/reading-4.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -2527,7 +2947,7 @@
     <url>
       <loc>http://localhost:4000/erettsegi/standard/16maj/reading/reading-4.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -2540,9 +2960,189 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/14okt/reading/reading-4.html</loc>
+      <loc>http://localhost:4000/erettsegi/standard/07okt/reading/reading-4.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/17maj/reading/reading-4.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/21maj/reading/reading-4.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/06maj/reading/reading-4.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/13maj/reading/reading-4.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/20maj/reading/reading-4.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/11maj/reading/reading-4.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/05maj/reading/reading-4.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/08maj/reading/reading-4.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/15okt/reading/reading-4.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/17okt/reading/reading-4.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/21okt/reading/reading-4.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/23maj/reading/reading-4.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -2557,7 +3157,217 @@
     <url>
       <loc>http://localhost:4000/erettsegi/standard/19okt/reading/reading-4.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/13okt/reading/reading-4.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/10okt/reading/reading-4.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/06feb/reading/reading-4.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/08okt/reading/reading-4.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/10maj/reading/reading-4.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/18maj/reading/reading-4.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/15maj/reading/reading-4.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/14maj/reading/reading-4.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/22okt/reading/reading-4.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/19maj/reading/reading-4.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/05okt/reading/reading-4.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/09maj/reading/reading-4.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/22maj/reading/reading-4.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/14okt/reading/reading-4.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -2572,7 +3382,7 @@
     <url>
       <loc>http://localhost:4000/erettsegi/standard/18okt/reading/reading-4.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -2585,24 +3395,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/10okt/reading/</loc>
+      <loc>http://localhost:4000/erettsegi/standard/09okt/reading/reading-4.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/15okt/reading/</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -2615,294 +3410,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/10maj/reading/</loc>
+      <loc>http://localhost:4000/erettsegi/standard/05okt/reading/</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/14maj/reading/</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/21maj/reading/</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/16maj/reading/</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/13okt/reading/</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/15maj/reading/</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/20maj/reading/</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/11maj/reading/</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/19okt/reading/</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/16okt/reading/</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/13maj/reading/</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/21okt/reading/</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/19maj/reading/</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/17maj/reading/</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/14okt/reading/</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/11okt/reading/</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/18okt/reading/</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/23maj/reading/</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/12okt/reading/</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/17okt/reading/</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -2917,7 +3427,82 @@
     <url>
       <loc>http://localhost:4000/erettsegi/standard/22maj/reading/</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/18okt/reading/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/09maj/reading/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/14okt/reading/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/14maj/reading/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/09okt/reading/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -2932,37 +3517,7 @@
     <url>
       <loc>http://localhost:4000/erettsegi/standard/18maj/reading/</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/12maj/reading/</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/20okt/reading/</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -2977,7 +3532,442 @@
     <url>
       <loc>http://localhost:4000/erettsegi/standard/22okt/reading/</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/08okt/reading/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/10maj/reading/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/19maj/reading/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/21okt/reading/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/13okt/reading/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/15maj/reading/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/17okt/reading/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/08maj/reading/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/23maj/reading/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/10okt/reading/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/13maj/reading/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/19okt/reading/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/05maj/reading/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/06feb/reading/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/15okt/reading/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/11maj/reading/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/17maj/reading/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/21maj/reading/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/07okt/reading/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/06maj/reading/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/20maj/reading/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/12okt/reading/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/07maj/reading/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/11okt/reading/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/16maj/reading/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/16okt/reading/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/06okt/reading/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/12maj/reading/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/20okt/reading/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -3000,7 +3990,7 @@
     <url>
       <loc>http://localhost:4000/erettsegi/standard/</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -3017,7 +4007,7 @@
     <url>
       <loc>http://localhost:4000/projects/storyline-teaching</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -3040,7 +4030,7 @@
     <url>
       <loc>http://localhost:4000/projects/text-adventure</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -3059,268 +4049,13 @@
   
     
   
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/11okt/uoe/uoe-1.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
     
   
     
     <url>
       <loc>http://localhost:4000/erettsegi/standard/21okt/uoe/uoe-1.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/22maj/uoe/uoe-1.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/23maj/uoe/uoe-1.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/14maj/uoe/uoe-1.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/21maj/uoe/uoe-1.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/12maj/uoe/uoe-1.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/10okt/uoe/uoe-1.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/13okt/uoe/uoe-1.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/20okt/uoe/uoe-1.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/11maj/uoe/uoe-1.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/16okt/uoe/uoe-1.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/22okt/uoe/uoe-1.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/20maj/uoe/uoe-1.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/15maj/uoe/uoe-1.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/17maj/uoe/uoe-1.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/19okt/uoe/uoe-1.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/16maj/uoe/uoe-1.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -3335,7 +4070,7 @@
     <url>
       <loc>http://localhost:4000/erettsegi/standard/10maj/uoe/uoe-1.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -3348,9 +4083,54 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/12okt/uoe/uoe-1.html</loc>
+      <loc>http://localhost:4000/erettsegi/standard/07okt/uoe/uoe-1.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/10okt/uoe/uoe-1.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/11maj/uoe/uoe-1.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/11okt/uoe/uoe-1.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -3365,7 +4145,7 @@
     <url>
       <loc>http://localhost:4000/erettsegi/standard/19maj/uoe/uoe-1.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -3378,24 +4158,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/14okt/uoe/uoe-1.html</loc>
+      <loc>http://localhost:4000/erettsegi/standard/06feb/uoe/uoe-1.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/13maj/uoe/uoe-1.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -3408,9 +4173,84 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/18maj/uoe/uoe-1.html</loc>
+      <loc>http://localhost:4000/erettsegi/standard/22maj/uoe/uoe-1.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/07maj/uoe/uoe-1.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/05maj/uoe/uoe-1.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/12okt/uoe/uoe-1.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/19okt/uoe/uoe-1.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/20okt/uoe/uoe-1.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -3425,7 +4265,7 @@
     <url>
       <loc>http://localhost:4000/erettsegi/standard/18okt/uoe/uoe-1.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -3438,9 +4278,204 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/15okt/uoe/uoe-1.html</loc>
+      <loc>http://localhost:4000/erettsegi/standard/05okt/uoe/uoe-1.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/13maj/uoe/uoe-1.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/22okt/uoe/uoe-1.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/06okt/uoe/uoe-1.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/13okt/uoe/uoe-1.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/14maj/uoe/uoe-1.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/20maj/uoe/uoe-1.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/18maj/uoe/uoe-1.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/09okt/uoe/uoe-1.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/14okt/uoe/uoe-1.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/06maj/uoe/uoe-1.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/23maj/uoe/uoe-1.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/15maj/uoe/uoe-1.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/08okt/uoe/uoe-1.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -3455,7 +4490,7 @@
     <url>
       <loc>http://localhost:4000/erettsegi/standard/17okt/uoe/uoe-1.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -3468,24 +4503,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/21maj/uoe/uoe-2.html</loc>
+      <loc>http://localhost:4000/erettsegi/standard/08maj/uoe/uoe-1.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/18maj/uoe/uoe-2.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -3498,24 +4518,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/18okt/uoe/uoe-2.html</loc>
+      <loc>http://localhost:4000/erettsegi/standard/21maj/uoe/uoe-1.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/12okt/uoe/uoe-2.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -3528,24 +4533,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/22okt/uoe/uoe-2.html</loc>
+      <loc>http://localhost:4000/erettsegi/standard/15okt/uoe/uoe-1.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/17okt/uoe/uoe-2.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -3558,24 +4548,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/19maj/uoe/uoe-2.html</loc>
+      <loc>http://localhost:4000/erettsegi/standard/16maj/uoe/uoe-1.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/13maj/uoe/uoe-2.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -3588,24 +4563,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/12maj/uoe/uoe-2.html</loc>
+      <loc>http://localhost:4000/erettsegi/standard/17maj/uoe/uoe-1.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/17maj/uoe/uoe-2.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -3618,24 +4578,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/19okt/uoe/uoe-2.html</loc>
+      <loc>http://localhost:4000/erettsegi/standard/09maj/uoe/uoe-1.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/20maj/uoe/uoe-2.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -3648,9 +4593,24 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/10maj/uoe/uoe-2.html</loc>
+      <loc>http://localhost:4000/erettsegi/standard/12maj/uoe/uoe-1.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/16okt/uoe/uoe-1.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -3665,7 +4625,7 @@
     <url>
       <loc>http://localhost:4000/erettsegi/standard/16okt/uoe/uoe-2.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -3678,9 +4638,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/13okt/uoe/uoe-2.html</loc>
+      <loc>http://localhost:4000/erettsegi/standard/08maj/uoe/uoe-2.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -3695,22 +4655,7 @@
     <url>
       <loc>http://localhost:4000/erettsegi/standard/20okt/uoe/uoe-2.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/22maj/uoe/uoe-2.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -3725,7 +4670,7 @@
     <url>
       <loc>http://localhost:4000/erettsegi/standard/16maj/uoe/uoe-2.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -3738,24 +4683,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/14maj/uoe/uoe-2.html</loc>
+      <loc>http://localhost:4000/erettsegi/standard/17maj/uoe/uoe-2.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/11maj/uoe/uoe-2.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -3768,24 +4698,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/23maj/uoe/uoe-2.html</loc>
+      <loc>http://localhost:4000/erettsegi/standard/06feb/uoe/uoe-2.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/14okt/uoe/uoe-2.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -3798,54 +4713,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/11okt/uoe/uoe-2.html</loc>
+      <loc>http://localhost:4000/erettsegi/standard/05maj/uoe/uoe-2.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/21okt/uoe/uoe-2.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/10okt/uoe/uoe-2.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/15maj/uoe/uoe-2.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -3860,7 +4730,7 @@
     <url>
       <loc>http://localhost:4000/erettsegi/standard/15okt/uoe/uoe-2.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -3873,24 +4743,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/21maj/uoe/uoe-3.html</loc>
+      <loc>http://localhost:4000/erettsegi/standard/09maj/uoe/uoe-2.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/15maj/uoe/uoe-3.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -3903,24 +4758,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/11maj/uoe/uoe-3.html</loc>
+      <loc>http://localhost:4000/erettsegi/standard/21maj/uoe/uoe-2.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/21okt/uoe/uoe-3.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -3933,24 +4773,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/10okt/uoe/uoe-3.html</loc>
+      <loc>http://localhost:4000/erettsegi/standard/20maj/uoe/uoe-2.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/14okt/uoe/uoe-3.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -3963,24 +4788,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/22okt/uoe/uoe-3.html</loc>
+      <loc>http://localhost:4000/erettsegi/standard/15maj/uoe/uoe-2.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/10maj/uoe/uoe-3.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -3993,24 +4803,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/23maj/uoe/uoe-3.html</loc>
+      <loc>http://localhost:4000/erettsegi/standard/23maj/uoe/uoe-2.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/15okt/uoe/uoe-3.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -4023,24 +4818,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/11okt/uoe/uoe-3.html</loc>
+      <loc>http://localhost:4000/erettsegi/standard/17okt/uoe/uoe-2.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/14maj/uoe/uoe-3.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -4053,24 +4833,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/20okt/uoe/uoe-3.html</loc>
+      <loc>http://localhost:4000/erettsegi/standard/19okt/uoe/uoe-2.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/16maj/uoe/uoe-3.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -4083,24 +4848,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/22maj/uoe/uoe-3.html</loc>
+      <loc>http://localhost:4000/erettsegi/standard/14okt/uoe/uoe-2.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/13okt/uoe/uoe-3.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -4113,24 +4863,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/20maj/uoe/uoe-3.html</loc>
+      <loc>http://localhost:4000/erettsegi/standard/21okt/uoe/uoe-2.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/16okt/uoe/uoe-3.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -4143,24 +4878,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/17maj/uoe/uoe-3.html</loc>
+      <loc>http://localhost:4000/erettsegi/standard/06maj/uoe/uoe-2.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/13maj/uoe/uoe-3.html</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -4173,9 +4893,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/19maj/uoe/uoe-3.html</loc>
+      <loc>http://localhost:4000/erettsegi/standard/09okt/uoe/uoe-2.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -4188,9 +4908,279 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/17okt/uoe/uoe-3.html</loc>
+      <loc>http://localhost:4000/erettsegi/standard/14maj/uoe/uoe-2.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/18maj/uoe/uoe-2.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/07okt/uoe/uoe-2.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/10maj/uoe/uoe-2.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/13okt/uoe/uoe-2.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/05okt/uoe/uoe-2.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/22okt/uoe/uoe-2.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/10okt/uoe/uoe-2.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/13maj/uoe/uoe-2.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/11maj/uoe/uoe-2.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/06okt/uoe/uoe-2.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/07maj/uoe/uoe-2.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/12okt/uoe/uoe-2.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/18okt/uoe/uoe-2.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/19maj/uoe/uoe-2.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/11okt/uoe/uoe-2.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/22maj/uoe/uoe-2.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/12maj/uoe/uoe-2.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/08okt/uoe/uoe-2.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -4205,7 +5195,7 @@
     <url>
       <loc>http://localhost:4000/erettsegi/standard/12maj/uoe/uoe-3.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -4218,9 +5208,24 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/12okt/uoe/uoe-3.html</loc>
+      <loc>http://localhost:4000/erettsegi/standard/11okt/uoe/uoe-3.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/06okt/uoe/uoe-3.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -4235,7 +5240,37 @@
     <url>
       <loc>http://localhost:4000/erettsegi/standard/18okt/uoe/uoe-3.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/12okt/uoe/uoe-3.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/11maj/uoe/uoe-3.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -4250,7 +5285,217 @@
     <url>
       <loc>http://localhost:4000/erettsegi/standard/18maj/uoe/uoe-3.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/19maj/uoe/uoe-3.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/07maj/uoe/uoe-3.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/10okt/uoe/uoe-3.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/13maj/uoe/uoe-3.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/05okt/uoe/uoe-3.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/22okt/uoe/uoe-3.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/10maj/uoe/uoe-3.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/13okt/uoe/uoe-3.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/21okt/uoe/uoe-3.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/06maj/uoe/uoe-3.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/09okt/uoe/uoe-3.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/14maj/uoe/uoe-3.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/17okt/uoe/uoe-3.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/14okt/uoe/uoe-3.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -4265,7 +5510,7 @@
     <url>
       <loc>http://localhost:4000/erettsegi/standard/19okt/uoe/uoe-3.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -4278,24 +5523,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/12okt/uoe/</loc>
+      <loc>http://localhost:4000/erettsegi/standard/05maj/uoe/uoe-3.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/13maj/uoe/</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -4308,24 +5538,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/13okt/uoe/</loc>
+      <loc>http://localhost:4000/erettsegi/standard/15maj/uoe/uoe-3.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/11okt/uoe/</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -4338,24 +5553,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/14maj/uoe/</loc>
+      <loc>http://localhost:4000/erettsegi/standard/07okt/uoe/uoe-3.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/14okt/uoe/</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -4368,24 +5568,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/22okt/uoe/</loc>
+      <loc>http://localhost:4000/erettsegi/standard/21maj/uoe/uoe-3.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/11maj/uoe/</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -4398,24 +5583,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/15maj/uoe/</loc>
+      <loc>http://localhost:4000/erettsegi/standard/23maj/uoe/uoe-3.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/15okt/uoe/</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -4428,24 +5598,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/16maj/uoe/</loc>
+      <loc>http://localhost:4000/erettsegi/standard/09maj/uoe/uoe-3.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/16okt/uoe/</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -4458,24 +5613,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/17maj/uoe/</loc>
+      <loc>http://localhost:4000/erettsegi/standard/17maj/uoe/uoe-3.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/17okt/uoe/</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -4488,24 +5628,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/18maj/uoe/</loc>
+      <loc>http://localhost:4000/erettsegi/standard/20maj/uoe/uoe-3.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/18okt/uoe/</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -4518,24 +5643,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/19maj/uoe/</loc>
+      <loc>http://localhost:4000/erettsegi/standard/15okt/uoe/uoe-3.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/19okt/uoe/</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -4548,24 +5658,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/20maj/uoe/</loc>
+      <loc>http://localhost:4000/erettsegi/standard/16maj/uoe/uoe-3.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/22maj/uoe/</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -4578,9 +5673,129 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/10okt/uoe/</loc>
+      <loc>http://localhost:4000/erettsegi/standard/16okt/uoe/uoe-3.html</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/08okt/uoe/uoe-3.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/22maj/uoe/uoe-3.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/06feb/uoe/uoe-3.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/08maj/uoe/uoe-3.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/20okt/uoe/uoe-3.html</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/08okt/uoe/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/09maj/uoe/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/07okt/uoe/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -4595,7 +5810,7 @@
     <url>
       <loc>http://localhost:4000/erettsegi/standard/20okt/uoe/</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -4608,24 +5823,9 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/21maj/uoe/</loc>
+      <loc>http://localhost:4000/erettsegi/standard/09okt/uoe/</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://localhost:4000/erettsegi/standard/21okt/uoe/</loc>
-      
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -4640,7 +5840,7 @@
     <url>
       <loc>http://localhost:4000/erettsegi/standard/10maj/uoe/</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -4653,9 +5853,69 @@
   
     
     <url>
-      <loc>http://localhost:4000/erettsegi/standard/23maj/uoe/</loc>
+      <loc>http://localhost:4000/erettsegi/standard/07maj/uoe/</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/10okt/uoe/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/11maj/uoe/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/11okt/uoe/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/06okt/uoe/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -4670,7 +5930,397 @@
     <url>
       <loc>http://localhost:4000/erettsegi/standard/12maj/uoe/</loc>
       
-        <lastmod>2023-10-13T01:57:33+02:00</lastmod>
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/12okt/uoe/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/13maj/uoe/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/06maj/uoe/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/13okt/uoe/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/14maj/uoe/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/14okt/uoe/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/06feb/uoe/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/15maj/uoe/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/15okt/uoe/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/16maj/uoe/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/16okt/uoe/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/17maj/uoe/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/23maj/uoe/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/17okt/uoe/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/22okt/uoe/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/18maj/uoe/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/22maj/uoe/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/18okt/uoe/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/20maj/uoe/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/05okt/uoe/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/21okt/uoe/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/19maj/uoe/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/19okt/uoe/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/05maj/uoe/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/21maj/uoe/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/erettsegi/standard/08maj/uoe/</loc>
+      
+        <lastmod>2023-10-13T23:34:14+02:00</lastmod>
       
       
         <changefreq>monthly</changefreq>

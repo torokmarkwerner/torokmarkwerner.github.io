@@ -4,7 +4,7 @@ function checkAnswers(tid) {
     type = task.type;
     solutions = JSON.parse(task.solutions);
 
-    if (type == "reading-matching") {
+    if (type == "reading-half-sentences") {
         taskGaps = document.getElementById(tid).querySelectorAll(".task > div > .gap")
     } else if (type == "reading-true-or-false") {
         taskGaps = document.getElementById(tid).querySelectorAll(".radio-container:not(.default)")
@@ -16,7 +16,7 @@ function checkAnswers(tid) {
 
     for (i = 0; i < taskGaps.length; i++) {
 
-        if (type == "uoe-word-transformation" || type == "uoe-free-gap-filling" || type == "reading-free-gap-filling") {
+        if (type == "uoe-word-transformation" || type == "uoe-free-gap-filling" || type == "reading-free-gap-filling" || type == "reading-summary" || type == "uoe-jumbled-up-sentences" || type == "uoe-sentence-transformation") {
             taskGaps[i].classList.remove("incorrect");
 
             if (!(taskGaps[i].disabled) && taskGaps[i].value.toLowerCase() != "" && (taskGaps[i].value.toLowerCase() == solutions[i] || solutions[i].includes(taskGaps[i].value.toLowerCase()) == true)) {
@@ -27,7 +27,7 @@ function checkAnswers(tid) {
                 taskGaps[i].classList.add("incorrect")
             }
 
-        } else if (type == "uoe-closed-gap-filling" || type == "reading-dialogue" || type == "reading-paragraphs" || type == "reading-headings" || type == "reading-text" || type == "reading-matching") {
+        } else if (type == "uoe-closed-gap-filling" || type == "reading-dialogue" || type == "reading-paragraphs" || type == "reading-headings" || type == "reading-text" || type == "reading-half-sentences") {
             taskGaps[i].classList.remove("incorrect");
             if (!(taskGaps[i].classList.contains("correct")) && taskGaps[i].id.replace((tid + "-"), "") == solutions[i] && !(taskGaps[i].classList.contains("gap-disabled"))) {
                 taskGaps[i].classList.add("gap-disabled", "correct");
@@ -94,7 +94,7 @@ function showAnswers(tid) {
     type = task.type;
     solutions = JSON.parse(task.solutions);
 
-    if (type == "reading-matching") {
+    if (type == "reading-half-sentences") {
         taskGaps = document.getElementById(tid).querySelectorAll(".task > div > .gap")
     } else if (type == "reading-true-or-false") {
         taskGaps = document.getElementById(tid).querySelectorAll(".radio-container:not(.default)")
@@ -107,7 +107,7 @@ function showAnswers(tid) {
 
 
     for (i = 0; i < taskGaps.length; i++) {
-        if (type == "uoe-word-transformation" || type == "uoe-free-gap-filling" || type == "reading-free-gap-filling") {
+        if (type == "uoe-word-transformation" || type == "uoe-free-gap-filling" || type == "reading-free-gap-filling" || type == "uoe-jumbled-up-sentences") {
             taskGaps[i].value = solutions[i].toString().replaceAll(",", " / ");
             taskGaps[i].disabled = true;
             taskGaps[i].classList.add("gap-disabled");
@@ -115,7 +115,13 @@ function showAnswers(tid) {
             taskGaps[i].style.width = taskGaps[i].value.length + "ch";
             taskGaps[i].replaceWith(taskGaps[i].cloneNode(true));
 
-        } else if (type == "uoe-closed-gap-filling" || type == "reading-dialogue" || type == "reading-paragraphs" || type == "reading-headings" || type == "reading-text" || type == "reading-matching") {
+        } else if (type == "uoe-sentence-transformation" || type == "reading-summary") {
+            span = document.createElement("SPAN");
+            span.innerHTML = solutions[i].toString().replaceAll(",", " / ");
+            span.classList.add("gap", "gap-disabled");
+            taskGaps[i].replaceWith(span);
+
+        } else if (type == "uoe-closed-gap-filling" || type == "reading-dialogue" || type == "reading-paragraphs" || type == "reading-headings" || type == "reading-text" || type == "reading-half-sentences") {
             taskGaps[i].innerHTML = Array.from(wordListGaps).find(x => x.id == (tid + "-" + solutions[i])).innerHTML;
             taskGaps[i].classList.add("gap-disabled");
             taskGaps[i].classList.remove("gap", "incorrect");

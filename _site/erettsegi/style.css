@@ -31,7 +31,7 @@ h2 {
 }
 
 .uoe-multiple-choice option:disabled,
-.reading-multiple-choice option:disabled  {
+.reading-multiple-choice option:disabled {
     background-color: white;
     color: black;
 }
@@ -52,15 +52,31 @@ h2 {
     padding: 0;
 }
 
-.uoe-free-gap-filling input.gap,
-.uoe-free-gap-filling input.gap-disabled,
-.uoe-free-gap-filling input.default-gap {
+.uoe-jumbled-up-sentences .gap,
+.uoe-jumbled-up-sentences .gap-disabled,
+.uoe-jumbled-up-sentences .default-gap {
+    vertical-align: baseline;
+}
+
+.reading-summary .gap-disabled,
+.reading-summary .default-gap .uoe-sentence-transformation .gap-disabled,
+.uoe-sentence-transformation .default-gap {
+    line-height: inherit;
+    display: inline;
+    border: black 0pt solid;
+    vertical-align: baseline;
+    margin: 0;
+}
+
+.uoe-free-gap-filling .gap,
+.uoe-free-gap-filling .gap-disabled,
+.uoe-free-gap-filling .default-gap {
     display: inline-block;
     font-family: inherit;
     font-size: inherit;
     min-width: 5em;
     width: 5em;
-    vertical-align: center;
+    vertical-align: baseline;
 }
 
 .gap-container {
@@ -138,13 +154,16 @@ h2 {
     color: white;
 }
 
-.reading-matching .task .gap,
-.reading-matching .task .default-gap,
-.reading-matching .task .gap-disabled {
+.reading-half-sentences .task .gap,
+.reading-half-sentences .task .default-gap,
+.reading-half-sentences .task .gap-disabled {
     flex: 1;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    line-height: 1.9em;
+    padding: 0.2em;
+    justify-content: center;
     min-height: 3em;
     align-items: center;
 }
@@ -176,8 +195,7 @@ h2 {
 }
 
 .reading-matching .word-list .gap,
-.reading-matching .word-list .default-gap,
-.reading-matching .word-list .gap-disabled {
+.reading-half-sentences .word-list .gap {
     flex: 1 0 25%;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -188,20 +206,22 @@ h2 {
     justify-content: center;
 }
 
+.reading-matching>div:not(.instructions),
+.reading-half-sentences>div:not(.instructions),
+.reading-true-or-false>div:not(.instructions) {
+    line-height: 1.5em;
+}
+
 .reading-matching .task .gap,
 .reading-matching .task .default-gap,
 .reading-matching .task .gap-disabled {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    line-height: 1.9em;
-    padding: 0.2em;
-    justify-content: center;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
 }
 
-.reading-matching>div:not(.instructions),
-.reading-true-or-false>div:not(.instructions) {
-    line-height: 1.5em;
+.reading-matching .task {
+    padding-bottom: 1em;
 }
 
 .reading-text .task .gap {
@@ -215,7 +235,7 @@ h2 {
     line-height: inherit;
     display: inline;
     border: black 0pt solid;
-    vertical-align: baseline;
+    margin: 0;
 }
 
 .reading-text .gap,
