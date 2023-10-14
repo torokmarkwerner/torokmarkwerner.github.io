@@ -16,10 +16,10 @@ function checkAnswers(tid) {
 
     for (i = 0; i < taskGaps.length; i++) {
 
-        if (type == "uoe-word-transformation" || type == "uoe-free-gap-filling" || type == "reading-free-gap-filling" || type == "reading-summary" || type == "uoe-jumbled-up-sentences" || type == "uoe-sentence-transformation") {
+        if (["uoe-word-transformation","uoe-free-gap-filling","reading-free-gap-filling","reading-summary","uoe-jumbled-up-sentences","uoe-sentence-transformation"].includes(type)) {
             taskGaps[i].classList.remove("incorrect");
 
-            if (!(taskGaps[i].disabled) && taskGaps[i].value.toLowerCase() != "" && (taskGaps[i].value.toLowerCase() == solutions[i] || solutions[i].includes(taskGaps[i].value.toLowerCase()) == true)) {
+            if (!(taskGaps[i].disabled) && taskGaps[i].value.toLowerCase() != "" && taskGaps[i].value.toLowerCase() == solutions[i] || solutions[i].includes(taskGaps[i].value.toLowerCase())) {
                 taskGaps[i].classList.add("correct", "gap-disabled")
                 taskGaps[i].disabled = true
                 score[tid]["current"]++;
@@ -27,7 +27,21 @@ function checkAnswers(tid) {
                 taskGaps[i].classList.add("incorrect")
             }
 
-        } else if (type == "uoe-closed-gap-filling" || type == "reading-dialogue" || type == "reading-paragraphs" || type == "reading-headings" || type == "reading-text" || type == "reading-half-sentences") {
+        } else if (["reading-short-answer"].includes(type)) {
+
+            taskGaps[i].classList.remove("incorrect");
+
+            if (!(taskGaps[i].disabled) && taskGaps[i].value.toLowerCase() != "" && solutions[i].includes(taskGaps[i].value.charAt(0).toUpperCase() + taskGaps[i].value.substring(1).replace(/\.$/g,""))) {
+            span = document.createElement("SPAN");
+            span.innerHTML = taskGaps[i].value.charAt(0).toUpperCase() + taskGaps[i].value.substring(1).replace(/\.$/g,"") + ".";
+            span.classList.add("gap-disabled", "correct");
+            taskGaps[i].replaceWith(span);
+            score[tid]["current"]++;
+            } else if (!(taskGaps[i].disabled)) {
+                taskGaps[i].classList.add("incorrect")
+            }
+
+        } else if (["uoe-closed-gap-filling","reading-dialogue","reading-paragraphs","reading-headings","reading-text","reading-half-sentences"].includes(type)) {
             taskGaps[i].classList.remove("incorrect");
             if (!(taskGaps[i].classList.contains("correct")) && taskGaps[i].id.replace((tid + "-"), "") == solutions[i] && !(taskGaps[i].classList.contains("gap-disabled"))) {
                 taskGaps[i].classList.add("gap-disabled", "correct");
@@ -36,7 +50,7 @@ function checkAnswers(tid) {
             } else {
                 taskGaps[i].classList.add("incorrect")
             }
-        } else if (type == "uoe-multiple-choice" || type == "reading-multiple-choice") {
+        } else if (["uoe-multiple-choice","reading-multiple-choice"].includes(type)) {
             if (taskGaps[i].value == solutions[i] && !taskGaps[i].classList.contains("gap-disabled")) {
                 taskGaps[i].classList.remove("incorrect")
                 taskGaps[i].classList.add("correct")
@@ -107,7 +121,7 @@ function showAnswers(tid) {
 
 
     for (i = 0; i < taskGaps.length; i++) {
-        if (type == "uoe-word-transformation" || type == "uoe-free-gap-filling" || type == "reading-free-gap-filling" || type == "uoe-jumbled-up-sentences") {
+        if (["uoe-word-transformation","uoe-free-gap-filling","reading-free-gap-filling","uoe-jumbled-up-sentences"].includes(type)) {
             taskGaps[i].value = solutions[i].toString().replaceAll(",", " / ");
             taskGaps[i].disabled = true;
             taskGaps[i].classList.add("gap-disabled");
@@ -115,13 +129,19 @@ function showAnswers(tid) {
             taskGaps[i].style.width = taskGaps[i].value.length + "ch";
             taskGaps[i].replaceWith(taskGaps[i].cloneNode(true));
 
-        } else if (type == "uoe-sentence-transformation" || type == "reading-summary") {
+        } else if (["uoe-sentence-transformation","reading-summary"].includes(type)) {
             span = document.createElement("SPAN");
             span.innerHTML = solutions[i].toString().replaceAll(",", " / ");
-            span.classList.add("gap", "gap-disabled");
+            span.classList.add("gap-disabled");
             taskGaps[i].replaceWith(span);
 
-        } else if (type == "uoe-closed-gap-filling" || type == "reading-dialogue" || type == "reading-paragraphs" || type == "reading-headings" || type == "reading-text" || type == "reading-half-sentences") {
+        } else if (["reading-short-answer"].includes(type)) {
+            span = document.createElement("SPAN");
+            span.innerHTML = solutions[i].toString().replaceAll(",", ". / ") + ".";
+            span.classList.add("gap-disabled");
+            taskGaps[i].replaceWith(span);
+
+        } else if (["uoe-closed-gap-filling","reading-dialogue","reading-paragraphs","reading-headings","reading-text","reading-half-sentences"].includes(type)) {
             taskGaps[i].innerHTML = Array.from(wordListGaps).find(x => x.id == (tid + "-" + solutions[i])).innerHTML;
             taskGaps[i].classList.add("gap-disabled");
             taskGaps[i].classList.remove("gap", "incorrect");
