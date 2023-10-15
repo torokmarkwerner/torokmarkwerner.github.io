@@ -47,7 +47,7 @@ function populateHTML(x) {
 
     taskBody.appendChild(ul)
 
-    if (Object.keys(wordList).length > 0 && type != "uoe-multiple-choice") {
+    if (Object.keys(wordList).length > 0 && !["uoe-multiple-choice","reading-multiple-choice"].includes(type)) {
         wordListContainer = document.createElement("DIV");
         wordListContainer.classList.add("word-list")
 
@@ -105,10 +105,28 @@ function populateHTML(x) {
             }
         }
 
-
-
-
     } else if (type == "reading-multiple-choice") {
+        task.innerHTML = text2.replace(/\(\d+\)/, "<select class='default-gap'></select>").replace(/\(\d+\)/g, "<select class='gap'></select>")
+
+        for (i = 0; i < task.querySelectorAll("select").length; i++) {
+            select = task.querySelectorAll("select")[i]
+            optionDefault = document.createElement("OPTION");
+            optionDefault.style.display = "none"
+            select.appendChild(optionDefault)
+            for (z = 0; z < Object.keys(wordList[i]).length; z++) {
+                option = document.createElement("OPTION");
+                option.value = (Object.values(wordList[i]))[z]
+                option.innerHTML = (Object.keys(wordList[i]))[z]
+                if (i == 0 && option.innerHTML == example) {
+                    option.selected = true
+                } else if (i == 0) {
+                    option.disabled = true
+                }
+                select.appendChild(option)
+            }
+        }
+
+    } else if (type == "reading-extended-matching") {
 
       task.innerHTML = text2.replace(/\(\d+\)/, "<select class='default-gap'></select>").replace(/\(\d+\)/g, "<select class='gap'></select>")
 
@@ -144,7 +162,7 @@ function populateHTML(x) {
 
     /* task.appendChild(div) */
 
-    if (["reading-half-sentences", "reading-true-or-false", "reading-free-gap-filling", "reading-multiple-choice", "reading-short-answer"].includes(type)) {
+    if (["reading-multiple-choice", "reading-half-sentences", "reading-true-or-false", "reading-free-gap-filling", "reading-extended-matching", "reading-short-answer"].includes(type)) {
 
         taskBody.appendChild(h3)
 
@@ -152,14 +170,14 @@ function populateHTML(x) {
         taskText.innerHTML = text;
         taskBody.appendChild(taskText);
     
-            if (Object.keys(wordList).length > 0 && type != "reading-multiple-choice") {
+            if (Object.keys(wordList).length > 0 && !["reading-extended-matching", "reading-multiple-choice"].includes(type)) {
             taskBody.appendChild(wordListContainer)
         }
 
         taskBody.appendChild(task)
 
     } else {
-        if (Object.keys(wordList).length > 0 && type != "uoe-multiple-choice") {
+        if (Object.keys(wordList).length > 0 && !["uoe-multiple-choice"].includes(type)) {
             taskBody.appendChild(wordListContainer)
         }
         task.insertBefore(h3, task.firstChild)

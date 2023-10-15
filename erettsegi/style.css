@@ -23,21 +23,24 @@ h2 {
     max-width: 100%;
 }
 
+.reading-multiple-choice .default-gap,
 .uoe-multiple-choice .default-gap,
-.reading-multiple-choice .default-gap {
+.reading-extended-matching .default-gap {
     color: white;
     background-color: black;
     opacity: 1;
 }
 
+.reading-multiple-choice option:disabled,
 .uoe-multiple-choice option:disabled,
-.reading-multiple-choice option:disabled {
+.reading-extended-matching option:disabled {
     background-color: white;
     color: black;
 }
 
+.reading-multiple-choice select[disabled],
 .uoe-multiple-choice select[disabled],
-.reading-multiple-choice select[disabled] {
+.reading-extended-matching select[disabled] {
     color: inherit;
     opacity: 1;
 }
@@ -45,13 +48,17 @@ h2 {
 .uoe-multiple-choice .gap,
 .uoe-multiple-choice .gap-disabled,
 .uoe-multiple-choice .default-gap,
-.reading-multiple-choice .gap,
-.reading-multiple-choice .gap-disabled,
-.reading-multiple-choice .default-gap {
+.reading-extended-matching .gap,
+.reading-extended-matching .gap-disabled,
+.reading-extended-matching .default-gap {
     vertical-align: baseline;
     padding: 0;
+    margin: 0;
 }
 
+.reading-multiple-choice .gap,
+.reading-multiple-choice .gap-disabled,
+.reading-multiple-choice .default-gap,
 .uoe-jumbled-up-sentences .gap,
 .uoe-jumbled-up-sentences .gap-disabled,
 .uoe-jumbled-up-sentences .default-gap {
