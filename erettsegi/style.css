@@ -66,13 +66,19 @@ h2 {
 }
 
 .reading-summary .gap-disabled,
-.reading-summary .default-gap .uoe-sentence-transformation .gap-disabled,
+.reading-summary .default-gap,
+.uoe-sentence-transformation .gap-disabled,
 .uoe-sentence-transformation .default-gap {
     line-height: inherit;
     display: inline;
     border: black 0pt solid;
     vertical-align: baseline;
     margin: 0;
+}
+
+.uoe-sentence-transformation .gap,
+.reading-summary .gap {
+  vertical-align:baseline;
 }
 
 .uoe-free-gap-filling .gap,
@@ -259,8 +265,9 @@ h2 {
 
 .reading-text .task .gap {
     border: black 0pt solid;
-    min-inline-size: 15em;
+    min-inline-size: 10em;
     line-height: inherit;
+    padding: 0.1em;
 }
 
 .reading-text .task .gap-disabled,
@@ -269,13 +276,15 @@ h2 {
     display: inline;
     border: black 0pt solid;
     margin: 0;
+    padding: 0.1em;
 }
 
 .reading-text .gap,
 .reading-text .gap-disabled,
 .reading-text .default-gap {
+    min-width: fit-content;
     text-align: left;
-    vertical-align: middle;
+    vertical-align: bottom;
 }
 
 .reading-dialogue .gap,
@@ -296,6 +305,7 @@ h2 {
     min-height: 1em;
     line-height: 1.5em;
     padding: 0.5em;
+    text-align: left;
 }
 
 .reading-paragraphs .gap,
