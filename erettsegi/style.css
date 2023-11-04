@@ -2,6 +2,20 @@ h2 {
     padding-top: 0;
 }
 
+.erettsegi-link {
+  vertical-align: super;
+  font-size: small;
+  padding-left: 0.1em;
+}
+
+.erettsegi-link::before {
+content: "[";
+}
+
+.erettsegi-link::after {
+content: "]";
+}
+
 .gap,
 .gap-disabled,
 .default-gap {

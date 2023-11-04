@@ -29,12 +29,31 @@ function populateHTML(x) {
     example = x.example;
     text = x.text;
     text2 = x.text2;
+    link = x.link;
+    images = x.images;
 
     taskBody = document.createElement("DIV");
     taskBody.className = type;
     taskBody.id = taskId;
     h2 = document.createElement("H2");
     h2.innerHTML = taskTitle;
+
+    a = document.createElement("A");
+    a.classList.add("erettsegi-link");
+    a.innerHTML = "SRC"
+    a.href = link;
+    a.target = "_blank"
+
+    h2.appendChild(a)
+
+    a2 = document.createElement("A");
+    a2.classList.add("erettsegi-link");
+    a2.innerHTML = "KEY"
+    a2.href = link.replace(/_fl/g,"_ut");
+    a2.target = "_blank"
+
+    h2.appendChild(a2)
+
     taskBody.appendChild(h2)
 
     ul = document.createElement("UL");
