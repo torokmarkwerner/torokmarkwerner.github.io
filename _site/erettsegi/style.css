@@ -276,7 +276,7 @@ h2 {
     display: inline;
     border: black 0pt solid;
     margin: 0;
-    padding: 0.1em;
+    vertical-align: baseline;
 }
 
 .reading-text .gap,
