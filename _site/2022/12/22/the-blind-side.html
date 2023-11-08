@@ -31,13 +31,25 @@ TM | Oh The Movies | The Blind Side (2009)
   content: counter(abc, lower-alpha) ") ";
   counter-increment: abc;
 }
-    .language {
+.language {
     display: inline;
-    background-color: #b5d5ff;
     padding: 0.5em;
     text-transform: uppercase;
     }
-    summary {
+.language a {
+  border: 2pt solid black;
+  margin: 0 -1em;
+  background: black;
+  display: inline-block;
+  color: black;
+  clip-path: circle(30%);
+}
+.language img {
+  vertical-align: middle;
+  width: 4em;
+  clip-path: circle(30%);
+}
+  summary {
       color:crimson;
       font-weight:bold
     }
@@ -439,7 +451,7 @@ for (i=0; i<pages.length; i++) {
 </span></p>
 <div style="margin-block-start: 1em;margin-block-end: 1em;">
     
-    <a class="tag-name" style="color:black" href="/tag/en"><div class="language">English</div></a>
+    <div class="language"><a class="tag-name" style="color:black" href="/tag/en"><img src="https://en.wikipedia.org/wiki/File:Flag_of_the_United_Kingdom.svg" alt="EN" /></a></div>
     
 
   
