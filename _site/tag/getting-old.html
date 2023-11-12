@@ -418,6 +418,7 @@ document.getElementById("background").style.display = "none"
 <div style="display: inline-flex;vertical-align: bottom;"><img src="https://avatars.githubusercontent.com/u/98919050"/></div>
 <a id="about" class="pages-button" href="/about">ABOUT</a>
 <a id="projects" class="pages-button" href="/projects">PROJECTS</a>
+<a id="erettsegi" class="pages-button" href="/erettsegi">ÉRETTSÉGI</a>
 <a id="blog" class="pages-button" href="/blog">BLOG</a>
 <a id="contact" class="pages-button" href="/contact">CONTACT</a>
 <div style="text-align:center">
@@ -431,7 +432,7 @@ document.getElementById("background").style.display = "none"
 //alert(document.location.pathname + " --> And this is the substring:" + document.location.pathname.toString().substring(1,document.location.pathname.toString().length-1))
 pages = document.getElementsByClassName("pages-button");
 for (i=0; i<pages.length; i++) {
-  if(("/" + pages[i].textContent.toLowerCase() + "/") === document.location.pathname) {
+  if(("/" + pages[i].id + "/") === document.location.pathname) {
     pages[i].classList.toggle("pages-button-current");
     pages[i].style.backgroundColor = "palegreen";
     pages[i].style.fontWeight = "bold"
