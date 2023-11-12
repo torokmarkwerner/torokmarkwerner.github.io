@@ -69,7 +69,7 @@ div.appendChild(span)
 		h2s = document.getElementById("content-container").getElementsByTagName("h2");
 		for (z=1; z<h2s.length; z++) {
 			option = document.createElement("OPTION");
-			option.innerHTML = x.innerText.replace("SRCKEY","");
+			option.innerHTML = h2s[z].innerText.replace("SRCKEY","");
 			select.appendChild(option);
 		}
 div.appendChild(select)	
