@@ -446,8 +446,92 @@ for (i=0; i<pages.length; i++) {
 </script>
 <script src="/erettsegi/create-task.js">
 </script>
-<script>
+<style>
+	#feedback-form label, #feedback-form input {
+    display: block;
+    margin: auto;
+    width: 80%;
+    padding: 0.5em;
+    text-align: left;
+}
 
+#feedback-form label {
+  text-align: center;
+}
+
+#feedback-form input, #feedback-form div {
+  background: whitesmoke;
+  border: 1pt black solid;
+  padding:0.5em;
+  margin-bottom: 1em;
+}
+
+#feedback-form div {
+  width: fit-content;
+  display: inline-block
+}
+
+#feedback-form button {
+    font-variant-caps: all-small-caps;
+    padding: 1em;
+    margin: 0.5em;
+    border: 0pt;
+    background: palegreen;
+}
+
+#feedback-form button:hover {
+  opacity: 0.9;
+  cursor: pointer
+}
+</style>
+
+<script>
+	function showReportModal() {
+reportFormData = [["form-task","Melyik feladatot érinti a hiba?"],["form-problem","Mi a probléma?"],["form-suggestions","Milyen javaslataid vannak még?"]]
+
+		form = document.createElement("FORM");
+		form.id = "feedback-form";
+		h2 = document.createElement("H2");
+		h2.innerHTML = "Visszajelzési űrlap";
+		form.appendChild(h2)
+		for (i=0;i<reportFormData.length;i++) {
+label = document.createElement("LABEL");
+label.for = reportFormData[i][0];
+label.innerHTML = reportFormData[i][1];
+form.appendChild(label)
+if (i==0) {
+div = document.createElement("DIV");
+span = document.createElement("SPAN");
+span.innerHTML = 'standard | 22okt | reading | '
+div.appendChild(span)
+		select = document.createElement("SELECT");
+		h2s = document.getElementById("content-container").getElementsByTagName("h2");
+		Array.from(h2s).forEach(x => {
+			option = document.createElement("OPTION");
+			option.innerHTML = x.innerText.replace("SRCKEY","");
+			select.appendChild(option);
+		})	
+div.appendChild(select)	
+form.appendChild(div)
+} else {
+	input = document.createElement("INPUT");
+	input.type = "text";
+	input.id = reportFormData[i][0];
+	form.appendChild(input)
+}
+		}
+
+document.querySelector("#score-modal p").innerHTML = ""
+document.querySelector("#score-modal p").appendChild(form)
+
+document.querySelector("#score-modal").parentElement.style.display = "flex";
+
+	}
+</script>
+
+<button id="report-button">Report</button>
+
+<script>
 
 
 
@@ -459,6 +543,8 @@ createTask("standard-22okt-reading-3");
 
 createTask("standard-22okt-reading-4");
 
+
+document.getElementById("report-button").addEventListener("click",showReportModal)
 
 </script>
 </div>

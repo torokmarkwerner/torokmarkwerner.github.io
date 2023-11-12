@@ -1,3 +1,30 @@
+#report-button {
+    border: 0;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 0 25% 0 0;
+    padding: 1em;
+    background: red;
+    color: white;
+    font-variant-caps: all-small-caps;
+    font-size: smaller;
+    width: 10ch;
+}
+
+#report-button:hover {
+    opacity: 0.9;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+@media (max-width: 767px) {
+    #report-button {
+    margin: 0 10% 0 0;
+   }
+  }
+
 h2 {
     padding-top: 0;
 }
