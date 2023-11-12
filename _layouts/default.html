@@ -435,7 +435,7 @@ document.getElementById("background").style.display = "none"
 //alert(document.location.pathname + " --> And this is the substring:" + document.location.pathname.toString().substring(1,document.location.pathname.toString().length-1))
 pages = document.getElementsByClassName("pages-button");
 for (i=0; i<pages.length; i++) {
-  if(("/" + pages[i].id + "/") === document.location.pathname) {
+  if((document.location.pathname).indexOf("/" + pages[i].id + "/") > -1) {
     pages[i].classList.toggle("pages-button-current");
     pages[i].style.backgroundColor = "palegreen";
     pages[i].style.fontWeight = "bold"
