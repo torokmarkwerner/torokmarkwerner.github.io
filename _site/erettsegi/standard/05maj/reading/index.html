@@ -506,11 +506,11 @@ span.innerHTML = 'standard | 05maj | reading | '
 div.appendChild(span)
 		select = document.createElement("SELECT");
 		h2s = document.getElementById("content-container").getElementsByTagName("h2");
-		Array.from(h2s).forEach(x => {
+		for (z=0; z<h2s.length; z++) {
 			option = document.createElement("OPTION");
-			option.innerHTML = x.innerText.replace("SRCKEY","");
+			option.innerHTML = h2s[z].innerText.replace("SRCKEY","");
 			select.appendChild(option);
-		})	
+		}
 div.appendChild(select)	
 form.appendChild(div)
 } else {
@@ -520,6 +520,12 @@ form.appendChild(div)
 	form.appendChild(input)
 }
 		}
+
+button = document.createElement("BUTTON");
+button.id = "form-button";
+button.innerHTML = "Küldés";
+
+form.appendChild(button)
 
 document.querySelector("#score-modal p").innerHTML = ""
 document.querySelector("#score-modal p").appendChild(form)
