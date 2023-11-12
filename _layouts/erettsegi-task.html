@@ -67,7 +67,7 @@ span.innerHTML = '{{ page.permalink | replace: "/erettsegi/", "" | replace: "/",
 div.appendChild(span)
 		select = document.createElement("SELECT");
 		h2s = document.getElementById("content-container").getElementsByTagName("h2");
-		for (z=1; z<h2s.length; z++) {
+		for (z=0; z<h2s.length; z++) {
 			option = document.createElement("OPTION");
 			option.innerHTML = h2s[z].innerText.replace("SRCKEY","");
 			select.appendChild(option);
