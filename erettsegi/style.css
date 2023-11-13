@@ -1,3 +1,7 @@
+.missing {
+    background: #ffa8a8 !important;
+}
+
 #report-button {
     border: 0;
     z-index: 2;
@@ -14,9 +18,8 @@
 }
 
 #report-button:hover {
-    opacity: 0.9;
+    background: orangered;    
     cursor: pointer;
-    font-weight: bold;
 }
 
 @media (max-width: 767px) {

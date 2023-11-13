@@ -37,6 +37,7 @@ function populateHTML(x) {
     taskBody.id = taskId;
     h2 = document.createElement("H2");
     h2.innerHTML = taskTitle;
+    h2.className = "task-title"
 
     a = document.createElement("A");
     a.classList.add("erettsegi-link");
