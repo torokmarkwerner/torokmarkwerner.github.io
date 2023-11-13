@@ -58,9 +58,11 @@ suggestions = document.getElementById("form-suggestions").value;
 
 if (task != "" && problem != "" && suggestions != "") {
 
+/*
 document.getElementById("form-problem").classList.remove("missing");
 document.getElementById("form-suggestions").classList.remove("missing");
-
+*/
+	
 	document.getElementById("form-error").style.display = "none";
 
 fetch("https://docs.google.com/forms/d/e/1FAIpQLSc1czG7t66kGNB1I_Q3RWhN1aGq6YeuWUtxhVabWqkrE3dFvQ/formResponse?usp=pp_url&entry.874135683=" + encodeURIComponent(task) + "&entry.1089027598=" + encodeURIComponent(problem) + "&entry.271003357=" + encodeURIComponent(suggestions))
@@ -71,13 +73,14 @@ document.getElementById("form-button").innerHTML = "Elküldve";
 } else {
 	document.getElementById("form-error").style.display = "block";
 
-	if (problem == "") {
+/*	if (problem == "") {
 document.getElementById("form-problem").classList.add("missing");
 	} 
 
 	if (suggestions == "") {
 document.getElementById("form-suggestions").classList.add("missing");
 	}
+	*/
 }
 }
 
