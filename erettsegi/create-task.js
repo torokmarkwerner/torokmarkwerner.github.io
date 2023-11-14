@@ -214,14 +214,20 @@ buttonContainer.classList.add("button-container");
 
     checkButton = document.createElement("BUTTON");
     checkButton.className = "check-button";
-    checkButton.innerText = "CHECK ANSWERS";
+    checkButton.innerText = "Check answers";
 
-    showButton = document.createElement("BUTTON")
+    showButton = document.createElement("BUTTON");
     showButton.className = "show-button";
-    showButton.innerText = "SHOW ANSWERS";
+    showButton.innerText = "Show answers";
+
+    reportButton = document.createElement("BUTTON");
+    reportButton.className = "report-button"
+    reportButton.innerText = "Report problem";
+
 
     buttonContainer.appendChild(checkButton);
     buttonContainer.appendChild(showButton);
+    buttonContainer.appendChild(reportButton);
 
     taskBody.appendChild(buttonContainer);
 
@@ -304,4 +310,83 @@ buttonContainer.classList.add("button-container");
 
     document.getElementById(taskId).getElementsByClassName("show-button")[0].addEventListener("click", function() { showAnswers(x.taskId) })
     document.getElementById(taskId).getElementsByClassName("check-button")[0].addEventListener("click", function() { checkAnswers(x.taskId) })
+    document.getElementById(taskId).getElementsByClassName("report-button")[0].addEventListener("click", function() { showReportModal(x.taskId) })
 }
+
+function submitReport() {
+    form = document.getElementById("feedback-form");
+
+task = document.getElementById("form-task").innerHTML;
+
+problem = document.getElementById("form-problem").value;
+
+suggestions = document.getElementById("form-suggestions").value;
+
+if (task != "" && problem != "" && suggestions != "") {
+
+    document.getElementById("form-error").style.display = "none";
+
+fetch("https://docs.google.com/forms/d/e/1FAIpQLSc1czG7t66kGNB1I_Q3RWhN1aGq6YeuWUtxhVabWqkrE3dFvQ/formResponse?usp=pp_url&entry.874135683=" + encodeURIComponent(task) + "&entry.1089027598=" + encodeURIComponent(problem) + "&entry.271003357=" + encodeURIComponent(suggestions))
+
+document.getElementById("form-button").disabled = true;
+document.getElementById("form-button").innerHTML = "Elküldve";
+
+} else {
+    document.getElementById("form-error").style.display = "block";
+}
+}
+
+    function showReportModal(taskId) {
+reportFormData = [["form-task","Melyik feladatot érinti a hiba?"],["form-problem","Mi a probléma?"],["form-suggestions","Milyen javaslataid vannak még?"]]
+
+        form = document.createElement("FORM");
+        form.id = "feedback-form";
+        h2 = document.createElement("H2");
+        h2.innerHTML = "Visszajelzési űrlap*";
+        form.appendChild(h2)
+
+error = document.createElement("P");
+error.id = "form-error"
+error.innerHTML = "Töltse ki az összes mezőt!";
+error.style.display = "none";
+error.style.color = "red";
+
+form.appendChild(error)
+
+        for (i=0;i<reportFormData.length;i++) {
+label = document.createElement("LABEL");
+label.for = reportFormData[i][0];
+label.innerHTML = reportFormData[i][1];
+form.appendChild(label)
+if (i==0) {
+div = document.createElement("DIV");
+div.innerHTML = taskId;
+div.id = "form-task";
+form.appendChild(div)
+} else {
+    input = document.createElement("INPUT");
+    input.type = "text";
+    input.id = reportFormData[i][0];
+    form.appendChild(input)
+}
+        }
+
+p = document.createElement("P");
+p.innerHTML = '*A jelen űrlap anonim, személyes adatokat nem kell megadnia.<br> Az űrlap a <a href="https://policies.google.com/" target="_blank">Google Űrlapok adatvédelmi irányelvei</a> szerint működik.';
+p.style.fontSize = "x-small";
+
+form.appendChild(p)
+
+button = document.createElement("BUTTON");
+button.id = "form-button";
+button.innerHTML = "Küldés";
+
+button.addEventListener("click",submitReport)
+
+document.querySelector("#score-modal p").innerHTML = ""
+document.querySelector("#score-modal p").appendChild(form)
+document.querySelector("#score-modal p").appendChild(button)
+
+document.querySelector("#score-modal").parentElement.style.display = "flex";
+
+    }

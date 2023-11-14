@@ -1,49 +1,62 @@
-.missing {
-    background: #ffa8a8 !important;
+#feedback-form label,
+#feedback-form input {
+    display: block;
+    margin: auto;
+    width: 80%;
+    padding: 0.5em;
+    text-align: left;
 }
 
-#report-button {
-    border: 0;
-    z-index: 2;
-    position: fixed;
-    top: 0;
-    right: 0;
-    margin: 0 25% 0 0;
-    padding: 1em;
-    background: red;
-    color: white;
+#feedback-form label {
+    text-align: center;
+}
+
+#feedback-form input,
+#feedback-form div {
+    background: whitesmoke;
+    border: 1pt black solid;
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+
+#feedback-form div {
+    background: lightgray;
+}
+
+#feedback-form div {
+    width: fit-content;
+    display: inline-block
+}
+
+#form-button {
     font-variant-caps: all-small-caps;
-    font-size: smaller;
-    width: 10ch;
+    padding: 1em;
+    margin: 0.5em;
+    border: 0pt;
+    background: palegreen;
 }
 
-#report-button:hover {
-    background: orangered;    
-    cursor: pointer;
+#form-button:hover {
+    opacity: 0.9;
+    cursor: pointer
 }
-
-@media (max-width: 767px) {
-    #report-button {
-    margin: 0 10% 0 0;
-   }
-  }
 
 h2 {
     padding-top: 0;
 }
 
 .erettsegi-link {
-  vertical-align: super;
-  font-size: small;
-  padding-left: 0.1em;
+    vertical-align: super;
+    font-size: small;
+    padding-left: 0.1em;
 }
 
 .erettsegi-link::before {
-content: "[";
+    content: "[";
 }
 
 .erettsegi-link::after {
-content: "]";
+    content: "]";
 }
 
 .gap,
@@ -122,7 +135,7 @@ content: "]";
 
 .uoe-sentence-transformation .gap,
 .reading-summary .gap {
-  vertical-align:baseline;
+    vertical-align: baseline;
 }
 
 .uoe-free-gap-filling .gap,
@@ -268,7 +281,7 @@ content: "]";
 }
 
 .reading-short-answer .default-gap:after {
-  content: ".";
+    content: ".";
 }
 
 .reading-matching .word-list .gap,
@@ -394,25 +407,32 @@ content: "]";
     color: white
 }
 
+.report-button,
 .check-button,
 .show-button {
     flex: 1;
-    font-size: small;
+    font-size: smaller;
+    font-variant-caps: all-small-caps;
     font-family: inherit;
-    background-color: lightgreen;
+    background: lightgreen;
     min-width: 5em;
     border: 0pt;
     padding: 1em;
 }
 
+.report-button:hover,
 .check-button:hover,
 .show-button:hover {
     cursor: pointer;
-    opacity: 0.9
+    opacity: 0.9;
 }
 
 .show-button {
-    background-color: lightskyblue
+    background: lightskyblue;
+}
+
+.report-button {
+    background: #eb8e8e;
 }
 
 .button-container {
