@@ -262,6 +262,9 @@ h2 {
     top: 0;
     background-color: white;
     padding: 0.5em 0;
+    overflow: auto;
+    scroll-behavior: auto;
+    scrollbar-width: auto;
 }
 
 .reading-short-answer .gap,
