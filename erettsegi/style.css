@@ -279,11 +279,55 @@ h2 {
     vertical-align: baseline;
 }
 
-.uoe-error-correction .default-gap {
+.uoe-error-correction .strikethrough {
+    text-decoration: line-through;
+    color: red;
+}
+
+.uoe-error-correction .unmarked {
+    text-decoration: none !important;
+    color: unset;
+}
+
+.uoe-error-correction .unmarked:hover {
+    color: unset !important;
+}
+
+.uoe-error-correction .ticked {
+    background: green !important;
+}
+
+.uoe-error-correction .crossed {
+    background: red !important;
+}
+
+.uoe-error-correction .tick, 
+.uoe-error-correction .cross {
+    display: inline-flex;
+    justify-content:center;
+    vertical-align: baseline;
+    color: white;
+    font-weight: bold;
+    border: none;
+    width: 1.5em;
+    height: 1.5em;
+    background: #6fdb6f;
+    margin: 0 0 0 0.4em;
+}
+
+.uoe-error-correction .cross {
+    background: #d58282;
+}
+
+.uoe-error-correction .tick:hover, 
+.uoe-error-correction .cross:hover {
+    cursor: pointer;
+    opacity: 0.9;
 }
 
 .uoe-error-correction-line .text-unit:hover {
     cursor: pointer;
+    color: red;
 }
 
 .reading-short-answer .gap,
@@ -436,7 +480,7 @@ h2 {
     font-size: smaller;
     font-variant-caps: all-small-caps;
     font-family: inherit;
-    background: lightgreen;
+    background: palegreen;
     min-width: 5em;
     border: 0pt;
     padding: 1em;
@@ -504,7 +548,7 @@ h2 {
 }
 
 .correct {
-    background-color: lightgreen
+    background-color: palegreen
 }
 
 .incorrect {

@@ -93,7 +93,7 @@ function populateHTML(x) {
     /* task.appendChild(h3) */
 
 if (type == "uoe-error-correction") {
-task.innerHTML = text.split("<i")[0].replace(/([^\d)|\W]+)/g,"<span class='text-unit'>$1</span>").replace(/(\d+\)\s+)(.*)/,"<span class='default-gap'>$2</span>").replace(/(\d+\)\s+)(.*)/g,"<span class='uoe-error-correction-line'>$2</span>") + "<i" + text.split("<i")[1]
+task.innerHTML = text.split("<i")[0].replace(/([^\d)|\W]+)/g,"<span class='text-unit'>$1</span>").replace(/(\d+\)\s+)(.*)/,"<span class='default-gap'>$2<button class='cross crossed'>&#10005;</button><button class='tick'>&#10003;</button></span>").replace(/(\d+\)\s+)(.*)/g,"<span class='uoe-error-correction-line'>$2<button class='cross'>&#10005;</button><button class='tick'>&#10003;</button></span>") + "<p><i" + text.split("<i")[1] + "</p>"
 } else if (type == "uoe-closed-gap-filling" || type == "reading-text") {
         task.innerHTML = text.replace(/\(\d+\)/, "<span class='default-gap " + taskId + "'>" + example + "</span>").replace(/\(\d+\)/g, "<span class='gap " + taskId + "'></span>")
     } else if (type == "uoe-word-transformation" || type == "uoe-jumbled-up-sentences" || type == "uoe-sentence-transformation" || type == "uoe-free-gap-filling" || type == "reading-summary") {
@@ -258,7 +258,19 @@ buttonContainer.classList.add("button-container");
 
     document.getElementById("content-container").appendChild(taskBody);
 
-    if (type == "reading-half-sentences") {
+ if (type == "uoe-error-correction") {
+taskGaps = document.getElementById(taskId).querySelectorAll(".task .text-unit")
+ticks = document.getElementById(taskId).querySelectorAll(".task .tick")
+
+defaults = document.getElementById(taskId).querySelectorAll(".task .default-gap .text-unit");
+
+Array.from(defaults).forEach(x => {
+    if (x.innerText == example) {
+        x.classList.add("strikethrough")
+    }
+})
+
+ } else if (type == "reading-half-sentences") {
         taskGaps = document.getElementById(taskId).querySelectorAll(".task > div > .gap")
     } else if (type == "reading-true-or-false") {
         taskGaps = document.getElementById(taskId).querySelectorAll(".radio-container:not(.default)")
@@ -293,6 +305,11 @@ buttonContainer.classList.add("button-container");
                 }
             });
         }
+    }
+
+    if (type == "uoe-error-correction") {
+        Array.from(taskGaps).forEach(x => x.addEventListener("click", function() { markTextUnit(x,x.parentElement)}))
+        Array.from(ticks).forEach(x => x.addEventListener("click", function() { unMarkAll(x,x.parentElement)}))
     }
 
     for (i = 0; i < wordListGapsAll[taskId].length; i++) {
@@ -354,8 +371,7 @@ error.style.display = "none";
 error.style.color = "red";
 
 form.appendChild(error)
-
-        for (i=0;i<reportFormData.length;i++) {
+for (i=0;i<reportFormData.length;i++) {
 label = document.createElement("LABEL");
 label.for = reportFormData[i][0];
 label.innerHTML = reportFormData[i][1];
@@ -390,5 +406,47 @@ document.querySelector("#score-modal p").appendChild(form)
 document.querySelector("#score-modal p").appendChild(button)
 
 document.querySelector("#score-modal").parentElement.style.display = "flex";
+
+    }
+
+
+function unMarkAll(tick,line) {
+    textUnits = line.getElementsByClassName("text-unit")
+    cross = line.getElementsByClassName("cross")[0]
+
+if (!tick.classList.contains("ticked")) {
+    Array.from(textUnits).forEach(x => {
+        x.classList.remove("strikethrough");
+        x.classList.add("unmarked")
+    })
+
+    tick.classList.add("ticked")
+    cross.classList.remove("crossed")
+} else {
+    tick.classList.remove("ticked")
+}
+}
+    function markTextUnit(textUnit,line) {
+
+    textUnits = line.getElementsByClassName("text-unit")
+    cross = line.getElementsByClassName("cross")[0]
+    tick = line.getElementsByClassName("tick")[0]
+
+if (textUnit.classList.contains("strikethrough")) {
+    textUnit.classList.remove("strikethrough")
+    cross.classList.remove("crossed")
+    tick.classList.add("ticked")
+} else {
+    textUnit.classList.add("strikethrough")
+    cross.classList.add("crossed")
+    tick.classList.remove("ticked")
+}
+
+Array.from(textUnits).forEach(x => { 
+    x.classList.remove("unmarked")
+    if (x != textUnit) { 
+        x.classList.remove("strikethrough")
+    }
+})
 
     }
