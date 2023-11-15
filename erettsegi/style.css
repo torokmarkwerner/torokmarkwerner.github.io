@@ -267,6 +267,25 @@ h2 {
     scrollbar-width: auto;
 }
 
+.uoe-error-correction .default-gap, 
+.uoe-error-correction-line {
+    display: inline-block;
+    text-align: left;
+    line-height: inherit;
+    padding: 0 0.3em;
+    margin: 0.3em 0;
+    border: none;
+    background: lightgray;
+    vertical-align: baseline;
+}
+
+.uoe-error-correction .default-gap {
+}
+
+.uoe-error-correction-line .text-unit:hover {
+    cursor: pointer;
+}
+
 .reading-short-answer .gap,
 .reading-short-answer .default-gap,
 .reading-short-answer .gap-disabled {

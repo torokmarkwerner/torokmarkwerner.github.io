@@ -92,7 +92,9 @@ function populateHTML(x) {
 
     /* task.appendChild(h3) */
 
-    if (type == "uoe-closed-gap-filling" || type == "reading-text") {
+if (type == "uoe-error-correction") {
+task.innerHTML = text.split("<i")[0].replace(/([^\d)|\W]+)/g,"<span class='text-unit'>$1</span>").replace(/(\d+\)\s+)(.*)/,"<span class='default-gap'>$2</span>").replace(/(\d+\)\s+)(.*)/g,"<span class='uoe-error-correction-line'>$2</span>") + "<i" + text.split("<i")[1]
+} else if (type == "uoe-closed-gap-filling" || type == "reading-text") {
         task.innerHTML = text.replace(/\(\d+\)/, "<span class='default-gap " + taskId + "'>" + example + "</span>").replace(/\(\d+\)/g, "<span class='gap " + taskId + "'></span>")
     } else if (type == "uoe-word-transformation" || type == "uoe-jumbled-up-sentences" || type == "uoe-sentence-transformation" || type == "uoe-free-gap-filling" || type == "reading-summary") {
         task.innerHTML = text.replace(/\(\d+\)/, "<span class='default-gap'>" + example + "</span>").replace(/\(\d+\)/g, "<input class='gap'>")
