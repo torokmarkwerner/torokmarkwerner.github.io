@@ -169,7 +169,7 @@ function showAnswers(tid) {
         if (x.innerText == solutions[i]) {
             x.classList.remove("unmarked")
             x.classList.add("strikethrough")
-            taskGaps[i].querySelector(".cross").classList.add("crossed");
+        /*  taskGaps[i].querySelector(".cross").classList.add("crossed");*/
         }
       })
   }

@@ -93,7 +93,7 @@ function populateHTML(x) {
     /* task.appendChild(h3) */
 
 if (type == "uoe-error-correction") {
-task.innerHTML = text.split("<i")[0].replace(/([^\d)|\W]+)/g,"<span class='text-unit'>$1</span>").replace(/(\d+\)\s+)(.*)/,"<span class='default-gap'>$2 <button class='tick'>&#10003;</button></span>").replace(/(\d+\)\s+)(.*)/g,"<span class='uoe-error-correction-line'>$2 <button class='tick'>&#10003;</button></span>") + "<p><i" + text.split("<i")[1] + "</p>"
+task.innerHTML = text.split("<i")[0].replace(/([^\d)|\W]+)/g,"<span class='text-unit'>$1</span>").replace(/(0\)\s+)(.*)/,"<span class='default-gap'>$2 <button class='tick'>&#10003;</button></span>").replace(/(0\)\s+)(.*)/,"<span class='default-gap'>$2 <button class='tick'>&#10003;</button></span>").replace(/(\d+\)\s+)(.*)/g,"<span class='uoe-error-correction-line'>$2 <button class='tick'>&#10003;</button></span>") + "<p><i" + text.split("<i")[1] + "</p>"
 } else if (type == "uoe-closed-gap-filling" || type == "reading-text") {
         task.innerHTML = text.replace(/\(\d+\)/, "<span class='default-gap " + taskId + "'>" + example + "</span>").replace(/\(\d+\)/g, "<span class='gap " + taskId + "'></span>")
     } else if (type == "uoe-word-transformation" || type == "uoe-jumbled-up-sentences" || type == "uoe-sentence-transformation" || type == "uoe-free-gap-filling" || type == "reading-summary") {
@@ -260,14 +260,17 @@ buttonContainer.classList.add("button-container");
 
  if (type == "uoe-error-correction") {
 taskGaps = document.getElementById(taskId).querySelectorAll(".task .uoe-error-correction-line")
-textUnits = document.getElementById(taskId).querySelectorAll(".task .text-unit")
-ticks = document.getElementById(taskId).querySelectorAll(".task .tick")
+textUnits = document.getElementById(taskId).querySelectorAll(".task .uoe-error-correction-line .text-unit")
+ticks = document.getElementById(taskId).querySelectorAll(".task .uoe-error-correction-line .tick")
 
-defaults = document.getElementById(taskId).querySelectorAll(".task .default-gap .text-unit");
+defaults = document.getElementById(taskId).querySelectorAll(".task .default-gap");
 
-Array.from(defaults).forEach(x => {
-    if (x.innerText == example) {
+for (k=0; k<defaults.length; k++)
+Array.from(defaults[k].querySelectorAll(".text-unit")).forEach(x => {
+    if (x.innerText == example.split(",")[k]) {
         x.classList.add("strikethrough")
+    } else if (example.split(",")[k] == "") {
+        defaults[k].querySelector(".tick").classList.add("ticked")
     }
 })
 
