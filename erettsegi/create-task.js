@@ -93,7 +93,7 @@ function populateHTML(x) {
     /* task.appendChild(h3) */
 
 if (type == "uoe-error-correction") {
-task.innerHTML = text.split("<i")[0].replace(/([^\d)|\W]+)/g,"<span class='text-unit'>$1</span>").replace(/(\d+\)\s+)(.*)/,"<span class='default-gap'>$2 <button class='cross crossed'>&#10005;</button> <button class='tick'>&#10003;</button></span>").replace(/(\d+\)\s+)(.*)/g,"<span class='uoe-error-correction-line'>$2 <button class='cross'>&#10005;</button> <button class='tick'>&#10003;</button></span>") + "<p><i" + text.split("<i")[1] + "</p>"
+task.innerHTML = text.split("<i")[0].replace(/([^\d)|\W]+)/g,"<span class='text-unit'>$1</span>").replace(/(\d+\)\s+)(.*)/,"<span class='default-gap'>$2 <button class='tick'>&#10003;</button></span>").replace(/(\d+\)\s+)(.*)/g,"<span class='uoe-error-correction-line'>$2 <button class='tick'>&#10003;</button></span>") + "<p><i" + text.split("<i")[1] + "</p>"
 } else if (type == "uoe-closed-gap-filling" || type == "reading-text") {
         task.innerHTML = text.replace(/\(\d+\)/, "<span class='default-gap " + taskId + "'>" + example + "</span>").replace(/\(\d+\)/g, "<span class='gap " + taskId + "'></span>")
     } else if (type == "uoe-word-transformation" || type == "uoe-jumbled-up-sentences" || type == "uoe-sentence-transformation" || type == "uoe-free-gap-filling" || type == "reading-summary") {
@@ -413,7 +413,7 @@ document.querySelector("#score-modal").parentElement.style.display = "flex";
 
 function unMarkAll(tick,line) {
     textUnits = line.getElementsByClassName("text-unit")
-    cross = line.getElementsByClassName("cross")[0]
+ /* cross = line.getElementsByClassName("cross")[0] */
 
 if (!tick.classList.contains("ticked")) {
     Array.from(textUnits).forEach(x => {
@@ -422,7 +422,7 @@ if (!tick.classList.contains("ticked")) {
     })
 
     tick.classList.add("ticked")
-    cross.classList.remove("crossed")
+    /* cross.classList.remove("crossed") */
 } else {
     tick.classList.remove("ticked")
 }
@@ -430,16 +430,16 @@ if (!tick.classList.contains("ticked")) {
     function markTextUnit(textUnit,line) {
 
     textUnits = line.getElementsByClassName("text-unit")
-    cross = line.getElementsByClassName("cross")[0]
+ /* cross = line.getElementsByClassName("cross")[0] */
     tick = line.getElementsByClassName("tick")[0]
 
 if (textUnit.classList.contains("strikethrough")) {
     textUnit.classList.remove("strikethrough")
-    cross.classList.remove("crossed")
+ /* cross.classList.remove("crossed") */
     tick.classList.add("ticked")
 } else {
     textUnit.classList.add("strikethrough")
-    cross.classList.add("crossed")
+ /* cross.classList.add("crossed") */
     tick.classList.remove("ticked")
 }
 
