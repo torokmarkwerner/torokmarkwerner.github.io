@@ -165,6 +165,7 @@ function showAnswers(tid) {
       if (solutions[i] == "" && taskGaps[i].querySelector(".ticked") == null) {
             taskGaps[i].querySelector(".tick").classList.add("ticked");
         } else if (solutions[i] != "") {
+      taskGaps[i].querySelector(".tick").classList.remove("ticked");
       Array.from(taskGaps[i].querySelectorAll(".text-unit")).forEach(x => {
         if (x.innerText == solutions[i]) {
             x.classList.remove("unmarked")
