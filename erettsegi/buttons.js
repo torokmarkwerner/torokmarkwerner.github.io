@@ -4,7 +4,9 @@ function checkAnswers(tid) {
     type = task.type;
     solutions = JSON.parse(task.solutions);
 
-    if (type == "reading-half-sentences") {
+    if (type == "uoe-error-correction") {
+        taskGaps = document.getElementById(tid).querySelectorAll(".task > .uoe-error-correction-line")
+    } else if (type == "reading-half-sentences") {
         taskGaps = document.getElementById(tid).querySelectorAll(".task > div > .gap")
     } else if (type == "reading-true-or-false") {
         taskGaps = document.getElementById(tid).querySelectorAll(".radio-container:not(.default)")
@@ -16,7 +18,35 @@ function checkAnswers(tid) {
 
     for (i = 0; i < taskGaps.length; i++) {
 
-        if (["uoe-word-transformation","uoe-free-gap-filling","reading-free-gap-filling","reading-summary","uoe-jumbled-up-sentences","uoe-sentence-transformation"].includes(type)) {
+        if (type == "uoe-error-correction") {
+            taskGaps[i].classList.remove("incorrect");
+if (!taskGaps[i].classList.contains("correct") && !taskGaps[i].classList.contains("gap-disabled") && taskGaps[i].querySelector(".strikethrough") && taskGaps[i].querySelector(".strikethrough").innerText == solutions[i]) {
+taskGaps[i].classList.add("correct")
+taskGaps[i].classList.add("gap-disabled")
+Array.from(taskGaps[i].querySelectorAll(".text-unit")).forEach(x => {
+    if (!x.classList.contains("strikethrough")) {
+            x.classList.add("unmarked") 
+        }
+            x.replaceWith(x.cloneNode(true));
+        })
+taskGaps[i].replaceWith(taskGaps[i].cloneNode(true))
+score[tid]["current"]++
+} else if (!taskGaps[i].classList.contains("correct") && !taskGaps[i].classList.contains("gap-disabled") && taskGaps[i].querySelector(".ticked") && solutions[i] == "") {
+taskGaps[i].classList.add("correct")
+taskGaps[i].classList.add("gap-disabled")
+Array.from(taskGaps[i].querySelectorAll(".text-unit")).forEach(x => {
+     if (!x.classList.contains("strikethrough")) {
+            x.classList.add("unmarked") 
+        }
+            x.replaceWith(x.cloneNode(true));
+        })
+taskGaps[i].replaceWith(taskGaps[i].cloneNode(true))
+score[tid]["current"]++
+} else if (!taskGaps[i].classList.contains("gap-disabled")) {
+taskGaps[i].classList.add("incorrect")
+}
+
+        } else if (["uoe-word-transformation","uoe-free-gap-filling","reading-free-gap-filling","reading-summary","uoe-jumbled-up-sentences","uoe-sentence-transformation"].includes(type)) {
             taskGaps[i].classList.remove("incorrect");
 
             if (!(taskGaps[i].disabled) && taskGaps[i].value.toLowerCase() != "" && taskGaps[i].value.toLowerCase() == solutions[i] || solutions[i].includes(taskGaps[i].value.toLowerCase())) {
@@ -108,7 +138,9 @@ function showAnswers(tid) {
     type = task.type;
     solutions = JSON.parse(task.solutions);
 
-    if (type == "reading-half-sentences") {
+     if (type == "uoe-error-correction") {
+        taskGaps = document.getElementById(tid).querySelectorAll(".task > .uoe-error-correction-line")
+    } else if (type == "reading-half-sentences") {
         taskGaps = document.getElementById(tid).querySelectorAll(".task > div > .gap")
     } else if (type == "reading-true-or-false") {
         taskGaps = document.getElementById(tid).querySelectorAll(".radio-container:not(.default)")
@@ -121,7 +153,28 @@ function showAnswers(tid) {
 
 
     for (i = 0; i < taskGaps.length; i++) {
-        if (["uoe-word-transformation","uoe-free-gap-filling","reading-free-gap-filling","uoe-jumbled-up-sentences"].includes(type)) {
+        if (type == "uoe-error-correction") {
+            taskGaps[i].classList.remove("incorrect");
+            taskGaps[i].classList.add("gap-disabled");
+      taskGaps[i].querySelector(".tick").replaceWith(taskGaps[i].querySelector(".tick").cloneNode(true));
+       Array.from(taskGaps[i].querySelectorAll(".text-unit")).forEach(x => {
+            x.classList.add("unmarked") 
+            x.replaceWith(x.cloneNode(true));
+        })
+
+      if (solutions[i] == "" && taskGaps[i].querySelector(".ticked") == null) {
+            taskGaps[i].querySelector(".tick").classList.add("ticked");
+        } else if (solutions[i] != "") {
+      Array.from(taskGaps[i].querySelectorAll(".text-unit")).forEach(x => {
+        if (x.innerText == solutions[i]) {
+            x.classList.remove("unmarked")
+            x.classList.add("strikethrough")
+            taskGaps[i].querySelector(".cross").classList.add("crossed");
+        }
+      })
+  }
+
+        } else if (["uoe-word-transformation","uoe-free-gap-filling","reading-free-gap-filling","uoe-jumbled-up-sentences"].includes(type)) {
             taskGaps[i].value = solutions[i].toString().replaceAll(",", " / ");
             taskGaps[i].disabled = true;
             taskGaps[i].classList.add("gap-disabled");

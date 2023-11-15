@@ -93,7 +93,7 @@ function populateHTML(x) {
     /* task.appendChild(h3) */
 
 if (type == "uoe-error-correction") {
-task.innerHTML = text.split("<i")[0].replace(/([^\d)|\W]+)/g,"<span class='text-unit'>$1</span>").replace(/(\d+\)\s+)(.*)/,"<span class='default-gap'>$2<button class='cross crossed'>&#10005;</button><button class='tick'>&#10003;</button></span>").replace(/(\d+\)\s+)(.*)/g,"<span class='uoe-error-correction-line'>$2<button class='cross'>&#10005;</button><button class='tick'>&#10003;</button></span>") + "<p><i" + text.split("<i")[1] + "</p>"
+task.innerHTML = text.split("<i")[0].replace(/([^\d)|\W]+)/g,"<span class='text-unit'>$1</span>").replace(/(\d+\)\s+)(.*)/,"<span class='default-gap'>$2 <button class='cross crossed'>&#10005;</button> <button class='tick'>&#10003;</button></span>").replace(/(\d+\)\s+)(.*)/g,"<span class='uoe-error-correction-line'>$2 <button class='cross'>&#10005;</button> <button class='tick'>&#10003;</button></span>") + "<p><i" + text.split("<i")[1] + "</p>"
 } else if (type == "uoe-closed-gap-filling" || type == "reading-text") {
         task.innerHTML = text.replace(/\(\d+\)/, "<span class='default-gap " + taskId + "'>" + example + "</span>").replace(/\(\d+\)/g, "<span class='gap " + taskId + "'></span>")
     } else if (type == "uoe-word-transformation" || type == "uoe-jumbled-up-sentences" || type == "uoe-sentence-transformation" || type == "uoe-free-gap-filling" || type == "reading-summary") {
@@ -259,7 +259,8 @@ buttonContainer.classList.add("button-container");
     document.getElementById("content-container").appendChild(taskBody);
 
  if (type == "uoe-error-correction") {
-taskGaps = document.getElementById(taskId).querySelectorAll(".task .text-unit")
+taskGaps = document.getElementById(taskId).querySelectorAll(".task .uoe-error-correction-line")
+textUnits = document.getElementById(taskId).querySelectorAll(".task .text-unit")
 ticks = document.getElementById(taskId).querySelectorAll(".task .tick")
 
 defaults = document.getElementById(taskId).querySelectorAll(".task .default-gap .text-unit");
@@ -308,7 +309,7 @@ Array.from(defaults).forEach(x => {
     }
 
     if (type == "uoe-error-correction") {
-        Array.from(taskGaps).forEach(x => x.addEventListener("click", function() { markTextUnit(x,x.parentElement)}))
+        Array.from(textUnits).forEach(x => x.addEventListener("click", function() { markTextUnit(x,x.parentElement)}))
         Array.from(ticks).forEach(x => x.addEventListener("click", function() { unMarkAll(x,x.parentElement)}))
     }
 

@@ -289,7 +289,8 @@ h2 {
     color: unset;
 }
 
-.uoe-error-correction .unmarked:hover {
+.uoe-error-correction .text-unit.unmarked:hover {
+    cursor: inherit;
     color: unset !important;
 }
 
@@ -312,7 +313,6 @@ h2 {
     width: 1.5em;
     height: 1.5em;
     background: #6fdb6f;
-    margin: 0 0 0 0.4em;
 }
 
 .uoe-error-correction .cross {
