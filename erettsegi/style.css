@@ -176,11 +176,20 @@ h2 {
 .reading-summary .default-gap,
 .uoe-sentence-transformation .gap-disabled,
 .uoe-sentence-transformation .default-gap {
-    line-height: inherit;
     display: inline;
     border: black 0pt solid;
     vertical-align: baseline;
     margin: 0;
+}
+
+.reading-summary .default-gap,
+.uoe-sentence-transformation .default-gap {
+    line-height: inherit;
+}
+
+.reading-summary .gap-disabled,
+.uoe-sentence-transformation .gap-disabled {
+    line-height: 2em;
 }
 
 .uoe-sentence-transformation .gap,
