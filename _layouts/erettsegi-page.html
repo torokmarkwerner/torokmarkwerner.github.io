@@ -5,7 +5,7 @@ layout: default
 {% include erettsegi-titles.html %}
        <h1>{{ htitle }}</h1>
        {{ content }} 
-        <ul>
+        <ul class="erettsegi-list">
             {% assign depth = page.path | split: "/" | size | plus: 1 %}
             {% if depth < 4 %}
             {% assign tasks = site.pages | where_exp: "item" , "item.url contains page.permalink" | sort: "path" | reverse %}
@@ -15,11 +15,11 @@ layout: default
    {% for task in tasks %}
     {% assign depthChild = task.path | split: "/" | size %}
         {% if depthChild == depth %}
-            <li style="padding-bottom:1em"><a href="{{ task.url }}">
+            <a href="{{ task.url }}"><li>
                     {{ task.path | replace: "/"," / " | replace: "-", " / " | remove: ".html" | remove: ".md" | remove: title | remove_first: "/ " | replace:
         "standard", "közép" | replace: "higher", "emelt" | replace: "uoe", "nyelvhelyesség" | replace:
         "reading", "olvasott szöveg értése" | replace: "erettsegi","érettségi" }}
-                </a></li>
+                </li></a>
         {% endif %}
     {% endfor %}
         </ul>

@@ -1,3 +1,53 @@
+.erettsegi-list {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.erettsegi-list a:nth-child(odd) {
+    background: lightskyblue;   
+}
+
+.erettsegi-list a:nth-child(even) {
+    background: palegreen;   
+}
+
+.erettsegi-list a:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.erettsegi-list a {
+    text-decoration: none;
+    color: black;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex: 0 1 40%;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    border: 1pt black solid;
+    margin: 0.2em;
+    padding: 0.5em;   
+}
+
+.erettsegi-list li {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+}
+
 #feedback-form label,
 #feedback-form input {
     display: block;
@@ -228,6 +278,7 @@ h2 {
 .reading-half-sentences .task .default-gap,
 .reading-half-sentences .task .gap-disabled {
     flex: 1;
+    gap: 0.2em;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -503,6 +554,8 @@ h2 {
 }
 
 .button-container {
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     gap: 0.5em;
     padding-bottom: 1.5em;
