@@ -71,7 +71,7 @@ function checkAnswers(tid) {
                 taskGaps[i].classList.add("incorrect")
             }
 
-        } else if (["uoe-closed-gap-filling", "reading-dialogue", "reading-paragraphs", "reading-headings", "reading-text", "reading-half-sentences"].includes(type)) {
+        } else if (["uoe-closed-gap-filling", "reading-matching", "reading-dialogue", "reading-paragraphs", "reading-headings", "reading-text", "reading-half-sentences"].includes(type)) {
             taskGaps[i].classList.remove("incorrect");
             if (!(taskGaps[i].classList.contains("correct")) && taskGaps[i].id.replace((tid + "-"), "") == solutions[i] && !(taskGaps[i].classList.contains("gap-disabled"))) {
                 taskGaps[i].classList.add("gap-disabled", "correct");
@@ -195,7 +195,7 @@ function showAnswers(tid) {
             span.classList.add("gap-disabled");
             taskGaps[i].replaceWith(span);
 
-        } else if (["uoe-closed-gap-filling", "reading-dialogue", "reading-paragraphs", "reading-headings", "reading-text", "reading-half-sentences"].includes(type)) {
+        } else if (["uoe-closed-gap-filling", "reading-matching", "reading-dialogue", "reading-paragraphs", "reading-headings", "reading-text", "reading-half-sentences"].includes(type)) {
             for (w = 0; w < solutions[i].toString().split(",").length; w++) {
 
                 //WHEN THERE'S MULTIPLE SOLUTIONS
