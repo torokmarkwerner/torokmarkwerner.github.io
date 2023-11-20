@@ -219,28 +219,41 @@ h2 {
 }
 
 .reading-true-or-false .statement {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1 0 50%;
+    width: 70%;
+    display: table-cell;
+    vertical-align: middle;
     padding: 0.5em 1.5em;
     border: 1pt black solid;
 }
 
 .reading-true-or-false .gap-container {
+    width: 100%;
+    display: table;
     text-align: center;
-    align-items: stretch;
     margin: 1.5em 0;
     padding: 0;
 }
 
 .reading-true-or-false .radio-container {
     display: table;
+    width: 90%;
     height: fit-content;
-    align-self: center;
-    flex: 1 1 auto;
     padding: 0.25em 0.5em;
 }
+
+@media (max-width: 767px) {
+.reading-true-or-false .statement {
+    width: auto;
+    display: block;
+    margin: auto;
+}
+
+.reading-true-or-false .radio-container {
+    width: auto;
+    display: block;
+    margin: auto;
+}
+  }
 
 .reading-true-or-false .radio-container label {
     display: table;
@@ -275,7 +288,7 @@ h2 {
 }
 
 .reading-true-or-false .radio-container label :checked+span {
-    background-color: lightskyblue;
+    background-color: #eb8e8e;
 }
 
 .reading-true-or-false .default label :checked+span {
