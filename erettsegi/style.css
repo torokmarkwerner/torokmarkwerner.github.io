@@ -216,6 +216,7 @@ h2 {
     width: 100%;
     flex-wrap: wrap;
     align-items: center;
+    align-items: stretch;
 }
 
 .reading-true-or-false .statement {
@@ -426,7 +427,7 @@ h2 {
 
 .reading-matching .word-list .gap,
 .reading-half-sentences .word-list .gap {
-    flex: 1 0 25%;
+    flex: 1 0 30%;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -434,6 +435,7 @@ h2 {
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
+    min-width: fit-content;
 }
 
 .reading-matching>div:not(.instructions),
@@ -445,15 +447,19 @@ h2 {
 .reading-matching .task .gap,
 .reading-matching .task .default-gap,
 .reading-matching .task .gap-disabled {
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    line-height: 1.5em;
     border: 0pt solid black;
     margin: 0;
 }
 
 .reading-matching .task .default-gap {
-    display: inline;
+    display: inline-block;
+    vertical-align: baseline;
+    text-align: left;
+    line-height: 1.5em;
 }
 
 .reading-matching .task {

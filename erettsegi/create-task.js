@@ -93,21 +93,21 @@ function populateHTML(x) {
     /* task.appendChild(h3) */
 
 if (type == "uoe-error-correction") {
-task.innerHTML = text.split("<i")[0].replace(/([^\d)|\W]+)/g,"<span class='text-unit'>$1</span>").replace(/(0\)\s+)(.*)/,"<span class='default-gap'>$2 <button class='tick'>&#10003;</button></span>").replace(/(0\)\s+)(.*)/,"<span class='default-gap'>$2 <button class='tick'>&#10003;</button></span>").replace(/(\d+\)\s+)(.*)/g,"<span class='uoe-error-correction-line'>$2 <button class='tick'>&#10003;</button></span>") + "<p><i" + text.split("<i")[1] + "</p>"
+task.innerHTML = text.split("<i")[0].replace(/([^\d\)|\W]+)/g,"<span class='text-unit'>$1</span>").replace(/(0\)\s+)(.*)/,"<span class='default-gap'>$2 <button class='tick'>&#10003;</button></span>").replace(/(0\)\s+)(.*)/,"<span class='default-gap'>$2 <button class='tick'>&#10003;</button></span>").replace(/(\d{1,2}\)\s+)(.*)/g,"<span class='uoe-error-correction-line'>$2 <button class='tick'>&#10003;</button></span>") + "<p><i" + text.split("<i")[1] + "</p>"
 } else if (type == "uoe-closed-gap-filling" || type == "reading-text") {
-        task.innerHTML = text.replace(/\(\d+\)/, "<span class='default-gap " + taskId + "'>" + example + "</span>").replace(/\(\d+\)/g, "<span class='gap " + taskId + "'></span>")
+        task.innerHTML = text.replace(/\(\d{1,2}\)/, "<span class='default-gap " + taskId + "'>" + example + "</span>").replace(/\(\d{1,2}\)/g, "<span class='gap " + taskId + "'></span>")
     } else if (type == "uoe-word-transformation" || type == "uoe-jumbled-up-sentences" || type == "uoe-sentence-transformation" || type == "uoe-free-gap-filling" || type == "reading-summary") {
-        task.innerHTML = text.replace(/\(\d+\)/, "<span class='default-gap'>" + example + "</span>").replace(/\(\d+\)/g, "<input class='gap'>")
+        task.innerHTML = text.replace(/\(\d{1,2}\)/, "<span class='default-gap'>" + example + "</span>").replace(/\(\d{1,2}\)/g, "<input class='gap'>")
     } else if (type == "reading-free-gap-filling" || type == "reading-short-answer") {
-        task.innerHTML = text2.replace(/\(\d+\)/, "<span class='default-gap'>" + example + "</span>").replace(/\(\d+\)/g, "<input class='gap'>")
+        task.innerHTML = text2.replace(/\(\d{1,2}\)/, "<span class='default-gap'>" + example + "</span>").replace(/\(\d{1,2}\)/g, "<input class='gap'>")
     } else if (type == "reading-dialogue" || type == "reading-headings" || type == "reading-paragraphs") {
-        task.innerHTML = text.replace(/\(\d+\)/, "<div class='default-gap " + taskId + "'>" + example + "</div>").replace(/\(\d+\)/g, "<div class='gap " + taskId + "'></div>")
+        task.innerHTML = text.replace(/\(\d{1,2}\)/, "<div class='default-gap " + taskId + "'>" + example + "</div>").replace(/\(\d{1,2}\)/g, "<div class='gap " + taskId + "'></div>")
     } else if (type == "reading-half-sentences") {
         task.innerHTML = text2.replace("<div class='gap'></div>", "<div class='default-gap " + taskId + "'>" + example + "</div>").replace(/\<div class\=\'gap\'\>\<\/div\>/g, "<div class='gap " + taskId + "'></div>")
     } else if (type == "reading-matching") {
-        task.innerHTML = text.replace(/\(\d+\)/, "<div>" + text2 + " <span class='default-gap " + taskId + "'>" + example + "</span>" + "</div>").replace(/\(\d+\)/g, "<div>" + text2 + " <span class='gap " + taskId + "'></span>" + "</div>")
+        task.innerHTML = text.replace(/\(\d{1,2}\)/, "<div>" + text2 + " <span class='default-gap " + taskId + "'>" + example + "</span>" + "</div>").replace(/\(\d{1,2}\)/g, "<div>" + text2 + " <span class='gap " + taskId + "'></span>" + "</div>")
     } else if (type == "uoe-multiple-choice") {
-        task.innerHTML = text.replace(/\(\d+\)/, "<select class='default-gap'></select>").replace(/\(\d+\)/g, "<select class='gap'></select>")
+        task.innerHTML = text.replace(/\(\d{1,2}\)/, "<select class='default-gap'></select>").replace(/\(\d{1,2}\)/g, "<select class='gap'></select>")
 
         for (i = 0; i < task.querySelectorAll("select").length; i++) {
             select = task.querySelectorAll("select")[i]
@@ -128,7 +128,7 @@ task.innerHTML = text.split("<i")[0].replace(/([^\d)|\W]+)/g,"<span class='text-
         }
 
     } else if (type == "reading-multiple-choice") {
-        task.innerHTML = text2.replace(/\(\d+\)/, "<select class='default-gap'></select>").replace(/\(\d+\)/g, "<select class='gap'></select>")
+        task.innerHTML = text2.replace(/\(\d{1,2}\)/, "<select class='default-gap'></select>").replace(/\(\d{1,2}\)/g, "<select class='gap'></select>")
 
         for (i = 0; i < task.querySelectorAll("select").length; i++) {
             select = task.querySelectorAll("select")[i]
@@ -150,7 +150,7 @@ task.innerHTML = text.split("<i")[0].replace(/([^\d)|\W]+)/g,"<span class='text-
 
     } else if (type == "reading-extended-matching") {
 
-      task.innerHTML = text2.replace(/\(\d+\)/, "<select class='default-gap'></select>").replace(/\(\d+\)/g, "<select class='gap'></select>")
+      task.innerHTML = text2.replace(/\(\d{1,2}\)/, "<select class='default-gap'></select>").replace(/\(\d{1,2}\)/g, "<select class='gap'></select>")
 
         for (i = 0; i < task.querySelectorAll("select").length; i++) {
             select = task.querySelectorAll("select")[i]
