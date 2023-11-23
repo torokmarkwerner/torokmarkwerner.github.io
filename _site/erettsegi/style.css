@@ -289,7 +289,12 @@ h2 {
 }
 
 .reading-true-or-false .radio-container label :checked+span {
-    background-color: #eb8e8e;
+    background-color: lightblue;
+}
+
+.reading-true-or-false .radio-container label :disabled+span {
+    background-color: black;
+    color: white;
 }
 
 .reading-true-or-false .default label :checked+span {

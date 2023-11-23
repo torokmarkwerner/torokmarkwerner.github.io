@@ -30,7 +30,7 @@ function populateHTML(x) {
     text = x.text;
     text2 = x.text2;
     link = x.link;
-    images = x.images.split(": ");
+    images = JSON.parse(x.images);
 
     taskBody = document.createElement("DIV");
     taskBody.className = type;
@@ -91,9 +91,13 @@ function populateHTML(x) {
     h3.innerHTML = textTitle;
 
     img = document.createElement("IMG");
+    img.style.display = "none"
+    if (images.length > 1) {
+    img.style.display = "block"
     img.src = images[1];
     img.alt = images[0];
     img.style.width = "50%";
+}
 
     /* task.appendChild(h3) */
 
