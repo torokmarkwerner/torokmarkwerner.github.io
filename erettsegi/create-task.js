@@ -30,7 +30,7 @@ function populateHTML(x) {
     text = x.text;
     text2 = x.text2;
     link = x.link;
-    images = x.images;
+    images = x.images.split(": ");
 
     taskBody = document.createElement("DIV");
     taskBody.className = type;
@@ -89,6 +89,11 @@ function populateHTML(x) {
 
     h3 = document.createElement("H3");
     h3.innerHTML = textTitle;
+
+    img = document.createElement("IMG");
+    img.src = images[1];
+    img.alt = images[0];
+    img.style.width = "50%";
 
     /* task.appendChild(h3) */
 
@@ -187,6 +192,7 @@ task.innerHTML = text.split("<i")[0].replace(/([^\d\)|\W]+)/g,"<span class='text
     if (["reading-multiple-choice", "reading-half-sentences", "reading-true-or-false", "reading-free-gap-filling", "reading-extended-matching", "reading-short-answer"].includes(type)) {
 
         taskBody.appendChild(h3)
+        taskBody.appendChild(img)
 
         taskText = document.createElement("DIV");
         taskText.innerHTML = text;
@@ -202,6 +208,7 @@ task.innerHTML = text.split("<i")[0].replace(/([^\d\)|\W]+)/g,"<span class='text
         if (Object.keys(wordList).length > 0 && !["uoe-multiple-choice"].includes(type)) {
             taskBody.appendChild(wordListContainer)
         }
+        task.insertBefore(img, task.firstChild)
         task.insertBefore(h3, task.firstChild)
         taskBody.appendChild(task)
     }
