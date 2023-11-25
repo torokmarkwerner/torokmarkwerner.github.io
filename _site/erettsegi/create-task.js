@@ -91,12 +91,20 @@ function populateHTML(x) {
     h3.innerHTML = textTitle;
 
     img = document.createElement("IMG");
-    img.style.display = "none"
-    if (images.length > 1) {
-    img.style.display = "block"
-    img.src = images[1];
+    img.className = "erettsegi-image"
+
+    attribution = document.createElement("DIV");
+    attribution.className = "erettsegi-image-attribution"
+
+    if (images.length == 3) {
+    img.src = images[2];
     img.alt = images[0];
-    img.style.width = "50%";
+
+    if (images[1].split("|").length > 1) {
+    attribution.innerHTML = images[0] + ". Source: " + images[1].split("|")[0] + "<span style='font-style:normal'> | </span>" + images[1].split("|")[1] + "."
+} else {
+    attribution.innerText = images[0] + ". Source: " + images[1] + "."
+}
 }
 
     /* task.appendChild(h3) */
@@ -197,6 +205,7 @@ task.innerHTML = text.split("<i")[0].replace(/([^\d\)|\W]+)/g,"<span class='text
 
         taskBody.appendChild(h3)
         taskBody.appendChild(img)
+        taskBody.appendChild(attribution)
 
         taskText = document.createElement("DIV");
         taskText.innerHTML = text;
@@ -212,6 +221,7 @@ task.innerHTML = text.split("<i")[0].replace(/([^\d\)|\W]+)/g,"<span class='text
         if (Object.keys(wordList).length > 0 && !["uoe-multiple-choice"].includes(type)) {
             taskBody.appendChild(wordListContainer)
         }
+        task.insertBefore(attribution, task.firstChild)
         task.insertBefore(img, task.firstChild)
         task.insertBefore(h3, task.firstChild)
         taskBody.appendChild(task)

@@ -91,6 +91,20 @@
     cursor: pointer
 }
 
+.erettsegi-image {
+    display: block;
+    width: 70%;
+}
+
+.erettsegi-image-attribution {
+    display: block;
+    line-height: 1.5em;
+    width: calc(70% - 2em);
+    font-size: small;
+    font-style: italic;
+    margin: 0.4em 1em;
+}
+
 h2 {
     padding-top: 0;
 }
@@ -289,7 +303,7 @@ h2 {
 }
 
 .reading-true-or-false .radio-container label :checked+span {
-    background-color: #eb8e8e;
+    background-color: lightskyblue;
 }
 
 .reading-true-or-false .default label :checked+span {
