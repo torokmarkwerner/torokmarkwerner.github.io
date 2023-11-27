@@ -353,6 +353,7 @@ h2 {
     overflow: auto;
     scroll-behavior: auto;
     scrollbar-width: auto;
+    max-height:50vh;
 }
 
 .uoe-error-correction .default-gap, 
