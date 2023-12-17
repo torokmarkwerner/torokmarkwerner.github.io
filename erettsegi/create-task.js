@@ -204,8 +204,10 @@ task.innerHTML = text.split("<i")[0].replace(/([$£]?\d?[.,]?\d+[.,]\d+.?|\d+\:\
     if (["reading-multiple-choice", "reading-half-sentences", "reading-true-or-false", "reading-free-gap-filling", "reading-extended-matching", "reading-short-answer"].includes(type)) {
 
         taskBody.appendChild(h3)
+        if (!images.includes("")) {
         taskBody.appendChild(img)
         taskBody.appendChild(attribution)
+    }
 
         taskText = document.createElement("DIV");
         taskText.innerHTML = text;
@@ -221,8 +223,10 @@ task.innerHTML = text.split("<i")[0].replace(/([$£]?\d?[.,]?\d+[.,]\d+.?|\d+\:\
         if (Object.keys(wordList).length > 0 && !["uoe-multiple-choice"].includes(type)) {
             taskBody.appendChild(wordListContainer)
         }
-        task.insertBefore(attribution, task.firstChild)
-        task.insertBefore(img, task.firstChild)
+        if (!images.includes("")) {
+            task.insertBefore(attribution, task.firstChild)
+            task.insertBefore(img, task.firstChild)
+        }
         task.insertBefore(h3, task.firstChild)
         taskBody.appendChild(task)
     }

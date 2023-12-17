@@ -110,7 +110,7 @@ function populateHTML(x) {
     /* task.appendChild(h3) */
 
 if (type == "uoe-error-correction") {
-task.innerHTML = text.split("<i")[0].replace(/([$£]?\d?[.,]?\d+[.,]\d+.?|\d+\:\d+|[ap]\.m\.|B\.C\.|[A-ZÁÉÚŐÓÜÖÍa-záéúőóüöí%'$£\-']+(?=[.?!]?[^\n]?)|[^\n]\d+[^)])/g,"<span class='text-unit'>$1</span>").replace(/(0\)\s+)(.*)/,"<span class='default-gap'>$2 <button class='tick'>&#10003;</button></span>").replace(/(0\)\s+)(.*)/,"<span class='default-gap'>$2 <button class='tick'>&#10003;</button></span>").replace(/(\d{1,2}\)\s+)(.*)/g,"<span class='uoe-error-correction-line'>$2 <button class='tick'>&#10003;</button></span>") + "<p><i" + text.split("<i")[1] + "</p>"
+task.innerHTML = text.split("<i")[0].replace(/([$£]?\d?[.,]?\d+[.,]\d+.?|\d+\:\d+|[ap]\.m\.|B\.C\.|[A-ZÁÉÚŐÓÜÖÍa-záéúőóüöí%'$£\-'’]+(?=[.?!]?[^\n]?)|[^\n]\d+[^)])/g,"<span class='text-unit'>$1</span>").replace(/(0\)\s+)(.*)/,"<span class='default-gap'>$2 <button class='tick'>&#10003;</button></span>").replace(/(0\)\s+)(.*)/,"<span class='default-gap'>$2 <button class='tick'>&#10003;</button></span>").replace(/(\d{1,2}\)\s+)(.*)/g,"<span class='uoe-error-correction-line'>$2 <button class='tick'>&#10003;</button></span>") + "<p><i" + text.split("<i")[1] + "</p>"
 } else if (type == "uoe-closed-gap-filling" || type == "reading-text") {
         task.innerHTML = text.replace(/\(\d{1,2}\)/, "<span class='default-gap " + taskId + "'>" + example + "</span>").replace(/\(\d{1,2}\)/g, "<span class='gap " + taskId + "'></span>")
     } else if (type == "uoe-word-transformation" || type == "uoe-jumbled-up-sentences" || type == "uoe-sentence-transformation" || type == "uoe-free-gap-filling" || type == "reading-summary") {
@@ -204,8 +204,10 @@ task.innerHTML = text.split("<i")[0].replace(/([$£]?\d?[.,]?\d+[.,]\d+.?|\d+\:\
     if (["reading-multiple-choice", "reading-half-sentences", "reading-true-or-false", "reading-free-gap-filling", "reading-extended-matching", "reading-short-answer"].includes(type)) {
 
         taskBody.appendChild(h3)
+        if (!images.includes("")) {
         taskBody.appendChild(img)
         taskBody.appendChild(attribution)
+    }
 
         taskText = document.createElement("DIV");
         taskText.innerHTML = text;
@@ -221,8 +223,10 @@ task.innerHTML = text.split("<i")[0].replace(/([$£]?\d?[.,]?\d+[.,]\d+.?|\d+\:\
         if (Object.keys(wordList).length > 0 && !["uoe-multiple-choice"].includes(type)) {
             taskBody.appendChild(wordListContainer)
         }
-        task.insertBefore(attribution, task.firstChild)
-        task.insertBefore(img, task.firstChild)
+        if (!images.includes("")) {
+            task.insertBefore(attribution, task.firstChild)
+            task.insertBefore(img, task.firstChild)
+        }
         task.insertBefore(h3, task.firstChild)
         taskBody.appendChild(task)
     }
