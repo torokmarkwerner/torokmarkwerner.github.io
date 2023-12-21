@@ -122,7 +122,7 @@ h2 {
 
 hr.erettsegi-line {
     border: 0;
-    border-bottom: 2px black dashed;
+    border-bottom: 0px black dashed; //2px
 }
 
 .erettsegi-link {
