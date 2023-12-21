@@ -1,3 +1,14 @@
+.erettsegi-tag {
+    padding: 0.5em;
+    background: #ffef99;
+    font-variant: small-caps;
+}
+
+.erettsegi-tag:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
 .erettsegi-list {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -107,6 +118,11 @@
 
 h2 {
     padding-top: 0;
+}
+
+hr.erettsegi-line {
+    border: 0;
+    border-bottom: 2px black dashed;
 }
 
 .erettsegi-link {
