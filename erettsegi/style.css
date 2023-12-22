@@ -1,7 +1,8 @@
 .erettsegi-tag {
+    background: red;
+    color: white;
     padding: 0.5em;
-    background: #ffef99;
-    font-variant: small-caps;
+    font-variant: all-small-caps;
 }
 
 .erettsegi-tag:hover {

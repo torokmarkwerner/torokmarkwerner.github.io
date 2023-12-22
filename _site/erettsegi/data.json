@@ -3026,7 +3026,7 @@
     {
         "taskId": "standard-08okt-uoe-3",
         "type": "uoe-free-gap-filling",
-        "solutions": "[[\"to\"],[\"on\"],[\"to\"],[\"When\",\"As\",\"Since\",\"After\",\"Because\",\"when\",\"as\",\"since\",\"after\",\"because \"],[\"the\"],[\"that\",\"which\",\"as\",\"who\"],[\"of\"],[\"not\"],[\"has\"]]",
+        "solutions": "[[\"to\"],[\"on\"],[\"to\"],[\"When\",\"As\",\"Since\",\"After\",\"Because\",\"when\",\"as\",\"since\",\"after\",\"because\"],[\"the\"],[\"that\",\"which\",\"as\",\"who\"],[\"of\"],[\"not\"],[\"has\"]]",
         "taskTitle": "Task 3",
         "instructions": "[\"You are going to read an article about a dog’s adventures. Some words are missing from the text.\",\"Your task is to fill in the gaps.\",\"Use only <u>one</u> word in each gap.\",\"There is an example at the beginning.\"]",
         "wordList": "{}",
@@ -3880,7 +3880,7 @@
     {
         "taskId": "higher-23okt-uoe-1",
         "type": "uoe-closed-gap-filling",
-        "solutions": "[\"B \",\"\",\"D \",\"\",\"M \",\"\",\"K \",\"\",\"H \",\"\",\"G \",\"\",\"E \",\"\",\"I\"]",
+        "solutions": "[\"B\",\"\",\"D\",\"\",\"M\",\"\",\"K\",\"\",\"H\",\"\",\"G\",\"\",\"E\",\"\",\"I\"]",
         "taskTitle": "Task 1",
         "instructions": "[\"You are going to read an article about how an art historian found out who the young man is in one of Van Gogh’s most celebrated paintings.\",\"Your task is to choose the most appropriate word from the list for each gap in the text.\",\"Each word can be used once.\",\"There is an example at the beginning.\"]",
         "wordList": "{\"A\":\"ABOVE\",\"D\":\"IDENTIFIED\",\"G\":\"MATCHING\",\"K\":\"PREVIOUSLY\",\"B\":\"AFTER\",\"E\":\"LANDSCAPING\",\"H\":\"OUTSIDE\",\"L\":\"RECENTLY\",\"F\":\"LOOKED\",\"I\":\"PAINTED\",\"M\":\"WHILE\"}",
@@ -3908,7 +3908,7 @@
     {
         "taskId": "higher-23okt-uoe-3",
         "type": "uoe-multiple-choice",
-        "solutions": "[\"B \",\"\",\"B \",\"\",\"D \",\"\",\"C \",\"\",\"A \",\"\",\"A \",\"\",\"B \",\"\",\"D\"]",
+        "solutions": "[\"B\",\"\",\"B\",\"\",\"D\",\"\",\"C\",\"\",\"A\",\"\",\"A\",\"\",\"B\",\"\",\"D\"]",
         "taskTitle": "Task 3",
         "instructions": "[\"You are going to read an article about New Zealand's official wizard, who has lost his job after two decades of service. Some words are missing from the text.\",\"Choose the most appropriate answer from the options for each gap in the text.\"]",
         "wordList": "{\"0\":{\"because\":\"A\",\"during\":\"B\",\"after\":\"C\",\"since\":\"D\"},\"1\":{\"having performed\":\"A\",\"to perform\":\"B\",\"and perform\":\"C\",\"performing\":\"D\"},\"2\":{\"although\":\"A\",\"because\":\"B\",\"even if\":\"C\",\"therefore\":\"D\"},\"3\":{\"to him\":\"A\",\"for him\":\"B\",\"him\":\"C\",\"him for\":\"D\"},\"4\":{\"has begun\":\"A\",\"would begin\":\"B\",\"began\":\"C\",\"were to begin\":\"D\"},\"5\":{\"to\":\"A\",\"–\":\"B\",\"by\":\"C\",\"in\":\"D\"},\"6\":{\"Despite\":\"A\",\"In case of\":\"B\",\"Since\":\"C\",\"As far as\":\"D\"},\"7\":{\"that\":\"A\",\"which\":\"B\",\"this\":\"C\",\"what\":\"D\"},\"8\":{\"where would he\":\"A\",\"that he would\":\"B\",\"how would he\":\"C\",\"if he would\":\"D\"}}",
@@ -3922,7 +3922,7 @@
     {
         "taskId": "higher-23okt-uoe-4",
         "type": "uoe-error-correction",
-        "solutions": "[\"although \",\"\",\"was \",\"bit \",\"looking \",\"that \",\"word \",\"at \",\"more \",\"\",\"him\"]",
+        "solutions": "[\"although\",\"\",\"was\",\"bit\",\"looking\",\"that\",\"word\",\"at\",\"more\",\"\",\"him\"]",
         "taskTitle": "Task 4",
         "instructions": "[\"You are going to read an article about a rare first edition of a Harry Potter book that was sold to a private buyer at an auction in England.\",\"In most lines there is one word that should not be there. It is either grammatically incorrect or does not fit in with the sense of the text.\",\"Read the text and then mark the extra word in each line by clicking on it.\",\"Some lines are correct, in which case you have to click on the green tick next to the line.\",\"You may mark and unmark any word in any line.\",\"The task begins with two examples.\"]",
         "wordList": "{}",
@@ -4048,7 +4048,7 @@
     {
         "taskId": "higher-22okt-reading-1",
         "type": "reading-paragraphs",
-        "solutions": "[\"A \",\"H \",\"F \",\"I \",\"D \",\"G\"]",
+        "solutions": "[\"A\",\"H\",\"F\",\"I\",\"D\",\"G\"]",
         "taskTitle": "Task 1",
         "instructions": "[\"In this article about a very valuable violin some paragraphs have been left out.\",\"Some paragraphs are missing.\",\"Your task is to put the jumbled paragraphs back in order.\",\"Place the paragraphs in the boxes as in the example.\"]",
         "wordList": "{\"A\":\"Tired after a long day recording at Abbey Road studios Mr Morris, who has played on film scores including The Lord of the Rings and James Bond, was distressed.\",\"B\":\"\\\"I feel a bit battered and bruised,\\\" he said. \\\"I haven't had a great deal of sleep since it went missing.\\\"\",\"D\":\"Shortly after 22:10, the police team watched as \\\"Gene\\\", in his mid to late 20s, approached Mr Morris, shook his hand and transferred a holdall containing the violin.\",\"E\":\"“I knew from experience that we were not dealing with a hardened criminal,” the officer said. “The man was desperate to get it back, but needed to be convinced that he would not be arrested.”\",\"F\":\"Over the next 24 hours further contact was made with the person who had sent the message – it's suspected that he was in fact the individual who had taken the violin.\",\"G\":\"It said they would be taking no further action against the man because he had taken reasonable steps to contact the violin owner and had handed it back.\",\"H\":\"The breakthrough came on Thursday when Mr Morris received a direct Twitter message, which read: \\\"I recognise the person in the picture. I think it may be somebody I know – I'd like to be of help. I know what it's like to leave valuables on a train.\\\"\",\"I\":\"In an operation co-ordinated by the musician's friend and former police officer, Mike Pannett, a team of plain-clothes officers were placed on stand-by in case the handover went wrong.\"}",
@@ -7366,7 +7366,7 @@
     {
         "taskId": "higher-08maj-uoe-2",
         "type": "uoe-free-gap-filling",
-        "solutions": "[[\"most\",\"other\"],[\"In\",\"in\"],[\"so\",\"therefore\"],[\"Although\",\"Whereas\",\"While\",\"Though\",\"although\",\"whereas\",\"while\",\"though \"],[\"to\"],[\"If\",\"if\"],[\"for\"],[\"another\"],[\"or\",\"otherwise\"],[\"never\",\"not\"]]",
+        "solutions": "[[\"most\",\"other\"],[\"In\",\"in\"],[\"so\",\"therefore\"],[\"Although\",\"Whereas\",\"While\",\"Though\",\"although\",\"whereas\",\"while\",\"though\"],[\"to\"],[\"If\",\"if\"],[\"for\"],[\"another\"],[\"or\",\"otherwise\"],[\"never\",\"not\"]]",
         "taskTitle": "Task 2",
         "instructions": "[\"You are going to read an article about car security. Some words are missing from the text.\",\"Your task is to fill in the gaps.\",\"Use only <u>one</u> word in each gap.\",\"There is an example at the beginning.\"]",
         "wordList": "{}",
