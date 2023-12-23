@@ -1,0 +1,26 @@
+---
+layout: default
+---
+<script>
+  pages = document.getElementsByClassName("pages-button");
+  for (i=0; i<pages.length; i++) {
+    if(("/" + pages[i].textContent.toLowerCase() + "/") === "/erettsegi/") {
+      pages[i].classList.toggle("pages-button-current");
+      pages[i].style.backgroundColor = "palegreen";
+      pages[i].style.fontWeight = "bold"
+    }
+  }
+  </script>
+<div class="post">
+<ul>
+{% assign erettsegi = site.pages | where_exp: "item" , "item.path contains 'erettsegi/'"%}
+{% assign tasks = erettsegi | where_exp: "item", "item.tags contains page.tag" %}
+{% assign sortedTasks = tasks | sort: "path" | reverse %}
+{% for task in sortedTasks %}
+{% assign title = task.path | replace: "erettsegi/", "" | replace: "/"," / " | replace: "-", " / " | replace: "standard", "közép" | replace: "higher", "emelt" | replace: "uoe", "nyelvhelyesség" | replace: "reading", "olvasott szöveg értése" | replace: "nyelvhelyesség / nyelvhelyesség", "nyelvhelyesség" | replace: "olvasott szöveg értése / olvasott szöveg értése", "olvasott szöveg értése" | remove: ".html" | remove: ".md" %}
+  <li><a href="{{ task.url }}">{{ title }}</a>
+  </li>
+{% endfor %}
+</ul>
+</div>
+<hr>

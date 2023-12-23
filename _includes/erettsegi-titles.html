@@ -1,2 +1,2 @@
 {% assign title = page.path | replace: "/"," / " | replace: "-", " / " | remove: ".html" | remove: ".md" %}
-{% assign htitle = title | replace: "standard", "közép" | replace: "higher", "emelt" | replace: "uoe", "nyelvhelyesség" | replace: "reading", "olvasott szöveg értése" | replace: "erettsegi","érettségi" %}
+{% assign htitle = title | replace: "standard", "közép" | replace: "higher", "emelt" | replace: "uoe", "nyelvhelyesség" | replace: "reading", "olvasott szöveg értése" | replace: "erettsegi","érettségi" | replace: "nyelvhelyesség / nyelvhelyesség", "nyelvhelyesség" | replace: "olvasott szöveg értése / olvasott szöveg értése", "olvasott szöveg értése" %}

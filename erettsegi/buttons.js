@@ -176,12 +176,18 @@ function showAnswers(tid) {
             }
 
         } else if (["uoe-word-transformation", "uoe-free-gap-filling", "reading-free-gap-filling", "uoe-jumbled-up-sentences"].includes(type)) {
-            taskGaps[i].value = solutions[i].toString().replaceAll(",", " / ");
+         /* taskGaps[i].value = solutions[i].toString().replaceAll(",", " / ");
             taskGaps[i].disabled = true;
             taskGaps[i].classList.add("gap-disabled");
             taskGaps[i].classList.remove("gap", "incorrect");
             taskGaps[i].style.width = taskGaps[i].value.length + "ch";
-            taskGaps[i].replaceWith(taskGaps[i].cloneNode(true));
+            taskGaps[i].replaceWith(taskGaps[i].cloneNode(true)); */
+
+            div = document.createElement("DIV");
+            div.classList.add("gap-disabled");
+            div.innerText = solutions[i].toString().replaceAll(",", " / ");
+            div.style.width = div.innerText.length + "ch";
+            taskGaps[i].replaceWith(div);
 
         } else if (["uoe-sentence-transformation", "reading-summary"].includes(type)) {
             span = document.createElement("SPAN");

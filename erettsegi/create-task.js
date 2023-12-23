@@ -31,6 +31,7 @@ function populateHTML(x) {
     text2 = x.text2;
     link = x.link;
     images = JSON.parse(x.images);
+    tags = JSON.parse(x.tags);
 
     taskBody = document.createElement("DIV");
     taskBody.className = type;
@@ -56,6 +57,24 @@ function populateHTML(x) {
     h2.appendChild(a2)
 
     taskBody.appendChild(h2)
+
+    tagContainer = document.createElement("DIV")
+
+    for (i = 0; i < tags.length; i++) {
+    tag = document.createElement("A");
+    tag.innerText = tags[i]
+    tag.href = "/erettsegi/tag/" + tags[i]
+        if (i%2 == 1) {
+        tag.style.background = "#e91515"
+        }
+    tag.className = "erettsegi-tag"
+    tagContainer.appendChild(tag)
+    if (i+1 != tags.length) {
+    tagContainer.append(" ")
+    }
+    }
+
+    taskBody.appendChild(tagContainer)
 
     ul = document.createElement("UL");
 
@@ -110,7 +129,7 @@ function populateHTML(x) {
     /* task.appendChild(h3) */
 
 if (type == "uoe-error-correction") {
-task.innerHTML = text.split("<i")[0].replace(/(\d+m|\d+%|U\.K\.|3D|\d+th|\$\d+(?=\?)|\d+\-\S*|[$£]?\d?[.,]?\d+[.,]\d+[^\s.]?|\d+\:\d+|[ap]\.m\.|B\.C\.|[A-ZÁÉÚŐÓÜÖÍa-záéúőóüöí%'$£\-'’]+(?=[.?!]?[^\n]?)|(?<![\n0-9])\d+(?!(\d+\))))/g,"<span class='text-unit'>$1</span>").replace(/(0\)\s+)(.*)/,"<span class='default-gap'>$2 <button class='tick'>&#10003;</button></span>").replace(/(0\)\s+)(.*)/,"<span class='default-gap'>$2 <button class='tick'>&#10003;</button></span>").replace(/(\d{1,2}\)\s+)(.*)/g,"<span class='uoe-error-correction-line'>$2 <button class='tick'>&#10003;</button></span>") + "<p><i" + text.split("<i")[1] + "</p>"
+task.innerHTML = text.split("<i")[0].replace(/(\w+'\w+|\d+m|\d+%|U\.K\.|3D|\d+th|\$\d+(?=\?)|\d+\-\S*|[$£]?\d?[.,]?\d+[.,]\d+[^\s.]?|\d+\:\d+|[ap]\.m\.|B\.C\.|[A-ZÁÉÚŐÓÜÖÍa-záéúőóüöí%$£\-’]+(?=[.?!]?[^\n]?)|(?<![\n0-9])\d+(?!(\d+\))))/g,"<span class='text-unit'>$1</span>").replace(/(0\)\s+)(.*)/,"<span class='default-gap'>$2 <button class='tick'>&#10003;</button></span>").replace(/(0\)\s+)(.*)/,"<span class='default-gap'>$2 <button class='tick'>&#10003;</button></span>").replace(/(\d{1,2}\)\s+)(.*)/g,"<span class='uoe-error-correction-line'>$2 <button class='tick'>&#10003;</button></span>") + "<p><i" + text.split("<i")[1] + "</p>"
 } else if (type == "uoe-closed-gap-filling" || type == "reading-text") {
         task.innerHTML = text.replace(/\(\d{1,2}\)/, "<span class='default-gap " + taskId + "'>" + example + "</span>").replace(/\(\d{1,2}\)/g, "<span class='gap " + taskId + "'></span>")
     } else if (type == "uoe-word-transformation" || type == "uoe-jumbled-up-sentences" || type == "uoe-sentence-transformation" || type == "uoe-free-gap-filling" || type == "reading-summary") {

@@ -1,8 +1,9 @@
 .erettsegi-tag {
-    background: red;
+    background: #0023ff;
     color: white;
     padding: 0.5em;
     font-variant: all-small-caps;
+    text-decoration: none;
 }
 
 .erettsegi-tag:hover {
@@ -158,7 +159,7 @@ hr.erettsegi-line {
     vertical-align: middle;
     font-family: inherit;
     font-size: inherit;
-    max-width: 100%;
+    max-width: calc(100% - 1em);
 }
 
 .reading-multiple-choice .default-gap,
@@ -235,8 +236,11 @@ hr.erettsegi-line {
     font-family: inherit;
     font-size: inherit;
     min-width: 5em;
-    width: 5em;
     vertical-align: baseline;
+}
+
+.uoe-free-gap-filling .gap {
+    width: 5em;
 }
 
 .gap-container {
