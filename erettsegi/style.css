@@ -1,3 +1,82 @@
+.navbar-years, .navbar-levels, .navbar-parts, .navbar-tasks {
+  display: table;
+  width: 100%;
+  font-variant: all-small-caps;
+  font-family: sans-serif;
+  font-size: 75%;
+  border-spacing: 0.3em;
+  text-align: -webkit-center;
+}
+
+.navbar-levels, .navbar-parts {
+    font-size: initial;
+}
+
+.navbar-levels div, .navbar-parts div {
+  width: 50%;
+}
+
+.navbar-tasks div {
+  width: 25%;
+}
+
+.navbar-levels div, .navbar-parts div, .navbar-years div, .navbar-tasks div  {
+  display: table-cell;
+  padding: 1em;
+  text-align: center;
+  border: 1pt black solid;
+  vertical-align: middle;
+  min-width: 6ch;
+}
+
+.navbar-levels div:hover, .navbar-parts div:hover, .navbar-years div:hover, .navbar-tasks div:hover {
+  background: lightskyblue;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.present {
+  background: palegreen;
+  font-weight: bold
+}
+
+.prev-button, .next-button {
+  min-width: 10ch;
+}
+
+.prev-button::after {
+  content: "previous";
+}
+
+.next-button::before {
+  content: "next";
+}
+
+@media (max-width: 767px) {
+
+.navbar-levels div, .navbar-parts div, .navbar-years div, .navbar-tasks div {
+min-width: 14%;
+padding: 1em 0.5em;
+}
+
+.prev-button::after, .next-button::before {
+  content: "";
+}
+
+.navbar-years, .navbar-tasks {
+  font-size: 60%;
+}
+
+}
+
+.prev-button::before {
+  content: "‹";
+}
+
+.next-button::after {
+  content: "›";
+}
+
 .erettsegi-tag {
     background: #0023ff;
     color: white;

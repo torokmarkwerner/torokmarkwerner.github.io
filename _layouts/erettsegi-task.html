@@ -2,8 +2,79 @@
 layout: default
 ---
 {% include erettsegi-titles.html %}
-<h1>{{ htitle }}</h1>
-<hr class="erettsegi-line">
+<h2>{{ htitle }}</h2>
+
+{% assign taskData = page.path | replace: ".html", "" | split: "/" %}
+
+{% assign level = taskData[1] %}
+
+{% assign year = taskData[2] %}
+
+{% assign part = taskData[3] %}
+
+{% assign taskName = taskData[4] | split: "-" %}
+
+{% assign task = taskName[1] %}
+
+{{ level }} {{ year }} {{ part }} {{ task }}
+
+{% assign years = site.pages | where_exp: "item" , "item.path contains level" %}
+
+{{ years | size }}
+
+{% for year in years %}
+{% assign depth = year.path | split: "/" | size %}
+{% if depth == 3 %}
+<br>{{ year.path }}
+{% endif %}
+{% endfor %}
+
+<div class="navbar-levels">
+<div>
+közép
+</div>
+<div>
+emelt
+</div>
+</div>
+
+<div class="navbar-years">
+<div class="prev-button">
+</div>
+<div>
+21maj
+</div>
+<div>
+21okt
+</div>
+<div>
+22maj
+</div>
+<div>
+22okt
+</div>
+<div>
+23maj
+</div>
+<div class="next-button">
+</div>
+</div>
+
+<div class="navbar-parts">
+<div>
+olvasott szöveg értése
+</div>
+<div>
+nyelvhelyesség
+</div>
+</div>
+
+<div class="navbar-tasks">
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+</div>
 
 <script src="/erettsegi/buttons.js">
 </script>
