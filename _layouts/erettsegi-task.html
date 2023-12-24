@@ -16,64 +16,127 @@ layout: default
 
 {% assign task = taskName[1] %}
 
-{{ level }} {{ year }} {{ part }} {{ task }}
+{% assign years = "05maj,05nov,06feb,06maj,06okt,07maj,07okt,08maj,08okt,09maj,09okt,10maj,10okt,11maj,11okt,12maj,12okt,13maj,13okt,14maj,14okt,15maj,15okt,16maj,16okt,17maj,17okt,18maj,18okt,19maj,19okt,20maj,20okt,21maj,21okt,22maj,22okt,23maj,23okt" | split: "," %}
 
-{% assign years = site.pages | where_exp: "item" , "item.path contains level" %}
-
-{{ years | size }}
-
-{% for year in years %}
-{% assign depth = year.path | split: "/" | size %}
-{% if depth == 3 %}
-<br>{{ year.path }}
+{% for y in years %}
+{% if y == year %}
+{% assign index = forloop.index0 %}
+{% break %}
 {% endif %}
 {% endfor %}
 
+{% assign size = years | size %}
+{% assign almostanend = size | minus: 3 %}
+{% if index > almostanend %}
+{% assign difference = size | minus: index %}
+{% assign start = index | minus: 5 | plus: difference %}
+{% assign yearsAround = years | slice: start, 5 %}
+{% elsif index < 2 %}
+{% assign difference = 5 | minus: index %}
+{% assign end = index | plus: difference %}
+{% assign yearsAround = years | slice: 0, end %}
+{% else %}
+{% assign start = index | minus: 2 %}
+{% assign end = index | plus: 3 | minus: start %}
+{% assign yearsAround = years | slice: start, end %}
+{% endif %}
+
 <div class="navbar-levels">
-<div>
-közép
+{% if level == "standard" %}
+<div class="present">
+<a href="/erettsegi/standard">közép</a>
 </div>
 <div>
-emelt
+<a href="/erettsegi/higher">emelt</a>
 </div>
+{% else %}
+<div>
+<a href="/erettsegi/standard">közép</a>
+</div>
+<div class="present">
+<a href="/erettsegi/higher">emelt</a>
+</div>
+{% endif %}
 </div>
 
 <div class="navbar-years">
+{% if index != 0 %}	
 <div class="prev-button">
+{% assign prevIndex = index | minus: 1 %}
+<a href="/erettsegi/{{ level }}/{{ years[prevIndex] }}">&nbsp;</a>
 </div>
-<div>
-21maj
+{% endif %}
+{% for yearAround in yearsAround %}
+{% if yearAround == year %}
+<div class="present erettsegi-year">
+<a href="/erettsegi/{{ level }}/{{ yearAround }}">
+{{ yearAround }}
+</a>
 </div>
-<div>
-21okt
+{% else %}
+<div class="erettsegi-year">
+<a href="/erettsegi/{{ level }}/{{ yearAround }}">
+{{ yearAround }}
+</a>
 </div>
-<div>
-22maj
-</div>
-<div>
-22okt
-</div>
-<div>
-23maj
-</div>
+{% endif %}
+{% endfor %}
+{% assign lastIndex = size | minus: 1 %}
+{% if index != lastIndex %}
 <div class="next-button">
+{% assign nextIndex = index | plus: 1 %}
+<a href="/erettsegi/{{ level }}/{{ years[nextIndex] }}">&nbsp;</a>
 </div>
+{% endif %}
 </div>
 
 <div class="navbar-parts">
-<div>
+{% if part == "reading" %}
+<div class="present">
+<a href="/erettsegi/{{ level }}/{{ year }}/reading">
 olvasott szöveg értése
+</a>
 </div>
 <div>
+<a href="/erettsegi/{{ level }}/{{ year }}/uoe">
 nyelvhelyesség
+</a>
 </div>
 </div>
+{% else %}
+<div>
+<a href="/erettsegi/{{ level }}/{{ year }}/reading">	
+olvasott szöveg értése
+</a>
+</div>
+<div class="present">
+<a href="/erettsegi/{{ level }}/{{ year }}/uoe">
+nyelvhelyesség
+</a>
+</div>
+</div>
+{% endif %}
 
 <div class="navbar-tasks">
-<div>1</div>
-<div>2</div>
-<div>3</div>
-<div>4</div>
+{% if level == "standard" and part == "uoe" %}
+{% for i in (1..3) %}
+{% assign i_str = i | append: "" %}
+{% if i_str == task %}
+<div class="present"><a href="/erettsegi/{{ level }}/{{ year }}/{{ part }}/{{ part }}-{{ i_str }}.html">{{ i }}</a></div>
+{% else %}
+<div><a href="/erettsegi/{{ level }}/{{ year }}/{{ part }}/{{ part }}-{{ i_str }}.html">{{ i }}</a></div>
+{% endif %}
+{% endfor %}
+{% else %}
+{% for i in (1..4) %}
+{% assign i_str = i | append: "" %}
+{% if i_str == task %}
+<div class="present"><a href="/erettsegi/{{ level }}/{{ year }}/{{ part }}/{{ part }}-{{ i_str }}.html">{{ i }}</a></div>
+{% else %}
+<div><a href="/erettsegi/{{ level }}/{{ year }}/{{ part }}/{{ part }}-{{ i_str }}.html">{{ i }}</a></div>
+{% endif %}
+{% endfor %}
+{% endif %}
 </div>
 
 <script src="/erettsegi/buttons.js">

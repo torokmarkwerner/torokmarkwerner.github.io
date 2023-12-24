@@ -8,10 +8,6 @@
   text-align: -webkit-center;
 }
 
-.navbar-levels, .navbar-parts {
-    font-size: initial;
-}
-
 .navbar-levels div, .navbar-parts div {
   width: 50%;
 }
@@ -20,13 +16,21 @@
   width: 25%;
 }
 
-.navbar-levels div, .navbar-parts div, .navbar-years div, .navbar-tasks div  {
+.navbar-levels div, .navbar-parts div, .erettsegi-year, .prev-button, .next-button, .navbar-tasks div  {
   display: table-cell;
-  padding: 1em;
+  padding: 0.5em;
   text-align: center;
   border: 1pt black solid;
   vertical-align: middle;
   min-width: 6ch;
+}
+
+.navbar-levels a, .navbar-parts a, .navbar-years a, .navbar-tasks a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
 }
 
 .navbar-levels div:hover, .navbar-parts div:hover, .navbar-years div:hover, .navbar-tasks div:hover {
@@ -44,11 +48,11 @@
   min-width: 10ch;
 }
 
-.prev-button::after {
+.prev-button a::after {
   content: "previous";
 }
 
-.next-button::before {
+.next-button a::before {
   content: "next";
 }
 
@@ -59,7 +63,7 @@ min-width: 14%;
 padding: 1em 0.5em;
 }
 
-.prev-button::after, .next-button::before {
+.prev-button a::after, .next-button a::before {
   content: "";
 }
 
@@ -69,11 +73,11 @@ padding: 1em 0.5em;
 
 }
 
-.prev-button::before {
+.prev-button a::before {
   content: "‹";
 }
 
-.next-button::after {
+.next-button a::after {
   content: "›";
 }
 
