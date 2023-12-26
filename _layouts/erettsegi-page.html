@@ -5,12 +5,14 @@ layout: default
 {% include erettsegi-titles.html %}
        <h1>{{ htitle }}</h1>
 
+{% assign depth = page.path | split: "/" | size | plus: 1 %}
+{% if depth > 3 %}
 {% include erettsegi-navbar.html %}
 {{ erettsegi-navbar }}
+{% endif %}
 
        {{ content }} 
         <ul class="erettsegi-list">
-            {% assign depth = page.path | split: "/" | size | plus: 1 %}
             {% if depth < 4 %}
             {% assign tasks = site.pages | where_exp: "item" , "item.url contains page.permalink" | sort: "path" | reverse %}
             {% else %}

@@ -105,9 +105,8 @@
 </div>
 {% endif %}
 
-{% if part %}
 <div class="navbar-parts">
-{% if part == "reading" %}
+{% if partToGo == "reading" %}
 <div class="present">
 <a href="/erettsegi/{{ level }}/{{ year }}/reading">
 olvasott szöveg értése
@@ -118,7 +117,7 @@ olvasott szöveg értése
 nyelvhelyesség
 </a>
 </div>
-{% elsif part == "uoe" %}
+{% else %}
 <div>
 <a href="/erettsegi/{{ level }}/{{ year }}/reading">	
 olvasott szöveg értése
@@ -131,7 +130,6 @@ nyelvhelyesség
 </div>
 {% endif %}
 </div>
-{% endif %}
 
 {% if level == "standard" and part == "uoe" %}
 {% assign lastIndexOfTasks = 3 %}
@@ -149,9 +147,9 @@ nyelvhelyesség
 {% for i in (1..lastIndexOfTasks) %}
 {% assign i_str = i | append: "" %}
 {% if i_str == taskToGo %}
-<div class="present"><a href="/erettsegi/{{ level }}/{{ year }}/{{ part }}/{{ part }}-{{ i_str }}.html">{{ i }}</a></div>
+<div class="present"><a href="/erettsegi/{{ level }}/{{ year }}/{{ partToGo }}/{{ partToGo }}-{{ i_str }}.html">{{ i }}</a></div>
 {% else %}
-<div><a href="/erettsegi/{{ level }}/{{ year }}/{{ part }}/{{ part }}-{{ i_str }}.html">{{ i }}</a></div>
+<div><a href="/erettsegi/{{ level }}/{{ year }}/{{ partToGo }}/{{ partToGo }}-{{ i_str }}.html">{{ i }}</a></div>
 {% endif %}
 {% endfor %}
 </div>
