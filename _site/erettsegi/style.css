@@ -2,8 +2,6 @@
   display: table;
   width: 100%;
   font-variant: all-small-caps;
-  font-family: sans-serif;
-  font-size: 75%;
   border-spacing: 0.3em;
   text-align: -webkit-center;
 }
@@ -14,6 +12,10 @@
 
 .navbar-tasks div {
   width: 25%;
+}
+
+.navbar-years, .navbar-tasks {
+  font-size: small;
 }
 
 .navbar-levels div, .navbar-parts div, .erettsegi-year, .prev-button, .next-button, .navbar-tasks div  {
@@ -56,7 +58,7 @@
   content: "next";
 }
 
-@media (max-width: 767px) {
+@media (max-width: calc(40vw + 45em)) {
 
 .navbar-levels div, .navbar-parts div, .navbar-years div, .navbar-tasks div {
 min-width: 14%;
@@ -65,10 +67,6 @@ padding: 1em 0.5em;
 
 .prev-button a::after, .next-button a::before {
   content: "";
-}
-
-.navbar-years, .navbar-tasks {
-  font-size: 60%;
 }
 
 }
@@ -101,6 +99,7 @@ padding: 1em 0.5em;
     width: 100%;
     flex-wrap: wrap;
     padding: 0;
+    font-variant-caps: all-small-caps;
 }
 
 .erettsegi-list a:nth-child(odd) {
