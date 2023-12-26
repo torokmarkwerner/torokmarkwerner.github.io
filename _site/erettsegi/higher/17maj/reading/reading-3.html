@@ -1,446 +1,75 @@
 <!doctype html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
+        
 
-
-
-érettségi / emelt / 17maj / olvasott szöveg értése / 3
-</title>
-
-<link rel="stylesheet" href="/erettsegi/style.css">
-
+        
+        érettségi / emelt / 17maj / olvasott szöveg értése / 3
+        </title>
+    
+    <link rel="stylesheet" href="/erettsegi/style.css">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="/style.css">
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.png?">
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-  </head>
-  <style>
-#search-button:hover {
-  opacity: 0.9;
-  cursor:pointer;
-}
-.abc-parantheses {
-  counter-reset: abc;
-}
-.abc-parantheses > li {
-  list-style: none;
-  padding: 0.5em 0
-}
-.abc-parantheses > li:before {
-  content: counter(abc, lower-alpha) ") ";
-  counter-increment: abc;
-}
-.language {
-    display: inline;
-    }
-.language a {
-  border: 2pt solid black;
-  margin: 0 -1em;
-  background: black;
-  display: inline-block;
-  color: black;
-  clip-path: circle(30%);
-}
-.language img {
-  vertical-align: middle;
-  width: 4em;
-  clip-path: circle(30%);
-}
-  summary {
-      color:crimson;
-      font-weight:bold
-    }
-    summary:hover {
-      cursor:pointer;
-      opacity:0.9
-    }
-    #rating-container2 {
-      max-width:100px;
-    }
-    #rating-container {
-      padding:0;
-      margin:0;
-      position:relative;
-      font-size:150%;
-      width:100%;
-      }
-    
-    #rating-basic-stars {
-      padding:0;
-      margin:0;
-      color: grey;
-      position: relative;
-      width: 100%;
-      overflow:hidden;
-    }
-    
-    #rating-rating {
-      padding:0;
-      margin:0;
-      color: orange;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: calc(100% * var(--rate)/5);
-      overflow:hidden;
-    }
-    .rating-scoretable {
-      display:none;
-      padding: 0.5em 0;
-      table-layout:fixed;
-      width:100%;
-      text-align:center;
-    }
-    .rating-scoretable td {
-      border: 1px black solid;
-      height:2em
-    }
-    .rating-scoretable th {
-      color:white;
-      font-weight: normal;
-      background-color:black;
-    }
-    </style>
-<style>
-  .pages-button {
-    text-decoration: none;
-    color: inherit;
-    display: block;
-  }
-    .video-container {
-      position: relative;
-      padding-bottom: 56.25%;
-      height: 0;
-      overflow: hidden;
-      }
-    
-    .video-container iframe, .video-container object, .video-container embed { 
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      }
-</style>
-<style>
-  acronym[title] {
-    text-decoration-thickness: from-font;
-    text-underline-position: from-font;
-  }
-  html, body { height: 100%; }
-  .toc {
-    background-color: lemonchiffon;
-    padding: 1em;
-    min-width:50%;
-    width:fit-content;
-    font-variant-caps: petite-caps;
-  }
-  .toc div {
-    padding-top: 0.5em;
-    font-weight: bold;
-    text-align:center;
-  }
-  .toc ul {
-    padding-inline-start: 1em;
-    padding-inline-end: 1em;
-    margin-block-start: 1em;
-    margin-block-end: 0em;
-    list-style: none;
-  }
-  .toc li {
-    padding-bottom:1em
-  }
-  .toc li a {
-    text-decoration: none;
-  }
- 
-  .highlighted-text {
-    background-color: antiquewhite;
-    padding: 0.5em;
-    font-size: 115%;
-    font-weight: bold;
-    display:block;
-  }
-  #content-container img:not(.related-post-image) {
-    max-width: 100%
-  }
-  .examples table {
-  border-collapse:collapse
-  }
-  .examples td {
-  padding: 0.5em;
-  border:0.5px black solid
-  }
-  .examples tr td:nth-child(1) {
-  min-width:fit-content;
-  text-align:center;
-  }
-  .examples {
-  counter-increment: my-sec-counter;
-  counter-reset: my-sec-counter2;
-}
-
-.examples ol {
-counter-reset: my-sec-counter2;
-list-style-type: none;
-display:table;
-border-collapse: separate;
-border-spacing: 0.5em;
-padding:0.5em 2em 0.5em 2em;
-padding-inline-start: 0;
-}
-
-.examples ol li {
-display: table-row;
-}
-
-.examples ol li::before {
-  counter-increment: my-sec-counter2;
-  content: counter(my-sec-counter) counter(my-sec-counter2, upper-alpha) " ";
-  display:table-cell;
-  text-align:left;
-  width:2em;
-  vertical-align:middle;
-}
-::-moz-selection { /* Code for Firefox */
-  color: HighlightText;
-  background: Highlight;
-}
-::selection {
-  color: HighlightText;
-  background: Highlight;
-}
-.tag-name {
-  color: chocolate;
-  font-weight: bold;
-  text-decoration: none;
-  }
-.tag-name:hover {
-  opacity:0.9
-  }
-.post-title {
-    display: inline-block;
-    background-color: lightgoldenrodyellow;
-    color: black;
-    text-decoration: none;
-    padding: 0.5em;
-  }
-.post-title:hover {
-  background-color: antiquewhite;
-  opacity:0.9;
-  }
-.fa.fa-facebook, .fa.fa-google, .fa.fa-linkedin {
- font-size: 20px;
- width: 40px;
- height: 40px;
- line-height: 40px;
-  text-align: center;
-  text-decoration: none;
-  margin: 0.5em 0.2em;
-  border-radius:5px;
-  }
-  .fa.fa-facebook:hover, .fa.fa-google:hover, .fa.fa-linkedin:hover {
-    cursor:pointer;
-    opacity: 0.7;
-}
-
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-
-.fa-google {
-  background: #dd4b39;
-  color: white;
-}
-
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-}
-</style>
-  <style>
-body {
-  font-family: "Calibri", "Arial", sans-serif;
-  margin: 0;
-  border: 0;
-  padding:0;
-    width:100%;
-  overflow-y: scroll;
-  }
-.page-wrapper {
-  width:80vw;
-  display:flex;
-  min-height:100%;
-  height:fit-content;
-  margin-left: 10vw;
-  margin-right: 10vw;
-  padding-top:10px
-}
-#sticky {
-  text-align:center;
-  width:20vw;
-    position: sticky;
-    top: 10px;
-    align-self: flex-start;
-}
-.pages-button {
-  font-size:125%;
-  padding: 0.5em;
-}
-.pages-button:hover {
-  background-color:lightskyblue;
-  cursor:pointer;
-  font-weight:bold;
-}
-.pages-button-current {
-      background-color:palegreen;
-      
-    }
-#content-container {
-      padding:0 0 0 2em;
-      width:40vw
-    }
-    
-@media (max-width: 767px) {
-    .sticky {
-      display:none;
-    }
-    #content-container {
-      width:80vw;
-    }
-  }
-    
-</style>
+</head>
 
 <body>
-<div class="page-wrapper">
-  <div id="background" style="opacity:0.8;width:100%;height:100%;background-color:black;top:0;left:0;position:fixed;display:none;z-index:2">
-</div>
+    <div id="page-wrapper">
+        <div id="background" style="opacity:0.8;width:100%;height:100%;background-color:black;top:0;left:0;position:fixed;display:none;z-index:2">
+        </div>
+        <div id="hamburger" onclick="openNav()">
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+        </div>
+        <script>
+        function openNav() {
+            document.getElementById("sticky").style.transform = "translate3d(0, 0, 0)"
+            document.getElementById("hamburger").style.display = "none"
+            document.getElementById("background").style.display = "block"
+        }
 
-<style>
-#hamburger {
-  display: none;
-  }
-  
-#sticky img {
-  width: 100%;
-  }
-#close {
-  display: none;
-  }
-@media (max-width: 767px) {
-#hamburger {
-    display: block;
-    position: fixed;
-    background: lightskyblue;
-    top: 10px;
-    left: 10px;
-    width: 50px;
-    height: 50px;
-    transition: all 0.5s;
-}
-.hamburger-line {
-  width: 35px;
-  height: 5px;
-  background-color: black;
-  margin: 8.5px auto;
-}
-#hamburger:hover {
-  opacity:0.8;
-  cursor:pointer;
-}
-#sticky {
-    background-color: white;
-    position: fixed;
-    top:0px;
-    left:0px;
-    width:50%;
-    height:100%;
-    transform: translate3d(-100vw, 0, 0);
-    transition: all 0.5s;
-    min-width:fit-content;
-    z-index: 3
-    }
-#sticky img {
-  width: 40vw;
-  }
-#close {
-    display: block;
-    position:relative;
-    font-size:50px;
-    top: 10px;
-    left: 10px;
-    width: 50px;
-    height: 50px;
-    background-color:black;
-    color:white;
-    text-align:center;
-    line-height:50px;
-    font-weight:bold;
-    margin-bottom:20px;
-}
-#close:hover {
-  cursor:pointer;
-}
- }
-</style>
-
-<div>
-<div id="hamburger" onclick="openNav()">
-<div class="hamburger-line"></div>
-<div class="hamburger-line"></div>
-<div class="hamburger-line"></div>
-</div>
-</div>
-
-<script>
-function openNav() {
-document.getElementById("sticky").style.transform = "translate3d(0, 0, 0)"
-document.getElementById("hamburger").style.display = "none"
-document.getElementById("background").style.display = "block"
-}
-
-function hideNav() {
-document.getElementById("sticky").style.transform = "translate3d(-100vw, 0, 0)"
-document.getElementById("hamburger").style.display = "block"
-document.getElementById("background").style.display = "none"
-}
-</script>
-  
-<div id="sticky">
-<div id="close" onclick="hideNav()">&times;</div>
-<div style="display: inline-flex;vertical-align: bottom;"><img src="https://avatars.githubusercontent.com/u/98919050"/></div>
-<a id="about" class="pages-button" href="/about">ABOUT</a>
-<a id="projects" class="pages-button" href="/projects">PROJECTS</a>
-<a id="erettsegi" class="pages-button" href="/erettsegi">ÉRETTSÉGI</a>
-<a id="blog" class="pages-button" href="/blog">BLOG</a>
-<a id="contact" class="pages-button" href="/contact">CONTACT</a>
-<div style="text-align:center">
-<a href="https://www.facebook.com/torok.mark.werner" target="_blank" class="fa fa-facebook"></a>
-<a href="mailto:torokmarkwerner@gmail.com" target="_blank" class="fa fa-google"></a>
-<a href="https://www.linkedin.com/in/torok-mark-werner" target="_blank" class="fa fa-linkedin"></a>
-  </div>
-</div>
-
-  <script>
-//alert(document.location.pathname + " --> And this is the substring:" + document.location.pathname.toString().substring(1,document.location.pathname.toString().length-1))
-pages = document.getElementsByClassName("pages-button");
-for (i=0; i<pages.length; i++) {
-  if((document.location.pathname).indexOf("/" + pages[i].id + "/") > -1) {
-    pages[i].classList.toggle("pages-button-current");
-    pages[i].style.backgroundColor = "palegreen";
-    pages[i].style.fontWeight = "bold"
-  }
-}
-</script>
-
-<div id="content-container">
-<h1></h1>
-    
+        function hideNav() {
+            document.getElementById("sticky").style.transform = "translate3d(-100vw, 0, 0)"
+            document.getElementById("hamburger").style.display = "block"
+            document.getElementById("background").style.display = "none"
+        }
+        </script>
+        <div id="sticky">
+            <div id="close" onclick="hideNav()">&times;</div>
+            <div style="display: inline-flex;vertical-align: bottom;"><img src="https://avatars.githubusercontent.com/u/98919050" /></div>
+            <a id="about" class="pages-button" href="/about">ABOUT</a>
+            <a id="projects" class="pages-button" href="/projects">PROJECTS</a>
+            <a id="erettsegi" class="pages-button" href="/erettsegi">ÉRETTSÉGI</a>
+            <a id="blog" class="pages-button" href="/blog">BLOG</a>
+            <a id="contact" class="pages-button" href="/contact">CONTACT</a>
+            <div style="text-align:center">
+                <a href="https://www.facebook.com/torok.mark.werner" target="_blank" class="fa fa-facebook"></a>
+                <a href="mailto:torokmarkwerner@gmail.com" target="_blank" class="fa fa-google"></a>
+                <a href="https://www.linkedin.com/in/torok-mark-werner" target="_blank" class="fa fa-linkedin"></a>
+            </div>
+        </div>
+        <script>
+        //alert(document.location.pathname + " --> And this is the substring:" + document.location.pathname.toString().substring(1,document.location.pathname.toString().length-1))
+        pages = document.getElementsByClassName("pages-button");
+        for (i = 0; i < pages.length; i++) {
+            if ((document.location.pathname).indexOf("/" + pages[i].id + "/") > -1) {
+                pages[i].classList.toggle("pages-button-current");
+                pages[i].style.backgroundColor = "palegreen";
+                pages[i].style.fontWeight = "bold"
+            }
+        }
+        </script>
+        <div id="content-container">
+            <h1></h1>
+            
 
 <h2>érettségi / emelt / 17maj / olvasott szöveg értése / 3</h2>
 
@@ -653,17 +282,206 @@ nyelvhelyesség
 createTask("higher-17maj-reading-3");
 
 </script>
+        </div>
+        
+        <div id="erettsegi-footer">
+        
 
-<script>
-div = document.createElement("DIV");
-div.innerHTML = "123 " + ""
-document.getElementById("content-container").appendChild(div)
 
-</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="navbar-levels">
+
+<div>
+<a href="/erettsegi/standard/17maj/reading">közép</a>
+</div>
+<div class="present">
+<a href="/erettsegi/higher/17maj/reading">emelt</a>
 </div>
 
 </div>
 
+
+
+<div class="navbar-years">
+	
+<div class="prev-button">
+
+<a href="/erettsegi/higher/16okt/reading">&nbsp;</a>
+</div>
+
+
+
+<div class="erettsegi-year">
+<a href="/erettsegi/higher/16maj/reading">
+16maj
+</a>
+</div>
+
+
+
+<div class="erettsegi-year">
+<a href="/erettsegi/higher/16okt/reading">
+16okt
+</a>
+</div>
+
+
+
+<div class="present erettsegi-year">
+<a href="/erettsegi/higher/17maj/reading">
+17maj
+</a>
+</div>
+
+
+
+<div class="erettsegi-year">
+<a href="/erettsegi/higher/17okt/reading">
+17okt
+</a>
+</div>
+
+
+
+<div class="erettsegi-year">
+<a href="/erettsegi/higher/18maj/reading">
+18maj
+</a>
+</div>
+
+
+
+
+<div class="next-button">
+
+<a href="/erettsegi/higher/17okt/reading">&nbsp;</a>
+</div>
+
+</div>
+
+
+<div class="navbar-parts">
+
+<div class="present">
+<a href="/erettsegi/higher/17maj/reading">
+olvasott szöveg értése
+</a>
+</div>
+<div>
+<a href="/erettsegi/higher/17maj/uoe">
+nyelvhelyesség
+</a>
+</div>
+
+</div>
+
+
+
+
+
+<div class="navbar-tasks">
+
+
+
+<div><a href="/erettsegi/higher/17maj/reading/reading-1.html">1</a></div>
+
+
+
+
+<div><a href="/erettsegi/higher/17maj/reading/reading-2.html">2</a></div>
+
+
+
+
+<div class="present"><a href="/erettsegi/higher/17maj/reading/reading-3.html">3</a></div>
+
+
+
+
+<div><a href="/erettsegi/higher/17maj/reading/reading-4.html">4</a></div>
+
+
+</div>
+        
+        </div>
+        
+    </div>
 </body>
 
 </html>
