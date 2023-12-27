@@ -69,6 +69,10 @@ padding: 1em 0.5em;
   content: "";
 }
 
+.navbar-years, .navbar-tasks {
+  font-size: 60%;
+}
+
 }
 
 .prev-button a::before {
