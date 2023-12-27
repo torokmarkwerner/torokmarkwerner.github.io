@@ -30,7 +30,7 @@ For example, interactive fiction (including text adventure and point-and-click g
     transition: all 0.5s;
     font-weight:bold;
     font-variant: all-small-caps;
-    font-size: x-large;
+    font-size: 120%;
     text-decoration: none;
     color: inherit;
     max-width: 15vw;
@@ -138,7 +138,7 @@ function checkVisibility() {
 {% assign index = 0 %}
 {% assign projects = site.projects | where: "layout", "project" %}
 {% for project in projects %}
-{% assign colors = "crimson,cornflowerblue,forestgreen,orange,khaki,black" | split: "," %}
+{% assign colors = "crimson,cornflowerblue,forestgreen,orange,khaki,black,peachpuff,gold" | split: "," %}
 {% assign index_variable = index | plus: 0 %}
 
 <a class="project" href="{{ project.permalink }}" style="--color:{{ colors[index_variable] }};

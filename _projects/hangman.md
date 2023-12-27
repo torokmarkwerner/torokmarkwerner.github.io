@@ -4,8 +4,6 @@ title: "Hangman"
 permalink: /projects/hangman
 collection: projects
 complete: "100%"
-progressColor: "orange"
-progressTextColor: "black"
 started: "February 2021"
 scope: "ESL, Vocabulary, Oxford 3000"
 ---

@@ -11,8 +11,26 @@ layout: default
 .progress-whole {
   width:100%;height:1em;line-height:1em;background-color:#f5f5f5;border-radius:10px;transition: all 0.5s
 }
+
+{% assign index = 0 %}
+{% assign projects = site.projects | where: "layout", "project" %}
+{% for project in projects %}
+{% assign colors = "crimson,cornflowerblue,forestgreen,orange,khaki,black,peachpuff,gold" | split: "," %}
+{% assign index_variable = index | plus: 0 %}
+{% if project.path == page.path %}
+{% assign progressColor = colors[index_variable] %}
+{% if progressColor == "khaki" or progressColor == "orange" or progressColor == "peachpuff" %}
+{% assign progressTextColor = "black" %}
+{% else %}
+{% assign progressTextColor = "white" %}
+{% endif %}
+{% break %}
+{% endif %}
+{% assign index = index | plus: 1 %}
+{% endfor %}
+
 .progress-so-far {
-  height:1em;line-height:1em;background-color:{{ page.progressColor }};border-radius:10px;transition: all 0.5s;text-align:center;color:{{ page.progressTextColor }}
+  height:1em;line-height:1em;background-color:{{ progressColor }};border-radius:10px;transition: all 0.5s;text-align:center;color:{{ progressTextColor }}
 }
 </style>
 
