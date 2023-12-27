@@ -2,6 +2,7 @@
 layout: project
 title: "Hangman"
 permalink: /projects/hangman
+collection: projects
 complete: "100%"
 progressColor: "orange"
 progressTextColor: "black"

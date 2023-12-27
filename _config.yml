@@ -1,6 +1,4 @@
 collections:
-  erettsegi:
-    standard:
+  projects:
     output: true
-    higher:
-    output: true
+    permalink: /projects/:path

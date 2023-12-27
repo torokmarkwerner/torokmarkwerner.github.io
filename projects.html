@@ -3,41 +3,81 @@ layout: default
 title: "Projects"
 permalink: /projects/
 ---
+<p>Below you can see a list of projects I have either finished or I am currently working on. 
+You can read more about a particular project by clicking on its box.</p>
+<p>Most of these projects are related to education, especially my majors, Hungarian and English as a Second Language (ESL). 
+However, I often create narrative designs which are only slightly inspired by ESL.  
+For example, interactive fiction (including text adventure and point-and-click games) is an area I would like to invest more time into after graudating.</p>
+
 <style>
-.divy {
-  font-size:2.5vw;
-  display:table-cell;
-  vertical-align:middle;
-  text-align:center;
-  font-weight:bold;
-  font-family: "Calibri", "Arial", sans-serif
-}
-@media (max-width: 767px) {
-    .divy {
-    font-size:100%  
-    }
-}
-.container {
-  min-width: 15vh;
-  min-height: 15vh;
-  margin-right:auto;
-  margin-left:auto;
-  display:table;
-  width:15vw;
-  height:15vw;
-  visibility: hidden;
-  transition: all 0.5s;
-  background-color: var(--color)
+#project-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 1.5em;
+    row-gap: 0.25em;
+    padding-bottom: 1.5em;
+    max-width: calc(30vw + 1.5em);
 }
 
-.container:hover {
-  /*opacity:0.9 !important;*/
+.project {
+    flex: 1 1 calc(50% - 0.5em);
+    aspect-ratio: 1 / 1;
+    background-color: var(--color);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    transition: all 0.5s;
+    font-weight:bold;
+    font-variant: all-small-caps;
+    font-size: large;
+    text-decoration: none;
+    color: inherit;
+    max-width: 15vw;
+}
+
+@media (max-width: 767px) {
+    .project {
+        flex: 1 1 calc(50% - 2em);
+        max-width: inherit;
+    }
+    #project-list {
+        max-width: inherit;
+    }
+}
+
+.project-title {
+    display: flex;
+    flex: 1 1 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: end;
+    padding: 0 0.5em;
+}
+
+.open:hover {
   cursor: pointer;
 }
 
-.scrollForMore {
-  transition: opacity 0.5s;
-  }
+.open *:nth-child(2), .open *:nth-child(2)>*, .open *:nth-child(2)>*>* {
+    height:0.5em;
+}
+
+.open *:nth-child(2) {
+    padding:0.5em 0.5em 0.5em 0.5em;
+}
+
+.progress-container {
+    flex: 1 1 100%;
+}
+
+.scroll-for-more {
+    flex: 1 1 100%;
+    text-align: center;
+    font-variant-caps: all-small-caps;
+    font-size: 90%;
+}
+
 .progress-container {
   height:0em;
   padding:0 0.5em 0 0.5em;
@@ -50,25 +90,36 @@ permalink: /projects/
 .progress-so-far {
   height:0em;line-height:0em;background-color:#04AA6D;border-radius:10px;transition: all 0.5s;width:var(--progress)
 }
-</style>
-  <script>
-    containers = document.getElementsByClassName("divy");
-    //alert(containers.length)
-    
-function checkVisibility(){
 
-  for (i=0; i<containers.length; i++) {
-  if (containers[i].getBoundingClientRect().bottom > window.innerHeight) {
-   //alert("containers[" + i + "].getBoundingClientRect().bottom < window.innerHeight = " + " " + (containers[i].getBoundingClientRect().bottom < window.innerHeight) + " BOTTOM: " + containers[i].getBoundingClientRect().bottom + " WINDOWHEIGHT: " + window.innerHeight);
-  containers[i].parentElement.style.opacity = 0;
-    document.getElementsByClassName("scrollForMore")[Math.floor(i/2)].style.opacity = 0;
-  } else {
-      containers[i].parentElement.style.visibility = "visible"
-    if (document.getElementsByClassName("scrollForMore")[Math.floor(i/2)-1]) {
-    document.getElementsByClassName("scrollForMore")[Math.floor(i/2)-1].style.opacity = 0;
+.hidden {
+opacity: 0;
+}
+
+</style>
+
+  <script>
+    projects = document.getElementsByClassName("project");
+    scrollers = document.getElementsByClassName("scroll-for-more")
+    
+function checkVisibility() {
+
+  for (i=0; i<projects.length; i++) {
+  if (projects[i].getBoundingClientRect().bottom > window.innerHeight) {
+    projects[i].classList.add("hidden");
+    if (scrollers[Math.floor(i/2)] < scrollers.length) {
+    scrollers[Math.floor(i/2)].classList.add("hidden");
+  }
+    if (scrollers[Math.floor(i/2)-1]) {
+    scrollers[Math.floor(i/2)-1].classList.remove("hidden");
     }
-    document.getElementsByClassName("scrollForMore")[Math.floor(i/2)].style.opacity = 1;
-  containers[i].parentElement.style.opacity = 1;
+  } else {
+    if (scrollers[Math.floor(i/2)-1]) {
+    scrollers[Math.floor(i/2)-1].classList.add("hidden");
+    }
+    projects[i].classList.remove("hidden")
+    if (scrollers[Math.floor(i/2)] < scrollers.length) {
+    scrollers[Math.floor(i/2)].classList.remove("hidden")
+  }
   }
   }
   
@@ -82,99 +133,29 @@ function checkVisibility(){
   
  
   </script>
-<p>Below you can see a list of projects I have either finished or I am currently working on. 
-You can read more about a particular project by clicking on its box.</p>
-<p>Most of these projects are related to education, especially my majors, Hungarian and English as a Second Language (ESL). 
-However, I often create narrative designs which are only slightly inspired by ESL.  
-For example, interactive fiction (including text adventure and point-and-click games) is an area I would like to invest more time into after graudating.</p>
-<div style="grid-template-columns: 1fr 1fr;display: grid;
-  justify-content: center;width:50%;margin-right:auto;margin-left:10vw;
-  align-content: center;grid-row-gap: 1vw;grid-column-gap: 5vw;">
 
-  {% assign project = site.pages | where: "title", "Text Adventure" | first %}
-  <div class="container" style="--color:{{ project.progressColor }}"><div class="divy">
-  TEXT ADVENTURE
-<div class="progress-container">
-<div class="progress-whole">
-<div class="progress-so-far" style="--progress:{{ project.complete }}"></div>
-</div>
-</div>
-  </div></div>
+<div id="project-list">
+{% assign index = 0 %}
+{% assign projects = site.projects | where: "layout", "project" %}
+{% for project in projects %}
+{% assign colors = "crimson,cornflowerblue,forestgreen,orange,khaki,black" | split: "," %}
+{% assign index_variable = index | plus: 0 %}
 
-  {% assign project = site.pages | where: "title", "Point and Click" | first %}
-  <div class="container" style="--color:{{ project.progressColor }}"><div class="divy">
-  POINT AND CLICK
+<a class="project" href="{{ project.permalink }}" style="--color:{{ colors[index_variable] }};
+{% if colors[index_variable] == 'black' %}color:white{% endif %}" onmouseover="this.classList.toggle('open')" onmouseout="this.classList.toggle('open')">
+<div class="project-title">{{ project.title }}</div>
 <div class="progress-container">
 <div class="progress-whole">
 <div class="progress-so-far" style="--progress:{{ project.complete }}"></div>
 </div>
 </div>
-  </div></div>
-  <div class="scrollForMore" id="scrollForMore" style="text-align:center;grid-column:1/span 2;display:table;font-size:1vw;line-height:1vw;">[SCROLL DOWN FOR MORE]</div>
-  
-  {% assign project = site.pages | where: "title", "Storyline Teaching" | first %}
-  <div class="container" style="--color:{{ project.progressColor }};"><div class="divy">
-STORYLINE TEACHING
-<div class="progress-container">
-<div class="progress-whole">
-<div class="progress-so-far" style="--progress:{{ project.complete }}"></div>
+</a>
+{% assign even = index | modulo: 2 %}
+{% if even == 1 and forloop.last == false %}
+<div class="scroll-for-more">
+[Scroll down for more]
 </div>
+{% endif %}
+{% assign index = index | plus: 1 %}
+{% endfor %}
 </div>
-</div></div>
-
-  {% assign project = site.pages | where: "title", "Hangman" | first %}
-  <div class="container" style="--color:{{ project.progressColor }}"><div class="divy">
-HANGMAN
-<div class="progress-container">
-<div class="progress-whole">
-<div class="progress-so-far" style="--progress:{{ project.complete }}"></div>
-</div>
-</div>
-</div></div>
-    <div class="scrollForMore" style="visibility:none;text-align:center;grid-column:1/span 2;display:table;font-size:1vw;line-height:1vw;">[SCROLL DOWN FOR MORE]</div>
-  
-    {% assign project = site.pages | where: "title", "Gap Filling Generator" | first %}
-    <div class="container" style="--color:{{ project.progressColor }}"><div class="divy">
-GAP FILLING GENERATOR
-<div class="progress-container">
-<div class="progress-whole">
-<div class="progress-so-far" style="--progress:{{ project.complete }}"></div>
-</div>
-</div>
-</div></div>
-    
-    {% assign project = site.pages | where: "title", "Friendly Feud" | first %}
-    <div class="container" style="--color:{{ project.progressColor }};color:white"><div class="divy">
-FRIENDLY FEUD
-<div class="progress-container">
-<div class="progress-whole">
-<div class="progress-so-far" style="--progress:{{ project.complete }}"></div>
-</div>
-</div>
-</div></div>
-    <div class="scrollForMore" style="visibility:none;text-align:center;grid-column:1/span 2;display:table;font-size:1vw;line-height:1vw;height:2vw;"></div>
-  </div>
-  
-  <script>
-progressContainers = document.getElementsByClassName("progress-container");
-for (i=0; i<progressContainers.length; i++) {
-document.getElementsByClassName("progress-container")[i].parentElement.addEventListener("mouseover",function() {
-this.children[0].style.height = "0.5em"
-this.children[0].style.padding = "0.5em 0.5em 0.5em 0.5em"
-this.children[0].children[0].style.height = "0.5em"
-this.children[0].children[0].children[0].style.height = "0.5em"
-});
-document.getElementsByClassName("progress-container")[i].parentElement.addEventListener("mouseout",function() {
-this.children[0].style.height = "0em"
-this.children[0].style.padding = "0 0.5em 0 0.5em"
-this.children[0].children[0].style.height = "0em"
-this.children[0].children[0].children[0].style.height = "0em"
-});
-}
-divys = document.getElementsByClassName("divy");
-for (i=0; i<divys.length; i++) {
-divys[i].addEventListener("click",function(){
-window.open("/projects/" + this.innerText.toLowerCase().replace(/ /g,"-"),"_self");
-})
-}
-</script>
