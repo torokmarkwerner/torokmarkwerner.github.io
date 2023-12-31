@@ -37,22 +37,7 @@ textarea {
 #crossword-buttons {
   justify-content: center;
   display: flex;
-  gap: 0.5em;
-}
-
-#crossword-buttons button {
-  flex: 1 0 50%;
-  font-variant-caps: all-small-caps;
-  margin: 0 0 0.5em 0;
-  border: 0px;
-  padding: 1em;
-  background: lightskyblue;
-  align-self: center;
-}
-
-#crossword-buttons button:hover {
-  cursor: pointer;
-  opacity: 0.9;
+  gap: 1em;
 }
 
 .active {
