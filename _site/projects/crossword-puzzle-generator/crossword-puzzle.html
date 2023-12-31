@@ -8,7 +8,7 @@
         
 
         
-        TM | Crossword Puzzle Generator
+        TM | Crossword Puzzle
         </title>
     
     <link rel="stylesheet" href="/projects/crossword-puzzle-generator/crossword-style.css">
@@ -68,53 +68,85 @@
         }
         </script>
         <div id="content-container">
-            <h1>Crossword Puzzle Generator</h1>
-            <style>
-.progress-container {
-  width:75%;
-  height:1em;
-  padding:0 0.5em 0 0.5em;
-  transition: all 0.5s;
-}
-.progress-whole {
-  width:100%;height:1em;line-height:1em;background-color:#f5f5f5;border-radius:10px;transition: all 0.5s
-}
+            <h1>Crossword Puzzle</h1>
+            <script type="text/javascript">
+var docURL = window.location.href,
+  params = [];
 
+// filter out the website origin "example.github.io" in the OP example      
+docURL = docURL.replace(window.location.origin, '');
 
+// if /#/ found then we have URL parameters
+// grabbing the parameters part of the URL
+if (docURL.indexOf('/#/') > -1) {
+  docURL = docURL.split('/#/')[1];
+  if (docURL != '') {
 
+    // omit the last forward slash if exist
+    if (docURL[docURL.length - 1] == '/') {
+      docURL = docURL.substring(0, docURL.length - 1);
+    }
 
-
-
-
-
-
-
-
-.progress-so-far {
-  height:1em;line-height:1em;background-color:crimson;border-radius:10px;transition: all 0.5s;text-align:center;color:white
-}
-</style>
-
-<div class="progress-container">
-<div class="progress-whole">
-<div class="progress-so-far" style="width: 90% ">90%</div>
-</div>
-</div>
-<script>
-pages = document.getElementsByClassName("pages-button");
-for (i=0; i<pages.length; i++) {
-  if(("/" + pages[i].textContent.toLowerCase() + "/") === "/projects/") {
-    pages[i].classList.toggle("pages-button-current");
-    pages[i].style.backgroundColor = "palegreen";
-    pages[i].style.fontWeight = "bold"
+    // split the URL final string o get an object with all params 
+    params = docURL.split('/');
+    console.log(params);
   }
+} else {
+  console.log('No URL parameters found');
 }
 </script>
-<div style="font-variant: all-petite-caps;font-size: 120%;width: 75%;padding: 0.5em;">
-<div style="padding: 0.25em 0.5em 0.25em 0.5em;"><b>Started:</b> September 2023</div>
-<div style="padding: 0.25em 0.5em 0.25em 0.5em;"><b>Scope:</b> ESL, Vocabulary</div>
+
+<textarea id="crossword-textarea" rows="5" cols="20">
+eliminate:
+destroy something completely
+fine:
+good, pleasant
+love:
+romantic feelings
+marry:
+wed:
+fuck:
+copulate
+super:
+...hero
+star:
+eg. the Sun
+broom:
+household tool to sweep up the floor
+whose:
+which person's
+blouse:
+type of female top
+ginger:
+red-haired
+joker:
+poker card
+busted:
+caught in the act
+former:
+not the latter
+superb:
+quite alright
+fantastic:
+awesome
+</textarea>
+<button onclick="generate()">
+Generate
+</button>
+<button onclick="hide()">
+Hide
+</button>
+<div id="crossword">
+<div id="crossword-grid">
+
+</div>
+<div id="crossword-buttons">
+<button class="crossword-show-button">Show</button>
+<button class="crossword-print-button">Print</button>
+</div>
 </div>
 
+<script src="/projects/crossword-puzzle-generator/crossword-functions.js"></script>
         </div>
         
         

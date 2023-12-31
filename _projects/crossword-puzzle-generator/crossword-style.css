@@ -1,0 +1,173 @@
+table {
+  font-family:sans-serif;
+  border-collapse:collapse;
+  background:black;
+}
+
+td {
+  position:relative;
+  width:2em;
+  height:2em;
+  text-align:center;
+}
+
+.letter {
+  background:white
+}
+
+.number {
+    font-size: x-small;
+    position: absolute;
+    top: 0;
+    left: 0.1em;
+}
+
+.black {
+  background-color: black;
+}
+
+textarea {
+  font-family:inherit;
+  font-size:inherit;
+  width:50%;
+  display:block;
+  margin:0.5em 0;
+}
+
+#crossword-buttons {
+  justify-content: center;
+  display: flex;
+  gap: 0.5em;
+}
+
+#crossword-buttons button {
+  flex: 1 0 50%;
+  font-variant-caps: all-small-caps;
+  margin: 0 0 0.5em 0;
+  border: 0px;
+  padding: 1em;
+  background: lightskyblue;
+  align-self: center;
+}
+
+#crossword-buttons button:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.active {
+  background:lightskyblue;
+}
+
+#crossword {
+/*  position: absolute;
+    top: 2.5em; 
+-- Equals with the expected height of clue-box. --
+*/
+}
+
+#crossword-grid {
+  overflow-x: scroll;
+}
+
+#crossword-grid table {
+  width: max-content;
+}
+
+.crossword-input {
+ text-transform: uppercase;
+ cursor: pointer;
+ display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    background: transparent;
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    border: 0pt;
+    position: absolute;
+}
+
+@media (max-width: 767px) {
+    .crossword-input {
+      font-size: x-small;
+    }
+  }
+
+.current-cell {
+  background: #007dff;
+}
+
+.correct {
+  background: lightgreen;
+}
+
+.incorrect {
+  background: #FFC300;
+}
+
+#clue-box {
+  z-index: 1;
+   -webkit-backface-visibility: hidden;
+  /*  position:fixed; -- Does 'sticky' work on mobile devices? -- */
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: fit-content;
+    min-height: 2em;
+    background: lightgray;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 0.2em 0;
+}
+
+.modal-basis {
+    z-index: 2;
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    vertical-align: middle;
+}
+
+.modal-box {
+    position: relative;
+    margin: auto;
+    background-color: white;
+    width: 80%;
+    padding: 0.5em;
+    text-align: center;
+    -webkit-border-radius: 0.2em;
+    -moz-border-radius: 0.2em;
+    border-radius: 0.2em;
+    border: 1pt black solid;
+}
+
+.modal-close {
+    position: absolute;
+    top: 0.2em;
+    right: 0.5em;
+    font-weight: bold;
+    color: #aaaaaa;
+    font-size: 28px;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+    color: black;
+    cursor: pointer;
+}
+
+.show {
+  background: white
+}

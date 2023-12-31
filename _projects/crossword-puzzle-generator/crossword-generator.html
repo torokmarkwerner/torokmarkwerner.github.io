@@ -1,0 +1,232 @@
+---
+layout: default
+title: "Crossword Puzzle"
+exclude_from_projects: true
+---
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+     <link rel="stylesheet" href="http://torokmarkwerner.github.io/projects/crossword-puzzle-generator/crossword-style.css">
+  </head>
+<body>
+<style>
+#crossword-wordlist {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  row-gap: 1em;
+  justify-content: center;
+}
+
+.word-clue {
+position: relative;
+display: flex;
+justify-content: center;
+flex: 1 1 100%;
+border: 1pt black solid;
+}
+
+.word-clue > * {
+  display: flex;
+  flex: 1 1 50%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+}
+
+.word {
+  background: lightgray;
+  font-variant-caps: all-small-caps;
+}
+
+.clue {
+  border-left: 1pt solid black;
+}
+
+.save-button {
+    position: absolute;
+    right: 0.2em;
+    bottom: 0.2em;
+    border-radius: 1em;
+    align-items: center;
+    justify-content: center;
+    color: green;
+    flex: 0;
+    display: flex;
+    background: transparent;
+    border: 1pt green solid;
+    font-variant-caps: all-small-caps;
+    width: 1.5em;
+    aspect-ratio: 1 / 1;
+    padding: 0;
+}
+
+.save-button::before {
+      content: "✓";
+}
+
+#add-button, #generate-button {
+  display: flex;
+  text-align: center;
+  font-variant-caps: all-small-caps;
+    flex: 0 0 25%;
+    align-items: center;
+    border: 1pt black solid;
+    padding-block: 0;
+    padding-inline: 0;
+}
+
+#add-button {
+    margin-right: 1em;
+}
+
+#add-word {
+  flex: 1;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+#add-plus, #generate-square {
+  display: flex;
+    flex: 1;
+        max-width: 1.5em;
+
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    align-items: center;
+  padding: 1em;
+  background: black;
+  color: white;
+  border: 1pt black solid;
+  aspect-ratio: 1 / 1;
+}
+
+#add-plus {
+  content: "⊕";
+}
+
+#generate-square {
+    display: flex;
+    max-width: fit-content;
+    padding: 0.5em;
+    border: 1pt white solid;
+    background: white;
+    width: 70%;
+    aspect-ratio: 1 / 1;
+    align-self: center;
+}
+
+#crossword-data {
+  display: flex;
+  flex-wrap: wrap;
+      row-gap: 1em;
+    padding: 0 0 1em 0;
+    width: 100%;
+}
+
+#crossword-data label {
+  position: relative;
+      font-variant-caps: all-small-caps;
+  background: black;
+  color: white;
+  padding: 1em;
+    width: calc(8ch + 2em);
+    text-align: center;
+      border: 1pt black solid;
+      border-right: 0;
+
+}
+
+#crossword-data input {
+    text-align: center;
+width: 100%;
+  border: 1pt black solid;
+      font-size: inherit;
+font-family: inherit;
+}
+
+#crossword-title, #crossword-passcode {
+  display: flex;
+  flex: 1 1 100%;
+  background: lightgray;
+  color: black;
+}
+
+#how-to {
+ padding-inline: 1.5em;
+}
+
+#how-to li {
+  padding: 0.5em;
+}
+
+</style>
+
+<ol id="how-to">
+  <li>Enter a title along with a passcode.</li>
+  <li>Add words and clues using the "Add word" button, and save your progress.</li>
+  <li>When you're ready, click "Generate" to create a unique crossword puzzle.</li>
+  <li>Share the generated link, optionally with a passcode, or print the crossword for offline enjoyment.</li>
+</ol>
+
+ <div id="crossword-data">
+ <div id="crossword-title">
+  <label>Title</label>
+  <input placeholder="Christmas">
+  </div>
+ <div id="crossword-passcode">
+  <label>Passcode</label>
+  <input placeholder="Christmas123!">
+</div>
+ </div>
+
+<div id="crossword-wordlist">
+<div class="word-clue">
+  <div class="word" contenteditable="true" lang="en">word</div>
+  <div class="clue" contenteditable="true" lang="en">a single distinct meaningful element of speech or writing</div>
+  <button class="save-button"></button>
+</div>
+
+<div class="word-clue">
+  <div class="word" contenteditable="true" lang="en">word</div>
+  <div class="clue" contenteditable="true" lang="en">a single distinct meaningful element of speech or writing</div>
+  <button class="save-button"></button>
+</div>
+
+<div class="word-clue">
+  <div class="word" contenteditable="true" lang="en">word</div>
+  <div class="clue" contenteditable="true" lang="en">a single distinct meaningful element of speech or writing</div>
+  <button class="save-button"></button>
+</div>
+
+<div class="word-clue">
+  <div class="word" contenteditable="true" lang="en">word</div>
+  <div class="clue" contenteditable="true" lang="en">a single distinct meaningful element of speech or writing</div>
+  <button class="save-button"></button>
+</div>
+
+<button id="add-button"><div id="add-plus">⊕</div><div id="add-word">Add word</div></button>
+
+<button id="generate-button"><div id="add-plus"><div id="generate-square"></div></div><div id="add-word">Generate</div></button>
+
+</div>
+
+<div id="crossword">
+<div id="crossword-grid">
+
+</div>
+<div id="crossword-buttons">
+<button class="crossword-show-button">Show</button>
+<button class="crossword-print-button">Print</button>
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,305 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        
+
+        
+        TM | Crossword Puzzle
+        </title>
+    
+    <link rel="stylesheet" href="/projects/crossword-puzzle-generator/crossword-style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.png?">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+
+<body>
+    <div id="page-wrapper">
+        <div id="background" style="opacity:0.8;width:100%;height:100%;background-color:black;top:0;left:0;position:fixed;display:none;z-index:2">
+        </div>
+        <div id="hamburger" onclick="openNav()">
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+        </div>
+        <script>
+        function openNav() {
+            document.getElementById("sticky").style.transform = "translate3d(0, 0, 0)"
+            document.getElementById("hamburger").style.display = "none"
+            document.getElementById("background").style.display = "block"
+        }
+
+        function hideNav() {
+            document.getElementById("sticky").style.transform = "translate3d(-100vw, 0, 0)"
+            document.getElementById("hamburger").style.display = "block"
+            document.getElementById("background").style.display = "none"
+        }
+        </script>
+        <div id="sticky">
+            <div id="close" onclick="hideNav()">&times;</div>
+            <div style="display: inline-flex;vertical-align: bottom;"><img src="https://avatars.githubusercontent.com/u/98919050" /></div>
+            <a id="about" class="pages-button" href="/about">ABOUT</a>
+            <a id="projects" class="pages-button" href="/projects">PROJECTS</a>
+            <a id="erettsegi" class="pages-button" href="/erettsegi">ÉRETTSÉGI</a>
+            <a id="blog" class="pages-button" href="/blog">BLOG</a>
+            <a id="contact" class="pages-button" href="/contact">CONTACT</a>
+            <div style="text-align:center">
+                <a href="https://www.facebook.com/torok.mark.werner" target="_blank" class="fa fa-facebook"></a>
+                <a href="mailto:torokmarkwerner@gmail.com" target="_blank" class="fa fa-google"></a>
+                <a href="https://www.linkedin.com/in/torok-mark-werner" target="_blank" class="fa fa-linkedin"></a>
+            </div>
+        </div>
+        <script>
+        //alert(document.location.pathname + " --> And this is the substring:" + document.location.pathname.toString().substring(1,document.location.pathname.toString().length-1))
+        pages = document.getElementsByClassName("pages-button");
+        for (i = 0; i < pages.length; i++) {
+            if ((document.location.pathname).indexOf("/" + pages[i].id + "/") > -1) {
+                pages[i].classList.toggle("pages-button-current");
+                pages[i].style.backgroundColor = "palegreen";
+                pages[i].style.fontWeight = "bold"
+            }
+        }
+        </script>
+        <div id="content-container">
+            <h1>Crossword Puzzle</h1>
+            <!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+     <link rel="stylesheet" href="http://torokmarkwerner.github.io/projects/crossword-puzzle-generator/crossword-style.css">
+  </head>
+<body>
+<style>
+#crossword-wordlist {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  row-gap: 1em;
+  justify-content: center;
+}
+
+.word-clue {
+position: relative;
+display: flex;
+justify-content: center;
+flex: 1 1 100%;
+border: 1pt black solid;
+}
+
+.word-clue > * {
+  display: flex;
+  flex: 1 1 50%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+}
+
+.word {
+  background: lightgray;
+  font-variant-caps: all-small-caps;
+}
+
+.clue {
+  border-left: 1pt solid black;
+}
+
+.save-button {
+    position: absolute;
+    right: 0.2em;
+    bottom: 0.2em;
+    border-radius: 1em;
+    align-items: center;
+    justify-content: center;
+    color: green;
+    flex: 0;
+    display: flex;
+    background: transparent;
+    border: 1pt green solid;
+    font-variant-caps: all-small-caps;
+    width: 1.5em;
+    aspect-ratio: 1 / 1;
+    padding: 0;
+}
+
+.save-button::before {
+      content: "✓";
+}
+
+#add-button, #generate-button {
+  display: flex;
+  text-align: center;
+  font-variant-caps: all-small-caps;
+    flex: 0 0 25%;
+    align-items: center;
+    border: 1pt black solid;
+    padding-block: 0;
+    padding-inline: 0;
+}
+
+#add-button {
+    margin-right: 1em;
+}
+
+#add-word {
+  flex: 1;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+#add-plus, #generate-square {
+  display: flex;
+    flex: 1;
+        max-width: 1.5em;
+
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    align-items: center;
+  padding: 1em;
+  background: black;
+  color: white;
+  border: 1pt black solid;
+  aspect-ratio: 1 / 1;
+}
+
+#add-plus {
+  content: "⊕";
+}
+
+#generate-square {
+    display: flex;
+    max-width: fit-content;
+    padding: 0.5em;
+    border: 1pt white solid;
+    background: white;
+    width: 70%;
+    aspect-ratio: 1 / 1;
+    align-self: center;
+}
+
+#crossword-data {
+  display: flex;
+  flex-wrap: wrap;
+      row-gap: 1em;
+    padding: 0 0 1em 0;
+    width: 100%;
+}
+
+#crossword-data label {
+  position: relative;
+      font-variant-caps: all-small-caps;
+  background: black;
+  color: white;
+  padding: 1em;
+    width: calc(8ch + 2em);
+    text-align: center;
+      border: 1pt black solid;
+      border-right: 0;
+
+}
+
+#crossword-data input {
+    text-align: center;
+width: 100%;
+  border: 1pt black solid;
+      font-size: inherit;
+font-family: inherit;
+}
+
+#crossword-title, #crossword-passcode {
+  display: flex;
+  flex: 1 1 100%;
+  background: lightgray;
+  color: black;
+}
+
+#how-to {
+ padding-inline: 1.5em;
+}
+
+#how-to li {
+  padding: 0.5em;
+}
+
+</style>
+
+<ol id="how-to">
+  <li>Enter a title along with a passcode.</li>
+  <li>Add words and clues using the "Add word" button, and save your progress.</li>
+  <li>When you're ready, click "Generate" to create a unique crossword puzzle.</li>
+  <li>Share the generated link, optionally with a passcode, or print the crossword for offline enjoyment.</li>
+</ol>
+
+ <div id="crossword-data">
+ <div id="crossword-title">
+  <label>Title</label>
+  <input placeholder="Christmas">
+  </div>
+ <div id="crossword-passcode">
+  <label>Passcode</label>
+  <input placeholder="Christmas123!">
+</div>
+ </div>
+
+<div id="crossword-wordlist">
+<div class="word-clue">
+  <div class="word" contenteditable="true" lang="en">word</div>
+  <div class="clue" contenteditable="true" lang="en">a single distinct meaningful element of speech or writing</div>
+  <button class="save-button"></button>
+</div>
+
+<div class="word-clue">
+  <div class="word" contenteditable="true" lang="en">word</div>
+  <div class="clue" contenteditable="true" lang="en">a single distinct meaningful element of speech or writing</div>
+  <button class="save-button"></button>
+</div>
+
+<div class="word-clue">
+  <div class="word" contenteditable="true" lang="en">word</div>
+  <div class="clue" contenteditable="true" lang="en">a single distinct meaningful element of speech or writing</div>
+  <button class="save-button"></button>
+</div>
+
+<div class="word-clue">
+  <div class="word" contenteditable="true" lang="en">word</div>
+  <div class="clue" contenteditable="true" lang="en">a single distinct meaningful element of speech or writing</div>
+  <button class="save-button"></button>
+</div>
+
+<button id="add-button"><div id="add-plus">⊕</div><div id="add-word">Add word</div></button>
+
+<button id="generate-button"><div id="add-plus"><div id="generate-square"></div></div><div id="add-word">Generate</div></button>
+
+</div>
+
+<div id="crossword">
+<div id="crossword-grid">
+
+</div>
+<div id="crossword-buttons">
+<button class="crossword-show-button">Show</button>
+<button class="crossword-print-button">Print</button>
+</div>
+</div>
+
+</body>
+</html>
+        </div>
+        
+        
+    </div>
+</body>
+
+</html>
