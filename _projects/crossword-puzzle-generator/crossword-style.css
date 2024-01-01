@@ -12,7 +12,8 @@ td {
 }
 
 .letter {
-  background:white
+  background:white;
+  border: 1pt black solid
 }
 
 .number {
