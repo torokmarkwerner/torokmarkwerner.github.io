@@ -5,80 +5,19 @@ exclude_from_projects: true
 permalink: /projects/crossword-puzzle-generator/crossword-puzzle
 ---
 <script type="text/javascript">
-var docURL = window.location.href,
-  params = [];
+params = window.location.href.split("?")[1].split("&")
 
-// filter out the website origin "example.github.io" in the OP example      
-docURL = docURL.replace(window.location.origin, '');
-
-// if /#/ found then we have URL parameters
-// grabbing the parameters part of the URL
-if (docURL.indexOf('?') > -1) {
-  docURL = docURL.split('?')[1];
-  if (docURL != '') {
-
-    // omit the last forward slash if exist
-    if (docURL[docURL.length - 1] == '/') {
-      docURL = docURL.substring(0, docURL.length - 1);
-    }
-
-    // split the URL final string o get an object with all params 
-    params = docURL.split('/');
-    console.log(params);
-  }
-} else {
-  console.log('No URL parameters found');
+if (params.length > 1) {
+id = params[0].replace("id=")
+getCrossword(id)
+} else if (params.length == 2) {
+passcode = params[1].replace("passcode=")
 }
+
 </script>
 
-<textarea id="crossword-textarea" rows="5" cols="20">
-eliminate:
-destroy something completely
-fine:
-good, pleasant
-love:
-romantic feelings
-marry:
-wed:
-fuck:
-copulate
-super:
-...hero
-star:
-eg. the Sun
-broom:
-household tool to sweep up the floor
-whose:
-which person's
-blouse:
-type of female top
-ginger:
-red-haired
-joker:
-poker card
-busted:
-caught in the act
-former:
-not the latter
-superb:
-quite alright
-fantastic:
-awesome
-</textarea>
-<button onclick="generate()">
-Generate
-</button>
-<button onclick="hide()">
-Hide
-</button>
-<div id="crossword">
-<div id="crossword-grid">
-
-</div>
-<div id="crossword-buttons">
-<button class="crossword-show-button">Show</button>
-<button class="crossword-print-button">Print</button>
-</div>
-</div>
+<div id="crossword"></div>
 
 <script src="/projects/crossword-puzzle-generator/crossword-functions.js"></script>
+
+<script src="https://torokmarkwerner.github.io/projects/crossword-puzzle-generator/crossword-functions.js"></script>
