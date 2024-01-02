@@ -356,7 +356,7 @@ body {
 
 #content-container {
     position: relative;
-    padding: 0 0 0 2em;
+    padding: 0 0 1em 2em;
     width: 40vw;
     flex: 1 1 50%;
     margin-right: calc(25% - 2em);
