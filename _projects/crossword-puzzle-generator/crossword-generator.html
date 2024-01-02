@@ -280,9 +280,14 @@ exclude_from_projects: true
     padding-bottom: 1em;
 }
 
-.crossword-links>* {
+.flex-row {
+  display: flex;
+  flex: 1 1 100%;
+}
+
+.crossword-links>*>* {
     display: flex;
-    flex: 1;
+    flex: 0;
     padding: 1em;
     text-align: center;
     align-items: center;
@@ -291,7 +296,7 @@ exclude_from_projects: true
 }
 
 .crossword-link-key, .crossword-link-no-key {
-    flex: 0 1 20%;
+    flex: 1 0 20%;
     background: black;
     color: white;
     max-width: 15ch;
@@ -307,8 +312,7 @@ content: "Answer key";
 }
 
 .crossword-link {
-    flex: 1 1 50%;
-    max-width: 50%;
+    flex: 1 1 auto;
     border: 0;
     border-top: 1pt black solid;
     border-bottom: 1pt black solid;
@@ -620,6 +624,9 @@ content: "Answer key";
         links = document.createElement("div")
         links.className = "crossword-links"
 
+        flexRow = document.createElement("div")
+        flexRow.className = "flex-row"
+
         key = document.createElement("div")
         key.className = "crossword-link-no-key"
 
@@ -636,9 +643,11 @@ content: "Answer key";
             navigator.clipboard.writeText(this.previousElementSibling.innerText);
         })
 
-        links.appendChild(key)
-        links.appendChild(link1)
-        links.appendChild(copyButton)
+        flexRow.appendChild(key)
+        flexRow.appendChild(link1)
+        flexRow.appendChild(copyButton)
+
+        links.appendChild(flexRow)
 
         link2 = document.createElement("div");
         link2.className = "crossword-link"
@@ -648,6 +657,9 @@ content: "Answer key";
         nokey = document.createElement("div")
         nokey.className = "crossword-link-key"
 
+        flexRow = document.createElement("div")
+        flexRow.className = "flex-row"
+
         copyButton = document.createElement("button")
         copyButton.className = "crossword-link-copy"
         copyButton.addEventListener("click", function() {
@@ -656,9 +668,11 @@ content: "Answer key";
             navigator.clipboard.writeText(this.previousElementSibling.innerText);
         })
 
-        links.appendChild(nokey)
-        links.appendChild(link2)
-        links.appendChild(copyButton)
+        flexRow.appendChild(nokey)
+        flexRow.appendChild(link2)
+        flexRow.appendChild(copyButton)
+
+        links.appendChild(flexRow)
 
         crosswordGrid = document.createElement("div");
         crosswordGrid.id = "crossword-grid";
