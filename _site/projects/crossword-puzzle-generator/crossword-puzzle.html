@@ -69,22 +69,26 @@
         </script>
         <div id="content-container">
             <h1 id="page-title">Crossword Puzzle</h1>
-            <script type="text/javascript">
-params = window.location.href.split("?")[1].split("&")
-
-if (params.length > 1) {
-id = params[0].replace("id=")
-getCrossword(id)
-} else if (params.length == 2) {
-passcode = params[1].replace("passcode=")
-}
-
-</script>
-
-<div id="crossword"></div>
-
+            <div id="crossword"></div>
 <script src="/projects/crossword-puzzle-generator/crossword-functions.js"></script>
+<script type="text/javascript">
+if (window.location.href.split("?").length > 0) {
+    params = window.location.href.split("?")[1].split("&")
 
+    id = params[0].replace("id=", "")
+    console.log(id)
+
+    if (params.length > 0) {
+        id = params[0].replace("id=", "")
+        console.log(id)
+        getCrossword(id)
+        hide()
+    } else if (params.length == 2) {
+        passcode = params[1].replace("passcode=")
+    }
+
+}
+</script>
 <script src="https://torokmarkwerner.github.io/projects/crossword-puzzle-generator/crossword-functions.js"></script>
         </div>
         

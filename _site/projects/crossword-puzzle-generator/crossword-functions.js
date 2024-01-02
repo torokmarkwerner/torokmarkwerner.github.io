@@ -150,7 +150,7 @@ console.log(id)
         /////////////////////////////////////////////////////////
 }
 
-        crosswordContainer.innerHTML = ""
+        crossword.innerHTML = ""
 
         crosswordTitle = document.createElement("h1");
         crosswordTitle.id = "crossword-title-header"
@@ -267,12 +267,12 @@ if (generate == true) {
         crosswordButtons.appendChild(showButton);
         crosswordButtons.appendChild(printButton);
 
-        crosswordContainer.appendChild(crosswordTitle)
+        crossword.appendChild(crosswordTitle)
       if (generate == true) {
-        crosswordContainer.appendChild(links)
+        crossword.appendChild(links)
       }
-        crosswordContainer.appendChild(crosswordGrid);
-        crosswordContainer.appendChild(crosswordButtons);
+        crossword.appendChild(crosswordGrid);
+        crossword.appendChild(crosswordButtons);
 
         grid = crossword.querySelector("#crossword-grid")
 
@@ -436,7 +436,7 @@ if (generate == true) {
                 backtracking = true
                 //console.log("not found",i)
                 if (i < 0) {
-                    crosswordContainer.innerHTML = ""
+                    crossword.innerHTML = ""
                     document.querySelector("#score-modal").parentElement.style.display = "flex";
                     document.querySelector("#score-modal p").innerHTML = "Provide more words."
                     console.log("problem")

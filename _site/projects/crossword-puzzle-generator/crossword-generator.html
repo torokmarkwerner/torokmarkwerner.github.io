@@ -80,336 +80,6 @@
 </head>
 
 <body>
-    <style>
-        @media screen {
-#crossword-grid {
-  background: black;
-}
-#crossword-grid svg {
-  display: none;
-}
-}
-
-#crossword-grid table {
-  margin: auto;
-}
-
-#crossword-grid {
-  padding: 0.5em 0;
-}
-
-    @media print {
-        #page-title,
-        .crossword-links,
-        .button-container,
-        #hamburger,
-        #sticky,
-        #how-to,
-        #crossword-data,
-        #crossword-wordlist,
-        #clue-box,
-        #crossword-buttons {
-            display: none !important;
-        }
-
-        html,
-        body {
-            height: auto;
-        }
-
-#crossword-title-header {
-  text-align: center;
-}
-        #crossword-grid table,
-        .active,
-        .current-cell {
-            background: transparent;
-        }
-
-        #crossword-grid {
-            overflow-x: visible;
-        }
-
-        #crossword-grid svg {
-  display: block;
-}
-
-.letter {
-  border: 0;
-}
-    }
-
-    #crossword-wordlist {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        row-gap: 1em;
-        justify-content: center;
-    }
-
-    .word-clue {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        flex: 1 1 100%;
-        border: 1pt black solid;
-        min-height: 4em;
-    }
-
-    .word-clue>* {
-        display: flex;
-        flex: 1 1 50%;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        padding: 1em;
-    }
-
-    .word {
-        background: lightgray;
-        font-variant-caps: all-small-caps;
-    }
-
-    .clue {
-        border-left: 1pt solid black;
-    }
-
-    .save-button {
-        position: absolute;
-        right: 0.2em;
-        bottom: 0.2em;
-        border-radius: 1em;
-        align-items: center;
-        justify-content: center;
-        color: green;
-        flex: 0;
-        display: flex;
-        background: transparent;
-        border: 1pt green solid;
-        font-variant-caps: all-small-caps;
-        width: 1.5em;
-        aspect-ratio: 1 / 1;
-        padding: 0;
-    }
-
-    .save-button::before {
-        content: "✓";
-    }
-
-    .save-button.saved {
-        background: green;
-        color: white;
-    }
-
-    #add-button,
-    #generate-button,
-    #crossword-show-button,
-    #crossword-print-button {
-        display: flex;
-        text-align: center;
-        font-variant-caps: all-small-caps;
-        flex: 0 0 25%;
-        min-width: calc(10ch + 2.5em);
-        align-items: center;
-        border: 1pt black solid;
-        padding-block: 0;
-        padding-inline: 0;
-    }
-
-    .button-caption {
-        flex: 1;
-    }
-
-    button:hover {
-        cursor: pointer;
-        opacity: 0.9;
-    }
-
-    .button-icon,
-    #generate-square {
-        display: flex;
-        flex: 1;
-        max-width: 1.5em;
-
-        justify-content: center;
-        text-align: center;
-        align-self: center;
-        align-items: center;
-        padding: 0.5em;
-        background: black;
-        color: white;
-        border: 1pt black solid;
-        aspect-ratio: 1 / 1;
-    }
-
-    #generate-square {
-        display: flex;
-        max-width: fit-content;
-        padding: 0.5em;
-        border: 1pt white solid;
-        background: white;
-        width: 70%;
-        aspect-ratio: 1 / 1;
-        align-self: center;
-    }
-
-    #crossword-data {
-        display: flex;
-        flex-wrap: wrap;
-        row-gap: 1em;
-        padding: 0 0 1em 0;
-        width: 100%;
-    }
-
-    #crossword-data label {
-        position: relative;
-        font-variant-caps: all-small-caps;
-        background: black;
-        color: white;
-        padding: 1em;
-        width: calc(8ch + 2em);
-        text-align: center;
-        border: 1pt black solid;
-        border-right: 0;
-
-    }
-
-    #crossword-data input {
-        text-align: center;
-        width: 100%;
-        border: 1pt black solid;
-        font-size: inherit;
-        font-family: inherit;
-    }
-
-    #crossword-title,
-    #crossword-passcode {
-        display: flex;
-        flex: 1 1 100%;
-        background: lightgray;
-        color: black;
-    }
-
-    #how-to {
-        padding-inline: 1.5em;
-    }
-
-    #how-to li {
-        padding: 0.5em;
-    }
-
-    #crossword-show-button .button-caption::before {
-        content: "Show";
-    }
-
-    #crossword-show-button.hide .button-caption::before {
-        content: "Hide";
-    }
-
-    #crossword-buttons, .button-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1em;
-      padding: 1em 0 0 0;
-      justify-content: center;
-    }
-
-    #clue-box {
-    z-index: 1;
-    -webkit-backface-visibility: hidden;
-    position: sticky;
-    top: 0;
-    left: 0;
-    width: calc(100% - 2em);
-    height: fit-content;
-    min-height: 2em;
-    background: lightgray;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-    padding: 0.5em 1em;
-    }
-
-.letter {
-  border: 1pt black solid;
-}
-
-.crossword-links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: stretch;
-    width: 100%;
-    row-gap: 1em;
-    padding-bottom: 1em;
-}
-
-.flex-row {
-  display: flex;
-  flex: 1 1 100%;
-}
-
-.crossword-links>*>* {
-    display: flex;
-    flex: 0;
-    padding: 1em;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    border: 1pt black solid;
-}
-
-.crossword-link-key, .crossword-link-no-key {
-    flex: 1 0 20%;
-    background: black;
-    color: white;
-    max-width: 15ch;
-    font-variant-caps: all-small-caps;
-}
-
-.crossword-link-no-key::before {
-content: "Your crossword";
-}
-
-.crossword-link-key::before {
-content: "Answer key";
-}
-
-.crossword-link {
-    flex: 1 1 auto;
-    border: 0;
-    border-top: 1pt black solid;
-    border-bottom: 1pt black solid;
-    font-size: small;
-        word-break: break-word;
-}
-
-.crossword-link a {
-  text-decoration: none;
-}
-
-.crossword-link-copy {
-    font-variant: all-small-caps;
-    background: #007dff;
-    border: 1pt black solid;
-}
-
-.crossword-link-copy::before {
-  content:"Copy";
-}
-
-.crossword-link-copy.copied {
-    background: lightskyblue;
-}
-
-
-.crossword-link-copy.copied::before {
-  content:"Copied!";
-}
-
-    </style>
     <ol id="how-to">
         <li>Enter a title along with a passcode.</li>
         <li>Add words and clues using the "Add word" button, and save your progress.</li>
@@ -452,7 +122,7 @@ content: "Answer key";
     </div>
     <div id="crossword"></div>
     <script type="text/javascript">
-    crosswordContainer = document.getElementById("crossword");
+    crossword = document.getElementById("crossword")
 
     modalClose = document.createElement("DIV");
     modalClose.className = "modal-close";
@@ -534,7 +204,7 @@ content: "Answer key";
             localStorage.setItem("crosswordPasscode", JSON.stringify(passcode))
 
         } else {
-            crosswordContainer.innerHTML = ""
+            crossword.innerHTML = ""
             document.querySelector("#score-modal").parentElement.style.display = "flex";
             document.querySelector("#score-modal p").innerHTML = "Your browser does not support localStorage, your crossword was not saved."
         }
@@ -607,7 +277,7 @@ content: "Answer key";
                 hide()
 
             } else {
-                crosswordContainer.innerHTML = ""
+                crossword.innerHTML = ""
                 document.querySelector("#score-modal").parentElement.style.display = "flex";
                 document.querySelector("#score-modal p").innerHTML = "Provide a title and a passcode."
             }
@@ -618,8 +288,6 @@ content: "Answer key";
     </script>
 
 <script src="/projects/crossword-puzzle-generator/crossword-functions.js"></script>
-
-<script src="https://torokmarkwerner.github.io/projects/crossword-puzzle-generator/crossword-functions.js"></script>
 
 </body>
 
