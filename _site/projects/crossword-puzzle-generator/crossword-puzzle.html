@@ -78,8 +78,8 @@ docURL = docURL.replace(window.location.origin, '');
 
 // if /#/ found then we have URL parameters
 // grabbing the parameters part of the URL
-if (docURL.indexOf('/#/') > -1) {
-  docURL = docURL.split('/#/')[1];
+if (docURL.indexOf('?') > -1) {
+  docURL = docURL.split('?')[1];
   if (docURL != '') {
 
     // omit the last forward slash if exist

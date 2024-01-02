@@ -2,6 +2,7 @@
 layout: default
 title: "Crossword Puzzle"
 exclude_from_projects: true
+permalink: /projects/crossword-puzzle-generator/crossword-puzzle
 ---
 <script type="text/javascript">
 var docURL = window.location.href,
@@ -12,8 +13,8 @@ docURL = docURL.replace(window.location.origin, '');
 
 // if /#/ found then we have URL parameters
 // grabbing the parameters part of the URL
-if (docURL.indexOf('/#/') > -1) {
-  docURL = docURL.split('/#/')[1];
+if (docURL.indexOf('?') > -1) {
+  docURL = docURL.split('?')[1];
   if (docURL != '') {
 
     // omit the last forward slash if exist

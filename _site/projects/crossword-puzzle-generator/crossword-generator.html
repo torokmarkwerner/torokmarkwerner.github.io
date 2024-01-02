@@ -81,8 +81,7 @@
 
 <body>
     <style>
-
-@media screen {
+        @media screen {
 #crossword-grid {
   background: black;
 }
@@ -101,6 +100,7 @@
 
 
     @media print {
+        .crossword-links,
         .button-container,
         #hamburger,
         #sticky,
@@ -117,6 +117,9 @@
             height: auto;
         }
 
+#crossword-title-header {
+  text-align: center;
+}
         #crossword-grid table,
         .active,
         .current-cell {
@@ -307,7 +310,7 @@
       display: flex;
       flex-wrap: wrap;
       gap: 1em;
-      padding: 1em 0;
+      padding: 1em 0 0 0;
       justify-content: center;
     }
 
@@ -333,6 +336,75 @@
   border: 1pt black solid;
 }
 
+.crossword-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    row-gap: 1em;
+    padding-bottom: 1em;
+}
+
+.crossword-links>* {
+    display: flex;
+    flex: 1;
+    padding: 1em;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: 1pt black solid;
+}
+
+.crossword-link-key, .crossword-link-no-key {
+    flex: 0 1 20%;
+    background: black;
+    color: white;
+    max-width: 15ch;
+    font-variant-caps: all-small-caps;
+}
+
+.crossword-link-no-key::before {
+content: "Your crossword";
+}
+
+.crossword-link-key::before {
+content: "Answer key";
+}
+
+.crossword-link {
+    flex: 1 1 50%;
+    max-width: 50%;
+    border: 0;
+    border-top: 1pt black solid;
+    border-bottom: 1pt black solid;
+    font-size: small;
+        word-break: break-word;
+}
+
+.crossword-link a {
+  text-decoration: none;
+}
+
+.crossword-link-copy {
+    font-variant: all-small-caps;
+    background: #007dff;
+    border: 1pt black solid;
+}
+
+.crossword-link-copy::before {
+  content:"Copy";
+}
+
+.crossword-link-copy.copied {
+    background: lightskyblue;
+}
+
+
+.crossword-link-copy.copied::before {
+  content:"Copied!";
+}
+
     </style>
     <ol id="how-to">
         <li>Enter a title along with a passcode.</li>
@@ -343,11 +415,11 @@
     <div id="crossword-data">
         <div id="crossword-title">
             <label>Title</label>
-            <input placeholder="Christmas">
+            <input placeholder="Christmas" value="Christmas">
         </div>
         <div id="crossword-passcode">
             <label>Passcode</label>
-            <input placeholder="Christmas123!">
+            <input placeholder="Christmas123!" value="Christmas123">
         </div>
     </div>
     <div id="crossword-wordlist">
@@ -356,38 +428,8 @@
             <div class="clue" contenteditable="true" lang="en">a single distinct meaningful element of speech or writing</div>
             <button class="save-button"></button>
         </div>
-        <div class="word-clue">
-            <div class="word" contenteditable="true" lang="en">eliminate</div>
-            <div class="clue" contenteditable="true" lang="en">a single distinct meaningful element of speech or writing</div>
-            <button class="save-button"></button>
-        </div>
-        <div class="word-clue">
-            <div class="word" contenteditable="true" lang="en">fine</div>
-            <div class="clue" contenteditable="true" lang="en">a single distinct meaningful element of speech or writing</div>
-            <button class="save-button"></button>
-        </div>
-        <div class="word-clue">
-            <div class="word" contenteditable="true" lang="en">love</div>
-            <div class="clue" contenteditable="true" lang="en">a single distinct meaningful element of speech or writing</div>
-            <button class="save-button"></button>
-        </div>
-          <div class="word-clue">
-            <div class="word" contenteditable="true" lang="en">marry</div>
-            <div class="clue" contenteditable="true" lang="en">a single distinct meaningful element of speech or writing</div>
-            <button class="save-button"></button>
-        </div>
-                  <div class="word-clue">
-            <div class="word" contenteditable="true" lang="en">fantastic</div>
-            <div class="clue" contenteditable="true" lang="en">a single distinct meaningful element of speech or writing</div>
-            <button class="save-button"></button>
-        </div>
-                  <div class="word-clue">
-            <div class="word" contenteditable="true" lang="en">mesmerising</div>
-            <div class="clue" contenteditable="true" lang="en">a single distinct meaningful element of speech or writing</div>
-            <button class="save-button"></button>
-        </div>
-      </div>
-      <div class="button-container">
+    </div>
+    <div class="button-container">
         <button id="add-button">
             <div class="button-icon">⊕</div>
             <div class="button-caption">Add word</div>
@@ -400,78 +442,169 @@
         </button>
     </div>
     <div id="crossword"></div>
+    <script type="text/javascript">
+    crosswordContainer = document.getElementById("crossword");
 
-<script type="text/javascript">
+    modalClose = document.createElement("DIV");
+    modalClose.className = "modal-close";
+    modalClose.innerHTML = "&times;";
+    modalClose.addEventListener("click", function() { this.parentElement.parentElement.style.display = "none" })
 
-crosswordWordlist = document.getElementById("crossword-wordlist")
+    modalP = document.createElement("P");
 
-function save(element){
-element.classList.add("saved")
-}
+    modalBox = document.createElement("DIV");
+    modalBox.id = "score-modal";
+    modalBox.className = "modal-box";
 
-  saveButtons = document.getElementsByClassName("save-button");
-  for (i=0; i<saveButtons.length; i++) {
-    saveButtons[i].addEventListener("click",function(){save(this)})
-  }
+    modalBox.appendChild(modalClose);
+    modalBox.appendChild(modalP);
 
-addButton = document.getElementById("add-button");
+    modalBasis = document.createElement("DIV");
+    modalBasis.className = "modal-basis";
 
-addButton.addEventListener("click",function(){
-    for (i=0; i<saveButtons.length; i++) {
-    saveButtons[i].classList.add("saved")
+    modalBasis.appendChild(modalBox);
+
+    if (document.getElementById("content-container")) {
+        document.getElementById("content-container").appendChild(modalBasis);
+    } else {
+        document.body.appendChild(modalBasis)
     }
 
-newWordAndClue = document.createElement("DIV");
-newWordAndClue.className = "word-clue";
 
-newWord = document.createElement("DIV");
-newWord.className = "word";
-newWord.contentEditable = true;
+    wordAndClues = document.querySelectorAll(".word-clue");
 
-newClue = document.createElement("DIV");
-newClue.className = "clue";
-newClue.contentEditable = true;
+    Array.from(wordAndClues).forEach(x => {
 
-newSaveButton = document.createElement("BUTTON")
-newSaveButton.className = "save-button";
-newSaveButton.addEventListener("click",function(){save(this)})
+        x.querySelector(".word").addEventListener("focus", function() {
+            x.querySelector(".save-button").classList.remove("saved")
+        })
 
-newWordAndClue.appendChild(newWord)
-newWordAndClue.appendChild(newClue)
-newWordAndClue.appendChild(newSaveButton)
+        x.querySelector(".clue").addEventListener("focus", function() {
+            x.querySelector(".save-button").classList.remove("saved")
+        })
 
-crosswordWordlist.appendChild(newWordAndClue)
+    })
 
-})
+    Array.from(wordAndClues).forEach(x => {
 
-generateButton = document.getElementById("generate-button");
+        x.querySelector(".word").addEventListener("blur", function() { save() })
 
-generateButton.addEventListener("click",function(){
-    for (i=0; i<saveButtons.length; i++) {
-    saveButtons[i].classList.add("saved")
+        x.querySelector(".clue").addEventListener("blur", function() { save() })
+
+    })
+
+    crosswordWordlist = document.getElementById("crossword-wordlist")
+
+    function save(element) {
+        element.classList.add("saved")
     }
 
-title = document.getElementById("crossword-title").querySelector("input").value;
-passcode = document.getElementById("crossword-passcode").querySelector("input").value;
-input = {}
+    function save() {
 
-wordAndClues = document.querySelectorAll(".word-clue");
+        Array.from(document.querySelectorAll(".save-button")).forEach(x => x.classList.add("saved"))
 
-for (i=0; i<wordAndClues.length; i++) {
-  word = wordAndClues[i].querySelector(".word").innerText;
-  clue = wordAndClues[i].querySelector(".clue").innerText;
-  if (word != "" && clue != "") {
-  input[word] = clue;
-}
-}
+        if (localStorage) {
 
-generate(title,passcode,input)
-hide()
+            wordAndClues = document.querySelectorAll(".word-clue");
 
-})
+            title = document.getElementById("crossword-title").querySelector("input").value;
+            passcode = document.getElementById("crossword-passcode").querySelector("input").value;
 
-</script>
+            input = {}
 
+            for (i = 0; i < wordAndClues.length; i++) {
+                word = wordAndClues[i].querySelector(".word").innerText;
+                clue = wordAndClues[i].querySelector(".clue").innerText;
+                if (word != "" && clue != "") {
+                    input[word] = clue;
+                }
+            }
+
+            localStorage.setItem("crosswordTitle", JSON.stringify(title))
+            localStorage.setItem("crosswordInput", JSON.stringify(input))
+            localStorage.setItem("crosswordPasscode", JSON.stringify(passcode))
+
+        } else {
+            crosswordContainer.innerHTML = ""
+            document.querySelector("#score-modal").parentElement.style.display = "flex";
+            document.querySelector("#score-modal p").innerHTML = "Your browser does not support localStorage, your crossword was not saved."
+        }
+    }
+
+    saveButtons = document.getElementsByClassName("save-button");
+    for (i = 0; i < saveButtons.length; i++) {
+        saveButtons[i].addEventListener("click", function() { save(this) })
+    }
+
+    addButton = document.getElementById("add-button");
+
+    addButton.addEventListener("click", function() {
+        for (i = 0; i < saveButtons.length; i++) {
+            saveButtons[i].classList.add("saved")
+        }
+
+        save()
+
+        newWordAndClue = document.createElement("DIV");
+        newWordAndClue.className = "word-clue";
+
+        newWord = document.createElement("DIV");
+        newWord.className = "word";
+        newWord.contentEditable = true;
+
+        newWord.addEventListener("focus", function() {
+            this.parentElement.querySelector(".save-button").classList.remove("saved")
+        })
+
+        newWord.addEventListener("blur", function() { save() })
+
+        newClue = document.createElement("DIV");
+        newClue.className = "clue";
+        newClue.contentEditable = true;
+
+        newClue.addEventListener("focus", function() {
+            this.parentElement.querySelector(".save-button").classList.remove("saved")
+        })
+
+        newClue.addEventListener("blur", function() { save() })
+
+        newSaveButton = document.createElement("BUTTON")
+        newSaveButton.className = "save-button";
+        newSaveButton.addEventListener("click", function() { save(this) })
+
+        newWordAndClue.appendChild(newWord)
+        newWordAndClue.appendChild(newClue)
+        newWordAndClue.appendChild(newSaveButton)
+
+        crosswordWordlist.appendChild(newWordAndClue)
+
+    })
+
+    generateButton = document.getElementById("generate-button");
+
+    generateButton.addEventListener("click", function() {
+
+        if (localStorage.crosswordTitle && localStorage.crosswordPasscode && localStorage.crosswordInput) {
+
+            title = JSON.parse(localStorage.crosswordTitle)
+            passcode = JSON.parse(localStorage.crosswordPasscode)
+            input = JSON.parse(localStorage.crosswordInput)
+
+            if (title != "" && passcode != "") {
+                generate(title, passcode, input)
+
+                hide()
+
+            } else {
+                crosswordContainer.innerHTML = ""
+                document.querySelector("#score-modal").parentElement.style.display = "flex";
+                document.querySelector("#score-modal p").innerHTML = "Provide a title and a passcode."
+            }
+
+        }
+
+    })
+    </script>
     <script>
     crossword = document.getElementById("crossword")
     gameOver = false
@@ -480,7 +613,7 @@ hide()
 
     function hide() {
 
-      grid = crossword.querySelector("#crossword-grid")
+        grid = crossword.querySelector("#crossword-grid")
 
         letters = grid.querySelectorAll(".letter");
         letters.forEach(x => {
@@ -535,73 +668,122 @@ hide()
 
     }
 
-    function generate(title,passcode,input) {
+    function generate(title, passcode, input) {
 
-crosswordContainer = document.getElementById("crossword");
+        save()
 
-  crosswordContainer.innerHTML = ""
+        crosswordContainer.innerHTML = ""
 
-  crosswordGrid = document.createElement("div");
-  crosswordGrid.id = "crossword-grid";
+        crosswordTitle = document.createElement("h1");
+        crosswordTitle.id = "crossword-title-header"
+        crosswordTitle.innerHTML = title;
 
-  crosswordButtons = document.createElement("div");
-  crosswordButtons.id = "crossword-buttons";
+        links = document.createElement("div")
+        links.className = "crossword-links"
 
-  showButton = document.createElement("button");
-  showButton.id = "crossword-show-button";
+        key = document.createElement("div")
+        key.className = "crossword-link-no-key"
 
-  showButtonIcon = document.createElement("div");
-  showButtonIcon.className = "button-icon";
-  showIcon = document.createElement("i");
-  showIcon.className = "fa fa-eye";
-  showButtonIcon.appendChild(showIcon);
+        link1 = document.createElement("div");
+        link1.className = "crossword-link"
 
-  showButtonCaption = document.createElement("div");
-  showButtonCaption.className = "button-caption";
+        link1.innerHTML = "<a target='_blank' href='https://torokmarkwerner.github.io/projects/crossword-puzzle-generator/crossword-puzzle?title=" + encodeURIComponent(title) + "'>https://torokmarkwerner.github.io/projects/crossword-puzzle-generator/crossword-puzzle?title=" + encodeURIComponent(title) + "</a>"
 
-  showButton.appendChild(showButtonIcon);
-  showButton.appendChild(showButtonCaption);
+        copyButton = document.createElement("button")
+        copyButton.className = "crossword-link-copy"
+        copyButton.addEventListener("click", function() {
+            Array.from(document.querySelectorAll(".crossword-link-copy")).forEach(x => x.classList.remove("copied"));
+            this.classList.add("copied")
+            navigator.clipboard.writeText(this.previousElementSibling.innerText);
+        })
 
-  showButton.addEventListener("click", function() {
-        this.classList.toggle("hide")
-        if (this.classList.contains("hide")) {
-            show()
-            showButton.querySelector(".button-icon i").className = "fa fa-eye-slash"
-        } else {
-            hide()
-            showButton.querySelector(".button-icon i").className = "fa fa-eye"
-        }
-    })
+        links.appendChild(key)
+        links.appendChild(link1)
+        links.appendChild(copyButton)
 
-  printButton = document.createElement("button");
-  printButton.id = "crossword-print-button";
+        link2 = document.createElement("div");
+        link2.className = "crossword-link"
 
-  printButtonIcon = document.createElement("div");
-  printButtonIcon.className = "button-icon";
-  printIcon = document.createElement("i");
-  printIcon.className = "fa fa-print";
-  printButtonIcon.appendChild(printIcon);
+        link2.innerHTML = "<a target='_blank' href='https://torokmarkwerner.github.io/projects/crossword-puzzle-generator/crossword-puzzle?title=" + encodeURIComponent(title) + "&passcode=" + encodeURIComponent(passcode) + "'>https://torokmarkwerner.github.io/projects/crossword-puzzle-generator/crossword-puzzle?title=" + encodeURIComponent(title) + "&passcode=" + encodeURIComponent(passcode) + "</a>"
 
-  printButtonCaption = document.createElement("div");
-  printButtonCaption.className = "button-caption";
-  printButtonCaption.textContent = "Print";
+        nokey = document.createElement("div")
+        nokey.className = "crossword-link-key"
 
-  printButton.appendChild(printButtonIcon);
-  printButton.appendChild(printButtonCaption);
+        copyButton = document.createElement("button")
+        copyButton.className = "crossword-link-copy"
+        copyButton.addEventListener("click", function() {
+            Array.from(document.querySelectorAll(".crossword-link-copy")).forEach(x => x.classList.remove("copied"));
+            this.classList.add("copied")
+            navigator.clipboard.writeText(this.previousElementSibling.innerText);
+        })
 
-  printButton.addEventListener("click", function() {
-        window.print()
-    })
+        links.appendChild(nokey)
+        links.appendChild(link2)
+        links.appendChild(copyButton)
 
-  crosswordButtons.appendChild(showButton);
-  crosswordButtons.appendChild(printButton);
+        crosswordGrid = document.createElement("div");
+        crosswordGrid.id = "crossword-grid";
 
-  crosswordContainer.appendChild(crosswordGrid);
-  crosswordContainer.appendChild(crosswordButtons);
+        crosswordButtons = document.createElement("div");
+        crosswordButtons.id = "crossword-buttons";
 
-  grid = crossword.querySelector("#crossword-grid")
+        showButton = document.createElement("button");
+        showButton.id = "crossword-show-button";
 
-clueBox = document.createElement("DIV");
+        showButtonIcon = document.createElement("div");
+        showButtonIcon.className = "button-icon";
+        showIcon = document.createElement("i");
+        showIcon.className = "fa fa-eye";
+        showButtonIcon.appendChild(showIcon);
+
+        showButtonCaption = document.createElement("div");
+        showButtonCaption.className = "button-caption";
+
+        showButton.appendChild(showButtonIcon);
+        showButton.appendChild(showButtonCaption);
+
+        showButton.addEventListener("click", function() {
+            this.classList.toggle("hide")
+            if (this.classList.contains("hide")) {
+                show()
+                showButton.querySelector(".button-icon i").className = "fa fa-eye-slash"
+            } else {
+                hide()
+                showButton.querySelector(".button-icon i").className = "fa fa-eye"
+            }
+        })
+
+        printButton = document.createElement("button");
+        printButton.id = "crossword-print-button";
+
+        printButtonIcon = document.createElement("div");
+        printButtonIcon.className = "button-icon";
+        printIcon = document.createElement("i");
+        printIcon.className = "fa fa-print";
+        printButtonIcon.appendChild(printIcon);
+
+        printButtonCaption = document.createElement("div");
+        printButtonCaption.className = "button-caption";
+        printButtonCaption.textContent = "Print";
+
+        printButton.appendChild(printButtonIcon);
+        printButton.appendChild(printButtonCaption);
+
+        printButton.addEventListener("click", function() {
+            window.print()
+        })
+
+        crosswordButtons.appendChild(showButton);
+        crosswordButtons.appendChild(printButton);
+
+        crosswordContainer.appendChild(crosswordTitle)
+        crosswordContainer.appendChild(links)
+        crosswordContainer.appendChild(crosswordGrid);
+        crosswordContainer.appendChild(crosswordButtons);
+
+        grid = crossword.querySelector("#crossword-grid")
+
+        clueBox = document.createElement("DIV");
         clueBox.id = "clue-box"
         table = document.createElement("TABLE")
         tbody = document.createElement("TBODY")
@@ -628,30 +810,30 @@ clueBox = document.createElement("DIV");
         grid.appendChild(table)
         grid.parentElement.insertBefore(div, document.getElementById("crossword-buttons"))
 
-/*
-        title = "Christmas"
+        /*
+                title = "Christmas"
 
-        passcode = "Christmas123"
+                passcode = "Christmas123"
 
-        input = {
-            "eliminate": "destroy something completely",
-            "fine": "good, pleasant",
-            "love": "romantic feelings",
-            "marry": "wed",
-            "fuck": "copulate",
-            "super": "...hero",
-            "star": "eg. the Sun",
-            "broom": "household tool to sweep up the floor",
-            "whose": "which person's",
-            "blouse": "type of female top",
-            "ginger": "red-haired",
-            "joker": "poker card",
-            "busted": "caught in the act",
-            "former": "not the latter",
-            "superb": "quite alright",
-            "fantastic": "awesome"
-        }
-*/
+                input = {
+                    "eliminate": "destroy something completely",
+                    "fine": "good, pleasant",
+                    "love": "romantic feelings",
+                    "marry": "wed",
+                    "fuck": "copulate",
+                    "super": "...hero",
+                    "star": "eg. the Sun",
+                    "broom": "household tool to sweep up the floor",
+                    "whose": "which person's",
+                    "blouse": "type of female top",
+                    "ginger": "red-haired",
+                    "joker": "poker card",
+                    "busted": "caught in the act",
+                    "former": "not the latter",
+                    "superb": "quite alright",
+                    "fantastic": "awesome"
+                }
+        */
         /*input = document.getElementById("crossword-textarea").innerHTML.split(/\:\s*|\s*\n/).filter((x,index) => x != "");
 
         clues = {}
@@ -761,6 +943,9 @@ clueBox = document.createElement("DIV");
                 backtracking = true
                 //console.log("not found",i)
                 if (i < 0) {
+                    crosswordContainer.innerHTML = ""
+                    document.querySelector("#score-modal").parentElement.style.display = "flex";
+                    document.querySelector("#score-modal p").innerHTML = "Provide more words."
                     console.log("problem")
                     break
                 }
@@ -820,29 +1005,29 @@ clueBox = document.createElement("DIV");
             ol.appendChild(li)
         })
 
-Array.from(grid.querySelectorAll(".letter")).forEach(x => {
+        Array.from(grid.querySelectorAll(".letter")).forEach(x => {
 
-svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+            svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
 
-svg.style.overflow = "visible";
-svg.style.width = "100%"
-svg.style.height = "100%";
-svg.style.position = "absolute";
-svg.style.top = 0;
-svg.style.left = 0;
+            svg.style.overflow = "visible";
+            svg.style.width = "100%"
+            svg.style.height = "100%";
+            svg.style.position = "absolute";
+            svg.style.top = 0;
+            svg.style.left = 0;
 
-rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
-rect.style.fill = "transparent"
-rect.style.stroke = "black"
-rect.style.strokeWidth = "1pt"
-rect.style.height = "2em"
-rect.style.width = "100%"
+            rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+            rect.style.fill = "transparent"
+            rect.style.stroke = "black"
+            rect.style.strokeWidth = "1pt"
+            rect.style.height = "2em"
+            rect.style.width = "100%"
 
-svg.appendChild(rect)
+            svg.appendChild(rect)
 
-  x.appendChild(svg)
+            x.appendChild(svg)
 
-})
+        })
 
     }
 
@@ -1299,12 +1484,12 @@ svg.appendChild(rect)
 
     }
 
-   /* generate();
-    hide();
-    document.getElementsByTagName("textarea")[0].style.display = "none"
-    document.getElementsByTagName("button")[0].style.display = "none"
-    document.getElementsByTagName("button")[1].style.display = "none"
-    */
+    /* generate();
+     hide();
+     document.getElementsByTagName("textarea")[0].style.display = "none"
+     document.getElementsByTagName("button")[0].style.display = "none"
+     document.getElementsByTagName("button")[1].style.display = "none"
+     */
 
     function show() {
         Array.from(inputs).forEach(x => x.parentElement.classList.remove("active", "current-cell"))
