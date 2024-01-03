@@ -123,7 +123,7 @@ csvParsed = data[i].replace(/"?(.*?)"?,"?(.*?)"?,"?(.*?)"?,"?(.*)/g,'"$1","$2","
 
 titleData = csvParsed[1].trim().replace(/"/g,"");
 idData = csvParsed[2].trim().slice(1,-1);
-inputData = csvParsed[3].trim().replace(/"""/g,'"').replace(/"+/g,'"').replace(/'/g,'"').slice(1,-1);
+inputData = csvParsed[3].trim().replace(/"""/g,'"').replace(/"+/g,'"').slice(1,-1);
 
 crosswordData = {}
 crosswordData.title = titleData
