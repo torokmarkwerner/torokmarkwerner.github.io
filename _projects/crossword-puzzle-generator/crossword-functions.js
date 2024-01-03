@@ -132,7 +132,7 @@ crosswordData.input = JSON.parse(inputData)
 crosswordsData[idData] = crosswordData
   }
 
-if(generate == true) {
+if (generate == true) {
 
 if (id != "") {
 n = id.split("-").length > 1 ? Number(id.split("-")[id.split("-").length-1])+1 : 0
