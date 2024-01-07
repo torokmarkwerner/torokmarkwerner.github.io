@@ -964,7 +964,7 @@ console.log(gridMap)
                         td.click()
                     } else if (gridMap.find(x => x.correct != true) != undefined) {
                         nextWord = gridMap.find(x => x.correct != true)
-                        console.log(nextWord.across)
+                        console.log(nextWord.across) 
                         td = grid.getElementsByTagName("tr")[nextWord.row].children[nextWord.column].querySelector(".crossword-input")
                         td.parentElement.classList.add("current-cell")
                         td.focus()
