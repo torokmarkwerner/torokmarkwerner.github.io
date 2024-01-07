@@ -31,7 +31,7 @@
 
         html,
         body {
-            height: auto;
+            height: auto !important;
         }
 
 #crossword-title-header {
@@ -48,7 +48,7 @@
         }
 
         #crossword-grid svg {
-  display: block;
+  display: block !important;
 }
 
 .letter {
@@ -441,7 +441,7 @@ textarea {
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
-    padding: 0.2em 0;
+    padding: 0.5em 0;
 }
 
 .modal-basis {

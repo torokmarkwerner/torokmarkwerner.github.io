@@ -72,11 +72,31 @@
             <div id="crossword"></div>
 <script src="/projects/crossword-puzzle-generator/crossword-functions.js"></script>
 <script type="text/javascript">
+ modalClose = document.createElement("DIV");
+        modalClose.className = "modal-close";
+        modalClose.innerHTML = "&times;";
+        modalClose.addEventListener("click", function() { this.parentElement.parentElement.style.display = "none" })
+
+        modalP = document.createElement("P");
+
+        modalBox = document.createElement("DIV");
+        modalBox.id = "score-modal";
+        modalBox.className = "modal-box";
+
+        modalBox.appendChild(modalClose);
+        modalBox.appendChild(modalP);
+
+        modalBasis = document.createElement("DIV");
+        modalBasis.className = "modal-basis";
+
+        modalBasis.appendChild(modalBox);
+
+        document.body.appendChild(modalBasis);
+
 if (window.location.href.split("?").length > 0) {
     params = window.location.href.split("?")[1].split("&")
 
     id = params[0].replace("id=", "")
-    console.log(id)
 
     if (params.length > 0) {
         id = params[0].replace("id=", "")
@@ -89,7 +109,6 @@ if (window.location.href.split("?").length > 0) {
 
 }
 </script>
-<script src="https://torokmarkwerner.github.io/projects/crossword-puzzle-generator/crossword-functions.js"></script>
         </div>
         
         

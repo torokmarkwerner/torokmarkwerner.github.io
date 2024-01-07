@@ -24,12 +24,12 @@ passcodeScript = "https://script.google.com/macros/s/AKfycbzT_6w7RuWhbweD6qY8jsD
 
 crosswordsData = {}
 
-for (i=data.length-1;i>2;i--) {
+for (i=data.length-1;i>0;i--) {
 
 csvParsed = data[i].replace(/"?(.*?)"?,"?(.*?)"?,"?(.*?)"?,"?(.*)/g,'"$1","$2","$3","$4').split(/,(?="(?!")|""")/)
 
-  titleData = csvParsed[1].trim().replace(/"/g,"");
-  idData = csvParsed[2].trim().slice(1,-1);
+titleData = csvParsed[1].trim().replace(/"/g,"");
+idData = csvParsed[2].trim().slice(1,-1);
 inputData = csvParsed[3].trim().replace(/"""/g,'"').replace(/"+/g,'"').slice(1,-1);
 
 crosswordData = {}
@@ -41,7 +41,12 @@ crosswordsData[idData] = crosswordData
 
 console.log(crosswordsData[id])
 
+if(crosswordsData[id]) {
 generate(crosswordsData[id].title,crosswordsData[id].passcode,crosswordsData[id].input,false)
+} else {
+  document.querySelector("#score-modal").parentElement.style.display = "flex";
+  document.querySelector("#score-modal p").innerHTML = "Crossword not found. Check the URL you are trying to access."
+}
 
 }
 
@@ -141,7 +146,7 @@ id = title + "-" + n
 id = Object.values(crosswordsData).filter(x => x.title == title).length == 0 ? title : title + "-" + Object.values(crosswordsData).filter(x => x.title == title).length
 }
 
-console.log(id)
+//console.log(id)
 
         fetch("https://docs.google.com/forms/d/e/1FAIpQLSfKVn-NOL3qygq9YrAMk4e63aD6sTzLr8zbrp2MFXFr6jKzEg/formResponse?usp=pp_url&entry.268076818=" + encodeURIComponent(title) + "&entry.902339844=" + encodeURIComponent(id) + "&entry.1393085979=" + encodeURIComponent(JSON.stringify(input)))
 
@@ -439,14 +444,15 @@ if (generate == true) {
                     crossword.innerHTML = ""
                     document.querySelector("#score-modal").parentElement.style.display = "flex";
                     document.querySelector("#score-modal p").innerHTML = "Provide more words."
-                    console.log("problem")
+                    //console.log("problem")
                     break
                 }
 
             }
         }
 
-        console.log(words.filter(x => !onTheGrid.includes(x)))
+        //console.log(words.filter(x => !onTheGrid.includes(x)))
+//Just to make sure that every word is on the grid.
 
         gridMap.sort((a, b) => {
             if (a.row === b.row) {
@@ -497,6 +503,60 @@ if (generate == true) {
             li.innerHTML = input[x.word]
             ol.appendChild(li)
         })
+
+//Delete empty rows and columns.
+minRows = gridMap.filter(word => word.across == false).sort((a, b) => a.row - b.row)[0].row
+
+downWords = gridMap.filter(word => word.across == false).sort((a, b) => (a.row + a.word.length) - (b.row + b.word.length))
+
+maxRows = downWords[downWords.length - 1].row + downWords[downWords.length - 1].word.length
+
+minColumns = gridMap.filter(word => word.across == true).sort((a, b) => a.column - b.column)[0].column
+
+acrossWords = gridMap.filter(word => word.across == true).sort((a, b) => (a.column + a.word.length) - (b.column + b.word.length))
+
+maxColumns = acrossWords[acrossWords.length - 1].column + acrossWords[acrossWords.length - 1].word.length
+
+emptyRowsOnTheTop = 0
+
+rowElements = Array.from(grid.querySelectorAll("tbody tr"))
+rowElements.forEach((row, index) => {
+  if (index < minRows) {
+    grid.querySelector("tbody").removeChild(row);
+    emptyRowsOnTheTop++;
+    } else if (index > maxRows) {
+    grid.querySelector("tbody").removeChild(row);
+    }
+});
+
+console.log(emptyRowsOnTheTop)
+
+emptyColumnsOnTheLeft = 0
+
+rowElements = Array.from(grid.querySelectorAll("tbody tr"))
+
+for (i=0; i<rowElements.length; i++) {
+cellElements = Array.from(rowElements[i].children)
+cellElements.forEach((td,index) => {
+if (index < minColumns) {
+rowElements[i].removeChild(td)
+emptyColumnsOnTheLeft++;
+} else if (index > maxColumns) {
+rowElements[i].removeChild(td)
+}
+})
+}
+
+console.log(emptyColumnsOnTheLeft)
+
+gridMap.forEach(x => {
+  x.row = x.row - emptyRowsOnTheTop
+  x.column = x.column - emptyColumnsOnTheLeft
+})
+
+console.log(gridMap)
+
+////////////////////////////////
 
         Array.from(grid.querySelectorAll(".letter")).forEach(x => {
 
@@ -781,6 +841,7 @@ if (generate == true) {
 
         if (element.parentElement.classList.contains("current-cell") && ((up && up.classList.contains("letter") && left && left.classList.contains("letter")) || (down && down.classList.contains("letter") && right && right.classList.contains("letter")) || (up && up.classList.contains("letter") && right && right.classList.contains("letter")) || (down && down.classList.contains("letter") && left && left.classList.contains("letter")))) {
             horizontal = horizontal ? false : true
+            console.log("Ez lett belőle: " + horizontal)
         } else if ((up && up.classList.contains("letter") && up.classList.contains("active")) || (down && down.classList.contains("letter")) && down.classList.contains("active")) {
             horizontal = false
         } else if ((left && left.classList.contains("letter") && left.classList.contains("active")) || (right && right.classList.contains("letter") && right.classList.contains("active"))) {
@@ -901,13 +962,15 @@ if (generate == true) {
                         td.parentElement.classList.add("current-cell")
                         td.focus()
                         td.click()
-                    } else if (gridMap.find(x => x.correct != true)) {
+                    } else if (gridMap.find(x => x.correct != true) != undefined) {
                         nextWord = gridMap.find(x => x.correct != true)
                         console.log(nextWord.across)
                         td = grid.getElementsByTagName("tr")[nextWord.row].children[nextWord.column].querySelector(".crossword-input")
                         td.parentElement.classList.add("current-cell")
                         td.focus()
                         td.click()
+                    } else {
+                      console.log("Hey?!")
                     }
                 }
 
