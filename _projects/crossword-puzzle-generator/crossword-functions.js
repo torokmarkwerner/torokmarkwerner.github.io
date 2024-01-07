@@ -1019,6 +1019,8 @@ console.log(gridMap)
                         td.parentElement.classList.add("current-cell")
                         td.focus()
                         td.click()
+                    } else {
+                        console.log("Hey?")
                     }
                 }
 
