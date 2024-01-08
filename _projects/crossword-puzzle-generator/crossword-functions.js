@@ -221,7 +221,7 @@
         }
         xhr.send();
 
-        if (response) {
+        if (response == "true") {
             console.log("Good passcode.")
             passcodeIsOK = true
             document.querySelector("#crossword-show-button").classList.toggle("hide")
