@@ -3,11 +3,246 @@
     letterMobile = ""
     backspace = false
 
+    passcodeIsOK = false
+
     id = ""
+    title = ""
+    passcode = ""
 
-generalData = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTJibIoRZf5C8V-TMyprDDJDcL2zK5OVp-_9GOFxdOJoYOdzUcuqf3MRqe3Ofk-wlukOnuGFn2pB1NA/pub?gid=607892118&single=true&output=csv"
+    generalData = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTJibIoRZf5C8V-TMyprDDJDcL2zK5OVp-_9GOFxdOJoYOdzUcuqf3MRqe3Ofk-wlukOnuGFn2pB1NA/pub?gid=607892118&single=true&output=csv"
 
-passcodeScript = "https://script.google.com/macros/s/AKfycbzT_6w7RuWhbweD6qY8jsDgcyijmQBfA2WP78SQA_9JjuMzEechFx4bat3l05_aXrtZ/exec"
+    passcodeScript = "https://script.google.com/macros/s/AKfycbzT_6w7RuWhbweD6qY8jsDgcyijmQBfA2WP78SQA_9JjuMzEechFx4bat3l05_aXrtZ/exec"
+
+    function showImportInModal() {
+
+        document.querySelector("#score-modal").parentElement.style.display = "flex";
+        if (document.querySelector("#score-modal").querySelector("#import")) {
+            document.querySelector("#score-modal").querySelector("#import").remove()
+        }
+
+        importDiv = document.createElement("DIV")
+        importDiv.id = "import"
+        importDiv.style.paddingBottom = "0.5em"
+
+        importH2 = document.createElement("H2")
+        importH2.innerHTML = "Import CSV/TSV or JSON"
+
+        importP = document.createElement("P")
+        importP.innerHTML = "Import your words and clues by using a CSV/TSV string or a JSON object. In case you are using a CSV/TSV, use a comma between the word and the clue in each line."
+
+        importTextarea = document.createElement("TEXTAREA")
+        importTextarea.placeholder = "cross,a mark, object, or figure formed by two short intersecting lines or pieces (+ or ×)"
+
+        importButton = document.createElement("BUTTON")
+        importButton.innerText = "Import data"
+        importButton.addEventListener("click", function() {
+
+            crosswordWordlist = document.getElementById("crossword-wordlist")
+
+            data = document.querySelector("#import textarea").value
+
+            format = document.querySelector("input[name='import-format']:checked").id
+
+            if (format == "JSON") {
+
+                wordsAndClues = JSON.parse(data)
+
+                words = Object.keys(wordsAndClues)
+                clues = Object.values(wordsAndClues)
+
+                for (z = 0; z < Object.keys(wordsAndClues).length; z++) {
+
+                    word = words[z]
+                    clue = clues[z]
+
+                    newWordAndClue = document.createElement("DIV");
+                    newWordAndClue.className = "word-clue";
+
+                    newWord = document.createElement("DIV");
+                    //////////////////////////////////////
+                    newWord.innerText = word
+                    //////////////////////////////////////
+                    newWord.className = "word";
+                    newWord.contentEditable = true;
+
+                    newWord.addEventListener("focus", function() {
+                        this.parentElement.querySelector(".save-button").classList.remove("saved")
+                    })
+
+                    newWord.addEventListener("blur", function() { save() })
+
+                    newClue = document.createElement("DIV");
+                    //////////////////////////////////////
+                    newClue.innerText = clue
+                    //////////////////////////////////////
+                    newClue.className = "clue";
+                    newClue.contentEditable = true;
+
+                    newClue.addEventListener("focus", function() {
+                        this.parentElement.querySelector(".save-button").classList.remove("saved")
+                    })
+
+                    newClue.addEventListener("blur", function() { save() })
+
+                    newCloseButton = document.createElement("DIV")
+                    newCloseButton.innerText = "×"
+                    newCloseButton.className = "crossword-word-clue-close"
+                    newCloseButton.addEventListener("click", function() {
+                        this.parentElement.remove()
+                        save()
+                    })
+
+                    newSaveButton = document.createElement("BUTTON")
+                    newSaveButton.className = "save-button";
+                    newSaveButton.addEventListener("click", function() { save(this) })
+
+                    newWordAndClue.appendChild(newWord)
+                    newWordAndClue.appendChild(newClue)
+                    newWordAndClue.appendChild(newSaveButton)
+                    newWordAndClue.appendChild(newCloseButton)
+
+                    crosswordWordlist.appendChild(newWordAndClue)
+
+                }
+
+            } else {
+
+                for (z = 0; z < data.split(/\n/).length; z++) {
+                    word = data.split(/\n/)[z].split(/[\t,]/)[0]
+                    clue = data.split(/\n/)[z].replace(word, "")
+
+                    newWordAndClue = document.createElement("DIV");
+                    newWordAndClue.className = "word-clue";
+
+                    newWord = document.createElement("DIV");
+                    //////////////////////////////////////
+                    newWord.innerText = word
+                    //////////////////////////////////////
+                    newWord.className = "word";
+                    newWord.contentEditable = true;
+
+                    newWord.addEventListener("focus", function() {
+                        this.parentElement.querySelector(".save-button").classList.remove("saved")
+                    })
+
+                    newWord.addEventListener("blur", function() { save() })
+
+                    newClue = document.createElement("DIV");
+                    //////////////////////////////////////
+                    newClue.innerText = clue
+                    //////////////////////////////////////
+                    newClue.className = "clue";
+                    newClue.contentEditable = true;
+
+                    newClue.addEventListener("focus", function() {
+                        this.parentElement.querySelector(".save-button").classList.remove("saved")
+                    })
+
+                    newClue.addEventListener("blur", function() { save() })
+
+                    newCloseButton = document.createElement("DIV")
+                    newCloseButton.innerText = "×"
+                    newCloseButton.className = "crossword-word-clue-close"
+                    newCloseButton.addEventListener("click", function() {
+                        this.parentElement.remove()
+                        save()
+                    })
+
+                    newSaveButton = document.createElement("BUTTON")
+                    newSaveButton.className = "save-button";
+                    newSaveButton.addEventListener("click", function() { save(this) })
+
+                    newWordAndClue.appendChild(newWord)
+                    newWordAndClue.appendChild(newClue)
+                    newWordAndClue.appendChild(newSaveButton)
+                    newWordAndClue.appendChild(newCloseButton)
+
+                }
+
+            }
+
+            saveButtons = Array.from(document.getElementsByClassName("save-button"))
+            saveButtons.forEach(x => x.classList.add("saved"))
+
+            save()
+
+            document.querySelector("#score-modal").parentElement.style.display = "none";
+
+        })
+
+        jsonCheckboxLabel = document.createElement("LABEL")
+        jsonCheckboxLabel.innerText = "JSON"
+
+        jsonCheckbox = document.createElement("INPUT")
+        jsonCheckbox.type = "radio"
+        jsonCheckbox.name = "import-format"
+        jsonCheckbox.id = "JSON"
+
+        csvCheckboxLabel = document.createElement("LABEL")
+        csvCheckboxLabel.innerText = "CSV/TSV"
+
+        csvCheckbox = document.createElement("INPUT")
+        csvCheckbox.type = "radio"
+        csvCheckbox.name = "import-format"
+        csvCheckbox.id = "CSV-TSV"
+        csvCheckbox.checked = true
+
+        importDiv.appendChild(importH2)
+
+        importDiv.appendChild(importP)
+
+        importDiv.appendChild(importTextarea)
+
+        importDiv.appendChild(csvCheckboxLabel)
+        importDiv.appendChild(csvCheckbox)
+        importDiv.appendChild(jsonCheckboxLabel)
+        importDiv.appendChild(jsonCheckbox)
+
+        importDiv.appendChild(importButton)
+
+        document.querySelector("#score-modal").appendChild(importDiv)
+        document.querySelector("#score-modal textarea").focus()
+        document.querySelector("#score-modal textarea").click()
+
+    }
+
+    function submitPasscode(id, title, passcode) {
+
+        params = window.location.href.split("?")[1].split("&")
+        passcode = params[1].replace("passcode=", "")
+
+        console.log(passcode)
+
+        url = passcodeScript + "?id=" + encodeURIComponent(id) + "&title=" + encodeURIComponent(title) + "&passcode=" + encodeURIComponent(passcode)
+
+        xhr = new XMLHttpRequest();
+        xhr.open("GET", url, false);
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4) {
+                if (xhr.status === 200 || xhr.status == 0) {
+                    response = xhr.responseText
+                }
+            }
+        }
+        xhr.send();
+
+        if (response) {
+            console.log("Good passcode.")
+            passcodeIsOK = true
+            document.querySelector("#crossword-show-button").classList.toggle("hide")
+            if (document.querySelector("#crossword-show-button").classList.contains("hide")) {
+                show()
+                showButton.querySelector(".button-icon i").className = "fa fa-eye-slash"
+            } else {
+                hide()
+                showButton.querySelector(".button-icon i").className = "fa fa-eye"
+            }
+
+        } else {
+            console.log("Wrong passcode.")
+        }
+
+    }
 
     function getCrossword(id) {
 
@@ -22,33 +257,33 @@ passcodeScript = "https://script.google.com/macros/s/AKfycbzT_6w7RuWhbweD6qY8jsD
         }
         xhr.send();
 
-crosswordsData = {}
+        crosswordsData = {}
 
-for (i=data.length-1;i>0;i--) {
+        for (i = data.length - 1; i > 0; i--) {
 
-csvParsed = data[i].replace(/"?(.*?)"?,"?(.*?)"?,"?(.*?)"?,"?(.*)/g,'"$1","$2","$3","$4').split(/,(?="(?!")|""")/)
+            csvParsed = data[i].replace(/"?(.*?)"?,"?(.*?)"?,"?(.*?)"?,"?(.*)/g, '"$1","$2","$3","$4').split(/,(?="(?!")|""")/)
 
-titleData = csvParsed[1].trim().replace(/"/g,"");
-idData = csvParsed[2].trim().slice(1,-1);
-inputData = csvParsed[3].trim().replace(/"""/g,'"').replace(/"+/g,'"').slice(1,-1);
+            titleData = csvParsed[1].trim().replace(/"/g, "");
+            idData = csvParsed[2].trim().slice(1, -1);
+            inputData = csvParsed[3].trim().replace(/"""/g, '"').replace(/"+/g, '"').slice(1, -1);
 
-crosswordData = {}
-crosswordData.title = titleData
-crosswordData.input = JSON.parse(inputData)
+            crosswordData = {}
+            crosswordData.title = titleData
+            crosswordData.input = JSON.parse(inputData)
 
-crosswordsData[idData] = crosswordData
-  }
+            crosswordsData[idData] = crosswordData
+        }
 
-console.log(crosswordsData[id])
+        console.log(crosswordsData[id])
 
-if(crosswordsData[id]) {
-generate(crosswordsData[id].title,crosswordsData[id].passcode,crosswordsData[id].input,false)
-} else {
-  document.querySelector("#score-modal").parentElement.style.display = "flex";
-  document.querySelector("#score-modal p").innerHTML = "Crossword not found. Check the URL you are trying to access."
-}
+        if (crosswordsData[id]) {
+            generate(crosswordsData[id].title, crosswordsData[id].passcode, crosswordsData[id].input, false)
+        } else {
+            document.querySelector("#score-modal").parentElement.style.display = "flex";
+            document.querySelector("#score-modal p").innerHTML = "Crossword not found. Check the URL you are trying to access."
+        }
 
-}
+    }
 
     function hide() {
 
@@ -120,40 +355,40 @@ generate(crosswordsData[id].title,crosswordsData[id].passcode,crosswordsData[id]
         }
         xhr.send();
 
-crosswordsData = {}
+        crosswordsData = {}
 
-for (i=data.length-1;i>2;i--) {
+        for (i = data.length - 1; i > 2; i--) {
 
-csvParsed = data[i].replace(/"?(.*?)"?,"?(.*?)"?,"?(.*?)"?,"?(.*)/g,'"$1","$2","$3","$4').split(/,(?="(?!")|""")/)
+            csvParsed = data[i].replace(/"?(.*?)"?,"?(.*?)"?,"?(.*?)"?,"?(.*)/g, '"$1","$2","$3","$4').split(/,(?="(?!")|""")/)
 
-titleData = csvParsed[1].trim().replace(/"/g,"");
-idData = csvParsed[2].trim().slice(1,-1);
-inputData = csvParsed[3].trim().replace(/"""/g,'"').replace(/"+/g,'"').slice(1,-1);
+            titleData = csvParsed[1].trim().replace(/"/g, "");
+            idData = csvParsed[2].trim().slice(1, -1);
+            inputData = csvParsed[3].trim().replace(/"""/g, '"').replace(/"+/g, '"').slice(1, -1);
 
-crosswordData = {}
-crosswordData.title = titleData
-crosswordData.input = JSON.parse(inputData)
+            crosswordData = {}
+            crosswordData.title = titleData
+            crosswordData.input = JSON.parse(inputData)
 
-crosswordsData[idData] = crosswordData
-  }
+            crosswordsData[idData] = crosswordData
+        }
 
-if (generate == true) {
+        if (generate == true) {
 
-if (id != "") {
-n = id.split("-").length > 1 ? Number(id.split("-")[id.split("-").length-1])+1 : 0
-id = title + "-" + n
-} else {
-id = Object.values(crosswordsData).filter(x => x.title == title).length == 0 ? title : title + "-" + Object.values(crosswordsData).filter(x => x.title == title).length
-}
+            if (id != "") {
+                n = id.split("-").length > 1 ? Number(id.split("-")[id.split("-").length - 1]) + 1 : 0
+                id = title + "-" + n
+            } else {
+                id = Object.values(crosswordsData).filter(x => x.title == title).length == 0 ? title : title + "-" + Object.values(crosswordsData).filter(x => x.title == title).length
+            }
 
-//console.log(id)
+            //console.log(id)
 
-        fetch("https://docs.google.com/forms/d/e/1FAIpQLSfKVn-NOL3qygq9YrAMk4e63aD6sTzLr8zbrp2MFXFr6jKzEg/formResponse?usp=pp_url&entry.268076818=" + encodeURIComponent(title) + "&entry.902339844=" + encodeURIComponent(id) + "&entry.1393085979=" + encodeURIComponent(JSON.stringify(input)))
+            fetch("https://docs.google.com/forms/d/e/1FAIpQLSfKVn-NOL3qygq9YrAMk4e63aD6sTzLr8zbrp2MFXFr6jKzEg/formResponse?usp=pp_url&entry.268076818=" + encodeURIComponent(title) + "&entry.902339844=" + encodeURIComponent(id) + "&entry.1393085979=" + encodeURIComponent(JSON.stringify(input)))
 
-        fetch("https://docs.google.com/forms/d/e/1FAIpQLSdqJpZIDLAv4ZOUgBZgACcpGRjeh-LuLVeSxBEqs1iSzOKqGQ/formResponse?usp=pp_url&entry.268076818=" + encodeURIComponent(title) + "&entry.1237155194=" + encodeURIComponent(id) + "&entry.1277179224=" + encodeURIComponent(passcode))
+            fetch("https://docs.google.com/forms/d/e/1FAIpQLSdqJpZIDLAv4ZOUgBZgACcpGRjeh-LuLVeSxBEqs1iSzOKqGQ/formResponse?usp=pp_url&entry.268076818=" + encodeURIComponent(title) + "&entry.1237155194=" + encodeURIComponent(id) + "&entry.1277179224=" + encodeURIComponent(passcode))
 
-        /////////////////////////////////////////////////////////
-}
+            /////////////////////////////////////////////////////////
+        }
 
         crossword.innerHTML = ""
 
@@ -161,61 +396,61 @@ id = Object.values(crosswordsData).filter(x => x.title == title).length == 0 ? t
         crosswordTitle.id = "crossword-title-header"
         crosswordTitle.innerHTML = title;
 
-if (generate == true) {
-        links = document.createElement("div")
-        links.className = "crossword-links"
+        if (generate == true) {
+            links = document.createElement("div")
+            links.className = "crossword-links"
 
-        flexRow = document.createElement("div")
-        flexRow.className = "flex-row"
+            flexRow = document.createElement("div")
+            flexRow.className = "flex-row"
 
-        key = document.createElement("div")
-        key.className = "crossword-link-no-key"
+            key = document.createElement("div")
+            key.className = "crossword-link-no-key"
 
-        link1 = document.createElement("div");
-        link1.className = "crossword-link"
+            link1 = document.createElement("div");
+            link1.className = "crossword-link"
 
-        link1.innerHTML = "<a target='_blank' href='https://torokmarkwerner.github.io/projects/crossword-puzzle-generator/crossword-puzzle?id=" + encodeURIComponent(id) + "'>https://torokmarkwerner.github.io/projects/crossword-puzzle-generator/crossword-puzzle?id=" + encodeURIComponent(id) + "</a>"
+            link1.innerHTML = "<a target='_blank' href='https://torokmarkwerner.github.io/projects/crossword-puzzle-generator/crossword-puzzle?id=" + encodeURIComponent(id) + "'>https://torokmarkwerner.github.io/projects/crossword-puzzle-generator/crossword-puzzle?id=" + encodeURIComponent(id) + "</a>"
 
-        copyButton = document.createElement("button")
-        copyButton.className = "crossword-link-copy"
-        copyButton.addEventListener("click", function() {
-            Array.from(document.querySelectorAll(".crossword-link-copy")).forEach(x => x.classList.remove("copied"));
-            this.classList.add("copied")
-            navigator.clipboard.writeText(this.previousElementSibling.innerText);
-        })
+            copyButton = document.createElement("button")
+            copyButton.className = "crossword-link-copy"
+            copyButton.addEventListener("click", function() {
+                Array.from(document.querySelectorAll(".crossword-link-copy")).forEach(x => x.classList.remove("copied"));
+                this.classList.add("copied")
+                navigator.clipboard.writeText(this.previousElementSibling.innerText);
+            })
 
-        flexRow.appendChild(key)
-        flexRow.appendChild(link1)
-        flexRow.appendChild(copyButton)
+            flexRow.appendChild(key)
+            flexRow.appendChild(link1)
+            flexRow.appendChild(copyButton)
 
-        links.appendChild(flexRow)
+            links.appendChild(flexRow)
 
-        link2 = document.createElement("div");
-        link2.className = "crossword-link"
+            link2 = document.createElement("div");
+            link2.className = "crossword-link"
 
-        link2.innerHTML = "<a target='_blank' href='https://torokmarkwerner.github.io/projects/crossword-puzzle-generator/crossword-puzzle?id=" + encodeURIComponent(id) + "&passcode=" + encodeURIComponent(passcode) + "'>https://torokmarkwerner.github.io/projects/crossword-puzzle-generator/crossword-puzzle?title=" + encodeURIComponent(title) + "&passcode=" + encodeURIComponent(passcode) + "</a>"
+            link2.innerHTML = "<a target='_blank' href='https://torokmarkwerner.github.io/projects/crossword-puzzle-generator/crossword-puzzle?id=" + encodeURIComponent(id) + "&passcode=" + encodeURIComponent(passcode) + "'>https://torokmarkwerner.github.io/projects/crossword-puzzle-generator/crossword-puzzle?title=" + encodeURIComponent(title) + "&passcode=" + encodeURIComponent(passcode) + "</a>"
 
-        nokey = document.createElement("div")
-        nokey.className = "crossword-link-key"
+            nokey = document.createElement("div")
+            nokey.className = "crossword-link-key"
 
-        flexRow = document.createElement("div")
-        flexRow.className = "flex-row"
+            flexRow = document.createElement("div")
+            flexRow.className = "flex-row"
 
-        copyButton = document.createElement("button")
-        copyButton.className = "crossword-link-copy"
-        copyButton.addEventListener("click", function() {
-            Array.from(document.querySelectorAll(".crossword-link-copy")).forEach(x => x.classList.remove("copied"));
-            this.classList.add("copied")
-            navigator.clipboard.writeText(this.previousElementSibling.innerText);
-        })
+            copyButton = document.createElement("button")
+            copyButton.className = "crossword-link-copy"
+            copyButton.addEventListener("click", function() {
+                Array.from(document.querySelectorAll(".crossword-link-copy")).forEach(x => x.classList.remove("copied"));
+                this.classList.add("copied")
+                navigator.clipboard.writeText(this.previousElementSibling.innerText);
+            })
 
-        flexRow.appendChild(nokey)
-        flexRow.appendChild(link2)
-        flexRow.appendChild(copyButton)
+            flexRow.appendChild(nokey)
+            flexRow.appendChild(link2)
+            flexRow.appendChild(copyButton)
 
-        links.appendChild(flexRow)
+            links.appendChild(flexRow)
 
-}
+        }
 
         crosswordGrid = document.createElement("div");
         crosswordGrid.id = "crossword-grid";
@@ -239,14 +474,45 @@ if (generate == true) {
         showButton.appendChild(showButtonCaption);
 
         showButton.addEventListener("click", function() {
-            this.classList.toggle("hide")
-            if (this.classList.contains("hide")) {
+if (!passcodeIsOK) {
+            document.querySelector("#score-modal").parentElement.style.display = "flex";
+if(document.querySelector("#crossword-passcode-submission")) {
+    document.querySelector("#crossword-passcode-submission").remove()
+}
+
+            passcodeSubmissionDiv = document.createElement("DIV")
+            passcodeSubmissionDiv.id = "crossword-passcode-submission"
+
+            passcodeLabel = document.createElement("LABEL")
+            passcodeLabel.innerHTML = "Passcode:"
+
+            submitInput = document.createElement("INPUT")
+
+            submitButton = document.createElement("BUTTON")
+            submitButton.innerText = "Submit"
+            submitButton.className = "submit-button"
+            submitButton.addEventListener("click", function() {
+
+                document.querySelector("#score-modal").parentElement.style.display = "none";
+                submitPasscode(id, title, this.previousElementSibling.value)
+
+            })
+
+            passcodeSubmissionDiv.appendChild(passcodeLabel)
+            passcodeSubmissionDiv.appendChild(submitInput)
+            passcodeSubmissionDiv.appendChild(submitButton)
+
+            document.querySelector("#score-modal").appendChild(passcodeSubmissionDiv)
+} else {
+            document.querySelector("#crossword-show-button").classList.toggle("hide")
+            if (document.querySelector("#crossword-show-button").classList.contains("hide")) {
                 show()
                 showButton.querySelector(".button-icon i").className = "fa fa-eye-slash"
             } else {
                 hide()
                 showButton.querySelector(".button-icon i").className = "fa fa-eye"
             }
+}
         })
 
         printButton = document.createElement("button");
@@ -273,9 +539,9 @@ if (generate == true) {
         crosswordButtons.appendChild(printButton);
 
         crossword.appendChild(crosswordTitle)
-      if (generate == true) {
-        crossword.appendChild(links)
-      }
+        if (generate == true) {
+            crossword.appendChild(links)
+        }
         crossword.appendChild(crosswordGrid);
         crossword.appendChild(crosswordButtons);
 
@@ -295,11 +561,11 @@ if (generate == true) {
         for (i = 0; i < lists.length; i++) {
             container = document.createElement("DIV")
             container.style.flex = 1
-            title = document.createElement("H3")
-            title.innerHTML = lists[i][0].toUpperCase() + lists[i].substr(1)
+            titleH3 = document.createElement("H3")
+            titleH3.innerHTML = lists[i][0].toUpperCase() + lists[i].substr(1)
             ol = document.createElement("OL")
             ol.id = lists[i]
-            container.appendChild(title)
+            container.appendChild(titleH3)
             container.appendChild(ol)
             div.appendChild(container)
         }
@@ -452,7 +718,7 @@ if (generate == true) {
         }
 
         //console.log(words.filter(x => !onTheGrid.includes(x)))
-//Just to make sure that every word is on the grid.
+        //Just to make sure that every word is on the grid.
 
         gridMap.sort((a, b) => {
             if (a.row === b.row) {
@@ -504,59 +770,59 @@ if (generate == true) {
             ol.appendChild(li)
         })
 
-//Delete empty rows and columns.
-minRows = gridMap.filter(word => word.across == false).sort((a, b) => a.row - b.row)[0].row
+        //Delete empty rows and columns.
+        minRows = gridMap.filter(word => word.across == false).sort((a, b) => a.row - b.row)[0].row
 
-downWords = gridMap.filter(word => word.across == false).sort((a, b) => (a.row + a.word.length) - (b.row + b.word.length))
+        downWords = gridMap.filter(word => word.across == false).sort((a, b) => (a.row + a.word.length) - (b.row + b.word.length))
 
-maxRows = downWords[downWords.length - 1].row + downWords[downWords.length - 1].word.length
+        maxRows = downWords[downWords.length - 1].row + downWords[downWords.length - 1].word.length
 
-minColumns = gridMap.filter(word => word.across == true).sort((a, b) => a.column - b.column)[0].column
+        minColumns = gridMap.filter(word => word.across == true).sort((a, b) => a.column - b.column)[0].column
 
-acrossWords = gridMap.filter(word => word.across == true).sort((a, b) => (a.column + a.word.length) - (b.column + b.word.length))
+        acrossWords = gridMap.filter(word => word.across == true).sort((a, b) => (a.column + a.word.length) - (b.column + b.word.length))
 
-maxColumns = acrossWords[acrossWords.length - 1].column + acrossWords[acrossWords.length - 1].word.length
+        maxColumns = acrossWords[acrossWords.length - 1].column + acrossWords[acrossWords.length - 1].word.length
 
-emptyRowsOnTheTop = 0
+        emptyRowsOnTheTop = 0
 
-rowElements = Array.from(grid.querySelectorAll("tbody tr"))
-rowElements.forEach((row, index) => {
-  if (index < minRows) {
-    grid.querySelector("tbody").removeChild(row);
-    emptyRowsOnTheTop++;
-    } else if (index > maxRows) {
-    grid.querySelector("tbody").removeChild(row);
-    }
-});
+        rowElements = Array.from(grid.querySelectorAll("tbody tr"))
+        rowElements.forEach((row, index) => {
+            if (index < minRows) {
+                grid.querySelector("tbody").removeChild(row);
+                emptyRowsOnTheTop++;
+            } else if (index > maxRows) {
+                grid.querySelector("tbody").removeChild(row);
+            }
+        });
 
-console.log(emptyRowsOnTheTop)
+        console.log(emptyRowsOnTheTop)
 
-emptyColumnsOnTheLeft = 0
+        emptyColumnsOnTheLeft = 0
 
-rowElements = Array.from(grid.querySelectorAll("tbody tr"))
+        rowElements = Array.from(grid.querySelectorAll("tbody tr"))
 
-for (i=0; i<rowElements.length; i++) {
-cellElements = Array.from(rowElements[i].children)
-cellElements.forEach((td,index) => {
-if (index < minColumns) {
-rowElements[i].removeChild(td)
-emptyColumnsOnTheLeft++;
-} else if (index > maxColumns) {
-rowElements[i].removeChild(td)
-}
-})
-}
+        for (i = 0; i < rowElements.length; i++) {
+            cellElements = Array.from(rowElements[i].children)
+            cellElements.forEach((td, index) => {
+                if (index < minColumns) {
+                    rowElements[i].removeChild(td)
+                    emptyColumnsOnTheLeft++;
+                } else if (index > maxColumns) {
+                    rowElements[i].removeChild(td)
+                }
+            })
+        }
 
-console.log(emptyColumnsOnTheLeft)
+        console.log(emptyColumnsOnTheLeft)
 
-gridMap.forEach(x => {
-  x.row = x.row - emptyRowsOnTheTop
-  x.column = x.column - emptyColumnsOnTheLeft
-})
+        gridMap.forEach(x => {
+            x.row = x.row - emptyRowsOnTheTop
+            x.column = x.column - emptyColumnsOnTheLeft
+        })
 
-console.log(gridMap)
+        console.log(gridMap)
 
-////////////////////////////////
+        ////////////////////////////////
 
         Array.from(grid.querySelectorAll(".letter")).forEach(x => {
 
@@ -839,18 +1105,67 @@ console.log(gridMap)
         left = tr.children[c - 1] ? tr.children[c - 1] : ""
         right = tr.children[c + 1] ? tr.children[c + 1] : ""
 
-        if (element.parentElement.classList.contains("current-cell") && ((up && up.classList.contains("letter") && left && left.classList.contains("letter")) || (down && down.classList.contains("letter") && right && right.classList.contains("letter")) || (up && up.classList.contains("letter") && right && right.classList.contains("letter")) || (down && down.classList.contains("letter") && left && left.classList.contains("letter")))) {
-            horizontal = horizontal ? false : true
-            console.log("Ez lett belőle: " + horizontal)
-        } else if ((up && up.classList.contains("letter") && up.classList.contains("active")) || (down && down.classList.contains("letter")) && down.classList.contains("active")) {
-            horizontal = false
-        } else if ((left && left.classList.contains("letter") && left.classList.contains("active")) || (right && right.classList.contains("letter") && right.classList.contains("active"))) {
-            horizontal = true
-        } else if (element.parentElement.classList.contains("letter") && ((up && up.classList.contains("letter")) || (down && down.classList.contains("letter")))) {
-            horizontal = false
-        } else if (element.parentElement.classList.contains("letter") && ((left && left.classList.contains("letter")) || (right && right.classList.contains("letter")))) {
-            horizontal = true
+        nextCells = [up, left, down, right]
+
+        across1 = false
+        down1 = false
+        across2 = false
+        down2 = false
+        across3 = false
+        down3 = false
+
+        for (i = 0; i < nextCells.length; i++) {
+
+            if (nextCells[i] && nextCells[i].classList.contains("letter") && i % 2 == 1) {
+                across1 = true
+            } else if (nextCells[i] && nextCells[i].classList.contains("letter")) {
+                down1 = true
+            }
+
+            if (nextCells[i] && nextCells[i].classList.contains("active") && i % 2 == 1) {
+                across2 = true
+            } else if (nextCells[i] && nextCells[i].classList.contains("active")) {
+                down2 = true
+            }
+
+            if (nextCells[i] && nextCells[i].classList.contains("correct") && i % 2 == 1) {
+                across3 = true
+            } else if (nextCells[i] && nextCells[i].classList.contains("correct")) {
+                down3 = true
+            }
+
+            if (element.parentElement.classList.contains("correct") && across3) {
+                horizontal = false
+                console.log("Down.")
+            } else if (element.parentElement.classList.contains("correct") && down3) {
+                horizontal = true
+                console.log("Across.")
+            } else if (element.parentElement.classList.contains("current-cell") && i == nextCells.length - 1 && down1 && across1) {
+                horizontal = horizontal ? false : true
+                console.log("Both ways.")
+            } else if (i == nextCells.length - 1 && (down1 || down2) && (!across1 || !across2)) {
+                horizontal = false
+                console.log("Down.")
+            } else if (i == nextCells.length - 1 && (across1 || across2) && (!down1 || !down2)) {
+                horizontal = true
+                console.log("Across.")
+            }
+
         }
+
+        /*
+                if (element.parentElement.classList.contains("current-cell") && ((up && up.classList.contains("letter") && left && left.classList.contains("letter")) || (down && down.classList.contains("letter") && right && right.classList.contains("letter")) || (up && up.classList.contains("letter") && right && right.classList.contains("letter")) || (down && down.classList.contains("letter") && left && left.classList.contains("letter")))) {
+                    horizontal = horizontal ? false : true
+                } else if ((up && up.classList.contains("letter") && up.classList.contains("active")) || (down && down.classList.contains("letter")) && down.classList.contains("active")) {
+                    horizontal = false
+                } else if ((left && left.classList.contains("letter") && left.classList.contains("active")) || (right && right.classList.contains("letter") && right.classList.contains("active"))) {
+                    horizontal = true
+                } else if (element.parentElement.classList.contains("letter") && ((up && up.classList.contains("letter")) || (down && down.classList.contains("letter")))) {
+                    horizontal = false
+                } else if (element.parentElement.classList.contains("letter") && ((left && left.classList.contains("letter")) || (right && right.classList.contains("letter")))) {
+                    horizontal = true
+                }
+        */
 
         Array.from(inputs).forEach(x => {
             x.parentElement.classList.remove("active", "current-cell")

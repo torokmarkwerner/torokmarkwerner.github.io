@@ -1,3 +1,83 @@
+#crossword-passcode-submission label {
+    display: block;
+    padding: 0.5em;
+}
+
+#crossword-passcode-submission input {
+    text-align: center;
+    font-size: 80%;
+    font-family: inherit;
+}
+
+.crossword-word-clue-close {
+    position: absolute;
+    top: 0.2em;
+    right: 0.2em;
+    width: 1.5em;
+    aspect-ratio: 1 / 1;
+    padding: 0 !important;
+    font-variant-caps: all-small-caps;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    color: #aaaaaa;
+    flex: 0;
+    display: flex;
+    background: transparent;
+    font-size: 90%;
+}
+
+.crossword-word-clue-close:hover,
+.crossword-word-clue-close:focus {
+    color: black;
+    cursor: pointer;
+}
+
+#crossword-import {
+    padding-bottom: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#crossword-import button, #score-modal button {
+    text-align: center;
+    padding: 0.5em;
+    font-size: 70%;
+    font-variant-caps: all-small-caps;
+    border: 1pt solid black;
+}
+
+#import p {
+    width: 80%;
+    font-size: 80%;
+    margin: 1em auto;
+    padding-bottom: 1em;
+}
+
+#score-modal button {
+    display: block;
+    margin: 0.5em auto;
+}
+
+#score-modal textarea {
+    width: 80%;
+    height: 5em;
+    margin: 0.5em auto;
+    resize: none;
+    border: 1pt black solid;
+    font-size: 80%;
+    padding: 0.5em;
+}
+
+#score-modal label {
+    font-size: 80%;
+}
+
+#score-modal input[type=radio] {
+    vertical-align: text-top;
+}
+
        @media screen {
 #crossword-grid {
   background: black;
@@ -89,6 +169,10 @@
 
     .clue {
         border-left: 1pt solid black;
+    }
+
+    .clue, .word {
+        padding: 1em 1.5em
     }
 
     .save-button {

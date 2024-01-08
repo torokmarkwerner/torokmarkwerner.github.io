@@ -9,7 +9,8 @@ permalink: /projects/crossword-puzzle-generator/crossword-puzzle
 <script src="/projects/crossword-puzzle-generator/crossword-functions.js"></script>
 
 <script type="text/javascript">
- modalClose = document.createElement("DIV");
+
+modalClose = document.createElement("DIV");
         modalClose.className = "modal-close";
         modalClose.innerHTML = "&times;";
         modalClose.addEventListener("click", function() { this.parentElement.parentElement.style.display = "none" })
@@ -37,11 +38,13 @@ if (window.location.href.split("?").length > 0) {
 
     if (params.length > 0) {
         id = params[0].replace("id=", "")
+        if (params.length > 1) {
+        passcode = params[1].replace("passcode=","")
+        console.log(passcode)
+    }
         console.log(id)
         getCrossword(id)
         hide()
-    } else if (params.length == 2) {
-        passcode = params[1].replace("passcode=")
     }
 
 }

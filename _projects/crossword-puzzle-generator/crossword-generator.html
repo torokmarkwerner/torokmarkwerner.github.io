@@ -10,7 +10,6 @@ exclude_from_projects: true
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="/projects/crossword-puzzle-generator/crossword-style.css">
-    <link rel="stylesheet" href="https://torokmarkwerner.github.io/projects/crossword-puzzle-generator/crossword-style.css">
 </head>
 
 <body>
@@ -23,23 +22,28 @@ exclude_from_projects: true
     <div id="crossword-data">
         <div id="crossword-title">
             <label>Title</label>
-            <input placeholder="Christmas" value="Christmas">
+            <input placeholder="Christmas">
         </div>
         <div id="crossword-passcode">
             <label>Passcode</label>
-            <input placeholder="Christmas123!" value="Christmas123">
+            <input placeholder="Christmas123!">
         </div>
+    </div>
+    <div id="crossword-import">
+        <button onclick="showImportInModal()">Import words in JSON/CSV/TSV</button>
     </div>
     <div id="crossword-wordlist">
         <div class="word-clue">
             <div class="word" contenteditable="true" lang="en">cross</div>
             <div class="clue" contenteditable="true" lang="en">a mark, object, or figure formed by two short intersecting lines or pieces (+ or ×)</div>
             <button class="save-button"></button>
+            <div class="crossword-word-clue-close" onclick="removeWordAndClue(this)">×</div>
         </div>
         <div class="word-clue">
             <div class="word" contenteditable="true" lang="en">word</div>
             <div class="clue" contenteditable="true" lang="en">a single distinct meaningful element of speech or writing</div>
             <button class="save-button"></button>
+            <div class="crossword-word-clue-close" onclick="removeWordAndClue(this)">×</div>
         </div>
     </div>
     <div class="button-container">
@@ -57,6 +61,11 @@ exclude_from_projects: true
     <div id="crossword"></div>
     <script type="text/javascript">
     crossword = document.getElementById("crossword")
+
+function removeWordAndClue(element) {
+    element.parentElement.remove()
+    save()
+        }
 
     modalClose = document.createElement("DIV");
     modalClose.className = "modal-close";
@@ -181,6 +190,14 @@ exclude_from_projects: true
 
         newClue.addEventListener("blur", function() { save() })
 
+        newCloseButton = document.createElement("DIV")
+        newCloseButton.innerText = "×"
+        newCloseButton.className = "crossword-word-clue-close"
+        newCloseButton.addEventListener("click",function() {
+            this.parentElement.remove()
+            save()
+        })
+
         newSaveButton = document.createElement("BUTTON")
         newSaveButton.className = "save-button";
         newSaveButton.addEventListener("click", function() { save(this) })
@@ -188,6 +205,7 @@ exclude_from_projects: true
         newWordAndClue.appendChild(newWord)
         newWordAndClue.appendChild(newClue)
         newWordAndClue.appendChild(newSaveButton)
+        newWordAndClue.appendChild(newCloseButton)
 
         crosswordWordlist.appendChild(newWordAndClue)
 
