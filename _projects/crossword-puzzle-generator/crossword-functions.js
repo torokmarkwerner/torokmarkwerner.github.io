@@ -208,11 +208,6 @@
 
     function submitPasscode(id, title, passcode) {
 
-        params = window.location.href.split("?")[1].split("&")
-        passcode = params[1].replace("passcode=", "")
-
-        console.log(passcode)
-
         url = passcodeScript + "?id=" + encodeURIComponent(id) + "&title=" + encodeURIComponent(title) + "&passcode=" + encodeURIComponent(passcode)
 
         xhr = new XMLHttpRequest();
