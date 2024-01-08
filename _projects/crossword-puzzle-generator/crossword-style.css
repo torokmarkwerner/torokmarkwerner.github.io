@@ -105,7 +105,8 @@
         #crossword-data,
         #crossword-wordlist,
         #clue-box,
-        #crossword-buttons {
+        #crossword-buttons,
+        #crossword-import {
             display: none !important;
         }
 
