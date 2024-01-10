@@ -392,7 +392,7 @@ content: "[Your crossword with your passcode]";
     border-top: 1pt black solid;
     border-left: black 1pt solid;
     border-bottom: 1pt black solid;
-    word-break: auto-phrase;
+    word-break: break-word;
     font-size: small;
 }
 
