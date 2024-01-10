@@ -778,15 +778,19 @@ if(document.querySelector("#crossword-passcode-submission")) {
             ol = document.getElementById("across")
             li = document.createElement("LI");
             li.value = x.n
-            li.innerHTML = input[x.word]
+            lettersInWords = []
+            x.word.split(" ").forEach(k => {lettersInWords.push(k.length)})
+            li.innerHTML = input[x.word] + " (" + lettersInWords.join(",") + ")"
             ol.appendChild(li)
         })
 
         gridMap.filter(x => x.across == false).sort((a, b) => a.n - b.n).forEach(x => {
             ol = document.getElementById("down")
             li = document.createElement("LI");
-            li.value = x.n
-            li.innerHTML = input[x.word]
+            li.value = x.n            
+            lettersInWords = []
+            x.word.split(" ").forEach(k => {lettersInWords.push(k.length)})
+            li.innerHTML = input[x.word] + " (" + lettersInWords.join(",") + ")"
             ol.appendChild(li)
         })
 

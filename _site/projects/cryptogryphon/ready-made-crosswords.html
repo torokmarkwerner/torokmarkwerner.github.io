@@ -110,7 +110,7 @@ for (i=0; i<Object.keys(crosswordsData).length; i++) {
 title = Object.values(crosswordsData)[i].title
 id = Object.keys(crosswordsData)[i]
 
-link = "/projects/crossword-puzzle-generator/crossword-puzzle?id=" + id + "&passcode=" + id + "123"
+link = "/projects/crossword-puzzle-generator/crossword-puzzle?id=" + id + "&passcode=" + id.split("-")[0] + "123"
 
 li = document.createElement("LI")
 
