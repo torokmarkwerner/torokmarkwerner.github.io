@@ -16,8 +16,16 @@
     function showImportInModal() {
 
         document.querySelector("#score-modal").parentElement.style.display = "flex";
+        document.querySelector("#score-modal p").style.display = "block";
+
+        document.querySelector("#score-modal p").innerHTML = ""
+
         if (document.querySelector("#score-modal").querySelector("#import")) {
             document.querySelector("#score-modal").querySelector("#import").remove()
+        }
+
+        if (document.querySelector("#score-modal").querySelector("#crossword-passcode-submission")) {
+            document.querySelector("#score-modal").querySelector("#crossword-passcode-submission").remove()
         }
 
         importDiv = document.createElement("DIV")
@@ -167,6 +175,7 @@
             save()
 
             document.querySelector("#score-modal").parentElement.style.display = "none";
+            document.querySelector("#score-modal p").style.display = "none";
 
         })
 
@@ -208,11 +217,6 @@
 
     function submitPasscode(id, title, passcode) {
 
-        params = window.location.href.split("?")[1].split("&")
-        passcode = params[1].replace("passcode=", "")
-
-        console.log(passcode)
-
         url = passcodeScript + "?id=" + encodeURIComponent(id) + "&title=" + encodeURIComponent(title) + "&passcode=" + encodeURIComponent(passcode)
 
         xhr = new XMLHttpRequest();
@@ -226,7 +230,7 @@
         }
         xhr.send();
 
-        if (response) {
+        if (response == "true") {
             console.log("Good passcode.")
             passcodeIsOK = true
             document.querySelector("#crossword-show-button").classList.toggle("hide")
@@ -240,6 +244,13 @@
 
         } else {
             console.log("Wrong passcode.")
+            document.querySelector("#score-modal").parentElement.style.display = "flex";
+            document.querySelector("#score-modal p").style.display = "block";
+
+            if(document.querySelector("#crossword-passcode-submission")) {
+            document.querySelector("#crossword-passcode-submission").remove()
+            }
+            document.querySelector("#score-modal p").innerHTML = "Invalid passcode."
         }
 
     }
@@ -280,6 +291,7 @@
             generate(crosswordsData[id].title, crosswordsData[id].passcode, crosswordsData[id].input, false)
         } else {
             document.querySelector("#score-modal").parentElement.style.display = "flex";
+            document.querySelector("#score-modal p").style.display = "block";
             document.querySelector("#score-modal p").innerHTML = "Crossword not found. Check the URL you are trying to access."
         }
 
@@ -394,6 +406,7 @@
 
         crosswordTitle = document.createElement("h1");
         crosswordTitle.id = "crossword-title-header"
+        crosswordTitle.style.textAlign = "center"
         crosswordTitle.innerHTML = title;
 
         if (generate == true) {
@@ -409,17 +422,18 @@
             link1 = document.createElement("div");
             link1.className = "crossword-link"
 
-            link1.innerHTML = "<a target='_blank' href='https://torokmarkwerner.github.io/projects/crossword-puzzle-generator/crossword-puzzle?id=" + encodeURIComponent(id) + "'>https://torokmarkwerner.github.io/projects/crossword-puzzle-generator/crossword-puzzle?id=" + encodeURIComponent(id) + "</a>"
+            link1.innerHTML = "<a target='_blank' href='https://torokmarkwerner.github.io/projects/cryptogryphon/crossword-puzzle?id=" + encodeURIComponent(id) + "'>https://torokmarkwerner.github.io/projects/cryptogryphon/crossword-puzzle?id=" + encodeURIComponent(id) + "</a>"
 
             copyButton = document.createElement("button")
             copyButton.className = "crossword-link-copy"
+            copyButton.innerHTML = '<i class="material-icons">&#xe14d;</i>'
             copyButton.addEventListener("click", function() {
                 Array.from(document.querySelectorAll(".crossword-link-copy")).forEach(x => x.classList.remove("copied"));
                 this.classList.add("copied")
                 navigator.clipboard.writeText(this.previousElementSibling.innerText);
             })
 
-            flexRow.appendChild(key)
+            links.appendChild(key)
             flexRow.appendChild(link1)
             flexRow.appendChild(copyButton)
 
@@ -428,7 +442,7 @@
             link2 = document.createElement("div");
             link2.className = "crossword-link"
 
-            link2.innerHTML = "<a target='_blank' href='https://torokmarkwerner.github.io/projects/crossword-puzzle-generator/crossword-puzzle?id=" + encodeURIComponent(id) + "&passcode=" + encodeURIComponent(passcode) + "'>https://torokmarkwerner.github.io/projects/crossword-puzzle-generator/crossword-puzzle?title=" + encodeURIComponent(title) + "&passcode=" + encodeURIComponent(passcode) + "</a>"
+            link2.innerHTML = "<a target='_blank' href='https://torokmarkwerner.github.io/projects/cryptogryphon/crossword-puzzle?id=" + encodeURIComponent(id) + "&passcode=" + encodeURIComponent(passcode) + "'>https://torokmarkwerner.github.io/projects/cryptogryphon/crossword-puzzle?id=" + encodeURIComponent(title) + "&passcode=" + encodeURIComponent(passcode) + "</a>"
 
             nokey = document.createElement("div")
             nokey.className = "crossword-link-key"
@@ -438,13 +452,14 @@
 
             copyButton = document.createElement("button")
             copyButton.className = "crossword-link-copy"
+            copyButton.innerHTML = '<i class="material-icons">&#xe14d;</i>'
             copyButton.addEventListener("click", function() {
                 Array.from(document.querySelectorAll(".crossword-link-copy")).forEach(x => x.classList.remove("copied"));
                 this.classList.add("copied")
                 navigator.clipboard.writeText(this.previousElementSibling.innerText);
             })
 
-            flexRow.appendChild(nokey)
+            links.appendChild(nokey)
             flexRow.appendChild(link2)
             flexRow.appendChild(copyButton)
 
@@ -474,8 +489,11 @@
         showButton.appendChild(showButtonCaption);
 
         showButton.addEventListener("click", function() {
-if (!passcodeIsOK) {
-            document.querySelector("#score-modal").parentElement.style.display = "flex";
+if (passcodeInLink) { 
+    submitPasscode(id, title, passcodeInLink)
+} else if (!passcode && !passcodeIsOK) {
+    document.querySelector("#score-modal").parentElement.style.display = "flex";
+    document.querySelector("#score-modal p").style.display = "none";
 if(document.querySelector("#crossword-passcode-submission")) {
     document.querySelector("#crossword-passcode-submission").remove()
 }
@@ -494,6 +512,7 @@ if(document.querySelector("#crossword-passcode-submission")) {
             submitButton.addEventListener("click", function() {
 
                 document.querySelector("#score-modal").parentElement.style.display = "none";
+                document.querySelector("#score-modal p").style.display = "none";
                 submitPasscode(id, title, this.previousElementSibling.value)
 
             })
@@ -709,6 +728,7 @@ if(document.querySelector("#crossword-passcode-submission")) {
                 if (i < 0) {
                     crossword.innerHTML = ""
                     document.querySelector("#score-modal").parentElement.style.display = "flex";
+                    document.querySelector("#score-modal p").style.display = "block";
                     document.querySelector("#score-modal p").innerHTML = "Provide more words."
                     //console.log("problem")
                     break
@@ -1057,7 +1077,7 @@ if(document.querySelector("#crossword-passcode-submission")) {
             //UP ARROW
             next = up
             valid = true
-        } else if ((keyCode >= 65 && keyCode <= 90) || (keyCode >= 97 && keyCode <= 122)) {
+        } else if ((keyCode >= 65 && keyCode <= 90) || (keyCode >= 97 && keyCode <= 122 || keyCode == 32)) {
             //ALPHABET
             valid = true
             if (!element.parentElement.classList.contains("correct")) {
@@ -1349,7 +1369,17 @@ if(document.querySelector("#crossword-passcode-submission")) {
         }
         console.log(word.correct)
         if (gridMap.filter(x => x.correct == true).length == gridMap.length && gameOver == false) {
+
+        if (document.querySelector("#score-modal").querySelector("#import")) {
+            document.querySelector("#score-modal").querySelector("#import").remove()
+        }
+
+        if (document.querySelector("#score-modal").querySelector("#crossword-passcode-submission")) {
+            document.querySelector("#score-modal").querySelector("#crossword-passcode-submission").remove()
+        }
+
             document.querySelector("#score-modal").parentElement.style.display = "flex";
+            document.querySelector("#score-modal p").style.display = "block";
             document.querySelector("#score-modal p").innerHTML = "Well done!"
             gameOver = true
         }

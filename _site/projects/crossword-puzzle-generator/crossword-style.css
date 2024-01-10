@@ -78,6 +78,10 @@
     vertical-align: text-top;
 }
 
+#score-modal p {
+    display: none;
+}
+
        @media screen {
 #crossword-grid {
   background: black;
@@ -105,7 +109,8 @@
         #crossword-data,
         #crossword-wordlist,
         #clue-box,
-        #crossword-buttons {
+        #crossword-buttons,
+        #crossword-import {
             display: none !important;
         }
 
@@ -311,7 +316,7 @@
       display: flex;
       flex-wrap: wrap;
       gap: 1em;
-      padding: 1em 0 0 0;
+      padding: 1em 0 1em 0;
       justify-content: center;
     }
 
@@ -337,6 +342,10 @@
   border: 1pt black solid;
 }
 
+.crossword-link-copy i.material-icons {
+    font-size: 1.5em;
+}
+
 .crossword-links {
     display: flex;
     flex-wrap: wrap;
@@ -344,12 +353,12 @@
     align-items: stretch;
     width: 100%;
     row-gap: 1em;
-    padding-bottom: 1em;
+    padding-bottom: 1.5em;
 }
 
 .flex-row {
   display: flex;
-  flex: 1 1 100%;
+  flex: 0 1 75%;
 }
 
 .crossword-links>*>* {
@@ -363,28 +372,28 @@
 }
 
 .crossword-link-key, .crossword-link-no-key {
-    flex: 1 0 20%;
-    background: black;
-    color: white;
-    max-width: 15ch;
+    width: 75%;
+    text-align: center;
     font-variant-caps: all-small-caps;
 }
 
 .crossword-link-no-key::before {
-content: "Your crossword";
+content: "[Your crossword]";
 }
 
 .crossword-link-key::before {
-content: "Answer key";
+content: "[Your crossword with your passcode]";
 }
 
 .crossword-link {
     flex: 1 1 auto;
+    background: #f1f1f1;
     border: 0;
     border-top: 1pt black solid;
+    border-left: black 1pt solid;
     border-bottom: 1pt black solid;
+    word-break: auto-phrase;
     font-size: small;
-        word-break: break-word;
 }
 
 .crossword-link a {
@@ -392,22 +401,12 @@ content: "Answer key";
 }
 
 .crossword-link-copy {
-    font-variant: all-small-caps;
-    background: #007dff;
+    background: lightskyblue;
     border: 1pt black solid;
 }
 
-.crossword-link-copy::before {
-  content:"Copy";
-}
-
 .crossword-link-copy.copied {
-    background: lightskyblue;
-}
-
-
-.crossword-link-copy.copied::before {
-  content:"Copied!";
+    background: #007dff;
 }
 
 /////////////////////////////////////////////////

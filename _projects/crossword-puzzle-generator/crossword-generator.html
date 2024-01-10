@@ -1,18 +1,9 @@
 ---
 layout: default
-title: "Crossword Puzzle"
+title: "cryptogryphon | Create Your Own Crossword"
 exclude_from_projects: true
+permalink: /projects/cryptogryphon/crossword-generator
 ---
-<!doctype html>
-<html>
-
-<head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="/projects/crossword-puzzle-generator/crossword-style.css">
-</head>
-
-<body>
     <ol id="how-to">
         <li>Enter a title along with a passcode.</li>
         <li>Add words and clues using the "Add word" button, and save your progress.</li>
@@ -123,6 +114,15 @@ function removeWordAndClue(element) {
 
     function save() {
 
+        if (document.querySelector("#score-modal").querySelector("#import")) {
+            document.querySelector("#score-modal").querySelector("#import").remove()
+        }
+
+        if (document.querySelector("#score-modal").querySelector("#crossword-passcode-submission")) {
+            document.querySelector("#score-modal").querySelector("#crossword-passcode-submission").remove()
+        }
+
+
         Array.from(document.querySelectorAll(".save-button")).forEach(x => x.classList.add("saved"))
 
         if (localStorage) {
@@ -149,6 +149,8 @@ function removeWordAndClue(element) {
         } else {
             crossword.innerHTML = ""
             document.querySelector("#score-modal").parentElement.style.display = "flex";
+            document.querySelector("#score-modal p").style.display = "block";
+
             document.querySelector("#score-modal p").innerHTML = "Your browser does not support localStorage, your crossword was not saved."
         }
     }
@@ -215,23 +217,34 @@ function removeWordAndClue(element) {
 
     generateButton.addEventListener("click", function() {
 
+    document.querySelector("#score-modal p").innerHTML = ""
+
+    save()
+
         if (localStorage.crosswordTitle && localStorage.crosswordPasscode && localStorage.crosswordInput) {
 
             title = JSON.parse(localStorage.crosswordTitle)
             passcode = JSON.parse(localStorage.crosswordPasscode)
             input = JSON.parse(localStorage.crosswordInput)
 
-            if (title != "" && passcode != "") {
-                save()
+            if (Object.keys(input).length > 1 && title != "" && passcode != "") {
 
                 generate(title, passcode, input, true)
 
                 hide()
 
-            } else {
+            } else if (title == "" || passcode == "") {
                 crossword.innerHTML = ""
                 document.querySelector("#score-modal").parentElement.style.display = "flex";
+                document.querySelector("#score-modal p").style.display = "block";
+
                 document.querySelector("#score-modal p").innerHTML = "Provide a title and a passcode."
+            } else if (Object.keys(input).length < 2) {
+                crossword.innerHTML = ""
+                document.querySelector("#score-modal").parentElement.style.display = "flex";
+                document.querySelector("#score-modal p").style.display = "block";
+
+                document.querySelector("#score-modal p").innerHTML = "Provide words and clues."
             }
 
         }
@@ -240,7 +253,3 @@ function removeWordAndClue(element) {
     </script>
 
 <script src="/projects/crossword-puzzle-generator/crossword-functions.js"></script>
-
-</body>
-
-</html>

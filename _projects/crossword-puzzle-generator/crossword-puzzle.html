@@ -1,9 +1,11 @@
 ---
 layout: default
-title: "Crossword Puzzle"
+title: "cryptogryphon | Puzzles"
 exclude_from_projects: true
-permalink: /projects/crossword-puzzle-generator/crossword-puzzle
+permalink: /projects/cryptogryphon/crossword-puzzle
 ---
+Create your own crossword <a href="/projects/cryptogryphon/crossword-generator">here</a> or check out ready-made crosswords <a href="/projects/cryptogryphon/ready-made-crosswords">here</a>.
+
 <div id="crossword"></div>
 
 <script src="/projects/crossword-puzzle-generator/crossword-functions.js"></script>
@@ -39,8 +41,8 @@ if (window.location.href.split("?").length > 0) {
     if (params.length > 0) {
         id = params[0].replace("id=", "")
         if (params.length > 1) {
-        passcode = params[1].replace("passcode=","")
-        console.log(passcode)
+        passcodeInLink = params[1].replace("passcode=","")
+        console.log(passcodeInLink)
     }
         console.log(id)
         getCrossword(id)

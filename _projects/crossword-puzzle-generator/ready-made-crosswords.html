@@ -1,0 +1,60 @@
+---
+layout: default
+title: "cryptogryphon | Ready-Made Crosswords"
+exclude_from_projects: true
+permalink: /projects/cryptogryphon/ready-made-crosswords
+---
+<p>Below you can find a list of ready-made crosswords.</p>
+
+<p>(Create your own crossword <a href="/projects/cryptogryphon/crossword-generator">here</a>.)</p>
+
+<div id="sample-crosswords"></div>
+
+<script>
+    sampleCrosswords = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTJibIoRZf5C8V-TMyprDDJDcL2zK5OVp-_9GOFxdOJoYOdzUcuqf3MRqe3Ofk-wlukOnuGFn2pB1NA/pub?gid=207797248&single=true&output=csv"
+
+    xhr = new XMLHttpRequest();
+        xhr.open("GET", sampleCrosswords, false);
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4) {
+                if (xhr.status === 200 || xhr.status == 0) {
+                    data = xhr.responseText.split(/\n/);
+                }
+            }
+        }
+        xhr.send();
+
+        crosswordsData = {}
+
+        for (i = data.length - 1; i > 0; i--) {
+
+            csvParsed = data[i].replace(/"?(.*?)"?,"?(.*?)"?,"?(.*?)"?,"?(.*)/g, '"$1","$2","$3","$4').split(/,(?="(?!")|""")/)
+
+            titleData = csvParsed[1].trim().replace(/"/g, "");
+            idData = csvParsed[2].trim().slice(1, -1);
+
+            crosswordData = {}
+            crosswordData.title = titleData
+            crosswordsData[idData] = crosswordData
+        }
+
+ul = document.createElement("UL")
+
+for (i=0; i<Object.keys(crosswordsData).length; i++) {
+
+title = Object.values(crosswordsData)[i].title
+id = Object.keys(crosswordsData)[i]
+
+link = "/projects/crossword-puzzle-generator/crossword-puzzle?id=" + id + "&passcode=" + id + "123"
+
+li = document.createElement("LI")
+
+li.innerHTML = "<a href='" + link + "' target='_blank'>" + title + "</a>"
+
+ul.appendChild(li)
+
+}
+
+document.getElementById("sample-crosswords").appendChild(ul)
+
+</script>
