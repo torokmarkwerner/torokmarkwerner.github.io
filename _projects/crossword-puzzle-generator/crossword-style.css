@@ -298,6 +298,7 @@
 
     #how-to {
         padding-inline: 1.5em;
+        margin-block-end: 0;
     }
 
     #how-to li {
