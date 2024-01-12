@@ -106,10 +106,10 @@ if (window.location.href.split("?").length > 0) {
     id = params[0].replace("id=", "")
 
     if (params.length > 0) {
-        id = params[0].replace("id=", "")
+        id = decodeURIComponent(params[0].replace("id=", ""))
         if (params.length > 1) {
-        passcodeInLink = params[1].replace("passcode=","")
-        console.log(passcodeInLink)
+        passcodeInLink = decodeURIComponent(params[1].replace("passcode=",""))
+        console.log(decodeURIComponent(passcodeInLink))
     }
         console.log(id)
         getCrossword(id)

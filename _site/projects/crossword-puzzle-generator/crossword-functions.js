@@ -393,7 +393,7 @@
                 id = Object.values(crosswordsData).filter(x => x.title == title).length == 0 ? title : title + "-" + Object.values(crosswordsData).filter(x => x.title == title).length
             }
 
-            //console.log(id)
+            console.log(id)
 
             fetch("https://docs.google.com/forms/d/e/1FAIpQLSfKVn-NOL3qygq9YrAMk4e63aD6sTzLr8zbrp2MFXFr6jKzEg/formResponse?usp=pp_url&entry.268076818=" + encodeURIComponent(title) + "&entry.902339844=" + encodeURIComponent(id) + "&entry.1393085979=" + encodeURIComponent(JSON.stringify(input)))
 

@@ -399,6 +399,7 @@ content: "[Your crossword with your passcode]";
 
 .crossword-link a {
   text-decoration: none;
+  color: black;
 }
 
 .crossword-link-copy {

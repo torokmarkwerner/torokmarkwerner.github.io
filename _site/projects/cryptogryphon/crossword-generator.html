@@ -116,6 +116,9 @@
         </button>
     </div>
     <div id="crossword"></div>
+
+<script src="/projects/crossword-puzzle-generator/crossword-functions.js"></script>
+
     <script type="text/javascript">
     crossword = document.getElementById("crossword")
 
@@ -197,6 +200,8 @@ function removeWordAndClue(element) {
 
             title = document.getElementById("crossword-title").querySelector("input").value;
             passcode = document.getElementById("crossword-passcode").querySelector("input").value;
+
+            passcodeInLink = passcode
 
             input = {}
 
@@ -317,8 +322,6 @@ function removeWordAndClue(element) {
 
     })
     </script>
-
-<script src="/projects/crossword-puzzle-generator/crossword-functions.js"></script>
         </div>
         
         
