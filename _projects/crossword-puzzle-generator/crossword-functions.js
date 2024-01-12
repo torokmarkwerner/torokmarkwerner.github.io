@@ -422,7 +422,7 @@
             link1 = document.createElement("div");
             link1.className = "crossword-link"
 
-            link1.innerHTML = "<a target='_blank' href='https://torokmarkwerner.github.io/projects/cryptogryphon/crossword-puzzle?id=" + encodeURIComponent(id) + "'>https://torokmarkwerner.github.io/projects/cryptogryphon/crossword-puzzle?id=" + encodeURIComponent(id) + "</a>"
+            link1.innerHTML = "<a target='_blank' href='https://torokmarkwerner.github.io/projects/cryptogryphon/puzzle?id=" + encodeURIComponent(id) + "'>https://torokmarkwerner.github.io/projects/cryptogryphon/puzzle?id=" + encodeURIComponent(id) + "</a>"
 
             copyButton = document.createElement("button")
             copyButton.className = "crossword-link-copy"
@@ -442,7 +442,7 @@
             link2 = document.createElement("div");
             link2.className = "crossword-link"
 
-            link2.innerHTML = "<a target='_blank' href='https://torokmarkwerner.github.io/projects/cryptogryphon/crossword-puzzle?id=" + encodeURIComponent(id) + "&passcode=" + encodeURIComponent(passcode) + "'>https://torokmarkwerner.github.io/projects/cryptogryphon/crossword-puzzle?id=" + encodeURIComponent(title) + "&passcode=" + encodeURIComponent(passcode) + "</a>"
+            link2.innerHTML = "<a target='_blank' href='https://torokmarkwerner.github.io/projects/cryptogryphon/puzzle?id=" + encodeURIComponent(id) + "&passcode=" + encodeURIComponent(passcode) + "'>https://torokmarkwerner.github.io/projects/cryptogryphon/puzzle?id=" + encodeURIComponent(title) + "&passcode=" + encodeURIComponent(passcode) + "</a>"
 
             nokey = document.createElement("div")
             nokey.className = "crossword-link-key"
