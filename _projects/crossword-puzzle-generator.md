@@ -59,4 +59,4 @@ The name *cryptogryphon* aims to convey the cryptic and fantastic nature of puzz
 
 As *cryptogryphon* takes its place in the world of crossword enthusiasts, the story continues. Future updates, driven by user feedback, will enhance the experience and keep the puzzle-solving community engaged.
 
-Ready to dive into the world of *cryptogryphon*? Explore <a href="/projects/cryptogryphon/create" target="_blank">the crossword generator</a> now!
+Ready to dive into the world of *cryptogryphon*? Explore <a href="/projects/cryptogryphon/create">the crossword generator</a> now!
