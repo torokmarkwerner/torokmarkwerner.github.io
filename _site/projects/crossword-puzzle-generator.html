@@ -11,8 +11,6 @@
         TM | Crossword Puzzle Generator
         </title>
     
-    <link rel="stylesheet" href="/projects/crossword-puzzle-generator/crossword-style.css">
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="/style.css">
@@ -97,7 +95,7 @@
 
 <div class="progress-container">
 <div class="progress-whole">
-<div class="progress-so-far" style="width: 90% ">90%</div>
+<div class="progress-so-far" style="width: 100% ">100%</div>
 </div>
 </div>
 <script>
@@ -114,6 +112,59 @@ for (i=0; i<pages.length; i++) {
 <div style="padding: 0.25em 0.5em 0.25em 0.5em;"><b>Started:</b> September 2023</div>
 <div style="padding: 0.25em 0.5em 0.25em 0.5em;"><b>Scope:</b> ESL, Vocabulary</div>
 </div>
+<h1 id="crafting-cryptogryphon-the-tale-of-a-crossword-puzzle-generator">Crafting <em>cryptogryphon</em>: The Tale of a Crossword Puzzle Generator</h1>
+
+<p>In the realm of web development, where creativity meets code, <a href="/projects/cryptogryphon/create"><em>cryptogryphon</em></a> was born. This crossword puzzle generator is not just a tool; it’s a product of inspiration, motivation, and a deep dive into the intricacies of programming. Join me on this journey behind the scenes of <em>cryptogryphon</em>’s development.</p>
+
+<p><img src="/projects/cryptogryphon/cryptogryphon-logo.svg" alt="cyptogryphon logo" title="cryptogryphon" /></p>
+
+<h2 id="inspiration-strikes"><strong>Inspiration Strikes</strong></h2>
+
+<p>Every project has its spark, and <em>cryptogryphon</em> was ignited by a passion for crosswords. As a developer and crossword enthusiast, I envisioned a tool that seamlessly blends the joy of creating puzzles with the power of modern web technologies.</p>
+
+<p>However, making it happen wasn’t as easy as it seems now that cryptogryphon is up and running. For the longest time, I considered building a crossword in JavaScript as a mission impossible for a developer like myself, so it’s pretty much like crossing out an item on my bucket list. Let me walk you through how this all came about!</p>
+
+<h2 id="motivation-to-create"><strong>Motivation to Create</strong></h2>
+
+<p>The motivation was twofold. First, to build a tool that simplifies crossword generation, putting the user in control. Second, to contribute something valuable to the community of crossword lovers, educators, and puzzle enthusiasts.</p>
+
+<h2 id="the-working-process"><strong>The Working Process</strong></h2>
+
+<h3 id="1-ideation"><strong>1. Ideation</strong></h3>
+<p>The journey began with ideation – conceptualizing the features that would set <em>cryptogryphon</em> apart. The goal was to create a user-friendly interface that accommodates both beginners and seasoned crossword creators.</p>
+
+<h3 id="2-designing-the-interface"><strong>2. Designing the Interface</strong></h3>
+<p>Crafting an intuitive interface was crucial. From adding words to generating crosswords, every step needed to feel natural and seamless. The design focused on simplicity without compromising functionality.</p>
+
+<h3 id="3-dynamic-crossword-generation"><strong>3. Dynamic Crossword Generation</strong></h3>
+<p>One of the core features is dynamic crossword generation. Behind the scenes, the generator intelligently places words on the grid.</p>
+
+<p>The generation process starts by sorting words based on length, from longer to shorter. Cryptogryphon’s generator then attempts to place each word on the grid, one by one. It looks for the first valid position relative to the previous word. If a word can’t fit, a backtracking mechanism comes into play. This ensures that every word finds its place on the grid. If a word doesn’t fit, users are prompted to provide additional words.</p>
+
+<h3 id="4-technical-implementation"><strong>4. Technical Implementation</strong></h3>
+<p><em>cryptogryphon</em> is more than an interface; it’s a robust web application. The technical implementation involved HTML, CSS, and JavaScript. The use of XMLHttpRequest and fetch facilitated communication with external resources, ensuring a dynamic and responsive user experience.</p>
+
+<p><img src="/projects/cryptogryphon/cryptogryphon-and-google.png" alt="cyptogryphon and Google" title="cryptogryphon and Google" /></p>
+
+<p>When the generation takes place, it directly sends data to a Google Form, fetching the form link as a formResponse. This data is subsequently transferred to a Google Spreadsheet. The generator creates a sharing link that the <em>getCrossword(id)</em> function parses.</p>
+
+<p>Using an XMLHttpRequest from the Spreadsheet, the function locates the correct crossword when the crossword link is opened. Sharing the passcode isn’t solely a privacy aspect; it’s also an educational decision. While students revising known words may not need the passcode, sharing it becomes essential when new vocabulary items are introduced. This empowers students to independently check and learn new words in the crossword.</p>
+
+<h3 id="5-import-and-export-functionality"><strong>5. Import and Export Functionality</strong></h3>
+<p>To enhance usability, <em>cryptogryphon</em> supports importing word-clue pairs from CSV/TSV or JSON formats. This feature bridges the gap between <em>cryptogryphon</em> and other crossword platforms, drawing inspiration from the likes of Half-A-Crossword, Crossword Labs, and Puzzel.org.</p>
+
+<h3 id="6-naming-the-baby"><strong>6. Naming the Baby</strong></h3>
+<p>As soon as the crossword generator functions and the user interface were finished, there was nothing else to do than giving a proper name to my crossword generator (other than the working title “crossword-generator”).</p>
+
+<p>The name <em>cryptogryphon</em> aims to convey the cryptic and fantastic nature of puzzle-solving with the griffin (originally spelt as ‘gryphon’), the legendary creature of the ancient Greek. Their treasure is only for the bravest to get, just as much as crosswords are only for the most enduring and the most creative to solve.</p>
+
+<h2 id="conclusion-a-puzzle-unveiled"><strong>Conclusion: A Puzzle Unveiled</strong></h2>
+
+<p><em>cryptogryphon</em> is more than a crossword generator; it’s a testament to the marriage of creativity and technology. The journey from ideation to implementation reflects a commitment to providing users with an inspiring and empowering tool.</p>
+
+<p>As <em>cryptogryphon</em> takes its place in the world of crossword enthusiasts, the story continues. Future updates, driven by user feedback, will enhance the experience and keep the puzzle-solving community engaged.</p>
+
+<p>Ready to dive into the world of <em>cryptogryphon</em>? Explore <a href="/projects/cryptogryphon/create" target="_blank">the crossword generator</a> now!</p>
 
         </div>
         
