@@ -51,6 +51,10 @@
 
             format = document.querySelector("input[name='import-format']:checked").id
 
+            console.log(format)
+
+            console.log(data)
+
             if (format == "JSON") {
 
                 wordsAndClues = JSON.parse(data)
@@ -92,8 +96,7 @@
 
                     newClue.addEventListener("blur", function() { save() })
 
-                    newCloseButton = document.createElement("DIV")
-                    newCloseButton.innerText = "×"
+                    newCloseButton = document.createElement("BUTTON")
                     newCloseButton.className = "crossword-word-clue-close"
                     newCloseButton.addEventListener("click", function() {
                         this.parentElement.remove()
@@ -117,7 +120,9 @@
 
                 for (z = 0; z < data.split(/\n/).length; z++) {
                     word = data.split(/\n/)[z].split(/[\t,]/)[0]
-                    clue = data.split(/\n/)[z].replace(word, "")
+                    clue = data.split(/\n/)[z].replace(word + ",", "")
+
+                    console.log(word,clue)
 
                     newWordAndClue = document.createElement("DIV");
                     newWordAndClue.className = "word-clue";
@@ -148,8 +153,7 @@
 
                     newClue.addEventListener("blur", function() { save() })
 
-                    newCloseButton = document.createElement("DIV")
-                    newCloseButton.innerText = "×"
+                    newCloseButton = document.createElement("BUTTON")
                     newCloseButton.className = "crossword-word-clue-close"
                     newCloseButton.addEventListener("click", function() {
                         this.parentElement.remove()
@@ -164,6 +168,8 @@
                     newWordAndClue.appendChild(newClue)
                     newWordAndClue.appendChild(newSaveButton)
                     newWordAndClue.appendChild(newCloseButton)
+
+                    crosswordWordlist.appendChild(newWordAndClue)
 
                 }
 
@@ -386,12 +392,7 @@
 
         if (generate == true) {
 
-            if (id != "") {
-                n = id.split("-").length > 1 ? Number(id.split("-")[id.split("-").length - 1]) + 1 : 0
-                id = title + "-" + n
-            } else {
-                id = Object.values(crosswordsData).filter(x => x.title == title).length == 0 ? title : title + "-" + Object.values(crosswordsData).filter(x => x.title == title).length
-            }
+            id = Object.values(crosswordsData).filter(x => x.title == title).length == 0 ? title : title + "-" + Object.values(crosswordsData).filter(x => x.title == title).length
 
             console.log(id)
 
@@ -762,12 +763,18 @@ if(document.querySelector("#crossword-passcode-submission")) {
                     number.innerHTML = n
                     gridMap[j].n = n
                 } else {
-                    number.innerHTML = n + 1
-                    gridMap[j].n = n + 1
+                    max = gridMap.sort((a, b) => b.n - a.n)[0].n
+                    number.innerHTML = max + 1
+                    gridMap[j].n = max + 1
                 }
                 number.classList.add("number")
                 td.appendChild(number)
+            } else if (!gridMap.find(x => x.across == across && x.n == Number(td.getElementsByClassName("number")[0].innerHTML))) {
+                gridMap[j].n = Number(td.getElementsByClassName("number")[0].innerHTML)
             } else {
+                max = gridMap.sort((a, b) => b.n - a.n)[0].n
+                gridMap.find(x => x.across != across && x.n == Number(td.getElementsByClassName("number")[0].innerHTML)).n = max + 1
+                td.getElementsByClassName("number")[0].innerHTML = max + 1
                 gridMap[j].n = Number(td.getElementsByClassName("number")[0].innerHTML)
             }
         }

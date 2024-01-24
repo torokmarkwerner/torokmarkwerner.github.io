@@ -71,7 +71,7 @@
             <h1 id="page-title">cryptogryphon | Ready-Made Crosswords</h1>
             <p>Below you can find a list of ready-made crosswords.</p>
 
-<p>(Create your own crossword <a href="/projects/cryptogryphon/crossword-generator">here</a> or read more on how to use cryptogryhon <a href="/projects/cryptogryphon/how-to" target="_blank">here</a>.)</p>
+<p>(Create your own crossword <a href="/projects/cryptogryphon/create">here</a> or read more on how to use cryptogryhon <a href="/projects/cryptogryphon/how-to">here</a>.)</p>
 
 <img src="/projects/cryptogryphon/cryptogryphon-logo.svg" style="width: 75%;display: block;margin: auto;">
 
@@ -112,7 +112,7 @@ for (i=0; i<Object.keys(crosswordsData).length; i++) {
 title = Object.values(crosswordsData)[i].title
 id = Object.keys(crosswordsData)[i]
 
-link = "/projects/cryptogryphon/crossword-puzzle?id=" + id + "&passcode=" + id.split("-")[0] + "123"
+link = "/projects/cryptogryphon/puzzle?id=" + id + "&passcode=" + id.split("-")[0] + "123"
 
 li = document.createElement("LI")
 

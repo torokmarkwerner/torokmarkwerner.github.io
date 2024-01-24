@@ -9,30 +9,6 @@
     font-family: inherit;
 }
 
-.crossword-word-clue-close {
-    position: absolute;
-    top: 0.2em;
-    right: 0.2em;
-    width: 1.5em;
-    aspect-ratio: 1 / 1;
-    padding: 0 !important;
-    font-variant-caps: all-small-caps;
-    position: absolute;
-    align-items: center;
-    justify-content: center;
-    color: #aaaaaa;
-    flex: 0;
-    display: flex;
-    background: transparent;
-    font-size: 90%;
-}
-
-.crossword-word-clue-close:hover,
-.crossword-word-clue-close:focus {
-    color: black;
-    cursor: pointer;
-}
-
 #crossword-import {
     padding-bottom: 1em;
     display: flex;
@@ -110,7 +86,8 @@
         #crossword-wordlist,
         #clue-box,
         #crossword-buttons,
-        #crossword-import {
+        #crossword-import,
+        img {
             display: none !important;
         }
 
@@ -180,22 +157,26 @@
         padding: 1em 1.5em
     }
 
-    .save-button {
+    .save-button, .crossword-word-clue-close {
         position: absolute;
-        right: 0.2em;
-        bottom: 0.2em;
+        font-size: 90%;
         border-radius: 1em;
         align-items: center;
         justify-content: center;
-        color: green;
         flex: 0;
         display: flex;
-        background: transparent;
-        border: 1pt green solid;
-        font-variant-caps: all-small-caps;
         width: 1.5em;
         aspect-ratio: 1 / 1;
-        padding: 0;
+        padding: 0;  
+        font-variant-caps: all-small-caps;
+    }
+
+    .save-button {
+        right: 0.2em;
+        bottom: 0.2em;
+        color: green;
+        background: transparent;
+        border: 1pt green solid;
     }
 
     .save-button::before {
@@ -206,6 +187,25 @@
         background: green;
         color: white;
     }
+
+    .crossword-word-clue-close {
+    top: 0.2em;
+    right: 0.2em;
+    color: #aaaaaa;
+    background: transparent;
+    border: 1pt #aaaaaa solid;
+}
+
+.crossword-word-clue-close::before {
+    content: "×";
+}
+
+.crossword-word-clue-close:hover,
+.crossword-word-clue-close:focus {
+    color: black;
+    border: 1pt black solid;
+    cursor: pointer;
+}
 
     #add-button,
     #generate-button,
