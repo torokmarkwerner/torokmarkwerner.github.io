@@ -201,7 +201,7 @@ function removeWordAndClue(element) {
 
         newClue.addEventListener("blur", function() { save() })
 
-        newCloseButton = document.createElement("DIV")
+        newCloseButton = document.createElement("BUTTON")
         newCloseButton.className = "crossword-word-clue-close"
         newCloseButton.addEventListener("click",function() {
             this.parentElement.remove()
