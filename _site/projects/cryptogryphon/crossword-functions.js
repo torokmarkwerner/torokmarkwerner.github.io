@@ -748,6 +748,8 @@ if(document.querySelector("#crossword-passcode-submission")) {
             return a.row - b.row;
         });
 
+console.log(gridMap)
+
         for (j = 0; j < gridMap.length; j++) {
             c = gridMap[j].column
             r = gridMap[j].row
@@ -755,6 +757,8 @@ if(document.querySelector("#crossword-passcode-submission")) {
             word = gridMap[j].word
 
             td = grid.getElementsByTagName("tr")[r].getElementsByTagName("td")[c]
+
+            console.log(td.getElementsByClassName("number")[0])
 
             if (!td.getElementsByClassName("number")[0]) {
                 number = document.createElement("DIV");
@@ -773,6 +777,7 @@ if(document.querySelector("#crossword-passcode-submission")) {
                 gridMap[j].n = Number(td.getElementsByClassName("number")[0].innerHTML)
             } else {
                 max = gridMap.sort((a, b) => b.n - a.n)[0].n
+                console.log(across + " " + max)
                 gridMap.find(x => x.across != across && x.n == Number(td.getElementsByClassName("number")[0].innerHTML)).n = max + 1
                 td.getElementsByClassName("number")[0].innerHTML = max + 1
                 gridMap[j].n = Number(td.getElementsByClassName("number")[0].innerHTML)
@@ -1002,6 +1007,8 @@ if(document.querySelector("#crossword-passcode-submission")) {
                         return false
                     } else if (right != "" && q == word.length - 1 || right != "" && right != word[q + 1].toUpperCase()) {
                         return false
+                    } else if (td != "" && td != word[q].toUpperCase()) {
+                        return false
                     }
 
                 }
@@ -1027,6 +1034,8 @@ if(document.querySelector("#crossword-passcode-submission")) {
                     } else if ((left != "" || right != "") && td != word[q].toUpperCase()) {
                         return false
                     } else if (down != "" && q == word.length - 1 || down != "" && down != word[q + 1].toUpperCase()) {
+                        return false
+                    } else if (td != "" && td != word[q].toUpperCase()) {
                         return false
                     }
 

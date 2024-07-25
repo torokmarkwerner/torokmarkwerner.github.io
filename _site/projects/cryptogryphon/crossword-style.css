@@ -76,6 +76,7 @@
 }
 
     @media print {
+        #cta,
         #page-title,
         .crossword-links,
         .button-container,
@@ -86,8 +87,7 @@
         #crossword-wordlist,
         #clue-box,
         #crossword-buttons,
-        #crossword-import,
-        img {
+        #crossword-import, #logo-1 {
             display: none !important;
         }
 
