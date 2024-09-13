@@ -387,6 +387,8 @@ body {
 }
 
 #profile-picture {
+    position: relative;
+    top: 10px;
     width: 20vw;
 }
 
