@@ -1,3 +1,23 @@
+#letters {
+    text-align:center;
+    background-color:black;
+    height:20vw;
+    width:20vw;
+    margin: auto;
+}
+
+#letters span {
+    color: lightskyblue;
+    font-family: Tahoma;
+    font-size: 12vw;
+    font-weight: bold;
+    line-height: 20vw;
+}
+
+#letters span:nth-child(1) {
+    color: palegreen;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -113,10 +133,14 @@ summary:hover {
     background-color: black;
 }
 
-.pages-button {
+.pages-button, #home {
     text-decoration: none;
     color: inherit;
     display: block;
+}
+
+#home:hover {
+    opacity: 0.9;
 }
 
 .video-container {
@@ -281,7 +305,7 @@ body {
     line-height: 40px;
     text-align: center;
     text-decoration: none;
-    margin: 0.5em 0.2em;
+    margin: 0.2em;
     border-radius: 5px;
 }
 
@@ -360,6 +384,10 @@ body {
     width: 40vw;
     flex: 1 1 50%;
     margin-right: calc(25% - 2em);
+}
+
+#profile-picture {
+    width: 20vw;
 }
 
 #erettsegi-footer {
@@ -446,6 +474,10 @@ body {
         width: 40vw;
     }
 
+    #home {
+        background: black;
+    }
+
     #close {
         display: block;
         position: relative;
@@ -464,5 +496,9 @@ body {
 
     #close:hover {
         cursor: pointer;
+    }
+
+    #profile-picture {
+        display: none;
     }
 }
