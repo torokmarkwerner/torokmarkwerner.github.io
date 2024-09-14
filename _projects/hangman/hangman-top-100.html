@@ -35,7 +35,7 @@ exclude_from_projects: true
   
   names = []
   players = []
-  for (i=data.length-1;i>2;i--) {
+  for (i=1;i<data.length;i++) {
   person = {}
   name = data[i].replaceAll('"',"").split(",")[0];
     if (!names.includes(name)) {
