@@ -169,6 +169,7 @@ visibility: hidden;
         background: var(--color);
         top: 41%;
         left: 67%;
+        border-bottom-right-radius: 10%;
     }
 
     .arms-left {
@@ -180,6 +181,7 @@ visibility: hidden;
         left: 51%;
         transform: rotate(315deg);
         transform-origin: 0 0;
+        border-bottom-right-radius: 21%;
     }
 
     .arms-right {
@@ -202,6 +204,7 @@ visibility: hidden;
         left: 51%;
         transform: rotate(315deg);
         transform-origin: 0 0;
+        border-bottom-right-radius: 21%;
     }
 
     .legs-right {
