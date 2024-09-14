@@ -59,8 +59,172 @@ width:100%;
 flex-wrap: wrap;
 position:relative;
 }
-</style>
-<style>
+
+@media (orientation: portrait) {
+#hangman {
+        --main-width: 50vw;
+      }
+}
+
+
+@media (orientation: landscape) {
+#hangman {
+        --main-width: 50vh;
+      }
+}
+
+    #hangman {
+        --font-size: calc(var(--main-width) / 10);
+        --color: #3F48CC; /* Used for both line and background colors */
+    }
+
+    #hangman {
+        margin: 0.5em;
+        width: var(--main-width);
+        aspect-ratio: 1 / 1;
+        position: relative;
+        border: 5px solid transparent;
+    }
+
+    .top-bar, .vertical-line, .supporting-beam, .rope, .head, .head-inner-1, 
+    .head-inner-2, .body, .arms-left, .arms-right, .legs-left, .legs-right, .bottom-bar {
+visibility: hidden;
+    }
+
+    .top-bar {
+        position: absolute;
+        width: 56%;
+        height: 4%;
+        background: var(--color);
+        top: 0;
+        left: 15%;
+    }
+
+    .vertical-line {
+        position: absolute;
+        width: 4%;
+        height: 96%;
+        background: var(--color);
+        top: 4%;
+        left: 15%;
+    }
+
+    .supporting-beam {
+        position: absolute;
+        width: 40%;
+        height: 4%;
+        background: var(--color);
+        top: 4%;
+        left: 47%;
+        transform: rotate(135deg);
+        transform-origin: 0 0;
+    }
+
+    .rope {
+        position: absolute;
+        width: 4%;
+        height: 14%;
+        background: var(--color);
+        top: 4%;
+        left: 67%;
+    }
+
+    .head {
+        position: absolute;
+        width: 25%;
+        height: 25%;
+        background: var(--color);
+        border-radius: 50%;
+        top: 17%;
+        left: 56%;
+    }
+
+    .head-inner {
+        position: absolute;
+        width: 19%;
+        height: 19%;
+        background: white;
+        border-radius: 50%;
+        top: 20%;
+        left: 59%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: var(--font-size);
+        font-weight: bold;
+    }
+
+    .head-inner > div {
+        display: flex;
+        flex: 1 0 auto;
+        justify-content: center;
+        color: var(--color); /* Text color */
+    }
+
+    .body {
+        position: absolute;
+        width: 4%;
+        height: 29%;
+        background: var(--color);
+        top: 41%;
+        left: 67%;
+    }
+
+    .arms-left {
+        position: absolute;
+        width: 25%;
+        height: 4%;
+        background: var(--color);
+        top: 59%;
+        left: 51%;
+        transform: rotate(315deg);
+        transform-origin: 0 0;
+    }
+
+    .arms-right {
+        position: absolute;
+        width: 25%;
+        height: 4%;
+        background: var(--color);
+        top: 41%;
+        left: 70%;
+        transform: rotate(45deg);
+        transform-origin: 0 0;
+    }
+
+    .legs-left {
+        position: absolute;
+        width: 25%;
+        height: 4%;
+        background: var(--color);
+        top: 84%;
+        left: 51%;
+        transform: rotate(315deg);
+        transform-origin: 0 0;
+    }
+
+    .legs-right {
+        position: absolute;
+        width: 25%;
+        height: 4%;
+        background: var(--color);
+        top: 66%;
+        left: 70%;
+        transform: rotate(45deg);
+        transform-origin: 0 0;
+    }
+
+    .bottom-bar {
+        position: absolute;
+        width: 96%;
+        height: 4%;
+        background: var(--color);
+        bottom: 0;
+        left: 0;
+    }
+
+
 #feedback {
   padding:0.5em;
 }
@@ -199,8 +363,25 @@ HANGMAN TOP 100
 <!-- DIAGRAM -->
 <div id="diagram-container">
   
-<div id="sprite" style="--row:0;--column:0"></div>
+<!-- <div id="sprite" style="--row:0;--column:0"></div> -->
 
+<div id="hangman">
+    <div class="top-bar"></div>
+    <div class="supporting-beam"></div>
+    <div class="vertical-line"></div>
+    <div class="rope"></div>
+    <div class="head"></div>
+    <div class="head-inner">
+        <div class="head-inner-1">×</div>
+        <div class="head-inner-2">×</div>
+    </div>
+    <div class="body"></div>
+    <div class="arms-left"></div>
+    <div class="arms-right"></div>
+    <div class="legs-left"></div>
+    <div class="legs-right"></div>
+    <div class="bottom-bar"></div>
+</div>
   
 </div>
 
@@ -242,6 +423,11 @@ HANGMAN TOP 100
 </div>
 
 <script>
+
+  n = 0;
+
+  gallows = ["bottom-bar", "vertical-line", "top-bar", "supporting-beam", "rope", "head", "head-inner-1", 'head-inner-2', "body", "arms-left", "arms-right", "legs-left", "legs-right"]
+
 
 function openFullscreen(x) {
   if (x.requestFullscreen) {
@@ -452,7 +638,7 @@ bonus = 1;
 //alert(bonus);
 
 
-score = (Number(score)+(11-notInIt.length)*bonus).toFixed(2)
+score = (Number(score)+(13-notInIt.length)*bonus).toFixed(2)
 document.getElementById("hangmanScore").innerHTML = parseFloat(score);
 xhr.send('name=' + localStorage.getItem("hangmanName") + '&score=' + score);
 localStorage.setItem("hangmanScore",score);
@@ -468,6 +654,28 @@ document.getElementById("toplist-button").style.display = "inline-block";
 } else if(!(notInIt.includes(event.key.toLowerCase()))) {
 notInIt.push(event.key.toLowerCase())
 document.getElementById("guessed").innerHTML = notInIt.join(", ");
+
+document.getElementsByClassName(gallows[n])[0].style.visibility = "visible"
+
+
+if (n != gallows.length-1) {
+n++
+} else {
+
+lettersInIt = [];
+notInIt = [];
+
+document.getElementById("solution").innerHTML = Array.from(solution).map(letter => `<u>${letter}</u>`).join('');
+document.getElementById("feedback").innerHTML = "<div style='padding-bottom:0.5em;'>OOPS, IT'S <u>D</u> <u>E</u> <u>A</u> <u>D</u>.</div>PRESS ENTER TO TRY AGAIN."
+document.getElementById("feedback").style.display = "block";
+dead = true
+document.getElementById("dictionary-button").style.display = "inline-block";
+document.getElementById("toplist-button").style.display = "inline-block";
+
+
+} 
+
+/*
 x = +window.getComputedStyle(document.getElementById("sprite")).getPropertyValue("--column");
 y = +window.getComputedStyle(document.getElementById("sprite")).getPropertyValue("--row");
 //alert(y);
@@ -494,6 +702,8 @@ document.getElementById("sprite").style.setProperty("--column",0);
 document.getElementById("sprite").style.setProperty("--row",1);
 }
 
+*/
+
 }
 
 
@@ -503,8 +713,17 @@ solution = words[Math.floor(Math.random() * words.length+1)].trim();
 document.getElementById("solution").innerHTML = solution.replace(/ /g,'\xa0\xa0\xa0').replace(/[a-z]/g," _ ");
 document.getElementById("feedback").innerHTML = "";
 document.getElementById("guessed").innerHTML = "&nbsp;";
+/*
 document.getElementById("sprite").style.setProperty("--row",0);
 document.getElementById("sprite").style.setProperty("--column",0);
+*/
+
+n = 0;
+
+gallows.forEach(classname => {
+  document.getElementsByClassName(classname)[0].style.visibility = "hidden"
+});
+
 document.getElementById("dictionary-button").style.display = "none";
 document.getElementById("toplist-button").style.display = "none";
 document.getElementById("feedback").style.display = "none";
