@@ -625,7 +625,7 @@ document.getElementById("feedback").style.display = "block";
 dead = true;
 
 xhr = new XMLHttpRequest();
-dataTable = "https://script.google.com/macros/s/AKfycbyYc-8x4hLy4TM5ASnU2sw1OfkHGe4PnrlmkvOLBvEL9dEHomicOatwWiuxJXxUuY4/exec"
+dataTable = "https://script.google.com/macros/s/AKfycbzmxY1a2OiooPCPuGOdnuXO_AGbvtTg-7SI6j5mS8_vt_-jjhHo2ewjQTyRdaq-d3BG/exec"
 xhr.open('POST', dataTable, true);
 xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
 
