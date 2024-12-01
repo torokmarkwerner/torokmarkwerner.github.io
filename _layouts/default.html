@@ -86,10 +86,8 @@
         </div>
         {% assign depth = page.path | split: "/" | size | plus: 1 %}
         {% if page.path contains "erettsegi" and depth > 3 %}
-        <div id="erettsegi-footer">
-        {% include erettsegi-navbar.html %}
-        {{ erettsegi-navbar }}
-        </div>
+        {% include erettsegi-footer.html %}
+        {{ erettsegi-footer }}
         {% endif %}
     </div>
 </body>

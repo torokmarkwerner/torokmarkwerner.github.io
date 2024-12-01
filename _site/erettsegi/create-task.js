@@ -14,6 +14,17 @@ function createTask(id) {
         return response.json()
     }).then((data) => {
         jsonData = data;
+if (typeof numberOfTasks === "undefined") {
+//To update the number in "Search 600 tasks..."
+numberOfTasks = data.length
+
+answer = document.querySelector("#erettsegi-footer .answer")
+answer.innerHTML = "Search " + numberOfTasks + " tasks using keywords"
+
+search = document.querySelector("#erettsegi-footer .search-input")
+search.placeholder = "Search " + numberOfTasks + " tasks using keywords"
+
+}
         populateHTML(data.find(task => task.taskId == id))
     })
 }
