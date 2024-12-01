@@ -312,7 +312,13 @@ createTask("higher-05maj-reading-4");
 
 <script>
 
+searchInput = document.querySelector(".search-input")
 
+searchInput.addEventListener("focus",function() {
+
+searchInput.scrollIntoView({behavior:"smooth"})
+
+})
 
 </script>
 

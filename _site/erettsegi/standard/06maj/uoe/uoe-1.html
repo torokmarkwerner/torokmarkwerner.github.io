@@ -315,7 +315,13 @@ createTask("standard-06maj-uoe-1");
 
 <script>
 
+searchInput = document.querySelector(".search-input")
 
+searchInput.addEventListener("focus",function() {
+
+searchInput.scrollIntoView({behavior:"smooth"})
+
+})
 
 </script>
 
