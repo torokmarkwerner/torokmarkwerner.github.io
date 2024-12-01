@@ -349,7 +349,7 @@ hr.erettsegi-line {
 
 .reading-true-or-false .gap-container {
     padding: 1em;
-    max-width: 500px;
+    max-width: calc(100% - 2em);
     margin: 1em auto;
     border: 2px solid #ccc;
     border-radius: 0.5em;
