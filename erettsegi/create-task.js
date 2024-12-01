@@ -2,7 +2,7 @@ jsonData = [];
 
 score = {};
 
-trueOrFalse = { "true": "A", "false": "B", "doesn't say": "C" };
+trueOrFalse = { "True": "A", "False": "B", "Doesn't say": "C" };
 
 picked = "";
 pickedId = "";

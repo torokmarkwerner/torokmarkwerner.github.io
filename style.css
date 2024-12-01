@@ -408,16 +408,10 @@ body {
       display: none;
     }
 
-    #content-container {
+    #content-container, #erettsegi-footer {
       width: calc(80vw - 1em);
       padding: 0 0 1em 1em;
       margin: 0;
-    }
-
-    #erettsegi-footer {
-      margin: 0;
-      padding-left: 1em;
-      width: calc(100% - 1em);
     }
 }
 

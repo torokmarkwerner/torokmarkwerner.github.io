@@ -1,3 +1,10 @@
+h2 select {
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: bold;
+    margin: 0.1em 0;
+}
+
 .navbar-years, .navbar-levels, .navbar-parts, .navbar-tasks {
   display: table;
   width: 100%;
@@ -340,82 +347,121 @@ hr.erettsegi-line {
     align-items: stretch;
 }
 
-.reading-true-or-false .statement {
-    width: 70%;
-    display: table-cell;
-    vertical-align: middle;
-    padding: 0.5em 1.5em;
-    border: 1pt black solid;
-}
-
 .reading-true-or-false .gap-container {
-    width: 100%;
-    display: table;
-    text-align: center;
-    margin: 1.5em 0;
-    padding: 0;
+    padding: 1em;
+    max-width: 500px;
+    margin: 1em auto;
+    border: 2px solid #ccc;
+    border-radius: 0.5em;
+    background: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.reading-true-or-false .radio-container {
-    display: table;
-    width: 90%;
-    height: fit-content;
-    padding: 0.25em 0.5em;
-}
-
-@media (max-width: 767px) {
 .reading-true-or-false .statement {
-    width: auto;
-    display: block;
-    margin: auto;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    flex: 1 1 100%;
 }
 
 .reading-true-or-false .radio-container {
-    width: auto;
-    display: block;
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5em;
 }
-  }
 
 .reading-true-or-false .radio-container label {
-    display: table;
-    width: 100%;
-    padding: 0.25em 0;
+    display: flex;
+    align-items: center;
+    padding: 0.5em 1em;
+    border: 2px solid #ddd;
+    border-radius: 0.5em;
     cursor: pointer;
+    background: #fff;
+    transition: all 0.3s ease;
 }
 
-.reading-true-or-false .radio-container label [type="radio"] {
+.reading-true-or-false .radio-container label:hover,
+.reading-true-or-false .radio-container label:focus-within {
+    border-color: #007bff;
+    background: #f0f8ff;
+}
+
+.reading-true-or-false .radio-container input[type="radio"] {
     display: none;
 }
 
-.reading-true-or-false .radio-container label [type="radio"]+span {
-    display: table-cell;
-    vertical-align: middle;
-    padding: 0.2em;
-    border: 1pt black solid;
-    font-variant: small-caps;
-    background-color: lightgray;
+.reading-true-or-false .radio-container label span {
+    position: relative;
+    padding-left: 2em;
+    font-size: 1em;
+    color: #555;
 }
 
-.reading-true-or-false .radio-container label [type="radio"]+span.correct {
-    background-color: lightgreen
+.reading-true-or-false .radio-container label span:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: calc(1.2em + 2px); 
+    height: calc(1.2em + 2px); 
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    transition: all 0.3s ease;
 }
 
-.reading-true-or-false .radio-container label [type="radio"]+span.incorrect {
-    background-color: #FFC300
+.reading-true-or-false .radio-container input[type="radio"]:checked + span:before {
+    background: #007bff;
 }
 
-.reading-true-or-false .radio-container label [disabled]+span {
-    cursor: text;
+.reading-true-or-false .radio-container input[type="radio"]:checked + span:after {
+    content: '';
+    position: absolute;
+    left: calc(0.6em - 2px);
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0.6em;
+    height: 0.6em;
+    background: #fff;
+    border-radius: 50%;
 }
 
-.reading-true-or-false .radio-container label :checked+span {
-    background-color: lightskyblue;
+.reading-true-or-false .radio-container input[type="radio"]:disabled + span {
+    color: #aaa;
 }
 
-.reading-true-or-false .default label :checked+span {
-    background-color: black;
-    color: white;
+.reading-true-or-false .radio-container input[type="radio"]:disabled + span:before {
+    border-color: #ccc;
+    background: #f5f5f5;
+}
+
+.reading-true-or-false .radio-container input[type="radio"]:disabled:checked + span {
+    color: #28a745;
+}
+
+.reading-true-or-false .radio-container input[type="radio"]:disabled:checked + span:before {
+    border-color: #28a745;
+    background: #28a745;
+}
+
+.reading-true-or-false .radio-container input[type="radio"] + span.incorrect {
+    color: #FFC300;
+}
+
+.reading-true-or-false .radio-container input[type="radio"]:checked + span.incorrect:before {
+    border-color: #FFC300;
+    background: #FFC300;
+}
+
+
+.reading-true-or-false .radio-container input[type="radio"] + span.correct {
+    color: #28a745;
+}
+
+.reading-true-or-false .radio-container input[type="radio"]:checked + span.correct:before {
+    border-color: #28a745;
+    background: #28a745;
 }
 
 .reading-half-sentences .task .gap,
@@ -751,10 +797,10 @@ hr.erettsegi-line {
     cursor: pointer;
 }
 
-.correct {
-    background-color: palegreen
+:not(label span).correct {
+    background: palegreen
 }
 
-.incorrect {
-    background-color: #FFC300
+:not(label span).incorrect {
+    background: #FFC300
 }

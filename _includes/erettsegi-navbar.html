@@ -14,7 +14,7 @@
 {{ level }} {{ year }} {{ part }} {{ task }}
 {% endcomment %}
 
-{% assign years = "05maj,05nov,06feb,06maj,06okt,07maj,07okt,08maj,08okt,09maj,09okt,10maj,10okt,11maj,11okt,12maj,12okt,13maj,13okt,14maj,14okt,15maj,15okt,16maj,16okt,17maj,17okt,18maj,18okt,19maj,19okt,20maj,20okt,21maj,21okt,22maj,22okt,23maj,23okt" | split: "," %}
+{% assign years = "05maj,05nov,06feb,06maj,06okt,07maj,07okt,08maj,08okt,09maj,09okt,10maj,10okt,11maj,11okt,12maj,12okt,13maj,13okt,14maj,14okt,15maj,15okt,16maj,16okt,17maj,17okt,18maj,18okt,19maj,19okt,20maj,20okt,21maj,21okt,22maj,22okt,23maj,23okt,24maj,24okt" | split: "," %}
 
 {% for y in years %}
 {% if y == year %}
@@ -52,104 +52,80 @@
 {% assign yearToGo = years[lengthOfYears] %}
 {% endif %}
 
-{% if level %}
-<div class="navbar-levels">
-{% if level == "standard" %}
-<div class="present">
-<a href="/erettsegi/standard/{{ yearToGo }}/{{ partToGo }}">közép</a>
-</div>
-<div>
-<a href="/erettsegi/higher/{{ yearToGo }}/{{ partToGo }}">emelt</a>
-</div>
-{% elsif level == "higher" %}
-<div>
-<a href="/erettsegi/standard/{{ yearToGo }}/{{ partToGo }}">közép</a>
-</div>
-<div class="present">
-<a href="/erettsegi/higher/{{ yearToGo }}/{{ partToGo }}">emelt</a>
-</div>
-{% endif %}
-</div>
-{% endif %}
+<h2 class="erettsegi-title">
+	<span>érettségi / </span>
+
+<select id="level">
+            <option value="standard" {% if level == "standard" %} selected {% endif %}>közép</option>
+            <option value="higher" {% if level == "higher" %} selected {% endif %}>emelt</option>
+        </select>
 
 {% if year %}
-<div class="navbar-years">
-{% if index != 0 %}	
-<div class="prev-button">
-{% assign prevIndex = index | minus: 1 %}
-<a href="/erettsegi/{{ level }}/{{ years[prevIndex] }}/{{ partToGo }}">&nbsp;</a>
-</div>
-{% endif %}
-{% for yearAround in yearsAround %}
-{% if yearAround == year %}
-<div class="present erettsegi-year">
-<a href="/erettsegi/{{ level }}/{{ yearAround }}/{{ partToGo }}">
-{{ yearAround }}
-</a>
-</div>
-{% else %}
-<div class="erettsegi-year">
-<a href="/erettsegi/{{ level }}/{{ yearAround }}/{{ partToGo }}">
-{{ yearAround }}
-</a>
-</div>
-{% endif %}
-{% endfor %}
-{% assign lastIndex = size | minus: 1 %}
-{% if index != lastIndex %}
-<div class="next-button">
-{% assign nextIndex = index | plus: 1 %}
-<a href="/erettsegi/{{ level }}/{{ years[nextIndex] }}/{{ partToGo }}">&nbsp;</a>
-</div>
-{% endif %}
-</div>
+ / 
+<select id="year"> 
+        {% for y in years %}
+        <option value="{{ y }}" {% if y == year %} selected {% endif %}>{{ y }}</option>
+        {% endfor %}
+        </select>
+
 {% endif %}
 
-<div class="navbar-parts">
-{% if partToGo == "reading" %}
-<div class="present">
-<a href="/erettsegi/{{ level }}/{{ year }}/reading">
-olvasott szöveg értése
-</a>
-</div>
-<div>
-<a href="/erettsegi/{{ level }}/{{ year }}/uoe">
-nyelvhelyesség
-</a>
-</div>
-{% else %}
-<div>
-<a href="/erettsegi/{{ level }}/{{ year }}/reading">	
-olvasott szöveg értése
-</a>
-</div>
-<div class="present">
-<a href="/erettsegi/{{ level }}/{{ year }}/uoe">
-nyelvhelyesség
-</a>
-</div>
-{% endif %}
-</div>
+{% if part %}
+ / 
+<select id="part">
+            <option value="reading" {% if part == "reading" %} selected {% endif %}>olvasott szöveg értése</option>
+            <option value="uoe" {% if part == "uoe" %} selected {% endif %}>nyelvhelyesség</option>
+        </select>
 
+{% endif %}
+
+{% if task %}
+ / 
+<select id="task">
+            
 {% if level == "standard" and part == "uoe" %}
 {% assign lastIndexOfTasks = 3 %}
 {% else %}
 {% assign lastIndexOfTasks = 4 %}
 {% endif %}
 
-{% if task %}
-{% assign taskToGo = task %}
-{% else %}
-{% assign taskToGo = "1" %}
-{% endif %}
-
-<div class="navbar-tasks">
 {% for i in (1..lastIndexOfTasks) %}
 {% assign i_str = i | append: "" %}
-{% if i_str == taskToGo %}
-<div class="present"><a href="/erettsegi/{{ level }}/{{ year }}/{{ partToGo }}/{{ partToGo }}-{{ i_str }}.html">{{ i }}</a></div>
-{% else %}
-<div><a href="/erettsegi/{{ level }}/{{ year }}/{{ partToGo }}/{{ partToGo }}-{{ i_str }}.html">{{ i }}</a></div>
-{% endif %}
+<option value="{{ i }}" {% if task == i_str %} selected {% endif %}>{{ i }}</option>
 {% endfor %}
-</div>
+</select>
+
+{% endif %}
+
+</h2>
+
+<script>
+
+selects = document.querySelectorAll(".erettsegi-title select")
+
+for (select of selects) {
+
+select.addEventListener("change", (event) => {
+
+data = event.target.parentElement.getElementsByTagName("select")
+
+level = data[0].value
+
+year = data[1].value
+
+part = data[2].value
+
+task = data[3] ? ("/" + part + "-" + data[3].value + ".html") : ""
+
+link = "/erettsegi/" + level + "/" + year + "/" + part + task
+
+window.open(link,"_self")
+
+})
+
+}
+
+
+</script>
+
+

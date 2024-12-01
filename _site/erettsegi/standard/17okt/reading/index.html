@@ -24,6 +24,7 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/style.css">
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.png?">
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
@@ -80,7 +81,6 @@
             <h1 id="page-title"></h1>
             
 
-<h2>érettségi / közép / 17okt / olvasott szöveg értése</h2>
 
 
 
@@ -163,120 +163,148 @@
 
 
 
+<h2 class="erettsegi-title">
+	<span>érettségi / </span>
 
-<div class="navbar-levels">
+<select id="level">
+            <option value="standard"  selected >közép</option>
+            <option value="higher" >emelt</option>
+        </select>
 
-<div class="present">
-<a href="/erettsegi/standard/17okt/reading">közép</a>
-</div>
-<div>
-<a href="/erettsegi/higher/17okt/reading">emelt</a>
-</div>
 
-</div>
+ / 
+<select id="year"> 
+        
+        <option value="05maj" >05maj</option>
+        
+        <option value="05nov" >05nov</option>
+        
+        <option value="06feb" >06feb</option>
+        
+        <option value="06maj" >06maj</option>
+        
+        <option value="06okt" >06okt</option>
+        
+        <option value="07maj" >07maj</option>
+        
+        <option value="07okt" >07okt</option>
+        
+        <option value="08maj" >08maj</option>
+        
+        <option value="08okt" >08okt</option>
+        
+        <option value="09maj" >09maj</option>
+        
+        <option value="09okt" >09okt</option>
+        
+        <option value="10maj" >10maj</option>
+        
+        <option value="10okt" >10okt</option>
+        
+        <option value="11maj" >11maj</option>
+        
+        <option value="11okt" >11okt</option>
+        
+        <option value="12maj" >12maj</option>
+        
+        <option value="12okt" >12okt</option>
+        
+        <option value="13maj" >13maj</option>
+        
+        <option value="13okt" >13okt</option>
+        
+        <option value="14maj" >14maj</option>
+        
+        <option value="14okt" >14okt</option>
+        
+        <option value="15maj" >15maj</option>
+        
+        <option value="15okt" >15okt</option>
+        
+        <option value="16maj" >16maj</option>
+        
+        <option value="16okt" >16okt</option>
+        
+        <option value="17maj" >17maj</option>
+        
+        <option value="17okt"  selected >17okt</option>
+        
+        <option value="18maj" >18maj</option>
+        
+        <option value="18okt" >18okt</option>
+        
+        <option value="19maj" >19maj</option>
+        
+        <option value="19okt" >19okt</option>
+        
+        <option value="20maj" >20maj</option>
+        
+        <option value="20okt" >20okt</option>
+        
+        <option value="21maj" >21maj</option>
+        
+        <option value="21okt" >21okt</option>
+        
+        <option value="22maj" >22maj</option>
+        
+        <option value="22okt" >22okt</option>
+        
+        <option value="23maj" >23maj</option>
+        
+        <option value="23okt" >23okt</option>
+        
+        <option value="24maj" >24maj</option>
+        
+        <option value="24okt" >24okt</option>
+        
+        </select>
+
+
+
+
+ / 
+<select id="part">
+            <option value="reading"  selected >olvasott szöveg értése</option>
+            <option value="uoe" >nyelvhelyesség</option>
+        </select>
+
+
+
+
+
+</h2>
+
+<script>
+
+selects = document.querySelectorAll(".erettsegi-title select")
+
+for (select of selects) {
+
+select.addEventListener("change", (event) => {
+
+data = event.target.parentElement.getElementsByTagName("select")
+
+level = data[0].value
+
+year = data[1].value
+
+part = data[2].value
+
+task = data[3] ? ("/" + part + "-" + data[3].value + ".html") : ""
+
+link = "/erettsegi/" + level + "/" + year + "/" + part + task
+
+window.open(link,"_self")
+
+})
+
+}
+
+
+</script>
 
 
 
-<div class="navbar-years">
-	
-<div class="prev-button">
-
-<a href="/erettsegi/standard/17maj/reading">&nbsp;</a>
-</div>
-
-
-
-<div class="erettsegi-year">
-<a href="/erettsegi/standard/16okt/reading">
-16okt
-</a>
-</div>
-
-
-
-<div class="erettsegi-year">
-<a href="/erettsegi/standard/17maj/reading">
-17maj
-</a>
-</div>
-
-
-
-<div class="present erettsegi-year">
-<a href="/erettsegi/standard/17okt/reading">
-17okt
-</a>
-</div>
-
-
-
-<div class="erettsegi-year">
-<a href="/erettsegi/standard/18maj/reading">
-18maj
-</a>
-</div>
-
-
-
-<div class="erettsegi-year">
-<a href="/erettsegi/standard/18okt/reading">
-18okt
-</a>
-</div>
-
-
-
-
-<div class="next-button">
-
-<a href="/erettsegi/standard/18maj/reading">&nbsp;</a>
-</div>
-
-</div>
-
-
-<div class="navbar-parts">
-
-<div class="present">
-<a href="/erettsegi/standard/17okt/reading">
-olvasott szöveg értése
-</a>
-</div>
-<div>
-<a href="/erettsegi/standard/17okt/uoe">
-nyelvhelyesség
-</a>
-</div>
-
-</div>
-
-
-
-
-
-<div class="navbar-tasks">
-
-
-
-<div class="present"><a href="/erettsegi/standard/17okt/reading/reading-1.html">1</a></div>
-
-
-
-
-<div><a href="/erettsegi/standard/17okt/reading/reading-2.html">2</a></div>
-
-
-
-
-<div><a href="/erettsegi/standard/17okt/reading/reading-3.html">3</a></div>
-
-
-
-
-<div><a href="/erettsegi/standard/17okt/reading/reading-4.html">4</a></div>
-
-
-</div>
 
 
 <script src="/erettsegi/buttons.js">
@@ -384,120 +412,148 @@ createTask("standard-17okt-reading-4");
 
 
 
+<h2 class="erettsegi-title">
+	<span>érettségi / </span>
 
-<div class="navbar-levels">
-
-<div class="present">
-<a href="/erettsegi/standard/17okt/reading">közép</a>
-</div>
-<div>
-<a href="/erettsegi/higher/17okt/reading">emelt</a>
-</div>
-
-</div>
+<select id="level">
+            <option value="standard"  selected >közép</option>
+            <option value="higher" >emelt</option>
+        </select>
 
 
-
-<div class="navbar-years">
-	
-<div class="prev-button">
-
-<a href="/erettsegi/standard/17maj/reading">&nbsp;</a>
-</div>
-
-
-
-<div class="erettsegi-year">
-<a href="/erettsegi/standard/16okt/reading">
-16okt
-</a>
-</div>
-
-
-
-<div class="erettsegi-year">
-<a href="/erettsegi/standard/17maj/reading">
-17maj
-</a>
-</div>
-
-
-
-<div class="present erettsegi-year">
-<a href="/erettsegi/standard/17okt/reading">
-17okt
-</a>
-</div>
-
-
-
-<div class="erettsegi-year">
-<a href="/erettsegi/standard/18maj/reading">
-18maj
-</a>
-</div>
-
-
-
-<div class="erettsegi-year">
-<a href="/erettsegi/standard/18okt/reading">
-18okt
-</a>
-</div>
-
-
-
-
-<div class="next-button">
-
-<a href="/erettsegi/standard/18maj/reading">&nbsp;</a>
-</div>
-
-</div>
-
-
-<div class="navbar-parts">
-
-<div class="present">
-<a href="/erettsegi/standard/17okt/reading">
-olvasott szöveg értése
-</a>
-</div>
-<div>
-<a href="/erettsegi/standard/17okt/uoe">
-nyelvhelyesség
-</a>
-</div>
-
-</div>
-
-
-
-
-
-<div class="navbar-tasks">
-
-
-
-<div class="present"><a href="/erettsegi/standard/17okt/reading/reading-1.html">1</a></div>
-
-
-
-
-<div><a href="/erettsegi/standard/17okt/reading/reading-2.html">2</a></div>
+ / 
+<select id="year"> 
+        
+        <option value="05maj" >05maj</option>
+        
+        <option value="05nov" >05nov</option>
+        
+        <option value="06feb" >06feb</option>
+        
+        <option value="06maj" >06maj</option>
+        
+        <option value="06okt" >06okt</option>
+        
+        <option value="07maj" >07maj</option>
+        
+        <option value="07okt" >07okt</option>
+        
+        <option value="08maj" >08maj</option>
+        
+        <option value="08okt" >08okt</option>
+        
+        <option value="09maj" >09maj</option>
+        
+        <option value="09okt" >09okt</option>
+        
+        <option value="10maj" >10maj</option>
+        
+        <option value="10okt" >10okt</option>
+        
+        <option value="11maj" >11maj</option>
+        
+        <option value="11okt" >11okt</option>
+        
+        <option value="12maj" >12maj</option>
+        
+        <option value="12okt" >12okt</option>
+        
+        <option value="13maj" >13maj</option>
+        
+        <option value="13okt" >13okt</option>
+        
+        <option value="14maj" >14maj</option>
+        
+        <option value="14okt" >14okt</option>
+        
+        <option value="15maj" >15maj</option>
+        
+        <option value="15okt" >15okt</option>
+        
+        <option value="16maj" >16maj</option>
+        
+        <option value="16okt" >16okt</option>
+        
+        <option value="17maj" >17maj</option>
+        
+        <option value="17okt"  selected >17okt</option>
+        
+        <option value="18maj" >18maj</option>
+        
+        <option value="18okt" >18okt</option>
+        
+        <option value="19maj" >19maj</option>
+        
+        <option value="19okt" >19okt</option>
+        
+        <option value="20maj" >20maj</option>
+        
+        <option value="20okt" >20okt</option>
+        
+        <option value="21maj" >21maj</option>
+        
+        <option value="21okt" >21okt</option>
+        
+        <option value="22maj" >22maj</option>
+        
+        <option value="22okt" >22okt</option>
+        
+        <option value="23maj" >23maj</option>
+        
+        <option value="23okt" >23okt</option>
+        
+        <option value="24maj" >24maj</option>
+        
+        <option value="24okt" >24okt</option>
+        
+        </select>
 
 
 
 
-<div><a href="/erettsegi/standard/17okt/reading/reading-3.html">3</a></div>
+ / 
+<select id="part">
+            <option value="reading"  selected >olvasott szöveg értése</option>
+            <option value="uoe" >nyelvhelyesség</option>
+        </select>
 
 
 
 
-<div><a href="/erettsegi/standard/17okt/reading/reading-4.html">4</a></div>
+
+</h2>
+
+<script>
+
+selects = document.querySelectorAll(".erettsegi-title select")
+
+for (select of selects) {
+
+select.addEventListener("change", (event) => {
+
+data = event.target.parentElement.getElementsByTagName("select")
+
+level = data[0].value
+
+year = data[1].value
+
+part = data[2].value
+
+task = data[3] ? ("/" + part + "-" + data[3].value + ".html") : ""
+
+link = "/erettsegi/" + level + "/" + year + "/" + part + task
+
+window.open(link,"_self")
+
+})
+
+}
 
 
-</div>
+</script>
+
+
+
         
         </div>
         

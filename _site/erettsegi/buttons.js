@@ -103,11 +103,9 @@ function checkAnswers(tid) {
                 if (trueOrFalse[radio.nextElementSibling.innerHTML] == solutions[i] && !(radio.disabled)) {
                     taskGaps[i].querySelectorAll('label > [type="radio"]').forEach((element) => { element.disabled = true; });
                     radio.nextElementSibling.classList.add("correct");
-                    radio.checked = false;
                     score[tid]["current"]++
                 } else if (!(radio.disabled)) {
                     radio.nextElementSibling.classList.add("incorrect")
-                    radio.checked = false
                 }
             }
 
