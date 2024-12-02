@@ -1,0 +1,241 @@
+---
+layout: erettsegi-page
+---
+<div id="erettsegi-search">
+
+<div class="question">What are you looking for?</div>
+
+<div class="answer">Search 600 tasks using keywords</div>
+
+<div class="search-bar-container">
+    <form class="search-form">
+
+        <input type="text" placeholder="Search 600 tasks using keywords" class="search-input">
+        <button type="button" class="search-button">
+            <i class="fa fa-search"></i>
+        </button>
+    </form>
+</div>
+
+<div id="advanced-search-title"><i class="fa fa-chevron-down"></i> Advanced search criteria</div>
+<div class="advanced-search-container">
+
+<div>  
+	<label for="level">Level:</label>
+      <select id="level" name="level">
+        <option value="">All</option>
+        <option value="standard">Közép</option>
+        <option value="higher">Emelt</option>
+      </select>
+</div>
+{% include erettsegi-years.html %}
+<div> 
+      <label for="year">Year:</label>
+
+      <select id="year" name="year">
+        <option value="">All</option>
+  		{% for year in years %}
+        <option value="{{ year }}">{{ year }}</option>
+        {% endfor %}
+      </select>
+</div>
+<div> 
+      <label for="part">Part:</label>
+      <select id="part" name="part">
+        <option value="">All</option>
+        <option value="reading">Olvasott szöveg értése</option>
+        <option value="uoe">Nyelvhelyesség</option>
+      </select>
+</div>
+<div> 
+      <label for="task-type">Task Type:</label>
+      <select id="task-type" name="task-type">
+        <option value="">All</option>
+<option value="reading-dialogue">Closed Gap Filling (Dialogue)</option>
+<option value="reading-text">Closed Gap Filling (Sentences)</option>
+<option value="reading-matching">Half-Sentence-to-Paragraph</option>
+<option value="reading-true-or-false">True or False</option>
+<option value="reading-headings">Headings</option>
+<option value="reading-free-gap-filling">Reading Free Gap Filling</option>
+<option value="reading-paragraphs">Closed Gap Filling (Paragraphs)</option>
+<option value="reading-multiple-choice">Reading Multiple Choice</option>
+<option value="reading-summary">Summaries</option>
+<option value="reading-half-sentences">Half-Sentences</option>
+<option value="reading-short-answer">Short Answer</option>
+<option value="reading-extended-matching">Extended Matching</option>
+<option value="word-transformation">Word Transformation</option>
+<option value="closed-gap-filling">Closed Gap Filling</option>
+<option value="free-gap-filling">Use of English Free Gap Filling</option>
+<option value="multiple-choice">Use of English Multiple Choice</option>
+<option value="sentence-transformation">Sentence Transformation</option>
+<option value="error-correction">Error Detection</option>
+<option value="jumbled-up-sentences">Jumbled-Up Sentences</option>
+
+      </select>
+</div>
+<div> 
+      <label for="topic">Topic:</label>
+      <select id="topic" name="topic">
+        <option value="">All</option>
+        <option value="family">Family</option>
+        <option value="society">Society</option>
+        <option value="environment">Environment</option>
+        <option value="school">School</option>
+        <option value="work">Work</option>
+        <option value="lifestyle">Lifestyle</option>
+        <option value="culture">Culture</option>
+        <option value="travel">Travel</option>
+        <option value="science">Science</option>
+        <option value="economy">Economy</option>
+      </select>
+</div>
+    </div>
+
+
+</div>
+
+<div id="search-results"></div>
+
+<script>
+
+searchInput = document.querySelector(".search-input")
+
+urlParams = new URLSearchParams(window.location.search);
+
+query = urlParams.get('q') || "";
+
+searchInput.value = query
+
+advancedSearchTitle = document.getElementById("advanced-search-title");
+advancedSearchContainer = document.querySelector(".advanced-search-container");
+
+advancedSearchTitle.addEventListener("click", function() {
+  if (advancedSearchContainer.style.display === "flex") {
+    advancedSearchContainer.style.display = "none";
+  } else {
+    advancedSearchContainer.style.display = "flex";
+  }
+});
+
+searchInput.addEventListener("focus",function() {
+searchInput.scrollIntoView({ behavior: "smooth" })
+})
+
+searchForm = document.querySelector(".search-form")
+
+searchForm.addEventListener("submit",function(event) {
+event.preventDefault();
+searchKeywords()
+})
+
+searchButton = document.querySelector(".search-button")
+
+searchButton.addEventListener("click",function(event) {
+event.preventDefault();
+searchKeywords()
+})
+
+function stripHTML(html) {
+    var doc = new DOMParser().parseFromString(html, 'text/html');
+    return doc.body.textContent || "";
+}
+
+function getContext(item, keywords) {
+    const contextFields = ['textTitle', 'example', 'text', 'text2'];
+    let context = "";
+
+    for (let field of contextFields) {
+        const text = stripHTML(item[field] || "").toLowerCase();
+        const index = text.indexOf(keywords);
+
+        if (index !== -1) {
+            const before = text.slice(Math.max(index - 60, 0), index);
+            const after = text.slice(index + keywords.length, index + keywords.length + 5);
+            context = `...${before}<strong>${keywords}</strong>${after}...`;
+            break;
+        }
+    }
+    
+    return context || "No context found.";
+}
+
+function searchKeywords() {
+
+keywords = searchInput.value.trim().toLowerCase()
+
+level = urlParams.get('level') || document.getElementById("level").value;
+year = urlParams.get('year') || document.getElementById("year").value;
+part = urlParams.get('part') || document.getElementById("part").value;
+taskType = urlParams.get('type') || document.getElementById("task-type").value;
+topic = urlParams.get('topic') || document.getElementById("topic").value;
+
+if (keywords) {
+
+	fetch("/erettsegi/data.json").then((response, id) => {
+        return response.json()
+    }).then((data) => {
+        taskProperties = data
+   
+
+    filteredData = taskProperties.filter(item => {
+        fields = ['textTitle', 'example', 'text', 'text2'];
+        return fields.some(field => {
+            const text = stripHTML(item[field] || "").toLowerCase();
+            return text.includes(keywords);
+        });
+    });
+
+   	filteredResults = filteredData.filter(item => {
+
+itemLevel = item.taskId.split("-")[0]
+
+itemYear = item.taskId.split("-")[1]
+
+itemPart = item.taskId.split("-")[2]
+
+        return (
+            (!level || itemLevel === level) &&
+            (!year || itemYear === year) &&
+            (!part || itemPart === part) &&
+            (!taskType || item.type === taskType) &&
+            (!topic || item.tags.includes(topic))
+        );
+    });
+
+    resultsContainer = document.getElementById('search-results');
+    resultsContainer.innerHTML = ""
+
+
+numberOfResults = filteredResults.length
+plural = numberOfResults > 1 ? "s" : ""
+resultsContainer.innerHTML += ("<p style='color:gray;font-size:small'>" + numberOfResults + " result" + plural + "</p>")
+
+    filteredResults.forEach(item => {
+        context = getContext(item, keywords);
+
+link = item.taskId.split("-").slice(0, -1).concat(item.taskId.split("-").slice(-2).join("-")).join("/");
+
+        resultHTML = `
+            <div class="search-result">
+                <h3><a target='_blank' href='${link}'>${item.taskId.replaceAll("-"," / ").replace("reading","olvasott szöveg értése").replace("uoe","nyelvhelyesség").replace("standard","közép").replace("higher","emelt")}</a></h3>
+                <p>Title: ${item.textTitle}</p>
+                <p>Type: ${item.type}</p>
+                <p>${context}</p>
+            </div>
+        `;
+        resultsContainer.innerHTML += resultHTML;
+    });
+
+ })
+
+}
+
+}
+
+document.querySelectorAll('select').forEach(select => {
+    select.addEventListener('change', searchKeywords);
+});
+
+searchKeywords()
+
+</script>

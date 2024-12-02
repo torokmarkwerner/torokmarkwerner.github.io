@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-    <div>
+    <div class="erettsegi-page">
 {% include erettsegi-titles.html %}
 <h1>{{ htitle }}</h1>
 
@@ -23,12 +23,17 @@ layout: default
         {% if depthChild == depth %}
         {% if depth == 3 %}
             <a href="{{ task.url }}reading"><li>
+        {% elsif task.path == "erettsegi/search.html" %}
+
         {% else %}
             <a href="{{ task.url }}"><li>
         {% endif %}
+
+        {% unless task.path == "erettsegi/search.html" %}
                     {{ task.path | replace: "/"," / " | replace: "-", " / " | remove: ".html" | remove: ".md" | remove: title | remove_first: "/ " | replace:
         "standard", "közép" | replace: "higher", "emelt" | replace: "uoe", "nyelvhelyesség" | replace:
         "reading", "olvasott szöveg értése" | replace: "erettsegi","érettségi" }}
+        {% endunless %}
                 </li></a>
         {% endif %}
     {% endfor %}

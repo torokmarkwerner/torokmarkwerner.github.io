@@ -805,13 +805,41 @@ hr.erettsegi-line {
     background: #FFC300
 }
 
-#erettsegi-footer .question, #erettsegi-footer div:not(.search-bar-container) {
+#erettsegi-footer {
+    flex: 1 1 50%;
+    margin-left: 25%;
+    padding-left: 2em;
+    margin-right: calc(25% - 2em);
+    padding-bottom: 1.5em;
+}
+
+@media (max-width: 767px) {
+
+#erettsegi-footer {
+      width: calc(80vw - 1em);
+      padding: 0 0 1em 1em;
+      margin: 0;
+    }
+}
+
+
+#erettsegi-search .question, 
+#erettsegi-search .answer,
+#advanced-search-title {
+    font-size: 1.2em;
+    padding: 0.5em 1em;
+}
+
+#erettsegi-footer .question, 
+#erettsegi-footer div:not(.search-bar-container) {
     text-align: center;
     font-size: 1.2em;
     padding: 0.5em;
 }
 
-#erettsegi-footer .question {
+#erettsegi-footer .question,
+#erettsegi-search .question,
+#advanced-search-title {
     font-weight: bold;
 }
 
@@ -830,6 +858,7 @@ hr.erettsegi-line {
     overflow: hidden;
     background-color: #fff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: calc(100% - 2em);
 }
 
 .search-input {
@@ -866,4 +895,86 @@ hr.erettsegi-line {
 
 .search-input::placeholder {
     color: #aaa;
+}
+
+.advanced-search-container {
+display: none;
+flex-wrap: wrap;
+  padding: 1em;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.advanced-search-container div {
+    flex: 1 1 auto;
+}
+
+.advanced-search-container label {
+  display: block;
+  margin: 0.5em 0 0.2em;
+  font-weight: bold;
+}
+
+.advanced-search-container select,
+.advanced-search-container button {
+  padding: 0.5em;
+  margin-bottom: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.advanced-search-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+#advanced-search-title {
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#advanced-search-title:hover {
+  color: #0056b3;
+}
+
+.search-result {
+    padding: 1em;
+    margin-bottom: 1em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-result h3 {
+    font-size: 1.2em;
+    margin: 0;
+    padding-bottom: 0.7em;
+    font-weight: bold;
+    color: #333;
+}
+
+.search-result h3 a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth color change */
+}
+
+.search-result h3 a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.search-result p {
+    color: #555;
+    margin-top: 0.3em;
 }

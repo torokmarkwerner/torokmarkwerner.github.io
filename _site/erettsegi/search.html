@@ -1,0 +1,419 @@
+<!doctype html>
+<html>
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SN81WBYDLR"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-SN81WBYDLR');
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        
+
+        
+        érettségi / search
+        </title>
+    
+    <link rel="stylesheet" href="/erettsegi/style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.png?">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+
+<body>
+    <div id="page-wrapper">
+        <div id="background" style="opacity:0.8;width:100%;height:100%;background-color:black;top:0;left:0;position:fixed;display:none;z-index:2">
+        </div>
+        <div id="hamburger" onclick="openNav()">
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+        </div>
+        <script>
+        function openNav() {
+            document.getElementById("sticky").style.transform = "translate3d(0, 0, 0)"
+            document.getElementById("hamburger").style.display = "none"
+            document.getElementById("background").style.display = "block"
+        }
+
+        function hideNav() {
+            document.getElementById("sticky").style.transform = "translate3d(-100vw, 0, 0)"
+            document.getElementById("hamburger").style.display = "block"
+            document.getElementById("background").style.display = "none"
+        }
+        </script>
+        <div id="sticky">
+            <div id="close" onclick="hideNav()">&times;</div>
+            <a id="home" href="/"><div id="letters"><span>T</span><span>M</span></div></a>
+            <a id="about" class="pages-button" href="/about">ABOUT</a>
+            <a id="projects" class="pages-button" href="/projects">PROJECTS</a>
+            <a id="erettsegi" class="pages-button" href="/erettsegi">ÉRETTSÉGI</a>
+            <a id="blog" class="pages-button" href="/blog">BLOG</a>
+            <a id="contact" class="pages-button" href="/contact">CONTACT</a>
+            <div style="text-align:center">
+                <a href="https://www.facebook.com/torok.mark.werner" target="_blank" class="fa fa-facebook"></a>
+                <a href="mailto:torokmarkwerner@gmail.com" target="_blank" class="fa fa-google"></a>
+                <a href="https://www.linkedin.com/in/torok-mark-werner" target="_blank" class="fa fa-linkedin"></a>
+            </div>
+        </div>
+        <script>
+        //alert(document.location.pathname + " --> And this is the substring:" + document.location.pathname.toString().substring(1,document.location.pathname.toString().length-1)) --
+        pages = document.getElementsByClassName("pages-button");
+        for (i = 0; i < pages.length; i++) {
+            if ((document.location.pathname).indexOf("/" + pages[i].id + "/") > -1) {
+                pages[i].classList.toggle("pages-button-current");
+                pages[i].style.backgroundColor = "palegreen";
+                pages[i].style.fontWeight = "bold"
+            }
+        }
+        </script>
+        <div id="content-container">
+            <h1 id="page-title"></h1>
+                <div class="erettsegi-page">
+
+
+<h1>érettségi / search</h1>
+
+
+
+
+       <div id="erettsegi-search">
+
+<div class="question">What are you looking for?</div>
+
+<div class="answer">Search 600 tasks using keywords</div>
+
+<div class="search-bar-container">
+    <form class="search-form">
+
+        <input type="text" placeholder="Search 600 tasks using keywords" class="search-input">
+        <button type="button" class="search-button">
+            <i class="fa fa-search"></i>
+        </button>
+    </form>
+</div>
+
+<div id="advanced-search-title"><i class="fa fa-chevron-down"></i> Advanced search criteria</div>
+<div class="advanced-search-container">
+
+<div>  
+	<label for="level">Level:</label>
+      <select id="level" name="level">
+        <option value="">All</option>
+        <option value="standard">Közép</option>
+        <option value="higher">Emelt</option>
+      </select>
+</div>
+
+<div> 
+      <label for="year">Year:</label>
+
+      <select id="year" name="year">
+        <option value="">All</option>
+  		
+        <option value="05maj">05maj</option>
+        
+        <option value="05nov">05nov</option>
+        
+        <option value="06feb">06feb</option>
+        
+        <option value="06maj">06maj</option>
+        
+        <option value="06okt">06okt</option>
+        
+        <option value="07maj">07maj</option>
+        
+        <option value="07okt">07okt</option>
+        
+        <option value="08maj">08maj</option>
+        
+        <option value="08okt">08okt</option>
+        
+        <option value="09maj">09maj</option>
+        
+        <option value="09okt">09okt</option>
+        
+        <option value="10maj">10maj</option>
+        
+        <option value="10okt">10okt</option>
+        
+        <option value="11maj">11maj</option>
+        
+        <option value="11okt">11okt</option>
+        
+        <option value="12maj">12maj</option>
+        
+        <option value="12okt">12okt</option>
+        
+        <option value="13maj">13maj</option>
+        
+        <option value="13okt">13okt</option>
+        
+        <option value="14maj">14maj</option>
+        
+        <option value="14okt">14okt</option>
+        
+        <option value="15maj">15maj</option>
+        
+        <option value="15okt">15okt</option>
+        
+        <option value="16maj">16maj</option>
+        
+        <option value="16okt">16okt</option>
+        
+        <option value="17maj">17maj</option>
+        
+        <option value="17okt">17okt</option>
+        
+        <option value="18maj">18maj</option>
+        
+        <option value="18okt">18okt</option>
+        
+        <option value="19maj">19maj</option>
+        
+        <option value="19okt">19okt</option>
+        
+        <option value="20maj">20maj</option>
+        
+        <option value="20okt">20okt</option>
+        
+        <option value="21maj">21maj</option>
+        
+        <option value="21okt">21okt</option>
+        
+        <option value="22maj">22maj</option>
+        
+        <option value="22okt">22okt</option>
+        
+        <option value="23maj">23maj</option>
+        
+        <option value="23okt">23okt</option>
+        
+        <option value="24maj">24maj</option>
+        
+        <option value="24okt">24okt</option>
+        
+      </select>
+</div>
+<div> 
+      <label for="part">Part:</label>
+      <select id="part" name="part">
+        <option value="">All</option>
+        <option value="reading">Olvasott szöveg értése</option>
+        <option value="uoe">Nyelvhelyesség</option>
+      </select>
+</div>
+<div> 
+      <label for="task-type">Task Type:</label>
+      <select id="task-type" name="task-type">
+        <option value="">All</option>
+<option value="reading-dialogue">Closed Gap Filling (Dialogue)</option>
+<option value="reading-text">Closed Gap Filling (Sentences)</option>
+<option value="reading-matching">Half-Sentence-to-Paragraph</option>
+<option value="reading-true-or-false">True or False</option>
+<option value="reading-headings">Headings</option>
+<option value="reading-free-gap-filling">Reading Free Gap Filling</option>
+<option value="reading-paragraphs">Closed Gap Filling (Paragraphs)</option>
+<option value="reading-multiple-choice">Reading Multiple Choice</option>
+<option value="reading-summary">Summaries</option>
+<option value="reading-half-sentences">Half-Sentences</option>
+<option value="reading-short-answer">Short Answer</option>
+<option value="reading-extended-matching">Extended Matching</option>
+<option value="word-transformation">Word Transformation</option>
+<option value="closed-gap-filling">Closed Gap Filling</option>
+<option value="free-gap-filling">Use of English Free Gap Filling</option>
+<option value="multiple-choice">Use of English Multiple Choice</option>
+<option value="sentence-transformation">Sentence Transformation</option>
+<option value="error-correction">Error Detection</option>
+<option value="jumbled-up-sentences">Jumbled-Up Sentences</option>
+
+      </select>
+</div>
+<div> 
+      <label for="topic">Topic:</label>
+      <select id="topic" name="topic">
+        <option value="">All</option>
+        <option value="family">Family</option>
+        <option value="society">Society</option>
+        <option value="environment">Environment</option>
+        <option value="school">School</option>
+        <option value="work">Work</option>
+        <option value="lifestyle">Lifestyle</option>
+        <option value="culture">Culture</option>
+        <option value="travel">Travel</option>
+        <option value="science">Science</option>
+        <option value="economy">Economy</option>
+      </select>
+</div>
+    </div>
+
+
+</div>
+
+<div id="search-results"></div>
+
+<script>
+
+searchInput = document.querySelector(".search-input")
+
+urlParams = new URLSearchParams(window.location.search);
+
+query = urlParams.get('q') || "";
+
+searchInput.value = query
+
+advancedSearchTitle = document.getElementById("advanced-search-title");
+advancedSearchContainer = document.querySelector(".advanced-search-container");
+
+advancedSearchTitle.addEventListener("click", function() {
+  if (advancedSearchContainer.style.display === "flex") {
+    advancedSearchContainer.style.display = "none";
+  } else {
+    advancedSearchContainer.style.display = "flex";
+  }
+});
+
+searchInput.addEventListener("focus",function() {
+searchInput.scrollIntoView({ behavior: "smooth" })
+})
+
+searchForm = document.querySelector(".search-form")
+
+searchForm.addEventListener("submit",function(event) {
+event.preventDefault();
+searchKeywords()
+})
+
+searchButton = document.querySelector(".search-button")
+
+searchButton.addEventListener("click",function(event) {
+event.preventDefault();
+searchKeywords()
+})
+
+function stripHTML(html) {
+    var doc = new DOMParser().parseFromString(html, 'text/html');
+    return doc.body.textContent || "";
+}
+
+function getContext(item, keywords) {
+    const contextFields = ['textTitle', 'example', 'text', 'text2'];
+    let context = "";
+
+    for (let field of contextFields) {
+        const text = stripHTML(item[field] || "").toLowerCase();
+        const index = text.indexOf(keywords);
+
+        if (index !== -1) {
+            const before = text.slice(Math.max(index - 60, 0), index);
+            const after = text.slice(index + keywords.length, index + keywords.length + 5);
+            context = `...${before}<strong>${keywords}</strong>${after}...`;
+            break;
+        }
+    }
+    
+    return context || "No context found.";
+}
+
+function searchKeywords() {
+
+keywords = searchInput.value.trim().toLowerCase()
+
+level = urlParams.get('level') || document.getElementById("level").value;
+year = urlParams.get('year') || document.getElementById("year").value;
+part = urlParams.get('part') || document.getElementById("part").value;
+taskType = urlParams.get('type') || document.getElementById("task-type").value;
+topic = urlParams.get('topic') || document.getElementById("topic").value;
+
+if (keywords) {
+
+	fetch("/erettsegi/data.json").then((response, id) => {
+        return response.json()
+    }).then((data) => {
+        taskProperties = data
+   
+
+    filteredData = taskProperties.filter(item => {
+        fields = ['textTitle', 'example', 'text', 'text2'];
+        return fields.some(field => {
+            const text = stripHTML(item[field] || "").toLowerCase();
+            return text.includes(keywords);
+        });
+    });
+
+   	filteredResults = filteredData.filter(item => {
+
+itemLevel = item.taskId.split("-")[0]
+
+itemYear = item.taskId.split("-")[1]
+
+itemPart = item.taskId.split("-")[2]
+
+        return (
+            (!level || itemLevel === level) &&
+            (!year || itemYear === year) &&
+            (!part || itemPart === part) &&
+            (!taskType || item.type === taskType) &&
+            (!topic || item.tags.includes(topic))
+        );
+    });
+
+    resultsContainer = document.getElementById('search-results');
+    resultsContainer.innerHTML = ""
+
+
+numberOfResults = filteredResults.length
+plural = numberOfResults > 1 ? "s" : ""
+resultsContainer.innerHTML += ("<p style='color:gray;font-size:small'>" + numberOfResults + " result" + plural + "</p>")
+
+    filteredResults.forEach(item => {
+        context = getContext(item, keywords);
+
+link = item.taskId.split("-").slice(0, -1).concat(item.taskId.split("-").slice(-2).join("-")).join("/");
+
+        resultHTML = `
+            <div class="search-result">
+                <h3><a target='_blank' href='${link}'>${item.taskId.replaceAll("-"," / ").replace("reading","olvasott szöveg értése").replace("uoe","nyelvhelyesség").replace("standard","közép").replace("higher","emelt")}</a></h3>
+                <p>Title: ${item.textTitle}</p>
+                <p>Type: ${item.type}</p>
+                <p>${context}</p>
+            </div>
+        `;
+        resultsContainer.innerHTML += resultHTML;
+    });
+
+ })
+
+}
+
+}
+
+document.querySelectorAll('select').forEach(select => {
+    select.addEventListener('change', searchKeywords);
+});
+
+searchKeywords()
+
+</script> 
+        <ul class="erettsegi-list">
+            
+   
+        </ul>
+    </div>
+        </div>
+        
+        
+    </div>
+</body>
+
+</html>

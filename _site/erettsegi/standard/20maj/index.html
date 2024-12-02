@@ -79,7 +79,7 @@
         </script>
         <div id="content-container">
             <h1 id="page-title"></h1>
-                <div>
+                <div class="erettsegi-page">
 
 
 <h1>érettségi / közép / 20maj</h1>
@@ -327,7 +327,10 @@ window.open(link,"_self")
         
             <a href="/erettsegi/standard/20maj/reading/"><li>
         
+
+        
                      olvasott szöveg értése
+        
                 </li></a>
         
     
@@ -348,7 +351,10 @@ window.open(link,"_self")
         
             <a href="/erettsegi/standard/20maj/uoe/"><li>
         
+
+        
                      nyelvhelyesség
+        
                 </li></a>
         
     
@@ -375,7 +381,7 @@ window.open(link,"_self")
 <div class="search-bar-container">
     <form class="search-form">
         <input type="text" placeholder="Search 600 tasks using keywords" class="search-input">
-        <button type="submit" class="search-button">
+        <button type="button" class="search-button">
             <i class="fa fa-search"></i>
         </button>
     </form>
@@ -388,9 +394,33 @@ window.open(link,"_self")
 searchInput = document.querySelector(".search-input")
 
 searchInput.addEventListener("focus",function() {
+searchInput.scrollIntoView({ behavior: "smooth" })
+})
 
-searchInput.scrollIntoView({behavior:"smooth"})
+function searchKeywords() {
 
+keywords = searchInput.value.trim().toLowerCase()
+
+if(keywords) {
+searchUrl = "/erettsegi/search?q=" + encodeURIComponent(keywords)
+window.open(searchUrl, "_blank")     
+}
+
+
+}
+
+searchForm = document.querySelector(".search-form")
+
+searchForm.addEventListener("submit",function(event) {
+event.preventDefault();
+searchKeywords()
+})
+
+searchButton = document.querySelector(".search-button")
+
+searchButton.addEventListener("click",function(event) {
+event.preventDefault();
+searchKeywords()
 })
 
 </script>
