@@ -85,9 +85,16 @@
             {{ content }}
         </div>
         {% assign depth = page.path | split: "/" | size | plus: 1 %}
-        {% if page.path contains "erettsegi" and depth > 3 %}
+        {% if page.path contains "erettsegi" %}
+        {% unless page.path contains "search" %}
+        {% if depth < 4 %}
+            {% assign question = "What are you searching for?" %}
+        {% else %}
+            {% assign question = "Still haven't found what you were looking for?" %}
+        {% endif %}
         {% include erettsegi-footer.html %}
         {{ erettsegi-footer }}
+        {% endunless %}
         {% endif %}
     </div>
 </body>

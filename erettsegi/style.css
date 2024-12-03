@@ -132,7 +132,7 @@ padding: 1em 0.5em;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    flex: 0 1 40%;
+    flex: 1 1 40%;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
@@ -858,7 +858,7 @@ hr.erettsegi-line {
     overflow: hidden;
     background-color: #fff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: calc(100% - 2em);
+    width: 100%;
 }
 
 .search-input {
@@ -869,6 +869,7 @@ hr.erettsegi-line {
     outline: none;
     flex-grow: 1;
     border-radius: 0;
+    width: 100%;
 }
 
 .search-button {
@@ -908,7 +909,7 @@ flex-wrap: wrap;
   margin: 0 auto;
 }
 
-.advanced-search-container div {
+.advanced-search-container div:not(.reset-filters) {
     flex: 1 1 auto;
 }
 
@@ -977,4 +978,33 @@ flex-wrap: wrap;
 .search-result p {
     color: #555;
     margin-top: 0.3em;
+}
+
+.reset-filters {
+    flex: 1 1 100%;
+    margin: 0.5em 0 0 0;
+}
+
+#reset-filters-button {
+    background-color: #e8e8e8;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+    padding: 0.5em 1em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: inherit;
+    height: -webkit-fill-available;
+}
+
+#reset-filters-button:hover {
+    background-color: #d0cece;
+    border-color: #999;
+}
+
+#reset-filters-button:active {
+    background-color: #d1d1d1;
+    border-color: #888;
 }

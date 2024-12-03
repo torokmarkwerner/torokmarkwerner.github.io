@@ -1,1 +1,13 @@
-{% assign years = "05maj,05nov,06feb,06maj,06okt,07maj,07okt,08maj,08okt,09maj,09okt,10maj,10okt,11maj,11okt,12maj,12okt,13maj,13okt,14maj,14okt,15maj,15okt,16maj,16okt,17maj,17okt,18maj,18okt,19maj,19okt,20maj,20okt,21maj,21okt,22maj,22okt,23maj,23okt,24maj,24okt" | split: "," %}
+{% assign yearsInStandard = site.pages | where_exp: "item" , "item.url contains '/erettsegi/standard/'" | sort: "path" | reverse %}
+
+{% assign yearsList = "" %}
+
+{% for year in yearsInStandard %}
+    {% assign depth = year.path | split: "/" | size %}
+    {% if depth == 3 %}
+        {% assign yearsList = yearsList | append: year.name | replace: ".html", "" | append: "," %} 
+    {% endif %}
+{% endfor %}
+
+{% assign trimmedList = yearsList | slice: 0, yearsList.size - 1 %}
+{% assign years = trimmedList | split: "," %}

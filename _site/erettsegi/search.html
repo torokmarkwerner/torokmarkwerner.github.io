@@ -115,93 +115,99 @@
       </select>
 </div>
 
+
+
+
+
+
+
+
+
 <div> 
       <label for="year">Year:</label>
 
       <select id="year" name="year">
         <option value="">All</option>
   		
-        <option value="05maj">05maj</option>
-        
-        <option value="05nov">05nov</option>
-        
-        <option value="06feb">06feb</option>
-        
-        <option value="06maj">06maj</option>
-        
-        <option value="06okt">06okt</option>
-        
-        <option value="07maj">07maj</option>
-        
-        <option value="07okt">07okt</option>
-        
-        <option value="08maj">08maj</option>
-        
-        <option value="08okt">08okt</option>
-        
-        <option value="09maj">09maj</option>
-        
-        <option value="09okt">09okt</option>
-        
-        <option value="10maj">10maj</option>
-        
-        <option value="10okt">10okt</option>
-        
-        <option value="11maj">11maj</option>
-        
-        <option value="11okt">11okt</option>
-        
-        <option value="12maj">12maj</option>
-        
-        <option value="12okt">12okt</option>
-        
-        <option value="13maj">13maj</option>
-        
-        <option value="13okt">13okt</option>
-        
-        <option value="14maj">14maj</option>
-        
-        <option value="14okt">14okt</option>
-        
-        <option value="15maj">15maj</option>
-        
-        <option value="15okt">15okt</option>
-        
-        <option value="16maj">16maj</option>
-        
-        <option value="16okt">16okt</option>
-        
-        <option value="17maj">17maj</option>
-        
-        <option value="17okt">17okt</option>
-        
-        <option value="18maj">18maj</option>
-        
-        <option value="18okt">18okt</option>
-        
-        <option value="19maj">19maj</option>
-        
-        <option value="19okt">19okt</option>
-        
-        <option value="20maj">20maj</option>
-        
-        <option value="20okt">20okt</option>
-        
-        <option value="21maj">21maj</option>
-        
-        <option value="21okt">21okt</option>
-        
-        <option value="22maj">22maj</option>
-        
-        <option value="22okt">22okt</option>
-        
-        <option value="23maj">23maj</option>
+        <option value="24maj">24maj</option>
         
         <option value="23okt">23okt</option>
         
-        <option value="24maj">24maj</option>
+        <option value="23maj">23maj</option>
         
-        <option value="24okt">24okt</option>
+        <option value="22okt">22okt</option>
+        
+        <option value="22maj">22maj</option>
+        
+        <option value="21okt">21okt</option>
+        
+        <option value="21maj">21maj</option>
+        
+        <option value="20okt">20okt</option>
+        
+        <option value="20maj">20maj</option>
+        
+        <option value="19okt">19okt</option>
+        
+        <option value="19maj">19maj</option>
+        
+        <option value="18okt">18okt</option>
+        
+        <option value="18maj">18maj</option>
+        
+        <option value="17okt">17okt</option>
+        
+        <option value="17maj">17maj</option>
+        
+        <option value="16okt">16okt</option>
+        
+        <option value="16maj">16maj</option>
+        
+        <option value="15okt">15okt</option>
+        
+        <option value="15maj">15maj</option>
+        
+        <option value="14okt">14okt</option>
+        
+        <option value="14maj">14maj</option>
+        
+        <option value="13okt">13okt</option>
+        
+        <option value="13maj">13maj</option>
+        
+        <option value="12okt">12okt</option>
+        
+        <option value="12maj">12maj</option>
+        
+        <option value="11okt">11okt</option>
+        
+        <option value="11maj">11maj</option>
+        
+        <option value="10okt">10okt</option>
+        
+        <option value="10maj">10maj</option>
+        
+        <option value="09okt">09okt</option>
+        
+        <option value="09maj">09maj</option>
+        
+        <option value="08okt">08okt</option>
+        
+        <option value="08maj">08maj</option>
+        
+        <option value="07okt">07okt</option>
+        
+        <option value="07maj">07maj</option>
+        
+        <option value="06okt">06okt</option>
+        
+        <option value="06maj">06maj</option>
+        
+        <option value="06feb">06feb</option>
+        
+        <option value="05nov">05nov</option>
+        
+        <option value="05maj">05maj</option>
         
       </select>
 </div>
@@ -255,6 +261,11 @@
         <option value="economy">Economy</option>
       </select>
 </div>
+
+<div class="reset-filters">
+    <button type="button" id="reset-filters-button">Reset Filters</button>
+</div>
+
     </div>
 
 
@@ -264,13 +275,27 @@
 
 <script>
 
-searchInput = document.querySelector(".search-input")
+searchInput = document.querySelector(".search-input");
+advancedSearchContainer = document.querySelector(".advanced-search-container");
+advancedSearchTitle = document.getElementById("advanced-search-title");
+searchForm = document.querySelector(".search-form");
+searchButton = document.querySelector(".search-button");
+resultsContainer = document.getElementById('search-results');
+
+levelSelect = document.getElementById("level");
+yearSelect = document.getElementById("year");
+partSelect = document.getElementById("part");
+taskTypeSelect = document.getElementById("task-type");
+topicSelect = document.getElementById("topic");
 
 urlParams = new URLSearchParams(window.location.search);
 
-query = urlParams.get('q') || "";
-
-searchInput.value = query
+searchInput.value = urlParams.get('q') || "";
+levelSelect.value = urlParams.get('level') || "";
+yearSelect.value = urlParams.get('year') || "";
+partSelect.value = urlParams.get('part') || "";
+taskTypeSelect.value = urlParams.get('type') || "";
+topicSelect.value = urlParams.get('topic') || "";
 
 advancedSearchTitle = document.getElementById("advanced-search-title");
 advancedSearchContainer = document.querySelector(".advanced-search-container");
@@ -302,24 +327,44 @@ searchKeywords()
 })
 
 function stripHTML(html) {
-    var doc = new DOMParser().parseFromString(html, 'text/html');
-    return doc.body.textContent || "";
+    tagRemoved = html.replace(/<\/?[^>]+(>|$)/g, ' ');
+    
+    cleaned = tagRemoved.replace(/\s+/g, ' ').trim();
+    
+    return cleaned;
 }
 
+
 function getContext(item, keywords) {
-    const contextFields = ['textTitle', 'example', 'text', 'text2'];
+    contextFields = ['textTitle', 'example', 'text', 'text2'];
     let context = "";
 
     for (let field of contextFields) {
-        const text = stripHTML(item[field] || "").toLowerCase();
-        const index = text.indexOf(keywords);
+        text = stripHTML(item[field] || "").toLowerCase();
+        index = text.indexOf(keywords);
 
-        if (index !== -1) {
-            const before = text.slice(Math.max(index - 60, 0), index);
-            const after = text.slice(index + keywords.length, index + keywords.length + 5);
-            context = `...${before}<strong>${keywords}</strong>${after}...`;
-            break;
-        }
+if (index !== -1) {
+
+textWithUppercase = stripHTML(item[field] || "");
+
+    let startBefore = index - 50;
+    let endAfter = index + keywords.length + 50;
+
+    while (startBefore > 0 && text[startBefore - 1] !== ' ') {
+        startBefore--;
+    }
+
+    while (endAfter < text.length && text[endAfter] !== ' ') {
+        endAfter++;
+    }
+
+    let before = textWithUppercase.slice(startBefore, index);
+    let keywordsInContext = textWithUppercase.slice(index, index + keywords.length)
+    let after = textWithUppercase.slice(index + keywords.length, endAfter);
+
+    context = `... ${before}<strong>${keywordsInContext}</strong>${after} ...`;
+    break;
+}
     }
     
     return context || "No context found.";
@@ -327,15 +372,27 @@ function getContext(item, keywords) {
 
 function searchKeywords() {
 
-keywords = searchInput.value.trim().toLowerCase()
+    keywords = searchInput.value.trim().toLowerCase();
+    level = levelSelect.value;
+    year = yearSelect.value;
+    part = partSelect.value;
+    taskType = taskTypeSelect.value;
+    topic = topicSelect.value;
 
-level = urlParams.get('level') || document.getElementById("level").value;
-year = urlParams.get('year') || document.getElementById("year").value;
-part = urlParams.get('part') || document.getElementById("part").value;
-taskType = urlParams.get('type') || document.getElementById("task-type").value;
-topic = urlParams.get('topic') || document.getElementById("topic").value;
+    
+if (keywords || level || year || part || taskType || topic) {
 
-if (keywords) {
+    params = new URLSearchParams();
+    if (keywords) params.set('q', keywords);
+    if (level) params.set('level', level);
+    if (year) params.set('year', year);
+    if (part) params.set('part', part);
+    if (taskType) params.set('type', taskType);
+    if (topic) params.set('topic', topic);
+
+
+    newUrl = `${window.location.pathname}?${params.toString()}`;
+    history.replaceState(null, '', newUrl);
 
 	fetch("/erettsegi/data.json").then((response, id) => {
         return response.json()
@@ -346,7 +403,7 @@ if (keywords) {
     filteredData = taskProperties.filter(item => {
         fields = ['textTitle', 'example', 'text', 'text2'];
         return fields.some(field => {
-            const text = stripHTML(item[field] || "").toLowerCase();
+            text = stripHTML(item[field] || "").toLowerCase();
             return text.includes(keywords);
         });
     });
@@ -402,6 +459,20 @@ document.querySelectorAll('select').forEach(select => {
     select.addEventListener('change', searchKeywords);
 });
 
+document.getElementById('reset-filters-button').addEventListener('click', function() {
+    levelSelect.value = "";
+    yearSelect.value = "";
+    partSelect.value = "";
+    taskTypeSelect.value = "";
+    topicSelect.value = "";
+
+    params = new URLSearchParams();
+    history.replaceState(null, '', `${window.location.pathname}?${params.toString()}`);
+
+    searchKeywords();
+});
+
+
 searchKeywords()
 
 </script> 
@@ -411,6 +482,8 @@ searchKeywords()
         </ul>
     </div>
         </div>
+        
+        
         
         
     </div>

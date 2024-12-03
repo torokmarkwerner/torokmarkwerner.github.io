@@ -122,69 +122,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <h2 class="erettsegi-title">
 	<span>érettségi / </span>
 
@@ -197,87 +134,85 @@
  / 
 <select id="year"> 
         
-        <option value="05maj" >05maj</option>
-        
-        <option value="05nov" >05nov</option>
-        
-        <option value="06feb" >06feb</option>
-        
-        <option value="06maj" >06maj</option>
-        
-        <option value="06okt" >06okt</option>
-        
-        <option value="07maj" >07maj</option>
-        
-        <option value="07okt" >07okt</option>
-        
-        <option value="08maj" >08maj</option>
-        
-        <option value="08okt" >08okt</option>
-        
-        <option value="09maj" >09maj</option>
-        
-        <option value="09okt" >09okt</option>
-        
-        <option value="10maj" >10maj</option>
-        
-        <option value="10okt" >10okt</option>
-        
-        <option value="11maj" >11maj</option>
-        
-        <option value="11okt" >11okt</option>
-        
-        <option value="12maj" >12maj</option>
-        
-        <option value="12okt" >12okt</option>
-        
-        <option value="13maj" >13maj</option>
-        
-        <option value="13okt" >13okt</option>
-        
-        <option value="14maj" >14maj</option>
-        
-        <option value="14okt" >14okt</option>
-        
-        <option value="15maj" >15maj</option>
-        
-        <option value="15okt" >15okt</option>
-        
-        <option value="16maj" >16maj</option>
-        
-        <option value="16okt" >16okt</option>
-        
-        <option value="17maj" >17maj</option>
-        
-        <option value="17okt" >17okt</option>
-        
-        <option value="18maj" >18maj</option>
-        
-        <option value="18okt" >18okt</option>
-        
-        <option value="19maj" >19maj</option>
-        
-        <option value="19okt" >19okt</option>
-        
-        <option value="20maj" >20maj</option>
-        
-        <option value="20okt" >20okt</option>
-        
-        <option value="21maj" >21maj</option>
-        
-        <option value="21okt" >21okt</option>
-        
-        <option value="22maj" >22maj</option>
-        
-        <option value="22okt" >22okt</option>
-        
-        <option value="23maj"  selected >23maj</option>
+        <option value="24maj" >24maj</option>
         
         <option value="23okt" >23okt</option>
         
-        <option value="24maj" >24maj</option>
+        <option value="23maj"  selected >23maj</option>
         
-        <option value="24okt" >24okt</option>
+        <option value="22okt" >22okt</option>
+        
+        <option value="22maj" >22maj</option>
+        
+        <option value="21okt" >21okt</option>
+        
+        <option value="21maj" >21maj</option>
+        
+        <option value="20okt" >20okt</option>
+        
+        <option value="20maj" >20maj</option>
+        
+        <option value="19okt" >19okt</option>
+        
+        <option value="19maj" >19maj</option>
+        
+        <option value="18okt" >18okt</option>
+        
+        <option value="18maj" >18maj</option>
+        
+        <option value="17okt" >17okt</option>
+        
+        <option value="17maj" >17maj</option>
+        
+        <option value="16okt" >16okt</option>
+        
+        <option value="16maj" >16maj</option>
+        
+        <option value="15okt" >15okt</option>
+        
+        <option value="15maj" >15maj</option>
+        
+        <option value="14okt" >14okt</option>
+        
+        <option value="14maj" >14maj</option>
+        
+        <option value="13okt" >13okt</option>
+        
+        <option value="13maj" >13maj</option>
+        
+        <option value="12okt" >12okt</option>
+        
+        <option value="12maj" >12maj</option>
+        
+        <option value="11okt" >11okt</option>
+        
+        <option value="11maj" >11maj</option>
+        
+        <option value="10okt" >10okt</option>
+        
+        <option value="10maj" >10maj</option>
+        
+        <option value="09okt" >09okt</option>
+        
+        <option value="09maj" >09maj</option>
+        
+        <option value="08okt" >08okt</option>
+        
+        <option value="08maj" >08maj</option>
+        
+        <option value="07okt" >07okt</option>
+        
+        <option value="07maj" >07maj</option>
+        
+        <option value="06okt" >06okt</option>
+        
+        <option value="06maj" >06maj</option>
+        
+        <option value="06feb" >06feb</option>
+        
+        <option value="05nov" >05nov</option>
+        
+        <option value="05maj" >05maj</option>
         
         </select>
 
@@ -292,12 +227,12 @@
 
 
 
-
  / 
 <select id="task">
             
 
 
+<option value="" >1-4</option>
 
 
 <option value="1" >1</option>
@@ -312,8 +247,6 @@
 <option value="4"  selected >4</option>
 
 </select>
-
-
 
 </h2>
 
@@ -333,7 +266,7 @@ year = data[1].value
 
 part = data[2].value
 
-task = data[3] ? ("/" + part + "-" + data[3].value + ".html") : ""
+task = data[3].value != "" ? ("/" + part + "-" + data[3].value + ".html") : ""
 
 link = "/erettsegi/" + level + "/" + year + "/" + part + task
 
@@ -365,6 +298,8 @@ createTask("higher-23maj-uoe-4");
 
 </script>
         </div>
+        
+        
         
         
         <div id="erettsegi-footer">
@@ -422,6 +357,7 @@ searchKeywords()
 
 
 
+        
         
         
     </div>

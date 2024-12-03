@@ -79,7 +79,6 @@
 
 {% endif %}
 
-{% if task %}
  / 
 <select id="task">
             
@@ -89,13 +88,12 @@
 {% assign lastIndexOfTasks = 4 %}
 {% endif %}
 
+<option value="" {% unless task %} selected {% endunless %}>1-{{ lastIndexOfTasks }}</option>
 {% for i in (1..lastIndexOfTasks) %}
 {% assign i_str = i | append: "" %}
 <option value="{{ i }}" {% if task == i_str %} selected {% endif %}>{{ i }}</option>
 {% endfor %}
 </select>
-
-{% endif %}
 
 </h2>
 
@@ -115,7 +113,7 @@ year = data[1].value
 
 part = data[2].value
 
-task = data[3] ? ("/" + part + "-" + data[3].value + ".html") : ""
+task = data[3].value != "" ? ("/" + part + "-" + data[3].value + ".html") : ""
 
 link = "/erettsegi/" + level + "/" + year + "/" + part + task
 
