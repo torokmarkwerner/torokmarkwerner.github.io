@@ -8,39 +8,43 @@ layout: default
     {{ ert }} min{% if ert != 1 %}s{% endif %}
 </span></p>
 <div style="margin-block-start: 1em;margin-block-end: 1em;">
-    {% if page.language == "en" %}
-    <div class="language"><a class="tag-name" style="color:black" href="/tag/{{ page.language }}"><img src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg" alt="EN" /></a></div>
+  
+  {% assign tags_hu = page.tags_hu | split: " " %}
+
+ <div class="tag-list">
+
+    {% if post.language == "en" %}
+    <div><a class="tag-name" href="/tag/{{ post.language }}">English</a></div>
     {% else %}
-   <div class="language"><a class="tag-name" style="color:black" href="/tag/{{ page.language }}"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Flag_of_Hungary.svg/1280px-Flag_of_Hungary.svg.png" alt="HU" /></a></div>
+   <div><a class="tag-name" href="/tag/{{ post.language }}">magyar</a></div>
     {% endif %}
 
-  {% assign tags_hu = page.tags_hu | split: " " %}
   {% for tag in page.tags %}
     {% capture tag_name %}{{ tag }}{% endcapture %}
-    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/{{ tag_name }}">{% if page.language == "hu" %}{{ tags_hu[forloop.index0] | upcase }}{% else %}{{ tag_name | upcase }}{% endif %}</a>] </div>
+    <div>
+      <a class="tag-name" href="/tag/{{ tag_name }}">{% if post.language == "hu" %}{{ tags_hu[forloop.index0] }}{% else %}{{ tag_name }}{% endif %}</a>
+    </div>
   {% endfor %}
 </div>
+
 {% if page.tags contains "movies" %}  
-  <div id="rating-container2">
-  <div style="text-align:center;background-color:lightgoldenrodyellow;padding:0.5em">
-  <b style="font-size:150%;">{{ page.score }}</b>/5
+
+<div id="star-rating-container">
+  <div id="star-display">
+    {% for i in (1..5) %}
+      {% if i <= page.score %}
+        <span class="filled-stars">★</span> <!-- Filled star -->
+      {% else %}
+        <span class="empty-stars">★</span> <!-- Empty star -->
+      {% endif %}
+    {% endfor %}
   </div>
-  <div id="rating-container">
-  <div id="rating-basic-stars">★★★★★</div>
-  <div id="rating-rating" style="--rate:{{ page.score }}">★★★★★</div>
+  <div id="rating-score">
+    {{ page.onewordsummary }}
   </div>
-  </div>
+</div>
 {% endif %}
 {{ content }}
-<hr>
-
-<div style="font-size:150%;font-weight:bold;font-variant:all-petite-caps;padding:5px 10px;">
-  {% if page.language == "en" %}
-    Comments
-  {% else %}
-    Hozzászólások
-  {% endif %}
-</div>
 
 <script>
 pages = document.getElementsByClassName("pages-button");
@@ -52,82 +56,34 @@ for (i=0; i<pages.length; i++) {
   }
 }
 </script>
-<style>
-.post-comment-number {
-  font-size:110%;
-  font-weight: bold;
-  padding:1em;
-}
-.post-comment {
- clear:right;
- padding-left:1em;
- max-width:100%;
-}
-.post-comment-content, .post-comment-header, .reply-button-container {
-  padding:1em
-}
-.post-comment-date {
-  color:gray;
-}
-.post-comment-name {
-  font-weight:bold;
-  padding-right:0.5em;
-}
-.reply-button, .submit-button {
- border:none;
- background-color: antiquewhite;
- padding:0.6em;
- font-size: 90%;
- font-variant: all-petite-caps;
- cursor: pointer;
-}
-.reply-button:hover, .submit-button:hover {
- opacity:0.9
-}
-#comment-section input[type=text], textarea {
-padding:0.5em;
-font-family:inherit;
-font-size:100%;
-box-sizing: border-box;
-}
-#comment-section input[type=checkbox] {
-min-height:20px;
-min-width:20px
-}
-#comment-section label {
-  font-size: clamp(0.5em, 2.5vw, 1.5em);
-}
-.comment-form-container {
-  padding:1em 10% 1em 1em;
-}
-.leave-a-comment1:hover {
-  text-decoration: underline;
-  cursor:pointer;
-  color:blue
-}
-</style>
+
 <div id="comment-section">
-<button id="recaptcha" style="display:none" class="g-recaptcha" data-sitekey="6Ld802sgAAAAABSZiOb1YDO0ApjEkmx4PNVh03tM" data-callback="onSubmit">
-</button>
-<div style="min-width:fit-content;max-width:50vw;padding-right:10%" id="demo">
+  <button id="recaptcha" class="g-recaptcha" data-sitekey="6Ld802sgAAAAABSZiOb1YDO0ApjEkmx4PNVh03tM" data-callback="onSubmit" style="display:none"></button>
+  
+  <div id="demo" class="comment-number-display"></div>
+
+  <div id="leave-a-comment" class="leave-a-comment">
+    {% if page.language == 'en' %}Leave a comment{% else %}Hozzászólás írása{% endif %}
+  </div>
+
+  <div class="comment-form-container">
+          <div class="input-cell">
+            <input type="text" class="name-input" placeholder="{% if page.language == 'en' %}Name{% else %}Név{% endif %}">
+          </div>
+            <div class="robot-check" style="display:none">
+              <input type="checkbox">
+              <label>{% if page.language == 'en' %}I <i>am</i> a robot.{% else %}<i>Robot</i> vagyok.{% endif %}</label>
+            </div>
+          <div>
+            <textarea class="comment-textarea" placeholder="{% if page.language == 'en' %}Write your comment here{% else %}Hozzászólás szövege{% endif %}"></textarea>
+          </div>
+            <div class="submit-container">
+              <button class="submit-button">
+                {% if page.language == 'en' %}Submit{% else %}Küldés{% endif %}
+              </button>
+            </div>
 </div>
 
-<div id="leave-a-comment" style="padding: 0em 1em;font-size: 110%;font-weight: bold;">{% if page.language == 'en' %}Leave a comment{% else %}Hozzászólás írása{% endif %}</div>
-<div class="comment-form-container" style="min-width:fit-content;max-width:50vw;">
-<table style="width:100%"><tbody>
-<tr><td style="width:50%"><div style="width:100%"><input type="text" style="width:100%" placeholder="{% if page.language == 'en' %}Name{% else %}Név{% endif %}"></div></td><td style="width:50%"><div style="        display:flex;
-        align-items:center;">
-<input type="checkbox"><label>{% if page.language == 'en' %}I <i>am</i> a robot.{% else %}<i>Robot</i> vagyok.{% endif %}</label></div></td></tr>
-<tr><td colspan="2"><textarea style="width:100%;height:15vh;resize:none" placeholder="{% if page.language == 'en' %}Write your comment here{% else %}Hozzászólás szövege{% endif %}"></textarea></td></tr>
-<tr><td colspan="2"> <div style="display:flex;justify-content:flex-end;padding: 0.5em 1em 1em 0em;">
-<button class="submit-button">
-{% if page.language == 'en' %}Submit{% else %}Küldés{% endif %}
-</button>
-</div></td></tr>
- 
-  </tbody></table>
-</div>
-</div>
 <script>
 replyTo = ""
 replyToName = ""
@@ -136,13 +92,14 @@ commenterCheckBoxcheckedData = "";
 commenterCommentData = "";
   buttonData = document.getElementsByClassName("submit-button")[document.getElementsByClassName("submit-button").length-1];
   sampleForm =  document.createElement("DIV");
-  sampleForm.innerHTML = '<table style="width:100%"><tbody><tr><td style="width:50%"><div style="width:100%"><input type="text" style="width:100%" placeholder="' + "{% if page.language == 'en' %}Name{% else %}Név{% endif %}" + '"></div></td><td style="width:50%"><div style=" display:flex; align-items:center;"><input type="checkbox"><label>' + "{% if page.language == 'en' %}I <i>am</i> a robot.{% else %}<i>Robot</i> vagyok.{% endif %}" + '</label></div></td></tr><tr><td colspan="2"><textarea style="width:100%;height:15vh;resize:none" placeholder="' + "{% if page.language == 'en' %}Write your comment here{% else %}Hozzászólás szövege{% endif %}" + '"></textarea></td></tr><tr><td colspan="2"> <div style="display:flex;justify-content:flex-end;padding: 0.5em 1em 1em 0em;"><button class="submit-button">' + "{% if page.language == 'en' %}Submit{% else %}Küldés{% endif %}" + '</button></div></td></tr> </tbody></table>'
+  sampleForm.innerHTML = '<div id="leave-a-comment" class="leave-a-comment">{% if page.language == en %}Leave a comment{% else %}Hozzászólás írása{% endif %}</div><div class="comment-form-container"><div class="input-cell"><input type="text" class="name-input" placeholder="{% if page.language == en %}Name{% else %}Név{% endif %}"></div><div class="robot-check" style="display:none"><input type="checkbox"><label>{% if page.language == en %}I <i>am</i> a robot.{% else %}<i>Robot</i> vagyok.{% endif %}</label></div><div><textarea class="comment-textarea" placeholder="{% if page.language == en %}Write your comment here{% else %}Hozzászólás szövege{% endif %}"></textarea></div><div class="submit-container"><button class="submit-button">{% if page.language == en %}Submit{% else %}Küldés{% endif %}</button></div></div>'
+
 
 function submitButton(){
   document.getElementById("leave-a-comment").classList.add("leave-a-comment1");
  for (i=0; i<document.getElementsByClassName("submit-button").length; i++) {
    document.getElementsByClassName("submit-button")[i].addEventListener("click",function() {
-     container = this.parentElement.parentElement.parentElement.parentElement.parentElement;
+     container = document.getElementsByClassName("comment-form-container")[i]
     //name	comment	link	recaptcha	reply-to	reply-to-name checked
      commenterNameData = encodeURIComponent(container.getElementsByTagName("input")[0].value);
      commenterCheckBoxcheckedData = container.getElementsByTagName("input")[1].checked
@@ -151,9 +108,10 @@ function submitButton(){
      if (commenterNameData && commenterCommentData && commenterCheckBoxcheckedData != true) {
      this.disabled = true;
      document.getElementById("recaptcha").click()
+
      }
-                                                                                           });
- }
+  })
+}
 }
 
 loadXMLDoc()
@@ -163,6 +121,8 @@ submitButton()
 onSubmit = function(token){
   var xhttp = new XMLHttpRequest();
 xhttp.open("POST", "https://script.google.com/macros/s/AKfycbzkFnl2gLfM7QlU_PHOCao5zMBX_rUZqx6_0jhgu-5fdg3juuNFHY0D_MrIa0TSXNDxwQ/exec", true);
+
+console.log("hey")
 
 xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -189,7 +149,7 @@ document.getElementById("leave-a-comment").classList.remove("leave-a-comment1");
   if(container.innerText === "{% if page.language == 'en' %}Thank you, your comment will be visible after approval.{% else %}Köszönjük, hozzászólása a moderátor jóváhagyása után fog megjelenni.{% endif %}") {  
     container.innerHTML = ""
     sampleForm =  document.createElement("DIV");
-    sampleForm.innerHTML = '<table style="width:100%"><tbody><tr><td style="width:50%"><div style="width:100%"><input type="text" style="width:100%" placeholder="' + "{% if page.language == 'en' %}Name{% else %}Név{% endif %}" + '"></div></td><td style="width:50%"><div style=" display:flex; align-items:center;"><input type="checkbox"><label>' + "{% if page.language == 'en' %}I <i>am</i> a robot.{% else %}<i>Robot</i> vagyok.{% endif %}" + '</label></div></td></tr><tr><td colspan="2"><textarea style="width:100%;height:15vh;resize:none" placeholder="' + "{% if page.language == 'en' %}Write your comment here{% else %}Hozzászólás szövege{% endif %}" + '"></textarea></td></tr><tr><td colspan="2"> <div style="display:flex;justify-content:flex-end;padding: 0.5em 1em 1em 0em;"><button class="submit-button">' + "{% if page.language == 'en' %}Submit{% else %}Küldés{% endif %}" + '</button></div></td></tr> </tbody></table>'
+    sampleForm.innerHTML = '<div id="leave-a-comment" class="leave-a-comment">{% if page.language == en %}Leave a comment{% else %}Hozzászólás írása{% endif %}</div><div class="comment-form-container"><div class="input-cell"><input type="text" class="name-input" placeholder="{% if page.language == en %}Name{% else %}Név{% endif %}"></div><div class="robot-check" style="display:none"><input type="checkbox"><label>{% if page.language == en %}I <i>am</i> a robot.{% else %}<i>Robot</i> vagyok.{% endif %}</label></div><div><textarea class="comment-textarea" placeholder="{% if page.language == en %}Write your comment here{% else %}Hozzászólás szövege{% endif %}"></textarea></div><div class="submit-container"><button class="submit-button">{% if page.language == en %}Submit{% else %}Küldés{% endif %}</button></div></div>'
   container.appendChild(sampleForm)
   }
   container.style.display = "block"
@@ -301,7 +261,7 @@ document.getElementById("demo").appendChild(commentBody)
   
      this.parentElement.style.display = "block";
          sampleForm =  document.createElement("DIV");
-         sampleForm.innerHTML = '<table style="width:100%"><tbody><tr><td style="width:50%"><div style="width:100%"><input type="text" style="width:100%" placeholder="' + "{% if page.language == 'en' %}Name{% else %}Név{% endif %}" + '"></div></td><td style="width:50%"><div style=" display:flex; align-items:center;"><input type="checkbox"><label>' + "{% if page.language == 'en' %}I <i>am</i> a robot.{% else %}<i>Robot</i> vagyok.{% endif %}" + '</label></div></td></tr><tr><td colspan="2"><textarea style="width:100%;height:15vh;resize:none" placeholder="' + "{% if page.language == 'en' %}Write your comment here{% else %}Hozzászólás szövege{% endif %}" + '"></textarea></td></tr><tr><td colspan="2"> <div style="display:flex;justify-content:flex-end;padding: 0.5em 1em 1em 0em;"><button class="submit-button">' + "{% if page.language == 'en' %}Submit{% else %}Küldés{% endif %}" + '</button></div></td></tr> </tbody></table>'
+         sampleForm.innerHTML = '<div id="leave-a-comment" class="leave-a-comment">{% if page.language == en %}Leave a comment{% else %}Hozzászólás írása{% endif %}</div><div class="comment-form-container"><div class="input-cell"><input type="text" class="name-input" placeholder="{% if page.language == en %}Name{% else %}Név{% endif %}"></div><div class="robot-check" style="display:none"><input type="checkbox"><label>{% if page.language == en %}I <i>am</i> a robot.{% else %}<i>Robot</i> vagyok.{% endif %}</label></div><div><textarea class="comment-textarea" placeholder="{% if page.language == en %}Write your comment here{% else %}Hozzászólás szövege{% endif %}"></textarea></div><div class="submit-container"><button class="submit-button">{% if page.language == en %}Submit{% else %}Küldés{% endif %}</button></div></div>'
        //alert(sampleForm.innerHTML)
      this.parentElement.appendChild(sampleForm)
       
@@ -316,7 +276,6 @@ document.getElementById("demo").appendChild(commentBody)
  xhttp.send();
 }
 </script>
-<hr>
 <style>
   .related-post-title-container {
     position:absolute;

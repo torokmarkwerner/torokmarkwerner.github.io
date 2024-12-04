@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Way Forward... Ahead
+title: "The Way Forward... Ahead: The Crown, Season 5"
 published: true
 tags: the-crown movies
 score: 3.7

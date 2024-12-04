@@ -1,9 +1,10 @@
 ---
 layout: post
-title: Oh The Movies | Nosferatu the Vampyre (1979)
+title: "A Cinematic Experience: Nosferatu the Vampyre"
 published: true
 tags: movies German French vampire horror
 score: 3
+onewordsummary: "Slow. But you know: art."
 image: nosferatu-the-vampyre.jpg
 language: en
 excerpt_separator: <!--end-of-excerpt-->

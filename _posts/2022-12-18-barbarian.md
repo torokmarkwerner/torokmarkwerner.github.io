@@ -1,9 +1,10 @@
 ---
 layout: post
-title: Oh The Movies | Barbarian (2022)
+title: "Barbarian: An Airbnb Horror"
 published: true
 tags: movies American horror thriller mystery
 score: 3.5
+onewordsummary: Promising start, and then you tell me about the ending.
 image: barbarian.jpg
 language: en
 excerpt_separator: <!--end-of-excerpt-->

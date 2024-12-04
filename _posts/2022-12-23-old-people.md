@@ -1,9 +1,10 @@
 ---
 layout: post
-title: Oh The Movies | Old People (2022)
+title: "The Horror of Aging: Old People"
 published: true
 tags: movies German horror getting-old
 score: 2
+onewordsummary: Probably the worst ever.
 image: old-people.jpg
 language: en
 excerpt_separator: <!--end-of-excerpt-->

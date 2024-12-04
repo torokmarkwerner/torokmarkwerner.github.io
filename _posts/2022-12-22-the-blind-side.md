@@ -1,9 +1,10 @@
 ---
 layout: post
-title: Oh The Movies | The Blind Side (2009)
+title: The Blind Side That Has A Blind Spot
 published: true
 tags: movies American sport drama
 score: 3
+onewordsummary: Once in a lifetime. As in that is all it's got.
 image: myke-simon-cinema.jpg
 language: en
 excerpt_separator: <!--end-of-excerpt-->
@@ -20,7 +21,7 @@ On the other hand, sometimes biographies needs a little push. That's when screen
 
 *The Blind Side* is a shining example of a poorly designed biographical drama. Not only does it fail to construct a "readable" story of Michael Oher's starting of his career, it's also a trainwreck of a drama. With unbelievably flat characters, and especially stock characters (the cheerleader, the athlete etc.) in the house, it couldn't have been more difficult to introduce conflict to the story, except for Big Mike's (inner) conflict between the hood and the American Dream of WASP Land at the Tuohy's.
 
-There's <a href="https://imsdb.com/scripts/Blind-Side,-The.html#:~:text=I%27m%20pretty%20good%20at%20it." target="_blank">a  dialogue</a> in the movie that takes place between Big Mike and Mrs Tuohy, which illuminates the defects of the movie better than any words of mine. So here we go:
+There's <a href="https://imsdb.com/scripts/Blind-Side,-The.html#:~:text=I%27m%20pretty%20good%20at%20it." target="_blank">a dialogue</a> in the movie that takes place between Big Mike and Mrs Tuohy, which illuminates the defects of the movie better than any words of mine. So here we go:
 
 MRS TUOHY: I know I should have asked this a long time ago but do you even wanna play football? I mean, do you even like it?'
 

@@ -84,25 +84,38 @@
     4 mins
 </span></p>
 <div style="margin-block-start: 1em;margin-block-end: 1em;">
+  
+  
+
+ <div class="tag-list">
+
     
-    <div class="language"><a class="tag-name" style="color:black" href="/tag/en"><img src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg" alt="EN" /></a></div>
+   <div><a class="tag-name" href="/tag/">magyar</a></div>
     
 
   
+    
+    <div>
+      <a class="tag-name" href="/tag/christmas">christmas</a>
+    </div>
   
     
-    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/christmas">CHRISTMAS</a>] </div>
+    <div>
+      <a class="tag-name" href="/tag/guitar">guitar</a>
+    </div>
   
     
-    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/guitar">GUITAR</a>] </div>
+    <div>
+      <a class="tag-name" href="/tag/music">music</a>
+    </div>
   
     
-    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/music">MUSIC</a>] </div>
-  
-    
-    <div style="display:inline-block;padding: 0.5em 0;">[<a class="tag-name" href="/tag/chords">CHORDS</a>] </div>
+    <div>
+      <a class="tag-name" href="/tag/chords">chords</a>
+    </div>
   
 </div>
+
 
 <script src="/chord-player.js"></script>
 
@@ -254,13 +267,6 @@ Neely also indicates that it might be the roots of today’s popular Christmas s
 
 <p>Then again, it might just be Neely’s jazz thing. Who knows?</p>
 
-<hr>
-
-<div style="font-size:150%;font-weight:bold;font-variant:all-petite-caps;padding:5px 10px;">
-  
-    Comments
-  
-</div>
 
 <script>
 pages = document.getElementsByClassName("pages-button");
@@ -272,82 +278,34 @@ for (i=0; i<pages.length; i++) {
   }
 }
 </script>
-<style>
-.post-comment-number {
-  font-size:110%;
-  font-weight: bold;
-  padding:1em;
-}
-.post-comment {
- clear:right;
- padding-left:1em;
- max-width:100%;
-}
-.post-comment-content, .post-comment-header, .reply-button-container {
-  padding:1em
-}
-.post-comment-date {
-  color:gray;
-}
-.post-comment-name {
-  font-weight:bold;
-  padding-right:0.5em;
-}
-.reply-button, .submit-button {
- border:none;
- background-color: antiquewhite;
- padding:0.6em;
- font-size: 90%;
- font-variant: all-petite-caps;
- cursor: pointer;
-}
-.reply-button:hover, .submit-button:hover {
- opacity:0.9
-}
-#comment-section input[type=text], textarea {
-padding:0.5em;
-font-family:inherit;
-font-size:100%;
-box-sizing: border-box;
-}
-#comment-section input[type=checkbox] {
-min-height:20px;
-min-width:20px
-}
-#comment-section label {
-  font-size: clamp(0.5em, 2.5vw, 1.5em);
-}
-.comment-form-container {
-  padding:1em 10% 1em 1em;
-}
-.leave-a-comment1:hover {
-  text-decoration: underline;
-  cursor:pointer;
-  color:blue
-}
-</style>
+
 <div id="comment-section">
-<button id="recaptcha" style="display:none" class="g-recaptcha" data-sitekey="6Ld802sgAAAAABSZiOb1YDO0ApjEkmx4PNVh03tM" data-callback="onSubmit">
-</button>
-<div style="min-width:fit-content;max-width:50vw;padding-right:10%" id="demo">
+  <button id="recaptcha" class="g-recaptcha" data-sitekey="6Ld802sgAAAAABSZiOb1YDO0ApjEkmx4PNVh03tM" data-callback="onSubmit" style="display:none"></button>
+  
+  <div id="demo" class="comment-number-display"></div>
+
+  <div id="leave-a-comment" class="leave-a-comment">
+    Leave a comment
+  </div>
+
+  <div class="comment-form-container">
+          <div class="input-cell">
+            <input type="text" class="name-input" placeholder="Name">
+          </div>
+            <div class="robot-check" style="display:none">
+              <input type="checkbox">
+              <label>I <i>am</i> a robot.</label>
+            </div>
+          <div>
+            <textarea class="comment-textarea" placeholder="Write your comment here"></textarea>
+          </div>
+            <div class="submit-container">
+              <button class="submit-button">
+                Submit
+              </button>
+            </div>
 </div>
 
-<div id="leave-a-comment" style="padding: 0em 1em;font-size: 110%;font-weight: bold;">Leave a comment</div>
-<div class="comment-form-container" style="min-width:fit-content;max-width:50vw;">
-<table style="width:100%"><tbody>
-<tr><td style="width:50%"><div style="width:100%"><input type="text" style="width:100%" placeholder="Name"></div></td><td style="width:50%"><div style="        display:flex;
-        align-items:center;">
-<input type="checkbox"><label>I <i>am</i> a robot.</label></div></td></tr>
-<tr><td colspan="2"><textarea style="width:100%;height:15vh;resize:none" placeholder="Write your comment here"></textarea></td></tr>
-<tr><td colspan="2"> <div style="display:flex;justify-content:flex-end;padding: 0.5em 1em 1em 0em;">
-<button class="submit-button">
-Submit
-</button>
-</div></td></tr>
- 
-  </tbody></table>
-</div>
-</div>
 <script>
 replyTo = ""
 replyToName = ""
@@ -356,13 +314,14 @@ commenterCheckBoxcheckedData = "";
 commenterCommentData = "";
   buttonData = document.getElementsByClassName("submit-button")[document.getElementsByClassName("submit-button").length-1];
   sampleForm =  document.createElement("DIV");
-  sampleForm.innerHTML = '<table style="width:100%"><tbody><tr><td style="width:50%"><div style="width:100%"><input type="text" style="width:100%" placeholder="' + "Name" + '"></div></td><td style="width:50%"><div style=" display:flex; align-items:center;"><input type="checkbox"><label>' + "I <i>am</i> a robot." + '</label></div></td></tr><tr><td colspan="2"><textarea style="width:100%;height:15vh;resize:none" placeholder="' + "Write your comment here" + '"></textarea></td></tr><tr><td colspan="2"> <div style="display:flex;justify-content:flex-end;padding: 0.5em 1em 1em 0em;"><button class="submit-button">' + "Submit" + '</button></div></td></tr> </tbody></table>'
+  sampleForm.innerHTML = '<div id="leave-a-comment" class="leave-a-comment">Hozzászólás írása</div><div class="comment-form-container"><div class="input-cell"><input type="text" class="name-input" placeholder="Név"></div><div class="robot-check" style="display:none"><input type="checkbox"><label><i>Robot</i> vagyok.</label></div><div><textarea class="comment-textarea" placeholder="Hozzászólás szövege"></textarea></div><div class="submit-container"><button class="submit-button">Küldés</button></div></div>'
+
 
 function submitButton(){
   document.getElementById("leave-a-comment").classList.add("leave-a-comment1");
  for (i=0; i<document.getElementsByClassName("submit-button").length; i++) {
    document.getElementsByClassName("submit-button")[i].addEventListener("click",function() {
-     container = this.parentElement.parentElement.parentElement.parentElement.parentElement;
+     container = document.getElementsByClassName("comment-form-container")[i]
     //name	comment	link	recaptcha	reply-to	reply-to-name checked
      commenterNameData = encodeURIComponent(container.getElementsByTagName("input")[0].value);
      commenterCheckBoxcheckedData = container.getElementsByTagName("input")[1].checked
@@ -371,9 +330,10 @@ function submitButton(){
      if (commenterNameData && commenterCommentData && commenterCheckBoxcheckedData != true) {
      this.disabled = true;
      document.getElementById("recaptcha").click()
+
      }
-                                                                                           });
- }
+  })
+}
 }
 
 loadXMLDoc()
@@ -383,6 +343,8 @@ submitButton()
 onSubmit = function(token){
   var xhttp = new XMLHttpRequest();
 xhttp.open("POST", "https://script.google.com/macros/s/AKfycbzkFnl2gLfM7QlU_PHOCao5zMBX_rUZqx6_0jhgu-5fdg3juuNFHY0D_MrIa0TSXNDxwQ/exec", true);
+
+console.log("hey")
 
 xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -409,7 +371,7 @@ document.getElementById("leave-a-comment").classList.remove("leave-a-comment1");
   if(container.innerText === "Thank you, your comment will be visible after approval.") {  
     container.innerHTML = ""
     sampleForm =  document.createElement("DIV");
-    sampleForm.innerHTML = '<table style="width:100%"><tbody><tr><td style="width:50%"><div style="width:100%"><input type="text" style="width:100%" placeholder="' + "Name" + '"></div></td><td style="width:50%"><div style=" display:flex; align-items:center;"><input type="checkbox"><label>' + "I <i>am</i> a robot." + '</label></div></td></tr><tr><td colspan="2"><textarea style="width:100%;height:15vh;resize:none" placeholder="' + "Write your comment here" + '"></textarea></td></tr><tr><td colspan="2"> <div style="display:flex;justify-content:flex-end;padding: 0.5em 1em 1em 0em;"><button class="submit-button">' + "Submit" + '</button></div></td></tr> </tbody></table>'
+    sampleForm.innerHTML = '<div id="leave-a-comment" class="leave-a-comment">Hozzászólás írása</div><div class="comment-form-container"><div class="input-cell"><input type="text" class="name-input" placeholder="Név"></div><div class="robot-check" style="display:none"><input type="checkbox"><label><i>Robot</i> vagyok.</label></div><div><textarea class="comment-textarea" placeholder="Hozzászólás szövege"></textarea></div><div class="submit-container"><button class="submit-button">Küldés</button></div></div>'
   container.appendChild(sampleForm)
   }
   container.style.display = "block"
@@ -521,7 +483,7 @@ document.getElementById("demo").appendChild(commentBody)
   
      this.parentElement.style.display = "block";
          sampleForm =  document.createElement("DIV");
-         sampleForm.innerHTML = '<table style="width:100%"><tbody><tr><td style="width:50%"><div style="width:100%"><input type="text" style="width:100%" placeholder="' + "Name" + '"></div></td><td style="width:50%"><div style=" display:flex; align-items:center;"><input type="checkbox"><label>' + "I <i>am</i> a robot." + '</label></div></td></tr><tr><td colspan="2"><textarea style="width:100%;height:15vh;resize:none" placeholder="' + "Write your comment here" + '"></textarea></td></tr><tr><td colspan="2"> <div style="display:flex;justify-content:flex-end;padding: 0.5em 1em 1em 0em;"><button class="submit-button">' + "Submit" + '</button></div></td></tr> </tbody></table>'
+         sampleForm.innerHTML = '<div id="leave-a-comment" class="leave-a-comment">Hozzászólás írása</div><div class="comment-form-container"><div class="input-cell"><input type="text" class="name-input" placeholder="Név"></div><div class="robot-check" style="display:none"><input type="checkbox"><label><i>Robot</i> vagyok.</label></div><div><textarea class="comment-textarea" placeholder="Hozzászólás szövege"></textarea></div><div class="submit-container"><button class="submit-button">Küldés</button></div></div>'
        //alert(sampleForm.innerHTML)
      this.parentElement.appendChild(sampleForm)
       
@@ -536,7 +498,6 @@ document.getElementById("demo").appendChild(commentBody)
  xhttp.send();
 }
 </script>
-<hr>
 <style>
   .related-post-title-container {
     position:absolute;
@@ -588,7 +549,7 @@ document.getElementById("demo").appendChild(commentBody)
     
     <div style="position:relative">
     <div class="related-post-title-container">
-                <a href="/2022/12/23/van-helsing.html">Oh The Movies | Van Helsing (2004)</a></div>
+                <a href="/2022/12/23/van-helsing.html">Van Helsing: When You Can't Decide If It's A Parody</a></div>
       <div>
         <a href="/2022/12/23/van-helsing.html"><img class="related-post-image"
                      src="/assets/van-helsing.jpg"></a></div>
@@ -596,7 +557,7 @@ document.getElementById("demo").appendChild(commentBody)
     
     <div style="position:relative">
     <div class="related-post-title-container">
-                <a href="/2022/12/23/old-people.html">Oh The Movies | Old People (2022)</a></div>
+                <a href="/2022/12/23/old-people.html">The Horror of Aging: Old People</a></div>
       <div>
         <a href="/2022/12/23/old-people.html"><img class="related-post-image"
                      src="/assets/old-people.jpg"></a></div>

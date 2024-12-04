@@ -1,9 +1,10 @@
 ---
 layout: post
-title: Oh The Movies | Van Helsing (2004)
+title: "Van Helsing: When You Can't Decide If It's A Parody"
 published: true
 tags: movies American action gothic vampire horror
 score: 3
+onewordsummary: Irony?
 image: van-helsing.jpg
 language: en
 excerpt_separator: <!--end-of-excerpt-->

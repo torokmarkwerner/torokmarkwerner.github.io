@@ -1,9 +1,10 @@
 ---
 layout: post
-title: Oh The Movies | The Invocation of Enver Simaku (2018)
+title: "Please Don't You Watch It: The Invocation of Enver Simaku"
 published: true
 tags: movies Albanian Spanish horror mockumentary
 score: 1.5
+onewordsummary: If the devil were a movie.
 image: enver-simaku.jpg
 language: en
 excerpt_separator: <!--end-of-excerpt-->

@@ -1707,11 +1707,8 @@ function searchKeywords() {
 
 keywords = searchInput.value.trim().toLowerCase()
 
-if(keywords) {
-searchUrl = "/erettsegi/search?q=" + encodeURIComponent(keywords)
+searchUrl = "/erettsegi/search" + (keywords ? "?q=" + encodeURIComponent(keywords) : "")
 window.open(searchUrl, "_blank")     
-}
-
 
 }
 
