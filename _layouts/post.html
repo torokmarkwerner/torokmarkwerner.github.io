@@ -92,14 +92,14 @@ commenterCheckBoxcheckedData = "";
 commenterCommentData = "";
   buttonData = document.getElementsByClassName("submit-button")[document.getElementsByClassName("submit-button").length-1];
   sampleForm =  document.createElement("DIV");
-  sampleForm.innerHTML = '<div id="leave-a-comment" class="leave-a-comment">{% if page.language == en %}Leave a comment{% else %}Hozzászólás írása{% endif %}</div><div class="comment-form-container"><div class="input-cell"><input type="text" class="name-input" placeholder="{% if page.language == en %}Name{% else %}Név{% endif %}"></div><div class="robot-check" style="display:none"><input type="checkbox"><label>{% if page.language == en %}I <i>am</i> a robot.{% else %}<i>Robot</i> vagyok.{% endif %}</label></div><div><textarea class="comment-textarea" placeholder="{% if page.language == en %}Write your comment here{% else %}Hozzászólás szövege{% endif %}"></textarea></div><div class="submit-container"><button class="submit-button">{% if page.language == en %}Submit{% else %}Küldés{% endif %}</button></div></div>'
+  sampleForm.innerHTML = '<div id="leave-a-comment" class="leave-a-comment">{% if page.language == "en" %}Leave a comment{% else %}Hozzászólás írása{% endif %}</div><div class="comment-form-container"><div class="input-cell"><input type="text" class="name-input" placeholder="{% if page.language == "en" %}Name{% else %}Név{% endif %}"></div><div class="robot-check" style="display:none"><input type="checkbox"><label>{% if page.language == "en" %}I <i>am</i> a robot.{% else %}<i>Robot</i> vagyok.{% endif %}</label></div><div><textarea class="comment-textarea" placeholder="{% if page.language == "en" %}Write your comment here{% else %}Hozzászólás szövege{% endif %}"></textarea></div><div class="submit-container"><button class="submit-button">{% if page.language == "en" %}Submit{% else %}Küldés{% endif %}</button></div></div>'
 
 
 function submitButton(){
   document.getElementById("leave-a-comment").classList.add("leave-a-comment1");
  for (i=0; i<document.getElementsByClassName("submit-button").length; i++) {
    document.getElementsByClassName("submit-button")[i].addEventListener("click",function() {
-     container = document.getElementsByClassName("comment-form-container")[i]
+     container = this.parentElement.parentElement
     //name	comment	link	recaptcha	reply-to	reply-to-name checked
      commenterNameData = encodeURIComponent(container.getElementsByTagName("input")[0].value);
      commenterCheckBoxcheckedData = container.getElementsByTagName("input")[1].checked
@@ -149,7 +149,7 @@ document.getElementById("leave-a-comment").classList.remove("leave-a-comment1");
   if(container.innerText === "{% if page.language == 'en' %}Thank you, your comment will be visible after approval.{% else %}Köszönjük, hozzászólása a moderátor jóváhagyása után fog megjelenni.{% endif %}") {  
     container.innerHTML = ""
     sampleForm =  document.createElement("DIV");
-    sampleForm.innerHTML = '<div id="leave-a-comment" class="leave-a-comment">{% if page.language == en %}Leave a comment{% else %}Hozzászólás írása{% endif %}</div><div class="comment-form-container"><div class="input-cell"><input type="text" class="name-input" placeholder="{% if page.language == en %}Name{% else %}Név{% endif %}"></div><div class="robot-check" style="display:none"><input type="checkbox"><label>{% if page.language == en %}I <i>am</i> a robot.{% else %}<i>Robot</i> vagyok.{% endif %}</label></div><div><textarea class="comment-textarea" placeholder="{% if page.language == en %}Write your comment here{% else %}Hozzászólás szövege{% endif %}"></textarea></div><div class="submit-container"><button class="submit-button">{% if page.language == en %}Submit{% else %}Küldés{% endif %}</button></div></div>'
+    sampleForm.innerHTML = '<div id="leave-a-comment" class="leave-a-comment">{% if page.language == "en" %}Leave a comment{% else %}Hozzászólás írása{% endif %}</div><div class="comment-form-container"><div class="input-cell"><input type="text" class="name-input" placeholder="{% if page.language == "en" %}Name{% else %}Név{% endif %}"></div><div class="robot-check" style="display:none"><input type="checkbox"><label>{% if page.language == "en" %}I <i>am</i> a robot.{% else %}<i>Robot</i> vagyok.{% endif %}</label></div><div><textarea class="comment-textarea" placeholder="{% if page.language == "en" %}Write your comment here{% else %}Hozzászólás szövege{% endif %}"></textarea></div><div class="submit-container"><button class="submit-button">{% if page.language == "en" %}Submit{% else %}Küldés{% endif %}</button></div></div>'
   container.appendChild(sampleForm)
   }
   container.style.display = "block"
@@ -261,7 +261,7 @@ document.getElementById("demo").appendChild(commentBody)
   
      this.parentElement.style.display = "block";
          sampleForm =  document.createElement("DIV");
-         sampleForm.innerHTML = '<div id="leave-a-comment" class="leave-a-comment">{% if page.language == en %}Leave a comment{% else %}Hozzászólás írása{% endif %}</div><div class="comment-form-container"><div class="input-cell"><input type="text" class="name-input" placeholder="{% if page.language == en %}Name{% else %}Név{% endif %}"></div><div class="robot-check" style="display:none"><input type="checkbox"><label>{% if page.language == en %}I <i>am</i> a robot.{% else %}<i>Robot</i> vagyok.{% endif %}</label></div><div><textarea class="comment-textarea" placeholder="{% if page.language == en %}Write your comment here{% else %}Hozzászólás szövege{% endif %}"></textarea></div><div class="submit-container"><button class="submit-button">{% if page.language == en %}Submit{% else %}Küldés{% endif %}</button></div></div>'
+         sampleForm.innerHTML = '<div id="leave-a-comment" class="leave-a-comment">{% if page.language == "en" %}Leave a comment{% else %}Hozzászólás írása{% endif %}</div><div class="comment-form-container"><div class="input-cell"><input type="text" class="name-input" placeholder="{% if page.language == "en" %}Name{% else %}Név{% endif %}"></div><div class="robot-check" style="display:none"><input type="checkbox"><label>{% if page.language == "en" %}I <i>am</i> a robot.{% else %}<i>Robot</i> vagyok.{% endif %}</label></div><div><textarea class="comment-textarea" placeholder="{% if page.language == "en" %}Write your comment here{% else %}Hozzászólás szövege{% endif %}"></textarea></div><div class="submit-container"><button class="submit-button">{% if page.language == "en" %}Submit{% else %}Küldés{% endif %}</button></div></div>'
        //alert(sampleForm.innerHTML)
      this.parentElement.appendChild(sampleForm)
       
