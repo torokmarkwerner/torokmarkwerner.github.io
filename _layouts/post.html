@@ -122,8 +122,6 @@ onSubmit = function(token){
   var xhttp = new XMLHttpRequest();
 xhttp.open("POST", "https://script.google.com/macros/s/AKfycbzkFnl2gLfM7QlU_PHOCao5zMBX_rUZqx6_0jhgu-5fdg3juuNFHY0D_MrIa0TSXNDxwQ/exec", true);
 
-console.log("hey")
-
 xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
    //alert(xhttp.responseText)
