@@ -129,9 +129,9 @@ xhttp.onreadystatechange = function() {
    //alert(xhttp.responseText)
        // Typical action to be performed when the document is ready:
        if (xhttp.responseText === "Successful submission") {
-        buttonData.parentElement.parentElement.parentElement.parentElement.parentElement.innerHTML = "{% if page.language == 'en' %}Thank you, your comment will be visible after approval.{% else %}Köszönjük, hozzászólása a moderátor jóváhagyása után fog megjelenni.{% endif %}"
+        buttonData.parentElement.parentElement.innerHTML = "{% if page.language == 'en' %}Thank you, your comment will be visible after approval.{% else %}Köszönjük, hozzászólása a moderátor jóváhagyása után fog megjelenni.{% endif %}"
        } else if (xhttp.responseText != "Successful submission") {
-        buttonData.parentElement.parentElement.parentElement.parentElement.parentElement.innerHTML = "{% if page.language == 'en' %}Something went wrong. Refresh the page and try again.{% else %}Hiba történt. Frissítse az oldalt, és próbálja újra.{% endif %}"       
+        buttonData.parentElement.parentElement.innerHTML = "{% if page.language == 'en' %}Something went wrong. Refresh the page and try again.{% else %}Hiba történt. Frissítse az oldalt, és próbálja újra.{% endif %}"       
        }
     }
 };
