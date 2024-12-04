@@ -76,7 +76,7 @@
         }
         </script>
         <div id="content-container">
-            <h1 id="page-title">Ez egy para film: Egy ház, három család</h1>
+            <h1 id="page-title" class="post-title">Ez egy para film: Egy ház, három család</h1>
             <p>27 January 2022  | <span class="ert">
     <acronym title="Estimated reading time">ERT</acronym>:
     
@@ -194,6 +194,9 @@ for (i=0; i<pages.length; i++) {
 </script>
 
 <div id="comment-section">
+
+<h2 style="text-align: center">Hozzászólások</h2>
+
   <button id="recaptcha" class="g-recaptcha" data-sitekey="6Ld802sgAAAAABSZiOb1YDO0ApjEkmx4PNVh03tM" data-callback="onSubmit" style="display:none"></button>
   
   <div id="demo" class="comment-number-display"></div>
@@ -235,7 +238,7 @@ function submitButton(){
   document.getElementById("leave-a-comment").classList.add("leave-a-comment1");
  for (i=0; i<document.getElementsByClassName("submit-button").length; i++) {
    document.getElementsByClassName("submit-button")[i].addEventListener("click",function() {
-     container = document.getElementsByClassName("comment-form-container")[i]
+     container = this.parentElement.parentElement
     //name	comment	link	recaptcha	reply-to	reply-to-name checked
      commenterNameData = encodeURIComponent(container.getElementsByTagName("input")[0].value);
      commenterCheckBoxcheckedData = container.getElementsByTagName("input")[1].checked
@@ -258,16 +261,14 @@ onSubmit = function(token){
   var xhttp = new XMLHttpRequest();
 xhttp.open("POST", "https://script.google.com/macros/s/AKfycbzkFnl2gLfM7QlU_PHOCao5zMBX_rUZqx6_0jhgu-5fdg3juuNFHY0D_MrIa0TSXNDxwQ/exec", true);
 
-console.log("hey")
-
 xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
    //alert(xhttp.responseText)
        // Typical action to be performed when the document is ready:
        if (xhttp.responseText === "Successful submission") {
-        buttonData.parentElement.parentElement.parentElement.parentElement.parentElement.innerHTML = "Köszönjük, hozzászólása a moderátor jóváhagyása után fog megjelenni."
+        buttonData.parentElement.parentElement.innerHTML = "Köszönjük, hozzászólása a moderátor jóváhagyása után fog megjelenni."
        } else if (xhttp.responseText != "Successful submission") {
-        buttonData.parentElement.parentElement.parentElement.parentElement.parentElement.innerHTML = "Hiba történt. Frissítse az oldalt, és próbálja újra."       
+        buttonData.parentElement.parentElement.innerHTML = "Hiba történt. Frissítse az oldalt, és próbálja újra."       
        }
     }
 };

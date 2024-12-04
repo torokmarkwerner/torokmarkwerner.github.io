@@ -58,6 +58,9 @@ for (i=0; i<pages.length; i++) {
 </script>
 
 <div id="comment-section">
+
+<h2 style="text-align: center">{% if page.language == "en" %}Comments{% else %}Hozzászólások{% endif %}</h2>
+
   <button id="recaptcha" class="g-recaptcha" data-sitekey="6Ld802sgAAAAABSZiOb1YDO0ApjEkmx4PNVh03tM" data-callback="onSubmit" style="display:none"></button>
   
   <div id="demo" class="comment-number-display"></div>

@@ -76,7 +76,7 @@
         }
         </script>
         <div id="content-container">
-            <h1 id="page-title">Van Helsing: When You Can't Decide If It's A Parody</h1>
+            <h1 id="page-title" class="post-title">Van Helsing: When You Can't Decide If It's A Parody</h1>
             <p>23 December 2022  | <span class="ert">
     <acronym title="Estimated reading time">ERT</acronym>:
     
@@ -184,6 +184,9 @@ for (i=0; i<pages.length; i++) {
 </script>
 
 <div id="comment-section">
+
+<h2 style="text-align: center">Comments</h2>
+
   <button id="recaptcha" class="g-recaptcha" data-sitekey="6Ld802sgAAAAABSZiOb1YDO0ApjEkmx4PNVh03tM" data-callback="onSubmit" style="display:none"></button>
   
   <div id="demo" class="comment-number-display"></div>
@@ -218,14 +221,14 @@ commenterCheckBoxcheckedData = "";
 commenterCommentData = "";
   buttonData = document.getElementsByClassName("submit-button")[document.getElementsByClassName("submit-button").length-1];
   sampleForm =  document.createElement("DIV");
-  sampleForm.innerHTML = '<div id="leave-a-comment" class="leave-a-comment">Hozzászólás írása</div><div class="comment-form-container"><div class="input-cell"><input type="text" class="name-input" placeholder="Név"></div><div class="robot-check" style="display:none"><input type="checkbox"><label><i>Robot</i> vagyok.</label></div><div><textarea class="comment-textarea" placeholder="Hozzászólás szövege"></textarea></div><div class="submit-container"><button class="submit-button">Küldés</button></div></div>'
+  sampleForm.innerHTML = '<div id="leave-a-comment" class="leave-a-comment">Leave a comment</div><div class="comment-form-container"><div class="input-cell"><input type="text" class="name-input" placeholder="Name"></div><div class="robot-check" style="display:none"><input type="checkbox"><label>I <i>am</i> a robot.</label></div><div><textarea class="comment-textarea" placeholder="Write your comment here"></textarea></div><div class="submit-container"><button class="submit-button">Submit</button></div></div>'
 
 
 function submitButton(){
   document.getElementById("leave-a-comment").classList.add("leave-a-comment1");
  for (i=0; i<document.getElementsByClassName("submit-button").length; i++) {
    document.getElementsByClassName("submit-button")[i].addEventListener("click",function() {
-     container = document.getElementsByClassName("comment-form-container")[i]
+     container = this.parentElement.parentElement
     //name	comment	link	recaptcha	reply-to	reply-to-name checked
      commenterNameData = encodeURIComponent(container.getElementsByTagName("input")[0].value);
      commenterCheckBoxcheckedData = container.getElementsByTagName("input")[1].checked
@@ -248,16 +251,14 @@ onSubmit = function(token){
   var xhttp = new XMLHttpRequest();
 xhttp.open("POST", "https://script.google.com/macros/s/AKfycbzkFnl2gLfM7QlU_PHOCao5zMBX_rUZqx6_0jhgu-5fdg3juuNFHY0D_MrIa0TSXNDxwQ/exec", true);
 
-console.log("hey")
-
 xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
    //alert(xhttp.responseText)
        // Typical action to be performed when the document is ready:
        if (xhttp.responseText === "Successful submission") {
-        buttonData.parentElement.parentElement.parentElement.parentElement.parentElement.innerHTML = "Thank you, your comment will be visible after approval."
+        buttonData.parentElement.parentElement.innerHTML = "Thank you, your comment will be visible after approval."
        } else if (xhttp.responseText != "Successful submission") {
-        buttonData.parentElement.parentElement.parentElement.parentElement.parentElement.innerHTML = "Something went wrong. Refresh the page and try again."       
+        buttonData.parentElement.parentElement.innerHTML = "Something went wrong. Refresh the page and try again."       
        }
     }
 };
@@ -275,7 +276,7 @@ document.getElementById("leave-a-comment").classList.remove("leave-a-comment1");
   if(container.innerText === "Thank you, your comment will be visible after approval.") {  
     container.innerHTML = ""
     sampleForm =  document.createElement("DIV");
-    sampleForm.innerHTML = '<div id="leave-a-comment" class="leave-a-comment">Hozzászólás írása</div><div class="comment-form-container"><div class="input-cell"><input type="text" class="name-input" placeholder="Név"></div><div class="robot-check" style="display:none"><input type="checkbox"><label><i>Robot</i> vagyok.</label></div><div><textarea class="comment-textarea" placeholder="Hozzászólás szövege"></textarea></div><div class="submit-container"><button class="submit-button">Küldés</button></div></div>'
+    sampleForm.innerHTML = '<div id="leave-a-comment" class="leave-a-comment">Leave a comment</div><div class="comment-form-container"><div class="input-cell"><input type="text" class="name-input" placeholder="Name"></div><div class="robot-check" style="display:none"><input type="checkbox"><label>I <i>am</i> a robot.</label></div><div><textarea class="comment-textarea" placeholder="Write your comment here"></textarea></div><div class="submit-container"><button class="submit-button">Submit</button></div></div>'
   container.appendChild(sampleForm)
   }
   container.style.display = "block"
@@ -387,7 +388,7 @@ document.getElementById("demo").appendChild(commentBody)
   
      this.parentElement.style.display = "block";
          sampleForm =  document.createElement("DIV");
-         sampleForm.innerHTML = '<div id="leave-a-comment" class="leave-a-comment">Hozzászólás írása</div><div class="comment-form-container"><div class="input-cell"><input type="text" class="name-input" placeholder="Név"></div><div class="robot-check" style="display:none"><input type="checkbox"><label><i>Robot</i> vagyok.</label></div><div><textarea class="comment-textarea" placeholder="Hozzászólás szövege"></textarea></div><div class="submit-container"><button class="submit-button">Küldés</button></div></div>'
+         sampleForm.innerHTML = '<div id="leave-a-comment" class="leave-a-comment">Leave a comment</div><div class="comment-form-container"><div class="input-cell"><input type="text" class="name-input" placeholder="Name"></div><div class="robot-check" style="display:none"><input type="checkbox"><label>I <i>am</i> a robot.</label></div><div><textarea class="comment-textarea" placeholder="Write your comment here"></textarea></div><div class="submit-container"><button class="submit-button">Submit</button></div></div>'
        //alert(sampleForm.innerHTML)
      this.parentElement.appendChild(sampleForm)
       

@@ -87,7 +87,7 @@ summary:hover {
     margin: 1em 0;
     padding: 1em;
     text-align: center;
-    background-color: #f0f0f0;
+    background-color: #f7f7f7;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
@@ -635,3 +635,81 @@ box-sizing: border-box;
   font-weight:bold;
   padding-right:0.5em;
 }
+
+ #demo-form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  #demo-form .form-heading {
+    font-size: 24px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  #demo-form .form-description {
+    font-size: 16px;
+    text-align: center;
+    color: #666;
+    margin-bottom: 20px;
+  }
+
+  #demo-form .form-container {
+    width: 100%;
+  }
+
+  #demo-form .form-table {
+    width: 100%;
+    border-spacing: 20px;
+  }
+
+  #demo-form .form-table td {
+    width: 50%;
+  }
+
+  #demo-form .required-fields {
+    width: 100%;
+    font-size: 16px;
+    font-family: unset;
+    padding: 0.5em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    transition: border 0.3s ease;
+  }
+
+  #demo-form .required-fields:focus {
+    border-color: #66afe9;
+    outline: none;
+  }
+
+  #demo-form textarea {
+    height: 100px;
+    resize: none;
+  }
+
+  #demo-form .send-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+  }
+
+  #demo-form .send-button:hover {
+    background-color: #45a049;
+  }
+
+  #demo-form .send-button:disabled {
+    background-color: #d3d3d3;
+    cursor: not-allowed;
+  }

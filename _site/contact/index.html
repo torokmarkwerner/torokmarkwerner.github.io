@@ -76,49 +76,35 @@
         }
         </script>
         <div id="content-container">
-            <h1 id="page-title">Contact</h1>
-            <style>
-.send-button {
-  background-color:lightskyblue;
-  text-align:center;
-  border:none;
-  padding:1em;
-  font-size:100%;
-  font-weight:bold;
-  width:30%
-}
-.send-button:hover {
- background-color:palegreen;
- cursor:pointer;
-}
-</style>
-
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+            <h1 id="page-title" >Contact</h1>
+            <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <button id="recaptcha" style="display:none" class="g-recaptcha" data-sitekey="6Ld802sgAAAAABSZiOb1YDO0ApjEkmx4PNVh03tM" data-callback="onSubmit">
 </button>
 
 <div id="demo-form">
-<p>Do you have any questions?</p>
-<p>Enter your <b>name</b>, your <b>email</b>, and send me a <b>message</b>.</p>
-<div style="width:100%">
-<table style="width:100%;  border-spacing: 20px;">
-<tbody>
-<tr>
-<td><input class="required-fields" id="name" style="width:100%;box-sizing:border-box;font-size:100%;font-family: 'Calibri';height:2em;padding:0.5em" placeholder="Name">
-</td>
-<td><input class="required-fields" id="email" style="width:100%;box-sizing:border-box;font-size:100%;font-family: 'Calibri';height:2em;padding:0.5em" placeholder="Email">
-</td>
-</tr>
-<tr>
-<td colspan="2"><textarea class="required-fields" id="message" type="text" style="height:100px;width:100%;resize:none;box-sizing:border-box;font-size: 100%;font-family: &quot;Calibri&quot;, &quot;Arial&quot;, sans-serif;padding:0.5em" placeholder="Write your message here"></textarea>
-</td>
-</tr>
-</tbody></table>
+  <p>Do you have any questions?</p>
+  <p>Enter your <b>name</b>, your <b>email</b>, and send me a <b>message</b>.</p>
+  
+  <div class="form-container">
+    <table class="form-table">
+      <tbody>
+        <tr>
+          <td><input class="required-fields" id="name" placeholder="Name"></td>
+          <td><input class="required-fields" id="email" placeholder="Email"></td>
+        </tr>
+        <tr>
+          <td colspan="2"><textarea class="required-fields" id="message" placeholder="Write your message here"></textarea></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="submit-container">
+    <button id="send" class="send-button" onclick="if (document.getElementById('name').value && document.getElementById('email').value && document.getElementById('message').value) { this.disabled = true; document.getElementById('recaptcha').click() }">Send</button>
+  </div>
 </div>
-<div style="text-align:center;width:100%;padding-left:10px;padding-right:10px">
-<button id="send" class="send-button" onclick="if (document.getElementById('name').value && document.getElementById('email').value && document.getElementById('message').value) { this.disabled = true; document.getElementById('recaptcha').click() }">SEND</button>
-</div>
-</div>
+
+
 <script>
         /*function checkEmpties() {
                 fields = document.getElementsByClassName("required-fields");
