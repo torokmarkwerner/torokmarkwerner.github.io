@@ -33,7 +33,7 @@ permalink: /blog/
   {% endfor %}
 </div>
       <div class="entry">
-        {{ post.excerpt | replace: 'class="highlighted-text"','' }}
+        <p>{{ post.excerpt | replace: 'class="highlighted-text"','' | strip_html }}</p>
       </div>
 
       <a class="read-more" href="{{ site.baseurl }}{{ post.url }}">Read more</a>

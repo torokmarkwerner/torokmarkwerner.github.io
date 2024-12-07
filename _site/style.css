@@ -253,16 +253,16 @@ body {
 .post-title {
     display: inline-block;
     color: inherit;
-    background-color: #f7e8b5;
+    font-variant-caps: all-petite-caps;
+    background: lightskyblue;
     padding: 0.5em 1em;
     text-decoration: none;
-    border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
 }
 
 .post-title:hover {
-    background-color: #f3e6d7;
+    background-color: #9fd8ef;
     opacity: 1;
     transform: translateY(-2px);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
@@ -276,19 +276,17 @@ body {
 
 .tag-name {
     display: inline-block;
-    color: white;
-    background-color: #6a9955;
-    font-weight: bold;
-    text-transform: uppercase;
+    color: black;
+    background: lightgreen;
+    font-variant-caps: all-petite-caps;
     text-decoration: none;
     padding: 0.5em 1em;
     font-size: 0.9em;
-    border-radius: 3px;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .tag-name:hover {
-    background-color: #4e7c3d;
+    background-color: #32CD32;
 }
 
 .language img {
@@ -312,11 +310,10 @@ body {
 
 .read-more {
     display: inline-block;
-    text-transform: uppercase;
+    font-variant-caps: all-petite-caps;
     font-size: 0.9em;
-    font-weight: bold;
     color: white;
-    background-color: #0073e6;
+    background: dodgerblue;
     text-decoration: none;
     padding: 0.5em 1em;
     border-radius: 5px;
@@ -324,7 +321,7 @@ body {
 }
 
 .read-more:hover {
-    background-color: #005bb5;
+    background-color: #016694;
 }
 
 .fa.fa-facebook,
@@ -637,8 +634,7 @@ box-sizing: border-box;
 }
 
  #demo-form {
-    width: 100%;
-    max-width: 600px;
+    max-width: calc(100% - 40px);
     margin: 0 auto;
     padding: 20px;
     background-color: #f9f9f9;

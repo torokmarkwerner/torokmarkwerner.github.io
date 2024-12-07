@@ -96,6 +96,10 @@
 
 
 
+  <li><a href="/erettsegi/standard/24maj/reading/reading-3.html">közép / 24maj / olvasott szöveg értése / 3</a>
+  </li>
+
+
   <li><a href="/erettsegi/standard/23okt/uoe/uoe-2.html">közép / 23okt / nyelvhelyesség / 2</a>
   </li>
 
@@ -225,6 +229,14 @@
 
 
   <li><a href="/erettsegi/standard/05nov/reading/reading-1.html">közép / 05nov / olvasott szöveg értése / 1</a>
+  </li>
+
+
+  <li><a href="/erettsegi/higher/24maj/uoe/uoe-3.html">emelt / 24maj / nyelvhelyesség / 3</a>
+  </li>
+
+
+  <li><a href="/erettsegi/higher/24maj/reading/reading-2.html">emelt / 24maj / olvasott szöveg értése / 2</a>
   </li>
 
 
@@ -442,6 +454,29 @@
 </div>
 
 <script>
+
+
+if (typeof numberOfTasks === "undefined") {
+    fetch("/erettsegi/data.json").then((response, id) => {
+        return response.json()
+    }).then((data) => {
+        jsonData = data;
+const numberOfTasks = data.length
+
+answer = document.querySelector("#erettsegi-footer .answer")
+answer.innerHTML = "Search " + numberOfTasks + " tasks using keywords"
+
+search = document.querySelector("#erettsegi-footer .search-input")
+search.placeholder = "Search " + numberOfTasks + " tasks using keywords"
+})
+    
+} else {
+answer = document.querySelector("#erettsegi-footer .answer")
+answer.innerHTML = "Search " + numberOfTasks + " tasks using keywords"
+
+search = document.querySelector("#erettsegi-footer .search-input")
+search.placeholder = "Search " + numberOfTasks + " tasks using keywords"
+}
 
 searchInput = document.querySelector(".search-input")
 

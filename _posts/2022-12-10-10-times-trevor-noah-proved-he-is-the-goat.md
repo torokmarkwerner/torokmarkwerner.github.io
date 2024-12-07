@@ -9,7 +9,19 @@ excerpt_separator: <!--end-of-excerpt-->
 ---
 After his announcement of leaving *The Daily Show* in September, yesterday marked the day Trevor Noah hosted the show for the very last time. The South African comedian spent seven years on Comedy Central, during which time he:
 
-*	interviewed President Obama, Michelle Obama, Oprah,
+<div style="display:none">
+* interviewed President Obama, Michelle Obama, Oprah,
+* hosted the White House Correspondents’ Dinner,
+* hosted the Grammy’s,
+* published his autobiography on growing up during the South African apartheid as a mixed race child,
+* voiced a Wakandan AI system in *Black Panther*,
+* and most of all, Trevor carried us all the way through Corona times by relocating *The Daily Show* into his own New York apartment,
+</div>
+
+
+<!--end-of-excerpt-->
+
+* interviewed President Obama, Michelle Obama, Oprah,
 * hosted the White House Correspondents’ Dinner,
 * hosted the Grammy’s,
 * published his autobiography on growing up during the South African apartheid as a mixed race child (hence the title *Born a Crime*),
@@ -18,7 +30,6 @@ After his announcement of leaving *The Daily Show* in September, yesterday marke
 * released three Netflix specials.
 
 Of course, these achievements in themselves fail to show why I consider Trevor Noah one of the greatest TV hosts and comedians of all time. That’s why I compiled a list of 10 of his most memorable moments, let them be interviews with political figures (from the left and the right), heartfelt conversations with his audience, or an insightful monologue on France winning the World Cup.
-<!--end-of-excerpt-->
 
 <div><img src="/assets/the-daily-show-with-trevor-noah.jpg"></div>
 

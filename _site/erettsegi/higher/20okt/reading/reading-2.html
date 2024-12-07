@@ -132,6 +132,8 @@
 
 
 
+
+
 <h2 class="erettsegi-title">
 	<span>érettségi / </span>
 
@@ -143,6 +145,8 @@
 
  / 
 <select id="year"> 
+        
+        <option value="24okt" >24okt</option>
         
         <option value="24maj" >24maj</option>
         
@@ -330,6 +334,29 @@ createTask("higher-20okt-reading-2");
 </div>
 
 <script>
+
+
+if (typeof numberOfTasks === "undefined") {
+    fetch("/erettsegi/data.json").then((response, id) => {
+        return response.json()
+    }).then((data) => {
+        jsonData = data;
+const numberOfTasks = data.length
+
+answer = document.querySelector("#erettsegi-footer .answer")
+answer.innerHTML = "Search " + numberOfTasks + " tasks using keywords"
+
+search = document.querySelector("#erettsegi-footer .search-input")
+search.placeholder = "Search " + numberOfTasks + " tasks using keywords"
+})
+    
+} else {
+answer = document.querySelector("#erettsegi-footer .answer")
+answer.innerHTML = "Search " + numberOfTasks + " tasks using keywords"
+
+search = document.querySelector("#erettsegi-footer .search-input")
+search.placeholder = "Search " + numberOfTasks + " tasks using keywords"
+}
 
 searchInput = document.querySelector(".search-input")
 

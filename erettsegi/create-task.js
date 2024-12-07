@@ -16,13 +16,7 @@ function createTask(id) {
         jsonData = data;
 if (typeof numberOfTasks === "undefined") {
 //To update the number in "Search 600 tasks..."
-numberOfTasks = data.length
-
-answer = document.querySelector("#erettsegi-footer .answer")
-answer.innerHTML = "Search " + numberOfTasks + " tasks using keywords"
-
-search = document.querySelector("#erettsegi-footer .search-input")
-search.placeholder = "Search " + numberOfTasks + " tasks using keywords"
+const numberOfTasks = data.length
 
 }
         populateHTML(data.find(task => task.taskId == id))
