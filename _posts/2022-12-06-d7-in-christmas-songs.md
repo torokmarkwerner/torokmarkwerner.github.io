@@ -14,13 +14,16 @@ sup {
   font-size: 0.6em
   }
 .play, .chord {
-  font-family: "Times New Roman";
   font-size: 100%;
+  font-variant-caps: all-petite-caps;
   padding: 1em;
   margin: 0.5em;
   border:none;
-  min-width: 5em;
+  min-width: 3em;
   min-height: 3em
+}
+.play:hover {
+  background: #9fd8ef;
 }
 .play:hover, .chord:hover {
   cursor: pointer;
@@ -30,7 +33,7 @@ sup {
 background-color: palegreen;
 }
 .play {
-background-color:khaki;
+background-color: lightskyblue;
 }
 .play:disabled, .chord:disabled {
   border: none;
