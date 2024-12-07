@@ -10,12 +10,11 @@ excerpt_separator: <!--end-of-excerpt-->
 After his announcement of leaving *The Daily Show* in September, yesterday marked the day Trevor Noah hosted the show for the very last time. The South African comedian spent seven years on Comedy Central, during which time he:
 
 <div style="display:none">
-* interviewed President Obama, Michelle Obama, Oprah,
-* hosted the White House Correspondents’ Dinner,
-* hosted the Grammy’s,
-* published his autobiography on growing up during the South African apartheid as a mixed race child,
-* voiced a Wakandan AI system in *Black Panther*,
-* and most of all, Trevor carried us all the way through Corona times by relocating *The Daily Show* into his own New York apartment,
+interviewed President Obama, Michelle Obama, Oprah,
+hosted the White House Correspondents’ Dinner and the Grammy’s,
+published his autobiography on growing up during the South African apartheid as a mixed race child,
+voiced a Wakandan AI system in *Black Panther*,
+and most of all, Trevor carried us all the way through Corona times by relocating *The Daily Show* into his own New York apartment.
 </div>
 
 
