@@ -832,7 +832,7 @@ hr.erettsegi-line {
 }
 
 #erettsegi-footer .question, 
-#erettsegi-footer div:not(.search-bar-container) {
+#erettsegi-footer .answer {
     text-align: center;
     font-size: 1.2em;
     padding: 0.5em;

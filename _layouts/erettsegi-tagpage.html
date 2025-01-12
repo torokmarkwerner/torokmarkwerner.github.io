@@ -11,6 +11,10 @@ layout: default
     }
   }
   </script>
+
+{% include buymeacoffee.html %}
+{{ buymeacoffee }}
+
 <div class="post">
 <ul>
 {% assign erettsegi = site.pages | where_exp: "item" , "item.path contains 'erettsegi/'"%}

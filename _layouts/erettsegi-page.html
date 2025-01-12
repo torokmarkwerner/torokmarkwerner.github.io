@@ -1,9 +1,12 @@
 ---
 layout: default
 ---
-    <div class="erettsegi-page">
+<div class="erettsegi-page">
 {% include erettsegi-titles.html %}
 <h1>{{ htitle }}</h1>
+
+{% include buymeacoffee.html %}
+{{ buymeacoffee }}
 
 {% assign depth = page.path | split: "/" | size | plus: 1 %}
 {% if depth > 3 %}
