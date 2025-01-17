@@ -124,6 +124,7 @@ summary:hover {
     text-decoration: none;
     color: inherit;
     display: block;
+    text-transform: uppercase;
 }
 
 #home:hover {
@@ -755,4 +756,90 @@ box-sizing: border-box;
 .bmc span {
     text-decoration:underline;
     color:blue
+}
+
+#carousel {
+    position: relative;
+    overflow-y: clip;
+}
+
+#carousel a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.carousel-card {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 1em - 10px);
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-card img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-card div {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    display: flex;
+    padding: 1em;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#carousel a:hover div {
+    background: black;
+    transform: scale(1.1)
+}
+
+#carousel div {
+    transition: transform 3s ease
+}
+
+#carousel button {
+    background: white;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#carousel button:hover {
+    opacity: 0.8;
+}
+
+#carousel>div {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#carousel>div:nth-of-type(1) {
+    left: 10px;
+}
+
+#carousel>div:nth-of-type(2) {
+    right: 10px;
 }

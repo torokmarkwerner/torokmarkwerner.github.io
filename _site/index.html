@@ -53,11 +53,11 @@
         <div id="sticky">
             <div id="close" onclick="hideNav()">&times;</div>
             <a id="home" href="/"><div id="letters"><span>T</span><span>M</span></div></a>
-            <a id="about" class="pages-button" href="/about">ABOUT</a>
-            <a id="projects" class="pages-button" href="/projects">PROJECTS</a>
-            <a id="erettsegi" class="pages-button" href="/erettsegi">ÉRETTSÉGI</a>
-            <a id="blog" class="pages-button" href="/blog">BLOG</a>
-            <a id="contact" class="pages-button" href="/contact">CONTACT</a>
+            <a id="about" class="pages-button" href="/about">About</a>
+            <a id="projects" class="pages-button" href="/projects">Projects</a>
+            <a id="erettsegi" class="pages-button" href="/erettsegi">Érettségi</a>
+            <a id="blog" class="pages-button" href="/blog">Blog</a>
+            <a id="contact" class="pages-button" href="/contact">Contact</a>
             <div style="text-align:center">
                 <a href="https://www.facebook.com/torok.mark.werner" target="_blank" class="fa fa-facebook"></a>
                 <a href="mailto:torokmarkwerner@gmail.com" target="_blank" class="fa fa-google"></a>
@@ -82,61 +82,84 @@
       display:none;
     }
 </style>
-<img id="profile-picture" src="https://avatars.githubusercontent.com/u/98919050">
-
-<script src="posts.json" type="text/javascript"></script>
-<div style="display:none;padding-top:10px">
-<input placeholder="Search..." id="search-box">
-<button id="search-button" onclick="search()"><i class="fa fa-search"></i></button>
+<div id="carousel">
+    <a href="/about">
+        <div class="carousel-card">
+            <img src="/assets/sea.jpg" alt="About" style="">
+            <div>About</div>
+        </div>
+    </a>
+    <a href="/projects">
+        <div class="carousel-card">
+            <img src="/assets/mountain.jpg" alt="Projects" style="">
+            <div>Projects</div>
+        </div>
+    </a>
+    <a href="/erettsegi">
+        <div class="carousel-card">
+            <img src="/assets/forest.jpg" alt="Érettségi" style="">
+            <div>Érettségi</div>
+        </div>
+    </a>
+    <a href="/blog">
+        <div class="carousel-card">
+            <img src="/assets/sunset.jpg" alt="Blog" style="">
+            <div>Blog</div>
+        </div>
+    </a>
+    <a href="/contact">
+        <div class="carousel-card">
+            <img src="/assets/snow.jpg" alt="About" style="">
+            <div>Contact</div>
+        </div>
+    </a>
+    <div>
+        <button>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="24px" height="24px">
+                <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+            </svg>
+        </button>
+    </div>
+    <div>
+        <button>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="24px" height="24px">
+                <path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z" />
+            </svg>
+        </button>
+    </div>
 </div>
-<div id="search-results">
-</div>
-
 <script>
-box = document.getElementById("search-box");
+rightButton = document.querySelectorAll("#carousel button")[1]
 
-box.addEventListener("keypress", function(event) {
-  if (event.key === "Enter") {
-    event.preventDefault();
-    search();
-  }});
+leftButton = document.querySelectorAll("#carousel button")[0]
 
-function search() {
-document.getElementById("search-results").innerHTML = ""
-for (i=0; i<data.length; i++) {
+carousel = document.getElementById('carousel');
 
-if (data[i].text.toLowerCase().indexOf(box.value.toLowerCase()) > -1) {
+cards = document.querySelectorAll('.carousel-card');
 
-result = document.createElement("DIV")
-title = document.createElement("H4");
-title.innerHTML = "<a target='_blank' href='" + data[i].url + "'>" + data[i].title + "</a>";
-result.appendChild(title)
+currentIndex = 0;
 
-text = document.createElement("UL");
-
-words = data[i].text.split(" ");
-
-counter = 0;
-
-for (z=0; z<words.length; z++) {
-    index = words[z].toLowerCase().indexOf(box.value.toLowerCase())
-    if(index > -1 && counter < 5) {
-    counter++
-    li = document.createElement("LI")
-    li.innerHTML = "... " + words.slice(z-3,z).join(" ") + " <b>" + words[z] + "</b> " + words.slice(z+1,z+3).join(" ") + " ..."
-    text.appendChild(li);
-    }
+function showCard(index) {
+    cards.forEach((card, i) => {
+        card.style.display = i === index ? 'flex' : 'none';
+    });
 }
 
-result.appendChild(text)
-
-document.getElementById("search-results").appendChild(result);
+function nextCard() {
+    currentIndex = (currentIndex + 1) % cards.length;
+    showCard(currentIndex);
 }
 
+function prevCard() {
+    currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+    showCard(currentIndex);
 }
-}
+
+rightButton.addEventListener('click', nextCard);
+leftButton.addEventListener('click', prevCard);
+
+showCard(currentIndex);
 </script>
-
 
         </div>
         
