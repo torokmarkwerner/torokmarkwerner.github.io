@@ -64,13 +64,13 @@ layout: erettsegi-page
 <option value="reading-half-sentences">Half-Sentences</option>
 <option value="reading-short-answer">Short Answer</option>
 <option value="reading-extended-matching">Extended Matching</option>
-<option value="word-transformation">Word Transformation</option>
-<option value="closed-gap-filling">Closed Gap Filling</option>
-<option value="free-gap-filling">Use of English Free Gap Filling</option>
-<option value="multiple-choice">Use of English Multiple Choice</option>
-<option value="sentence-transformation">Sentence Transformation</option>
-<option value="error-correction">Error Detection</option>
-<option value="jumbled-up-sentences">Jumbled-Up Sentences</option>
+<option value="uoe-word-transformation">Word Transformation</option>
+<option value="uoe-closed-gap-filling">Closed Gap Filling</option>
+<option value="uoe-free-gap-filling">Use of English Free Gap Filling</option>
+<option value="uoe-multiple-choice">Use of English Multiple Choice</option>
+<option value="uoe-sentence-transformation">Sentence Transformation</option>
+<option value="uoe-error-correction">Error Detection</option>
+<option value="uoe-jumbled-up-sentences">Jumbled-Up Sentences</option>
 
       </select>
 </div>
@@ -241,7 +241,6 @@ if (keywords || level || year || part || taskType || topic) {
     }).then((data) => {
         taskProperties = data
    
-
     filteredData = taskProperties.filter(item => {
         fields = ['textTitle', 'example', 'text', 'text2'];
         return fields.some(field => {
@@ -270,10 +269,16 @@ itemPart = item.taskId.split("-")[2]
     resultsContainer = document.getElementById('search-results');
     resultsContainer.innerHTML = ""
 
-
 numberOfResults = filteredResults.length
 plural = numberOfResults > 1 ? "s" : ""
 resultsContainer.innerHTML += ("<p style='color:gray;font-size:small'>" + numberOfResults + " result" + plural + "</p>")
+
+taskTypeOptions = Array.from(document.getElementById('task-type').options)
+    .slice(1)
+    .reduce((object, option) => {
+        object[option.value] = option.text;
+        return object;
+    }, {});
 
     filteredResults.forEach(item => {
         context = getContext(item, keywords);
@@ -284,7 +289,7 @@ link = item.taskId.split("-").slice(0, -1).concat(item.taskId.split("-").slice(-
             <div class="search-result">
                 <h3><a target='_blank' href='${link}'>${item.taskId.replaceAll("-"," / ").replace("reading","olvasott szöveg értése").replace("uoe","nyelvhelyesség").replace("standard","közép").replace("higher","emelt")}</a></h3>
                 <p>Title: ${item.textTitle}</p>
-                <p>Type: ${item.type}</p>
+                <p>Type: ${taskTypeOptions[item.type]}</p>
                 <p>${context}</p>
             </div>
         `;

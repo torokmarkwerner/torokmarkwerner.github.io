@@ -772,7 +772,7 @@ box-sizing: border-box;
     display: flex;
     position: relative;
     width: 100%;
-    height: calc(100dvh - 1em - 10px);
+    height: calc(100dvh - 1em - 10px) !important;
     justify-content: center;
     align-items: center;
 }
