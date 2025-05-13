@@ -100,7 +100,7 @@ function checkAnswers(tid) {
 
                 taskGaps[i].querySelectorAll('label > [type="radio"]').forEach((element) => { element.nextElementSibling.classList.remove("incorrect") })
 
-                if (trueOrFalse[radio.nextElementSibling.innerHTML] == solutions[i] && !(radio.disabled)) {
+                if ((trueOrFalse[radio.nextElementSibling.innerHTML] == solutions[i] && !(radio.disabled)) || (solutions[i].includes(trueOrFalse[radio.nextElementSibling.innerHTML]) && !(radio.disabled))) {
                     taskGaps[i].querySelectorAll('label > [type="radio"]').forEach((element) => { element.disabled = true; });
                     radio.nextElementSibling.classList.add("correct");
                     score[tid]["current"]++
@@ -220,17 +220,27 @@ function showAnswers(tid) {
             taskGaps[i].querySelectorAll(":not([value='" + solutions[i] + "'])").forEach(x => x.disabled = true)
         } else {
             /*TRUE-OR-FALSE*/
-            for (k = 0; k < taskGaps[i].querySelectorAll('label > [type="radio"]').length; k++) {
-                radio = taskGaps[i].querySelectorAll('label > [type="radio"]')[k];
+
+
+            if (Array.isArray(solutions[i]) && solutions[i].length > 1 && taskGaps[i].querySelectorAll('label > [type="radio"]').length > 0) {
+                    taskGaps[i].querySelectorAll('label > [type="radio"]').forEach(radioBox => radioBox.type = "checkbox")
+            }
+
+            radioBoxes = taskGaps[i].querySelectorAll('label > [type="radio"]').length > 1 ? taskGaps[i].querySelectorAll('label > [type="radio"]') : taskGaps[i].querySelectorAll('label > [type="checkbox"]')
+
+            for (k = 0; k < radioBoxes.length; k++) {
+                radio = radioBoxes[k];
                 radio.nextElementSibling.classList.remove("incorrect", "correct");
                 radio.disabled = true
-                if (radio.nextElementSibling.innerHTML != Object.keys(trueOrFalse).find(key => trueOrFalse[key] === solutions[i])) {
-                    radio.checked = false;
-                } else {
+
+                if ((!Array.isArray(solutions[i]) && radio.nextElementSibling.innerHTML === Object.keys(trueOrFalse).find(key => trueOrFalse[key] === solutions[i])) || (Array.isArray(solutions[i]) && solutions[i].includes(trueOrFalse[radio.nextElementSibling.innerHTML]))) {
                     radio.checked = true;
+                } else {
+                    radio.checked = false;
+                }
                 }
             }
 
-        }
+        
     }
 }

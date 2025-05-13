@@ -22,7 +22,76 @@ font-size: 130%;
  #words span:nth-of-type(even) {
   background-color:antiquewhite;
  }
+
+.hidden-text {
+            display: none;
+            margin-top: 5px;
+            color: #555;
+        }
+
+.clickable {
+            font-weight: bold;
+            color: blue;
+            cursor: pointer;
+        }
+
 </style>
+
+<p>I grew up in the Hungarian <span class="clickable" onclick="toggleText('countryside')">countryside</span>, in a medium-size town called Nagykáta.</p>
+    <p id="countryside" class="hidden-text">So you can say I am a country boy, but it would be a long shot to call <span class="clickable" onclick="toggleText('nagykata')">Nagykáta</span> country as would to label it a town, as it is a bigger village if anything. No need to tell, by the time I got home from a date with a local girl, my mom would know not only her name, but also her whole family tree to the seventh generation.</p>
+
+<p id="nagykata" class="hidden-text">Nagykáta means 'big Káta' in Hungarian, and it is the biggest one of the local Káta towns (Szentmártonkáta, Szentlőrinckáta, and Egreskáta), all founded by the Káta clan, <span class="clickable" onclick="toggleText('more-history')">a very long time ago</span>. The town is located 60 km (37 mi), a good 50 minutes by train to the east from Budapest. Growing up in the Great Hungarian Plain, I spent a long time <span class="clickable" onclick="toggleText('wondering-the-mountains')">wondering about the silhouette of the Mátra mountains in the back of our garden</span>.</p>
+<p id="more-history" class="hidden-text">A long time ago. Although I'm a relatively big history buff, I am not really sure. All I know for sure is that it shows up on the first printed map of Hungary from 1528. How do I know that? My father is <span class="clickable" onclick="toggleText('cartographer')">a cartographer</span> and somehow I got a copy of that map. It's a great map: even the infamous Battle of Mohács is depicted on it.</p>
+<p id="wondering-the-mountains" class="hidden-text">But aren't we all? Anyway, I cherish some great memories from camping in Mátrafüred, singing by the campfire, falling in and out of love sometimes, serenading girls, hiking and getting lost in the woods.</p>
+
+<p id="cartographer" class="hidden-text">
+     It means map creator. Incidentally, he also created the map of the <span class="clickable" onclick="toggleText('tápió')">Tápió</span> region, the center of which is Nagykáta.
+</p>
+
+<div id="tápió" class="hidden-text">
+     <p>
+        Tápió is a small river that flows nearby. I always thought tapioka originates from this word somehow, and I had a childish fantasy of the river being full of apple puree. Yeah, I didn't know what tapioca is for that matter. Do you want me to bore you with more random historical facts?
+    </p>
+    <p>Do you want me to bore you with more random historical facts?</p>
+     <p><span class="clickable" onclick="toggleText('more-facts')">A) Yes, I'm also a history buff.</span></p>  
+     <p><span class="clickable" onclick="toggleText('no-more-facts')">B) No, please bore someone else.</span></p>
+</div>
+
+    <p id="more-facts" class="hidden-text">
+The Battle of Tápióbicske was actually fought on the grounds between Nagykáta and Tápióbicske, for a small wooden bridge over the river. A lesser-known fact is that ca. 150-160 years later my middle brother's teacher actually left my two brothers and my grandma there where they reenacted the battle. So they had to walk home. And they had to play the Austrians. Yeah, it was a devastating day for the Töröks.
+    </p>
+    <p id="no-more-facts" class="hidden-text">
+Alright, I also have other stories. Did you know, for example, that I was the youngest Hungarian <span class="clickable" onclick="toggleText('prananadi-master')">prananadi master</span>?
+    </p>
+
+    <p id="prananadi-master" class="hidden-text">
+I was about 10 or 11 when I studied this lay-on-hand healing technique. Do I still believe in it? My mother does. I believe that the human mind is a powerful tool. I believe in stories, and prananadi is just another <span class="clickable" onclick="toggleText('narrative')">narrative</span> after all.
+    </p>
+
+     <p id="narrative" class="hidden-text">  
+        Glad you asked! Narratives are all around us and have been with us since the awakening of mankind. They are stories, songs, paintings, graffiti, and even this page is a narrative. And I love stories. <span class="clickable" onclick="toggleText('why')">Why?</span>
+    </p>
+
+    <p id="why" class="hidden-text">
+        'Cause stories...
+    </p>
+
+
+    
+    <script>
+        function toggleText(id) {
+            var element = document.getElementById(id);
+            if (element.style.display === "none" || element.style.display === "") {
+                element.style.display = "block";
+                element.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+            } else {
+                element.style.display = "none";
+            }
+        }
+    </script>
+
+
+<div style="display:none">
 <p>
 Choose from the words below and ask away.
 </p>
@@ -37,6 +106,7 @@ Choose from the words below and ask away.
      justify-content: center;font-weight: bold;">YOU:</div> <div id="question" style="padding:1.5em;max-width:60%"></div></div>
 <div id="words" style="flex-flow: row wrap;padding:1em;display:flex;"></div>
 
+</div>
 <script>
 qAndAObject = {
 "What is your favourite colour?":"Blue.",

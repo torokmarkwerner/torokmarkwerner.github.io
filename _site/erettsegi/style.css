@@ -388,7 +388,7 @@ hr.erettsegi-line {
     background: #f0f8ff;
 }
 
-.reading-true-or-false .radio-container input[type="radio"] {
+.reading-true-or-false .radio-container input {
     display: none;
 }
 
@@ -412,11 +412,11 @@ hr.erettsegi-line {
     transition: all 0.3s ease;
 }
 
-.reading-true-or-false .radio-container input[type="radio"]:checked + span:before {
+.reading-true-or-false .radio-container input:checked + span:before {
     background: #007bff;
 }
 
-.reading-true-or-false .radio-container input[type="radio"]:checked + span:after {
+.reading-true-or-false .radio-container input:checked + span:after {
     content: '';
     position: absolute;
     left: calc(0.6em - 2px);
@@ -428,39 +428,39 @@ hr.erettsegi-line {
     border-radius: 50%;
 }
 
-.reading-true-or-false .radio-container input[type="radio"]:disabled + span {
+.reading-true-or-false .radio-container input:disabled + span {
     color: #aaa;
 }
 
-.reading-true-or-false .radio-container input[type="radio"]:disabled + span:before {
+.reading-true-or-false .radio-container input:disabled + span:before {
     border-color: #ccc;
     background: #f5f5f5;
 }
 
-.reading-true-or-false .radio-container input[type="radio"]:disabled:checked + span {
+.reading-true-or-false .radio-container input:disabled:checked + span {
     color: #28a745;
 }
 
-.reading-true-or-false .radio-container input[type="radio"]:disabled:checked + span:before {
+.reading-true-or-false .radio-container input:disabled:checked + span:before {
     border-color: #28a745;
     background: #28a745;
 }
 
-.reading-true-or-false .radio-container input[type="radio"] + span.incorrect {
+.reading-true-or-false .radio-container input + span.incorrect {
     color: #FFC300;
 }
 
-.reading-true-or-false .radio-container input[type="radio"]:checked + span.incorrect:before {
+.reading-true-or-false .radio-container input:checked + span.incorrect:before {
     border-color: #FFC300;
     background: #FFC300;
 }
 
 
-.reading-true-or-false .radio-container input[type="radio"] + span.correct {
+.reading-true-or-false .radio-container input + span.correct {
     color: #28a745;
 }
 
-.reading-true-or-false .radio-container input[type="radio"]:checked + span.correct:before {
+.reading-true-or-false .radio-container input:checked + span.correct:before {
     border-color: #28a745;
     background: #28a745;
 }
