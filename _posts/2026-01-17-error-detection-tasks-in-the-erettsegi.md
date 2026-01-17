@@ -251,10 +251,10 @@ Explore the chart — hover over a slice for details.
 const canvas = document.getElementById('pieChart');
 const ctx = canvas.getContext('2d');
 const tooltip = document.getElementById('tooltip');
-const container = document.querySelector('.pie-chart-container');
+const pieChartContainer = document.querySelector('.pie-chart-container');
 
 
-const data = [
+const pieChartData = [
   { label: 'Extra preposition', value: 15.49, color: '#FF6B6B' },
   { label: 'Extra or wrong connector', value: 16.67, color: '#FFB76B' },
   { label: 'Lexical redundancy', value: 12.44, color: '#FFD93D' },
@@ -271,7 +271,7 @@ const data = [
 ];
 
 
-let total = data.reduce((sum, item) => sum + item.value, 0);
+let total = pieChartData.reduce((sum, item) => sum + item.value, 0);
 
 
 const centerX = canvas.width / 2;
@@ -289,7 +289,7 @@ function drawPieChart() {
   slices = [];
 
 
-  data.forEach(item => {
+  pieChartData.forEach(item => {
     const sliceAngle = (item.value / total) * 2 * Math.PI;
 
 
@@ -347,7 +347,7 @@ function getSliceUnderCursor(x, y) {
 
 // Show tooltip at event location, correctly positioned relative to container
 function showTooltip(evt, text) {
-  const rect = container.getBoundingClientRect();
+  const rect = pieChartContainer.getBoundingClientRect();
   tooltip.style.opacity = 1;
   tooltip.innerHTML = text;
   tooltip.style.left = `${evt.clientX - rect.left + 10}px`;
