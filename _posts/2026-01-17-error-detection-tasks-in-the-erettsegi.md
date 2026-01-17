@@ -211,21 +211,27 @@ Before we turn to the most special cases, let’s just take a look at the distri
   
 Explore the chart — hover over a slice for details.
 
-  <div class="pie-chart-container">
-    <canvas id="pieChart" width="400" height="400"></canvas>
-    <div id="tooltip" class="tooltip"></div>
-  </div>
+<div class="pie-chart-container">
+  <canvas id="pieChart"></canvas>
+  <div id="tooltip" class="tooltip"></div>
+</div>
+
 <style>
+
 .pie-chart-container {
   position: relative;
   width: 100%;
-  min-width: 400px;
-  height: 400px;
+  aspect-ratio: 1 / 1; /* keeps square */
   background: #f7f7f7;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
+#pieChart {
+  width: 100%;
+  height: 100%;
+}
 
 .tooltip {
   position: absolute;
@@ -239,10 +245,10 @@ Explore the chart — hover over a slice for details.
   font-size: 14px;
 }
 
-
 #pieChart:hover {
-  cursor: pointer !important;
+  cursor: pointer;
 }
+
 </style>
 
 
@@ -258,7 +264,7 @@ const pieChartData = [
   { label: 'Extra preposition', value: 15.49, color: '#FF6B6B' },
   { label: 'Extra or wrong connector', value: 16.67, color: '#FFB76B' },
   { label: 'Lexical redundancy', value: 12.44, color: '#FFD93D' },
-  { label: 'All auxiliaries', value: 17.37, color: '#6BCB77' },
+  { label: 'Extra auxiliary', value: 17.37, color: '#6BCB77' },
   { label: 'Extra intensifier', value: 10.09, color: '#4D96FF' },
   { label: 'Extra article', value: 6.57, color: '#845EC2' },
   { label: 'Extra quantifier', value: 2.82, color: '#FF6F91' },
@@ -274,9 +280,9 @@ const pieChartData = [
 let total = pieChartData.reduce((sum, item) => sum + item.value, 0);
 
 
-const centerX = canvas.width / 2;
-const centerY = canvas.height / 2;
-const radius = 150;
+let centerX = canvas.width / 2;
+let centerY = canvas.height / 2;
+let radius = 150;
 
 
 let slices = [];
@@ -385,7 +391,7 @@ canvas.addEventListener('click', (evt) => {
 
   if (slice) {
     tooltipVisible = true;
-    showTooltip(evt, `${slice.label}: ${slice.value}`);
+    showTooltip(evt, `${slice.label}: ${slice.value}%`);
   }
 });
 
@@ -398,9 +404,26 @@ document.addEventListener('click', (evt) => {
   }
 });
 
+function resizeCanvas() {
+  const rect = pieChartContainer.getBoundingClientRect();
+  const dpr = window.devicePixelRatio || 1;
+
+  canvas.width = rect.width * dpr;
+  canvas.height = rect.width * dpr;
+
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+
+  centerX = rect.width / 2;
+  centerY = rect.width / 2;
+  radius = rect.width * 0.4;
+
+  drawPieChart();
+}
 
 // Initial draw
-drawPieChart();
+window.addEventListener('resize', resizeCanvas);
+resizeCanvas();
+
 </script>
 
 ## Twin-cats for fun {#twin-cats-for-fun}
