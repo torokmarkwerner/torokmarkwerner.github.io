@@ -13,10 +13,10 @@ layout: default
 
  <div class="tag-list">
 
-    {% if post.language == "en" %}
-    <div><a class="tag-name" href="/tag/{{ post.language }}">English</a></div>
+    {% if page.language == "en" %}
+    <div><a class="tag-name" href="/tag/{{ page.language }}">English</a></div>
     {% else %}
-   <div><a class="tag-name" href="/tag/{{ post.language }}">magyar</a></div>
+   <div><a class="tag-name" href="/tag/{{ page.language }}">magyar</a></div>
     {% endif %}
 
   {% for tag in page.tags %}
